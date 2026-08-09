@@ -20,9 +20,9 @@ book:
     
   chapters:
     - index.qmd
-    - part: "Inscripción"
+    - part: "Inicio"
       chapters:
-      - 01-inscripcion/index.qmd
+      - 01-inicio/index.qmd
     - part: "Ejercicio de test"
       chapters:
       - 02-test/index.qmd

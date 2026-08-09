@@ -27,6 +27,6 @@ La fecha y hora de realización de la lectura es única para cada candidato. Hab
 
 En la conv. 2023, las lecturas de ingreso libre llevaron tres meses y medio.
 
-{{< include /03-practico/00-gen/_02-temas.qmd >}}
+{{< include /03-practico/00-gen/_02-temas-prac.qmd >}}
 
 {{< include /03-practico/00-gen/_03-material-prac.qmd >}}
