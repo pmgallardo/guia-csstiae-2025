@@ -4,7 +4,7 @@ Esta es una guía no oficial para la preparación del ejercicio práctico del XX
 
 \
 Versión web:
-<https://pmgallardo.github.io/csstiae-2025-prac>
+<https://pmgallardo.github.io/guia-csstiae-2025>
 
 Repositorio de ficheros fuente:
-<https://github.com/pmgallardo/csstiae-2025-prac>
+<https://github.com/pmgallardo/guia-csstiae-2025>

@@ -4,14 +4,14 @@ project:
 
 book:
   title: "Guía CSSTIAE 2025"
-  subtitle: "Manual de preparación y consejos para opositores"
+  subtitle: "Manual de preparación para opositores"
   author: "Pablo Gallardo"
   date: today
   language: es
   favicon: images/favicon.png
   
-  site-url: https://pmgallardo.github.io/csstiae-2025-prac/
-  repo-url: https://github.com/pmgallardo/csstiae-2025-prac
+  site-url: https://pmgallardo.github.io/guia-csstiae-2025/
+  repo-url: https://github.com/pmgallardo/guia-csstiae-2025
   repo-actions: [edit, issue, source]
 
   sidebar:
