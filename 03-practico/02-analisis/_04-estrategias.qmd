@@ -60,7 +60,7 @@ La Segunda Agenda Digital de Europa es una estrategia política macro para adapt
 
 La Década Digital de la UE, también llamado Década Digital 2030, es un programa político operativo dentro de la Segunda Agenda Digital de Europa que incluye marco de programa, objetivos, proyectos y principios para coordinar el desarrollo digital de la UE.
 
-La Brújula Digital 2030 es una herramienta métrica, creada en 2021 y enmarcada dentro de la Década Digital, define objetivos mediables para 2030 categorizados por cuatro puntos cardinales:
+La **Brújula Digital 2030** es una herramienta métrica, creada en 2021 y enmarcada dentro de la Década Digital, define objetivos mediables para 2030 categorizados por cuatro puntos cardinales:
 
 1. *Competencias*: 80% de adultos con competencias digitales básicas; 20M de especialistas en TIC.
 2. *Empresas*: 75% de empresas usan nube, datos e IA; 90% de pymes con presencia online.
@@ -71,6 +71,7 @@ El Índice de la Economía y la Sociedad Digitales (DESI) se emplea para medir s
 
 El Programa Europa Digital (2021-2027), introducido en el R(UE) 2021/694, es un programa de financiación de la UE que apoya la transformación digital de la sociedad y la economía europeas. Tiene un presupuesto de 7.500M €.
 
+<!--
 #### Plan de Recuperación para Europa: NextGenerationEU
 
 :::{.callout-warning}
@@ -82,7 +83,7 @@ Este plan está obsoleto desde agosto 2026.
 ## 📋Marco de referencia
 - Marco normativo
   - [Reglamento (UE) 2020/2094](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32020R2094){target="_blank"}: modernización AAPP y PRTR.
-  - R (UE) 2021/241. Mecanismo de Recuperación y Resiliencia (MRR).
+  - R (UE) 2021/241. Mecanismo de Recuperación y Resiliencia (MRR)
   - [C/2026/2614](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52026XC02614){target="_blank"}.
 - Referencias
   - [Plan de Recuperación para Europa](https://planderecuperacion.gob.es/plan-de-recuperacion-para-europa), Gobierno de España.
@@ -97,6 +98,7 @@ Los estados miembros de la UE debían desarrollar sus planes nacionales correspo
 En mayo de 2026 la Comisión emitió sus instrucciones para el cierre en el C/2026/2614: cualquier actuación realizada después del 31 de agosto de 2026 no puede computarse para considerar cumplido un hito u objetivo del MRR.
 
 Se postulan como herederos del MRR los futuros Planes Nacionales y Regionales de Asociación (*National and Regional Partnership Plans*, NRPP) y el Fondo Europe de Competividad (*European Competitiveness Fund*, ECF), ambos propuestos para 2028.
+-->
 
 #### Estrategia Europea de Unión de Datos {#union-datos}
 
@@ -165,14 +167,6 @@ Vigente desde febrero 2025.
 
 ### Estrategias españolas
 
-#### Plan España Digital {#plan-españa-digital}
-
-::: {.callout-note icon="false"}
-## 📋Marco de referencia
-- Referencias
-  - <https://runmodule.com/2027/07/27/plan-espana-digital/>{target="_blank"}
-:::
-
 #### Estrategia Nacional de Seguridad {#ens}
 
 ::: {.callout-note icon="false"}
@@ -181,6 +175,7 @@ Vigente desde febrero 2025.
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
+<!--
 #### Planes de Digitalización de la AGE
 
 ::: {.callout-note icon="false"}
@@ -207,7 +202,9 @@ Este plan dejó de estar vigente en 2021.
 ## 🕸️Obsoleto
 Este plan dejó de estar vigente en 2026. 
 :::
+-->
 
+<!--
 ### Agendas España Digital
 
 #### España Digital 2025
@@ -260,7 +257,9 @@ Planes y estrategias de la agenda España Digital 2026:
 - Plan de impulso de digitalización de pymes 2021-2025 *(extinto)*
 - Plan España Hub Audiovisual de Europa
 - [Estrategia Nacional de Inteligencia Artificial (ENIA)](#enia) *(extinta)*
+-->
 
+<!--
 #### Plan de Recuperación, Transformación y Resiliencia (PRTR) {#PRTR}
 
 :::{.callout-warning}
@@ -288,7 +287,9 @@ Estas ayudas se canalizaron en España a través del Plan de Recuperación, Tran
 La duración del PRTR fue de 2021 a 2026. Estaba compuesta por 10 palancas y 31 componentes.
 
 El Gobierno aprobó el 28/07/2026 la Adenda de Cierre del PRTR, señalando expresamente el 31/08/2026 como fecha límite para la ejecución de estos fondos y cumplir actuaciones del MRR.
+-->
 
+<!--
 ### Estrategia Nacional de Inteligencia Artificial (ENIA) {#enia}
 
 :::{.callout-warning}
@@ -305,6 +306,7 @@ La ENIA dejó de estar vigente en 2026.
 Tuvo vigencia entre 2020 y 2025.
 
 La ENIA es una hoja de ruta que vertebra 6 ejes y 30 actuaciones orientadas al desarrollo de la IA.
+-->
 
 ### Fondo España Crece
 

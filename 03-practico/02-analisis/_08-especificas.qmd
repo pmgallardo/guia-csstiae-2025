@@ -297,9 +297,18 @@ El vocal titular Á. Martín es estadístico que trabaja en la Secretaría de Es
 
 Estadísticas relevantes:
 
-| Estadística | Valor aprox. | Valor | Fuente |
+| Estadística | Valor aprox. | Valor | Fecha | Fuente |
 | - | - | - | - |
-| Tasa de paro | <10% | 9,87% | [EPA](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595){target="_blank"} |
+| Tasa de paro | 10% | 9,87% | 2026T2 | [EPA](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595){target="_blank"} |
+
+Ocupación por sector económico en 2023T4, según la [EPA](https://www.ine.es/jaxiT3/Datos.htm?t=3991){target="_blank"}:
+
+| Sector | % aprox. | % exacto | Valor exacto |
+| - | - | - | - |
+| Agricultura | 4 | 3,63 | 770,7 |
+| Industria | 13 | 13,32 | 2.829,8 |
+| Construcción | 7 | 6,63 | 1.409,1 |
+| Servicios | 76 | 76,42 | 16.237,2 |
 
 ### Sanidad
 
@@ -313,6 +322,9 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
 ## 📋 Marco de referencia
 - ODS
   - 3. Salud y bienestar
+- Estrategias
+  - Brújula Digital 2030. Puntos cardianl "Servicios públicos": 100% de ciudadanos con acceso a historial médico.
+
 :::
 
 ### Función pública

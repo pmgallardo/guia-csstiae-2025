@@ -1,0 +1,53 @@
+## Material de preparación del ejercicio de test
+
+### Material teórico para el ejercicio de test
+
+Se pueden consultar las siguientes fuentes de teoría de cara al ejercicio de test:
+
+- [Temario ofrecido por Astic](https://www.astic.es/temario-tic-a1/) (de pago)
+- [Material ofrecido por Preparatic](https://www.preparatic.org/material-preparatic-31/) (gratuito)
+- Material adicional facilitado por academias y preparadores
+
+Los materiales teóricos de Astic y Preparatic están organizados en función del temario de convocatorias recientes.
+
+### Repositorios de tests
+
+#### Repositorio del INAP
+
+Hay dos páginas desde las que se puede acceder, y su contenido es distinto.
+
+[Repositorio del CSSTIAE en INAP 1](https://www.inap.es/cuerpo-superior-de-sistemas-y-tecnologias-de-la-informacion-de-la-administracion-del-estado)
+
+[Repositorio del CSSTIAE en INAP 2](https://sede.inap.gob.es/csstic)
+
+#### Baquedano.es
+
+Ignacio Baquedano recopila en su web baquedano.es los PDFs oficiales de exámenes de oposiciones de informática en España, tanto de la AGE como de otras entidades.
+
+[Página web de Baquedano.es](http://baquedano.es/)
+
+#### Tests de Preparatic
+
+La asociación Preparatic ha desarrollado una [aplicación web de tests](https://www.preparatic.org/aplicacion-de-tests/) del CSSTIAE en base a preguntas de creación propia. Este simulador está disponible tanto en [versión online](https://www.preparatic.org/tests/#) como en versión offline.
+
+Para cualquier consulta sobre el mismo, existe el buzón test@preparatic.org.
+
+Preparatic también tiene disponible un bot en Telegram llamado TICrannosaurus Test, aunque es referido informalmente como el Dino.
+
+[Bot TICrannosaurus Test en Telegram](https://t.me/ticrannosaurusTest_bot)
+
+El contenido de las preguntas es el mismo que el de los tests de Preparatic.
+
+Debido a que puede lanzarse desde el móvil fácilmente, suele ser una opción común entre los candidatos al exámen.
+
+#### Tests de procesos de selección distintos al CSSTIAE
+
+Se puede practicar también empleando.
+
+Una vez consumidos los tests oficiales del CSSTIAE más recientes, si se realizan exámenes antiguos es posible que su contenido esté desactualizado. Si se ensayan tests de otros procesos, se puede volver a lograr contenido actualizado.
+
+Ejemplos de organismos que pueden compartir los tests de sus proceso de selección TIC:
+
+- Entidades locales
+- Comunidades autónomas
+- Organismos del sector público (CSIC, ICO, Banco de España, etc.)

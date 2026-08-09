@@ -1,3 +1,37 @@
 # Inscripción
 
-Este apartado detalla cómo realizar la inscripción.
+Este apartado detalla los primeros pasos relacionados con las pruebas selectivas de ingreso al CSSTIAE, incluyendo el anuncio de la convocatoria y la inscripción.
+
+## Anuncio de convocatoria
+
+Cada nueva convocatoria de proceso de selección de ingreso al CSSTIAE se anuncia en el BOE.
+
+Adicionalmente, nos podemos informar a través de las siguientes vías alternativas:
+
+- Apertura de una nueva convocatoria en la [plataforma IPS]().
+- Apertura de una nueva convocatoria en la [sección del CSSTIAE en la web del INAP](https://www.inap.es/en/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-superior-de-sistemas-y-tecnologias-de-la-informacion-de-la-administracion-del-estado).
+- Anuncio en el [canal "Preparatic" de Telegram](https://t.me/s/preparatic) (no oficial).
+
+Se deben leer cuidadosamente las bases y comprobar que se cumplen todos requisitos, incluyendo los de formación o de situación administrativa.
+
+En caso de que se haya presentado más veces a la convocatoria, conviene revisar si ha habido cambios reseñables entre las convocatorias anteriores y la actual.
+
+## Inscripción
+
+La inscripción se realiza a través del portal Inscripción de Pruebas Selectivas (IPS) de la AGE.
+
+Consejos de inscripción:
+
+- Vigilar la fecha límite. No apurar a las últimas fechas para hacer la inscripción, para evitar que algún contratiempo impida participar en la convocatoria.
+- Antes de que finalice el proceso de inscripción, tratar de obtener uno de los títulos de inglés convalidables.
+- Ant la duda de no saber si se va a poder preparar el ejercicio lo mejor es inscribirse igualmente, puesto que pasan varios meses entre la inscripción y el primer ejercicio y da tiempo a que cambien las situaciones, y el desembolso por inscripción no es excesivamente caro.
+
+## Admisión
+
+Posteriormente se publica una lista provisional de admitidos y excluidos al proceso selectivo.
+
+Se debe confirmar que se aparece en la lista provisional de admitidos.
+
+En caso de figurar en la lista provisional de excluidos, seguir las instrucciones de subsanación.
+
+Tras atenderse todas las subsanaciones, se publican las listas definitivas de incluidos y excluidos.

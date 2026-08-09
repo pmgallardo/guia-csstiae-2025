@@ -48,16 +48,27 @@ R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
   - <https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html>{target="_blank"}
 :::
 
-#### Reg(UE) 2021/241
+<!-- #### Reg(UE) 2021/241. Mecanismo de Recuperación y Resiliencia (MRR) {#celex-32021R0241}
 
-Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026.
+:::{.callout-warning}
+## 🕸️Obsoleto
+El MRR se concibió con fecha límite hasta agosto 2026.
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+    - [R(UE) 2021/241 en EUR-Lex](http://data.europa.eu/eli/reg/2021/241/oj){target="_blank"}
+:::
+
+Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026. -->
 
 #### Reg(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
-    - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/reg/2021/694/oj){target="_blank"}
+    - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/reg/2021/694/oj?locale=es){target="_blank"}
 :::
 
 #### Reg(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
@@ -172,7 +183,12 @@ El art. 1 define los principios de contratación:
 
 Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GDD) complementa el RGPD.
 
-#### RDL 36/2020 (PRTR) {#BOE-A-2020-17340}
+#### RDL 36/2020. PRTR {#BOE-A-2020-17340}
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+El PRTR se concibió con fecha límite hasta agosto 2026.
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -181,3 +197,11 @@ Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GD
 :::
 
 Se detalla en el apartado [PRTR](#PRTR) de Estrategias.
+
+#### RD 1118/2024. Estatuto de la AEAD {#BOE-A-2024-22929}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [RD 1118/2024](https://www.boe.es/eli/es/rd/2024/11/05/1118){target="_blank"}
+:::

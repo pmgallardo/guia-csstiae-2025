@@ -1,17 +1,30 @@
 ## Estadísticas
 
+
 ### Portales de estadísticas
 
 - UE
   - DESI
+  - Informes sobre el estado de la Década Digital
 - España
   - INE (Instituto Nacional de Estadística) 
   - OBSAE (Observatorio de Administración Electrónica)
+  - OTNSI
+  - Informe REINA
   - OAW (Observatorio de Accesibilidad Web)
+
+
+Informes del OBSAE (Observatorio de Administración Electrónica)
 
 #### DESI
 
-El Índice de Economía y Sociedad Digital (*Digital Economy and Social Index*, DESI) realiza un ranking de los estados miembros de la Unión Europea en función de distintos aspectos relativos a la digitalización
+El [Índice de Economía y Sociedad Digital](https://digital-strategy.ec.europa.eu/es/policies/desi-spain) (*Digital Economy and Social Index*, DESI) realiza un ranking de los estados miembros de la Unión Europea en función de distintos aspectos relativos a la digitalización.
+
+También se publica en la [PAe](https://administracionelectronica.gob.es/pae_Home/pae_OBSAE/Posicionamiento-Internacional/Comision_Europea_OBSAE/Indice-de-Economia-y-Sociedad-Digital-DESI-.html).
+
+#### Informes sobre el estado de la Década Digital
+
+[Informe de 2026](https://ec.europa.eu/commission/presscorner/detail/es/ip_26_1366)
 
 #### INE
 
@@ -20,13 +33,29 @@ El Instituto Nacional de Estadística (INE) es un organismo que tiene como objet
 El INE desarrolla distintos grupos indicadores, entre ellos:
 
 - EVGVD (Estadística de Violencia Doméstica y Violencia de Género)
-- EPA (Encuesta de Población Activa)
+- [EPA](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595) (Encuesta de Población Activa)
 
 #### OBSAE
 
 El Observatorio de Administración Electrónica (OBSAE) es un portal con el objetivo de compartir información sobre la Administración Electrónica en las AAPP. Está impulsada por la AEAD.
 
 [OBSAE](https://dataobsae.administracionelectronica.gob.es){target="_blank"}
+
+#### OTNSI
+
+Informes del OTNSI (Observatorio Nacional de Tecnología y Sociedad).
+
+#### Informe REINA
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Organismos:
+  - Comisiones Ministeriales de Administración Digital
+- Referencias:
+  - [Informe REINA en PAe](https://administracionelectronica.gob.es/pae_Home/pae_OBSAE/pae_Informes/pae_InformeREINA/pae_InfDescripcion.html?idioma=eu), PAe.
+:::
+
+El informe REINA (Revisión de Equipamiento, Inversión y Nómina de Personal Informático) es elaborado anualmente bajo el impulso de la Comisión Permanente del Consejo Superior de Administración Electrónica.
 
 #### OAW
 

@@ -11,7 +11,8 @@ El vocal titular del Tribunal J. M. Daza dirige los proyectos de atención ciuda
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-
+- Estrategias:
+  - Brújula Digital 2030. Puntos cardinal "Servicios públicos": 100% de servicios públicos digitales.
 - **Regulaciones:**
   - ES:
     - L 39/2015. Procedimiento Administrativo Común AAPP (PACAP).
@@ -46,6 +47,8 @@ La descentralización se refiere a la delegación de competencias entre distinta
 - Regulaciones:
   - UE
     - R (UE) 2021/694. Programa Europa Digital.
+  - ES
+    - [RD 1118/2024](#BOE-A-2024-22929). Estatuto de la AEAD
 - Iniciativas:
   - CTT (Centro de Transferencia de Tecnología)
 :::
@@ -167,6 +170,8 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
+- Estrategias
+  - Brújula Digital 2030. Puntos cardinal "Servicios públicos": 80% de ciudadanos usan identificación digital.
 - Regulaciones
   - UE
     - Reg(EU) 2024/1183. eIDAS{#CELEX:32014R0910}
