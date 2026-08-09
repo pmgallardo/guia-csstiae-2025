@@ -82,13 +82,15 @@ El esfuerzo total en horas se obtendría multiplicando las horas de construcció
 ## 📋 Marco de referencia
 - Contratación
   - SDA 25/2022 de suministros
-- Referencia
-  - Manuel Cillero, [Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/), manuel.cillero.es.
+- Referencias
+  - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es). PAe.
+  - [Métrica v3. Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf). PAe, 2001.
+  - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/), manuel.cillero.es.
 :::
 
 Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.
 
-En los pliegos de la AGE se manejan una serie de perfiles estándar:
+La metodología Métrica v3, en su documento de [Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf), define una serie de perfiles de participantes en el desarrollo de sistemas de información:
 
 - Directivo
 - Jefe de Proyecto
@@ -96,13 +98,11 @@ En los pliegos de la AGE se manejan una serie de perfiles estándar:
 - Analista
 - Programador
 
-Adicionalmente, en ciertos pliegos (como [este](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D)) se menciona también el perfil de analista programador. A efectos prácticos, esta guía considera análogos los perfiles de analista y analista programador (al menos respecto a categoría y precio), justificándose en que en Métrica v3 no existe el perfil mixto.
+Adicionalmente, en algunos pliegos contemporáneos (como [este](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D){target="_blank"}) se menciona adicionalmente el perfil de analista-programador. Este perfil mixto no figura en Métrica v3 pero sí se aparece en el [XII Convenio Colectivo Estatal de Empresas de Consultoría y Planificación](https://www.boe.es/buscar/doc.php?id=BOE-A-2000-17579){target="_blank"} de 2000, lo cual puede ser una posible explicación sobre su uso.
 
-El origen de estos perfiles empleados en las licitaciones proviene de que eran los históricamente empleados como categorías profesionales en los convenios colectivos y por tanto también en los pliegos. A pesar de que actualmente el convenio colectivo estatal de empresas de consultoría, tecnologías de información, y de estudios de mercado incluye otras categorías más asociadas a los niveles profesionales (A1, A2, B1, etc.), los pliegos públicos siguen usando las categorías históricas.
+Con respecto a categoría y tarifa, esta guía considera análogos los perfiles de analista y analista-programador, justificándose en que en Métrica v3 no existe el perfil mixto.
 
-Estos perfiles históricos fueron recogidos en Métrica v1, desarrollado en 1989-1990, y sus versiones posteriores.
-
-Se puede establecer que un desarrollo necesita el siguiente número de perfiles:
+A efectos prácticos, para  puede establecer que un desarrollo necesita el siguiente número de perfiles:
 
 - 1 jefe de proyecto por proyecto
 - Tantos analistas-programadores como sea necesario para tener el proyecto en la fecha indicada en el enunciado o en un periodo razonable (6-18 meses).
@@ -111,7 +111,7 @@ Se puede establecer que un desarrollo necesita el siguiente número de perfiles:
 
 Se suele reducir el ratio de analistas por programador cuando interesa reducir el coste de desarrollo.
 
-También se puede convertir a un analista en analista programador cuando no interesa aumentar el número perfiles de programadores pero tampoco se ve conveniente reducir el ratio de analistas por cada programador.
+También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.
 
 Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los [Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D), donde se definía que una unidad de trabajo estaba formada por:
 

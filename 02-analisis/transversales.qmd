@@ -57,8 +57,8 @@ La descentralización se refiere a la delegación de competencias entre distinta
 - Regulaciones
   - UE
     - Declaración Ministerial de Tallín sobre la administración electrónica
-    - [R(UE) 2024/903](regulaciones.qmd#CELEX:32024R0903). Reglamento Europeo sobre la Interoperabilidad (REI)
-    - R(UE) 910/2014. eIDAS
+    - [Reg(UE) 2024/903](regulaciones.qmd#CELEX:32024R0903). Reglamento Europeo sobre la Interoperabilidad (REI)
+    - [Reg(UE) 910/2014](regulaciones.qmd#CELEX:32024R1183). eIDAS 2
   - ES
     - RD 4/2010. Esquema Nacional de Interoperabilidad
     - L 37/2007. Reutilización de datos en Sector Público.
@@ -148,7 +148,7 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
   - ES
     - L 6/2020, de servicios electrónicos de confianza
     - RD 43/2021, seguridad de redes y SI
-    - **RD 311/2022, Esquema Nacional de Seguridad (ENS)**
+    - **[RD 311/2022](regulaciones.qmd#ens), Esquema Nacional de Seguridad (ENS)**
     - RDL 7/2022, seguridad 5G
 - Iniciativas
   - Estrategia de Seguridad Nacional
@@ -161,25 +161,48 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
-## Certificados electrónicos
+## Identificación electrónica
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Regulaciones
   - UE
-    - R(EU) 2024/1183. eIDAS
+    - Reg(EU) 2024/1183. eIDAS{#CELEX:32014R0910}
 :::
 
-## Gobierno del dato
+## Nube
+
+::: {.callout-warning icon="false" collapse="true"}
+## 🥇Temática candidata N1
+La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Regulaciones
-  - UE
-    - R(UE) 2022/868. Ley de Gobernanza de Datos{regulaciones.qmd#CELEX:32022R0868}
-    - R(UE) 2023/2854. Ley de Datos (*Data Act*){regulaciones.qmd#CELEX:32023R2854}
+- Infraestructuras
+  - NubeSARA
+:::
+
+## Datos
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
 - Estrategias
   - UE
+    - [Unión de Datos](estrategias.qmd#union-datos)
+- Regulaciones
+  - [Reg(UE) 2022/868](regulaciones.qmd#CELEX:32022R0868). Ley de Gobernanza de Datos.
+  - [Reg(UE) 2023/2854](regulaciones#CELEX:32023R2854). Ley de Datos.
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - UE:
+
+    - Reg(UE) 2023/2854. Ley de Datos (*Data Act*){regulaciones.qmd#CELEX:32023R2854}
+- Estrategias:
+  - UE:
     - Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}
 :::
 
@@ -196,23 +219,12 @@ El vocal titular L. A. Hernández es profesor universitario de Inteligencia Arti
 ## 📋 Marco de referencia
 - Estrategias
   - UE
-    - Estrategia para la innovación de la IA
+    - [Estrategia para la aplicación de la IA](estrategias.qmd#apply-ai)
 - Regulaciones
   - UE
     - [Reglamento UE 2024/1689. Ley de Inteligencia Artificial](regulaciones.qmd#CELEX:32024R1689)
 - Temas
   - 70. Inteligencia artificial
-:::
-
-## Nube
-
-::: {.callout-warning icon="false" collapse="true"}
-## 🥇Temática candidata N1
-La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
-:::
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Infraestructuras
-  - NubeSARA
+- Referencias
+  - [Inteligencia artificial](https://digital.gob.es/digitalizacion/areas-interes/inteligencia-artificial). digital.gob.es.
 :::

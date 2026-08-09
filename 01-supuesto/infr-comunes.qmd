@@ -37,45 +37,4 @@ NubeSARA se lleva a cabo en una serie de CPDs disponibles. Hay 3 CPDs: Moncloa (
 
 Cumplen el Tier IV.
 
-El uso de NubeSARA supone unos costes. En la pestaña de [Área de Descagas](https://administracionelectronica.gob.es/ctt/nubesara/descargas) de la entrada en el PAe están disponibles la Tabla de Tarifas del Catálogo de Servicios de NubeSARA.
-
-Con última actualización de 2022, se puede resumir a continuación:
-
-| Recurso | Importe / año |
-| - | - |
-| vCPU | 200 € |
-| 1 GB de memoria secundaria | 30 € |
-| 1 TB de memoria secundaria | 1.500 € |
-| 1 TB de memoria secundaria en backup | 500 € |
-
-Podemos establecer tres tipos de servidores:
-
-Servidor Pequeño (básico, para aplicaciones ligeras o pequeños servicios web)
-
-vCPU: 2 → 400 €
-RAM: 4 GB → 120 €
-Almacenamiento: 500 GB (0.5 TB) → 750 €
-Total: 1.270 €/año
-
-Servidor Mediano (para aplicaciones empresariales, backend, bases de datos medianas)
-
-vCPU: 4 → 800 €
-RAM: 8 GB → 240 €
-Almacenamiento: 1 TB → 1.500 €
-Total: 2.540 €/año
-
-| Máquina | Número | Precio | Importe |
-| - | - | - | - |
-| vCPU | 4 | 200 (ud.) | 800 |
-| RAM | 8 GB | 30 (1 GB) | 240 |
-| Mem. sec. | 1 TB | 1.500 (1 TB) | 1.500 |
-| TOTAL | - | - | 2.540 |
-
-Servidor Grande (para grandes bases de datos, aplicaciones con alta carga)
-
-vCPU: 8 → 1.600 €
-RAM: 16 GB → 480 €
-Almacenamiento: 2 TB → 3.000 €
-Total: 5.080 €/año
-
 ## Servicio de seguridad gestionada

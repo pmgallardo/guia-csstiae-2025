@@ -40,7 +40,6 @@ El presidente suplente del Tribunal trabaja en el Ministerio de Justicia desde 2
   - Ley Orgánica 10/1995, Código penal
 - ODS
   - 16. Paz, justicia e instituciones sólidas 
-
 :::
 
 ## Seguridad Social
@@ -68,7 +67,7 @@ El art. 41 de la Constitución establece que:
 ## 📋 Marco de referencia
 - CE
   - Art. 50. Protección de la tercera edad
-###
+:::
 
 El art. 50 de la Constitución establece que:
 
@@ -239,8 +238,8 @@ La vocal titular A. Iglesias trabaja en el TURESPAÑA del Ministerio de Industri
 - Estadísticas
   - FRONTUR (Estadísticas de movimientos turísticos de frontera)
   - EGATUR (Encuesta de gasto turístico)
-
 :::
+
 | Estadística | Fecha | Valor aprox. | Valor exacto | Fuente |
 | - | - | - | - | - |
 | Turistas recibidos | Jun-2026 | 10 M€ | 9.746.490 € | [Estadística de movimientos turísticos en frontera (FRONTUR)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176996&menu=ultiDatos&idp=1254735576863) |

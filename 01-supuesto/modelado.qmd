@@ -9,6 +9,7 @@
 - Temas
   - 88. Análisis de sistemas y metodologías ágiles 
 - Referencias
+  - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es). PAe.
   - Cillero, Manuel. [Casos de uso en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/casos-de-uso/).
 :::
 

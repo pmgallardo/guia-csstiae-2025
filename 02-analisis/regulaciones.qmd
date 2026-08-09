@@ -9,30 +9,35 @@ Por convenio, se refieren las regulaciones europeas y españolas de la siguiente
 
 ELI (*European Legislation Identifier*) es un identificador único para la legislación europea y nacional que ha sido adoptado también por España.
 
-Abreviaturas usadas para cada tipo de regulación:
+Abreviaturas usadas para cada tipo de regulación, de acuerdo al ELI:
 
 | Ámbito | Abrev. | Significado |
-| - | - |
-| UE | R | Reglamento |
-| UE | D | Directiva |
+| - | - | - |
+| UE | Reg | Reglamento |
+| UE | Dir | Directiva |
 | ES | LO | Ley Orgánica |
 | ES | L | Ley |
 | ES | RDL | Real Decreto-Ley |
-| ES | RDLeg | Real Decreto Legislativo |
+| ES | RDLg | Real Decreto Legislativo |
 
 ## Marco normativo europeo
 
 A partir de 2015 se cambió la numeración de las normativas, poniendo primero el año y después el número de la normativa.
 
-### R(UE) 910/2014. eIDAS {#CELEX:32014R0910}
+<!-- ### Reg(UE) 910/2014. eIDAS {#CELEX:32014R0910}
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+eIDAS fue sustituido por eIDAS 2 en 2025.
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
   - [R(UE) 910/2014 en EUR-Lex](https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es)
-:::
+::: -->
 
-### R(UE) 2016/679. RGPD {#CELEX:32016R0679}
+### Reg(UE) 2016/679. RGPD {#CELEX:32016R0679}
 
 R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
 
@@ -43,11 +48,11 @@ R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
   - <https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html>{target="_blank"}
 :::
 
-### R (UE) 2021/241
+### Reg(UE) 2021/241
 
 Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026.
 
-### R(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
+### Reg(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -55,7 +60,7 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
     - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/reg/2021/694/oj){target="_blank"}
 :::
 
-### R(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
+### Reg(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -63,7 +68,7 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
   - [R(UE) 2022/868 en EUR-Lex](http://data.europa.eu/eli/reg/2022/868/oj?locale=es){target="_blank"}
 :::
 
-### R(UE) 2023/2854. Ley de Datos {#CELEX:32023R2854}
+### Reg(UE) 2023/2854. Ley de Datos {#CELEX:32023R2854}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -73,20 +78,28 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
 
 Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por productos y servicios conectados, y establece normas para la portabilidad de datos y la interoperabilidad.
 
-### R (UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI) {#CELEX:32024R0903}
+### Reg(UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI) {#CELEX:32024R0903}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
-  - [R(UE) 2024/903 en EUR-Lex](http://data.europa.eu/eli/reg/2024/903/oj){target="_blank"}
+  - [R(UE) 2024/903 en EUR-Lex](http://data.europa.eu/eli/reg/2024/903/oj?locale=es){target="_blank"}
 :::
 
-### R(UE) 2024/1689. Ley de Inteligencia Artificial {#CELEX:32024R1689}
+### Reg(EU) 2024/1183. eIDAS 2 {#CELEX:32024R1183}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [R(UE) 2024/1183 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1183/oj?locale=es){target="_blank"}
+:::
+
+### Reg(UE) 2024/1689. Ley de Inteligencia Artificial {#CELEX:32024R1689}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 Referencias
- - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj){target="_blank"}
+ - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj?locale=es){target="_blank"}
 :::
 
 ## Marco normativo español
@@ -111,6 +124,14 @@ Frase plantilla para el ENI:
 ## 📋 Marco de referencia
 - Referencias:
   - [L 19/2013 en BOE](https://www.boe.es/eli/es/l/2013/12/09/19/con){target="_blank"}
+:::
+
+## RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP) {#BOE-A-2015-11719}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [RDLg 5/2015 en BOE](https://www.boe.es/eli/es/rdlg/2015/10/30/5/con)
 :::
 
 ### RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos {#BOE-A-2015-8048}
@@ -153,6 +174,7 @@ Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GD
 
 ### RDL 36/2020 (PRTR) {#BOE-A-2020-17340}
 
+::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
   - <https://www.boe.es/eli/es/lo/2018/12/05/3/con>{target="_blank"}

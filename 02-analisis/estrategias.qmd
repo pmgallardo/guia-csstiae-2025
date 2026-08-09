@@ -44,6 +44,7 @@ Está compuesta por 17 Objetivos de Desarrollo Sostenible (ODS) con 169 metas:
 
 ### Segunda Agenda Digital / Década Digital de Europa {#Década-Digital-de-Europa}
 
+::: {.callout-note icon="false"}
 ## 📋Marco de referencia
 - Referencias
   - [La Década Digital de Europa](https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade){target="_blank"}
@@ -74,8 +75,8 @@ El Programa Europa Digital (2021-2027), introducido en el R(UE) 2021/694, es un 
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
-Este tema está obsoleto desde agosto 2026. 
-##
+Este plan está obsoleto desde agosto 2026. 
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -97,9 +98,34 @@ En mayo de 2026 la Comisión emitió sus instrucciones para el cierre en el C/20
 
 Se postulan como herederos del MRR los futuros Planes Nacionales y Regionales de Asociación (*National and Regional Partnership Plans*, NRPP) y el Fondo Europe de Competividad (*European Competitiveness Fund*, ECF), ambos propuestos para 2028.
 
-### Estrategia Europea del Dato {#Estrategia-Europea-del-Dato}
+### Estrategia Europea de Unión de Datos {#union-datos}
 
-### Brújula para la Competividad
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Referencias
+  - [Estrategia de la Unión Europea de Datos](https://digital-strategy.ec.europa.eu/es/policies/data-union)
+  - [La Estrategia Unión de Datos: el nuevo impulso europeo para la economía del dato y la IA](https://datos.gob.es/es/noticias/la-estrategia-union-de-datos-el-nuevo-impulso-europeo-para-la-economia-del-dato-y-la-ia). datos.gob.es. 21/01/2026.
+:::
+
+La estrategia Unión de Datos (*data union*) de la UE fue emitida en noviembre de 2025.
+
+Se fundamenta en 3 pilares:
+
+1. Ampliar el acceso a datos de calidad para la IA y la innovación
+2. Simplificación normativa
+3. Protección de la soberanía del dato europeo
+
+### Estrategia para la Aplicación de la IA {#apply-ai}
+
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Referencias:
+  - [Mantener a la industria y la ciencia europeas a la vanguardia de la IA](https://commission.europa.eu/news-and-media/news/keeping-european-industry-and-science-forefront-ai-2025-10-08_en?prefLang=es&etrans=es). Comisión Europea, 08/10/2025.
+:::
+
+La Estrategia para la Aplicación de la IA (*Apply AI Strategy*) es una estrategia que fue lanzada en 2025.
+
+### Brújula para la Competividad {#brujula-competitividad}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -115,11 +141,11 @@ Está basada en las **necesidades** identificadas en el informe Draghi sobre el 
 2. **Descarbonizar** la economía
 3. Reducir **dependencias**
 
-En innovación, se destaca la Estrategia para la Innovación de la IA.
+En innovación, se destaca la Estrategia para la Aplicación de la IA.
 
 Para la descarbonización, se destaca el Pacto por una Industria Limpia.
 
-**Facilitadores horizontales** para aumentar la competividad:
+**Facilitadores horizontales** para aumentar la competividad en la UE:
 
 1. Reducción de la **burocracia**
 2. Eliminación de obstáculos del **mercado interior**
@@ -127,17 +153,19 @@ Para la descarbonización, se destaca el Pacto por una Industria Limpia.
 4. Promoción de **competencias y empleos de calidad**
 5. Garantizar una **mejor coordinación**
 
-### Estrategia para la Innovación de la IA
+### Pacto por una Industria Limpia {#pacto-industria-limpia}
 
-<https://commission.europa.eu/news-and-media/news/keeping-european-industry-and-science-forefront-ai-2025-10-08_en?prefLang=es>
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Referencias:
+  - [Pacto por una Industria Limpia](https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_es).
+:::
 
-### Pacto por una Industria Limpia
-
-Vigente desde febrero 2025
+Vigente desde febrero 2025.
 
 ## Estrategias españolas
 
-### Plan España Digital {#Plan-España-Digital}
+### Plan España Digital {#plan-españa-digital}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -145,7 +173,7 @@ Vigente desde febrero 2025
   - <https://runmodule.com/2027/07/27/plan-espana-digital/>{target="_blank"}
 :::
 
-### Estrategia Nacional de Seguridad {#ENS}
+### Estrategia Nacional de Seguridad {#ens}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -153,30 +181,102 @@ Vigente desde febrero 2025
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
-### Plan de Transformación Digital de la Administración General del Estado y sus Organismos Públicos (Estrategia TIC)  
+### Planes de Digitalización de la AGE
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Marco normativo
-  - 
+- Referencias
+  - [Plan de Transformación Digital de la AGE y sus OOPP 2015-2020](https://administracionelectronica.gob.es/dam/jcr:898162f1-2682-483e-9e43-50f2d3a08eff/20151002-Plan-transformacion-digital-age-oopp.pdf)
+  - [Plan de Digitalización de la AGE 2021-2025](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Plan_Digitalizacion_AAPP.html)
 :::
+
+Hubo dos planes de digitalización de la AGE
+- [Plan de Transformación Digital de la AGE y sus OOPP 2015-2020](https://administracionelectronica.gob.es/dam/jcr:898162f1-2682-483e-9e43-50f2d3a08eff/20151002-Plan-transformacion-digital-age-oopp.pdf)
+- [Plan de Digitalización de la AGE 2021-2025](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Plan_Digitalizacion_AAPP.html)
+
+### Plan de Transformación Digital de la AGE y sus OOPP 2015-2020
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+Este plan dejó de estar vigente en 2021. 
+:::
+
+### Plan de Digitalización de la AGE 2021-2025 {#pdage2021}
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+Este plan dejó de estar vigente en 2026. 
+:::
+
+## Agendas España Digital
+
+### España Digital 2025
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+La agenda España Digital 2025 dejó de estar vigente.
+:::
+
+### España Digital 2026
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+España Digital 2026 tiene vigencia hasta el 31/12/2026, pero casi todas sus planes y estrategias están exintos.
+:::
+
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Organismos:
+  - Min. Transformación Digital y de la Función Pública
+- Referencias:
+  - [España Digital](https://espanadigital.gob.es/)
+  - <https://runmodule.com/2027/07/27/plan-espana-digital/>
+:::
+
+España Digital 2026 fue una actualización de España Digital 2025, con motivo de alinear los plazos con los del PRTR.
+
+Cuenta con los siguientes ejes:
+
+1. Conectividad digital
+2. Impulos a la tecnología 5G
+3. Ciberseguridad
+4. Econonomía del Dato e Ingeligencia Artificial
+5. Transformación digital del Sector Público
+6. Transformación digital de la empresa y emprendimiento digital
+7. España, hub audiovisual
+8. Transformación digital sectorial y sostenible
+9. Competencias digitales
+10. Derechos digitales
+11. PERTE: Proyectos Estratégicos para la Recuperación y Transformación Económica
+12. RETECH: Redes Territoriales de Especialización Tecnológica
+
+Planes y estrategias de la agenda España Digital 2026:
+
+- Plan para la Conectividad y las Infraestructuras Digitales
+- Estrategia de impulso de tecnología 5G
+- Plan Nacional de Competencias Digitales
+- Plan Nacional de Ciberseguridad *(extinta)*
+- [Plan de digitalización de las Administraciones Públicas](#pdage2021) *(extinto)*
+- Plan de impulso de digitalización de pymes 2021-2025 *(extinto)*
+- Plan España Hub Audiovisual de Europa
+- [Estrategia Nacional de Inteligencia Artificial (ENIA)](#enia) *(extinta)*
 
 ### Plan de Recuperación, Transformación y Resiliencia (PRTR) {#PRTR}
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
-Este tema está obsoleto desde agosto 2026. 
-##
+No se permite la ejecución de inversiones e hitos financiados con el Mecanismo de Recuperación y Resiliencia (MRR) después de 31/08/2026, por lo que finalizaría el PRTR. 
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
-- Regulaciones
-  - UE
+- Regulaciones:
+  - UE:
     - [Reglamento (UE) 2021/241](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32021R0241){target="_blank"}: PRTR justicia, función pública, régimen local y mecenazgo
-  - España
+  - ES:
     - [RDL 36/2020](regulaciones.qmd#BOE-A-2020-17340): Modernización AAPP y PRTR
     - [RDL 6/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-25758){target="_blank"}: PRTR justicia, función pública, régimen local y mecenazgo
-- Referencias
+- Referencias:
   - Gobierno de España; "[Plan de Recuperación, Transformación y Resiliencia](https://planderecuperacion.gob.es/){target="_blank"}"; Gobierno de España
   - <https://runmodule.com/2027/06/15/plan-de-recuperacion-transformacion-y-resiliencia/>{target="_blank"}
 :::
@@ -185,9 +285,26 @@ El Plan de Recuperación, Transformación y Resiliencia (PRTR) fue un plan nacio
 
 Estas ayudas se canalizaron en España a través del Plan de Recuperación, Transformación y Resiliencia (PRTR), que se promulgó a través del Real Decreto-Ley 36/2020.
 
-La duración del PRTR fue de 2021 a 2026. Estaba compuesta por 10 palancas y 31 
+La duración del PRTR fue de 2021 a 2026. Estaba compuesta por 10 palancas y 31 componentes.
 
 El Gobierno aprobó el 28/07/2026 la Adenda de Cierre del PRTR, señalando expresamente el 31/08/2026 como fecha límite para la ejecución de estos fondos y cumplir actuaciones del MRR.
+
+## Estrategia Nacional de Inteligencia Artificial (ENIA) {#enia}
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+La ENIA dejó de estar vigente en 2026. 
+:::
+
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Referencias
+  - <https://planderecuperacion.gob.es/noticias/conoce-Estrategia-Nacional-Inteligencia-Artificial-ENIA-IA-prtr>
+:::
+
+Tuvo vigencia entre 2020 y 2025.
+
+La ENIA es una hoja de ruta que vertebra 6 ejes y 30 actuaciones orientadas al desarrollo de la IA.
 
 ## Fondo España Crece
 
@@ -197,4 +314,4 @@ El Gobierno aprobó el 28/07/2026 la Adenda de Cierre del PRTR, señalando expre
   - [El Gobierno pone en marcha la inyección de 13.300 millones al ICO para activar el fondo España Crece](https://portal.mineco.gob.es/es-es/comunicacion/Paginas/El-Gobierno-pone-marcha-inyeccion-de-13.300-millones-al-ICO-para-activar-fondo-Espana-Crece.aspx), Ministerio de Economía, Comercio y Empresa, 19/05/2026.
 :::
 
-El fondo España Crece fue aprobado en diciembre 2025 y prolonga sin límite temporal el impulso inversor del PRTR.
+El fondo España Crece fue aprobado en diciembre 2025 y prolonga sin límite temporal el impulso inversor del PRTR. Parece orientado a financiación de pymes.
