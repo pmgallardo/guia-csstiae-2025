@@ -1,0 +1,3750 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Análisis pormenorizado – Guía CSSTIAE 2025</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../03-practico/03-volcado/index.html" rel="next">
+<link href="../../03-practico/01-supuesto/index.html" rel="prev">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1b15cd7dfe5d645daabccee077c4b062.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../03-practico/00-gen/index.html">Ejercicio práctico</a></li><li class="breadcrumb-item"><a href="../../03-practico/02-analisis/index.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Guía CSSTIAE 2025</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/csstiae-2025-prac" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Inscripción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01-inscripcion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inscripción</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio de test</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02-test/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ejercicio de test</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio práctico</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/00-gen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ejercicio práctico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/01-supuesto/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/02-analisis/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/03-volcado/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Volcado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/04-lectura/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lectura</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio de inglés</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04-ingles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ejercicio de inglés</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Selección</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05-seleccion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Selección</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Elección</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06-eleccion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Elección</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-del-análisis-pormenorizado" id="toc-descripción-del-análisis-pormenorizado" class="nav-link active" data-scroll-target="#descripción-del-análisis-pormenorizado"><span class="header-section-number">5.1</span> Descripción del análisis pormenorizado</a>
+  <ul class="collapse">
+  <li><a href="#enunciado-del-análisis-pormenorizado" id="toc-enunciado-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#enunciado-del-análisis-pormenorizado"><span class="header-section-number">5.1.1</span> Enunciado del análisis pormenorizado</a></li>
+  <li><a href="#desarrollo-del-análisis-pormenorizado" id="toc-desarrollo-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#desarrollo-del-análisis-pormenorizado"><span class="header-section-number">5.1.2</span> Desarrollo del análisis pormenorizado</a></li>
+  <li><a href="#valoración-del-análisis-pormenorizado" id="toc-valoración-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#valoración-del-análisis-pormenorizado"><span class="header-section-number">5.1.3</span> Valoración del análisis pormenorizado</a></li>
+  </ul></li>
+  <li><a href="#organismos" id="toc-organismos" class="nav-link" data-scroll-target="#organismos"><span class="header-section-number">5.2</span> Organismos</a>
+  <ul class="collapse">
+  <li><a href="#organismos-internacionales" id="toc-organismos-internacionales" class="nav-link" data-scroll-target="#organismos-internacionales"><span class="header-section-number">5.2.1</span> Organismos internacionales</a></li>
+  <li><a href="#organismos-europeos" id="toc-organismos-europeos" class="nav-link" data-scroll-target="#organismos-europeos"><span class="header-section-number">5.2.2</span> Organismos europeos</a></li>
+  <li><a href="#organismos-españoles" id="toc-organismos-españoles" class="nav-link" data-scroll-target="#organismos-españoles"><span class="header-section-number">5.2.3</span> Organismos españoles</a></li>
+  </ul></li>
+  <li><a href="#estadísticas" id="toc-estadísticas" class="nav-link" data-scroll-target="#estadísticas"><span class="header-section-number">5.3</span> Estadísticas</a>
+  <ul class="collapse">
+  <li><a href="#portales-de-estadísticas" id="toc-portales-de-estadísticas" class="nav-link" data-scroll-target="#portales-de-estadísticas"><span class="header-section-number">5.3.1</span> Portales de estadísticas</a></li>
+  </ul></li>
+  <li><a href="#indicadores" id="toc-indicadores" class="nav-link" data-scroll-target="#indicadores"><span class="header-section-number">5.4</span> Indicadores</a>
+  <ul class="collapse">
+  <li><a href="#evgvd" id="toc-evgvd" class="nav-link" data-scroll-target="#evgvd"><span class="header-section-number">5.4.1</span> EVGVD</a></li>
+  <li><a href="#epa" id="toc-epa" class="nav-link" data-scroll-target="#epa"><span class="header-section-number">5.4.2</span> EPA</a></li>
+  </ul></li>
+  <li><a href="#estrategias" id="toc-estrategias" class="nav-link" data-scroll-target="#estrategias"><span class="header-section-number">5.5</span> Estrategias</a>
+  <ul class="collapse">
+  <li><a href="#estrategias-internacionales" id="toc-estrategias-internacionales" class="nav-link" data-scroll-target="#estrategias-internacionales"><span class="header-section-number">5.5.1</span> Estrategias internacionales</a></li>
+  <li><a href="#estrategias-europeas" id="toc-estrategias-europeas" class="nav-link" data-scroll-target="#estrategias-europeas"><span class="header-section-number">5.5.2</span> Estrategias europeas</a></li>
+  <li><a href="#estrategias-españolas" id="toc-estrategias-españolas" class="nav-link" data-scroll-target="#estrategias-españolas"><span class="header-section-number">5.5.3</span> Estrategias españolas</a></li>
+  <li><a href="#agendas-españa-digital" id="toc-agendas-españa-digital" class="nav-link" data-scroll-target="#agendas-españa-digital"><span class="header-section-number">5.5.4</span> Agendas España Digital</a></li>
+  <li><a href="#enia" id="toc-enia" class="nav-link" data-scroll-target="#enia"><span class="header-section-number">5.5.5</span> Estrategia Nacional de Inteligencia Artificial (ENIA)</a></li>
+  <li><a href="#fondo-españa-crece" id="toc-fondo-españa-crece" class="nav-link" data-scroll-target="#fondo-españa-crece"><span class="header-section-number">5.5.6</span> Fondo España Crece</a></li>
+  </ul></li>
+  <li><a href="#marco-normativo" id="toc-marco-normativo" class="nav-link" data-scroll-target="#marco-normativo"><span class="header-section-number">5.6</span> Marco normativo</a>
+  <ul class="collapse">
+  <li><a href="#marco-normativo-europeo" id="toc-marco-normativo-europeo" class="nav-link" data-scroll-target="#marco-normativo-europeo"><span class="header-section-number">5.6.1</span> Marco normativo europeo</a></li>
+  <li><a href="#marco-normativo-español" id="toc-marco-normativo-español" class="nav-link" data-scroll-target="#marco-normativo-español"><span class="header-section-number">5.6.2</span> Marco normativo español</a></li>
+  <li><a href="#BOE-A-2015-11719" id="toc-BOE-A-2015-11719" class="nav-link" data-scroll-target="#BOE-A-2015-11719"><span class="header-section-number">5.6.3</span> RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP)</a></li>
+  </ul></li>
+  <li><a href="#iniciativas" id="toc-iniciativas" class="nav-link" data-scroll-target="#iniciativas"><span class="header-section-number">5.7</span> Iniciativas</a>
+  <ul class="collapse">
+  <li><a href="#iniciativas-españolas" id="toc-iniciativas-españolas" class="nav-link" data-scroll-target="#iniciativas-españolas"><span class="header-section-number">5.7.1</span> Iniciativas españolas</a></li>
+  </ul></li>
+  <li><a href="#temáticas-transversales" id="toc-temáticas-transversales" class="nav-link" data-scroll-target="#temáticas-transversales"><span class="header-section-number">5.8</span> Temáticas transversales</a>
+  <ul class="collapse">
+  <li><a href="#relaciones-con-las-aapp" id="toc-relaciones-con-las-aapp" class="nav-link" data-scroll-target="#relaciones-con-las-aapp"><span class="header-section-number">5.8.1</span> Relaciones con las AAPP</a></li>
+  <li><a href="#funcionamiento-de-las-aapp" id="toc-funcionamiento-de-las-aapp" class="nav-link" data-scroll-target="#funcionamiento-de-las-aapp"><span class="header-section-number">5.8.2</span> Funcionamiento de las AAPP</a></li>
+  <li><a href="#administración-digital" id="toc-administración-digital" class="nav-link" data-scroll-target="#administración-digital"><span class="header-section-number">5.8.3</span> Administración digital</a></li>
+  <li><a href="#interoperabilidad-análisis-pormenorizado" id="toc-interoperabilidad-análisis-pormenorizado" class="nav-link" data-scroll-target="#interoperabilidad-análisis-pormenorizado"><span class="header-section-number">5.8.4</span> Interoperabilidad (análisis pormenorizado)</a></li>
+  <li><a href="#participación-ciudadana" id="toc-participación-ciudadana" class="nav-link" data-scroll-target="#participación-ciudadana"><span class="header-section-number">5.8.5</span> Participación ciudadana</a></li>
+  <li><a href="#transparencia" id="toc-transparencia" class="nav-link" data-scroll-target="#transparencia"><span class="header-section-number">5.8.6</span> Transparencia</a></li>
+  <li><a href="#accesibilidad-análisis-pormenorizado" id="toc-accesibilidad-análisis-pormenorizado" class="nav-link" data-scroll-target="#accesibilidad-análisis-pormenorizado"><span class="header-section-number">5.8.7</span> Accesibilidad (análisis pormenorizado)</a></li>
+  <li><a href="#protección-de-datos" id="toc-protección-de-datos" class="nav-link" data-scroll-target="#protección-de-datos"><span class="header-section-number">5.8.8</span> Protección de datos</a></li>
+  <li><a href="#seguridad-de-la-información" id="toc-seguridad-de-la-información" class="nav-link" data-scroll-target="#seguridad-de-la-información"><span class="header-section-number">5.8.9</span> Seguridad de la información</a></li>
+  <li><a href="#identificación-electrónica" id="toc-identificación-electrónica" class="nav-link" data-scroll-target="#identificación-electrónica"><span class="header-section-number">5.8.10</span> Identificación electrónica</a></li>
+  <li><a href="#nube" id="toc-nube" class="nav-link" data-scroll-target="#nube"><span class="header-section-number">5.8.11</span> Nube</a></li>
+  <li><a href="#datos" id="toc-datos" class="nav-link" data-scroll-target="#datos"><span class="header-section-number">5.8.12</span> Datos</a></li>
+  <li><a href="#inteligencia-artificial" id="toc-inteligencia-artificial" class="nav-link" data-scroll-target="#inteligencia-artificial"><span class="header-section-number">5.8.13</span> Inteligencia artificial</a></li>
+  </ul></li>
+  <li><a href="#temáticas-específicas" id="toc-temáticas-específicas" class="nav-link" data-scroll-target="#temáticas-específicas"><span class="header-section-number">5.9</span> Temáticas específicas</a>
+  <ul class="collapse">
+  <li><a href="#temas-relacionados-con-el-tribunal-de-la-convocatoria-2025" id="toc-temas-relacionados-con-el-tribunal-de-la-convocatoria-2025" class="nav-link" data-scroll-target="#temas-relacionados-con-el-tribunal-de-la-convocatoria-2025"><span class="header-section-number">5.9.1</span> Temas relacionados con el Tribunal de la convocatoria 2025</a></li>
+  <li><a href="#justicia" id="toc-justicia" class="nav-link" data-scroll-target="#justicia"><span class="header-section-number">5.9.2</span> Justicia</a></li>
+  <li><a href="#seguridad-social" id="toc-seguridad-social" class="nav-link" data-scroll-target="#seguridad-social"><span class="header-section-number">5.9.3</span> Seguridad Social</a></li>
+  <li><a href="#pensiones-tercera-edad" id="toc-pensiones-tercera-edad" class="nav-link" data-scroll-target="#pensiones-tercera-edad"><span class="header-section-number">5.9.4</span> Pensiones / Tercera Edad</a></li>
+  <li><a href="#hacienda" id="toc-hacienda" class="nav-link" data-scroll-target="#hacienda"><span class="header-section-number">5.9.5</span> Hacienda</a></li>
+  <li><a href="#presupuestación-análisis-pormenorizado" id="toc-presupuestación-análisis-pormenorizado" class="nav-link" data-scroll-target="#presupuestación-análisis-pormenorizado"><span class="header-section-number">5.9.6</span> Presupuestación (análisis pormenorizado)</a></li>
+  <li><a href="#consumo-atención-al-usuario" id="toc-consumo-atención-al-usuario" class="nav-link" data-scroll-target="#consumo-atención-al-usuario"><span class="header-section-number">5.9.7</span> Consumo / Atención al usuario</a></li>
+  <li><a href="#casa-real" id="toc-casa-real" class="nav-link" data-scroll-target="#casa-real"><span class="header-section-number">5.9.8</span> Casa Real</a></li>
+  <li><a href="#industria" id="toc-industria" class="nav-link" data-scroll-target="#industria"><span class="header-section-number">5.9.9</span> Industria</a></li>
+  <li><a href="#comercio" id="toc-comercio" class="nav-link" data-scroll-target="#comercio"><span class="header-section-number">5.9.10</span> Comercio</a></li>
+  <li><a href="#españoles-en-el-extranjero" id="toc-españoles-en-el-extranjero" class="nav-link" data-scroll-target="#españoles-en-el-extranjero"><span class="header-section-number">5.9.11</span> Españoles en el extranjero</a></li>
+  <li><a href="#turismo" id="toc-turismo" class="nav-link" data-scroll-target="#turismo"><span class="header-section-number">5.9.12</span> Turismo</a></li>
+  <li><a href="#demografía" id="toc-demografía" class="nav-link" data-scroll-target="#demografía"><span class="header-section-number">5.9.13</span> Demografía</a></li>
+  <li><a href="#migración" id="toc-migración" class="nav-link" data-scroll-target="#migración"><span class="header-section-number">5.9.14</span> Migración</a></li>
+  <li><a href="#empleo" id="toc-empleo" class="nav-link" data-scroll-target="#empleo"><span class="header-section-number">5.9.15</span> Empleo</a></li>
+  <li><a href="#sanidad" id="toc-sanidad" class="nav-link" data-scroll-target="#sanidad"><span class="header-section-number">5.9.16</span> Sanidad</a></li>
+  <li><a href="#función-pública" id="toc-función-pública" class="nav-link" data-scroll-target="#función-pública"><span class="header-section-number">5.9.17</span> Función pública</a></li>
+  <li><a href="#igualdad-social" id="toc-igualdad-social" class="nav-link" data-scroll-target="#igualdad-social"><span class="header-section-number">5.9.18</span> Igualdad social</a></li>
+  <li><a href="#violencia-de-género" id="toc-violencia-de-género" class="nav-link" data-scroll-target="#violencia-de-género"><span class="header-section-number">5.9.19</span> Violencia de género</a></li>
+  <li><a href="#educación" id="toc-educación" class="nav-link" data-scroll-target="#educación"><span class="header-section-number">5.9.20</span> Educación</a></li>
+  </ul></li>
+  <li><a href="#emergencias" id="toc-emergencias" class="nav-link" data-scroll-target="#emergencias"><span class="header-section-number">5.10</span> Emergencias</a>
+  <ul class="collapse">
+  <li><a href="#juventud" id="toc-juventud" class="nav-link" data-scroll-target="#juventud"><span class="header-section-number">5.10.1</span> Juventud</a></li>
+  <li><a href="#medio-ambiente" id="toc-medio-ambiente" class="nav-link" data-scroll-target="#medio-ambiente"><span class="header-section-number">5.10.2</span> Medio ambiente</a></li>
+  <li><a href="#energía" id="toc-energía" class="nav-link" data-scroll-target="#energía"><span class="header-section-number">5.10.3</span> Energía</a></li>
+  <li><a href="#telecomunicaciones" id="toc-telecomunicaciones" class="nav-link" data-scroll-target="#telecomunicaciones"><span class="header-section-number">5.10.4</span> Telecomunicaciones</a></li>
+  <li><a href="#investigacion-e-innovación" id="toc-investigacion-e-innovación" class="nav-link" data-scroll-target="#investigacion-e-innovación"><span class="header-section-number">5.10.5</span> Investigacion e innovación</a></li>
+  <li><a href="#subvenciones" id="toc-subvenciones" class="nav-link" data-scroll-target="#subvenciones"><span class="header-section-number">5.10.6</span> Subvenciones</a></li>
+  <li><a href="#cooperación" id="toc-cooperación" class="nav-link" data-scroll-target="#cooperación"><span class="header-section-number">5.10.7</span> Cooperación</a></li>
+  <li><a href="#exteriores" id="toc-exteriores" class="nav-link" data-scroll-target="#exteriores"><span class="header-section-number">5.10.8</span> Exteriores</a></li>
+  <li><a href="#cnmc" id="toc-cnmc" class="nav-link" data-scroll-target="#cnmc"><span class="header-section-number">5.10.9</span> CNMC</a></li>
+  <li><a href="#propiedad-intelectual" id="toc-propiedad-intelectual" class="nav-link" data-scroll-target="#propiedad-intelectual"><span class="header-section-number">5.10.10</span> Propiedad intelectual</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/03-practico/02-analisis/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/03-practico/02-analisis/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../03-practico/00-gen/index.html">Ejercicio práctico</a></li><li class="breadcrumb-item"><a href="../../03-practico/02-analisis/index.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="descripción-del-análisis-pormenorizado" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="descripción-del-análisis-pormenorizado"><span class="header-section-number">5.1</span> Descripción del análisis pormenorizado</h2>
+<p>Este documento es un resumen de información relevante para la preparación del análisis pormenorizado del ejercicio práctico, conocido como también como informe práctico hasta la convocatoria 2023.</p>
+<section id="enunciado-del-análisis-pormenorizado" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="enunciado-del-análisis-pormenorizado"><span class="header-section-number">5.1.1</span> Enunciado del análisis pormenorizado</h3>
+<p>El análisis pormenorizado consta de un enunciado sencillo en el cual se pide describir el sistema desarrollado en el supuesto práctico y enmarcarlo</p>
+<p>Para la realización del análisis pormenorizado el candidato conserva las hojas del enunciado del supuesto ya realizado, siempre y cuando no se hayan escrito notas sobre el mismo. Sin embargo, no podrá consultar las hojas de respuesta o de sucio escritas, pues estas habrán sido guardadas en un sobre al finalizar la parte anterior.</p>
+</section>
+<section id="desarrollo-del-análisis-pormenorizado" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="desarrollo-del-análisis-pormenorizado"><span class="header-section-number">5.1.2</span> Desarrollo del análisis pormenorizado</h3>
+<p>El análisis pormenorizado está pensado para ir dirigido a una persona de un órgano ejecutivo, por lo que no debe entrar en mucho detalle técnico.</p>
+<section id="estructura-del-análisis-pormenorizado" class="level4" data-number="5.1.2.1">
+<h4 data-number="5.1.2.1" class="anchored" data-anchor-id="estructura-del-análisis-pormenorizado"><span class="header-section-number">5.1.2.1</span> Estructura del análisis pormenorizado</h4>
+<p>En análisis pormenorizado no tiene una estructura fija, sino que cada candidato puede plantearla como mejor convenga.</p>
+<p>A modo de guía, se sugiere una posible estructura:</p>
+<ol type="1">
+<li><strong>Descripción</strong> introductoria del <strong>sistema</strong> en alto nivel</li>
+<li><strong>Contexto</strong>, con métricas, indicadores y <strong>estadísticas</strong></li>
+<li><strong>Iniciativas</strong> nacionales y europeas que afectan a la AGE y con las que se entronca el sistema</li>
+<li><strong>Marco normativo</strong>, o contexto legal.</li>
+<li><strong>Organismos</strong> con los que está relacionado el sistema.</li>
+<li><strong>Conclusión</strong>, incluyendo beneficios y bondades</li>
+</ol>
+</section>
+<section id="preparación-del-análisis-pormenorizado" class="level4" data-number="5.1.2.2">
+<h4 data-number="5.1.2.2" class="anchored" data-anchor-id="preparación-del-análisis-pormenorizado"><span class="header-section-number">5.1.2.2</span> Preparación del análisis pormenorizado</h4>
+<p>Antes de comenzar a escribir es recomendable realizan en papel en sucio un esquema general del análisis junto con los conceptos (estadísticas, iniciativas, organimos o regulaciones) que se pretendan añadir. Esto ouede servir como referencia a la hora de escribir, asegurando que hay un discurso hilado y que no se olvidan conceptos a incluir.</p>
+<p>En caso de aplicar “plantillazos”, asegurarse que estos encajan correctamente con el sistema y ejercicio y realizar siempre las adaptaciones que sean necesarias.</p>
+</section>
+<section id="consejos-para-el-análisis-pormenorizado" class="level4" data-number="5.1.2.3">
+<h4 data-number="5.1.2.3" class="anchored" data-anchor-id="consejos-para-el-análisis-pormenorizado"><span class="header-section-number">5.1.2.3</span> Consejos para el análisis pormenorizado</h4>
+<p>Consejos generales para el desarrollo del análisis pormenorizado:</p>
+<ul>
+<li>Escribir párrafos bien desarrollados, evitando los listados de viñetas o puntos.</li>
+<li>Un análisis pormenorizado demasiado corto puede penalizar la nota final, por ello se sugiere escribir rápido y produciendo una alta extensión. No obstante, se debe tratar de encontrar un equilibrio entre calidad y cantidad, pues no siempre una mayor extensión es sinónimo de mayor calificación.</li>
+<li>Ser positivo hacia la AGE y evitar discursos críticos contra ella, y en todo caso enfocar las deficiencias detectadas como propuestas de mejora.</li>
+<li>Ser políticamente imparcial y evitar alabar o detractar a gobiernos o grupos políticos concretos.</li>
+<li>Los elogios son mejor recibidos si van dirigidas a comunidades u organismos del sector público sin afinidad política concreta.</li>
+<li>Vigilar los tiempos, de manera que según este finalice el candidato haya podido cerrar el análisis con su conclusión correspondiente, aun cuando esto suponga dejar fuera parte del material planificado.</li>
+</ul>
+</section>
+</section>
+<section id="valoración-del-análisis-pormenorizado" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="valoración-del-análisis-pormenorizado"><span class="header-section-number">5.1.3</span> Valoración del análisis pormenorizado</h3>
+<p>Desde la convocatoria 2023 es necesario obtener al menos la mitad de la nota máxima posible para superar el análisis pormenorizado.</p>
+<p>No se compensa la nota del supuesto práctico con la del análisis pormenorizado, por lo que es necesario aprobar ambas partes por separado.</p>
+<p>La valoración del Tribunal del análisis pormenorizado se realiza tras la lectura por el candidato, y se publica junto con el resto de puntuaciones del ejercicio práctico tras su finalización.</p>
+</section>
+</section>
+<section id="organismos" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="organismos"><span class="header-section-number">5.2</span> Organismos</h2>
+<section id="organismos-internacionales" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="organismos-internacionales"><span class="header-section-number">5.2.1</span> Organismos internacionales</h3>
+</section>
+<section id="organismos-europeos" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="organismos-europeos"><span class="header-section-number">5.2.2</span> Organismos europeos</h3>
+</section>
+<section id="organismos-españoles" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="organismos-españoles"><span class="header-section-number">5.2.3</span> Organismos españoles</h3>
+<section id="órganos-ministeriales" class="level4" data-number="5.2.3.1">
+<h4 data-number="5.2.3.1" class="anchored" data-anchor-id="órganos-ministeriales"><span class="header-section-number">5.2.3.1</span> Órganos ministeriales</h4>
+<p>Ministerios de España en el año 2026:</p>
+<ul>
+<li>Ministerio de Agricultura, Pesca y Alimentación</li>
+<li>Ministerio de Asuntos Exteriores, Unión Europea y Cooperación</li>
+<li>Ministerio de Ciencia, Innovación y Universidades</li>
+<li>Ministerio de Cultura</li>
+<li>Ministerio de Defensa</li>
+<li>Ministerio de Derechos Sociales, Consumo y Agenda 2030</li>
+<li>Ministerio de Economía, Comercio y Empresa</li>
+<li>Ministerio de Educación, Formación Profesional y Deportes</li>
+<li>Ministerio de Hacienda</li>
+<li>Ministerio de Igualdad</li>
+<li>Ministerio de Inclusión, Seguridad Social y Migraciones</li>
+<li>Ministerio de Industria y Turismo</li>
+<li>Ministerio de Juventud e Infancia</li>
+<li>Ministerio de la Presidencia, Justicia y Relaciones con las Cortes</li>
+<li>Ministerio de Política Territorial y Memoria Democrática</li>
+<li>Ministerio de Sanidad</li>
+<li>Ministerio de Trabajo y Economía Social</li>
+<li>Ministerio de Transportes y Movilidad Sostenible</li>
+<li>Ministerio de Vivienda y Agenda Urbana</li>
+<li>Ministerio del Interior</li>
+<li>Ministerio para la Transformación Digital y de la Función Pública</li>
+<li>Ministerio para la Transición Ecológica y el Reto Demográfico</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Nombre</th>
+<th>Acrónimo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.mapa.gob.es/es/">Agricultura, Pesca y Alimentación</a></td>
+<td>MAPA</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.exteriores.gob.es/en/Paginas/index.aspx">Asuntos Exteriores, Unión Europea y Cooperación</a></td>
+<td>Exteriores</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.ciencia.gob.es/en/">Ciencia, Innovación y Universidades</a></td>
+<td>Ciencia</td>
+</tr>
+<tr class="even">
+<td>Cultura</td>
+<td>Cultura</td>
+</tr>
+<tr class="odd">
+<td>Defensa</td>
+<td>Defensa</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.dsca.gob.es/es">Derechos Sociales, Consumo y Agenda 2030</a></td>
+<td>DSCA</td>
+</tr>
+<tr class="odd">
+<td><a href="https://portal.mineco.gob.es">Economía, Comercio y Empresa</a></td>
+<td>MINECO</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.educacionfpydeportes.gob.es/portada.html">Educación, Formación Profesional y Deportes</a></td>
+<td>EPYD</td>
+</tr>
+<tr class="odd">
+<td>Hacienda</td>
+<td>Hacienda</td>
+</tr>
+<tr class="even">
+<td>Igualdad</td>
+<td>Igualdad</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.inclusion.gob.es/">Inclusión, Seguridad Social y Migraciones</a></td>
+<td>Inclusión</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.mintur.gob.es/">Industria y Turismo</a></td>
+<td>MINTUR</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.juventudeinfancia.gob.es/es">Juventud e Infancia</a></td>
+<td>JeI</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.mpr.gob.es/Paginas/index.aspx">Presidencia, Justicia y Relaciones con las Cortes</a></td>
+<td>MPR</td>
+</tr>
+<tr class="odd">
+<td><a href="https://mptmd.gob.es/">Política Territorial y Memoria Democrática</a></td>
+<td>MPTMD</td>
+</tr>
+<tr class="even">
+<td>Sanidad</td>
+<td>Sanidad</td>
+</tr>
+<tr class="odd">
+<td>Trabajo y Economía Social</td>
+<td><a href="https://www.mites.gob.es/">MITES</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.transportes.gob.es/">Transportes y Movilidad Sostenible</a></td>
+<td>Transportes</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.mivau.gob.es/">Vivienda y Agenda Urbana</a></td>
+<td>MIVAU</td>
+</tr>
+<tr class="even">
+<td>Interior</td>
+<td>Interior</td>
+</tr>
+<tr class="odd">
+<td><a href="https://digital.gob.es/">Transformación Digital y de la Función Pública</a></td>
+<td>Digital</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.miteco.gob.es/es.html">Transición Ecológica y el Reto Demográfico</a></td>
+<td>MITECO</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aead-agencia-española-de-administración-digital" class="level4" data-number="5.2.3.2">
+<h4 data-number="5.2.3.2" class="anchored" data-anchor-id="aead-agencia-española-de-administración-digital"><span class="header-section-number">5.2.3.2</span> AEAD (Agencia Española de Administración Digital)</h4>
+<p>La Agencia Española de Administración Digital (AEAD).</p>
+<p>Precede de la Secretaría General de la Administración (SGAD).</p>
+</section>
+</section>
+</section>
+<section id="estadísticas" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="estadísticas"><span class="header-section-number">5.3</span> Estadísticas</h2>
+<section id="portales-de-estadísticas" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="portales-de-estadísticas"><span class="header-section-number">5.3.1</span> Portales de estadísticas</h3>
+<ul>
+<li>UE
+<ul>
+<li>DESI</li>
+</ul></li>
+<li>España
+<ul>
+<li>INE (Instituto Nacional de Estadística)</li>
+<li>OBSAE (Observatorio de Administración Electrónica)</li>
+<li>OAW (Observatorio de Accesibilidad Web)</li>
+</ul></li>
+</ul>
+<section id="desi" class="level4" data-number="5.3.1.1">
+<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="desi"><span class="header-section-number">5.3.1.1</span> DESI</h4>
+<p>El Índice de Economía y Sociedad Digital (<em>Digital Economy and Social Index</em>, DESI) realiza un ranking de los estados miembros de la Unión Europea en función de distintos aspectos relativos a la digitalización</p>
+</section>
+<section id="ine" class="level4" data-number="5.3.1.2">
+<h4 data-number="5.3.1.2" class="anchored" data-anchor-id="ine"><span class="header-section-number">5.3.1.2</span> INE</h4>
+<p>El Instituto Nacional de Estadística (INE) es un organismo que tiene como objetivo compartir estadísticas de interés general para España.</p>
+<p>El INE desarrolla distintos grupos indicadores, entre ellos:</p>
+<ul>
+<li>EVGVD (Estadística de Violencia Doméstica y Violencia de Género)</li>
+<li>EPA (Encuesta de Población Activa)</li>
+</ul>
+</section>
+<section id="obsae" class="level4" data-number="5.3.1.3">
+<h4 data-number="5.3.1.3" class="anchored" data-anchor-id="obsae"><span class="header-section-number">5.3.1.3</span> OBSAE</h4>
+<p>El Observatorio de Administración Electrónica (OBSAE) es un portal con el objetivo de compartir información sobre la Administración Electrónica en las AAPP. Está impulsada por la AEAD.</p>
+<p><a href="https://dataobsae.administracionelectronica.gob.es" target="_blank">OBSAE</a></p>
+</section>
+<section id="oaw" class="level4" data-number="5.3.1.4">
+<h4 data-number="5.3.1.4" class="anchored" data-anchor-id="oaw"><span class="header-section-number">5.3.1.4</span> OAW</h4>
+<p>El Observatorio de Accesibilidad Web (OAW) es…</p>
+<p><a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Observatorio_de_Accesibilidad.html" target="_blank">OAW en el PAe</a></p>
+</section>
+</section>
+</section>
+<section id="indicadores" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="indicadores"><span class="header-section-number">5.4</span> Indicadores</h2>
+<section id="evgvd" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="evgvd"><span class="header-section-number">5.4.1</span> EVGVD</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176866&amp;menu=ultiDatos&amp;idp=1254735573206" target="_blank">EVGVD en el INE</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Estadística de Violencia Doméstica y Violencia de Género (EVGVD) es…</p>
+</section>
+<section id="epa" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="epa"><span class="header-section-number">5.4.2</span> EPA</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176918&amp;menu=ultiDatos&amp;idp=1254735976595" target="_blank">EPA en el INE</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Encuesta de Población Activa (EPA) es…</p>
+</section>
+</section>
+<section id="estrategias" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="estrategias"><span class="header-section-number">5.5</span> Estrategias</h2>
+<section id="estrategias-internacionales" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="estrategias-internacionales"><span class="header-section-number">5.5.1</span> Estrategias internacionales</h3>
+<section id="Agenda-2030" class="level4" data-number="5.5.1.1">
+<h4 data-number="5.5.1.1" class="anchored" data-anchor-id="Agenda-2030"><span class="header-section-number">5.5.1.1</span> Agenda 2030</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/07/30/2030-agenda-for-sustainable-development/" target="_blank">https://runmodule.com/2026/07/30/2030-agenda-for-sustainable-development/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Está compuesta por 5 dimensiones (5 P’s):</p>
+<ul>
+<li>Personas</li>
+<li>Planeta</li>
+<li>Prosperidad</li>
+<li>Paz</li>
+<li>Alianzas (<em>partnerships</em>)</li>
+</ul>
+<p>Está compuesta por 17 Objetivos de Desarrollo Sostenible (ODS) con 169 metas:</p>
+<ol type="1">
+<li>Fin de la pobreza</li>
+<li>Hambre cero</li>
+<li>Salud y bienestar</li>
+<li>Educación de calidad</li>
+<li>Igualdad de género</li>
+<li>Agua limpia y saneamiento</li>
+<li>Energía asequible y no contaminante</li>
+<li>Trabajo decente y crecimiento económico</li>
+<li>Industria, innovación e infraestructura</li>
+<li>Reducción de las desigualdades</li>
+<li>Ciudades y comunidades sostenibles</li>
+<li>Producción y consumo responsables</li>
+<li>Acción por el clima</li>
+<li>Vida submarina</li>
+<li>Vida de ecosistemas terrestres</li>
+<li>Paz, justicia e instituciones solidarias</li>
+<li>Alianzas para lograr los objetivos</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2015/01/S-SDG-Poster_-Letter.jpg" class="img-fluid figure-img" target="_blank"></p>
+<figcaption>Objetivos de desarrollo sostenible</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="estrategias-europeas" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="estrategias-europeas"><span class="header-section-number">5.5.2</span> Estrategias europeas</h3>
+<section id="Década-Digital-de-Europa" class="level4" data-number="5.5.2.1">
+<h4 data-number="5.5.2.1" class="anchored" data-anchor-id="Década-Digital-de-Europa"><span class="header-section-number">5.5.2.1</span> Segunda Agenda Digital / Década Digital de Europa</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade" target="_blank">La Década Digital de Europa</a></li>
+<li><a href="https://runmodule.com/2027/03/10/second-digital-agenda-for-europe/" target="_blank">https://runmodule.com/2027/03/10/second-digital-agenda-for-europe/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Unión Europea ha lanzado dos planes estratégicos para impulsar la economía digital:</p>
+<ul>
+<li>La Primera Agenda Digital de Europa (2010-2020)</li>
+<li>La Segunda Agenda Digital de Europa (2020-2030)</li>
+</ul>
+<p>La Segunda Agenda Digital de Europa es una estrategia política macro para adaptar a Europa a la era digital, elaborada por la Comisión Europea.</p>
+<p>La Década Digital de la UE, también llamado Década Digital 2030, es un programa político operativo dentro de la Segunda Agenda Digital de Europa que incluye marco de programa, objetivos, proyectos y principios para coordinar el desarrollo digital de la UE.</p>
+<p>La Brújula Digital 2030 es una herramienta métrica, creada en 2021 y enmarcada dentro de la Década Digital, define objetivos mediables para 2030 categorizados por cuatro puntos cardinales:</p>
+<ol type="1">
+<li><em>Competencias</em>: 80% de adultos con competencias digitales básicas; 20M de especialistas en TIC.</li>
+<li><em>Empresas</em>: 75% de empresas usan nube, datos e IA; 90% de pymes con presencia online.</li>
+<li><em>Infraestructura</em>: conectividad de altísima velocidad; cobertura 5G en zonas pobladas; primer ordenador cuántico.</li>
+<li><em>Servicios públicos</em>: 100% de servicios públicos digitales; 100% de ciudadanos con acceso a historial médico electrónico; 80% de ciudadanos usan identificación digital.</li>
+</ol>
+<p>El Índice de la Economía y la Sociedad Digitales (DESI) se emplea para medir si se han obtenido los objetivos de la Década Digital de Europa.</p>
+<p>El Programa Europa Digital (2021-2027), introducido en el R(UE) 2021/694, es un programa de financiación de la UE que apoya la transformación digital de la sociedad y la economía europeas. Tiene un presupuesto de 7.500M €.</p>
+</section>
+<section id="plan-de-recuperación-para-europa-nextgenerationeu" class="level4" data-number="5.5.2.2">
+<h4 data-number="5.5.2.2" class="anchored" data-anchor-id="plan-de-recuperación-para-europa-nextgenerationeu"><span class="header-section-number">5.5.2.2</span> Plan de Recuperación para Europa: NextGenerationEU</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este plan está obsoleto desde agosto 2026.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Marco normativo
+<ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32020R2094" target="_blank">Reglamento (UE) 2020/2094</a>: modernización AAPP y PRTR.</li>
+<li>R (UE) 2021/241. Mecanismo de Recuperación y Resiliencia (MRR).</li>
+<li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52026XC02614" target="_blank">C/2026/2614</a>.</li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://planderecuperacion.gob.es/plan-de-recuperacion-para-europa">Plan de Recuperación para Europa</a>, Gobierno de España.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>En 2020, tras la crisis provocada por la COVID-19, la Unión Europea diseñó el plan de Recuperación para Europa NextGenerationEU (NGEU) para abordar las consecuencias económicas y sociales de la pandemia.</p>
+<p>La base legal del NGEU se encuentra en el Marco Financiero Plurianual (MFP) 2021-2027, que fue adoptado por el Consejo Europeo en diciembre de 2020. Además, se creó un instrumento jurídico conocido como el Instrumento de Recuperación de la Unión Europea (RRF, por sus siglas en inglés), que establece las condiciones para la distribución y el uso de los fondos de NextGen EU, y que fue regulado en el Reglamento (UE) 2020/2094.</p>
+<p>Los estados miembros de la UE debían desarrollar sus planes nacionales correspondientes. El Mecanismo de Recuperación y Resiliencia (MRR), regulado por el R (UE) 2021/241, establecía que la fecha límite es el 31/08/2026.</p>
+<p>En mayo de 2026 la Comisión emitió sus instrucciones para el cierre en el C/2026/2614: cualquier actuación realizada después del 31 de agosto de 2026 no puede computarse para considerar cumplido un hito u objetivo del MRR.</p>
+<p>Se postulan como herederos del MRR los futuros Planes Nacionales y Regionales de Asociación (<em>National and Regional Partnership Plans</em>, NRPP) y el Fondo Europe de Competividad (<em>European Competitiveness Fund</em>, ECF), ambos propuestos para 2028.</p>
+</section>
+<section id="union-datos" class="level4" data-number="5.5.2.3">
+<h4 data-number="5.5.2.3" class="anchored" data-anchor-id="union-datos"><span class="header-section-number">5.5.2.3</span> Estrategia Europea de Unión de Datos</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://digital-strategy.ec.europa.eu/es/policies/data-union">Estrategia de la Unión Europea de Datos</a></li>
+<li><a href="https://datos.gob.es/es/noticias/la-estrategia-union-de-datos-el-nuevo-impulso-europeo-para-la-economia-del-dato-y-la-ia">La Estrategia Unión de Datos: el nuevo impulso europeo para la economía del dato y la IA</a>. datos.gob.es. 21/01/2026.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La estrategia Unión de Datos (<em>data union</em>) de la UE fue emitida en noviembre de 2025.</p>
+<p>Se fundamenta en 3 pilares:</p>
+<ol type="1">
+<li>Ampliar el acceso a datos de calidad para la IA y la innovación</li>
+<li>Simplificación normativa</li>
+<li>Protección de la soberanía del dato europeo</li>
+</ol>
+</section>
+<section id="apply-ai" class="level4" data-number="5.5.2.4">
+<h4 data-number="5.5.2.4" class="anchored" data-anchor-id="apply-ai"><span class="header-section-number">5.5.2.4</span> Estrategia para la Aplicación de la IA</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li><a href="https://commission.europa.eu/news-and-media/news/keeping-european-industry-and-science-forefront-ai-2025-10-08_en?prefLang=es&amp;etrans=es">Mantener a la industria y la ciencia europeas a la vanguardia de la IA</a>. Comisión Europea, 08/10/2025.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Estrategia para la Aplicación de la IA (<em>Apply AI Strategy</em>) es una estrategia que fue lanzada en 2025.</p>
+</section>
+<section id="brujula-competitividad" class="level4" data-number="5.5.2.5">
+<h4 data-number="5.5.2.5" class="anchored" data-anchor-id="brujula-competitividad"><span class="header-section-number">5.5.2.5</span> Brújula para la Competividad</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://commission.europa.eu/topics/competitiveness/competitiveness-compass_es">Brújula para la Competividad</a>, Comisión Europea.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Brújula para la Competividad es una hoja de ruta impulsar el crecimiento económico en Europa. Está vigente desde enero 2025.</p>
+<p>Está basada en las <strong>necesidades</strong> identificadas en el informe Draghi sobre el futuro de la competividad europea:</p>
+<ol type="1">
+<li>Colmar las lagunas en materia de <strong>innovación</strong> </li>
+<li><strong>Descarbonizar</strong> la economía</li>
+<li>Reducir <strong>dependencias</strong></li>
+</ol>
+<p>En innovación, se destaca la Estrategia para la Aplicación de la IA.</p>
+<p>Para la descarbonización, se destaca el Pacto por una Industria Limpia.</p>
+<p><strong>Facilitadores horizontales</strong> para aumentar la competividad en la UE:</p>
+<ol type="1">
+<li>Reducción de la <strong>burocracia</strong></li>
+<li>Eliminación de obstáculos del <strong>mercado interior</strong></li>
+<li>Permitir una <strong>financiación</strong> más eficiente</li>
+<li>Promoción de <strong>competencias y empleos de calidad</strong></li>
+<li>Garantizar una <strong>mejor coordinación</strong></li>
+</ol>
+</section>
+<section id="pacto-industria-limpia" class="level4" data-number="5.5.2.6">
+<h4 data-number="5.5.2.6" class="anchored" data-anchor-id="pacto-industria-limpia"><span class="header-section-number">5.5.2.6</span> Pacto por una Industria Limpia</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li><a href="https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_es">Pacto por una Industria Limpia</a>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Vigente desde febrero 2025.</p>
+</section>
+</section>
+<section id="estrategias-españolas" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="estrategias-españolas"><span class="header-section-number">5.5.3</span> Estrategias españolas</h3>
+<section id="plan-españa-digital" class="level4" data-number="5.5.3.1">
+<h4 data-number="5.5.3.1" class="anchored" data-anchor-id="plan-españa-digital"><span class="header-section-number">5.5.3.1</span> Plan España Digital</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2027/07/27/plan-espana-digital/" target="_blank">https://runmodule.com/2027/07/27/plan-espana-digital/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="ens" class="level4" data-number="5.5.3.2">
+<h4 data-number="5.5.3.2" class="anchored" data-anchor-id="ens"><span class="header-section-number">5.5.3.2</span> Estrategia Nacional de Seguridad</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/" target="_blank">https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="planes-de-digitalización-de-la-age" class="level4" data-number="5.5.3.3">
+<h4 data-number="5.5.3.3" class="anchored" data-anchor-id="planes-de-digitalización-de-la-age"><span class="header-section-number">5.5.3.3</span> Planes de Digitalización de la AGE</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/dam/jcr:898162f1-2682-483e-9e43-50f2d3a08eff/20151002-Plan-transformacion-digital-age-oopp.pdf">Plan de Transformación Digital de la AGE y sus OOPP 2015-2020</a></li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Plan_Digitalizacion_AAPP.html">Plan de Digitalización de la AGE 2021-2025</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Hubo dos planes de digitalización de la AGE - <a href="https://administracionelectronica.gob.es/dam/jcr:898162f1-2682-483e-9e43-50f2d3a08eff/20151002-Plan-transformacion-digital-age-oopp.pdf">Plan de Transformación Digital de la AGE y sus OOPP 2015-2020</a> - <a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Plan_Digitalizacion_AAPP.html">Plan de Digitalización de la AGE 2021-2025</a></p>
+</section>
+<section id="plan-de-transformación-digital-de-la-age-y-sus-oopp-2015-2020" class="level4" data-number="5.5.3.4">
+<h4 data-number="5.5.3.4" class="anchored" data-anchor-id="plan-de-transformación-digital-de-la-age-y-sus-oopp-2015-2020"><span class="header-section-number">5.5.3.4</span> Plan de Transformación Digital de la AGE y sus OOPP 2015-2020</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este plan dejó de estar vigente en 2021.</p>
+</div>
+</div>
+</section>
+<section id="pdage2021" class="level4" data-number="5.5.3.5">
+<h4 data-number="5.5.3.5" class="anchored" data-anchor-id="pdage2021"><span class="header-section-number">5.5.3.5</span> Plan de Digitalización de la AGE 2021-2025</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este plan dejó de estar vigente en 2026.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="agendas-españa-digital" class="level3" data-number="5.5.4">
+<h3 data-number="5.5.4" class="anchored" data-anchor-id="agendas-españa-digital"><span class="header-section-number">5.5.4</span> Agendas España Digital</h3>
+<section id="españa-digital-2025" class="level4" data-number="5.5.4.1">
+<h4 data-number="5.5.4.1" class="anchored" data-anchor-id="españa-digital-2025"><span class="header-section-number">5.5.4.1</span> España Digital 2025</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La agenda España Digital 2025 dejó de estar vigente.</p>
+</div>
+</div>
+</section>
+<section id="españa-digital-2026" class="level4" data-number="5.5.4.2">
+<h4 data-number="5.5.4.2" class="anchored" data-anchor-id="españa-digital-2026"><span class="header-section-number">5.5.4.2</span> España Digital 2026</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>España Digital 2026 tiene vigencia hasta el 31/12/2026, pero casi todas sus planes y estrategias están exintos.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Organismos:
+<ul>
+<li>Min. Transformación Digital y de la Función Pública</li>
+</ul></li>
+<li>Referencias:
+<ul>
+<li><a href="https://espanadigital.gob.es/">España Digital</a></li>
+<li><a href="https://runmodule.com/2027/07/27/plan-espana-digital/" class="uri">https://runmodule.com/2027/07/27/plan-espana-digital/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>España Digital 2026 fue una actualización de España Digital 2025, con motivo de alinear los plazos con los del PRTR.</p>
+<p>Cuenta con los siguientes ejes:</p>
+<ol type="1">
+<li>Conectividad digital</li>
+<li>Impulos a la tecnología 5G</li>
+<li>Ciberseguridad</li>
+<li>Econonomía del Dato e Ingeligencia Artificial</li>
+<li>Transformación digital del Sector Público</li>
+<li>Transformación digital de la empresa y emprendimiento digital</li>
+<li>España, hub audiovisual</li>
+<li>Transformación digital sectorial y sostenible</li>
+<li>Competencias digitales</li>
+<li>Derechos digitales</li>
+<li>PERTE: Proyectos Estratégicos para la Recuperación y Transformación Económica</li>
+<li>RETECH: Redes Territoriales de Especialización Tecnológica</li>
+</ol>
+<p>Planes y estrategias de la agenda España Digital 2026:</p>
+<ul>
+<li>Plan para la Conectividad y las Infraestructuras Digitales</li>
+<li>Estrategia de impulso de tecnología 5G</li>
+<li>Plan Nacional de Competencias Digitales</li>
+<li>Plan Nacional de Ciberseguridad <em>(extinta)</em></li>
+<li><a href="#pdage2021">Plan de digitalización de las Administraciones Públicas</a> <em>(extinto)</em></li>
+<li>Plan de impulso de digitalización de pymes 2021-2025 <em>(extinto)</em></li>
+<li>Plan España Hub Audiovisual de Europa</li>
+<li><a href="#enia">Estrategia Nacional de Inteligencia Artificial (ENIA)</a> <em>(extinta)</em></li>
+</ul>
+</section>
+<section id="PRTR" class="level4" data-number="5.5.4.3">
+<h4 data-number="5.5.4.3" class="anchored" data-anchor-id="PRTR"><span class="header-section-number">5.5.4.3</span> Plan de Recuperación, Transformación y Resiliencia (PRTR)</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No se permite la ejecución de inversiones e hitos financiados con el Mecanismo de Recuperación y Resiliencia (MRR) después de 31/08/2026, por lo que finalizaría el PRTR.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones:
+<ul>
+<li>UE:
+<ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32021R0241" target="_blank">Reglamento (UE) 2021/241</a>: PRTR justicia, función pública, régimen local y mecenazgo</li>
+</ul></li>
+<li>ES:
+<ul>
+<li><a href="https://www.boe.es/buscar/act.php?BOE-A-2020-17340" target="_blank">RDL 36/2020</a>: Modernización AAPP y PRTR</li>
+<li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2023-25758" target="_blank">RDL 6/2023</a>: PRTR justicia, función pública, régimen local y mecenazgo</li>
+</ul></li>
+</ul></li>
+<li>Referencias:
+<ul>
+<li>Gobierno de España; “<a href="https://planderecuperacion.gob.es/" target="_blank">Plan de Recuperación, Transformación y Resiliencia</a>”; Gobierno de España</li>
+<li><a href="https://runmodule.com/2027/06/15/plan-de-recuperacion-transformacion-y-resiliencia/" target="_blank">https://runmodule.com/2027/06/15/plan-de-recuperacion-transformacion-y-resiliencia/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El Plan de Recuperación, Transformación y Resiliencia (PRTR) fue un plan nacional español de implantación del Plan Europeo de Recuperación para Europa NextGen.</p>
+<p>Estas ayudas se canalizaron en España a través del Plan de Recuperación, Transformación y Resiliencia (PRTR), que se promulgó a través del Real Decreto-Ley 36/2020.</p>
+<p>La duración del PRTR fue de 2021 a 2026. Estaba compuesta por 10 palancas y 31 componentes.</p>
+<p>El Gobierno aprobó el 28/07/2026 la Adenda de Cierre del PRTR, señalando expresamente el 31/08/2026 como fecha límite para la ejecución de estos fondos y cumplir actuaciones del MRR.</p>
+</section>
+</section>
+<section id="enia" class="level3" data-number="5.5.5">
+<h3 data-number="5.5.5" class="anchored" data-anchor-id="enia"><span class="header-section-number">5.5.5</span> Estrategia Nacional de Inteligencia Artificial (ENIA)</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🕸️Obsoleto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La ENIA dejó de estar vigente en 2026.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://planderecuperacion.gob.es/noticias/conoce-Estrategia-Nacional-Inteligencia-Artificial-ENIA-IA-prtr" class="uri">https://planderecuperacion.gob.es/noticias/conoce-Estrategia-Nacional-Inteligencia-Artificial-ENIA-IA-prtr</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Tuvo vigencia entre 2020 y 2025.</p>
+<p>La ENIA es una hoja de ruta que vertebra 6 ejes y 30 actuaciones orientadas al desarrollo de la IA.</p>
+</section>
+<section id="fondo-españa-crece" class="level3" data-number="5.5.6">
+<h3 data-number="5.5.6" class="anchored" data-anchor-id="fondo-españa-crece"><span class="header-section-number">5.5.6</span> Fondo España Crece</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://portal.mineco.gob.es/es-es/comunicacion/Paginas/El-Gobierno-pone-marcha-inyeccion-de-13.300-millones-al-ICO-para-activar-fondo-Espana-Crece.aspx">El Gobierno pone en marcha la inyección de 13.300 millones al ICO para activar el fondo España Crece</a>, Ministerio de Economía, Comercio y Empresa, 19/05/2026.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El fondo España Crece fue aprobado en diciembre 2025 y prolonga sin límite temporal el impulso inversor del PRTR. Parece orientado a financiación de pymes.</p>
+</section>
+</section>
+<section id="marco-normativo" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="marco-normativo"><span class="header-section-number">5.6</span> Marco normativo</h2>
+<p>Por convenio, se refieren las regulaciones europeas y españolas de la siguiente manera:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ámbito</th>
+<th>Cód. título</th>
+<th>Cód. referencia</th>
+<th>Convención URL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UE</td>
+<td>X(UE) 2015/123</td>
+<td>CELEX:12345X1234</td>
+<td>ELI</td>
+</tr>
+<tr class="even">
+<td>ES</td>
+<td>X 123/2000</td>
+<td>BOE-A-2000-12345</td>
+<td>ELI</td>
+</tr>
+</tbody>
+</table>
+<p>ELI (<em>European Legislation Identifier</em>) es un identificador único para la legislación europea y nacional que ha sido adoptado también por España.</p>
+<p>Abreviaturas usadas para cada tipo de regulación, de acuerdo al ELI:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ámbito</th>
+<th>Abrev.</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UE</td>
+<td>Reg</td>
+<td>Reglamento</td>
+</tr>
+<tr class="even">
+<td>UE</td>
+<td>Dir</td>
+<td>Directiva</td>
+</tr>
+<tr class="odd">
+<td>ES</td>
+<td>LO</td>
+<td>Ley Orgánica</td>
+</tr>
+<tr class="even">
+<td>ES</td>
+<td>L</td>
+<td>Ley</td>
+</tr>
+<tr class="odd">
+<td>ES</td>
+<td>RDL</td>
+<td>Real Decreto-Ley</td>
+</tr>
+<tr class="even">
+<td>ES</td>
+<td>RDLg</td>
+<td>Real Decreto Legislativo</td>
+</tr>
+</tbody>
+</table>
+<section id="marco-normativo-europeo" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="marco-normativo-europeo"><span class="header-section-number">5.6.1</span> Marco normativo europeo</h3>
+<p>A partir de 2015 se cambió la numeración de las normativas, poniendo primero el año y después el número de la normativa.</p>
+<!-- ### Reg(UE) 910/2014. eIDAS {#CELEX:32014R0910}
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+eIDAS fue sustituido por eIDAS 2 en 2025.
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [R(UE) 910/2014 en EUR-Lex](https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es)
+::: -->
+<section id="CELEX:32016R0679" class="level4" data-number="5.6.1.1">
+<h4 data-number="5.6.1.1" class="anchored" data-anchor-id="CELEX:32016R0679"><span class="header-section-number">5.6.1.1</span> Reg(UE) 2016/679. RGPD</h4>
+<p>R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">RGPD en EUR-Lex</a></li>
+<li><a href="https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html" target="_blank">https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="regue-2021241" class="level4" data-number="5.6.1.2">
+<h4 data-number="5.6.1.2" class="anchored" data-anchor-id="regue-2021241"><span class="header-section-number">5.6.1.2</span> Reg(UE) 2021/241</h4>
+<p>Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026.</p>
+</section>
+<section id="CELEX:32021R0694" class="level4" data-number="5.6.1.3">
+<h4 data-number="5.6.1.3" class="anchored" data-anchor-id="CELEX:32021R0694"><span class="header-section-number">5.6.1.3</span> Reg(UE) 2021/694. Programa Europa Digital</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2021/694/oj" target="_blank">R(UE) 2021/694 en EUR-Lex</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="CELEX:32022R0868" class="level4" data-number="5.6.1.4">
+<h4 data-number="5.6.1.4" class="anchored" data-anchor-id="CELEX:32022R0868"><span class="header-section-number">5.6.1.4</span> Reg(UE) 2022/868. Ley de Gobernanza de Datos</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2022/868/oj?locale=es" target="_blank">R(UE) 2022/868 en EUR-Lex</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="CELEX:32023R2854" class="level4" data-number="5.6.1.5">
+<h4 data-number="5.6.1.5" class="anchored" data-anchor-id="CELEX:32023R2854"><span class="header-section-number">5.6.1.5</span> Reg(UE) 2023/2854. Ley de Datos</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2023/2854/oj?locale=es" target="_blank">R(UE) 2023/2854 en EUR-Lex</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Ley de Datos (<em>Data Act</em>), regula el acceso y uso de datos generados por productos y servicios conectados, y establece normas para la portabilidad de datos y la interoperabilidad.</p>
+</section>
+<section id="CELEX:32024R0903" class="level4" data-number="5.6.1.6">
+<h4 data-number="5.6.1.6" class="anchored" data-anchor-id="CELEX:32024R0903"><span class="header-section-number">5.6.1.6</span> Reg(UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI)</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2024/903/oj?locale=es" target="_blank">R(UE) 2024/903 en EUR-Lex</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="CELEX:32024R1183" class="level4" data-number="5.6.1.7">
+<h4 data-number="5.6.1.7" class="anchored" data-anchor-id="CELEX:32024R1183"><span class="header-section-number">5.6.1.7</span> Reg(EU) 2024/1183. eIDAS 2</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="http://data.europa.eu/eli/reg/2024/1183/oj?locale=es" target="_blank">R(UE) 2024/1183 en EUR-Lex</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="CELEX:32024R1689" class="level4" data-number="5.6.1.8">
+<h4 data-number="5.6.1.8" class="anchored" data-anchor-id="CELEX:32024R1689"><span class="header-section-number">5.6.1.8</span> Reg(UE) 2024/1689. Ley de Inteligencia Artificial</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Referencias - <a href="http://data.europa.eu/eli/reg/2024/1689/oj?locale=es" target="_blank">R(UE) 2024/1689 en EUR-Lex</a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="marco-normativo-español" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="marco-normativo-español"><span class="header-section-number">5.6.2</span> Marco normativo español</h3>
+<section id="BOE-A-2010-1331" class="level4" data-number="5.6.2.1">
+<h4 data-number="5.6.2.1" class="anchored" data-anchor-id="BOE-A-2010-1331"><span class="header-section-number">5.6.2.1</span> RD 4/2010. ENI</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li><a href="https://www.boe.es/eli/es/rd/2010/01/08/4/con" target="_blank">RD 4/2010 en BOE</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Regula el Esquema Nacional de Interoperabilidad.</p>
+<p>Frase plantilla para el ENI:</p>
+<blockquote class="blockquote">
+<p>El sistema ha sido diseñado de acuerdo con los principios y criterios establecidos en el Esquema Nacional de Interoperabilidad, regulado en el RD 4/2010, favoreciendo la interoperabilidad organizativa, semántica y técnica, el uso de estándares aplicables y la adecuada gestión y conservación de la información durante todo su ciclo de vida.</p>
+</blockquote>
+</section>
+<section id="BOE-A-2013-12887" class="level4" data-number="5.6.2.2">
+<h4 data-number="5.6.2.2" class="anchored" data-anchor-id="BOE-A-2013-12887"><span class="header-section-number">5.6.2.2</span> L 19/2013. Transparencia, acceso a la información pública y buen gobierno</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li><a href="https://www.boe.es/eli/es/l/2013/12/09/19/con" target="_blank">L 19/2013 en BOE</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="BOE-A-2015-11719" class="level3" data-number="5.6.3">
+<h3 data-number="5.6.3" class="anchored" data-anchor-id="BOE-A-2015-11719"><span class="header-section-number">5.6.3</span> RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li><a href="https://www.boe.es/eli/es/rdlg/2015/10/30/5/con">RDLg 5/2015 en BOE</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="BOE-A-2015-8048" class="level4" data-number="5.6.3.1">
+<h4 data-number="5.6.3.1" class="anchored" data-anchor-id="BOE-A-2015-8048"><span class="header-section-number">5.6.3.1</span> RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.boe.es/eli/es/rd/2015/07/17/668" target="_blank">RD 668/2015</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Una frase plantilla que se puede añadir para el RD 668/2015:</p>
+<blockquote class="blockquote">
+<p>El sistema bajo análisis se encuentra plenamente alineado con las directrices del Real Decreto 668/2015, de acceso electrónico de los ciudadanos a los servicios públicos, garantizando los principios de accesibilidad universal, interoperabilidad y seguridad en la prestación del servicio público por medios electrónicos.</p>
+</blockquote>
+</section>
+<section id="BOE-A-2017-12902" class="level4" data-number="5.6.3.2">
+<h4 data-number="5.6.3.2" class="anchored" data-anchor-id="BOE-A-2017-12902"><span class="header-section-number">5.6.3.2</span> L 9/2017. CSP</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.boe.es/eli/es/l/2017/11/08/9/con" target="_blank">https://www.boe.es/eli/es/l/2017/11/08/9/con</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La ley 9/2017, de Contratación en el Sector Público (CSP) traspone las directivas 2014/23/UE, Directiva 2014/24/UE y Directiva 2014/25/UE.</p>
+<p>El art. 1 define los principios de contratación:</p>
+<ul>
+<li>Libertad de acceso a las licitaciones.</li>
+<li>Publicidad y transparencia de los procedimientos.</li>
+<li>No discriminación e igualdad de trato entre los licitadores.</li>
+</ul>
+</section>
+<section id="BOE-A-2018-16673" class="level4" data-number="5.6.3.3">
+<h4 data-number="5.6.3.3" class="anchored" data-anchor-id="BOE-A-2018-16673"><span class="header-section-number">5.6.3.3</span> LO 3/2018 (LPD-GDD)</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.boe.es/eli/es/lo/2018/12/05/3/con" target="_blank">https://www.boe.es/eli/es/lo/2018/12/05/3/con</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GDD) complementa el RGPD.</p>
+</section>
+<section id="BOE-A-2020-17340" class="level4" data-number="5.6.3.4">
+<h4 data-number="5.6.3.4" class="anchored" data-anchor-id="BOE-A-2020-17340"><span class="header-section-number">5.6.3.4</span> RDL 36/2020 (PRTR)</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://www.boe.es/eli/es/lo/2018/12/05/3/con" target="_blank">https://www.boe.es/eli/es/lo/2018/12/05/3/con</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Se detalla en el apartado <a href="#PRTR">PRTR</a> de Estrategias.</p>
+</section>
+</section>
+</section>
+<section id="iniciativas" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="iniciativas"><span class="header-section-number">5.7</span> Iniciativas</h2>
+<section id="iniciativas-españolas" class="level3" data-number="5.7.1">
+<h3 data-number="5.7.1" class="anchored" data-anchor-id="iniciativas-españolas"><span class="header-section-number">5.7.1</span> Iniciativas españolas</h3>
+<section id="guías-ccn-stic" class="level4" data-number="5.7.1.1">
+<h4 data-number="5.7.1.1" class="anchored" data-anchor-id="guías-ccn-stic"><span class="header-section-number">5.7.1.1</span> Guías CCN-STIC</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/06/09/ccn-cert/" target="_blank">https://runmodule.com/2026/06/09/ccn-cert/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La serie 800 de las guías CCN-STIC está relacionada con ciberseguridad.</p>
+<ul>
+<li>CCN-STIC-802. Auditoría del ENS.</li>
+<li><strong>CCN-STIC-803. Valoración de Sistemas en el ENS.</strong></li>
+<li>CCN-STIC-817. Gestión de Incidentes de Seguridad en el ENS.</li>
+<li>CCN-STIC-824. Informe nacional del estado de seguridad de los sistemas TIC.</li>
+</ul>
+</section>
+<section id="viogén" class="level4" data-number="5.7.1.2">
+<h4 data-number="5.7.1.2" class="anchored" data-anchor-id="viogén"><span class="header-section-number">5.7.1.2</span> Viogén</h4>
+</section>
+</section>
+</section>
+<section id="temáticas-transversales" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="temáticas-transversales"><span class="header-section-number">5.8</span> Temáticas transversales</h2>
+<p>En este apartado se revisan temáticas que pueden ser comunes a proyectos de distinta naturaleza.</p>
+<section id="relaciones-con-las-aapp" class="level3" data-number="5.8.1">
+<h3 data-number="5.8.1" class="anchored" data-anchor-id="relaciones-con-las-aapp"><span class="header-section-number">5.8.1</span> Relaciones con las AAPP</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular del Tribunal J. M. Daza dirige los proyectos de atención ciudadana.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Regulaciones:</strong>
+<ul>
+<li>ES:
+<ul>
+<li>L 39/2015. Procedimiento Administrativo Común AAPP (PACAP).</li>
+<li><a href="#BOE-A-2015-8048">RD 668/2015</a>. Acceso electrónico de los ciudadanos a los servicios públicos.</li>
+<li>L 29/1999. Contencioso-administrativo.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="funcionamiento-de-las-aapp" class="level3" data-number="5.8.2">
+<h3 data-number="5.8.2" class="anchored" data-anchor-id="funcionamiento-de-las-aapp"><span class="header-section-number">5.8.2</span> Funcionamiento de las AAPP</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE:
+<ul>
+<li>CE art. 103.1 (principios de buena administración)</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li>ES:
+<ul>
+<li>L 40/2015. Régimen Jurídico del Sector Público (RJSP).</li>
+</ul></li>
+</ul></li>
+<li>Temas:
+<ul>
+<li><ol start="8" type="1">
+<li>Régimen jurídico de las AAPP. Procedimiento administrativo</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El art. 103.1 de la Constitución menciona los principios de buena administración:</p>
+<blockquote class="blockquote">
+<p>La Administración Pública sirve con objetividad los intereses generales y actúa de acuerdo con los <strong>principios de eficacia, jerarquía, descentralización, desconcentración y coordinación</strong>, con sometimiento pleno a la ley y al Derecho.</p>
+</blockquote>
+<p>La descentralización se refiere a la delegación de competencias entre distintas personas jurídicas (agencias, comunidades autónomas, etc.), mientras que la desconcentración se refiere a la delegación de competencias dentro de una misma persona jurídica.</p>
+</section>
+<section id="administración-digital" class="level3" data-number="5.8.3">
+<h3 data-number="5.8.3" class="anchored" data-anchor-id="administración-digital"><span class="header-section-number">5.8.3</span> Administración digital</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones:
+<ul>
+<li>UE
+<ul>
+<li>R (UE) 2021/694. Programa Europa Digital.</li>
+</ul></li>
+</ul></li>
+<li>Iniciativas:
+<ul>
+<li>CTT (Centro de Transferencia de Tecnología)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="interoperabilidad-análisis-pormenorizado" class="level3" data-number="5.8.4">
+<h3 data-number="5.8.4" class="anchored" data-anchor-id="interoperabilidad-análisis-pormenorizado"><span class="header-section-number">5.8.4</span> Interoperabilidad (análisis pormenorizado)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li>Declaración Ministerial de Tallín sobre la administración electrónica</li>
+<li><a href="#CELEX:32024R0903">Reg(UE) 2024/903</a>. Reglamento Europeo sobre la Interoperabilidad (REI)</li>
+<li><a href="#CELEX:32024R1183">Reg(UE) 910/2014</a>. eIDAS 2</li>
+</ul></li>
+<li>ES
+<ul>
+<li>RD 4/2010. Esquema Nacional de Interoperabilidad</li>
+<li>L 37/2007. Reutilización de datos en Sector Público.</li>
+</ul></li>
+</ul></li>
+<li>ODS
+<ul>
+<li>Obj. 17. Alianza para lograr los objetivos</li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>CTT (Centro de Transferencia de Tecnología)</li>
+<li>CISE (Centro de Interoperabilidad Semántica)</li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="45" type="1">
+<li>ENI</li>
+</ol></li>
+<li><ol start="46" type="1">
+<li>NTI</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Ver sección sobre <a href="../../03-practico/01-supuesto/index.html#interoperabilidad">interoperabilidad en la AGE</a></p>
+</section>
+<section id="participación-ciudadana" class="level3" data-number="5.8.5">
+<h3 data-number="5.8.5" class="anchored" data-anchor-id="participación-ciudadana"><span class="header-section-number">5.8.5</span> Participación ciudadana</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>CE art. 1 (Estado social y democrático; soberanía reside en el pueblo español)</li>
+<li>CE art. 9 (poderes públicos prommieven la participación de los ciudadanos en la vida política, económica, cultural y social)</li>
+<li>CE art. 23 (derecho de participación)</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li><a href="#BOE-A-2013-12887">L 19/2013. Transparencia, acceso a la información pública y buen gobierno</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="transparencia" class="level3" data-number="5.8.6">
+<h3 data-number="5.8.6" class="anchored" data-anchor-id="transparencia"><span class="header-section-number">5.8.6</span> Transparencia</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 105. Derecho a la información y transparencia</li>
+<li>Art. 23. Participación ciudadana</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li>ES
+<ul>
+<li><a href="#BOE-A-2013-12887">L 19/2013. Transparencia, acceso a la información pública y buen gobierno</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).</p>
+</section>
+<section id="accesibilidad-análisis-pormenorizado" class="level3" data-number="5.8.7">
+<h3 data-number="5.8.7" class="anchored" data-anchor-id="accesibilidad-análisis-pormenorizado"><span class="header-section-number">5.8.7</span> Accesibilidad (análisis pormenorizado)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li>D(UE) 2016/2102. Accesibilidad de los sitios webs y aplicaciones para dispositivos móviles de los organismos del sector público</li>
+</ul></li>
+<li>ES
+<ul>
+<li>RD 1494/2007. Accesibilidad a la sociedad de la información y medios</li>
+<li>RD 1112/2018. Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público</li>
+</ul></li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>Observatorio de Accesibilidad</li>
+</ul></li>
+<li>Estándares
+<ul>
+<li>EN 301 549</li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/12/17/accesibilidad-digital-en-el-sector-publico-en-espana/" class="uri">https://runmodule.com/2026/12/17/accesibilidad-digital-en-el-sector-publico-en-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir el estándar EN 301 549, publicado en la decisión de ejecución UE 2018/2048.</p>
+</section>
+<section id="protección-de-datos" class="level3" data-number="5.8.8">
+<h3 data-number="5.8.8" class="anchored" data-anchor-id="protección-de-datos"><span class="header-section-number">5.8.8</span> Protección de datos</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Organismos
+<ul>
+<li>Agencia Española de Protección de Datos (AEPD)</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li><strong><a href="#CELEX:32016R0679">R(UE) 2016/679. RGPD</a></strong></li>
+</ul></li>
+<li>ES
+<ul>
+<li><strong><a href="#BOE-A-2018-16673">LO 3/2018. LOPD-GDD</a></strong></li>
+</ul></li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="82" type="1">
+<li>Adaptación LOPD</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/04/14/proteccion-de-datos-personales-en-espana/" class="uri">https://runmodule.com/2026/04/14/proteccion-de-datos-personales-en-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="seguridad-de-la-información" class="level3" data-number="5.8.9">
+<h3 data-number="5.8.9" class="anchored" data-anchor-id="seguridad-de-la-información"><span class="header-section-number">5.8.9</span> Seguridad de la información</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>CE art. 18 (derecho a la intimidad)</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li>NIS2</li>
+<li>CRA</li>
+</ul></li>
+<li>ES
+<ul>
+<li>L 6/2020, de servicios electrónicos de confianza</li>
+<li>RD 43/2021, seguridad de redes y SI</li>
+<li><strong><a href="#ens">RD 311/2022</a>, Esquema Nacional de Seguridad (ENS)</strong></li>
+<li>RDL 7/2022, seguridad 5G</li>
+</ul></li>
+</ul></li>
+<li>Iniciativas
+<ul>
+<li>Estrategia de Seguridad Nacional</li>
+<li>Estrategia Nacional de Ciberseguridad</li>
+<li>Esquema Nacional de Seguridad (ENS)</li>
+<li>Guías CCN-STIC</li>
+</ul></li>
+<li>Temario
+<ul>
+<li><ol start="48" type="1">
+<li>ENS (incluye ENS, CCN-STIC)</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/" target="_blank">https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="identificación-electrónica" class="level3" data-number="5.8.10">
+<h3 data-number="5.8.10" class="anchored" data-anchor-id="identificación-electrónica"><span class="header-section-number">5.8.10</span> Identificación electrónica</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li>Reg(EU) 2024/1183. eIDAS{#CELEX:32014R0910}</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="nube" class="level3" data-number="5.8.11">
+<h3 data-number="5.8.11" class="anchored" data-anchor-id="nube"><span class="header-section-number">5.8.11</span> Nube</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-50" class="callout-50-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Infraestructuras
+<ul>
+<li>NubeSARA</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="datos" class="level3" data-number="5.8.12">
+<h3 data-number="5.8.12" class="anchored" data-anchor-id="datos"><span class="header-section-number">5.8.12</span> Datos</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Estrategias
+<ul>
+<li>UE
+<ul>
+<li><a href="#union-datos">Unión de Datos</a></li>
+</ul></li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li><a href="#CELEX:32022R0868">Reg(UE) 2022/868</a>. Ley de Gobernanza de Datos.</li>
+<li><a href="#CELEX:32023R2854">Reg(UE) 2023/2854</a>. Ley de Datos.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones:
+<ul>
+<li><p>UE:</p>
+<ul>
+<li>Reg(UE) 2023/2854. Ley de Datos (<em>Data Act</em>){#CELEX:32023R2854}</li>
+</ul></li>
+</ul></li>
+<li>Estrategias:
+<ul>
+<li>UE:
+<ul>
+<li>Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Ley de Gobernanza de Datos (<em>Data Governance Act</em>, DGA) regula la reutilización de datos protegidos del sector público (como datos de salud o secretos comerciales), crea la figura de los intermediarios de datos neutros y regula el “altruismo de datos” (donar datos para el bien común).</p>
+</section>
+<section id="inteligencia-artificial" class="level3" data-number="5.8.13">
+<h3 data-number="5.8.13" class="anchored" data-anchor-id="inteligencia-artificial"><span class="header-section-number">5.8.13</span> Inteligencia artificial</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-54-contents" aria-controls="callout-54" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-54" class="callout-54-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular L. A. Hernández es profesor universitario de Inteligencia Artificial.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Estrategias:
+<ul>
+<li>UE:
+<ul>
+<li><a href="#apply-ai">Estrategia para la aplicación de la IA</a></li>
+</ul></li>
+</ul></li>
+<li>Regulaciones:
+<ul>
+<li>UE:
+<ul>
+<li><a href="#CELEX:32024R1689">Reglamento UE 2024/1689. Ley de Inteligencia Artificial</a></li>
+</ul></li>
+</ul></li>
+<li>Temas:
+<ul>
+<li><ol start="70" type="1">
+<li>Inteligencia artificial</li>
+</ol></li>
+</ul></li>
+<li>Referencias:
+<ul>
+<li><a href="https://digital.gob.es/digitalizacion/areas-interes/inteligencia-artificial">Inteligencia artificial</a>. digital.gob.es.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="temáticas-específicas" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="temáticas-específicas"><span class="header-section-number">5.9</span> Temáticas específicas</h2>
+<p>Este apartado trata temáticas específicas que puede que apliquen a ejercicios concretos.</p>
+<section id="temas-relacionados-con-el-tribunal-de-la-convocatoria-2025" class="level3" data-number="5.9.1">
+<h3 data-number="5.9.1" class="anchored" data-anchor-id="temas-relacionados-con-el-tribunal-de-la-convocatoria-2025"><span class="header-section-number">5.9.1</span> Temas relacionados con el Tribunal de la convocatoria 2025</h3>
+<p>En los CVs de los miembros del tribunal (incluyendo presidentes y secretarios titulares y suplentes, y solo vocales titulares) de la convocatoria 2025 se encuentran los siguientes temas:</p>
+<ul>
+<li>Calidad de Servicios Digitales, Ciberseguridad y Administraciones</li>
+<li>Justicia</li>
+<li>Gestión del Cambio. AEAD</li>
+<li>CNMC</li>
+<li>Presupuestación</li>
+<li>INAP</li>
+<li>Casa Real</li>
+<li>Turismo</li>
+<li>Seguridad Social / GISS</li>
+<li>Atención al usuario (~Consumo)</li>
+<li>Representación consular (exteriores)</li>
+<li>Infraestructuras TIC</li>
+<li>Hacienda. Recaudación</li>
+<li>nubeSARA</li>
+<li>Migraciones</li>
+</ul>
+</section>
+<section id="justicia" class="level3" data-number="5.9.2">
+<h3 data-number="5.9.2" class="anchored" data-anchor-id="justicia"><span class="header-section-number">5.9.2</span> Justicia</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-56-contents" aria-controls="callout-56" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-56" class="callout-56-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El presidente suplente del Tribunal trabaja en el Ministerio de Justicia desde 2020.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 1: valores superiores del ordenamiento jurídico de la Constitución: la libertad, la justicia, la igualdad y el pluralismo político</li>
+<li>CE art. 9 apt. 1 (los ciudadanos y poderes públicos están sujetos al ordenamiento jurídico)</li>
+<li>Título IV del Poder Judicial</li>
+</ul></li>
+<li>Regulaciones
+<ul>
+<li>LO 1995/40. Código penal</li>
+<li>Ley Orgánica 10/1995, Código penal</li>
+</ul></li>
+<li>ODS
+<ul>
+<li><ol start="16" type="1">
+<li>Paz, justicia e instituciones sólidas</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="seguridad-social" class="level3" data-number="5.9.3">
+<h3 data-number="5.9.3" class="anchored" data-anchor-id="seguridad-social"><span class="header-section-number">5.9.3</span> Seguridad Social</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-58-contents" aria-controls="callout-58" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-58" class="callout-58-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El secretario titular del Tribunal M. Garoz trabaja en el área de Atención al Usuario y Seguimiento de Servicios Técnicos de la GISS. La vocal suplente del Tribunal M. P. Carbajo pertenece al Cuerpo de Inspección Sanitaria de la Seguridad Social. El vocal suplente del Tribunal J. M. Daza trabaja en el GISS.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 41. Seguridad Social</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El art. 41 de la Constitución establece que:</p>
+<blockquote class="blockquote">
+<p>Los <strong>poderes públicos mantendrán un régimen público de Seguridad Social</strong> para todos los ciudadanos, que garantice la asistencia y prestaciones sociales suficientes ante situaciones de necesidad, especialmente en caso de desempleo. La asistencia y prestaciones complementarias serán libres.</p>
+</blockquote>
+</section>
+<section id="pensiones-tercera-edad" class="level3" data-number="5.9.4">
+<h3 data-number="5.9.4" class="anchored" data-anchor-id="pensiones-tercera-edad"><span class="header-section-number">5.9.4</span> Pensiones / Tercera Edad</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 50. Protección de la tercera edad</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El art. 50 de la Constitución establece que:</p>
+<blockquote class="blockquote">
+<p>Los poderes públicos garantizarán, mediante pensiones adecuadas y periódicamente actualizadas, la suficiencia económica a los ciudadanos durante la tercera edad. Asimismo, y con independencia de las obligaciones familiares, promoverán su bienestar mediante un sistema de servicios sociales que atenderán sus problemas específicos de salud, vivienda, cultura y ocio.</p>
+</blockquote>
+</section>
+<section id="hacienda" class="level3" data-number="5.9.5">
+<h3 data-number="5.9.5" class="anchored" data-anchor-id="hacienda"><span class="header-section-number">5.9.5</span> Hacienda</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-61-contents" aria-controls="callout-61" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-61" class="callout-61-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular R. Acebes es técnico de Hacienda destinado a la recaudación, y fue inspector de Hacienda en la AEAT. La vocal M. T. Martínez de Marigorta trabajó en Hacienda. La vocal suplente del Tribunal M. del C. Bárcena trabaja en la Secretaría de Presupuestos y Gastos de Hacienda. Los vocales suplente S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Título VII “Economía y Hacienda” (arts. 128-136)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="recaudación" class="level4" data-number="5.9.5.1">
+<h4 data-number="5.9.5.1" class="anchored" data-anchor-id="recaudación"><span class="header-section-number">5.9.5.1</span> Recaudación</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-63-contents" aria-controls="callout-63" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-63" class="callout-63-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular R. Acebes es técnico de Hacienda destinado a la recaudación, y fue inspector de Hacienda en la AEAT. La vocal suplente del Tribunal M. del C. Bárcena trabaja en la Secretaría de Presupuestos y Gastos de Hacienda. Los vocales suplente S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="aduanas" class="level4" data-number="5.9.5.2">
+<h4 data-number="5.9.5.2" class="anchored" data-anchor-id="aduanas"><span class="header-section-number">5.9.5.2</span> Aduanas</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-64-contents" aria-controls="callout-64" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-64" class="callout-64-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La vocal titular M. A. Sánchez trabaja en Aduanas e Impuestos Especiales de la AEAT.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="intervención" class="level4" data-number="5.9.5.3">
+<h4 data-number="5.9.5.3" class="anchored" data-anchor-id="intervención"><span class="header-section-number">5.9.5.3</span> Intervención</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-65-contents" aria-controls="callout-65" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥉Temática candidata N3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-65" class="callout-65-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Los vocales suplentes S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda. El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervención Delegada en el Ministerio de Sanidad y en el Ministerio de Juventud e Infancia.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="presupuestación-análisis-pormenorizado" class="level3" data-number="5.9.6">
+<h3 data-number="5.9.6" class="anchored" data-anchor-id="presupuestación-análisis-pormenorizado"><span class="header-section-number">5.9.6</span> Presupuestación (análisis pormenorizado)</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-66-contents" aria-controls="callout-66" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥉Temática candidata N3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-66" class="callout-66-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular K. Rincón trabajó en la Oficina de Informática Presupuestaria. La vocal suplente del Tribunal M. del C. Bárcena trabaja en la Secretaría de Presupuestos y Gastos de Hacienda. Los vocales suplentes S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="consumo-atención-al-usuario" class="level3" data-number="5.9.7">
+<h3 data-number="5.9.7" class="anchored" data-anchor-id="consumo-atención-al-usuario"><span class="header-section-number">5.9.7</span> Consumo / Atención al usuario</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-67-contents" aria-controls="callout-67" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-67" class="callout-67-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El secretario titular del Tribunal M. Garoz trabaja en el área de Atención al Usuario y Seguimiento de Servicios Técnicos de la GISS.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 51</li>
+<li>Art. 105</li>
+</ul></li>
+<li>Regulación
+<ul>
+<li>L 39/2015. PACAP</li>
+</ul></li>
+<li>ODS
+<ul>
+<li>Producción y consumo responsables</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Art. 51 CE (Defensa de los consumidores):</p>
+<pre><code>51.1: Garantiza la defensa de los consumidores y usuarios, protegiendo su seguridad, salud y legítimos intereses económicos.
+
+51.2: Obliga a los poderes públicos a promover la información y la educación de los consumidores y usuarios, así como a fomentar sus organizaciones.</code></pre>
+<p>Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 134. Presupuestos Generales del Estado</li>
+<li>Art. 135. Estabilidad y sostenibilidad</li>
+</ul></li>
+<li>Marco normativo
+<ul>
+<li>UE
+<ul>
+<li>SEC 2010 (Sistema Europeo de Cuentas)</li>
+</ul></li>
+<li>ES
+<ul>
+<li>L 47/2003. General Presupuestaria (LGP)</li>
+<li>LO 2/2012. Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF)</li>
+</ul></li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="12" type="1">
+<li>Los presupuestos generales del Estado</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El art. 134 (Presupuestos Generales del Estado - PGE) regula el ciclo de los PGE. Define la competencia exclusiva del Gobierno para elaborarlos y de las Cortes Generales para su examen, enmienda y aprobación. Establece su carácter anual y la regla de prórroga automática.</p>
+<p>El art. 135 de la Constitución, sobre estabilidad y sostenibilidad, fue reformado en 2011 a raíz de la crisis financiera. Obliga a todas las AAPP a adecuar sus actuaciones al principio de estabilidad presupuestaria (equilibrio o superávit) y fija límites de déficit estructural y volumen de deuda alineados con la normativa de la UE. Además, establece que el pago de la deuda pública goza de prioridad absoluta frente a cualquier otro gasto.</p>
+<p>Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF): Desarrolla el Art. 135 de la CE. Es la norma transversales aplicable al Estado, Comunidades Autónomas (CCAA) y Entidades Locales (EELL). Consolida los principios de eficiencia en la asignación de recursos, transparencia, plurianualidad y la regla de gasto.</p>
+<p>B. Sector Público Estatal</p>
+<pre><code>Ley 47/2003, General Presupuestaria (LGP): Es el «código contable y presupuestario» del Estado. Regula con detalle las fases del presupuesto (elaboración, gestión, modificación, liquidación) y la contabilidad pública de la Administración General del Estado y sus organismos vinculados.</code></pre>
+</section>
+<section id="casa-real" class="level3" data-number="5.9.8">
+<h3 data-number="5.9.8" class="anchored" data-anchor-id="casa-real"><span class="header-section-number">5.9.8</span> Casa Real</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-70-contents" aria-controls="callout-70" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-70" class="callout-70-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La presidenta titular del Tribunal trabajó para la Casa Real entre 2020-2025.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 1 “La forma política del Estado español es la Monarquía parlamentaria”</li>
+<li>Título II “De la Corona” (arts. 56-65)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El artículo 1 de la Constitución establece que la forma política del Estado español es la Monarquía parlamentaria.</p>
+<p>El título II de la CE trata sobre la Corona.</p>
+</section>
+<section id="industria" class="level3" data-number="5.9.9">
+<h3 data-number="5.9.9" class="anchored" data-anchor-id="industria"><span class="header-section-number">5.9.9</span> Industria</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 8 “Trabajo decente y crecimiento económico”</li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>ES
+<ul>
+<li>Ministerio de Industria y Turismo</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="comercio" class="level3" data-number="5.9.10">
+<h3 data-number="5.9.10" class="anchored" data-anchor-id="comercio"><span class="header-section-number">5.9.10</span> Comercio</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 8 “Trabajo decente y crecimiento económico”</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="españoles-en-el-extranjero" class="level3" data-number="5.9.11">
+<h3 data-number="5.9.11" class="anchored" data-anchor-id="españoles-en-el-extranjero"><span class="header-section-number">5.9.11</span> Españoles en el extranjero</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>CE, art. 19 (libertad de residencia y circulación)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="turismo" class="level3" data-number="5.9.12">
+<h3 data-number="5.9.12" class="anchored" data-anchor-id="turismo"><span class="header-section-number">5.9.12</span> Turismo</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-75-contents" aria-controls="callout-75" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-75" class="callout-75-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La presidenta titular del Tribunal A. M. Román trabajó en temas relacionados con turismo en 2002-2005 y 2014-2019. La vocal titular A. Iglesias trabaja en el TURESPAÑA del Ministerio de Industria y Turismo.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 8 “Trabajo decente y crecimiento económico”</li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>ES
+<ul>
+<li>Ministerio de Industria y Turismo</li>
+</ul></li>
+</ul></li>
+<li>Estadísticas
+<ul>
+<li>FRONTUR (Estadísticas de movimientos turísticos de frontera)</li>
+<li>EGATUR (Encuesta de gasto turístico)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estadística</th>
+<th>Fecha</th>
+<th>Valor aprox.</th>
+<th>Valor exacto</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Turistas recibidos</td>
+<td>Jun-2026</td>
+<td>10 M€</td>
+<td>9.746.490 €</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176996&amp;menu=ultiDatos&amp;idp=1254735576863">Estadística de movimientos turísticos en frontera (FRONTUR)</a></td>
+</tr>
+<tr class="even">
+<td>Turistas recibidos</td>
+<td>Dic-2026</td>
+<td>5 M€</td>
+<td>5.277.365 €</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176996&amp;menu=ultiDatos&amp;idp=1254735576863">FRONTUR</a></td>
+</tr>
+<tr class="odd">
+<td>Gastos turistas internacionales</td>
+<td>Jun-2026</td>
+<td>14 MM€</td>
+<td>13.579,04 M€</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176996&amp;menu=ultiDatos&amp;idp=1254735576863">Encuesta de gasto turístico (EGATUR)</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="demografía" class="level3" data-number="5.9.13">
+<h3 data-number="5.9.13" class="anchored" data-anchor-id="demografía"><span class="header-section-number">5.9.13</span> Demografía</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Organismos
+<ul>
+<li>Ministerio para la Transición Ecológica y Reto Demográfico</li>
+</ul></li>
+<li>Estadísticas
+<ul>
+<li>ECP (Estadística Continua de Población)</li>
+<li>CAP (Censo Anual de Población)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Estadísticas relevantes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estadística</th>
+<th>Fecha</th>
+<th>Valor aprox.</th>
+<th>Valor exacto</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Población total</td>
+<td>01/01/2025</td>
+<td>41M</td>
+<td>49128297</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176992&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">Censo Anual de Población (CAP)</a> del INE</td>
+</tr>
+<tr class="even">
+<td>Españoles</td>
+<td>01/01/2025</td>
+<td>42M</td>
+<td>42216326</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176992&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">CAP</a> del INE</td>
+</tr>
+<tr class="odd">
+<td>Extranjeros</td>
+<td>01/01/2025</td>
+<td>7M</td>
+<td>6911971</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176992&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">CAP</a> del INE</td>
+</tr>
+<tr class="even">
+<td>Españoles</td>
+<td>01/01/2025</td>
+<td>40M</td>
+<td>39.664.087</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176992&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">CAP</a> del INE</td>
+</tr>
+<tr class="odd">
+<td>Extranjeros</td>
+<td>01/01/2025</td>
+<td>9M</td>
+<td>9.464.210</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176992&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">CAP</a> del INE</td>
+</tr>
+<tr class="even">
+<td>Hombres</td>
+<td>01/04/2026</td>
+<td>24M</td>
+<td>24400285</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736177095&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">Estadística Continua de Población (ECP)</a> del INE</td>
+</tr>
+<tr class="odd">
+<td>Mujeres</td>
+<td>01/04/2026</td>
+<td>25M</td>
+<td>25286835</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736177095&amp;menu=ultiDatos&amp;idp=1254735572981" target="_blank">ECP</a> del INE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="migración" class="level3" data-number="5.9.14">
+<h3 data-number="5.9.14" class="anchored" data-anchor-id="migración"><span class="header-section-number">5.9.14</span> Migración</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-78-contents" aria-controls="callout-78" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-78" class="callout-78-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular Á. Martín es estadístico que trabaja en la Secretaría de Estado de Migraciones.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Organismos
+<ul>
+<li>Ministerio de Inclusión, Seguridad Social y Migraciones</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="empleo" class="level3" data-number="5.9.15">
+<h3 data-number="5.9.15" class="anchored" data-anchor-id="empleo"><span class="header-section-number">5.9.15</span> Empleo</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 8 “Trabajo decente y crecimiento económico”</li>
+</ul></li>
+<li>Estadísticas
+<ul>
+<li>EPA (Encuesta de Población Activa)</li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="17" type="1">
+<li>El mercado de trabajo</li>
+</ol></li>
+<li><ol start="19" type="1">
+<li>TIC, economía y mercado de trabajo</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Estadísticas relevantes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estadística</th>
+<th>Valor aprox.</th>
+<th>Valor</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tasa de paro</td>
+<td>&lt;10%</td>
+<td>9,87%</td>
+<td><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176918&amp;menu=ultiDatos&amp;idp=1254735976595" target="_blank">EPA</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sanidad" class="level3" data-number="5.9.16">
+<h3 data-number="5.9.16" class="anchored" data-anchor-id="sanidad"><span class="header-section-number">5.9.16</span> Sanidad</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-81-contents" aria-controls="callout-81" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥉Temática candidata N3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-81" class="callout-81-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La vocal suplente del Tribunal M. P. Carbajo pertenece al Cuerpo de Inspección Sanitaria de la Seguridad Social. El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervención Delegada en el Ministerio de Sanidad y en el Ministerio de Juventud e Infancia.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li><ol start="3" type="1">
+<li>Salud y bienestar</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="función-pública" class="level3" data-number="5.9.17">
+<h3 data-number="5.9.17" class="anchored" data-anchor-id="función-pública"><span class="header-section-number">5.9.17</span> Función pública</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-83-contents" aria-controls="callout-83" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-83" class="callout-83-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La presidenta titular del Tribunal A. M. Román trabaja desde 2025 en el INAP.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>CE
+<ul>
+<li>Art. 103.3. Funcionarios públicos</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El art. 103 de la Constitución incluye el siguiente apartado sobre el empleo público:</p>
+<blockquote class="blockquote">
+<p>La ley regulará el estatuto de los funcionarios públicos, el acceso a la función pública de acuerdo con los principios de mérito y capacidad, las peculiaridades del ejercicio de su derecho a sindicación, el sistema de incompatibilidades y las garantías para la imparcialidad en el ejercicio de sus funciones.</p>
+</blockquote>
+</section>
+<section id="igualdad-social" class="level3" data-number="5.9.18">
+<h3 data-number="5.9.18" class="anchored" data-anchor-id="igualdad-social"><span class="header-section-number">5.9.18</span> Igualdad social</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Constitución
+<ul>
+<li>Art. 1: valores superiores del ordenamiento jurídico de la Constitución: la libertad, la justicia, la igualdad y el pluralismo político</li>
+</ul></li>
+<li>ODS
+<ul>
+<li>Obj. 1 “Fin de la pobreza”</li>
+<li>Obj. 5 “Igualdad de género”</li>
+<li>Obj. 10 “Reducción de desigualdades”</li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>Ministerio de Igualdad</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="violencia-de-género" class="level3" data-number="5.9.19">
+<h3 data-number="5.9.19" class="anchored" data-anchor-id="violencia-de-género"><span class="header-section-number">5.9.19</span> Violencia de género</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Constitución
+<ul>
+<li>Art. 1: valores superiores del ordenamiento jurídico de la Constitución: la libertad, la justicia, la igualdad y el pluralismo político</li>
+</ul></li>
+<li>Iniciativas
+<ul>
+<li>Viogén</li>
+</ul></li>
+<li>Indicadores
+<ul>
+<li>EVGVD (Estadísticas de Violencia de Género y Violencia Doméstica)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="educación" class="level3" data-number="5.9.20">
+<h3 data-number="5.9.20" class="anchored" data-anchor-id="educación"><span class="header-section-number">5.9.20</span> Educación</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-87-contents" aria-controls="callout-87" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-87" class="callout-87-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La presidenta titular del Tribunal trabajó en Educación en 2010-2012. La vocal titular M. E. Díaz-Santos trabajó en el Ministerio de Universidades.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 4 “Educación de calidad”</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="emergencias" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="emergencias"><span class="header-section-number">5.10</span> Emergencias</h2>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-89-contents" aria-controls="callout-89" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-89" class="callout-89-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La presidenta titular del Tribunal trabajó en Emergencias en 2012-2014.</p>
+</div>
+</div>
+</div>
+<section id="juventud" class="level3" data-number="5.10.1">
+<h3 data-number="5.10.1" class="anchored" data-anchor-id="juventud"><span class="header-section-number">5.10.1</span> Juventud</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-90-contents" aria-controls="callout-90" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥉Temática candidata N3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-90" class="callout-90-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervención Delegada en el Ministerio de Sanidad y en el Ministerio de Juventud e Infancia.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 4 “Educación de calidad”</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="medio-ambiente" class="level3" data-number="5.10.2">
+<h3 data-number="5.10.2" class="anchored" data-anchor-id="medio-ambiente"><span class="header-section-number">5.10.2</span> Medio ambiente</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Estrategias
+<ul>
+<li>INT
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 6 “Agua limpia y saneamiento”</li>
+<li>Objetivo 11 “Ciudades y comunidades sostenibles”</li>
+<li>Objetivo 13 “Acción por el clima”</li>
+<li>Objetivo 14 “Vida submarina”</li>
+</ul></li>
+</ul></li>
+<li>UE
+<ul>
+<li>Brújula para la Competividad
+<ul>
+<li>Necesidad 2 “Descarbonizar nuestra economía”</li>
+</ul></li>
+<li>Pacto por una Industria Limpia</li>
+<li>Plan de Acción para una Energía Asequible</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="energía" class="level3" data-number="5.10.3">
+<h3 data-number="5.10.3" class="anchored" data-anchor-id="energía"><span class="header-section-number">5.10.3</span> Energía</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Estrategias
+<ul>
+<li>ODS
+<ul>
+<li>Objetivo 7 “Energía asequible y no contaminante”</li>
+<li>Objetivo 11 “Ciudades y comunidades sostenibles”</li>
+</ul></li>
+<li>UE
+<ul>
+<li>Plan de Acción para una Energía Asequible</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="telecomunicaciones" class="level3" data-number="5.10.4">
+<h3 data-number="5.10.4" class="anchored" data-anchor-id="telecomunicaciones"><span class="header-section-number">5.10.4</span> Telecomunicaciones</h3>
+</section>
+<section id="investigacion-e-innovación" class="level3" data-number="5.10.5">
+<h3 data-number="5.10.5" class="anchored" data-anchor-id="investigacion-e-innovación"><span class="header-section-number">5.10.5</span> Investigacion e innovación</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Estrategias
+<ul>
+<li>Brújula para la Competividad. Necesidad 1 “Colmar las lagunas en materia de innovación”</li>
+</ul></li>
+<li>ODS
+<ul>
+<li>Objetivo 9 “Industria, innovación e infraestructura”</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="subvenciones" class="level3" data-number="5.10.6">
+<h3 data-number="5.10.6" class="anchored" data-anchor-id="subvenciones"><span class="header-section-number">5.10.6</span> Subvenciones</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones
+<ul>
+<li>L 38/2003. General de Subvenciones.</li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="13" type="1">
+<li>Convenios. Encomiendas de gestión. Colaboración público-privada</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El tema 13, en su largo título, incluye el “regímen jurídico de subvenciones públicas” y su procedimiento.</p>
+</section>
+<section id="cooperación" class="level3" data-number="5.10.7">
+<h3 data-number="5.10.7" class="anchored" data-anchor-id="cooperación"><span class="header-section-number">5.10.7</span> Cooperación</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>ODS
+<ul>
+<li>Obj. 17. Alianza para lograr los objetivos</li>
+</ul></li>
+<li>Organismos
+<ul>
+<li>Ministerio de Exteriores, Unión Europea y Cooperación</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="exteriores" class="level3" data-number="5.10.8">
+<h3 data-number="5.10.8" class="anchored" data-anchor-id="exteriores"><span class="header-section-number">5.10.8</span> Exteriores</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-97-contents" aria-controls="callout-97" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-97" class="callout-97-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La vocal titular M. E. Díaz-Santos trabaja en el Plan de Digitalización Consular del Ministerio de Exteriores, Unión Europea y Cooperación del Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="cnmc" class="level3" data-number="5.10.9">
+<h3 data-number="5.10.9" class="anchored" data-anchor-id="cnmc"><span class="header-section-number">5.10.9</span> CNMC</h3>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-98-contents" aria-controls="callout-98" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥈Temática candidata N2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-98" class="callout-98-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>El vocal titular K. Rincón es Inspector jefe de competencia en la CNMC</p>
+</div>
+</div>
+</div>
+<p>La Comisión Nacional de los Mercados y la Competencia (CNMC) es una Autoridad Administrativa Independiente (AAI) que pertenece al sector público institucional estatal, y no pertenece a la AGE.</p>
+</section>
+<section id="propiedad-intelectual" class="level3" data-number="5.10.10">
+<h3 data-number="5.10.10" class="anchored" data-anchor-id="propiedad-intelectual"><span class="header-section-number">5.10.10</span> Propiedad intelectual</h3>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/csstiae-2025-prac\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../03-practico/01-supuesto/index.html" class="pagination-link" aria-label="Supuesto práctico">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../03-practico/03-volcado/index.html" class="pagination-link" aria-label="Volcado">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Volcado</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/03-practico/02-analisis/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/03-practico/02-analisis/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>

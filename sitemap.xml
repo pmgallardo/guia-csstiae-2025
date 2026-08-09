@@ -2,98 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pmgallardo.github.io/csstiae-2025-prac/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.558Z</lastmod>
+    <lastmod>2026-08-09T03:40:46.721Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/00-practico/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.555Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-inscripcion/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.719Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/00-practico/temas.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-test/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.719Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/00-practico/material.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-practico/00-gen/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-practico/01-supuesto/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/modelado.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-practico/02-analisis/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/infr-comunes.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-practico/03-volcado/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/serv-comunes.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-practico/04-lectura/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/seguridad.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/04-ingles/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/interoperabilidad.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/06-eleccion/index.html</loc>
+    <lastmod>2026-08-09T03:40:46.720Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/dimensionamiento.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/costes.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/01-supuesto/contratacion.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/organismos.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/regulaciones.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/estrategias.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/iniciativas.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/estadisticas.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/transversales.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/02-analisis/especificas.html</loc>
-    <lastmod>2026-08-09T01:54:00.556Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/03-volcado/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/04-lectura/index.html</loc>
-    <lastmod>2026-08-09T01:54:00.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/csstiae-2025-prac/Ejercicio-práctico-del-CSSTIAE-2025.pdf</loc>
-    <lastmod>2026-08-09T01:56:28.431Z</lastmod>
+    <loc>https://pmgallardo.github.io/csstiae-2025-prac/Guía-CSSTIAE-2025.pdf</loc>
+    <lastmod>2026-08-09T03:42:55.044Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Supuesto práctico – Guía CSSTIAE 2025</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../03-practico/02-analisis/index.html" rel="next">
+<link href="../../03-practico/00-gen/index.html" rel="prev">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1b15cd7dfe5d645daabccee077c4b062.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../03-practico/00-gen/index.html">Ejercicio práctico</a></li><li class="breadcrumb-item"><a href="../../03-practico/01-supuesto/index.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Guía CSSTIAE 2025</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/csstiae-2025-prac" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Inscripción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01-inscripcion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inscripción</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio de test</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02-test/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ejercicio de test</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio práctico</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/00-gen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ejercicio práctico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/01-supuesto/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/02-analisis/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/03-volcado/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Volcado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03-practico/04-lectura/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Lectura</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ejercicio de inglés</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04-ingles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ejercicio de inglés</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Selección</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05-seleccion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Selección</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Elección</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06-eleccion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Elección</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#introducción-al-supuesto-práctico" id="toc-introducción-al-supuesto-práctico" class="nav-link active" data-scroll-target="#introducción-al-supuesto-práctico"><span class="header-section-number">4.1</span> Introducción al supuesto práctico</a>
+  <ul class="collapse">
+  <li><a href="#material-a-llevar-al-consejo-práctico" id="toc-material-a-llevar-al-consejo-práctico" class="nav-link" data-scroll-target="#material-a-llevar-al-consejo-práctico"><span class="header-section-number">4.1.1</span> Material a llevar al consejo práctico</a></li>
+  <li><a href="#consejos-para-el-supuesto-práctico" id="toc-consejos-para-el-supuesto-práctico" class="nav-link" data-scroll-target="#consejos-para-el-supuesto-práctico"><span class="header-section-number">4.1.2</span> Consejos para el supuesto práctico</a></li>
+  <li><a href="#ia-supuesto-práctico" id="toc-ia-supuesto-práctico" class="nav-link" data-scroll-target="#ia-supuesto-práctico"><span class="header-section-number">4.1.3</span> IA (supuesto práctico)</a></li>
+  <li><a href="#certificados-electrónicos-supuesto-práctico" id="toc-certificados-electrónicos-supuesto-práctico" class="nav-link" data-scroll-target="#certificados-electrónicos-supuesto-práctico"><span class="header-section-number">4.1.4</span> Certificados electrónicos (supuesto práctico)</a></li>
+  <li><a href="#accesibilidad-supuesto-práctico" id="toc-accesibilidad-supuesto-práctico" class="nav-link" data-scroll-target="#accesibilidad-supuesto-práctico"><span class="header-section-number">4.1.5</span> Accesibilidad (supuesto práctico)</a></li>
+  </ul></li>
+  <li><a href="#modelado" id="toc-modelado" class="nav-link" data-scroll-target="#modelado"><span class="header-section-number">4.2</span> Modelado</a>
+  <ul class="collapse">
+  <li><a href="#diagramas-estáticos-y-dinámicos" id="toc-diagramas-estáticos-y-dinámicos" class="nav-link" data-scroll-target="#diagramas-estáticos-y-dinámicos"><span class="header-section-number">4.2.1</span> Diagramas estáticos y dinámicos</a></li>
+  <li><a href="#arquitecturas-de-sistemas" id="toc-arquitecturas-de-sistemas" class="nav-link" data-scroll-target="#arquitecturas-de-sistemas"><span class="header-section-number">4.2.2</span> Arquitecturas de sistemas</a></li>
+  <li><a href="#arquitectura-de-comunicaciones" id="toc-arquitectura-de-comunicaciones" class="nav-link" data-scroll-target="#arquitectura-de-comunicaciones"><span class="header-section-number">4.2.3</span> Arquitectura de comunicaciones</a></li>
+  </ul></li>
+  <li><a href="#infraestructuras-comunes" id="toc-infraestructuras-comunes" class="nav-link" data-scroll-target="#infraestructuras-comunes"><span class="header-section-number">4.3</span> Infraestructuras comunes</a>
+  <ul class="collapse">
+  <li><a href="#redsara" id="toc-redsara" class="nav-link" data-scroll-target="#redsara"><span class="header-section-number">4.3.1</span> RedSARA</a></li>
+  <li><a href="#stesta" id="toc-stesta" class="nav-link" data-scroll-target="#stesta"><span class="header-section-number">4.3.2</span> sTESTA</a></li>
+  <li><a href="#servicio-unificado-de-telecomunicaciones" id="toc-servicio-unificado-de-telecomunicaciones" class="nav-link" data-scroll-target="#servicio-unificado-de-telecomunicaciones"><span class="header-section-number">4.3.3</span> Servicio Unificado de Telecomunicaciones</a></li>
+  <li><a href="#servicio-de-alojamiento-de-infraestructuras-tic" id="toc-servicio-de-alojamiento-de-infraestructuras-tic" class="nav-link" data-scroll-target="#servicio-de-alojamiento-de-infraestructuras-tic"><span class="header-section-number">4.3.4</span> Servicio de alojamiento de infraestructuras TIC</a></li>
+  <li><a href="#nube-supuesto-práctico" id="toc-nube-supuesto-práctico" class="nav-link" data-scroll-target="#nube-supuesto-práctico"><span class="header-section-number">4.3.5</span> Nube (supuesto práctico)</a></li>
+  <li><a href="#servicio-de-seguridad-gestionada" id="toc-servicio-de-seguridad-gestionada" class="nav-link" data-scroll-target="#servicio-de-seguridad-gestionada"><span class="header-section-number">4.3.6</span> Servicio de seguridad gestionada</a></li>
+  </ul></li>
+  <li><a href="#servicios-electrónicos-comunes" id="toc-servicios-electrónicos-comunes" class="nav-link" data-scroll-target="#servicios-electrónicos-comunes"><span class="header-section-number">4.4</span> Servicios electrónicos comunes</a>
+  <ul class="collapse">
+  <li><a href="#clve" id="toc-clve" class="nav-link" data-scroll-target="#clve"><span class="header-section-number">4.4.1</span> Cl@ve</a></li>
+  <li><a href="#carpeta-ciudadana" id="toc-carpeta-ciudadana" class="nav-link" data-scroll-target="#carpeta-ciudadana"><span class="header-section-number">4.4.2</span> Carpeta Ciudadana</a></li>
+  <li><a href="#sir" id="toc-sir" class="nav-link" data-scroll-target="#sir"><span class="header-section-number">4.4.3</span> SIR</a></li>
+  <li><a href="#dehú" id="toc-dehú" class="nav-link" data-scroll-target="#dehú"><span class="header-section-number">4.4.4</span> DEHú</a></li>
+  <li><a href="#plataforma-de-intermediación-de-datos" id="toc-plataforma-de-intermediación-de-datos" class="nav-link" data-scroll-target="#plataforma-de-intermediación-de-datos"><span class="header-section-number">4.4.5</span> Plataforma de Intermediación de Datos</a></li>
+  <li><a href="#face" id="toc-face" class="nav-link" data-scroll-target="#face"><span class="header-section-number">4.4.6</span> FACe</a></li>
+  <li><a href="#dir3" id="toc-dir3" class="nav-link" data-scroll-target="#dir3"><span class="header-section-number">4.4.7</span> DIR3</a></li>
+  <li><a href="#rec" id="toc-rec" class="nav-link" data-scroll-target="#rec"><span class="header-section-number">4.4.8</span> REC</a></li>
+  <li><a href="#orve" id="toc-orve" class="nav-link" data-scroll-target="#orve"><span class="header-section-number">4.4.9</span> ORVE</a></li>
+  <li><a href="#geiser" id="toc-geiser" class="nav-link" data-scroll-target="#geiser"><span class="header-section-number">4.4.10</span> GEISER</a></li>
+  <li><a href="#sia" id="toc-sia" class="nav-link" data-scroll-target="#sia"><span class="header-section-number">4.4.11</span> SIA</a></li>
+  <li><a href="#podera" id="toc-podera" class="nav-link" data-scroll-target="#podera"><span class="header-section-number">4.4.12</span> <span class="citation" data-cites="podera">@podera</span></a></li>
+  <li><a href="#habilit" id="toc-habilit" class="nav-link" data-scroll-target="#habilit"><span class="header-section-number">4.4.13</span> Habilit@</a></li>
+  <li><a href="#valide" id="toc-valide" class="nav-link" data-scroll-target="#valide"><span class="header-section-number">4.4.14</span> VALIDe</a></li>
+  <li><a href="#autentica" id="toc-autentica" class="nav-link" data-scroll-target="#autentica"><span class="header-section-number">4.4.15</span> AutenticA</a></li>
+  <li><a href="#inside" id="toc-inside" class="nav-link" data-scroll-target="#inside"><span class="header-section-number">4.4.16</span> InSiDe</a></li>
+  <li><a href="#archive" id="toc-archive" class="nav-link" data-scroll-target="#archive"><span class="header-section-number">4.4.17</span> Archive</a></li>
+  <li><a href="#ctt" id="toc-ctt" class="nav-link" data-scroll-target="#ctt"><span class="header-section-number">4.4.18</span> CTT (Centro de Transferencia de Tecnología)</a></li>
+  <li><a href="#cise" id="toc-cise" class="nav-link" data-scroll-target="#cise"><span class="header-section-number">4.4.19</span> CISE (Centro de Interoperabilidad Semántica)</a></li>
+  </ul></li>
+  <li><a href="#seguridad" id="toc-seguridad" class="nav-link" data-scroll-target="#seguridad"><span class="header-section-number">4.5</span> Seguridad</a>
+  <ul class="collapse">
+  <li><a href="#riesgos" id="toc-riesgos" class="nav-link" data-scroll-target="#riesgos"><span class="header-section-number">4.5.1</span> Riesgos</a></li>
+  <li><a href="#esquema-nacional-de-seguridad-ens" id="toc-esquema-nacional-de-seguridad-ens" class="nav-link" data-scroll-target="#esquema-nacional-de-seguridad-ens"><span class="header-section-number">4.5.2</span> Esquema Nacional de Seguridad (ENS)</a></li>
+  <li><a href="#protección-de-datos" id="toc-protección-de-datos" class="nav-link" data-scroll-target="#protección-de-datos"><span class="header-section-number">4.5.3</span> Protección de datos</a></li>
+  <li><a href="#guías-ccn-stic" id="toc-guías-ccn-stic" class="nav-link" data-scroll-target="#guías-ccn-stic"><span class="header-section-number">4.5.4</span> Guías CCN-STIC</a></li>
+  </ul></li>
+  <li><a href="#interoperabilidad" id="toc-interoperabilidad" class="nav-link" data-scroll-target="#interoperabilidad"><span class="header-section-number">4.6</span> Interoperabilidad en la AGE</a>
+  <ul class="collapse">
+  <li><a href="#declaración-ministerial-de-tallín-sobre-la-administración-electrónica" id="toc-declaración-ministerial-de-tallín-sobre-la-administración-electrónica" class="nav-link" data-scroll-target="#declaración-ministerial-de-tallín-sobre-la-administración-electrónica"><span class="header-section-number">4.6.1</span> Declaración ministerial de Tallín sobre la administración electrónica</a></li>
+  <li><a href="#reglamento-europeo-de-la-interoperabilidad-rei" id="toc-reglamento-europeo-de-la-interoperabilidad-rei" class="nav-link" data-scroll-target="#reglamento-europeo-de-la-interoperabilidad-rei"><span class="header-section-number">4.6.2</span> Reglamento Europeo de la Interoperabilidad (REI)</a></li>
+  <li><a href="#pasarela-digital-única" id="toc-pasarela-digital-única" class="nav-link" data-scroll-target="#pasarela-digital-única"><span class="header-section-number">4.6.3</span> Pasarela digital única</a></li>
+  <li><a href="#esquema-nacional-de-interoperabilidad" id="toc-esquema-nacional-de-interoperabilidad" class="nav-link" data-scroll-target="#esquema-nacional-de-interoperabilidad"><span class="header-section-number">4.6.4</span> Esquema Nacional de Interoperabilidad</a></li>
+  <li><a href="#normas" id="toc-normas" class="nav-link" data-scroll-target="#normas"><span class="header-section-number">4.6.5</span> Normas</a></li>
+  <li><a href="#nti" id="toc-nti" class="nav-link" data-scroll-target="#nti"><span class="header-section-number">4.6.6</span> NTI</a></li>
+  <li><a href="#auditoría-del-eni" id="toc-auditoría-del-eni" class="nav-link" data-scroll-target="#auditoría-del-eni"><span class="header-section-number">4.6.7</span> Auditoría del ENI</a></li>
+  <li><a href="#iniciativas-relevantes" id="toc-iniciativas-relevantes" class="nav-link" data-scroll-target="#iniciativas-relevantes"><span class="header-section-number">4.6.8</span> Iniciativas Relevantes</a></li>
+  </ul></li>
+  <li><a href="#dimensionamiento-de-recursos" id="toc-dimensionamiento-de-recursos" class="nav-link" data-scroll-target="#dimensionamiento-de-recursos"><span class="header-section-number">4.7</span> Dimensionamiento de recursos</a>
+  <ul class="collapse">
+  <li><a href="#dimensionamiento-de-desarrollo" id="toc-dimensionamiento-de-desarrollo" class="nav-link" data-scroll-target="#dimensionamiento-de-desarrollo"><span class="header-section-number">4.7.1</span> Dimensionamiento de desarrollo</a></li>
+  <li><a href="#dimensionamiento-de-infraestructuras" id="toc-dimensionamiento-de-infraestructuras" class="nav-link" data-scroll-target="#dimensionamiento-de-infraestructuras"><span class="header-section-number">4.7.2</span> Dimensionamiento de infraestructuras</a></li>
+  </ul></li>
+  <li><a href="#costes" id="toc-costes" class="nav-link" data-scroll-target="#costes"><span class="header-section-number">4.8</span> Costes</a>
+  <ul class="collapse">
+  <li><a href="#costes-por-desarrollo-de-software" id="toc-costes-por-desarrollo-de-software" class="nav-link" data-scroll-target="#costes-por-desarrollo-de-software"><span class="header-section-number">4.8.1</span> Costes por desarrollo de software</a></li>
+  <li><a href="#costes-por-infraestructura" id="toc-costes-por-infraestructura" class="nav-link" data-scroll-target="#costes-por-infraestructura"><span class="header-section-number">4.8.2</span> Costes por infraestructura</a></li>
+  </ul></li>
+  <li><a href="#contratación" id="toc-contratación" class="nav-link" data-scroll-target="#contratación"><span class="header-section-number">4.9</span> Contratación</a>
+  <ul class="collapse">
+  <li><a href="#presupuesto-de-los-contratos" id="toc-presupuesto-de-los-contratos" class="nav-link" data-scroll-target="#presupuesto-de-los-contratos"><span class="header-section-number">4.9.1</span> Presupuesto de los contratos</a></li>
+  <li><a href="#tipos-de-contratación-pública-según-su-objeto" id="toc-tipos-de-contratación-pública-según-su-objeto" class="nav-link" data-scroll-target="#tipos-de-contratación-pública-según-su-objeto"><span class="header-section-number">4.9.2</span> Tipos de contratación pública según su objeto</a></li>
+  <li><a href="#regulación-armonizada-sara" id="toc-regulación-armonizada-sara" class="nav-link" data-scroll-target="#regulación-armonizada-sara"><span class="header-section-number">4.9.3</span> Regulación armonizada SARA</a></li>
+  <li><a href="#plazo-de-ejecución" id="toc-plazo-de-ejecución" class="nav-link" data-scroll-target="#plazo-de-ejecución"><span class="header-section-number">4.9.4</span> Plazo de ejecución</a></li>
+  <li><a href="#prórrogas-en-concesiones" id="toc-prórrogas-en-concesiones" class="nav-link" data-scroll-target="#prórrogas-en-concesiones"><span class="header-section-number">4.9.5</span> Prórrogas en concesiones</a></li>
+  <li><a href="#procedimientos-de-adjudicación" id="toc-procedimientos-de-adjudicación" class="nav-link" data-scroll-target="#procedimientos-de-adjudicación"><span class="header-section-number">4.9.6</span> Procedimientos de adjudicación</a></li>
+  <li><a href="#modificación-de-contratos" id="toc-modificación-de-contratos" class="nav-link" data-scroll-target="#modificación-de-contratos"><span class="header-section-number">4.9.7</span> Modificación de Contratos</a></li>
+  <li><a href="#anuncios-de-licitaciones-público" id="toc-anuncios-de-licitaciones-público" class="nav-link" data-scroll-target="#anuncios-de-licitaciones-público"><span class="header-section-number">4.9.8</span> Anuncios de licitaciones público</a></li>
+  <li><a href="#procedimiento-general-de-contratación-tic" id="toc-procedimiento-general-de-contratación-tic" class="nav-link" data-scroll-target="#procedimiento-general-de-contratación-tic"><span class="header-section-number">4.9.9</span> Procedimiento general de contratación TIC</a></li>
+  </ul></li>
+  <li><a href="#planificación-temporal" id="toc-planificación-temporal" class="nav-link" data-scroll-target="#planificación-temporal"><span class="header-section-number">4.10</span> Planificación temporal</a>
+  <ul class="collapse">
+  <li><a href="#fases-de-un-proyecto" id="toc-fases-de-un-proyecto" class="nav-link" data-scroll-target="#fases-de-un-proyecto"><span class="header-section-number">4.10.1</span> Fases de un proyecto</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/03-practico/01-supuesto/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/03-practico/01-supuesto/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../03-practico/00-gen/index.html">Ejercicio práctico</a></li><li class="breadcrumb-item"><a href="../../03-practico/01-supuesto/index.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Supuesto práctico</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción-al-supuesto-práctico" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introducción-al-supuesto-práctico"><span class="header-section-number">4.1</span> Introducción al supuesto práctico</h2>
+<p>Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).</p>
+<section id="material-a-llevar-al-consejo-práctico" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="material-a-llevar-al-consejo-práctico"><span class="header-section-number">4.1.1</span> Material a llevar al consejo práctico</h3>
+<p>Material para llevar:</p>
+<ul>
+<li>2 bolígrafos</li>
+<li>Corrector ortográfico</li>
+<li>Subrayadores de colores</li>
+<li>Lapicero</li>
+<li>Goma de borrar</li>
+<li>Cuaderno, hojas o portátil para realizar el volcado</li>
+</ul>
+</section>
+<section id="consejos-para-el-supuesto-práctico" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="consejos-para-el-supuesto-práctico"><span class="header-section-number">4.1.2</span> Consejos para el supuesto práctico</h3>
+<p>Resumen de consejos:</p>
+<ul>
+<li>Leer las preguntas antes de leer el enunciado completo.</li>
+<li>Subrayar los conceptos del exámen</li>
+<li>Emplear una hoja para cada ejercicio. No penaliza el número de hojas empleadas, y el emplear hojas independientes permite alargar la resolución del ejercicio en el caso necesario.</li>
+</ul>
+<p>En la mayoría de tribunales, si escribes en las hojas del enunciado del supuesto práctico no las podrás sacar posteriormente. No contar con el enunciado dificulta la realización del volcado, por lo que no es un buen consejo.</p>
+<p>Por el contrario, emplear subrayadores es compatible con sacar la hoja del enunciado. Algunos candidatos emplean varios colores para marcar distintas categorías de palabras claves, como por ejemplo actores, acciones, etc.</p>
+<p>Una propuesta de subrayado de colores puede ser:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Significado</th>
+<th>Color sugerido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Actor / Sistema</td>
+<td>Azul</td>
+</tr>
+<tr class="even">
+<td>Entidad de datos</td>
+<td>Verde</td>
+</tr>
+<tr class="odd">
+<td>Funcionalidad</td>
+<td>Naranja</td>
+</tr>
+<tr class="even">
+<td>Normativa</td>
+<td>Rojo</td>
+</tr>
+<tr class="odd">
+<td>Cuestiones de interés</td>
+<td>Amarillo</td>
+</tr>
+</tbody>
+</table>
+<p>Se podría distinguir con distinto color los actores internos y externos.</p>
+</section>
+<section id="ia-supuesto-práctico" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="ia-supuesto-práctico"><span class="header-section-number">4.1.3</span> IA (supuesto práctico)</h3>
+</section>
+<section id="certificados-electrónicos-supuesto-práctico" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="certificados-electrónicos-supuesto-práctico"><span class="header-section-number">4.1.4</span> Certificados electrónicos (supuesto práctico)</h3>
+</section>
+<section id="accesibilidad-supuesto-práctico" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="accesibilidad-supuesto-práctico"><span class="header-section-number">4.1.5</span> Accesibilidad (supuesto práctico)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>📐 Estándares:</strong>
+<ul>
+<li>EN 301 549</li>
+</ul></li>
+<li><strong>📖 Guías:</strong>
+<ul>
+<li>WCAG</li>
+</ul></li>
+<li><strong>🎯 Temas:</strong>
+<ul>
+<li><ol start="44" type="1">
+<li>Accesibilidad y usabilidad</li>
+</ol></li>
+<li><ol start="46" type="1">
+<li>Discapacidad</li>
+</ol></li>
+</ul></li>
+<li><strong>🔗 Referencias de consulta:</strong>
+<ul>
+<li><a href="https://runmodule.com/2025/09/25/web-accessibility/">Web Accessibility (RunModule, 2025)</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="modelado" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="modelado"><span class="header-section-number">4.2</span> Modelado</h2>
+<section id="diagramas-estáticos-y-dinámicos" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="diagramas-estáticos-y-dinámicos"><span class="header-section-number">4.2.1</span> Diagramas estáticos y dinámicos</h3>
+<section id="diagrama-de-casos-de-uso" class="level4" data-number="4.2.1.1">
+<h4 data-number="4.2.1.1" class="anchored" data-anchor-id="diagrama-de-casos-de-uso"><span class="header-section-number">4.2.1.1</span> Diagrama de casos de uso</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="88" type="1">
+<li>Análisis de sistemas y metodologías ágiles</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es">Métrica v3</a>. PAe.</li>
+<li>Cillero, Manuel. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/casos-de-uso/">Casos de uso en Métrica 3</a>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El diagrama de casos de uso…</p>
+<p>Los actores se corresponden con tipologías de usuarios, organismos o sistemas externos que interactúen con el sistema.</p>
+<p>Los casos de uso se corresponden con las funcionalidades del sistema detectadas.</p>
+<p>La <strong>relación «include»</strong> entre casos de uso se representa con una flecha discontinua y apunta desde el caso de uso que incluye hacia el caso de uso incluido. Indica que el caso de uso incluido es obligatorio para el caso de uso que incluye. Un ejemplo es que para realizar una compra (incluye) es necesario realizar el pago (incluido).</p>
+<p>Se puede usar cuando una funcionalidad es común a varios casos de uso, y se quiere evitar repetirla en cada caso de uso.</p>
+<p>La <strong>relación «extend»</strong> entre casos de uso se representa con una flecha discontinua y apunta desde el caso de uso que extiende hacia el caso de uso extendido. Indica que el caso de uso es opcional para el caso extendido, y que se ejecuta bajo ciertas condiciones. Un ejemplo es imprimir un recibo (extensión) tras realizar una compra (extendido).</p>
+<p>Cuando se emplea una relación «include» o</p>
+<p>El sistema engloba los casos de uso, representándose con un rectángulo.</p>
+<p>Consejos:</p>
+<ul>
+<li>Incluir alguna relación «include» y «extend» entre casos de uso, para demostrar al tribunal la capacidad de trabajar con estos conceptos.</li>
+</ul>
+</section>
+<section id="diagrama-de-flujo-de-datos" class="level4" data-number="4.2.1.2">
+<h4 data-number="4.2.1.2" class="anchored" data-anchor-id="diagrama-de-flujo-de-datos"><span class="header-section-number">4.2.1.2</span> Diagrama de flujo de datos</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="90" type="1">
+<li>Análisis dinámico de sistemas</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li>Cillero, Manuel. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/">Diagrama de Flujos de Datos en Métrica 3</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Diagrama de Flujo de Datos (DFD) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema.</p>
+<p>El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como diagrama de contexto, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.</p>
+</section>
+<section id="modelo-entidad-relación" class="level4" data-number="4.2.1.3">
+<h4 data-number="4.2.1.3" class="anchored" data-anchor-id="modelo-entidad-relación"><span class="header-section-number">4.2.1.3</span> Modelo entidad-relación</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="89" type="1">
+<li>Análisis del dominio de los sistemas</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li>Cillero, Manuel. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/" target="_blank">Modelo entidad-relacion en Métrica 3</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Un modelo entidad-relacion (E/R)…</p>
+</section>
+<section id="diagrama-de-clases" class="level4" data-number="4.2.1.4">
+<h4 data-number="4.2.1.4" class="anchored" data-anchor-id="diagrama-de-clases"><span class="header-section-number">4.2.1.4</span> Diagrama de clases</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="89" type="1">
+<li>Análisis del dominio de los sistemas</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li>Cillero, Manuel. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-clases/" target="_blank">Diagrama de clases en Métrica 3</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Diagrama de clases pertenece a la familia de diagramas UML.</p>
+</section>
+<section id="diagramas-de-despliegue" class="level4" data-number="4.2.1.5">
+<h4 data-number="4.2.1.5" class="anchored" data-anchor-id="diagramas-de-despliegue"><span class="header-section-number">4.2.1.5</span> Diagramas de despliegue</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="92" type="1">
+<li>Diseño arquitectónico de sistemas</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li>Cillero, Manuel. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-despliegue/" target="_blank">Diagramas de despliegue en Métrica 3</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El diagrama de despliegue pertenece a la familia de diagramas UML.</p>
+</section>
+<section id="diagrama-de-secuencia" class="level4" data-number="4.2.1.6">
+<h4 data-number="4.2.1.6" class="anchored" data-anchor-id="diagrama-de-secuencia"><span class="header-section-number">4.2.1.6</span> Diagrama de secuencia</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://es.wikipedia.org/wiki/Diagrama_de_secuencia" target="_blank">Diagramas de secuencia</a>. Wikipedia.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El diagrama de secuencia es un diagrama UML que permite modelar la interacción entre distintos elementos de un sistema.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/diagrama-secuencia.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de diagrama de secuencia</figcaption>
+</figure>
+</div>
+</section>
+<section id="métrica-v3" class="level4" data-number="4.2.1.7">
+<h4 data-number="4.2.1.7" class="anchored" data-anchor-id="métrica-v3"><span class="header-section-number">4.2.1.7</span> Métrica v3</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="95" type="1">
+<li>Métrica</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="arquitecturas-de-sistemas" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="arquitecturas-de-sistemas"><span class="header-section-number">4.2.2</span> Arquitecturas de sistemas</h3>
+<section id="dominiossubdominios-funcionales" class="level4" data-number="4.2.2.1">
+<h4 data-number="4.2.2.1" class="anchored" data-anchor-id="dominiossubdominios-funcionales"><span class="header-section-number">4.2.2.1</span> Dominios/subdominios funcionales</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📝 Apariciones en examen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Conv. 2023.</p>
+</div>
+</div>
+</div>
+<p>La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.</p>
+</section>
+<section id="arquitectura-conceptual" class="level4" data-number="4.2.2.2">
+<h4 data-number="4.2.2.2" class="anchored" data-anchor-id="arquitectura-conceptual"><span class="header-section-number">4.2.2.2</span> Arquitectura conceptual</h4>
+<p>En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.</p>
+</section>
+<section id="arquitectura-de-sistemas" class="level4" data-number="4.2.2.3">
+<h4 data-number="4.2.2.3" class="anchored" data-anchor-id="arquitectura-de-sistemas"><span class="header-section-number">4.2.2.3</span> Arquitectura de sistemas</h4>
+<p>La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.</p>
+</section>
+<section id="arquitectura-lógica" class="level4" data-number="4.2.2.4">
+<h4 data-number="4.2.2.4" class="anchored" data-anchor-id="arquitectura-lógica"><span class="header-section-number">4.2.2.4</span> Arquitectura lógica</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📝 Apariciones en examen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Convocatorias: 2023.</p>
+</div>
+</div>
+</div>
+<p>La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas cpas que posee el sistema.</p>
+<p>Ejemplos de modelos de arquitectura de sistemas:</p>
+<ul>
+<li>Modelo-vista-controlador (MVC)</li>
+<li>Microservicios</li>
+</ul>
+<p><strong>MVC</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2024/12/03/mvc-architecture/" class="uri">https://runmodule.com/2024/12/03/mvc-architecture/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>En el modelo-vista-controlador existiría una capa de presentación, otra de aplicación o negocio y una última de datos.</p>
+<p>Se suelen representar la base de datos, el directorio y el gestor documental para almacenar datos.</p>
+<p>Propuesta de niveles principales:</p>
+<ul>
+<li>Presentación</li>
+<li>Lógica de negocio</li>
+<li>Acceso a datos y servicios</li>
+</ul>
+<p><strong>Microservicios</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2024/12/03/microservices/" class="uri">https://runmodule.com/2024/12/03/microservices/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>En microservicios se suele pintar un API gateway al inicio de la lógica de negocio.</p>
+<p>El API gateway son el punto de entrada a los microservicios. Puede contenter una API separada para la web, que podría ser reactiva (diseño), y una de móvil.</p>
+<p>Una aplicación de móvil se conecta directamente con el backend, ya que es la app instalada en el móvil quien lleva la carga del frontend.</p>
+<p>Habitualmente en sector público se usa la integración de lado de servidor (<em>server-side integration</em>). Esto se hace a través de un <em>front-end UI composer</em>.</p>
+<p>De manera transversal:</p>
+<ul>
+<li>Administración</li>
+<li>Seguridad</li>
+<li>Monitorización</li>
+</ul>
+<p>Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).</p>
+</section>
+<section id="arquitectura-física" class="level4" data-number="4.2.2.5">
+<h4 data-number="4.2.2.5" class="anchored" data-anchor-id="arquitectura-física"><span class="header-section-number">4.2.2.5</span> Arquitectura física</h4>
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2027/03/30/network-architecture/" class="uri">https://runmodule.com/2027/03/30/network-architecture/</a></li>
+</ul></li>
+</ul>
+<p>La arquitectura física implica especificar los componentes técnicos a emplear, ya sean físicos o virtuales.</p>
+<p>Elementos que deben considerarse en la arquitectura física:</p>
+<ul>
+<li>Servidores</li>
+<li>Balanceadores de carga</li>
+<li>Cortafuegos</li>
+<li>Redes de área local (LAN)</li>
+<li>Proxy</li>
+<li>Proxy inverso</li>
+<li>Bases de datos</li>
+</ul>
+<p>Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.</p>
+<p>El sistema debe conectarse a la red SARA a través del cortafuegos interno de la red petrimetral (o zona desmilitarizada).</p>
+<p>Para acceder a la red sTesta se puee conectar directamente a través de la red SARA.</p>
+<p>Para las bases de datos se debe elegir entre bases de datos relacionales o bases de datos NoSQL.</p>
+<p>Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).</p>
+</section>
+</section>
+<section id="arquitectura-de-comunicaciones" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="arquitectura-de-comunicaciones"><span class="header-section-number">4.2.3</span> Arquitectura de comunicaciones</h3>
+</section>
+</section>
+<section id="infraestructuras-comunes" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="infraestructuras-comunes"><span class="header-section-number">4.3</span> Infraestructuras comunes</h2>
+<section id="redsara" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="redsara"><span class="header-section-number">4.3.1</span> RedSARA</h3>
+<p>RedSARA (Sistemas de Aplicaciones y Redes para las administraciones)</p>
+</section>
+<section id="stesta" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="stesta"><span class="header-section-number">4.3.2</span> sTESTA</h3>
+<p>sTESTA es una red transeuropea que incluye a las instituciones públicas europeas y de los estados europeos. RedSARA enlaza con la red sTESTA.</p>
+</section>
+<section id="servicio-unificado-de-telecomunicaciones" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="servicio-unificado-de-telecomunicaciones"><span class="header-section-number">4.3.3</span> Servicio Unificado de Telecomunicaciones</h3>
+</section>
+<section id="servicio-de-alojamiento-de-infraestructuras-tic" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="servicio-de-alojamiento-de-infraestructuras-tic"><span class="header-section-number">4.3.4</span> Servicio de alojamiento de infraestructuras TIC</h3>
+</section>
+<section id="nube-supuesto-práctico" class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="nube-supuesto-práctico"><span class="header-section-number">4.3.5</span> Nube (supuesto práctico)</h3>
+<p>Ventajas y desventajas del uso de la nube.</p>
+<p>En caso de optar por la nube, se puede proponer el uso de NubeSARA, una nube pública exclusiva para el ámbito de las AAPP.</p>
+<section id="nubesara" class="level4" data-number="4.3.5.1">
+<h4 data-number="4.3.5.1" class="anchored" data-anchor-id="nubesara"><span class="header-section-number">4.3.5.1</span> NubeSARA</h4>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>🥇Temática candidata N1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La secretaria suplente del Tribunal trabajó en nubeSARA entre 2018 y 2026.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=nubesara">NubeSARA</a>, PAe.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>NubeSARA es un servicio de nube híbrida para la AGE, gestionado desde la AEAD. Los organismos del sector público tienen esta infraestructura disponible desde la Red SARA.</p>
+<p>NubeSARA se lleva a cabo en una serie de CPDs disponibles. Hay 3 CPDs: Moncloa (el histórico), El Escorial (empleado sobre todo por las Fuerzas de Seguridad) y Las Rozas (en desarrollo).</p>
+<p>Cumplen el Tier IV.</p>
+</section>
+</section>
+<section id="servicio-de-seguridad-gestionada" class="level3" data-number="4.3.6">
+<h3 data-number="4.3.6" class="anchored" data-anchor-id="servicio-de-seguridad-gestionada"><span class="header-section-number">4.3.6</span> Servicio de seguridad gestionada</h3>
+</section>
+</section>
+<section id="servicios-electrónicos-comunes" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="servicios-electrónicos-comunes"><span class="header-section-number">4.4</span> Servicios electrónicos comunes</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="49" type="1">
+<li>Infraestructuras y servicios comunes</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="">Directorio de Soluciones del Centro de Transferencia Tecnológica (CTT)</a></li>
+<li><a href="https://runmodule.com/2024/10/13/servicios-electronicos-del-sector-publico-en-espana/" class="uri">https://runmodule.com/2024/10/13/servicios-electronicos-del-sector-publico-en-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Este capítulo los servicios electrónicos comunes empleados en la Administración General del Estado (AGE) y relevantes para el exámen práctico.</p>
+<p>Los servicios electrónicos aparecen listados en el <a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Racionaliza_y_Comparte/catalogo-servicios-admon-digital.html">catálogo de servicios de Administración digital</a> del Portal de la Administración Electrónica.</p>
+<section id="clve" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="clve"><span class="header-section-number">4.4.1</span> Cl@ve</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=clave">Cl@ve en CTT</a>. PAe.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Cl@ve es un servicio de autenticación.</p>
+</section>
+<section id="carpeta-ciudadana" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="carpeta-ciudadana"><span class="header-section-number">4.4.2</span> Carpeta Ciudadana</h3>
+<p>Carpeta Ciudadana (CCD)</p>
+</section>
+<section id="sir" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="sir"><span class="header-section-number">4.4.3</span> SIR</h3>
+<p>Sistema de Interconexión de Registros (SIR)</p>
+</section>
+<section id="dehú" class="level3" data-number="4.4.4">
+<h3 data-number="4.4.4" class="anchored" data-anchor-id="dehú"><span class="header-section-number">4.4.4</span> DEHú</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/ctt/lema">DEHú en DS-CTT</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>La Dirección Electrónica Habilitada única (DEHú) es un punto único de notificaciones para toda las AAPP.</p>
+</section>
+<section id="plataforma-de-intermediación-de-datos" class="level3" data-number="4.4.5">
+<h3 data-number="4.4.5" class="anchored" data-anchor-id="plataforma-de-intermediación-de-datos"><span class="header-section-number">4.4.5</span> Plataforma de Intermediación de Datos</h3>
+</section>
+<section id="face" class="level3" data-number="4.4.6">
+<h3 data-number="4.4.6" class="anchored" data-anchor-id="face"><span class="header-section-number">4.4.6</span> FACe</h3>
+<p>FACE es el Punto General de Entrada de Facturas Electrónicas de la AGE.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face" class="uri">https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face</a></p>
+</div>
+</div>
+</section>
+<section id="dir3" class="level3" data-number="4.4.7">
+<h3 data-number="4.4.7" class="anchored" data-anchor-id="dir3"><span class="header-section-number">4.4.7</span> DIR3</h3>
+<p>DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=dir" class="uri">https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=dir</a></p>
+</div>
+</div>
+</section>
+<section id="rec" class="level3" data-number="4.4.8">
+<h3 data-number="4.4.8" class="anchored" data-anchor-id="rec"><span class="header-section-number">4.4.8</span> REC</h3>
+<p>Registro Electrónico Común (REC).</p>
+</section>
+<section id="orve" class="level3" data-number="4.4.9">
+<h3 data-number="4.4.9" class="anchored" data-anchor-id="orve"><span class="header-section-number">4.4.9</span> ORVE</h3>
+<p>Oficina de Registro Virtual (ORVE)</p>
+</section>
+<section id="geiser" class="level3" data-number="4.4.10">
+<h3 data-number="4.4.10" class="anchored" data-anchor-id="geiser"><span class="header-section-number">4.4.10</span> GEISER</h3>
+<p>Gestión Integrada de Servicios de Registro (GEISER).</p>
+</section>
+<section id="sia" class="level3" data-number="4.4.11">
+<h3 data-number="4.4.11" class="anchored" data-anchor-id="sia"><span class="header-section-number">4.4.11</span> SIA</h3>
+<p>Sistema de Información Administrativa (SIA).</p>
+</section>
+<section id="podera" class="level3" data-number="4.4.12">
+<h3 data-number="4.4.12" class="anchored" data-anchor-id="podera"><span class="header-section-number">4.4.12</span> <span class="citation" data-cites="podera">@podera</span></h3>
+<p><span class="citation" data-cites="podera">@podera</span> es un registro electrónico de apoderamiento.</p>
+</section>
+<section id="habilit" class="level3" data-number="4.4.13">
+<h3 data-number="4.4.13" class="anchored" data-anchor-id="habilit"><span class="header-section-number">4.4.13</span> Habilit@</h3>
+<p>Habilit@ es un registro de funcionarios habilitados.</p>
+</section>
+<section id="valide" class="level3" data-number="4.4.14">
+<h3 data-number="4.4.14" class="anchored" data-anchor-id="valide"><span class="header-section-number">4.4.14</span> VALIDe</h3>
+<p>VALIDe</p>
+</section>
+<section id="autentica" class="level3" data-number="4.4.15">
+<h3 data-number="4.4.15" class="anchored" data-anchor-id="autentica"><span class="header-section-number">4.4.15</span> AutenticA</h3>
+<p>AutenticA.</p>
+</section>
+<section id="inside" class="level3" data-number="4.4.16">
+<h3 data-number="4.4.16" class="anchored" data-anchor-id="inside"><span class="header-section-number">4.4.16</span> InSiDe</h3>
+<p>Infraestructuras y Sistemas de Documentación Electrónica (InSiDe).</p>
+</section>
+<section id="archive" class="level3" data-number="4.4.17">
+<h3 data-number="4.4.17" class="anchored" data-anchor-id="archive"><span class="header-section-number">4.4.17</span> Archive</h3>
+<p>Archive es un archivo definitivo de expedientes y documentos.</p>
+</section>
+<section id="ctt" class="level3" data-number="4.4.18">
+<h3 data-number="4.4.18" class="anchored" data-anchor-id="ctt"><span class="header-section-number">4.4.18</span> CTT (Centro de Transferencia de Tecnología)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://github.com/ctt-gob-es" target="_blank">Repositorio forja-CTT en GitHub</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El Centro de Transferencia de Tecnología (CTT) es un portal web que tiene como objetivo favorecer la reutilización de soluciones tecnológicas a lo largo.</p>
+<p>Es gestionado por la AEAD.</p>
+<p>Contiene el directorio de soluciones del CTT (DS-CTT)/index{CTT!directorio de soluciones}, que es un catálogo de soluciones tecnológicas reutilizables en las AAPP.</p>
+<p>El repositorio forja-CTT de GitHub alberga proyectos de código abierto de las AAPP.</p>
+</section>
+<section id="cise" class="level3" data-number="4.4.19">
+<h3 data-number="4.4.19" class="anchored" data-anchor-id="cise"><span class="header-section-number">4.4.19</span> CISE (Centro de Interoperabilidad Semántica)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/ctt/378/activosSemanticos" target="_blank">CISE en PAe</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El Centro de Interoperabilidad Semántica (CISE) sirve para almacenar, publicar y difundir modelos de datos comunes y sectoriales a las AAPP de la AGE, garantizando que las diferentes administraciones públicas y ciudadanos entiendan la información intercambiada de forma automática.</p>
+</section>
+</section>
+<section id="seguridad" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="seguridad"><span class="header-section-number">4.5</span> Seguridad</h2>
+<section id="riesgos" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="riesgos"><span class="header-section-number">4.5.1</span> Riesgos</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="47" type="1">
+<li>Análisis y gestión de riesgos</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de la información.</p>
+</section>
+<section id="esquema-nacional-de-seguridad-ens" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="esquema-nacional-de-seguridad-ens"><span class="header-section-number">4.5.2</span> Esquema Nacional de Seguridad (ENS)</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Guías
+<ul>
+<li><a href="https://www.ccn-cert.cni.es/ccn-cert/documentos/guias-ccn-stic/ccn-stic-803.html" target="_blank">CCN-STIC 803. Valorización de los sistemas en el ENS</a></li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="48" type="1">
+<li>ENS</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>El Esquema Nacional de Seguridad (ENS) es una pregunta permanente en todos los ejercicios prácticas del CSSTIAE.</p>
+<p>Las <strong>categorías de seguridad del ENS</strong> son:</p>
+<ul>
+<li>Básica</li>
+<li>Media</li>
+<li>Alta</li>
+</ul>
+<p>Las <strong>dimensiones de seguridad del ENS</strong> son:</p>
+<ol type="1">
+<li>Confidencialidad</li>
+<li>Integridad</li>
+<li>Disponibilidad</li>
+<li>Autenticidad</li>
+<li>Trazabilidad</li>
+</ol>
+<p>Se asigna a cada dimensión de seguridad una de las categorías. La más alta categoría obtenida en todas las dimensiones determina la categoría global del sistema.</p>
+<p>A la hora de evaluar los ejercicios, se debe vigilar cuándo poner categoría alta, pues está reservada a sistemas de información que manejan datos de especial sensibilidad, como los relacionados con la seguridad nacional, la defensa, la seguridad pública y la salud pública.</p>
+<p>También se debe vigilar cuándo poner categoría básica, pues está reservada a sistemas de información que manejan datos de baja sensibilidad, como los relacionados con la publicidad, la meteorología o la cultura. Un sistema que almacena datos personales no puede tener categoria básica.</p>
+<p>Como referencia sobre cómo categorizar la seguridad del ENS, se puede mencionar la guía CCN-STIC 803 “Valorización de los sistemas en el ENS”.</p>
+</section>
+<section id="protección-de-datos" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="protección-de-datos"><span class="header-section-number">4.5.3</span> Protección de datos</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="82" type="1">
+<li>Adaptación LOPD</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="guías-ccn-stic" class="level3" data-number="4.5.4">
+<h3 data-number="4.5.4" class="anchored" data-anchor-id="guías-ccn-stic"><span class="header-section-number">4.5.4</span> Guías CCN-STIC</h3>
+</section>
+</section>
+<section id="interoperabilidad" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="interoperabilidad"><span class="header-section-number">4.6</span> Interoperabilidad en la AGE</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Temas
+<ul>
+<li><ol start="45" type="1">
+<li>ENI</li>
+</ol></li>
+<li><ol start="46" type="1">
+<li>NTI</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li>Portal de Administración Electrónica, <a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Interoperabilidad_Inicio/pae_Esquema_Nacional_de_Interoperabilidad.html">Esquema Nacional de Interoperabilidad</a>, PAe</li>
+<li>Portal de Administración Electrónica; <a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Interoperabilidad_Inicio/pae_Normas_tecnicas_de_interoperabilidad.html">Normas técnicas de interoperabilidad</a>; PAe.</li>
+<li>Rey Almansa, Gemma del; Dobón Muñoz, Mariam. Tema 43: Interoperabilidad de sistemas (1). El Esquema Nacional de Interoperabilidad. Dimensiones de la interoperabilidad. Astic, 2023.</li>
+<li>Martín Ortega, Elisa. Tema 44: Interoperabilidad de sistemas (2). Las Normas Técnicas de Interoperabilidad. Interoperabilidad de los documentos y expedientes electrónicos y normas para el intercambio de datos entre Administraciones Públicas. Astic, 2023.</li>
+<li><a href="https://runmodule.com/2025/09/11/esquema-nacional-de-interoperabilidad-de-espana/">Esquema Nacional de Interoperabilidad</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="declaración-ministerial-de-tallín-sobre-la-administración-electrónica" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="declaración-ministerial-de-tallín-sobre-la-administración-electrónica"><span class="header-section-number">4.6.1</span> Declaración ministerial de Tallín sobre la administración electrónica</h3>
+<p>Se firmó en 2017-10-06.</p>
+<p>Incluye aspectos relevantes para la interoperabilidad como el principio de “solo una vez”, interoperabilidad por defecto o el EIF</p>
+</section>
+<section id="reglamento-europeo-de-la-interoperabilidad-rei" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="reglamento-europeo-de-la-interoperabilidad-rei"><span class="header-section-number">4.6.2</span> Reglamento Europeo de la Interoperabilidad (REI)</h3>
+<p>El Reglamento Europeo de la Interoperabilidad (REI) es también conocido como Interoperable Europe Act (IEA). Se define en el reglamento UE 2024/903</p>
+<p>En él se define un Comité de Europa de Interoperabilidad y un Portal de la Europa Interoperable, conocido en inglés como Interoperable Europe portal (antiguo JoinUp).</p>
+<p>El REI requiere que se realicen evaluaciones de interoperabilidad en ciertas circunstancias.</p>
+<p>Carlos Treviño resume el REI en la 1a parte de la sesión 3 de Preparatic 30, de noviembre 2024, de manera que se puede ver el vídeo y la presentación.</p>
+</section>
+<section id="pasarela-digital-única" class="level3" data-number="4.6.3">
+<h3 data-number="4.6.3" class="anchored" data-anchor-id="pasarela-digital-única"><span class="header-section-number">4.6.3</span> Pasarela digital única</h3>
+<p>Pasarela Digital Única, en inglés <em>Single Digital Gateway</em>.</p>
+</section>
+<section id="esquema-nacional-de-interoperabilidad" class="level3" data-number="4.6.4">
+<h3 data-number="4.6.4" class="anchored" data-anchor-id="esquema-nacional-de-interoperabilidad"><span class="header-section-number">4.6.4</span> Esquema Nacional de Interoperabilidad</h3>
+<p>El Esquema Nacional de Interoperabilidad de España se regula a través del <a href="../../03-practico/02-analisis/index.html#BOE-A-2010-1331">Real Decreto 4/2010</a>.</p>
+<p>Está basado en el European Interoperability Framework / Marco Europeo de Interoperabilidad.</p>
+<section id="niveles-del-eni" class="level4" data-number="4.6.4.1">
+<h4 data-number="4.6.4.1" class="anchored" data-anchor-id="niveles-del-eni"><span class="header-section-number">4.6.4.1</span> Niveles del ENI</h4>
+<p>Niveles del ENI:</p>
+<ul>
+<li>Interoperabilidad jurídica</li>
+<li>Interoperabilidad organizativa</li>
+<li>Interoperabilidad semántica</li>
+<li>Interoperabilidad técnica</li>
+</ul>
+</section>
+<section id="dimensiones-del-eni" class="level4" data-number="4.6.4.2">
+<h4 data-number="4.6.4.2" class="anchored" data-anchor-id="dimensiones-del-eni"><span class="header-section-number">4.6.4.2</span> Dimensiones del ENI</h4>
+<p>Dimensiones del ENI:</p>
+<ul>
+<li>Dimensión legal</li>
+<li>Dimensión organizativa</li>
+<li>Dimensión semántica</li>
+<li>Dimensión técnica</li>
+</ul>
+</section>
+<section id="instrumentos-del-eni" class="level4" data-number="4.6.4.3">
+<h4 data-number="4.6.4.3" class="anchored" data-anchor-id="instrumentos-del-eni"><span class="header-section-number">4.6.4.3</span> Instrumentos del ENI</h4>
+<p>Existen los siguientes inventarios:</p>
+<ul>
+<li><a href="#sia">SIA</a></li>
+<li><a href="#dir3">DIR3</a></li>
+<li><a href="#cise">CISE</a></li>
+<li><a href="#ctt">CTT</a></li>
+</ul>
+<p>Los dos primeros (SIA y DIR3) trabajan la dimensión/nivel organizativa (al inventariar procesos y organismos, respectivamente), CISE trata la semántica (al inventariar modelos de datos) y CTT la técnica (al inventariar productos y servicios digitales).</p>
+<pre><code>BOE-A-2010-1331 </code></pre>
+</section>
+</section>
+<section id="normas" class="level3" data-number="4.6.5">
+<h3 data-number="4.6.5" class="anchored" data-anchor-id="normas"><span class="header-section-number">4.6.5</span> Normas</h3>
+<p>El ENI está formado por normas.</p>
+<p>Algunas normas del ENI:</p>
+<ul>
+<li>Catálogo de estándares.</li>
+<li>Política de Firma Electrónica y de certificados de la Administración.</li>
+<li>Reutilización de recursos de información.</li>
+</ul>
+</section>
+<section id="nti" class="level3" data-number="4.6.6">
+<h3 data-number="4.6.6" class="anchored" data-anchor-id="nti"><span class="header-section-number">4.6.6</span> NTI</h3>
+<p>Norma Técnica de Interoperabilidad (NTI):</p>
+<ul>
+<li>Catálogo de estándares</li>
+<li>Documento electrónico</li>
+<li>Digitalización de documentos</li>
+<li>Expediente electrónico</li>
+<li>Política de firma y sellos electrónicos y de certificados de la Administración</li>
+<li>Protocolos de intermediación de datos</li>
+<li>Relación de modelos de datos</li>
+<li>Política de gestión de documentos electrónicos</li>
+<li>Requisitos de conexión a la Red de comunicaciones de las Administraciones Públicas españolas</li>
+<li>Procedimientos de copiado auténtico y conversión entre documentos electrónicos</li>
+<li>Modelo de Datos para el intercambio de asientos entre las Entidades Registrales</li>
+<li>Reutilización de recursos de información</li>
+<li>Norma SICRES (Sistema de Información Común de Registros de Entrada y Salida).</li>
+</ul>
+<p>El sistema InSiDe es un servicio común cumple los requisitos para que documentos y expedientes puedan almacenarse y obtenerse según el ENI.</p>
+<p><a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Interoperabilidad_Inicio/pae_Normas_tecnicas_de_interoperabilidad.html">NTIs en el PAe</a></p>
+<section id="nti-de-catálogo-de-estándares" class="level4" data-number="4.6.6.1">
+<h4 data-number="4.6.6.1" class="anchored" data-anchor-id="nti-de-catálogo-de-estándares"><span class="header-section-number">4.6.6.1</span> NTI de catálogo de estándares</h4>
+</section>
+<section id="nti-de-documento-electrónico" class="level4" data-number="4.6.6.2">
+<h4 data-number="4.6.6.2" class="anchored" data-anchor-id="nti-de-documento-electrónico"><span class="header-section-number">4.6.6.2</span> NTI de documento electrónico</h4>
+<p>Metadatos mínimos obligatorios:</p>
+<p>ID del documento</p>
+<p>ID de la administración generadora del documento</p>
+<p>Fecha de alta en el sistema de gestión documental</p>
+</section>
+<section id="nti-de-digitalización-de-documentos" class="level4" data-number="4.6.6.3">
+<h4 data-number="4.6.6.3" class="anchored" data-anchor-id="nti-de-digitalización-de-documentos"><span class="header-section-number">4.6.6.3</span> NTI de digitalización de documentos</h4>
+<p>El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises. Esto se define en el apartado IV.2.</p>
+<p>Para el escaneado de documentos, la calidad mínima aceptable de la reproducción, basada en la relación del tamaño del carácter de los documentos y la resolución de captura, será de un índice de calidad (quality indicator, QI) de 3,6. Esto vino en el exámen extraordinario de 2022 del CSSTIAE. Las únicas referencias a esta calidad es en el estándar ANSI/AIIM MS23-1991, al que se hace referencia en el FIST #54-1 del NIST.</p>
+</section>
+<section id="nti-de-política-de-gestión-de-documentos-electrónicos" class="level4" data-number="4.6.6.4">
+<h4 data-number="4.6.6.4" class="anchored" data-anchor-id="nti-de-política-de-gestión-de-documentos-electrónicos"><span class="header-section-number">4.6.6.4</span> NTI de política de gestión de documentos electrónicos</h4>
+<p>La NTI de política de gestión de documentos electrónicos debe incluir al menos:</p>
+<p>Definición del alcance y ámbito de aplicación</p>
+<p>Actuaciones de supervisión y auditoría de los procesos de gestión de documentos</p>
+<p>Roles de los actores involucrados</p>
+<p>Procesos de gestión mínimos:</p>
+<ol type="1">
+<li>Captura</li>
+<li>Registro</li>
+<li>Clasificación</li>
+<li>Descripción</li>
+<li>Acceso</li>
+<li>Calificación</li>
+<li>Conservación</li>
+<li>Transferencia</li>
+<li>Destrucción o elminación de documentos</li>
+</ol>
+</section>
+</section>
+<section id="auditoría-del-eni" class="level3" data-number="4.6.7">
+<h3 data-number="4.6.7" class="anchored" data-anchor-id="auditoría-del-eni"><span class="header-section-number">4.6.7</span> Auditoría del ENI</h3>
+<p>Existe una guía de auditoría del cumplimiento del ENI.</p>
+<p><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf">Guía de auditoría del cumplimiento del ENI de 2016</a></p>
+</section>
+<section id="iniciativas-relevantes" class="level3" data-number="4.6.8">
+<h3 data-number="4.6.8" class="anchored" data-anchor-id="iniciativas-relevantes"><span class="header-section-number">4.6.8</span> Iniciativas Relevantes</h3>
+<p>Iniciativas relevantes a la interoperabilidad en el sector público en España:</p>
+<pre><code>Unión Europea
+    Programa de interoperabilidad
+    EIF
+    CEF
+    EIRA
+    NIFO
+    SEMIC.EU
+    Interoperability European Portal
+España
+    Aporta</code></pre>
+<p>Programas de Interoperabilidad</p>
+<p>There has been different programs:</p>
+<pre><code>IDA
+IDA II
+IDABC (-2009)
+ISA (2010-2015)
+ISA2 (2016-2020)</code></pre>
+<p>These programs updated and applied the EIF and EIS.</p>
+<section id="eif" class="level4" data-number="4.6.8.1">
+<h4 data-number="4.6.8.1" class="anchored" data-anchor-id="eif"><span class="header-section-number">4.6.8.1</span> EIF</h4>
+<p><a href="https://es.wikipedia.org/wiki/Marco_Europeo_de_Interoperabilidad">EIF</a>, Wikipedia</p>
+<p>El Marco Europeo de Interoperabilidad (<em>European Interoperability Framework</em>, EIF) was first included in a European Commission Communication in 2010. It has been updated afterwards through interoperability programs.</p>
+<p>National Interoperability Framework (NIF).</p>
+<p>Domain Interoperability Framework (DIF).</p>
+<p>EIF underlying principles:</p>
+<ul>
+<li>Subsidiarity and proportionality</li>
+<li>Openness</li>
+<li>Transparency</li>
+<li>Reusability</li>
+<li>Technological neutrality and data portability</li>
+<li>User-centricity</li>
+<li>Inclusion and accessibility</li>
+<li>Security and privacy</li>
+<li>Multilingualism</li>
+<li>Administrative simplification</li>
+<li>Preservation of information</li>
+<li>Assessment of effectiveness and efficiency</li>
+</ul>
+</section>
+<section id="cef" class="level4" data-number="4.6.8.2">
+<h4 data-number="4.6.8.2" class="anchored" data-anchor-id="cef"><span class="header-section-number">4.6.8.2</span> CEF</h4>
+<p>Connecting Europe Facility (CEF) is a initiative with the aim of financing the interoperability projects in the fields of energy, transport and telecommunications. It was launched in 2013.</p>
+<p>CEF Telecom is the name that receives the CEF related to telecommunications.</p>
+</section>
+<section id="eira" class="level4" data-number="4.6.8.3">
+<h4 data-number="4.6.8.3" class="anchored" data-anchor-id="eira"><span class="header-section-number">4.6.8.3</span> EIRA</h4>
+<p>European Interoperability Architecture (EIRA) defines the architectonic blocks for interoperability.</p>
+</section>
+<section id="nifo" class="level4" data-number="4.6.8.4">
+<h4 data-number="4.6.8.4" class="anchored" data-anchor-id="nifo"><span class="header-section-number">4.6.8.4</span> NIFO</h4>
+<p>National Interoperability Framework Observatory (NIFO) assess the level of interoperability.</p>
+<p>It publishes these reports:</p>
+<pre><code>State-of-play report
+NIFO sheets
+LIFO report</code></pre>
+<p>The NIFO follow-up mechanism includes 47 recommendations and 68 KPIs.</p>
+</section>
+<section id="semic.eu" class="level4" data-number="4.6.8.5">
+<h4 data-number="4.6.8.5" class="anchored" data-anchor-id="semic.eu"><span class="header-section-number">4.6.8.5</span> SEMIC.EU</h4>
+<p>The Semantic Interoperability Community (SEMIC.EU) celebrates a convention yearly.</p>
+<p>SEMIC.EU at Wikipedia</p>
+</section>
+<section id="interoperability-european-portal" class="level4" data-number="4.6.8.6">
+<h4 data-number="4.6.8.6" class="anchored" data-anchor-id="interoperability-european-portal"><span class="header-section-number">4.6.8.6</span> Interoperability European portal</h4>
+<p>The Interoperable Europe portal was previously known as JoinUp.</p>
+</section>
+<section id="aporta-2009" class="level4" data-number="4.6.8.7">
+<h4 data-number="4.6.8.7" class="anchored" data-anchor-id="aporta-2009"><span class="header-section-number">4.6.8.7</span> Aporta 2009</h4>
+<p>Aporta es una iniciativa de 2009 que en 2025 sigue vigente</p>
+<p>Tiene como fin promocionar la apertura de la información pública y desarrollo de servicios avanzados basados en datos. Es promovida por el Ministerio para la Transformación Digital y de la Función Pública​ a través de la Entidad Pública Empresarial Red.es.</p>
+<p>Acerca de Aporta 2009 en datos.gob.es</p>
+</section>
+<section id="datos.gob.es" class="level4" data-number="4.6.8.8">
+<h4 data-number="4.6.8.8" class="anchored" data-anchor-id="datos.gob.es"><span class="header-section-number">4.6.8.8</span> datos.gob.es</h4>
+<p>datos.gob.es es una plataforma de reutilización de información producida en el sector público de España.</p>
+</section>
+</section>
+</section>
+<section id="dimensionamiento-de-recursos" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="dimensionamiento-de-recursos"><span class="header-section-number">4.7</span> Dimensionamiento de recursos</h2>
+<p>Durante el diseño de un sistema informático se deben dimensionar cada uno de los elementos que forman parte del mismo.</p>
+<p>Estos elementos se puede dividir en distintas tipologías de recursos que pueden dimensionarse por separado. Las tipologías a tener en cuenta son al menos:</p>
+<ul>
+<li>Desarrollo</li>
+<li>Licencias de software</li>
+<li>Infraestructura</li>
+</ul>
+<p>Una vez dimensionadas cada tipología de recursos debe calcularse el coste asociado a cada una. Para ello, se debe revisar el apartado de <a href="#costes">costes</a>.</p>
+<section id="dimensionamiento-de-desarrollo" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="dimensionamiento-de-desarrollo"><span class="header-section-number">4.7.1</span> Dimensionamiento de desarrollo</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>🎯 Temas:</strong>
+<ul>
+<li><ol start="99" type="1">
+<li>Estimación de recursos</li>
+</ol></li>
+</ul></li>
+<li><strong>🔗 Referencias de consulta:</strong>
+<ul>
+<li><a href="https://runmodule.com/2026/06/25/software-estimation/">Software Estimation</a>. RunModule, 2026.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>En caso de que el enunciado del ejercicio incluya un importe de presupuesto, el coste total del proyecto debe aproximarse lo más posible al indicado.</p>
+<p>Los costes de un proyecto vienen definidos principalmente por:</p>
+<ul>
+<li>Esfuerzo de servicios de desarrollo</li>
+<li>Equipos informáticos de desarrollo</li>
+<li>Licencias de software de desarrollo</li>
+</ul>
+<p>Las tarifas de personal no las he encontrado como estándares.</p>
+<p>No obtante, las tarifas aparecen en algunas licitaciones públicas, como por ejemplo:</p>
+<ul>
+<li>en el Anexo IX de este otro contrato de la Comunidad de Madrid.</li>
+<li>Memoria económica del expediente 300/ 2021/00023 del Ayto de Madrid</li>
+<li>Servicio desarrollos evolutivos portales Madrid Destino del Ayto. de Madrid</li>
+</ul>
+<p>Se realiza esta tabla buscando números redondos y ligeramente superiores a los de los expedientes citados.</p>
+<section id="esfuerzo-de-servicios-de-desarrollo" class="level4" data-number="4.7.1.1">
+<h4 data-number="4.7.1.1" class="anchored" data-anchor-id="esfuerzo-de-servicios-de-desarrollo"><span class="header-section-number">4.7.1.1</span> Esfuerzo de servicios de desarrollo</h4>
+<p>En este apartado resume métodos de estimación de esfuerzo y costes en el desarrollo de software, que es una tarea habitual en el supuesto práctico.</p>
+<p>De cara al supuesto práctico, se propone aplicar cada una de las técnicas de dimensionamiento de desarrollo en las siguientes situaciones:</p>
+<ul>
+<li>Si se ha pedido realizar un diagrama de casos de uso: UCP.</li>
+<li>Si se he pedido realizar un modelo entidad-relación (ER) o un diagrama de clases: staffing size.</li>
+<li>En otro caso: COSMIC-FSM</li>
+</ul>
+<p>Todas estas técnicas se presentan en el temario de Astic, además de otras reseñadas como el enfoque COCOMO o las métricas bang. Adicionalmente, existen otras técnicas de estimación no cubiertas en estos apuntes.</p>
+<p><strong>UCP</strong></p>
+<p>Para User Case Points (UCP), se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden que se considera) para facilitar las cuentas ya que su producto es 1.</p>
+<p>Estimación por puntos de función (versión simplificada de Andreu, problemente basada en COSMIC-FSM):</p>
+<ol type="1">
+<li>Identificar los puntos de función de enunciado</li>
+<li>Estimar puntos de función Interfaz de usuario = 10 PF Módulo = 10, 20 ó 30 PF</li>
+<li>Estimar horas Donde 1 PF = 10 horas</li>
+</ol>
+<p>Una vez que se obtienen las horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total.</p>
+<p>El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).</p>
+<p><strong>Staffing size</strong></p>
+<p><strong>COSMIC-FSM</strong></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/" class="uri">https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/</a></p>
+</div>
+</div>
+</section>
+<section id="servicios-de-desarrollo" class="level4" data-number="4.7.1.2">
+<h4 data-number="4.7.1.2" class="anchored" data-anchor-id="servicios-de-desarrollo"><span class="header-section-number">4.7.1.2</span> Servicios de desarrollo</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Contratación
+<ul>
+<li>SDA 25/2022 de suministros</li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es">Métrica v3</a>. PAe.</li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf">Métrica v3. Participantes</a>. PAe, 2001.</li>
+<li>Manuel Cillero, <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/">Métrica v3. Participantes</a>, manuel.cillero.es.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.</p>
+<p>La metodología Métrica v3, en su documento de <a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf">Participantes</a>, define una serie de perfiles de participantes en el desarrollo de sistemas de información:</p>
+<ul>
+<li>Directivo</li>
+<li>Jefe de Proyecto</li>
+<li>Consultor</li>
+<li>Analista</li>
+<li>Programador</li>
+</ul>
+<p>Adicionalmente, en algunos pliegos contemporáneos (como <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D" target="_blank">este</a>) se menciona adicionalmente el perfil de analista-programador. Este perfil mixto no figura en Métrica v3 pero sí se aparece en el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2000-17579" target="_blank">XII Convenio Colectivo Estatal de Empresas de Consultoría y Planificación</a> de 2000, lo cual puede ser una posible explicación sobre su uso.</p>
+<p>Con respecto a categoría y tarifa, esta guía considera análogos los perfiles de analista y analista-programador, justificándose en que en Métrica v3 no existe el perfil mixto.</p>
+<p>A efectos prácticos, para puede establecer que un desarrollo necesita el siguiente número de perfiles:</p>
+<ul>
+<li>1 jefe de proyecto por proyecto</li>
+<li>Tantos analistas-programadores como sea necesario para tener el proyecto en la fecha indicada en el enunciado o en un periodo razonable (6-18 meses).</li>
+<li>Analistas en un ratio de 0,25-0,5 respecto al número total de programadores.</li>
+<li>Opcionalmente 1 o 2 consultores, en función del presupuesto disponible.</li>
+</ul>
+<p>Se suele reducir el ratio de analistas por programador cuando interesa reducir el coste de desarrollo.</p>
+<p>También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.</p>
+<p>Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D">Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud</a>, donde se definía que una unidad de trabajo estaba formada por:</p>
+<ul>
+<li>1 jefe de proyecto</li>
+<li>3 analistas</li>
+<li>6 analistas-programadores</li>
+</ul>
+<p>Otro criterio es suponer que un proyecto típico tiene 12 personas: 1 jefe de proyecto, 2 analistas y 8 programadores. Adicionalmente se puede poner 1 consultor, jugando con esto en función del presupuesto disponible.</p>
+</section>
+<section id="equipos-informáticos-de-desarrollo" class="level4" data-number="4.7.1.3">
+<h4 data-number="4.7.1.3" class="anchored" data-anchor-id="equipos-informáticos-de-desarrollo"><span class="header-section-number">4.7.1.3</span> Equipos informáticos de desarrollo</h4>
+<p>Cada uno de los perfiles necesarios para el proyecto requiere un equipo informático.</p>
+</section>
+<section id="licencias-de-software-para-desarrollo" class="level4" data-number="4.7.1.4">
+<h4 data-number="4.7.1.4" class="anchored" data-anchor-id="licencias-de-software-para-desarrollo"><span class="header-section-number">4.7.1.4</span> Licencias de software para desarrollo</h4>
+<p>Las estaciones de trabajo (<em>workstations</em>) de la AGE suelen usar el SO Microsoft Windows. Puesto que los equipos de desarrollo se adquieren con licencias OEM (<em>original equipment manufacturer</em>) del sistema operativo, no es necesario dimensionar por separado estas licencias.</p>
+<p>Se puede justificar el no incluir licencias de herramientas de desarrollo argumentando que se emplean herramientas de software libre y de código abierto.</p>
+</section>
+</section>
+<section id="dimensionamiento-de-infraestructuras" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="dimensionamiento-de-infraestructuras"><span class="header-section-number">4.7.2</span> Dimensionamiento de infraestructuras</h3>
+<p>Para realizar el dimensionamiento de infraestructuras se requiere haber diseñado previamente un</p>
+<p>Si el sistema cuenta con infraestructura <em>on premise</em>, se puede emplear el <a href="#sda242022">SDA 24/2022</a> de sistemas de comunicación, servidores y sistemas de almacenamiento.</p>
+<p>Si el sistema depende de infraestructura en la nube, se demostrará al Tribunal conocimiento sobre la AGE al proponer el uso de la <a href="#nubesara">NubeSARA</a>. Conviene revisar y aplicar las tarifas correspondientes.</p>
+<section id="servidores" class="level4" data-number="4.7.2.1">
+<h4 data-number="4.7.2.1" class="anchored" data-anchor-id="servidores"><span class="header-section-number">4.7.2.1</span> Servidores</h4>
+<p>Se debe contar el número de servidores</p>
+<p>También se deben dimensionar las licencias de software de los servidores.</p>
+</section>
+</section>
+</section>
+<section id="costes" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="costes"><span class="header-section-number">4.8</span> Costes</h2>
+<p>Los costes finales son proporcionales al dimensionamiento de recursos. Se debe multiplicar el precio de cada recurso por la cantidad de recuros, por cada tipología.</p>
+<section id="costes-por-desarrollo-de-software" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="costes-por-desarrollo-de-software"><span class="header-section-number">4.8.1</span> Costes por desarrollo de software</h3>
+<p>En este apartado se determinan los costes asociados a servicios por desarrollo de software.</p>
+<section id="costes-por-servicios-de-desarrollo" class="level4" data-number="4.8.1.1">
+<h4 data-number="4.8.1.1" class="anchored" data-anchor-id="costes-por-servicios-de-desarrollo"><span class="header-section-number">4.8.1.1</span> Costes por servicios de desarrollo</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Contratación
+<ul>
+<li><a href="#sda262021">SDA 26/2021 de servicios de desarrollo</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>En 2026, no se trabaja con perfiles tasados. Un precio posible es el encontrado en pliegos.</p>
+<p>Las licencias de software se recogen mediante el SDA 26/2022 de servicios de desarrollo. Este se puede emplear solamente si:</p>
+<ul>
+<li>El importe es menor de 862.000 €.</li>
+<li>Se contrata durante su vigencia, es decir, antes del 01/02/2027</li>
+</ul>
+<p>En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende de cada pliego. De cara al ejercicio práctico y procurando tener números redondos, los posibles son los siguientes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Perfil</th>
+<th>Precio hora</th>
+<th>Precio jornada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jefe de Proyecto</td>
+<td>60</td>
+<td>480</td>
+</tr>
+<tr class="even">
+<td>Consultor</td>
+<td>50</td>
+<td>400</td>
+</tr>
+<tr class="odd">
+<td>Analista</td>
+<td>40</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Analista Programador</td>
+<td>40</td>
+<td>320</td>
+</tr>
+<tr class="odd">
+<td>Programador</td>
+<td>30</td>
+<td>240</td>
+</tr>
+</tbody>
+</table>
+<p>Estos precios se han obtenido redondeando los encontrados en diversas licitaciones del sector público, entre ellas el <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D">servicio de mantenimiento adaptativo, evolutivo y correctivo para el aseguramiento del servicio de la web institucional y sede electrónica del CSIC</a>.</p>
+</section>
+<section id="costes-por-equipos-de-desarrollo" class="level4" data-number="4.8.1.2">
+<h4 data-number="4.8.1.2" class="anchored" data-anchor-id="costes-por-equipos-de-desarrollo"><span class="header-section-number">4.8.1.2</span> Costes por equipos de desarrollo</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Contratación
+<ul>
+<li>AM 02/2023</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="costes-por-licencias-de-desarrollo" class="level4" data-number="4.8.1.3">
+<h4 data-number="4.8.1.3" class="anchored" data-anchor-id="costes-por-licencias-de-desarrollo"><span class="header-section-number">4.8.1.3</span> Costes por licencias de desarrollo</h4>
+<p>Como se explica el dimensionamiento, en esta guía no se consideran costes adicionales por licencias para desarrollo, aunque los candidatos podrían considerarlas.</p>
+</section>
+</section>
+<section id="costes-por-infraestructura" class="level3" data-number="4.8.2">
+<h3 data-number="4.8.2" class="anchored" data-anchor-id="costes-por-infraestructura"><span class="header-section-number">4.8.2</span> Costes por infraestructura</h3>
+<section id="costes-por-servidores" class="level4" data-number="4.8.2.1">
+<h4 data-number="4.8.2.1" class="anchored" data-anchor-id="costes-por-servidores"><span class="header-section-number">4.8.2.1</span> Costes por servidores</h4>
+<p>Se debe multiplicar el coste de cada servidor por su precio.</p>
+<p>En caso de emplearse infraestructuras comunes como NubeSARA, se deben usar los precios acordados.</p>
+<p>El uso de NubeSARA supone unos costes. En la pestaña de <a href="https://administracionelectronica.gob.es/ctt/nubesara/descargas">Área de Descagas</a> de la entrada en el PAe están disponibles la Tabla de Tarifas del Catálogo de Servicios de NubeSARA.</p>
+<p>Con última actualización de 2022, se puede resumir a continuación:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Recurso</th>
+<th>Importe / año</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vCPU</td>
+<td>200 €</td>
+</tr>
+<tr class="even">
+<td>1 GB de memoria secundaria</td>
+<td>30 €</td>
+</tr>
+<tr class="odd">
+<td>1 TB de memoria secundaria</td>
+<td>1.500 €</td>
+</tr>
+<tr class="even">
+<td>1 TB de memoria secundaria en backup</td>
+<td>500 €</td>
+</tr>
+</tbody>
+</table>
+<p>Podemos establecer tres tipos de servidores:</p>
+<p>Servidor Pequeño (básico, para aplicaciones ligeras o pequeños servicios web)</p>
+<p>vCPU: 2 → 400 € RAM: 4 GB → 120 € Almacenamiento: 500 GB (0.5 TB) → 750 € Total: 1.270 €/año</p>
+<p>Servidor Mediano (para aplicaciones empresariales, backend, bases de datos medianas)</p>
+<p>vCPU: 4 → 800 € RAM: 8 GB → 240 € Almacenamiento: 1 TB → 1.500 € Total: 2.540 €/año</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Máquina</th>
+<th>Número</th>
+<th>Precio</th>
+<th>Importe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vCPU</td>
+<td>4</td>
+<td>200 (ud.)</td>
+<td>800</td>
+</tr>
+<tr class="even">
+<td>RAM</td>
+<td>8 GB</td>
+<td>30 (1 GB)</td>
+<td>240</td>
+</tr>
+<tr class="odd">
+<td>Mem. sec.</td>
+<td>1 TB</td>
+<td>1.500 (1 TB)</td>
+<td>1.500</td>
+</tr>
+<tr class="even">
+<td>TOTAL</td>
+<td>-</td>
+<td>-</td>
+<td>2.540</td>
+</tr>
+</tbody>
+</table>
+<p>Servidor Grande (para grandes bases de datos, aplicaciones con alta carga)</p>
+<p>vCPU: 8 → 1.600 € RAM: 16 GB → 480 € Almacenamiento: 2 TB → 3.000 € Total: 5.080 €/año</p>
+<p>Resumen de precios de servidores NubeSARA (redondeados de cara a emplearse en el supuesto práctico):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tamaño servidor NubeSARA</th>
+<th>Coste unitario (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pequeño</td>
+<td>1.000 €</td>
+</tr>
+<tr class="even">
+<td>Mediano</td>
+<td>2.500 €</td>
+</tr>
+<tr class="odd">
+<td>Grande</td>
+<td>5.000 €</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="contratación" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="contratación"><span class="header-section-number">4.9</span> Contratación</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Regulaciones
+<ul>
+<li>UE
+<ul>
+<li>Directiva 2014/24/UE</li>
+<li>Directiva 2014/23/UE</li>
+<li>Directiva 2014/25/UE</li>
+</ul></li>
+<li>España
+<ul>
+<li>RD 1098/2001</li>
+<li>RDL 3/2011</li>
+<li><a href="../../03-practico/02-analisis/index.html#BOE-A-2017-12902">L 9/2017. CSP 2 / LCSP</a></li>
+<li>RDL 3/2020</li>
+<li>RD 806/2014. Organización e intrumentos operativos de TIC en ADE</li>
+</ul></li>
+</ul></li>
+<li>Temas
+<ul>
+<li><ol start="11" type="1">
+<li>Los contratos de las Administraciones Públicas</li>
+</ol></li>
+</ul></li>
+<li>Referencias
+<ul>
+<li><a href="https://runmodule.com/2026/01/27/contratacion-en-el-sector-publico-de-espana/" class="uri">https://runmodule.com/2026/01/27/contratacion-en-el-sector-publico-de-espana/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Este apartado trata sobre la contratación en la Administración General del Estado (AGE).</p>
+<p>Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.</p>
+<section id="presupuesto-de-los-contratos" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="presupuesto-de-los-contratos"><span class="header-section-number">4.9.1</span> Presupuesto de los contratos</h3>
+<ul>
+<li>Presupuesto base de licitación</li>
+<li>Valor estimado</li>
+<li>Precio</li>
+</ul>
+<section id="presupuesto-base-de-licitación" class="level4" data-number="4.9.1.1">
+<h4 data-number="4.9.1.1" class="anchored" data-anchor-id="presupuesto-base-de-licitación"><span class="header-section-number">4.9.1.1</span> Presupuesto base de licitación</h4>
+<p>El presupuesto base de licitación es el límite máximo de gasto que en virtud del contrato puede comprometer el órgano de contratación, incluido el Impuesto sobre el Valor Añadido (IVA).</p>
+<p>No incluye prórrogas.</p>
+<p>Incluye IVA.</p>
+</section>
+<section id="valor-estimado" class="level4" data-number="4.9.1.2">
+<h4 data-number="4.9.1.2" class="anchored" data-anchor-id="valor-estimado"><span class="header-section-number">4.9.1.2</span> Valor estimado</h4>
+<p>El valor estimado incluye todas las prórrogas y modificaciones.</p>
+<p>NO incluye IVA.</p>
+</section>
+</section>
+<section id="tipos-de-contratación-pública-según-su-objeto" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="tipos-de-contratación-pública-según-su-objeto"><span class="header-section-number">4.9.2</span> Tipos de contratación pública según su objeto</h3>
+<p>Tipos de contratación según su objeto:</p>
+<ul>
+<li>Obras</li>
+<li>Concesión de obras</li>
+<li>Servicios</li>
+<li>Concesión de Servicios</li>
+<li>Suministros</li>
+<li>Mixto</li>
+</ul>
+<p>Las licencias de software se considera suministro, mientras que el software a medida se considera un servicio.</p>
+<section id="obras" class="level4" data-number="4.9.2.1">
+<h4 data-number="4.9.2.1" class="anchored" data-anchor-id="obras"><span class="header-section-number">4.9.2.1</span> Obras</h4>
+<p>El contrato de obras se regula en el art. 13 de la ley 9/2017.</p>
+</section>
+<section id="mixto" class="level4" data-number="4.9.2.2">
+<h4 data-number="4.9.2.2" class="anchored" data-anchor-id="mixto"><span class="header-section-number">4.9.2.2</span> Mixto</h4>
+<p>En el contrato mixto se recogen varios objetos de contratación.</p>
+<p>En caso de contrato mixto, se distingue entre la preparación y adjudicación del contrato, donde se recogen las normas que establecen las Directivas, y los efectos y extinción.</p>
+<p>Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas del contrato cuya prestación sea la principal o cuyo valor estimado sea más elevado.</p>
+</section>
+</section>
+<section id="regulación-armonizada-sara" class="level3" data-number="4.9.3">
+<h3 data-number="4.9.3" class="anchored" data-anchor-id="regulación-armonizada-sara"><span class="header-section-number">4.9.3</span> Regulación armonizada SARA</h3>
+<p>La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.</p>
+<p>La regulación armonizada sre aplica cuando el valor estimado del contrato sobrepasa el umbral de:</p>
+<p>143.000 € para la AGE en contratos de suministros y servicios</p>
+<p>221.000 € para organismos distintos a la AGE en contratos de suministros y servicios</p>
+<p>5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo</p>
+<p>Estos importes se establecen en la Orden HFP/1352/2023.</p>
+<p>Una de las implicaciones de la regulación armonizada es que los contratos bajo la misma deben publicarse en el Diario Oficial de la Unión Europea.</p>
+</section>
+<section id="plazo-de-ejecución" class="level3" data-number="4.9.4">
+<h3 data-number="4.9.4" class="anchored" data-anchor-id="plazo-de-ejecución"><span class="header-section-number">4.9.4</span> Plazo de ejecución</h3>
+<p>El plazo de ejecución se especifica en el pliego, sin que exista un plazo máximo. Los plazos de ejecución se regulan en el art. 210 de la ley 9/2017.</p>
+</section>
+<section id="prórrogas-en-concesiones" class="level3" data-number="4.9.5">
+<h3 data-number="4.9.5" class="anchored" data-anchor-id="prórrogas-en-concesiones"><span class="header-section-number">4.9.5</span> Prórrogas en concesiones</h3>
+<p>Las prórrogas de las concesiones deben ser acordadas entre la entidad contratante y el contratista.</p>
+<p>Vienen reguladas en el art. 205 de la ley 9/2017.</p>
+</section>
+<section id="procedimientos-de-adjudicación" class="level3" data-number="4.9.6">
+<h3 data-number="4.9.6" class="anchored" data-anchor-id="procedimientos-de-adjudicación"><span class="header-section-number">4.9.6</span> Procedimientos de adjudicación</h3>
+<p>Procedimientos o formas de adjudicación:</p>
+<ul>
+<li>Procedimiento abierto</li>
+<li>Procedimiento abierto simplificado</li>
+<li>Procedimiento abierto simplificado abreviado</li>
+<li>Procedimiento restringido</li>
+<li>Procedimiento de negociación</li>
+<li>Procedimiento negociado sin publicidad</li>
+<li>Contrato menor</li>
+<li>Diálogo competitivo</li>
+<li>Procedimiento de asociación para la innovación</li>
+<li>Contrato menor</li>
+<li>Contratación centralizada</li>
+</ul>
+<p>La plataforma para realizar contratación es Conecta-Contratación.</p>
+<p><a href="https://catalogocentralizado.hacienda.gob.es/pctw/Acceso/inicio.aspx">Página web de Conecta-Contratación</a>.</p>
+<p>Los contratos sujetos a contratación armonizada se llaman también contratos SARA.</p>
+<section id="procedimiento-abierto" class="level4" data-number="4.9.6.1">
+<h4 data-number="4.9.6.1" class="anchored" data-anchor-id="procedimiento-abierto"><span class="header-section-number">4.9.6.1</span> Procedimiento abierto</h4>
+<p>Un procedimientos abierto se denomina así ya que cualquiera puede licitar al mismo.</p>
+<p>Existen varios subtipos de procedimiento abierto:</p>
+<ul>
+<li>Procedimiento abierto (estándar)</li>
+<li>Procedimiento abierto simplificado</li>
+<li>Procedimiento abierto simplificado abreviado</li>
+</ul>
+<p><strong>Procedimiento abierto estándar</strong></p>
+<p>El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto estándar para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.</p>
+<p>El plazo de presentación de proposiciones es:</p>
+<p>En caso de regulación NO armonizada: 15 días</p>
+<p>En caso de regulación armonizada</p>
+<p>En situación estándar: 35 días</p>
+<p>Si se publicó un anuncio previo o en situación de emergencia: 15 días</p>
+<p>Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos en 5 días. Esto se define en el art. 156.3.c.</p>
+<p>No tiene restricciones respecto al importe del contrato.</p>
+<p><strong>Procedimiento abierto simplificado</strong></p>
+<p>Condiciones para su aplicación:</p>
+<p>Criterio económico</p>
+<p>Para contratos de obras, valor estimado &lt;= 2.000.000 €</p>
+<p>Para contratos de suministro y de servicios, valor estimado &lt;= 100.000 €</p>
+<p>Criterios de adjudicación</p>
+<p>En prestación de carácter no intelectual, los juicios de valor deben ser &lt;25%</p>
+<p>En prestación intelectual, los juicios de valor deben ser &lt;40%</p>
+<p>Plazo de presentación de proposiciones mínimo:</p>
+<p>Obras: 20 días</p>
+<p>Otros: 15 días</p>
+<p><strong>Procedimiento abierto simplificado abreviado</strong></p>
+<p>Condiciones para su aplicación:</p>
+<p>Criterio económico</p>
+<p>Para contratos de obras, valor estimado &lt;= 80.000 €.</p>
+<p>Para contratos de suministros y servicios, valor estimado &lt;= 60.000 €</p>
+<p>Tipo de prestación</p>
+<p>Solo prestación de carácter no intelectual</p>
+<p>Plazo de presentación de proposiciones mínimo:</p>
+<p>Compras corrientes disponibles en el mercado: 5 días hábiles</p>
+<p>Otros: 10 días hábiles</p>
+<p>No es necesaria la acreditación de la solvencia económica y financiera y técnica o profesional de los licitadores.</p>
+<p>La oferta se entregará en un único sobre y se evaluará con arreglo a criterios de adjudicación cuantificables mediante la mera aplicación de fórmulas establecidas en los pliegos.</p>
+<p>Con “sobre único” se refiere a que solo se hace una oferta con valores cuantificables y que, a diferencia de otros procesos, no hace falta emitir aparte la oferta con valores subjetivos o cualitativos.</p>
+</section>
+<section id="procedimiento-restringido" class="level4" data-number="4.9.6.2">
+<h4 data-number="4.9.6.2" class="anchored" data-anchor-id="procedimiento-restringido"><span class="header-section-number">4.9.6.2</span> Procedimiento restringido</h4>
+<p>Solo puede licitar quien pasa un filtro.</p>
+<p>No permite negociaciones en el precio.</p>
+</section>
+<section id="procedimiento-con-negociación" class="level4" data-number="4.9.6.3">
+<h4 data-number="4.9.6.3" class="anchored" data-anchor-id="procedimiento-con-negociación"><span class="header-section-number">4.9.6.3</span> Procedimiento con negociación</h4>
+<p>Estos procedimientos permiten negociación, a diferencia del abierto y el restringido.</p>
+<p>Existen dos tipos:</p>
+<ul>
+<li>Procedimiento con negociación [estándar]</li>
+<li>Procedimiento con negociación sin publicidad</li>
+</ul>
+<p><strong>Procedimiento con negociación estándar</strong></p>
+<p>Viene recogido en el artículo 167 de la LCSP.</p>
+<p>Permite negociar con los licitadores las condiciones, quedando fuera los aspectos esenciales y los criterios de adjudicación.</p>
+<p>La versión estándar requiere publicidad.</p>
+<p>Solo se puede aplicar en un número de casos:</p>
+<p>Cuando requiera que los licitadores realicen un trabajo previo de diseño o adaptación.</p>
+<p>Cuando se trate de una solución innovadoras</p>
+<p>Cuando las negociaciones sean ineludibles.</p>
+<p>Cuando el órgano de contratación con puede precisar suficientemente las especificaciones.</p>
+<p>Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.</p>
+<p>Cuando se trate de contratos de servicios sociales personalísimos.</p>
+<p><strong>Procedimiento negociado sin publicidad</strong></p>
+<p>Regulado en el artículo 168 LCSP.</p>
+<p>Es similar al procedimiento negociado estándar pero no requiere publicidad.</p>
+<p>Requiere que se de una compleja lista de condiciones, entre ellas:</p>
+<p>No se haya presentado ninguna oferta; ninguna oferta adecuada; ninguna solicitud de participación; o ninguna solicitud de participación adecuada en respuesta a un procedimiento abierto o a un procedimiento restringido.</p>
+<p>Cuando las obras, los suministros o los servicios solo puedan ser encomendados a un empresario determinado.</p>
+<p>Cuando el contrato haya sido declarado</p>
+</section>
+<section id="diálogo-competitivo" class="level4" data-number="4.9.6.4">
+<h4 data-number="4.9.6.4" class="anchored" data-anchor-id="diálogo-competitivo"><span class="header-section-number">4.9.6.4</span> Diálogo competitivo</h4>
+<p>Comparte los supuestos del procedimiento negociado.</p>
+<p>Supone mantener una mesa de diálogo.</p>
+<p>Permite el pago de primas o compensaciones a los licitadores que se presenten.</p>
+</section>
+<section id="procedimiento-de-asociación-para-la-innovación" class="level4" data-number="4.9.6.5">
+<h4 data-number="4.9.6.5" class="anchored" data-anchor-id="procedimiento-de-asociación-para-la-innovación"><span class="header-section-number">4.9.6.5</span> Procedimiento de asociación para la innovación</h4>
+<p>Relacionado con la innovación.</p>
+</section>
+<section id="contrato-menor" class="level4" data-number="4.9.6.6">
+<h4 data-number="4.9.6.6" class="anchored" data-anchor-id="contrato-menor"><span class="header-section-number">4.9.6.6</span> Contrato menor</h4>
+<p>Un contrato menor debe cumplir una serie de condiciones.</p>
+<p>Condiciones del contrato menor:</p>
+<ul>
+<li>Condiciones económicas
+<ul>
+<li>Contratos de obras: valor estimado &lt; 40.000.</li>
+<li>Contratos de suministros o servicios: valor estimado &lt; 15.000 €.</li>
+</ul></li>
+</ul>
+<p>En este caso se define también en valor estimado y no al importe base de licitación.</p>
+<p>Se debe solicitar al menos 3 prespuestos.</p>
+<p>No se requerirá la aprobación del gasto, pero sí la incorporación al expediente de la factura correspondiente.</p>
+<p>Los contratos menores NO son susceptbiles de prórroga.</p>
+<p>Según los apuntes de Andreu Bosa, lleva un mes su tramitación.</p>
+</section>
+<section id="contratación-centralizada" class="level4" data-number="4.9.6.7">
+<h4 data-number="4.9.6.7" class="anchored" data-anchor-id="contratación-centralizada"><span class="header-section-number">4.9.6.7</span> Contratación centralizada</h4>
+<p>Modalidades dentro de la contratación centralizada:</p>
+<ul>
+<li>Acuerdo marco</li>
+<li>Sistema dinámico de adquisición (SDA)</li>
+<li>Contratos centralizados</li>
+<li>Encargos a medios propios</li>
+</ul>
+<p>Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.</p>
+<p>Se pueden revisar el catálogo en la página oficial:</p>
+<p><a href="https://contratacioncentralizada.gob.es/catalogo">Página web del catálogo de contratación centralizada</a></p>
+<p>La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.</p>
+<p>La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.</p>
+</section>
+<section id="acuerdos-marco" class="level4" data-number="4.9.6.8">
+<h4 data-number="4.9.6.8" class="anchored" data-anchor-id="acuerdos-marco"><span class="header-section-number">4.9.6.8</span> Acuerdos Marco</h4>
+<p>La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.</p>
+<p>En caso de que no estén todos los términos o condiciones fijados hay que añadir una segunda fase en la que hay que contactar a los proveedores.</p>
+<p>En caso de contratos SARA hay que contactar a todos los proveedores del acuerdo marco.</p>
+<p>En caso de contratos no SARA es suficiente con contactar con 3 proveedores.</p>
+<p>El órgano de contratación es, como norma general, la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).</p>
+<p>Acuerdos marcos relevantes para IT:</p>
+<ul>
+<li>AM 02/2023. Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo</li>
+<li>AM 05/2023. Impresoras, fotocopiadoras y escáneres</li>
+<li>AM 08/2021. Sistemas de seguridad</li>
+</ul>
+<p>Hay que saberse los números de los acuerdos marcos.</p>
+<p><strong>AM 02/2023 {am022023}</strong></p>
+<p><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores" class="uri">https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores</a></p>
+</section>
+<section id="sistemas-dinámicos-de-adquisición" class="level4" data-number="4.9.6.9">
+<h4 data-number="4.9.6.9" class="anchored" data-anchor-id="sistemas-dinámicos-de-adquisición"><span class="header-section-number">4.9.6.9</span> Sistemas Dinámicos de Adquisición</h4>
+<p>Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.</p>
+<p>Durante su vigencia se permiten que salgan y entren empresas.</p>
+<p>SDAs relevantes para TI:</p>
+<ul>
+<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software">SDA 25/2022</a>. Suministro de software</li>
+<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo">SDA 26/2021</a>. Servicios de desarrollo</li>
+<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores">SDA 24/2022</a>. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento</li>
+</ul>
+<p><strong>SDA 25/2022. Suministro de software {#sda252022}</strong></p>
+<p><strong>SDA 26/2021. Servicios de desarrollo {#sda262021}</strong></p>
+<p>SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.</p>
+<p><strong>SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}</strong></p>
+</section>
+<section id="contratos-centralizados" class="level4" data-number="4.9.6.10">
+<h4 data-number="4.9.6.10" class="anchored" data-anchor-id="contratos-centralizados"><span class="header-section-number">4.9.6.10</span> Contratos centralizados</h4>
+<p>Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.</p>
+<p>En el caso de telecomunicaciones existen 4 lotes:</p>
+<ul>
+<li>Lote 1. Fijo. Adjudicado a Telefónica</li>
+<li>Lote 2: Móviles. Otorgado a Vodafone</li>
+<li>Lote 3: Internet. Otorgado a Telefónica.</li>
+<li>Lote 4: Internacional. Adjudicado a British Telecom (BT)</li>
+</ul>
+</section>
+</section>
+<section id="modificación-de-contratos" class="level3" data-number="4.9.7">
+<h3 data-number="4.9.7" class="anchored" data-anchor-id="modificación-de-contratos"><span class="header-section-number">4.9.7</span> Modificación de Contratos</h3>
+<p>Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.</p>
+<section id="encargos-a-medios-propios" class="level4" data-number="4.9.7.1">
+<h4 data-number="4.9.7.1" class="anchored" data-anchor-id="encargos-a-medios-propios"><span class="header-section-number">4.9.7.1</span> Encargos a medios propios</h4>
+<p>Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.</p>
+<p>Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.</p>
+<p>Son disitntos los encargos a medios propios y las encomiendas de gestión.</p>
+<p>La definición de medio propio incluye:</p>
+<p>No tener inversión privada.</p>
+<p>No tener más de un 20% de actividad en sector privado.</p>
+<p>Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).</p>
+</section>
+</section>
+<section id="anuncios-de-licitaciones-público" class="level3" data-number="4.9.8">
+<h3 data-number="4.9.8" class="anchored" data-anchor-id="anuncios-de-licitaciones-público"><span class="header-section-number">4.9.8</span> Anuncios de licitaciones público</h3>
+<p>Los procedimientos negociados sin publicidad no se publican.</p>
+<p>El resto de licitaciones se anuncian en la Plataforma de Contratación del Sector Público.</p>
+<p>Las licitación de organismos de la AGE se publican además en el Boletín Oficial del Estado.</p>
+<p>Las licitaciones sujetas a regulación armonizada (SARA) se publica en el Diario Oficial de la Unión Europea.</p>
+</section>
+<section id="procedimiento-general-de-contratación-tic" class="level3" data-number="4.9.9">
+<h3 data-number="4.9.9" class="anchored" data-anchor-id="procedimiento-general-de-contratación-tic"><span class="header-section-number">4.9.9</span> Procedimiento general de contratación TIC</h3>
+<p>Pasos técnicos:</p>
+<ol type="1">
+<li>Análisis de necesidades</li>
+<li>Especificaciones ténico-funcionales</li>
+<li>Evaluación y selección de ofertas</li>
+<li>Validación y pruebas</li>
+</ol>
+<p>Actividades del análisis de contratación:</p>
+<ol type="1">
+<li>Planificación de la capacidad del S.I.</li>
+<li>Decisiones HW / SW</li>
+<li>Decisiones sobre la rentabilidad económica</li>
+</ol>
+<p>Estos tres puntos se desarrollan en los temas 2023.40, 2024.41 y 2024.42 de TIC, que no sueen entrar mucho.</p>
+<p>Expediente de contratación:</p>
+<ul>
+<li>Memoria</li>
+<li>Certificado</li>
+<li>Pliegos
+<ul>
+<li>Pliego de Cláusulas Administrativas Particulares (PCAP).</li>
+<li>Pliego de Prescripciones Técnicas (PPT).</li>
+</ul></li>
+<li>Informes preceptivos de la Memoria y de los Pliegos
+<ul>
+<li>Para el PCAP, lo realiza el servicio jurítico de la abogacía del estado</li>
+<li>La memoria y el PPT lo realiza el SGAD</li>
+</ul></li>
+<li>Informe de fiscalización por la Intervención Delegada</li>
+</ul>
+<p>El Pliego de Cláusulas Administrativas general (PCAG) consta de unas diapositivas.</p>
+<p>El PCAP tiene carácter legal y contractual.</p>
+<p>En la administración pública nunca se contratan personas. Se contratan solamente servicios y se necesitan personas para cubrir esos servicios.</p>
+<p>En caso de retraso en al ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.</p>
+<p>Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.</p>
+<p>Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo.</p>
+</section>
+</section>
+<section id="planificación-temporal" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="planificación-temporal"><span class="header-section-number">4.10</span> Planificación temporal</h2>
+<p>Este apartado trata sobre la planificación de desarrollo de software, que es una tarea habitual en el supuesto práctico del ejercicio práctico del CSSTIAE.</p>
+<p>En la planificación temporal hay que tener en cuenta los siguientes factores:</p>
+<ul>
+<li>Tiempo mínimo de contratación</li>
+<li>Esfuerzo de desarrollo</li>
+</ul>
+<section id="fases-de-un-proyecto" class="level3" data-number="4.10.1">
+<h3 data-number="4.10.1" class="anchored" data-anchor-id="fases-de-un-proyecto"><span class="header-section-number">4.10.1</span> Fases de un proyecto</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias
+<ul>
+<li>Manuel Cillero, <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/">Métrica v3</a>, manuel.cillero.es.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Las fases de un proyecto de sistemas informáticos de la AGE se pueden definir en base al Desarrollo de Sistemas de Información de Métrica v3:</p>
+<ol type="1">
+<li>Estudio de viabilidad del sistema (EVS)</li>
+<li>Análisis del sistema de información (ASI)</li>
+<li>Diseñó del sistema de información (DSI)</li>
+<li>Construcción del sistema de información (CSI)</li>
+<li>Implantación y aceptación del sistema (IAS)</li>
+<li>Mantenimiento del sistema de información (MSI)</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/csstiae-2025-prac\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../03-practico/00-gen/index.html" class="pagination-link" aria-label="Ejercicio práctico">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ejercicio práctico</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../03-practico/02-analisis/index.html" class="pagination-link" aria-label="Análisis pormenorizado">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis pormenorizado</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/03-practico/01-supuesto/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/03-practico/01-supuesto/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
