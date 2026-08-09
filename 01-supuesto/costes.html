@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Descripción del análisis pormenorizado – Ejercicio práctico del CSSTIAE 2025</title>
+<title>11&nbsp; Costes – Ejercicio práctico del CSSTIAE 2025</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../02-analisis/organismos.html" rel="next">
-<link href="../01-supuesto/contratacion.html" rel="prev">
+<link href="../01-supuesto/contratacion.html" rel="next">
+<link href="../01-supuesto/dimensionamiento.html" rel="prev">
 <link href="../images/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-analisis/index.html">Análisis pormenorizado</a></li><li class="breadcrumb-item"><a href="../02-analisis/index.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Descripción del análisis pormenorizado</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-supuesto/index.html">Supuesto práctico</a></li><li class="breadcrumb-item"><a href="../01-supuesto/costes.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Costes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -206,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01-supuesto/costes.html" class="sidebar-item-text sidebar-link">
+  <a href="../01-supuesto/costes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Costes</span></span></a>
   </div>
 </li>
@@ -229,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../02-analisis/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../02-analisis/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Descripción del análisis pormenorizado</span></span></a>
   </div>
 </li>
@@ -321,23 +321,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#enunciado-del-análisis-pormenorizado" id="toc-enunciado-del-análisis-pormenorizado" class="nav-link active" data-scroll-target="#enunciado-del-análisis-pormenorizado"><span class="header-section-number">13.1</span> Enunciado del análisis pormenorizado</a></li>
-  <li><a href="#desarrollo-del-análisis-pormenorizado" id="toc-desarrollo-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#desarrollo-del-análisis-pormenorizado"><span class="header-section-number">13.2</span> Desarrollo del análisis pormenorizado</a>
+  <li><a href="#costes-por-desarrollo-de-software" id="toc-costes-por-desarrollo-de-software" class="nav-link active" data-scroll-target="#costes-por-desarrollo-de-software"><span class="header-section-number">11.1</span> Costes por desarrollo de software</a>
   <ul class="collapse">
-  <li><a href="#estructura-del-análisis-pormenorizado" id="toc-estructura-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#estructura-del-análisis-pormenorizado"><span class="header-section-number">13.2.1</span> Estructura del análisis pormenorizado</a></li>
-  <li><a href="#preparación-del-análisis-pormenorizado" id="toc-preparación-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#preparación-del-análisis-pormenorizado"><span class="header-section-number">13.2.2</span> Preparación del análisis pormenorizado</a></li>
-  <li><a href="#consejos-para-el-análisis-pormenorizado" id="toc-consejos-para-el-análisis-pormenorizado" class="nav-link" data-scroll-target="#consejos-para-el-análisis-pormenorizado"><span class="header-section-number">13.2.3</span> Consejos para el análisis pormenorizado</a></li>
+  <li><a href="#costes-por-servicios-de-desarrollo" id="toc-costes-por-servicios-de-desarrollo" class="nav-link" data-scroll-target="#costes-por-servicios-de-desarrollo"><span class="header-section-number">11.1.1</span> Costes por servicios de desarrollo</a></li>
+  <li><a href="#costes-por-equipos-de-desarrollo" id="toc-costes-por-equipos-de-desarrollo" class="nav-link" data-scroll-target="#costes-por-equipos-de-desarrollo"><span class="header-section-number">11.1.2</span> Costes por equipos de desarrollo</a></li>
+  <li><a href="#costes-por-licencias-de-desarrollo" id="toc-costes-por-licencias-de-desarrollo" class="nav-link" data-scroll-target="#costes-por-licencias-de-desarrollo"><span class="header-section-number">11.1.3</span> Costes por licencias de desarrollo</a></li>
+  <li><a href="#costes-por-infraestructura" id="toc-costes-por-infraestructura" class="nav-link" data-scroll-target="#costes-por-infraestructura"><span class="header-section-number">11.1.4</span> Costes por infraestructura</a></li>
   </ul></li>
-  <li><a href="#valoración-del-análisis-pormenorizado" id="toc-valoración-del-análisis-pormenorizado" class="nav-link" data-scroll-target="#valoración-del-análisis-pormenorizado"><span class="header-section-number">13.3</span> Valoración del análisis pormenorizado</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/02-analisis/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/02-analisis/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/01-supuesto/costes.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/01-supuesto/costes.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-analisis/index.html">Análisis pormenorizado</a></li><li class="breadcrumb-item"><a href="../02-analisis/index.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Descripción del análisis pormenorizado</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-supuesto/index.html">Supuesto práctico</a></li><li class="breadcrumb-item"><a href="../01-supuesto/costes.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Costes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Descripción del análisis pormenorizado</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Costes</span></h1>
 </div>
 
 
@@ -354,53 +353,204 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Este documento es un resumen de información relevante para la preparación del análisis pormenorizado del ejercicio práctico, conocido como también como informe práctico hasta la convocatoria 2023.</p>
-<section id="enunciado-del-análisis-pormenorizado" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="enunciado-del-análisis-pormenorizado"><span class="header-section-number">13.1</span> Enunciado del análisis pormenorizado</h2>
-<p>El análisis pormenorizado consta de un enunciado sencillo en el cual se pide describir el sistema desarrollado en el supuesto práctico y enmarcarlo</p>
-<p>Para la realización del análisis pormenorizado el candidato conserva las hojas del enunciado del supuesto ya realizado, siempre y cuando no se hayan escrito notas sobre el mismo. Sin embargo, no podrá consultar las hojas de respuesta o de sucio escritas, pues estas habrán sido guardadas en un sobre al finalizar la parte anterior.</p>
-</section>
-<section id="desarrollo-del-análisis-pormenorizado" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="desarrollo-del-análisis-pormenorizado"><span class="header-section-number">13.2</span> Desarrollo del análisis pormenorizado</h2>
-<p>El análisis pormenorizado está pensado para ir dirigido a una persona de un órgano ejecutivo, por lo que no debe entrar en mucho detalle técnico.</p>
-<section id="estructura-del-análisis-pormenorizado" class="level3" data-number="13.2.1">
-<h3 data-number="13.2.1" class="anchored" data-anchor-id="estructura-del-análisis-pormenorizado"><span class="header-section-number">13.2.1</span> Estructura del análisis pormenorizado</h3>
-<p>En análisis pormenorizado no tiene una estructura fija, sino que cada candidato puede plantearla como mejor convenga.</p>
-<p>A modo de guía, se sugiere una posible estructura:</p>
-<ol type="1">
-<li><strong>Descripción</strong> introductoria del <strong>sistema</strong> en alto nivel</li>
-<li><strong>Contexto</strong>, con métricas, indicadores y <strong>estadísticas</strong></li>
-<li><strong>Iniciativas</strong> nacionales y europeas que afectan a la AGE y con las que se entronca el sistema</li>
-<li><strong>Marco normativo</strong>, o contexto legal.</li>
-<li><strong>Organismos</strong> con los que está relacionado el sistema.</li>
-<li><strong>Conclusión</strong>, incluyendo beneficios y bondades</li>
-</ol>
-</section>
-<section id="preparación-del-análisis-pormenorizado" class="level3" data-number="13.2.2">
-<h3 data-number="13.2.2" class="anchored" data-anchor-id="preparación-del-análisis-pormenorizado"><span class="header-section-number">13.2.2</span> Preparación del análisis pormenorizado</h3>
-<p>Antes de comenzar a escribir es recomendable realizan en papel en sucio un esquema general del análisis junto con los conceptos (estadísticas, iniciativas, organimos o regulaciones) que se pretendan añadir. Esto ouede servir como referencia a la hora de escribir, asegurando que hay un discurso hilado y que no se olvidan conceptos a incluir.</p>
-<p>En caso de aplicar “plantillazos”, asegurarse que estos encajan correctamente con el sistema y ejercicio y realizar siempre las adaptaciones que sean necesarias.</p>
-</section>
-<section id="consejos-para-el-análisis-pormenorizado" class="level3" data-number="13.2.3">
-<h3 data-number="13.2.3" class="anchored" data-anchor-id="consejos-para-el-análisis-pormenorizado"><span class="header-section-number">13.2.3</span> Consejos para el análisis pormenorizado</h3>
-<p>Consejos generales para el desarrollo del análisis pormenorizado:</p>
+<p>Los costes finales son proporcionales al dimensionamiento de recursos. Se debe multiplicar el precio de cada recurso por la cantidad de recuros, por cada tipología.</p>
+<section id="costes-por-desarrollo-de-software" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="costes-por-desarrollo-de-software"><span class="header-section-number">11.1</span> Costes por desarrollo de software</h2>
+<p>En este apartado se determinan los costes asociados a servicios por desarrollo de software.</p>
+<section id="costes-por-servicios-de-desarrollo" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="costes-por-servicios-de-desarrollo"><span class="header-section-number">11.1.1</span> Costes por servicios de desarrollo</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li>Escribir párrafos bien desarrollados, evitando los listados de viñetas o puntos.</li>
-<li>Un análisis pormenorizado demasiado corto puede penalizar la nota final, por ello se sugiere escribir rápido y produciendo una alta extensión. No obstante, se debe tratar de encontrar un equilibrio entre calidad y cantidad, pues no siempre una mayor extensión es sinónimo de mayor calificación.</li>
-<li>Ser positivo hacia la AGE y evitar discursos críticos contra ella, y en todo caso enfocar las deficiencias detectadas como propuestas de mejora.</li>
-<li>Ser políticamente imparcial y evitar alabar o detractar a gobiernos o grupos políticos concretos.</li>
-<li>Los elogios son mejor recibidos si van dirigidas a comunidades u organismos del sector público sin afinidad política concreta.</li>
-<li>Vigilar los tiempos, de manera que según este finalice el candidato haya podido cerrar el análisis con su conclusión correspondiente, aun cuando esto suponga dejar fuera parte del material planificado.</li>
+<li>Contratación
+<ul>
+<li><a href="../01-supuesto/contratacion.html#sda262021">SDA 26/2021 de servicios de desarrollo</a></li>
+</ul></li>
 </ul>
+</div>
+</div>
+<p>En 2026, no se trabaja con perfiles tasados. Un precio posible es el encontrado en pliegos.</p>
+<p>Las licencias de software se recogen mediante el SDA 26/2022 de servicios de desarrollo. Este se puede emplear solamente si:</p>
+<ul>
+<li>El importe es menor de 862.000 €.</li>
+<li>Se contrata durante su vigencia, es decir, antes del 01/02/2027</li>
+</ul>
+<p>En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende de cada pliego. De cara al ejercicio práctico y procurando tener números redondos, los posibles son los siguientes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Perfil</th>
+<th>Precio hora</th>
+<th>Precio jornada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jefe de Proyecto</td>
+<td>60</td>
+<td>480</td>
+</tr>
+<tr class="even">
+<td>Consultor</td>
+<td>50</td>
+<td>400</td>
+</tr>
+<tr class="odd">
+<td>Analista</td>
+<td>40</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Analista Programador</td>
+<td>40</td>
+<td>320</td>
+</tr>
+<tr class="odd">
+<td>Programador</td>
+<td>30</td>
+<td>240</td>
+</tr>
+</tbody>
+</table>
+<p>Estos precios se han obtenido redondeando los encontrados en diversas licitaciones del sector público, entre ellas el <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D">servicio de mantenimiento adaptativo, evolutivo y correctivo para el aseguramiento del servicio de la web institucional y sede electrónica del CSIC</a>.</p>
 </section>
+<section id="costes-por-equipos-de-desarrollo" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="costes-por-equipos-de-desarrollo"><span class="header-section-number">11.1.2</span> Costes por equipos de desarrollo</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Contratación
+<ul>
+<li>AM 02/2023</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
-<section id="valoración-del-análisis-pormenorizado" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="valoración-del-análisis-pormenorizado"><span class="header-section-number">13.3</span> Valoración del análisis pormenorizado</h2>
-<p>Desde la convocatoria 2023 es necesario obtener al menos la mitad de la nota máxima posible para superar el análisis pormenorizado.</p>
-<p>No se compensa la nota del supuesto práctico con la del análisis pormenorizado, por lo que es necesario aprobar ambas partes por separado.</p>
-<p>La valoración del Tribunal del análisis pormenorizado se realiza tras la lectura por el candidato, y se publica junto con el resto de puntuaciones del ejercicio práctico tras su finalización.</p>
+<section id="costes-por-licencias-de-desarrollo" class="level3" data-number="11.1.3">
+<h3 data-number="11.1.3" class="anchored" data-anchor-id="costes-por-licencias-de-desarrollo"><span class="header-section-number">11.1.3</span> Costes por licencias de desarrollo</h3>
+<p>Como se explica el dimensionamiento, en esta guía no se consideran costes adicionales por licencias para desarrollo, aunque los candidatos podrían considerarlas.</p>
+</section>
+<section id="costes-por-infraestructura" class="level3" data-number="11.1.4">
+<h3 data-number="11.1.4" class="anchored" data-anchor-id="costes-por-infraestructura"><span class="header-section-number">11.1.4</span> Costes por infraestructura</h3>
+<section id="costes-por-servidores" class="level4" data-number="11.1.4.1">
+<h4 data-number="11.1.4.1" class="anchored" data-anchor-id="costes-por-servidores"><span class="header-section-number">11.1.4.1</span> Costes por servidores</h4>
+<p>Se debe multiplicar el coste de cada servidor por su precio.</p>
+<p>En caso de emplearse infraestructuras comunes como NubeSARA, se deben usar los precios acordados.</p>
+<p>El uso de NubeSARA supone unos costes. En la pestaña de <a href="https://administracionelectronica.gob.es/ctt/nubesara/descargas">Área de Descagas</a> de la entrada en el PAe están disponibles la Tabla de Tarifas del Catálogo de Servicios de NubeSARA.</p>
+<p>Con última actualización de 2022, se puede resumir a continuación:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Recurso</th>
+<th>Importe / año</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vCPU</td>
+<td>200 €</td>
+</tr>
+<tr class="even">
+<td>1 GB de memoria secundaria</td>
+<td>30 €</td>
+</tr>
+<tr class="odd">
+<td>1 TB de memoria secundaria</td>
+<td>1.500 €</td>
+</tr>
+<tr class="even">
+<td>1 TB de memoria secundaria en backup</td>
+<td>500 €</td>
+</tr>
+</tbody>
+</table>
+<p>Podemos establecer tres tipos de servidores:</p>
+<p>Servidor Pequeño (básico, para aplicaciones ligeras o pequeños servicios web)</p>
+<p>vCPU: 2 → 400 € RAM: 4 GB → 120 € Almacenamiento: 500 GB (0.5 TB) → 750 € Total: 1.270 €/año</p>
+<p>Servidor Mediano (para aplicaciones empresariales, backend, bases de datos medianas)</p>
+<p>vCPU: 4 → 800 € RAM: 8 GB → 240 € Almacenamiento: 1 TB → 1.500 € Total: 2.540 €/año</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Máquina</th>
+<th>Número</th>
+<th>Precio</th>
+<th>Importe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vCPU</td>
+<td>4</td>
+<td>200 (ud.)</td>
+<td>800</td>
+</tr>
+<tr class="even">
+<td>RAM</td>
+<td>8 GB</td>
+<td>30 (1 GB)</td>
+<td>240</td>
+</tr>
+<tr class="odd">
+<td>Mem. sec.</td>
+<td>1 TB</td>
+<td>1.500 (1 TB)</td>
+<td>1.500</td>
+</tr>
+<tr class="even">
+<td>TOTAL</td>
+<td>-</td>
+<td>-</td>
+<td>2.540</td>
+</tr>
+</tbody>
+</table>
+<p>Servidor Grande (para grandes bases de datos, aplicaciones con alta carga)</p>
+<p>vCPU: 8 → 1.600 € RAM: 16 GB → 480 € Almacenamiento: 2 TB → 3.000 € Total: 5.080 €/año</p>
+<p>Resumen de precios de servidores NubeSARA (redondeados de cara a emplearse en el supuesto práctico):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tamaño servidor NubeSARA</th>
+<th>Coste unitario (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pequeño</td>
+<td>1.000 €</td>
+</tr>
+<tr class="even">
+<td>Mediano</td>
+<td>2.500 €</td>
+</tr>
+<tr class="odd">
+<td>Grande</td>
+<td>5.000 €</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -806,13 +956,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../01-supuesto/contratacion.html" class="pagination-link" aria-label="Contratación">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Contratación</span></span>
+      <a href="../01-supuesto/dimensionamiento.html" class="pagination-link" aria-label="Dimensionamiento de recursos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Dimensionamiento de recursos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../02-analisis/organismos.html" class="pagination-link" aria-label="Organismos">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Organismos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../01-supuesto/contratacion.html" class="pagination-link" aria-label="Contratación">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Contratación</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -821,4 +971,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/02-analisis/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/02-analisis/index.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/edit/main/01-supuesto/costes.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/csstiae-2025-prac/blob/main/01-supuesto/costes.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
