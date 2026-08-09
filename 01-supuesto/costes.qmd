@@ -41,18 +41,14 @@ Estos precios se han obtenido redondeando los encontrados en diversas licitacion
   - AM 02/2023
 :::
 
-
-
-
-
 ### Costes por licencias de desarrollo
 
 Como se explica el dimensionamiento, en esta guía no se consideran costes adicionales por licencias para desarrollo, aunque los candidatos podrían considerarlas.
 
-### Costes por infraestructura
+## Costes por infraestructura
 
 
-#### Costes por servidores
+### Costes por servidores
 
 Se debe multiplicar el coste de cada servidor por su precio.
 

@@ -102,6 +102,8 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
 
 ## Accesibilidad (análisis pormenorizado)
 
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
 - Regulaciones
   - UE
     - D(UE) 2016/2102. Accesibilidad de los sitios webs y aplicaciones para dispositivos móviles de los organismos del sector público
@@ -114,8 +116,8 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
   - EN 301 549
 - Referencias
   - <https://runmodule.com/2026/12/17/accesibilidad-digital-en-el-sector-publico-en-espana/>
+:::
 
-\
 RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir el estándar EN 301 549, publicado en la decisión de ejecución UE 2018/2048.
 
 ## Protección de datos
@@ -217,14 +219,14 @@ El vocal titular L. A. Hernández es profesor universitario de Inteligencia Arti
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Estrategias
-  - UE
+- Estrategias:
+  - UE:
     - [Estrategia para la aplicación de la IA](estrategias.qmd#apply-ai)
-- Regulaciones
-  - UE
+- Regulaciones:
+  - UE:
     - [Reglamento UE 2024/1689. Ley de Inteligencia Artificial](regulaciones.qmd#CELEX:32024R1689)
-- Temas
+- Temas:
   - 70. Inteligencia artificial
-- Referencias
+- Referencias:
   - [Inteligencia artificial](https://digital.gob.es/digitalizacion/areas-interes/inteligencia-artificial). digital.gob.es.
 :::
