@@ -1,6 +1,6 @@
-# Estadísticas
+## Estadísticas
 
-## Portales de estadísticas
+### Portales de estadísticas
 
 - UE
   - DESI
@@ -9,11 +9,11 @@
   - OBSAE (Observatorio de Administración Electrónica)
   - OAW (Observatorio de Accesibilidad Web)
 
-### DESI
+#### DESI
 
 El Índice de Economía y Sociedad Digital (*Digital Economy and Social Index*, DESI) realiza un ranking de los estados miembros de la Unión Europea en función de distintos aspectos relativos a la digitalización
 
-### INE
+#### INE
 
 El Instituto Nacional de Estadística (INE) es un organismo que tiene como objetivo compartir estadísticas de interés general para España.
 
@@ -22,13 +22,13 @@ El INE desarrolla distintos grupos indicadores, entre ellos:
 - EVGVD (Estadística de Violencia Doméstica y Violencia de Género)
 - EPA (Encuesta de Población Activa)
 
-### OBSAE
+#### OBSAE
 
 El Observatorio de Administración Electrónica (OBSAE) es un portal con el objetivo de compartir información sobre la Administración Electrónica en las AAPP. Está impulsada por la AEAD.
 
 [OBSAE](https://dataobsae.administracionelectronica.gob.es){target="_blank"}
 
-### OAW
+#### OAW
 
 El Observatorio de Accesibilidad Web (OAW) es...
 
@@ -38,16 +38,20 @@ El Observatorio de Accesibilidad Web (OAW) es...
 
 ### EVGVD
 
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
 - Referencias
   - [EVGVD en el INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176866&menu=ultiDatos&idp=1254735573206){target="_blank"}
+:::
 
-\
 La Estadística de Violencia Doméstica y Violencia de Género (EVGVD) es...
 
 ### EPA
 
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
 - Referencias
   - [EPA en el INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595){target="_blank"}
+:::
 
-\
 La Encuesta de Población Activa (EPA) es...

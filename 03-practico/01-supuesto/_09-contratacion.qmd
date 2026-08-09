@@ -1,4 +1,4 @@
-# Contratación
+## Contratación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -10,7 +10,7 @@
   - España
     - RD 1098/2001
     - RDL 3/2011
-    - [L 9/2017. CSP 2 / LCSP](../02-analisis/regulaciones.qmd#BOE-A-2017-12902)
+    - [L 9/2017. CSP 2 / LCSP](../02-analisis/index.qmd#BOE-A-2017-12902)
     - RDL 3/2020
     - RD 806/2014. Organización e intrumentos operativos de TIC en ADE
 - Temas
@@ -23,13 +23,13 @@ Este apartado trata sobre la contratación en la Administración General del Est
 
 Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
 
-## Presupuesto de los contratos
+### Presupuesto de los contratos
 
 - Presupuesto base de licitación
 - Valor estimado
 - Precio
 
-### Presupuesto base de licitación
+#### Presupuesto base de licitación
 
 El presupuesto base de licitación es el límite máximo de gasto que en virtud del contrato puede comprometer el órgano de contratación, incluido el Impuesto sobre el Valor Añadido (IVA).
 
@@ -37,13 +37,13 @@ No incluye prórrogas.
 
 Incluye IVA.
 
-### Valor estimado
+#### Valor estimado
 
 El valor estimado incluye todas las prórrogas y modificaciones.
 
 NO incluye IVA.
 
-## Tipos de contratación pública según su objeto
+### Tipos de contratación pública según su objeto
 
 Tipos de contratación según su objeto:
 
@@ -56,11 +56,11 @@ Tipos de contratación según su objeto:
 
 Las licencias de software se considera suministro, mientras que el software a medida se considera un servicio.
 
-### Obras
+#### Obras
 
 El contrato de obras se regula en el art. 13 de la ley 9/2017.
 
-### Mixto
+#### Mixto
 
 En el contrato mixto se recogen varios objetos de contratación. 
 
@@ -68,7 +68,7 @@ En caso de contrato mixto, se distingue entre la preparación y adjudicación de
 
 Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas del contrato cuya prestación sea la principal o cuyo valor estimado sea más elevado.
 
-## Regulación armonizada SARA
+### Regulación armonizada SARA
 
 La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.
 
@@ -84,17 +84,17 @@ Estos importes se establecen en la Orden HFP/1352/2023.
 
 Una de las implicaciones de la regulación armonizada es que los contratos bajo la misma deben publicarse en el Diario Oficial de la Unión Europea.
 
-## Plazo de ejecución
+### Plazo de ejecución
 
 El plazo de ejecución se especifica en el pliego, sin que exista un plazo máximo. Los plazos de ejecución se regulan en el art. 210 de la ley 9/2017.
 
-## Prórrogas en concesiones
+### Prórrogas en concesiones
 
 Las prórrogas de las concesiones deben ser acordadas entre la entidad contratante y el contratista.
 
 Vienen reguladas en el art. 205 de la ley 9/2017.
 
-## Procedimientos de adjudicación
+### Procedimientos de adjudicación
 
 Procedimientos o formas de adjudicación:
 
@@ -116,7 +116,7 @@ La plataforma para realizar contratación es Conecta-Contratación.
 
 Los contratos sujetos a contratación armonizada se llaman también contratos SARA.
 
-### Procedimiento abierto
+#### Procedimiento abierto
 
 Un procedimientos abierto se denomina así ya que cualquiera puede licitar al mismo.
 
@@ -126,7 +126,7 @@ Existen varios subtipos de procedimiento abierto:
 - Procedimiento abierto simplificado
 - Procedimiento abierto simplificado abreviado
 
-#### Procedimiento abierto estándar
+**Procedimiento abierto estándar**
 
 El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto estándar para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.
 
@@ -144,7 +144,7 @@ Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos
 
 No tiene restricciones respecto al importe del contrato.
 
-#### Procedimiento abierto simplificado
+**Procedimiento abierto simplificado**
 
 Condiciones para su aplicación:
 
@@ -166,7 +166,7 @@ Obras: 20 días
 
 Otros: 15 días
 
-#### Procedimiento abierto simplificado abreviado
+**Procedimiento abierto simplificado abreviado**
 
 Condiciones para su aplicación:
 
@@ -192,13 +192,13 @@ La oferta se entregará en un único sobre y se evaluará con arreglo a criterio
 
 Con "sobre único" se refiere a que solo se hace una oferta con valores cuantificables y que, a diferencia de otros procesos, no hace falta emitir aparte la oferta con valores subjetivos o cualitativos.
 
-### Procedimiento restringido
+#### Procedimiento restringido
 
 Solo puede licitar quien pasa un filtro.
 
 No permite negociaciones en el precio.
 
-### Procedimiento con negociación
+#### Procedimiento con negociación
 
 Estos procedimientos permiten negociación, a diferencia del abierto y el restringido.
 
@@ -207,7 +207,7 @@ Existen dos tipos:
 - Procedimiento con negociación [estándar]
 - Procedimiento con negociación sin publicidad
 
-#### Procedimiento con negociación estándar
+**Procedimiento con negociación estándar**
 
 Viene recogido en el artículo 167 de la LCSP.
 
@@ -229,7 +229,7 @@ Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto
 
 Cuando se trate de contratos de servicios sociales personalísimos.
 
-#### Procedimiento negociado sin publicidad
+**Procedimiento negociado sin publicidad**
 
 Regulado en el artículo 168 LCSP.
 
@@ -243,7 +243,7 @@ Cuando las obras, los suministros o los servicios solo puedan ser encomendados a
 
 Cuando el contrato haya sido declarado
 
-### Diálogo competitivo
+#### Diálogo competitivo
 
 Comparte los supuestos del procedimiento negociado.
 
@@ -251,11 +251,11 @@ Supone mantener una mesa de diálogo.
 
 Permite el pago de primas o compensaciones a los licitadores que se presenten.
 
-### Procedimiento de asociación para la innovación
+#### Procedimiento de asociación para la innovación
 
 Relacionado con la innovación.
 
-### Contrato menor
+#### Contrato menor
 
 Un contrato menor debe cumplir una serie de condiciones.
 
@@ -275,7 +275,7 @@ Los contratos menores NO son susceptbiles de prórroga.
 
 Según los apuntes de Andreu Bosa, lleva un mes su tramitación.
 
-### Contratación centralizada
+#### Contratación centralizada
 
 Modalidades dentro de la contratación centralizada:
 
@@ -294,7 +294,7 @@ La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisic
 
 La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.
 
-### Acuerdos Marco
+#### Acuerdos Marco
 
 La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.
 
@@ -314,11 +314,11 @@ Acuerdos marcos relevantes para IT:
 
 Hay que saberse los números de los acuerdos marcos.
 
-#### AM 02/2023 {am022023}
+**AM 02/2023 {am022023}**
 
 <https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores>
 
-### Sistemas Dinámicos de Adquisición
+#### Sistemas Dinámicos de Adquisición
 
 Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.
 
@@ -330,15 +330,15 @@ SDAs relevantes para TI:
 - [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo). Servicios de desarrollo
 - [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
 
-#### SDA 25/2022. Suministro de software {#sda252022}
+**SDA 25/2022. Suministro de software {#sda252022}**
 
-#### SDA 26/2021. Servicios de desarrollo {#sda262021}
+**SDA 26/2021. Servicios de desarrollo {#sda262021}**
 
 SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.
 
-#### SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}
+**SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}**
 
-### Contratos centralizados
+#### Contratos centralizados
 
 Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.
 
@@ -349,11 +349,11 @@ En el caso de telecomunicaciones existen 4 lotes:
 - Lote 3: Internet. Otorgado a Telefónica.
 - Lote 4: Internacional. Adjudicado a British Telecom (BT)
 
-## Modificación de Contratos
+### Modificación de Contratos
 
 Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.
 
-### Encargos a medios propios
+#### Encargos a medios propios
 
 Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.
 
@@ -369,7 +369,7 @@ No tener más de un 20% de actividad en sector privado.
 
 Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).
 
-## Anuncios de licitaciones público
+### Anuncios de licitaciones público
 
 Los procedimientos negociados sin publicidad no se publican.
 
@@ -379,7 +379,7 @@ Las licitación de organismos de la AGE se publican además en el Boletín Ofici
 
 Las licitaciones sujetas a regulación armonizada (SARA) se publica en el Diario Oficial de la Unión Europea.
 
-## Procedimiento general de contratación TIC
+### Procedimiento general de contratación TIC
 
 Pasos técnicos:
 

@@ -1,8 +1,8 @@
-# Temáticas específicas
+## Temáticas específicas
 
 Este apartado trata temáticas específicas que puede que apliquen a ejercicios concretos.
 
-## Temas relacionados con el Tribunal de la convocatoria 2025
+### Temas relacionados con el Tribunal de la convocatoria 2025
 
 En los CVs de los miembros del tribunal (incluyendo presidentes y secretarios titulares y suplentes, y solo vocales titulares) de la convocatoria 2025 se encuentran los siguientes temas:
 
@@ -22,10 +22,10 @@ En los CVs de los miembros del tribunal (incluyendo presidentes y secretarios ti
 - nubeSARA
 - Migraciones
 
-## Justicia
+### Justicia
 
 ::: {.callout-warning icon="false" collapse="true"}
-## 🥇Temática candidata
+## 🥇Temática candidata N1
 El presidente suplente del Tribunal trabaja en el Ministerio de Justicia desde 2020.
 :::
 
@@ -42,7 +42,7 @@ El presidente suplente del Tribunal trabaja en el Ministerio de Justicia desde 2
   - 16. Paz, justicia e instituciones sólidas 
 :::
 
-## Seguridad Social
+### Seguridad Social
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -61,7 +61,7 @@ El art. 41 de la Constitución establece que:
 
 > Los **poderes públicos mantendrán un régimen público de Seguridad Social** para todos los ciudadanos, que garantice la asistencia y prestaciones sociales suficientes ante situaciones de necesidad, especialmente en caso de desempleo. La asistencia y prestaciones complementarias serán libres.
 
-## Pensiones / Tercera Edad
+### Pensiones / Tercera Edad
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -73,7 +73,7 @@ El art. 50 de la Constitución establece que:
 
 > Los poderes públicos garantizarán, mediante pensiones adecuadas y periódicamente actualizadas, la suficiencia económica a los ciudadanos durante la tercera edad. Asimismo, y con independencia de las obligaciones familiares, promoverán su bienestar mediante un sistema de servicios sociales que atenderán sus problemas específicos de salud, vivienda, cultura y ocio.
 
-## Hacienda
+### Hacienda
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -89,7 +89,7 @@ Los vocales suplente S. Díaz y P. Gálvez trabajan en la Oficina de Informátic
   - Título VII "Economía y Hacienda" (arts. 128-136)
 :::
 
-### Recaudación
+#### Recaudación
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -98,14 +98,14 @@ La vocal suplente del Tribunal M. del C. Bárcena trabaja en la Secretaría de P
 Los vocales suplente S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda.
 :::
 
-### Aduanas
+#### Aduanas
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
 La vocal titular M. A. Sánchez trabaja en Aduanas e Impuestos Especiales de la AEAT.
 :::
 
-### Intervención
+#### Intervención
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥉Temática candidata N3
@@ -113,7 +113,7 @@ Los vocales suplentes S. Díaz y P. Gálvez trabajan en la Oficina de Informáti
 El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervención Delegada en el Ministerio de Sanidad y en el Ministerio de Juventud e Infancia.
 :::
 
-## Presupuestación (análisis pormenorizado)
+### Presupuestación (análisis pormenorizado)
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥉Temática candidata N3
@@ -122,7 +122,7 @@ La vocal suplente del Tribunal M. del C. Bárcena trabaja en la Secretaría de P
 Los vocales suplentes S. Díaz y P. Gálvez trabajan en la Oficina de Informática Presupuestaria de la IGAE de Hacienda.
 :::
 
-## Consumo / Atención al usuario
+### Consumo / Atención al usuario
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -175,7 +175,7 @@ B. Sector Público Estatal
 
     Ley 47/2003, General Presupuestaria (LGP): Es el «código contable y presupuestario» del Estado. Regula con detalle las fases del presupuesto (elaboración, gestión, modificación, liquidación) y la contabilidad pública de la Administración General del Estado y sus organismos vinculados.
 
-## Casa Real
+### Casa Real
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -193,7 +193,7 @@ El artículo 1 de la Constitución establece que la forma política del Estado e
 
 El título II de la CE trata sobre la Corona.
 
-## Industria
+### Industria
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -204,7 +204,7 @@ El título II de la CE trata sobre la Corona.
     - Ministerio de Industria y Turismo
 :::
 
-## Comercio
+### Comercio
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -212,7 +212,7 @@ El título II de la CE trata sobre la Corona.
   - Objetivo 8 "Trabajo decente y crecimiento económico"
 :::
 
-## Españoles en el extranjero
+### Españoles en el extranjero
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -220,7 +220,7 @@ El título II de la CE trata sobre la Corona.
   - CE, art. 19 (libertad de residencia y circulación)
 :::
 
-## Turismo
+### Turismo
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -246,7 +246,7 @@ La vocal titular A. Iglesias trabaja en el TURESPAÑA del Ministerio de Industri
 | Turistas recibidos | Dic-2026 | 5 M€ | 5.277.365 € | [FRONTUR](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176996&menu=ultiDatos&idp=1254735576863) |
 | Gastos turistas internacionales | Jun-2026 | 14 MM€ | 13.579,04 M€ | [Encuesta de gasto turístico (EGATUR)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176996&menu=ultiDatos&idp=1254735576863) |
 
-## Demografía
+### Demografía
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -269,7 +269,7 @@ Estadísticas relevantes:
 | Hombres | 01/04/2026 | 24M | 24400285 | [Estadística Continua de Población (ECP)](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177095&menu=ultiDatos&idp=1254735572981){target="_blank"} del INE |
 | Mujeres | 01/04/2026 | 25M | 25286835 | [ECP](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177095&menu=ultiDatos&idp=1254735572981){target="_blank"} del INE |
 
-## Migración
+### Migración
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -282,7 +282,7 @@ El vocal titular Á. Martín es estadístico que trabaja en la Secretaría de Es
   - Ministerio de Inclusión, Seguridad Social y Migraciones
 :::
 
-## Empleo
+### Empleo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -301,7 +301,7 @@ Estadísticas relevantes:
 | - | - | - | - |
 | Tasa de paro | <10% | 9,87% | [EPA](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595){target="_blank"} |
 
-## Sanidad
+### Sanidad
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥉Temática candidata N3
@@ -315,7 +315,7 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
   - 3. Salud y bienestar
 :::
 
-## Función pública
+### Función pública
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -332,7 +332,7 @@ El art. 103 de la Constitución incluye el siguiente apartado sobre el empleo p�
 
 > La ley regulará el estatuto de los funcionarios públicos, el acceso a la función pública de acuerdo con los principios de mérito y capacidad, las peculiaridades del ejercicio de su derecho a sindicación, el sistema de incompatibilidades y las garantías para la imparcialidad en el ejercicio de sus funciones.
 
-## Igualdad social
+### Igualdad social
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -346,7 +346,7 @@ El art. 103 de la Constitución incluye el siguiente apartado sobre el empleo p�
   - Ministerio de Igualdad
 :::
 
-## Violencia de género
+### Violencia de género
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -358,7 +358,7 @@ El art. 103 de la Constitución incluye el siguiente apartado sobre el empleo p�
   - EVGVD (Estadísticas de Violencia de Género y Violencia Doméstica)
 :::
 
-## Educación
+### Educación
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -379,7 +379,7 @@ La vocal titular M. E. Díaz-Santos trabajó en el Ministerio de Universidades.
 La presidenta titular del Tribunal trabajó en Emergencias en 2012-2014. 
 :::
 
-## Juventud
+### Juventud
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥉Temática candidata N3
@@ -392,7 +392,7 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
   - Objetivo 4 "Educación de calidad"
 :::
 
-## Medio ambiente
+### Medio ambiente
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -410,7 +410,7 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
     - Plan de Acción para una Energía Asequible 
 :::
 
-## Energía
+### Energía
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -422,9 +422,9 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
     - Plan de Acción para una Energía Asequible 
 :::
 
-## Telecomunicaciones
+### Telecomunicaciones
 
-## Investigacion e innovación
+### Investigacion e innovación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -434,7 +434,7 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
   - Objetivo 9 "Industria, innovación e infraestructura"
 :::
 
-## Subvenciones
+### Subvenciones
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -446,7 +446,7 @@ El vocal suplente J. M. García es jefe de Área Intersectorial en la Intervenci
 
 El tema 13, en su largo título, incluye el "regímen jurídico de subvenciones públicas" y su procedimiento.
 
-## Cooperación
+### Cooperación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -456,14 +456,14 @@ El tema 13, en su largo título, incluye el "regímen jurídico de subvenciones 
   - Ministerio de Exteriores, Unión Europea y Cooperación
 :::
 
-## Exteriores
+### Exteriores
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
 La vocal titular M. E. Díaz-Santos trabaja en el Plan de Digitalización Consular del Ministerio de Exteriores, Unión Europea y Cooperación del Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.
 :::
 
-## CNMC
+### CNMC
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -472,4 +472,4 @@ El vocal titular K. Rincón es Inspector jefe de competencia en la CNMC
 
 La Comisión Nacional de los Mercados y la Competencia (CNMC) es una Autoridad Administrativa Independiente (AAI) que pertenece al sector público institucional estatal, y no pertenece a la AGE.
 
-## Propiedad intelectual
+### Propiedad intelectual

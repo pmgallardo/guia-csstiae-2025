@@ -1,8 +1,8 @@
-# Temáticas transversales
+## Temáticas transversales
 
 En este apartado se revisan temáticas que pueden ser comunes a proyectos de distinta naturaleza.
 
-## Relaciones con las AAPP
+### Relaciones con las AAPP
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -15,11 +15,11 @@ El vocal titular del Tribunal J. M. Daza dirige los proyectos de atención ciuda
 - **Regulaciones:**
   - ES:
     - L 39/2015. Procedimiento Administrativo Común AAPP (PACAP).
-    - [RD 668/2015](regulaciones.qmd#BOE-A-2015-8048). Acceso electrónico de los ciudadanos a los servicios públicos.
+    - [RD 668/2015](#BOE-A-2015-8048). Acceso electrónico de los ciudadanos a los servicios públicos.
     - L 29/1999. Contencioso-administrativo.
 :::
 
-## Funcionamiento de las AAPP
+### Funcionamiento de las AAPP
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -39,7 +39,7 @@ El art. 103.1 de la Constitución menciona los principios de buena administraci�
 
 La descentralización se refiere a la delegación de competencias entre distintas personas jurídicas (agencias, comunidades autónomas, etc.), mientras que la desconcentración se refiere a la delegación de competencias dentro de una misma persona jurídica.
 
-## Administración digital
+### Administración digital
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -50,15 +50,15 @@ La descentralización se refiere a la delegación de competencias entre distinta
   - CTT (Centro de Transferencia de Tecnología)
 :::
 
-## Interoperabilidad (análisis pormenorizado)
+### Interoperabilidad (análisis pormenorizado)
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Regulaciones
   - UE
     - Declaración Ministerial de Tallín sobre la administración electrónica
-    - [Reg(UE) 2024/903](regulaciones.qmd#CELEX:32024R0903). Reglamento Europeo sobre la Interoperabilidad (REI)
-    - [Reg(UE) 910/2014](regulaciones.qmd#CELEX:32024R1183). eIDAS 2
+    - [Reg(UE) 2024/903](#CELEX:32024R0903). Reglamento Europeo sobre la Interoperabilidad (REI)
+    - [Reg(UE) 910/2014](#CELEX:32024R1183). eIDAS 2
   - ES
     - RD 4/2010. Esquema Nacional de Interoperabilidad
     - L 37/2007. Reutilización de datos en Sector Público.
@@ -72,9 +72,9 @@ La descentralización se refiere a la delegación de competencias entre distinta
   - 46. NTI
 :::
 
-Ver sección sobre [interoperabilidad en la AGE](../01-supuesto/interoperabilidad.qmd)
+Ver sección sobre [interoperabilidad en la AGE](../01-supuesto/index.qmd#interoperabilidad)
 
-## Participación ciudadana
+### Participación ciudadana
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -83,10 +83,10 @@ Ver sección sobre [interoperabilidad en la AGE](../01-supuesto/interoperabilida
   - CE art. 9 (poderes públicos prommieven la participación de los ciudadanos en la vida política, económica, cultural y social)
   - CE art. 23 (derecho de participación)
 - Regulaciones
-  - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](regulaciones.qmd#BOE-A-2013-12887)
+  - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
 :::
 
-## Transparencia
+### Transparencia
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -95,12 +95,12 @@ Ver sección sobre [interoperabilidad en la AGE](../01-supuesto/interoperabilida
   - Art. 23. Participación ciudadana
 - Regulaciones
   - ES
-    - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](regulaciones.qmd#BOE-A-2013-12887)
+    - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
 :::
 
 Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).
 
-## Accesibilidad (análisis pormenorizado)
+### Accesibilidad (análisis pormenorizado)
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -120,7 +120,7 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
 
 RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir el estándar EN 301 549, publicado en la decisión de ejecución UE 2018/2048.
 
-## Protección de datos
+### Protección de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -128,16 +128,16 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
   - Agencia Española de Protección de Datos (AEPD)
 - Regulaciones
   - UE
-    - **[R(UE) 2016/679. RGPD](regulaciones.qmd#CELEX:32016R0679)**
+    - **[R(UE) 2016/679. RGPD](#CELEX:32016R0679)**
   - ES
-    - **[LO 3/2018. LOPD-GDD](regulaciones.qmd#BOE-A-2018-16673)**
+    - **[LO 3/2018. LOPD-GDD](#BOE-A-2018-16673)**
 - Temas
   - 82. Adaptación LOPD
 - Referencias
   - <https://runmodule.com/2026/04/14/proteccion-de-datos-personales-en-espana/>
 :::
 
-## Seguridad de la información
+### Seguridad de la información
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -150,7 +150,7 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
   - ES
     - L 6/2020, de servicios electrónicos de confianza
     - RD 43/2021, seguridad de redes y SI
-    - **[RD 311/2022](regulaciones.qmd#ens), Esquema Nacional de Seguridad (ENS)**
+    - **[RD 311/2022](#ens), Esquema Nacional de Seguridad (ENS)**
     - RDL 7/2022, seguridad 5G
 - Iniciativas
   - Estrategia de Seguridad Nacional
@@ -163,7 +163,7 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
-## Identificación electrónica
+### Identificación electrónica
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -172,7 +172,7 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
     - Reg(EU) 2024/1183. eIDAS{#CELEX:32014R0910}
 :::
 
-## Nube
+### Nube
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥇Temática candidata N1
@@ -185,16 +185,16 @@ La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
   - NubeSARA
 :::
 
-## Datos
+### Datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Estrategias
   - UE
-    - [Unión de Datos](estrategias.qmd#union-datos)
+    - [Unión de Datos](#union-datos)
 - Regulaciones
-  - [Reg(UE) 2022/868](regulaciones.qmd#CELEX:32022R0868). Ley de Gobernanza de Datos.
-  - [Reg(UE) 2023/2854](regulaciones#CELEX:32023R2854). Ley de Datos.
+  - [Reg(UE) 2022/868](#CELEX:32022R0868). Ley de Gobernanza de Datos.
+  - [Reg(UE) 2023/2854](#CELEX:32023R2854). Ley de Datos.
 :::
 
 ::: {.callout-note icon="false"}
@@ -202,7 +202,7 @@ La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
 - Regulaciones:
   - UE:
 
-    - Reg(UE) 2023/2854. Ley de Datos (*Data Act*){regulaciones.qmd#CELEX:32023R2854}
+    - Reg(UE) 2023/2854. Ley de Datos (*Data Act*){#CELEX:32023R2854}
 - Estrategias:
   - UE:
     - Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}
@@ -210,7 +210,7 @@ La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
 
 La Ley de Gobernanza de Datos (*Data Governance Act*, DGA) regula la reutilización de datos protegidos del sector público (como datos de salud o secretos comerciales), crea la figura de los intermediarios de datos neutros y regula el "altruismo de datos" (donar datos para el bien común).
 
-## Inteligencia artificial
+### Inteligencia artificial
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
@@ -221,10 +221,10 @@ El vocal titular L. A. Hernández es profesor universitario de Inteligencia Arti
 ## 📋 Marco de referencia
 - Estrategias:
   - UE:
-    - [Estrategia para la aplicación de la IA](estrategias.qmd#apply-ai)
+    - [Estrategia para la aplicación de la IA](#apply-ai)
 - Regulaciones:
   - UE:
-    - [Reglamento UE 2024/1689. Ley de Inteligencia Artificial](regulaciones.qmd#CELEX:32024R1689)
+    - [Reglamento UE 2024/1689. Ley de Inteligencia Artificial](#CELEX:32024R1689)
 - Temas:
   - 70. Inteligencia artificial
 - Referencias:

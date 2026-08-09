@@ -1,4 +1,4 @@
-# Dimensionamiento de recursos
+## Dimensionamiento de recursos
 
 Durante el diseño de un sistema informático se deben dimensionar cada uno de los elementos que forman parte del mismo.
 
@@ -8,9 +8,9 @@ Estos elementos se puede dividir en distintas tipologías de recursos que pueden
 - Licencias de software
 - Infraestructura
 
-Una vez dimensionadas cada tipología de recursos debe calcularse el coste asociado a cada una. Para ello, se debe revisar el apartado de [costes](costes.qmd).
+Una vez dimensionadas cada tipología de recursos debe calcularse el coste asociado a cada una. Para ello, se debe revisar el apartado de [costes](#costes).
 
-## Dimensionamiento de desarrollo
+### Dimensionamiento de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -38,7 +38,7 @@ No obtante, las tarifas aparecen en algunas licitaciones públicas, como por eje
 
 Se realiza esta tabla buscando números redondos y ligeramente superiores a los de los expedientes citados.
 
-### Esfuerzo de servicios de desarrollo
+#### Esfuerzo de servicios de desarrollo
 
 En este apartado resume métodos de estimación de esfuerzo y costes en el desarrollo de software, que es una tarea habitual en el supuesto práctico.
 
@@ -50,7 +50,7 @@ De cara al supuesto práctico, se propone aplicar cada una de las técnicas de d
 
 Todas estas técnicas se presentan en el temario de Astic, además de otras reseñadas como el enfoque COCOMO o las métricas bang. Adicionalmente, existen otras técnicas de estimación no cubiertas en estos apuntes.
 
-#### UCP
+**UCP**
 
 Para User Case Points (UCP), se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden que se considera) para facilitar las cuentas ya que su producto es 1.
 
@@ -67,16 +67,16 @@ Una vez que se obtienen las horas de construcción (que se correspondería con l
 
 El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
 
-#### Staffing size
+**Staffing size**
 
-#### COSMIC-FSM
+**COSMIC-FSM**
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>
 :::
 
-### Servicios de desarrollo
+#### Servicios de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -121,25 +121,25 @@ Este criterio está basada en la definición de Unidad de Trabajo de la licitaci
 
 Otro criterio es suponer que un proyecto típico tiene 12 personas: 1 jefe de proyecto, 2 analistas y 8 programadores. Adicionalmente se puede poner 1 consultor, jugando con esto en función del presupuesto disponible.
 
-### Equipos informáticos de desarrollo
+#### Equipos informáticos de desarrollo
 
 Cada uno de los perfiles necesarios para el proyecto requiere un equipo informático.
 
-### Licencias de software para desarrollo
+#### Licencias de software para desarrollo
 
 Las estaciones de trabajo (*workstations*) de la AGE suelen usar el SO Microsoft Windows. Puesto que los equipos de desarrollo se adquieren con licencias OEM (*original equipment manufacturer*) del sistema operativo, no es necesario dimensionar por separado estas licencias.
 
 Se puede justificar el no incluir licencias de herramientas de desarrollo argumentando que se emplean herramientas de software libre y de código abierto.
 
-## Dimensionamiento de infraestructuras
+### Dimensionamiento de infraestructuras
 
 Para realizar el dimensionamiento de infraestructuras se requiere haber diseñado previamente un 
 
-Si el sistema cuenta con infraestructura *on premise*, se puede emplear el [SDA 24/2022](contratacion#sda242022) de sistemas de comunicación, servidores y sistemas de almacenamiento.
+Si el sistema cuenta con infraestructura *on premise*, se puede emplear el [SDA 24/2022](#sda242022) de sistemas de comunicación, servidores y sistemas de almacenamiento.
 
-Si el sistema depende de infraestructura en la nube, se demostrará al Tribunal conocimiento sobre la AGE al proponer el uso de la [NubeSARA](infr-comunes.qmd#nubesara). Conviene revisar y aplicar las tarifas correspondientes.
+Si el sistema depende de infraestructura en la nube, se demostrará al Tribunal conocimiento sobre la AGE al proponer el uso de la [NubeSARA](#nubesara). Conviene revisar y aplicar las tarifas correspondientes.
 
-### Servidores
+#### Servidores
 
 Se debe contar el número de servidores
 

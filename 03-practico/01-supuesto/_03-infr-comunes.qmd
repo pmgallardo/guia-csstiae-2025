@@ -1,27 +1,27 @@
-# Infraestructuras comunes
+## Infraestructuras comunes
 
-## RedSARA
+### RedSARA
 
 RedSARA (Sistemas de Aplicaciones y Redes para las administraciones)
 
-## sTESTA
+### sTESTA
 
 sTESTA es una red transeuropea que incluye a las instituciones públicas europeas y de los estados europeos. RedSARA enlaza con la red sTESTA.
 
-## Servicio Unificado de Telecomunicaciones
+### Servicio Unificado de Telecomunicaciones
 
-## Servicio de alojamiento de infraestructuras TIC
+### Servicio de alojamiento de infraestructuras TIC
 
-## Nube (supuesto práctico)
+### Nube (supuesto práctico)
 
 Ventajas y desventajas del uso de la nube.
 
 En caso de optar por la nube, se puede proponer el uso de NubeSARA, una nube pública exclusiva para el ámbito de las AAPP.
 
-### NubeSARA {#nubesara}
+#### NubeSARA {#nubesara}
 
 ::: {.callout-warning icon="false" collapse="true"}
-## 👑Temática candidata
+## 🥇Temática candidata N1
 La secretaria suplente del Tribunal trabajó en nubeSARA entre 2018 y 2026.
 :::
 
@@ -37,4 +37,4 @@ NubeSARA se lleva a cabo en una serie de CPDs disponibles. Hay 3 CPDs: Moncloa (
 
 Cumplen el Tier IV.
 
-## Servicio de seguridad gestionada
+### Servicio de seguridad gestionada

@@ -1,8 +1,8 @@
-# Modelado
+## Modelado
 
-## Diagramas estáticos y dinámicos
+### Diagramas estáticos y dinámicos
 
-### Diagrama de casos de uso
+#### Diagrama de casos de uso
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -33,7 +33,7 @@ Consejos:
 
 - Incluir alguna relación «include» y «extend» entre casos de uso, para demostrar al tribunal la capacidad de trabajar con estos conceptos.
 
-### Diagrama de flujo de datos
+#### Diagrama de flujo de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -47,7 +47,7 @@ Diagrama de Flujo de Datos (DFD) es un diagrama que representa el flujo de infor
 
 El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como diagrama de contexto, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.
 
-### Modelo entidad-relación
+#### Modelo entidad-relación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -59,7 +59,7 @@ El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el n
 
 Un modelo entidad-relacion (E/R)...
 
-### Diagrama de clases
+#### Diagrama de clases
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -71,7 +71,7 @@ Un modelo entidad-relacion (E/R)...
 
 Diagrama de clases pertenece a la familia de diagramas UML.
 
-### Diagramas de despliegue
+#### Diagramas de despliegue
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -83,7 +83,7 @@ Diagrama de clases pertenece a la familia de diagramas UML.
 
 El diagrama de despliegue pertenece a la familia de diagramas UML.
 
-### Diagrama de secuencia
+#### Diagrama de secuencia
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -93,9 +93,9 @@ El diagrama de despliegue pertenece a la familia de diagramas UML.
 
 El diagrama de secuencia es un diagrama UML que permite modelar la interacción entre distintos elementos de un sistema.
 
-![Ejemplo de diagrama de secuencia](../images/diagrama-secuencia.png)
+![Ejemplo de diagrama de secuencia](../../images/diagrama-secuencia.png)
 
-### Métrica v3
+#### Métrica v3
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -103,9 +103,9 @@ El diagrama de secuencia es un diagrama UML que permite modelar la interacción 
   - 95. Métrica
 :::
 
-## Arquitecturas de sistemas
+### Arquitecturas de sistemas
 
-### Dominios/subdominios funcionales
+#### Dominios/subdominios funcionales
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -114,15 +114,15 @@ Conv. 2023.
 
 La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
 
-### Arquitectura conceptual
+#### Arquitectura conceptual
 
 En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
 
-### Arquitectura de sistemas
+#### Arquitectura de sistemas
 
 La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
 
-### Arquitectura lógica
+#### Arquitectura lógica
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -136,7 +136,7 @@ Ejemplos de modelos de arquitectura de sistemas:
 - Modelo-vista-controlador (MVC)
 - Microservicios
 
-#### MVC
+**MVC**
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -154,7 +154,7 @@ Propuesta de niveles principales:
 - Lógica de negocio
 - Acceso a datos y servicios
 
-#### Microservicios
+**Microservicios**
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -178,7 +178,7 @@ De manera transversal:
 
 Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).
 
-### Arquitectura física
+#### Arquitectura física
 
 - Referencias
   - <https://runmodule.com/2027/03/30/network-architecture/>
@@ -205,4 +205,4 @@ Para las bases de datos se debe elegir entre bases de datos relacionales o bases
 
 Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).
 
-## Arquitectura de comunicaciones
+### Arquitectura de comunicaciones

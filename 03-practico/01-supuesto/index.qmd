@@ -1,8 +1,10 @@
-# Introducción al supuesto práctico
+# Supuesto práctico
+
+## Introducción al supuesto práctico
 
 Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE). 
 
-## Material a llevar al consejo práctico
+### Material a llevar al consejo práctico
 
 Material para llevar:
 
@@ -13,7 +15,7 @@ Material para llevar:
 - Goma de borrar
 - Cuaderno, hojas o portátil para realizar el volcado
 
-## Consejos para el supuesto práctico
+### Consejos para el supuesto práctico
 
 Resumen de consejos:
 
@@ -37,11 +39,11 @@ Una propuesta de subrayado de colores puede ser:
 
 Se podría distinguir con distinto color los actores internos y externos.
 
-## IA
+### IA (supuesto práctico)
 
-## Certificados electrónicos
+### Certificados electrónicos (supuesto práctico)
 
-## Accesibilidad (supuesto práctico)
+### Accesibilidad (supuesto práctico)
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -56,3 +58,13 @@ Se podría distinguir con distinto color los actores internos y externos.
 * **🔗 Referencias de consulta:**
   * [Web Accessibility (RunModule, 2025)](https://runmodule.com/2025/09/25/web-accessibility/)
 :::
+
+{{< include /03-practico/01-supuesto/_02-modelado.qmd >}}
+{{< include /03-practico/01-supuesto/_03-infr-comunes.qmd >}}
+{{< include /03-practico/01-supuesto/_04-serv-comunes.qmd >}}
+{{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
+{{< include /03-practico/01-supuesto/_06-interoperabilidad.qmd >}}
+{{< include /03-practico/01-supuesto/_07-dimensionamiento.qmd >}}
+{{< include /03-practico/01-supuesto/_08-costes.qmd >}}
+{{< include /03-practico/01-supuesto/_09-contratacion.qmd >}}
+{{< include /03-practico/01-supuesto/_10-planificacion.qmd >}}

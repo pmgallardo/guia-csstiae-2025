@@ -1,12 +1,12 @@
-# Organismos
+## Organismos
 
-## Organismos internacionales
+### Organismos internacionales
 
-## Organismos europeos
+### Organismos europeos
 
-## Organismos españoles
+### Organismos españoles
 
-### Órganos ministeriales
+#### Órganos ministeriales
 
 Ministerios de España en el año 2026:
 
@@ -58,7 +58,7 @@ Ministerios de España en el año 2026:
 | [Transformación Digital y de la Función Pública](https://digital.gob.es/) | Digital |
 | [Transición Ecológica y el Reto Demográfico](https://www.miteco.gob.es/es.html) | MITECO |
 
-### AEAD (Agencia Española de Administración Digital)
+#### AEAD (Agencia Española de Administración Digital)
 
 La Agencia Española de Administración Digital (AEAD).
 

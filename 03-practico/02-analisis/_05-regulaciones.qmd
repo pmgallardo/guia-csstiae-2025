@@ -1,4 +1,4 @@
-# Marco normativo
+## Marco normativo
 
 Por convenio, se refieren las regulaciones europeas y españolas de la siguiente manera:
 
@@ -20,7 +20,7 @@ Abreviaturas usadas para cada tipo de regulación, de acuerdo al ELI:
 | ES | RDL | Real Decreto-Ley |
 | ES | RDLg | Real Decreto Legislativo |
 
-## Marco normativo europeo
+### Marco normativo europeo
 
 A partir de 2015 se cambió la numeración de las normativas, poniendo primero el año y después el número de la normativa.
 
@@ -37,7 +37,7 @@ eIDAS fue sustituido por eIDAS 2 en 2025.
   - [R(UE) 910/2014 en EUR-Lex](https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es)
 ::: -->
 
-### Reg(UE) 2016/679. RGPD {#CELEX:32016R0679}
+#### Reg(UE) 2016/679. RGPD {#CELEX:32016R0679}
 
 R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
 
@@ -48,11 +48,11 @@ R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
   - <https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html>{target="_blank"}
 :::
 
-### Reg(UE) 2021/241
+#### Reg(UE) 2021/241
 
 Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026.
 
-### Reg(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
+#### Reg(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -60,7 +60,7 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
     - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/reg/2021/694/oj){target="_blank"}
 :::
 
-### Reg(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
+#### Reg(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -68,7 +68,7 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
   - [R(UE) 2022/868 en EUR-Lex](http://data.europa.eu/eli/reg/2022/868/oj?locale=es){target="_blank"}
 :::
 
-### Reg(UE) 2023/2854. Ley de Datos {#CELEX:32023R2854}
+#### Reg(UE) 2023/2854. Ley de Datos {#CELEX:32023R2854}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -78,7 +78,7 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
 
 Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por productos y servicios conectados, y establece normas para la portabilidad de datos y la interoperabilidad.
 
-### Reg(UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI) {#CELEX:32024R0903}
+#### Reg(UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI) {#CELEX:32024R0903}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -86,7 +86,7 @@ Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por product
   - [R(UE) 2024/903 en EUR-Lex](http://data.europa.eu/eli/reg/2024/903/oj?locale=es){target="_blank"}
 :::
 
-### Reg(EU) 2024/1183. eIDAS 2 {#CELEX:32024R1183}
+#### Reg(EU) 2024/1183. eIDAS 2 {#CELEX:32024R1183}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -94,7 +94,7 @@ Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por product
   - [R(UE) 2024/1183 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1183/oj?locale=es){target="_blank"}
 :::
 
-### Reg(UE) 2024/1689. Ley de Inteligencia Artificial {#CELEX:32024R1689}
+#### Reg(UE) 2024/1689. Ley de Inteligencia Artificial {#CELEX:32024R1689}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -102,9 +102,9 @@ Referencias
  - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj?locale=es){target="_blank"}
 :::
 
-## Marco normativo español
+### Marco normativo español
 
-### RD 4/2010. ENI {#BOE-A-2010-1331}
+#### RD 4/2010. ENI {#BOE-A-2010-1331}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -118,7 +118,7 @@ Frase plantilla para el ENI:
 
 > El sistema ha sido diseñado de acuerdo con los principios y criterios establecidos en el Esquema Nacional de Interoperabilidad, regulado en el RD 4/2010, favoreciendo la interoperabilidad organizativa, semántica y técnica, el uso de estándares aplicables y la adecuada gestión y conservación de la información durante todo su ciclo de vida.
 
-### L 19/2013. Transparencia, acceso a la información pública y buen gobierno {#BOE-A-2013-12887}
+#### L 19/2013. Transparencia, acceso a la información pública y buen gobierno {#BOE-A-2013-12887}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -126,7 +126,7 @@ Frase plantilla para el ENI:
   - [L 19/2013 en BOE](https://www.boe.es/eli/es/l/2013/12/09/19/con){target="_blank"}
 :::
 
-## RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP) {#BOE-A-2015-11719}
+### RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP) {#BOE-A-2015-11719}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -134,7 +134,7 @@ Frase plantilla para el ENI:
   - [RDLg 5/2015 en BOE](https://www.boe.es/eli/es/rdlg/2015/10/30/5/con)
 :::
 
-### RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos {#BOE-A-2015-8048}
+#### RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos {#BOE-A-2015-8048}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -146,7 +146,7 @@ Una frase plantilla que se puede añadir para el RD 668/2015:
 
 > El sistema bajo análisis se encuentra plenamente alineado con las directrices del Real Decreto 668/2015, de acceso electrónico de los ciudadanos a los servicios públicos, garantizando los principios de accesibilidad universal, interoperabilidad y seguridad en la prestación del servicio público por medios electrónicos.
 
-### L 9/2017. CSP {#BOE-A-2017-12902}
+#### L 9/2017. CSP {#BOE-A-2017-12902}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -162,7 +162,7 @@ El art. 1 define los principios de contratación:
 - Publicidad y transparencia de los procedimientos.
 - No discriminación e igualdad de trato entre los licitadores.
 
-### LO 3/2018 (LPD-GDD) {#BOE-A-2018-16673}
+#### LO 3/2018 (LPD-GDD) {#BOE-A-2018-16673}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -172,7 +172,7 @@ El art. 1 define los principios de contratación:
 
 Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GDD) complementa el RGPD.
 
-### RDL 36/2020 (PRTR) {#BOE-A-2020-17340}
+#### RDL 36/2020 (PRTR) {#BOE-A-2020-17340}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -180,4 +180,4 @@ Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GD
   - <https://www.boe.es/eli/es/lo/2018/12/05/3/con>{target="_blank"}
 :::
 
-Se detalla en el apartado [PRTR](estrategias.qmd#PRTR) de Estrategias.
+Se detalla en el apartado [PRTR](#PRTR) de Estrategias.

@@ -1,6 +1,6 @@
-# Seguridad
+## Seguridad
 
-## Riesgos
+### Riesgos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -10,7 +10,7 @@
 
 Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de la información.
 
-## Esquema Nacional de Seguridad (ENS)
+### Esquema Nacional de Seguridad (ENS)
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -44,7 +44,7 @@ También se debe vigilar cuándo poner categoría básica, pues está reservada 
 
 Como referencia sobre cómo categorizar la seguridad del ENS, se puede mencionar la guía CCN-STIC 803 "Valorización de los sistemas en el ENS".
 
-## Protección de datos
+### Protección de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -52,4 +52,4 @@ Como referencia sobre cómo categorizar la seguridad del ENS, se puede mencionar
     - 82. Adaptación LOPD
 :::
 
-## Guías CCN-STIC
+### Guías CCN-STIC

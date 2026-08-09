@@ -1,4 +1,4 @@
-# Interoperabilidad en la AGE
+## Interoperabilidad en la AGE {#interoperabilidad}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -13,13 +13,13 @@
   - [Esquema Nacional de Interoperabilidad](https://runmodule.com/2025/09/11/esquema-nacional-de-interoperabilidad-de-espana/)
 :::
 
-## Declaración ministerial de Tallín sobre la administración electrónica
+### Declaración ministerial de Tallín sobre la administración electrónica
 
 Se firmó en 2017-10-06.
 
 Incluye aspectos relevantes para la interoperabilidad como el principio de “solo una vez”, interoperabilidad por defecto o el EIF
 
-## Reglamento Europeo de la Interoperabilidad (REI)
+### Reglamento Europeo de la Interoperabilidad (REI)
 
 El Reglamento Europeo de la Interoperabilidad (REI) es también conocido como Interoperable Europe Act (IEA). Se define en el reglamento UE 2024/903
 
@@ -29,17 +29,17 @@ El REI requiere que se realicen evaluaciones de interoperabilidad en ciertas cir
 
 Carlos Treviño resume el REI en la 1a parte de la sesión 3 de Preparatic 30, de noviembre 2024, de manera que se puede ver el vídeo y la presentación.
 
-## Pasarela digital única
+### Pasarela digital única
 
 Pasarela Digital Única, en inglés *Single Digital Gateway*.
 
-## Esquema Nacional de Interoperabilidad
+### Esquema Nacional de Interoperabilidad
 
-El Esquema Nacional de Interoperabilidad de España se regula a través del [Real Decreto 4/2010](../02-analisis/regulaciones.qmd#BOE-A-2010-1331).
+El Esquema Nacional de Interoperabilidad de España se regula a través del [Real Decreto 4/2010](../02-analisis/index.qmd#BOE-A-2010-1331).
 
 Está basado en el European Interoperability Framework / Marco Europeo de Interoperabilidad.
 
-### Niveles del ENI
+#### Niveles del ENI
 
 Niveles del ENI:
 
@@ -48,7 +48,7 @@ Niveles del ENI:
 - Interoperabilidad semántica
 - Interoperabilidad técnica
 
-### Dimensiones del ENI
+#### Dimensiones del ENI
 
 Dimensiones del ENI:
 
@@ -57,19 +57,19 @@ Dimensiones del ENI:
 - Dimensión semántica
 - Dimensión técnica
 
-### Instrumentos del ENI
+#### Instrumentos del ENI
 
 Existen los siguientes inventarios:
 
-- [SIA](serv-comunes.qmd#sia)
-- [DIR3](serv-comunes.qmd#dir3)
-- CISE
-- [CTT](serv-comunes.qmd#ctt)
+- [SIA](#sia)
+- [DIR3](#dir3)
+- [CISE](#cise)
+- [CTT](#ctt)
 
 Los dos primeros (SIA y DIR3) trabajan la dimensión/nivel organizativa (al inventariar procesos y organismos, respectivamente), CISE trata la semántica (al inventariar modelos de datos) y CTT la técnica (al inventariar productos y servicios digitales).
 
     BOE-A-2010-1331 
-## Normas
+### Normas
 
 El ENI está formado por normas.
 
@@ -79,7 +79,7 @@ Algunas normas del ENI:
 - Política de Firma Electrónica y de certificados de la Administración.
 - Reutilización de recursos de información.
 
-## NTI
+### NTI
 
 Norma Técnica de Interoperabilidad (NTI):
 
@@ -101,9 +101,9 @@ El sistema InSiDe es un servicio común cumple los requisitos para que documento
 
 [NTIs en el PAe](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Interoperabilidad_Inicio/pae_Normas_tecnicas_de_interoperabilidad.html)
 
-### NTI de catálogo de estándares
+#### NTI de catálogo de estándares
 
-### NTI de documento electrónico
+#### NTI de documento electrónico
 
 Metadatos mínimos obligatorios:
 
@@ -113,13 +113,13 @@ ID de la administración generadora del documento
 
 Fecha de alta en el sistema de gestión documental
 
-### NTI de digitalización de documentos
+#### NTI de digitalización de documentos
 
 El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises. Esto se define en el apartado IV.2.
 
 Para el escaneado de documentos, la calidad mínima aceptable de la reproducción, basada en la relación del tamaño del carácter de los documentos y la resolución de captura, será de un índice de calidad (quality indicator, QI) de 3,6. Esto vino en el exámen extraordinario de 2022 del CSSTIAE. Las únicas referencias a esta calidad es en el estándar ANSI/AIIM MS23-1991, al que se hace referencia en el FIST #54-1 del NIST.
 
-### NTI de política de gestión de documentos electrónicos
+#### NTI de política de gestión de documentos electrónicos
 
 La NTI de política de gestión de documentos electrónicos debe incluir al menos:
 
@@ -141,13 +141,13 @@ Procesos de gestión mínimos:
 8. Transferencia
 9. Destrucción o elminación de documentos
 
-## Auditoría del ENI
+### Auditoría del ENI
 
 Existe una guía de auditoría del cumplimiento del ENI.
 
 [Guía de auditoría del cumplimiento del ENI de 2016](https://administracionelectronica.gob.es/pae_Home/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf)
 
-## Iniciativas Relevantes
+### Iniciativas Relevantes
 
 Iniciativas relevantes a la interoperabilidad en el sector público en España:
 
@@ -174,7 +174,7 @@ There has been different programs:
 
 These programs updated and applied the EIF and EIS.
 
-### EIF
+#### EIF
 
 [EIF](https://es.wikipedia.org/wiki/Marco_Europeo_de_Interoperabilidad), Wikipedia
 
@@ -199,17 +199,17 @@ EIF underlying principles:
 - Preservation of information
 - Assessment of effectiveness and efficiency
 
-### CEF
+#### CEF
 
 Connecting Europe Facility (CEF) is a initiative with the aim of financing the interoperability projects in the fields of energy, transport and telecommunications. It was launched in 2013.
 
 CEF Telecom is the name that receives the CEF related to telecommunications.
 
-### EIRA
+#### EIRA
 
 European Interoperability Architecture (EIRA) defines the architectonic blocks for interoperability.
 
-### NIFO
+#### NIFO
 
 National Interoperability Framework Observatory (NIFO) assess the level of interoperability.
 
@@ -221,17 +221,17 @@ It publishes these reports:
 
 The NIFO follow-up mechanism includes 47 recommendations and 68 KPIs.
 
-### SEMIC.EU
+#### SEMIC.EU
 
 The Semantic Interoperability Community (SEMIC.EU) celebrates a convention yearly.
 
 SEMIC.EU at Wikipedia
 
-### Interoperability European portal
+#### Interoperability European portal
 
 The Interoperable Europe portal was previously known as JoinUp.
 
-### Aporta 2009
+#### Aporta 2009
 
 Aporta es una iniciativa de 2009 que en 2025 sigue vigente
 
@@ -239,6 +239,6 @@ Tiene como fin promocionar la apertura de la información pública y desarrollo 
 
 Acerca de Aporta 2009 en datos.gob.es
 
-### datos.gob.es
+#### datos.gob.es
 
 datos.gob.es es una plataforma de reutilización de información producida en el sector público de España.

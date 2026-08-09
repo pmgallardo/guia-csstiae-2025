@@ -1,17 +1,17 @@
-# Costes
+## Costes {#costes}
 
 Los costes finales son proporcionales al dimensionamiento de recursos. Se debe multiplicar el precio de cada recurso por la cantidad de recuros, por cada tipología.
 
-## Costes por desarrollo de software
+### Costes por desarrollo de software
 
 En este apartado se determinan los costes asociados a servicios por desarrollo de software.
 
-### Costes por servicios de desarrollo
+#### Costes por servicios de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Contratación
-  - [SDA 26/2021 de servicios de desarrollo](contratacion.qmd#sda262021)
+  - [SDA 26/2021 de servicios de desarrollo](#sda262021)
 :::
 
 En 2026, no se trabaja con perfiles tasados. Un precio posible es el encontrado en pliegos.
@@ -33,7 +33,7 @@ En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende d
 
 Estos precios se han obtenido redondeando los encontrados en diversas licitaciones del sector público, entre ellas el [servicio de mantenimiento adaptativo, evolutivo y correctivo para el aseguramiento del servicio de la web institucional y sede electrónica del CSIC](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D).
 
-### Costes por equipos de desarrollo
+#### Costes por equipos de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -41,14 +41,14 @@ Estos precios se han obtenido redondeando los encontrados en diversas licitacion
   - AM 02/2023
 :::
 
-### Costes por licencias de desarrollo
+#### Costes por licencias de desarrollo
 
 Como se explica el dimensionamiento, en esta guía no se consideran costes adicionales por licencias para desarrollo, aunque los candidatos podrían considerarlas.
 
-## Costes por infraestructura
+### Costes por infraestructura
 
 
-### Costes por servidores
+#### Costes por servidores
 
 Se debe multiplicar el coste de cada servidor por su precio.
 

@@ -3,8 +3,8 @@ project:
   output-dir: _book
 
 book:
-  title: "Ejercicio práctico del CSSTIAE 2025"
-  subtitle: "Guía de preparación"
+  title: "Guía CSSTIAE 2025"
+  subtitle: "Manual de preparación y consejos para opositores"
   author: "Pablo Gallardo"
   date: today
   language: es
@@ -20,38 +20,59 @@ book:
     
   chapters:
     - index.qmd
+    - part: "Inscripción"
+      chapters:
+      - 01-inscripcion/index.qmd
+    - part: "Ejercicio de test"
+      chapters:
+      - 02-test/index.qmd
     - part: "Ejercicio práctico"
       chapters:
-        - 00-practico/index.qmd
-        - 00-practico/temas.qmd
-        - 00-practico/material.qmd
-    - part: "Supuesto práctico"
+        - 03-practico/00-gen/index.qmd
+        - 03-practico/01-supuesto/index.qmd
+        - 03-practico/02-analisis/index.qmd
+        - 03-practico/03-volcado/index.qmd
+        - 03-practico/04-lectura/index.qmd
+    - part: "Ejercicio de inglés"
       chapters:
-        - 01-supuesto/index.qmd
-        - 01-supuesto/modelado.qmd
-        - 01-supuesto/infr-comunes.qmd
-        - 01-supuesto/serv-comunes.qmd
-        - 01-supuesto/seguridad.qmd
-        - 01-supuesto/interoperabilidad.qmd
-        - 01-supuesto/dimensionamiento.qmd
-        - 01-supuesto/costes.qmd
-        - 01-supuesto/contratacion.qmd
-    - part: "Análisis pormenorizado"
+      - 04-ingles/index.qmd
+    - part: "Selección"
       chapters:
-        - 02-analisis/index.qmd
-        - 02-analisis/organismos.qmd
-        - 02-analisis/regulaciones.qmd
-        - 02-analisis/estrategias.qmd
-        - 02-analisis/iniciativas.qmd
-        - 02-analisis/estadisticas.qmd
-        - 02-analisis/transversales.qmd
-        - 02-analisis/especificas.qmd
-    - part: "Volcado"
+      - 05-seleccion/index.qmd
+    - part: "Elección"
       chapters:
-        - 03-volcado/index.qmd
-    - part: "Lectura"
-      chapters:
-        - 04-lectura/index.qmd
+      - 06-eleccion/index.qmd
+
+
+    #     - 00-practico/temas.qmd
+    #     - 00-practico/material.qmd
+    # - part: "Supuesto práctico"
+    #   chapters:
+    #     - 01-supuesto/index.qmd
+    #     - 01-supuesto/modelado.qmd
+    #     - 01-supuesto/infr-comunes.qmd
+    #     - 01-supuesto/serv-comunes.qmd
+    #     - 01-supuesto/seguridad.qmd
+    #     - 01-supuesto/interoperabilidad.qmd
+    #     - 01-supuesto/dimensionamiento.qmd
+    #     - 01-supuesto/costes.qmd
+    #     - 01-supuesto/contratacion.qmd
+    # - part: "Análisis pormenorizado"
+    #   chapters:
+    #     - 02-analisis/index.qmd
+    #     - 02-analisis/organismos.qmd
+    #     - 02-analisis/regulaciones.qmd
+    #     - 02-analisis/estrategias.qmd
+    #     - 02-analisis/iniciativas.qmd
+    #     - 02-analisis/estadisticas.qmd
+    #     - 02-analisis/transversales.qmd
+    #     - 02-analisis/especificas.qmd
+    # - part: "Volcado"
+    #   chapters:
+    #     - 03-volcado/index.qmd
+    # - part: "Lectura"
+    #   chapters:
+    #     - 04-lectura/index.qmd
 
 lang: es
 

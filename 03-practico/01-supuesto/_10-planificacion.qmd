@@ -1,4 +1,4 @@
-# Planificación temporal
+## Planificación temporal
 
 Este apartado trata sobre la planificación de desarrollo de software, que es una tarea habitual en el supuesto práctico del ejercicio práctico del CSSTIAE.
 
@@ -7,7 +7,7 @@ En la planificación temporal hay que tener en cuenta los siguientes factores:
 - Tiempo mínimo de contratación
 - Esfuerzo de desarrollo
 
-## Fases de un proyecto
+### Fases de un proyecto
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia

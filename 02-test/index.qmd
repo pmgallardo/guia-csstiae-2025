@@ -1,0 +1,3 @@
+# Ejercicio de test
+
+Este apartado detalla cómo preparar y realizar el ejercicio de test.

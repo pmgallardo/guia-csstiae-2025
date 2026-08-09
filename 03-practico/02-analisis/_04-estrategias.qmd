@@ -1,8 +1,8 @@
-# Estrategias
+## Estrategias
 
-## Estrategias internacionales
+### Estrategias internacionales
 
-### Agenda 2030 {#Agenda-2030}
+#### Agenda 2030 {#Agenda-2030}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -40,9 +40,9 @@ Está compuesta por 17 Objetivos de Desarrollo Sostenible (ODS) con 169 metas:
 
 ![Objetivos de desarrollo sostenible](https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2015/01/S-SDG-Poster_-Letter.jpg){target="_blank"}
 
-## Estrategias europeas
+### Estrategias europeas
 
-### Segunda Agenda Digital / Década Digital de Europa {#Década-Digital-de-Europa}
+#### Segunda Agenda Digital / Década Digital de Europa {#Década-Digital-de-Europa}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -71,7 +71,7 @@ El Índice de la Economía y la Sociedad Digitales (DESI) se emplea para medir s
 
 El Programa Europa Digital (2021-2027), introducido en el R(UE) 2021/694, es un programa de financiación de la UE que apoya la transformación digital de la sociedad y la economía europeas. Tiene un presupuesto de 7.500M €.
 
-### Plan de Recuperación para Europa: NextGenerationEU
+#### Plan de Recuperación para Europa: NextGenerationEU
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
@@ -98,7 +98,7 @@ En mayo de 2026 la Comisión emitió sus instrucciones para el cierre en el C/20
 
 Se postulan como herederos del MRR los futuros Planes Nacionales y Regionales de Asociación (*National and Regional Partnership Plans*, NRPP) y el Fondo Europe de Competividad (*European Competitiveness Fund*, ECF), ambos propuestos para 2028.
 
-### Estrategia Europea de Unión de Datos {#union-datos}
+#### Estrategia Europea de Unión de Datos {#union-datos}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -115,7 +115,7 @@ Se fundamenta en 3 pilares:
 2. Simplificación normativa
 3. Protección de la soberanía del dato europeo
 
-### Estrategia para la Aplicación de la IA {#apply-ai}
+#### Estrategia para la Aplicación de la IA {#apply-ai}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -125,7 +125,7 @@ Se fundamenta en 3 pilares:
 
 La Estrategia para la Aplicación de la IA (*Apply AI Strategy*) es una estrategia que fue lanzada en 2025.
 
-### Brújula para la Competividad {#brujula-competitividad}
+#### Brújula para la Competividad {#brujula-competitividad}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -153,7 +153,7 @@ Para la descarbonización, se destaca el Pacto por una Industria Limpia.
 4. Promoción de **competencias y empleos de calidad**
 5. Garantizar una **mejor coordinación**
 
-### Pacto por una Industria Limpia {#pacto-industria-limpia}
+#### Pacto por una Industria Limpia {#pacto-industria-limpia}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -163,9 +163,9 @@ Para la descarbonización, se destaca el Pacto por una Industria Limpia.
 
 Vigente desde febrero 2025.
 
-## Estrategias españolas
+### Estrategias españolas
 
-### Plan España Digital {#plan-españa-digital}
+#### Plan España Digital {#plan-españa-digital}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -173,7 +173,7 @@ Vigente desde febrero 2025.
   - <https://runmodule.com/2027/07/27/plan-espana-digital/>{target="_blank"}
 :::
 
-### Estrategia Nacional de Seguridad {#ens}
+#### Estrategia Nacional de Seguridad {#ens}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia
@@ -181,7 +181,7 @@ Vigente desde febrero 2025.
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
-### Planes de Digitalización de la AGE
+#### Planes de Digitalización de la AGE
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -194,30 +194,30 @@ Hubo dos planes de digitalización de la AGE
 - [Plan de Transformación Digital de la AGE y sus OOPP 2015-2020](https://administracionelectronica.gob.es/dam/jcr:898162f1-2682-483e-9e43-50f2d3a08eff/20151002-Plan-transformacion-digital-age-oopp.pdf)
 - [Plan de Digitalización de la AGE 2021-2025](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Plan_Digitalizacion_AAPP.html)
 
-### Plan de Transformación Digital de la AGE y sus OOPP 2015-2020
+#### Plan de Transformación Digital de la AGE y sus OOPP 2015-2020
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
 Este plan dejó de estar vigente en 2021. 
 :::
 
-### Plan de Digitalización de la AGE 2021-2025 {#pdage2021}
+#### Plan de Digitalización de la AGE 2021-2025 {#pdage2021}
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
 Este plan dejó de estar vigente en 2026. 
 :::
 
-## Agendas España Digital
+### Agendas España Digital
 
-### España Digital 2025
+#### España Digital 2025
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
 La agenda España Digital 2025 dejó de estar vigente.
 :::
 
-### España Digital 2026
+#### España Digital 2026
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
@@ -261,7 +261,7 @@ Planes y estrategias de la agenda España Digital 2026:
 - Plan España Hub Audiovisual de Europa
 - [Estrategia Nacional de Inteligencia Artificial (ENIA)](#enia) *(extinta)*
 
-### Plan de Recuperación, Transformación y Resiliencia (PRTR) {#PRTR}
+#### Plan de Recuperación, Transformación y Resiliencia (PRTR) {#PRTR}
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
@@ -274,7 +274,7 @@ No se permite la ejecución de inversiones e hitos financiados con el Mecanismo 
   - UE:
     - [Reglamento (UE) 2021/241](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32021R0241){target="_blank"}: PRTR justicia, función pública, régimen local y mecenazgo
   - ES:
-    - [RDL 36/2020](regulaciones.qmd#BOE-A-2020-17340): Modernización AAPP y PRTR
+    - [RDL 36/2020](https://www.boe.es/buscar/act.php?BOE-A-2020-17340){target="_blank"}: Modernización AAPP y PRTR
     - [RDL 6/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-25758){target="_blank"}: PRTR justicia, función pública, régimen local y mecenazgo
 - Referencias:
   - Gobierno de España; "[Plan de Recuperación, Transformación y Resiliencia](https://planderecuperacion.gob.es/){target="_blank"}"; Gobierno de España
@@ -289,7 +289,7 @@ La duración del PRTR fue de 2021 a 2026. Estaba compuesta por 10 palancas y 31 
 
 El Gobierno aprobó el 28/07/2026 la Adenda de Cierre del PRTR, señalando expresamente el 31/08/2026 como fecha límite para la ejecución de estos fondos y cumplir actuaciones del MRR.
 
-## Estrategia Nacional de Inteligencia Artificial (ENIA) {#enia}
+### Estrategia Nacional de Inteligencia Artificial (ENIA) {#enia}
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
@@ -306,7 +306,7 @@ Tuvo vigencia entre 2020 y 2025.
 
 La ENIA es una hoja de ruta que vertebra 6 ejes y 30 actuaciones orientadas al desarrollo de la IA.
 
-## Fondo España Crece
+### Fondo España Crece
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia

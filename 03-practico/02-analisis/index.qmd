@@ -1,18 +1,20 @@
-# Descripción del análisis pormenorizado
+# Análisis pormenorizado
+
+## Descripción del análisis pormenorizado
 
 Este documento es un resumen de información relevante para la preparación del análisis pormenorizado del ejercicio práctico, conocido como también como informe práctico hasta la convocatoria 2023.
 
-## Enunciado del análisis pormenorizado
+### Enunciado del análisis pormenorizado
 
 El análisis pormenorizado consta de un enunciado sencillo en el cual se pide describir el sistema desarrollado en el supuesto práctico y enmarcarlo
 
 Para la realización del análisis pormenorizado el candidato conserva las hojas del enunciado del supuesto ya realizado, siempre y cuando no se hayan escrito notas sobre el mismo. Sin embargo, no podrá consultar las hojas de respuesta o de sucio escritas, pues estas habrán sido guardadas en un sobre al finalizar la parte anterior.
 
-## Desarrollo del análisis pormenorizado
+### Desarrollo del análisis pormenorizado
 
 El análisis pormenorizado está pensado para ir dirigido a una persona de un órgano ejecutivo, por lo que no debe entrar en mucho detalle técnico.
 
-### Estructura del análisis pormenorizado
+#### Estructura del análisis pormenorizado
 
 En análisis pormenorizado no tiene una estructura fija, sino que cada candidato puede plantearla como mejor convenga.
 
@@ -25,13 +27,13 @@ A modo de guía, se sugiere una posible estructura:
 5. **Organismos** con los que está relacionado el sistema.
 6. **Conclusión**, incluyendo beneficios y bondades
 
-### Preparación del análisis pormenorizado
+#### Preparación del análisis pormenorizado
 
 Antes de comenzar a escribir es recomendable realizan en papel en sucio un esquema general del análisis junto con los conceptos (estadísticas, iniciativas, organimos o regulaciones) que se pretendan añadir. Esto ouede servir como referencia a la hora de escribir, asegurando que hay un discurso hilado y que no se olvidan conceptos a incluir.
 
 En caso de aplicar "plantillazos", asegurarse que estos encajan correctamente con el sistema y ejercicio y realizar siempre las adaptaciones que sean necesarias.
 
-### Consejos para el análisis pormenorizado
+#### Consejos para el análisis pormenorizado
 
 Consejos generales para el desarrollo del análisis pormenorizado:
 
@@ -42,10 +44,18 @@ Consejos generales para el desarrollo del análisis pormenorizado:
 - Los elogios son mejor recibidos si van dirigidas a comunidades u organismos del sector público sin afinidad política concreta.
 - Vigilar los tiempos, de manera que según este finalice el candidato haya podido cerrar el análisis con su conclusión correspondiente, aun cuando esto suponga dejar fuera parte del material planificado.
 
-## Valoración del análisis pormenorizado
+### Valoración del análisis pormenorizado
 
 Desde la convocatoria 2023 es necesario obtener al menos la mitad de la nota máxima posible para superar el análisis pormenorizado.
 
 No se compensa la nota del supuesto práctico con la del análisis pormenorizado, por lo que es necesario aprobar ambas partes por separado.
 
 La valoración del Tribunal del análisis pormenorizado se realiza tras la lectura por el candidato, y se publica junto con el resto de puntuaciones del ejercicio práctico tras su finalización.
+
+{{< include /03-practico/02-analisis/_02-organismos.qmd >}}
+{{< include /03-practico/02-analisis/_03-estadisticas.qmd >}}
+{{< include /03-practico/02-analisis/_04-estrategias.qmd >}}
+{{< include /03-practico/02-analisis/_05-regulaciones.qmd >}}
+{{< include /03-practico/02-analisis/_06-iniciativas.qmd >}}
+{{< include /03-practico/02-analisis/_07-transversales.qmd >}}
+{{< include /03-practico/02-analisis/_08-especificas.qmd >}}

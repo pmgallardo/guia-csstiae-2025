@@ -1,6 +1,6 @@
-# Temas del ejercicio práctico
+## Temas del ejercicio práctico
 
-## Temas más relevantes del ejercicio práctico
+### Temas más relevantes del ejercicio práctico
 
 El temario del proceso de selección abarca más de 100 temas, pero de ellos hay algunos que son más importantes o recurrentes de cara al ejercicio práctico.
 

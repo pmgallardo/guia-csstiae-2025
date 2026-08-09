@@ -1,8 +1,8 @@
-# Iniciativas
+## Iniciativas
 
-## Iniciativas españolas
+### Iniciativas españolas
 
-### Guías CCN-STIC
+#### Guías CCN-STIC
 
 ::: {.callout-note icon="false"}
 - Referencias
@@ -16,5 +16,5 @@ La serie 800 de las guías CCN-STIC está relacionada con ciberseguridad.
 - CCN-STIC-817. Gestión de Incidentes de Seguridad en el ENS.
 - CCN-STIC-824. Informe nacional del estado de seguridad de los sistemas TIC.
 
-### Viogén
+#### Viogén
 
