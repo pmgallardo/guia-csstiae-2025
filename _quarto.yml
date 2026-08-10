@@ -36,12 +36,22 @@ book:
     - part: "Ejercicio de inglés"
       chapters:
       - 04-ingles/index.qmd
-    - part: "Selección"
+    - part: "Concurso"
       chapters:
-      - 05-seleccion/index.qmd
-    - part: "Elección"
+      - 05-concurso/00-gen/index.qmd
+      - 05-concurso/01-aprobados/index.qmd
+      - 05-concurso/02-func-prac/index.qmd
+    - part: "Curso selectivo"
       chapters:
-      - 06-eleccion/index.qmd
+      - 06-seleccion/00-gen/index.qmd
+      - 06-seleccion/01-apr-basico/index.qmd
+      - 06-seleccion/02-transf-puesto/index.qmd
+    - part: "Adjudicación"
+      chapters:
+      - 07-adjudicacion/00-gen/index.qmd
+      - 07-adjudicacion/01-eleccion/index.qmd
+      - 07-adjudicacion/02-func-carrera/index.qmd
+      - 07-adjudicacion/03-posesion/index.qmd
 
 
     #     - 00-practico/temas.qmd

@@ -1,6 +1,6 @@
 # Inicio
 
-Este apartado detalla los primeros pasos relacionados con las pruebas selectivas de ingreso al CSSTIAE, incluyendo el anuncio de la convocatoria y la inscripción.
+Este apartado se detallan los primeros pasos relacionados con las pruebas selectivas de ingreso al CSSTIAE, incluyendo el anuncio de la convocatoria y la inscripción.
 
 ## Estructura de las pruebas selectivas
 
@@ -10,12 +10,16 @@ El proceso de las pruebas selectivas es complejo, largo (dilatándose más de do
 
 Existen dos vías de acceso dentro de una convocatoria:
 
-- Ingreso libre (IL): accesible para todos los aspirantes, funcionarios de carrera o no, que cumplan ciertas condiciones.
+- Ingreso libre (IL) (también llamado en ocasiones acceso libre): accesible para todos los aspirantes, funcionarios de carrera o no, que cumplan ciertas condiciones.
 - Promoción interna (PI): accesible solamente por funcionarios de carrera que cumplan ciertas condiciones.
 
-El proceso para los candidatos de IL y PI varía para ambos. Por ejemplo, el número de plazas disponibles son distintas para cada vía.
+El proceso para los aspirantes de IL y PI comparte aspectos comunes pero también algunas particularidades. Por ejemplo, el número de plazas disponibles son distintas para cada vía.
 
-Se debe escoger una de las dos.
+Los aspirantes solo pueden presentarse por una de las dos vías.
+
+### General y cupo
+
+Los aspirantes pueden escoger acceder por la vía general o por cupo.
 
 ### Fases de las pruebas selectivas
 
@@ -26,21 +30,24 @@ En la convocatoria de 2025, el proceso de selección consta de las siguientes fa
   1. Ejercicio de test
   2. Ejercicio práctico
   3. Ejercicio de inglés
-3. Concurso
+3. Concurso *(solo PI)*
 4. Curso selectivo
-5. Periodo de prácticas
-6. Nombramiento como funcionario de carrera
-7. Elección de destinos
+  1. Aprendizaje básico
+  2. Transferencia competencial al puesto
+6. Elección de destinos
+7. Nombramiento como funcionario de carrera
 8. Toma de posesión
 
 Cada una de estas fases se explicará con más detalle en cada uno de sus apartados.
 
 Existen ciertas restricciones temporales en el proceso, de acuerdo al art. 108.2 del RDL 6/2023:
 
-- La fase de oposición no puede exceder el año.
-- El proceso de selección completo no puede exceder los 2 años desde su publicación en el BOE.
+- La fase de oposición (desde la realización del primer ejercicio hasta la publicación de la relación definitiva de aprobados) no puede exceder el año.
+- El proceso de selección completo no puede exceder los 2 años desde su publicación en el BOE (hasta el nombramiento como funcionario de carrera).
 
-Los meses de agosto se declaran inhábiles, por lo que no se cuentan estos meses de cara a cumplir plazos. En cualquier caso, no hay que olvidar que los plazos indicados se pueden incumplir si hay causas justificadas, por lo que estas restricciones no dejan más que ser orientativas.
+Los meses de agosto se declaran inhábiles, por lo que no se cuentan estos meses de cara a cumplir plazos.
+
+En cualquier caso, no hay que olvidar que los plazos indicados se pueden incumplir si hay causas justificadas, por lo que estas restricciones son límites orientativos.
 
 ### Cronograma de las pruebas selectivas
 
@@ -49,26 +56,59 @@ Cronograma de pruebas selectivas de la convocatoria 2025:
 | Hito | Fecha |
 | - | - |
 | Anuncio de convocatoria | 18/12/25 |
-|    inscripción | 18/12/25 |
+| Inicio inscripción| 19/12/25 |
+| Límite inscripción | 20/01/26 |
 | Realización ej. test | 16/07/26 |
-| Publicación calif. def. test | - |
+| Relación def. aprobados test | - |
 | Realización ej. prác. | > 15/09/26 |
-| Fin lecturas ej. prác. ingr. libre | < 15/11/26 |
-| Realización ej. inglés prom. int. | > 15/11/26 |
-| Realización ej. inglés ingr. libre | < 15/03/27 |
+| Fin lecturas ej. prác. PI | < 15/11/26 |
+| Realización ej. inglés PI | > 15/11/26 |
+| Relación def. aprobados ej. inglés PI | - |
+| Fin lecturas ej. prác. IL | < 15/03/27 |
+| Valoración prov. méritos PI | - |
+| Valoración def. méritos PI | - |
+| Realización ej. inglés IL | > 15/03/27 |
 | Publicación calif. def. prác. | > 15/03/27 |
 | Relación prov. aspirantes aprobados | - |
-| Relación def. aspirantes aprobados | > 15/03/27 |
+| Relación def. aspirantes aprobados | < 01/08/27 |
 | Nombramiento como funcionario en prácticas | - |
-| Inicio curso selectivo | - |
-| Fin curso selectivo | - |
-| Inicio periodo de prácticas | - |
-| Fin periodo de prácticas | - |
-| Nombramiento como funcionario de carrera | - |
+| Inicio aprendizaje | - |
+| Fin aprendizaje | - |
+| Inicio transferencia | - |
+| Fin transferencia | - |
+| Nombramiento como funcionario de carrera | < 18/02/27 |
 | Inicios elección destinos | - |
 | Fin elección destinos | - |
-| Fin del proceso de selección | < 18/02/2027 |
-| Inicio toma de posesión | < 18/02/2027 |
+| Inicio toma de posesión | - |
+
+Para la convocatoria 2023, la precedente, el cronograma fue:
+
+| Hito | Fecha |
+| - | - |
+| Anuncio de convocatoria | 24/07/24 |
+| Inicio inscripción| 29/07/24 |
+| Límite inscripción | 26/08/24 |
+| Realización ej. test | 14/02/25 |
+| Relación def. aprobados test | 26/03/25 |
+| Realización ej. prác. | 09/05/25 |
+| Realización ej. inglés PI | 18/07/25 |
+| Relación def. aprobados ej. inglés PI | 28/07/25 |
+| Fin lecturas ej. prác. IL | 20/10/25 |
+| Valoración prov. méritos PI | 07/11/25 |
+| Realización ej. inglés IL | 21/11/25 |
+| Valoración def. méritos PI | 05/12/25 |
+| Relación def. aprobados ej. inglés IL | 27/11/25 |
+| Relación prov. aspirantes aprobados | 19/01/26 |
+| Relación def. aspirantes aprobados | 11/03/26 |
+| Nombramiento como funcionario en prácticas | 01/04/26 |
+| Inicio aprendizaje | 09/04/26 |
+| Fin aprendizaje | 08/05/26 |
+| Inicio transferencia | 11/05/2026 |
+| Fin transferencia | 30/07/2025 |
+| Nombramiento como funcionario de carrera | < 24/09/2026 |
+| Inicio elección destinos | - |
+| Fin elección destinos | - |
+| Inicio toma de posesión | - |
 
 ## Anuncio de convocatoria
 

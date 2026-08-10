@@ -55,7 +55,7 @@ Ministerios de España en el año 2026:
 | [Transportes y Movilidad Sostenible](https://www.transportes.gob.es/) | Transportes |
 | [Vivienda y Agenda Urbana](https://www.mivau.gob.es/) | MIVAU |
 | Interior | Interior |
-| [Transformación Digital y de la Función Pública](https://digital.gob.es/) | Digital |
+| [Transformación Digital y de la Función Pública](https://digital.gob.es/) | MTDFP |
 | [Transición Ecológica y el Reto Demográfico](https://www.miteco.gob.es/es.html) | MITECO |
 
 #### AEAD (Agencia Española de Administración Digital)

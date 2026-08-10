@@ -1,0 +1,15 @@
+# Toma de posesión
+
+La toma de posesión supone la aceptación de la plaza.
+
+## Excedencia voluntaria por prestación de servicios en el sector público
+
+En caso de solicitar la excedencia voluntaria por prestación de servicios en el sector público, se debe recibir una copia de los siguientes destinos:
+
+| Doc. | Título |
+| - | - |
+| F2R | Resolución de toma de posesión en puesto de trabajo |
+| F4R | Resolución de cese en el puesto de trabajo |
+| F6 | Acuerdo de cambio de situación administrativa |
+
+Estos documento se pueden encontrar en el portal Funciona, en Expediente > Notificaciones, y teóricamente también en la Carpeta Ciudadana.
