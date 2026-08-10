@@ -22,18 +22,21 @@ book:
     - index.qmd
     - part: "Inicio"
       chapters:
-      - 01-inicio/index.qmd
-    - part: "Ejercicio de test"
+      - 01-inicio/00-gen/index.qmd
+      - 01-inicio/01-anuncio/index.qmd
+      - 01-inicio/02-admision/index.qmd
+      - 01-inicio/03-becas/index.qmd
+    - part: "Test"
       chapters:
       - 02-test/index.qmd
-    - part: "Ejercicio práctico"
+    - part: "Práctico"
       chapters:
         - 03-practico/00-gen/index.qmd
         - 03-practico/01-supuesto/index.qmd
         - 03-practico/02-analisis/index.qmd
         - 03-practico/03-volcado/index.qmd
         - 03-practico/04-lectura/index.qmd
-    - part: "Ejercicio de inglés"
+    - part: "Inglés"
       chapters:
       - 04-ingles/index.qmd
     - part: "Concurso"
@@ -41,7 +44,7 @@ book:
       - 05-concurso/00-gen/index.qmd
       - 05-concurso/01-aprobados/index.qmd
       - 05-concurso/02-func-prac/index.qmd
-    - part: "Curso selectivo"
+    - part: "Selección"
       chapters:
       - 06-seleccion/00-gen/index.qmd
       - 06-seleccion/01-aprendizaje/index.qmd

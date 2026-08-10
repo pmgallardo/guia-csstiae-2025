@@ -1,0 +1,14 @@
+# Becas
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [](https://www.inap.es/es/becas-y-ayudas/becas-para-opositores)
+  - [](https://sede.inap.gob.es/es/procedimientos-y-servicios/becas-y-ayudas/becas-para-opositores)
+:::
+
+El INAP publica becas para opositores de sus procesos de selección. Las bases reguladores y convocatorias se pueden encontrar en en enlace <https://sede.inap.gob.es/es/procedimientos-y-servicios/becas-y-ayudas/becas-para-opositores>.
+
+La beca cubriría costes relacionados con la preparación del proceso de selección, incluyendo la inscripción en academias o cursos de preparadores.
+
+La última convocatoria de becas fue en 2013.
