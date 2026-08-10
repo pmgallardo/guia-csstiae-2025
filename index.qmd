@@ -2,6 +2,8 @@
 
 Esta es una guía no oficial para la preparación del ejercicio práctico del XXXI proceso selectivo de la convocatoria de 2025 de ingreso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE) de la Administración General del Estado (AGE) del sector público español.
 
+Esta guía tiene carácter meramente orientativo. Es importante contrastar las indicaciones con las bases de la convocatoria y los comunicados del INAP y el Tribunal Calificador para confirmar cualquier aspecto del proceso.
+
 \
 Versión web:
 <https://pmgallardo.github.io/guia-csstiae-2025>

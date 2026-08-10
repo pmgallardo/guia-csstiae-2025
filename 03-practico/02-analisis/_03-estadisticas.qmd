@@ -50,6 +50,7 @@ Informes del OTNSI (Observatorio Nacional de Tecnología y Sociedad).
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Organismos:
+  - AEAP
   - Comisiones Ministeriales de Administración Digital
 - Referencias:
   - [Informe REINA en PAe](https://administracionelectronica.gob.es/pae_Home/pae_OBSAE/pae_Informes/pae_InformeREINA/pae_InfDescripcion.html?idioma=eu), PAe.

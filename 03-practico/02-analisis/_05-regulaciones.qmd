@@ -183,7 +183,7 @@ El art. 1 define los principios de contratación:
 
 Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPD-GDD) complementa el RGPD.
 
-#### RDL 36/2020. PRTR {#BOE-A-2020-17340}
+<!-- #### RDL 36/2020. PRTR {#BOE-A-2020-17340}
 
 :::{.callout-warning}
 ## 🕸️Obsoleto
@@ -196,7 +196,7 @@ El PRTR se concibió con fecha límite hasta agosto 2026.
   - <https://www.boe.es/eli/es/lo/2018/12/05/3/con>{target="_blank"}
 :::
 
-Se detalla en el apartado [PRTR](#PRTR) de Estrategias.
+Se detalla en el apartado [PRTR](#PRTR) de Estrategias. -->
 
 #### RD 1118/2024. Estatuto de la AEAD {#BOE-A-2024-22929}
 
