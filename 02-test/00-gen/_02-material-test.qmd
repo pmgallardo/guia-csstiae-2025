@@ -40,6 +40,8 @@ El contenido de las preguntas es el mismo que el de los tests de Preparatic.
 
 Debido a que puede lanzarse desde el móvil fácilmente, suele ser una opción común entre los candidatos al exámen.
 
+Preparatic suele realizar un simulacro del ejercicio de test por convocatoria.
+
 #### Tests de procesos de selección distintos al CSSTIAE
 
 Se puede practicar también empleando.

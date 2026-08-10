@@ -1,0 +1,35 @@
+# Apoyo
+
+Este apartado resume algunos recursos de apoyo para superar el proceso de selección del CSSTIAE.
+
+## Asociaciones profesionales del cuerpo
+
+Algunas asociaciones profesionales del CSSTIAE ofrecen recursos de apoyo al proceso de selección, entre ellas:
+
+- [Astic](https://www.astic.es/que-son/): asociación de profesionales del CSSTIAE.
+- [Preparatic](https://www.preparatic.org/): grupo de voluntarios de la última promoción del CSSTIAE.
+
+## Academias y preparadores
+
+Existen academias y preparadores con dedicación específica a las pruebas de selección del CSSTIAE.
+
+Por evitar hacer publicidad a organizaciones y personas con ánimo de lucro, esta guía no ofrece listados de academias o preparadores. No obstante, se pueden encontrar estas academias y preparadores fácilmente buscando en motores de búsqueda y foros o consultando a personas que hayan completado o estén realizando el proceso.
+
+## Grupos de estudio
+
+En el foro de Preparatic suelen surgir grupos de estudio de aspirantes.
+
+## Becas
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [Becas para opositores (becas y ayudas)](https://www.inap.es/es/becas-y-ayudas/becas-para-opositores), INAP.
+  - [Becas para opositores (procedimientos y servicios)](https://sede.inap.gob.es/es/procedimientos-y-servicios/becas-y-ayudas/becas-para-opositores), INAP.
+:::
+
+El INAP concede becas para opositores de sus procesos de selección. Las bases reguladores y convocatorias se pueden encontrar en en enlace <https://sede.inap.gob.es/es/procedimientos-y-servicios/becas-y-ayudas/becas-para-opositores>.
+
+La beca cubriría costes relacionados con la preparación del proceso de selección, incluyendo la inscripción en academias o cursos de preparadores.
+
+La última convocatoria de becas fue en 2023.

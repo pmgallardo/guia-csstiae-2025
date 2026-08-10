@@ -1,0 +1,21 @@
+## Excedencia
+
+### Petición de excendencia voluntaria por prestación de servicios en el sector público
+
+Para pedir la excedencia voluntaria por prestación de servicios en el sector público es necesario haber pedido realizado antes la toma de posesión.
+
+Puede ser conveniente, aunque no obligatorio, avisar de que se va a pedir la excedencia antes de la toma de posesión, para que puedan tener todo listo. La Secretaría de 
+
+En caso de solicitar la excedencia voluntaria por prestación de servicios en el sector público, conviene confirmar que se recibe una copia de los siguientes documentos:
+
+| Doc. | Título |
+| - | - |
+| F2R | Resolución de toma de posesión en puesto de trabajo |
+| F4R | Resolución de cese en el puesto de trabajo |
+| F6 | Acuerdo de cambio de situación administrativa |
+
+Estos documento se pueden encontrar en el portal Funciona, en Expediente > Notificaciones, y teóricamente también en la Carpeta Ciudadana.
+
+### Recepción de Certificado de Servicios Previos
+
+Semanas después de haber solicitado la incidencia se recibirá un correo electrónico notificando una resolución de Certificado de Servicios Previos.

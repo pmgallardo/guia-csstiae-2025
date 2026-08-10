@@ -1,15 +1,7 @@
 # Toma de posesión
 
-La toma de posesión supone la aceptación de la plaza.
+Este apartado detalla aspectos relacionados con la toma de posesión en el destino asignado para el funcionario en prácticas recién designado.
 
-## Excedencia voluntaria por prestación de servicios en el sector público
+{{< include /07-adjudicacion/03-posesion/_01-toma-posesion.qmd >}}
 
-En caso de solicitar la excedencia voluntaria por prestación de servicios en el sector público, se debe recibir una copia de los siguientes destinos:
-
-| Doc. | Título |
-| - | - |
-| F2R | Resolución de toma de posesión en puesto de trabajo |
-| F4R | Resolución de cese en el puesto de trabajo |
-| F6 | Acuerdo de cambio de situación administrativa |
-
-Estos documento se pueden encontrar en el portal Funciona, en Expediente > Notificaciones, y teóricamente también en la Carpeta Ciudadana.
+{{< include /07-adjudicacion/03-posesion/_02-excedencia.qmd >}}

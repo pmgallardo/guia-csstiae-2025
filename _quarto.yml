@@ -20,25 +20,30 @@ book:
     
   chapters:
     - index.qmd
+    - part: "General"
+      chapters:
+      - 00-general/00-gen/index.qmd
+      - 00-general/01-apoyo/index.qmd
     - part: "Inicio"
       chapters:
       - 01-inicio/00-gen/index.qmd
       - 01-inicio/01-anuncio/index.qmd
       - 01-inicio/02-admision/index.qmd
-      - 01-inicio/03-becas/index.qmd
     - part: "Test"
       chapters:
-      - 02-test/index.qmd
+      - 02-test/00-gen/index.qmd
     - part: "Práctico"
       chapters:
-        - 03-practico/00-gen/index.qmd
-        - 03-practico/01-supuesto/index.qmd
-        - 03-practico/02-analisis/index.qmd
-        - 03-practico/03-volcado/index.qmd
-        - 03-practico/04-lectura/index.qmd
+      - 03-practico/00-gen/index.qmd
+      - 03-practico/01-supuesto/index.qmd
+      - 03-practico/02-analisis/index.qmd
+      - 03-practico/03-volcado/index.qmd
+      - 03-practico/04-lectura/index.qmd
     - part: "Inglés"
       chapters:
-      - 04-ingles/index.qmd
+      - 04-ingles/00-gen/index.qmd
+      - 04-ingles/01-convalid-ingles/index.qmd
+      - 04-ingles/02-ej-ingles/index.qmd
     - part: "Concurso"
       chapters:
       - 05-concurso/00-gen/index.qmd

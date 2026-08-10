@@ -1,0 +1,7 @@
+# Ejercicio de test
+
+Este apartado detalla cómo preparar y realizar el ejercicio de test.
+
+{{< include /02-test/00-gen/_02-material-test.qmd >}}
+
+{{< include /02-test/00-gen/_03-realizacion-test.qmd >}}
