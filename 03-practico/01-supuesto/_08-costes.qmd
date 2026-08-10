@@ -25,7 +25,7 @@ En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende d
 
 | Perfil | Precio hora | Precio jornada |
 | - | - | - |
-| Jefe de Proyecto | 60 | 480 |
+| Jefe de Proyecto | 50 | 480 |
 | Consultor | 50 | 400 |
 | Analista | 40 |  |
 | Analista Programador | 40 | 320 |
@@ -41,45 +41,74 @@ Estos precios se han obtenido redondeando los encontrados en diversas licitacion
   - AM 02/2023
 :::
 
+Tarifas posibles del equipamiento informático de cada desarrollador, redondeadas:
+
+| Concepto | Importe (€) | Fuente |
+| - | - | - |
+| Portátil gama alta | 2.000 | [Ayto. Aranda](https://cadenaser.com/castillayleon/2024/11/19/barra-libre-de-portatiles-radio-aranda/) |
+| Portátil estándar | 1.000 | [Ayto. Aranda](https://cadenaser.com/castillayleon/2024/11/19/barra-libre-de-portatiles-radio-aranda/) |
+| Móvil | 500 | - |
+
 #### Costes por licencias de desarrollo
 
 Como se explica el dimensionamiento, en esta guía no se consideran costes adicionales por licencias para desarrollo, aunque los candidatos podrían considerarlas.
 
 ### Costes por infraestructura
 
-
 #### Costes por servidores
 
-Se debe multiplicar el coste de cada servidor por su precio.
+En caso de emplear servidores individuales o que el coste virtual sea por servidor, se debe multiplicar el coste de cada servidor por su precio.
+
+##### Infraestructura on-premise {.unnumbered .unlisted}
+
+Costes de inversión:
+
+| Dispositivo | Coste unitario (€) aprox. |
+| - | - |
+| Chasis servidores blade | 25.000 |
+| Servidor blade | 10.000 |
+
+Costes periódicos (anuales):
+
+| Concepto | €/año |
+| - | - |
+| Licencia VMWare servidor | 5.000 |
+| Soporte chasis | 5.000 |
+| Soporte servidor | 2.000 |
+
+Si se emplea el sistema de virtualización VMWare, el precio de licencia se puede redondear en 5.000 € al año por servidor, y por seguridad se requiere tener al menos 3 servidores. Se debe tener en cuenta que el modelo de licenciamiento de VMWare es por núcleos, donde el coste por núcleo/año es de 100/150 € y el número de núcleos por servidor es 32-40 núcleos.
+
+El soporte suele ser un 20% del precio de compra.
+
+##### Servidores en nube {.unnumbered .unlisted}
 
 En caso de emplearse infraestructuras comunes como NubeSARA, se deben usar los precios acordados.
 
-El uso de NubeSARA supone unos costes. En la pestaña de [Área de Descagas](https://administracionelectronica.gob.es/ctt/nubesara/descargas) de la entrada en el PAe están disponibles la Tabla de Tarifas del Catálogo de Servicios de NubeSARA.
+El uso de NubeSARA supone unos costes. En la pestaña de [Área de Descagas](https://administracionelectronica.gob.es/ctt/nubesara/descargas) de la entrada en el PAe están disponibles la Tabla de Tarifas del Catálogo de Servicios de NubeSARA. Su última actualización es de 2022.
 
-Con última actualización de 2022, se puede resumir a continuación:
+Resumen de precio anual de servidores NubeSARA (redondeados de cara a emplearse en el supuesto práctico):
 
-| Recurso | Importe / año |
+| Tamaño servidor NubeSARA | Coste unitario (€) aprox. |
 | - | - |
-| vCPU | 200 € |
-| 1 GB de memoria secundaria | 30 € |
-| 1 TB de memoria secundaria | 1.500 € |
-| 1 TB de memoria secundaria en backup | 500 € |
+| Pequeño | 1.000 |
+| Mediano | 2.500 |
+| Grande | 5.000 |
 
-Podemos establecer tres tipos de servidores:
+Este resumen se basa en el supuesto de varios tipos de servidores:
 
-Servidor Pequeño (básico, para aplicaciones ligeras o pequeños servicios web)
+- Servidor Pequeño (básico, para aplicaciones ligeras o pequeños servicios web)
 
-vCPU: 2 → 400 €
-RAM: 4 GB → 120 €
-Almacenamiento: 500 GB (0.5 TB) → 750 €
-Total: 1.270 €/año
+  vCPU: 2 → 400 €  
+  RAM: 4 GB → 120 €  
+  Almacenamiento: 500 GB (0.5 TB) → 750 €  
+  Total: 1.270 €/año  
 
-Servidor Mediano (para aplicaciones empresariales, backend, bases de datos medianas)
+- Servidor Mediano (para aplicaciones empresariales, backend, bases de datos medianas)
 
-vCPU: 4 → 800 €
-RAM: 8 GB → 240 €
-Almacenamiento: 1 TB → 1.500 €
-Total: 2.540 €/año
+  vCPU: 4 → 800 €
+  RAM: 8 GB → 240 €
+  Almacenamiento: 1 TB → 1.500 €
+  Total: 2.540 €/año
 
 | Máquina | Número | Precio | Importe |
 | - | - | - | - |
@@ -88,17 +117,26 @@ Total: 2.540 €/año
 | Mem. sec. | 1 TB | 1.500 (1 TB) | 1.500 |
 | TOTAL | - | - | 2.540 |
 
-Servidor Grande (para grandes bases de datos, aplicaciones con alta carga)
+- Servidor Grande (para grandes bases de datos, aplicaciones con alta carga)
 
-vCPU: 8 → 1.600 €
-RAM: 16 GB → 480 €
-Almacenamiento: 2 TB → 3.000 €
-Total: 5.080 €/año
+  vCPU: 8 → 1.600 €
+  RAM: 16 GB → 480 €
+  Almacenamiento: 2 TB → 3.000 €
+  Total: 5.080 €/año
 
-Resumen de precios de servidores NubeSARA (redondeados de cara a emplearse en el supuesto práctico):
+A su vez, estos precios se basan en los siguientes precios unitarios:
 
-| Tamaño servidor NubeSARA | Coste unitario (€) |
+| Recurso | Importe / año |
 | - | - |
-| Pequeño | 1.000 € |
-| Mediano | 2.500 €  |
-| Grande | 5.000 € |
+| vCPU | 200 € |
+| 1 GB de memoria secundaria | 30 € |
+| 1 TB de memoria secundaria | 1.500 € |
+| 1 TB de memoria secundaria en backup | 500 € |
+
+#### Costes por cortafuegos
+
+Los cortafuegos (*firewalls*) suelen ser físicos por razones de seguridad. Suele costar 15.000 € por pareja de cortafuegos; se ponen de dos en dos, por si uno falla que exista otro.
+
+#### Costes por otros elementos de red
+
+Otros elementos de red, como balanceadores o pasarelas, pueden ser virtualizados en servidores.

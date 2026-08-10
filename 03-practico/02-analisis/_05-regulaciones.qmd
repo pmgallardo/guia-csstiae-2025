@@ -22,6 +22,17 @@ Abreviaturas usadas para cada tipo de regulación, de acuerdo al ELI:
 
 ### Marco normativo europeo
 
+### Carta de los derechos fundamentales de la Unión Europea {#CELEX:12016P/TXT}
+
+::: {.callout-note icon="false"}
+## 📋Marco de referencia
+- Referencias
+  - [Carta de los Derechos Fundamentales de la Unión Europea](https://eur-lex.europa.eu/ES/legal-content/summary/charter-of-fundamental-rights-of-the-european-union.html){target="_blank"}
+  - [Carta de los Derechos Fundamentales de la Unión Europea](http://data.europa.eu/eli/treaty/char_2016/oj){target="_blank"}
+:::
+
+Fue publicada en 2020.
+
 A partir de 2015 se cambió la numeración de las normativas, poniendo primero el año y después el número de la normativa.
 
 <!-- ### Reg(UE) 910/2014. eIDAS {#CELEX:32014R0910}

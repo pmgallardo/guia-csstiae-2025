@@ -1,9 +1,9 @@
-## Dimensionamiento de recursos
+## Dimensionamiento
 
 Durante el diseño de un sistema informático se deben dimensionar cada uno de los elementos que forman parte del mismo.
 
 Estos elementos se puede dividir en distintas tipologías de recursos que pueden dimensionarse por separado. Las tipologías a tener en cuenta son al menos:
-
+| Licencia VMWare servidor | 5.000 |
 - Desarrollo
 - Licencias de software
 - Infraestructura
@@ -50,7 +50,7 @@ De cara al supuesto práctico, se propone aplicar cada una de las técnicas de d
 
 Todas estas técnicas se presentan en el temario de Astic, además de otras reseñadas como el enfoque COCOMO o las métricas bang. Adicionalmente, existen otras técnicas de estimación no cubiertas en estos apuntes.
 
-**UCP**
+##### UCP {.unnumbered .unlisted}
 
 Para User Case Points (UCP), se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden que se considera) para facilitar las cuentas ya que su producto es 1.
 
@@ -67,9 +67,9 @@ Una vez que se obtienen las horas de construcción (que se correspondería con l
 
 El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
 
-**Staffing size**
+##### Staffing size {.unnumbered .unlisted}
 
-**COSMIC-FSM**
+##### COSMIC-FSM {.unnumbered .unlisted}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
