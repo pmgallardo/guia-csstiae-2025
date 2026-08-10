@@ -2,94 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.345Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.464Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/00-general/00-gen/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/00-general/01-apoyo/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/01-inicio/00-gen/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.341Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/01-inicio/01-anuncio/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.341Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/01-inicio/02-admision/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.341Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/guia-csstiae-2025/01-inicio/03-becas/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.341Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pmgallardo.github.io/guia-csstiae-2025/02-test/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.341Z</lastmod>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/02-test/00-gen/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.460Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/03-practico/00-gen/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.342Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.461Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/03-practico/01-supuesto/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.342Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.461Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/03-practico/02-analisis/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.343Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.462Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/03-practico/03-volcado/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.343Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.462Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/03-practico/04-lectura/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.343Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.462Z</lastmod>
   </url>
   <url>
-    <loc>https://pmgallardo.github.io/guia-csstiae-2025/04-ingles/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.343Z</lastmod>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/04-ingles/00-gen/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/04-ingles/01-convalid-ingles/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pmgallardo.github.io/guia-csstiae-2025/04-ingles/02-ej-ingles/index.html</loc>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/05-concurso/00-gen/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/05-concurso/01-aprobados/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/05-concurso/02-func-prac/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/06-seleccion/00-gen/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/06-seleccion/01-aprendizaje/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/06-seleccion/02-transferencia/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/07-adjudicacion/00-gen/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/07-adjudicacion/01-eleccion/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/07-adjudicacion/02-func-carrera/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.463Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/07-adjudicacion/03-posesion/index.html</loc>
-    <lastmod>2026-08-10T19:01:52.344Z</lastmod>
+    <lastmod>2026-08-10T20:31:34.464Z</lastmod>
   </url>
   <url>
     <loc>https://pmgallardo.github.io/guia-csstiae-2025/Guía-CSSTIAE-2025.pdf</loc>
-    <lastmod>2026-08-10T19:04:24.365Z</lastmod>
+    <lastmod>2026-08-10T20:34:02.625Z</lastmod>
   </url>
 </urlset>
