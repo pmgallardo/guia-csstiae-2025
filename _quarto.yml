@@ -44,45 +44,14 @@ book:
     - part: "Curso selectivo"
       chapters:
       - 06-seleccion/00-gen/index.qmd
-      - 06-seleccion/01-apr-basico/index.qmd
-      - 06-seleccion/02-transf-puesto/index.qmd
+      - 06-seleccion/01-aprendizaje/index.qmd
+      - 06-seleccion/02-transferencia/index.qmd
     - part: "Adjudicación"
       chapters:
       - 07-adjudicacion/00-gen/index.qmd
       - 07-adjudicacion/01-eleccion/index.qmd
       - 07-adjudicacion/02-func-carrera/index.qmd
       - 07-adjudicacion/03-posesion/index.qmd
-
-
-    #     - 00-practico/temas.qmd
-    #     - 00-practico/material.qmd
-    # - part: "Supuesto práctico"
-    #   chapters:
-    #     - 01-supuesto/index.qmd
-    #     - 01-supuesto/modelado.qmd
-    #     - 01-supuesto/infr-comunes.qmd
-    #     - 01-supuesto/serv-comunes.qmd
-    #     - 01-supuesto/seguridad.qmd
-    #     - 01-supuesto/interoperabilidad.qmd
-    #     - 01-supuesto/dimensionamiento.qmd
-    #     - 01-supuesto/costes.qmd
-    #     - 01-supuesto/contratacion.qmd
-    # - part: "Análisis pormenorizado"
-    #   chapters:
-    #     - 02-analisis/index.qmd
-    #     - 02-analisis/organismos.qmd
-    #     - 02-analisis/regulaciones.qmd
-    #     - 02-analisis/estrategias.qmd
-    #     - 02-analisis/iniciativas.qmd
-    #     - 02-analisis/estadisticas.qmd
-    #     - 02-analisis/transversales.qmd
-    #     - 02-analisis/especificas.qmd
-    # - part: "Volcado"
-    #   chapters:
-    #     - 03-volcado/index.qmd
-    # - part: "Lectura"
-    #   chapters:
-    #     - 04-lectura/index.qmd
 
 lang: es
 
