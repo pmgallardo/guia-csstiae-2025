@@ -48,6 +48,12 @@ eIDAS fue sustituido por eIDAS 2 en 2025.
   - [R(UE) 910/2014 en EUR-Lex](https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es)
 ::: -->
 
+### Dir(UE) 2016/2102. Accesibilidad desde móviles al sector público
+
+Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+
+Fue transpuesta en España por el RD 1112/2018.
+
 #### Reg(UE) 2016/679. RGPD {#CELEX:32016R0679}
 
 R(UE) 2016/679. Reglamento General de Protección de Datos (RGPD).
@@ -209,6 +215,16 @@ El PRTR se concibió con fecha límite hasta agosto 2026.
 
 Se detalla en el apartado [PRTR](#PRTR) de Estrategias. -->
 
+#### RD 311/2022. ENS {#BOE-A-2022-7191}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [RD 1118/2024](https://www.boe.es/eli/es/rd/2024/11/05/1118){target="_blank"}
+:::
+
+Se detalla en el apartado del [ENS del supuesto práctico](01-supuesto#ens).
+
 #### RD 1118/2024. Estatuto de la AEAD {#BOE-A-2024-22929}
 
 ::: {.callout-note icon="false"}
@@ -216,3 +232,7 @@ Se detalla en el apartado [PRTR](#PRTR) de Estrategias. -->
 - Referencias
   - [RD 1118/2024](https://www.boe.es/eli/es/rd/2024/11/05/1118){target="_blank"}
 :::
+
+#### RD 1125/2024. Organización e instrumentos operativos para la AEAD {#BOE-A-2024-22935}
+
+<https://www.boe.es/eli/es/rd/2024/11/05/1125/con>{target="_blank"}

@@ -61,10 +61,11 @@ Se podría distinguir con distinto color los actores internos y externos.
 
 {{< include /03-practico/01-supuesto/_02-modelado.qmd >}}
 {{< include /03-practico/01-supuesto/_03-infr-comunes.qmd >}}
-{{< include /03-practico/01-supuesto/_04-serv-comunes.qmd >}}
+{{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
 {{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
 {{< include /03-practico/01-supuesto/_06-interoperabilidad.qmd >}}
 {{< include /03-practico/01-supuesto/_07-dimensionamiento.qmd >}}
 {{< include /03-practico/01-supuesto/_08-costes.qmd >}}
 {{< include /03-practico/01-supuesto/_09-contratacion.qmd >}}
 {{< include /03-practico/01-supuesto/_10-planificacion.qmd >}}
+{{< include /03-practico/01-supuesto/_11-tecnologia.qmd >}}

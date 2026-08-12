@@ -63,3 +63,5 @@ Ministerios de España en el año 2026:
 La Agencia Española de Administración Digital (AEAD).
 
 Precede de la Secretaría General de la Administración (SGAD).
+
+### COCS (Centro de Operaciones de Ciberseguridad)

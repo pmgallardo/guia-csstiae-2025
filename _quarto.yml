@@ -22,23 +22,23 @@ book:
     - index.qmd
     - part: "General"
       chapters:
-      - 00-general/00-gen/index.qmd
-      - 00-general/01-apoyo/index.qmd
+      - 00-general/00-gen.qmd
+      - 00-general/01-apoyo.qmd
     - part: "Inicio"
       chapters:
-      - 01-inicio/00-gen/index.qmd
-      - 01-inicio/01-anuncio/index.qmd
-      - 01-inicio/02-admision/index.qmd
+      - 01-inicio/00-gen.qmd
+      - 01-inicio/01-anuncio.qmd
+      - 01-inicio/02-admision.qmd
     - part: "Test"
       chapters:
-      - 02-test/00-gen/index.qmd
+      - 02-test/00-gen.qmd
     - part: "Práctico"
       chapters:
-      - 03-practico/00-gen/index.qmd
-      - 03-practico/01-supuesto/index.qmd
-      - 03-practico/02-analisis/index.qmd
-      - 03-practico/03-volcado/index.qmd
-      - 03-practico/04-lectura/index.qmd
+      - 03-practico/00-gen.qmd
+      - 03-practico/01-supuesto.qmd
+      - 03-practico/02-analisis.qmd
+      - 03-practico/03-volcado.qmd
+      - 03-practico/04-lectura.qmd
     - part: "Inglés"
       chapters:
       - 04-ingles/00-gen/index.qmd
@@ -51,15 +51,15 @@ book:
       - 05-concurso/02-func-prac/index.qmd
     - part: "Selección"
       chapters:
-      - 06-seleccion/00-gen/index.qmd
-      - 06-seleccion/01-aprendizaje/index.qmd
-      - 06-seleccion/02-transferencia/index.qmd
+      - 06-seleccion/00-gen.qmd
+      - 06-seleccion/01-aprendizaje.qmd
+      - 06-seleccion/02-transferencia.qmd
     - part: "Adjudicación"
       chapters:
-      - 07-adjudicacion/00-gen/index.qmd
-      - 07-adjudicacion/01-eleccion/index.qmd
-      - 07-adjudicacion/02-func-carrera/index.qmd
-      - 07-adjudicacion/03-posesion/index.qmd
+      - 07-adjudicacion/00-gen.qmd
+      - 07-adjudicacion/01-eleccion.qmd
+      - 07-adjudicacion/02-func-carrera.qmd
+      - 07-adjudicacion/03-posesion.qmd
 
 lang: es
 

@@ -35,7 +35,7 @@ Pasarela Digital Única, en inglés *Single Digital Gateway*.
 
 ### Esquema Nacional de Interoperabilidad
 
-El Esquema Nacional de Interoperabilidad de España se regula a través del [Real Decreto 4/2010](../02-analisis/index.qmd#BOE-A-2010-1331).
+El Esquema Nacional de Interoperabilidad de España se regula a través del [Real Decreto 4/2010](02-analisis.qmd#BOE-A-2010-1331).
 
 Está basado en el European Interoperability Framework / Marco Europeo de Interoperabilidad.
 

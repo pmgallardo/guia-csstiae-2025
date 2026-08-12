@@ -1,0 +1,104 @@
+## Tecnología
+
+Apuntes sobre tecnologías empleadas en la AGE.
+
+El [Observatorio de la Administración Electrónica (OBSAE)](https://dataobsae.administracionelectronica.gob.es) puede ser una buena fuente.
+
+### Tecnologías según contexto
+
+#### Lenguajes de programación
+
+El lenguaje de programación más empleado en la AGE es Java.
+
+.NET también tiene cierta presencia en la AGE. En caso alguna de optar por emplear alguna tecnología de Microsoft en una de las capas, se recomienda emplearla también en el resto para aprovechar las sinergias de emplear software de un mismo fabricante.
+
+#### Tecnología web front-end
+
+La tecnología web front-end más empleada en la AGE es Angular, que emplea el lenguaje de programación TypeScript. Se usa para aplicación grandes.
+
+A cierta distancia, la segunda tecnología más utilizada es React, que emplea el lenguaje de programación JavaScript. Se usa para aplicaciones híbridas y con interfaz cambiante y muy interactivos.
+
+Bootstap se usa también de manera minoritaria para aplicaciones web o móvil con interfaz sencilla.
+
+#### Tecnología web back-end
+
+Spring / SpringBoot, que emplea el lenguaje de programación Java, es el estándar en la AGE.
+
+#### Aplicaciones de escritorio
+
+En primer lugar, la tendencia en la AGE es priorizar aplicaciones web sobre software de escritorio tradicional.
+
+Cuando se desarrollan aplicaciones exclusivamente para escritorio se emplean principalmente tecnologías Java. Un ejemplo es la aplicación AutoFirma.
+
+También se puede adaptar una aplicación web como aplicación de escritorio empleando tecnologías web híbridas como Electron o Tauri.
+
+#### Aplicaciones de móvil
+
+Se puede consultar las tecnologías de las aplicaciones móviles en el [inventario de aplicaciones móviles del OBSAE](https://administracionelectronica.gob.es/pae_Home/eu/pae_Estrategias/pae_Movilidad_Inicio/catalogo_apps_age.html?comentarioContenido=0&idioma=es).
+
+Se concluye leyendo este informe que las aplicaciones móviles de la AGE están realizadas principalmente con Angular, Ionic y Flutter, en orden descendente.
+
+Angular es una buena opción si es necesaria una misma app para web y móvil. Es conveniente que esta web sea responsiva (se adapta a la pantalla con fluidez) o adaptativa (considera distintas configuraciones y escoge la más adecuada), lo cual se consigue con frameworks CSS como Bootstrap o Tailwind CSS.
+
+Ionic proporciona componentes específicos para móvil adaptados a cada SO y también se basa en un WebView. Puede combinarse con Angular o u otro framework web o ejecutarse independientemente.
+
+Para la solución basadas en WebView (como Angular y Ionic), se emplearía Capacitor como puente entre el dispositivo móvil y la ventana de navegación interna (WebView) en la que se ejecuta la app web de Angular. Proporciona acceso al hardware y permite al usuario mostrar la aplicación como una app.
+
+Flutter ejecuta código nativo en lugar de estar basado en tecnologías web (como Angular e Ionic), lo que le da mayor rendimiento.
+
+#### Bases de datos
+
+Las bases de datos más empleadas en la AGE son Oracle Database (propietaria) y PostgreSQL (de código abierto).
+
+En caso de trabajarse en de un ecosistema de Microsoft, se debe considerar Microsoft SQL Server.
+
+#### Contenedores y orquestación
+
+La AGE emplea habitualmente Docker para empaquetado y Kubernetes o soluciones empresariales como Red Hat OpenShift para gestionar de forma segura los clústeres en los centros de datos del Estado.
+
+#### Mensajería e integración
+
+Para mensajería e integración se emplen herramientas como Apache Kafka o RabbitMQ.
+
+### Ecosistemas de tecnologías
+
+En la AGE se pueden encontrar principalmente tres ecosistemas genéricos:
+
+- Oracle
+- Microsoft
+- Código abierto
+
+Como norma general, no se considera una buena práctica mezclar tecnologías de distintos fabricantes, con la excepción de si se trata de alguna de las soluciones de código abierto.
+
+#### Oracle
+
+Stack genérico empleando tecnologías propias del ecosistema Oracle:
+
+- Framework frontend: Angular (TypeScript)
+- Servidor web: Oracle HTTP Server
+- Framework backend: Spring Boot (Java)
+- Servidor aplicación: Oracle Weblogic
+- Base de datos: Oracle Database
+
+Angular no es nativo del ecosistema Oracle, pero está bien integrado y suele ser una opción habitual. Oracle JET sería el framework front nativo de Oracle, pero este no es tan popular en la AGE como Angular.
+
+Una alternativa también común en la AGE a Oracle Weblogic es IBM WebSphere, ambos propietarios.
+
+#### Microsoft
+
+El ecosistema de Microsoft no suele ser la primera opción, pero también se puede encontrar en la AGE.
+
+Stack genérico empleando tecnologías propias del ecosistema Microsoft:
+
+- Lenguaje de programación: C#
+- Framework full-stack: .NET
+- Servidor web / aplicación: IIS (Windows Server)
+- Base de datos: Microsoft Server SQL
+
+#### Código abierto
+
+- Framework front: Angular (TypeScript)
+- Servidor web: Nginx / Apache HTTP Server
+- Framework backend: Spring Boot
+- Servidor aplicación: RedHat WildFly (monolítico) / Apache Tomcat (microservicios)
+- Base de datos: PostgreSQL

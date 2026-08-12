@@ -1,5 +1,6 @@
 ## Estadísticas
 
+Conviene incluir en el análisis pormenorizados algunas estadísticas relevantes. Se muestran a continuación algunas fuentes donde obtener estas estadísticas.
 
 ### Portales de estadísticas
 
@@ -12,9 +13,6 @@
   - OTNSI
   - Informe REINA
   - OAW (Observatorio de Accesibilidad Web)
-
-
-Informes del OBSAE (Observatorio de Administración Electrónica)
 
 #### DESI
 

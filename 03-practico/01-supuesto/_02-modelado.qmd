@@ -93,7 +93,7 @@ El diagrama de despliegue pertenece a la familia de diagramas UML.
 
 El diagrama de secuencia es un diagrama UML que permite modelar la interacción entre distintos elementos de un sistema.
 
-![Ejemplo de diagrama de secuencia](../../images/diagrama-secuencia.png)
+![Ejemplo de diagrama de secuencia](../images/diagrama-secuencia.png)
 
 #### Métrica v3
 
@@ -158,7 +158,7 @@ Propuesta de niveles principales:
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Referencias
+- Referencias:
   - <https://runmodule.com/2024/12/03/microservices/>
 :::
 
@@ -180,24 +180,19 @@ Se puede usar una CDN a la parte que sea más común a todos los usuarios, como 
 
 #### Arquitectura física
 
-- Referencias
+- Referencias:
   - <https://runmodule.com/2027/03/30/network-architecture/>
 
 La arquitectura física implica especificar los componentes técnicos a emplear, ya sean físicos o virtuales.
 
 Elementos que deben considerarse en la arquitectura física:
 
-- Servidores
-- Balanceadores de carga
+- Servidores (bare-metal o virtuales)
+- Clústeres
+- Almacenamiento
 - Cortafuegos
-- Redes de área local (LAN)
-- Proxy
-- Proxy inverso
 - Bases de datos
-
-Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
-
-El sistema debe conectarse a la red SARA a través del cortafuegos interno de la red petrimetral (o zona desmilitarizada).
+- Proveedores cloud
 
 Para acceder a la red sTesta se puee conectar directamente a través de la red SARA.
 
@@ -206,3 +201,51 @@ Para las bases de datos se debe elegir entre bases de datos relacionales o bases
 Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).
 
 ### Arquitectura de comunicaciones
+
+<https://runmodule.com/2027/03/30/network-architecture/>
+
+Una arquitectura de comunicaciones suele incluir los siguientes elementos:
+
+- Enrutadores
+- Cortafuegos
+- WAF
+- Balanceadores
+- Switches
+- Proxy
+- Proxy inverso
+- Redes de área local (LAN)
+- VLAN
+- VPNs
+- CDN
+- Conexión con otras redes (redSARA, sTESTA).
+
+El enrutador (*router*) se suele colocar expuesto a las redes externas. Detrás del router está se coloca un cortafuegos (*firewall*) que da acceso a la red privada.
+
+Hay varias arquitecturas de red privada posibles, y una bastante habitual es la del cortafuegos dual. Esta consiste en segmentar la red privadas en dos:
+
+- Red perimetral, en ocasiones llamada zona desmilitarizada (*demilitarized zone*, DMZ), expuesta a una red externa a través de un cortafuegos externo o perimetral y que alberga a los servidores públicos.
+- Subred apantallada, expuesta a la red perimetral a través de un cortafuegos interno, y que aloja servidores y equipos privados.
+
+Se recomienda que los cortafuegos interno y externo sean de distinto fabricante, por razones de seguridad.
+
+En la red perimetral se suelen colocar:
+
+- IDS
+- IPS
+- Servidores proxy
+- Servidores de proxy inverso
+- Servidores de presentación
+- Servidores VPN
+
+En la subred apantallada se suelen colocar:
+
+- Servidores de aplicación
+- Bases de datos
+- Servidores de documentos
+- Servidores internos
+- Servicios de directorio
+- Equipos personales
+
+Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
+
+El sistema debe conectarse a la red SARA a través del cortafuegos interno de la red petrimetral (o zona desmilitarizada).

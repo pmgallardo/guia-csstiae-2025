@@ -10,7 +10,7 @@
   - España
     - RD 1098/2001
     - RDL 3/2011
-    - [L 9/2017. CSP 2 / LCSP](../02-analisis/index.qmd#BOE-A-2017-12902)
+    - [L 9/2017. CSP 2 / LCSP](02-analisis#BOE-A-2017-12902)
     - RDL 3/2020
     - RD 806/2014. Organización e intrumentos operativos de TIC en ADE
 - Temas

@@ -2,7 +2,7 @@
 
 ### Realización del ejercicio de test
 
-Conviene tener una estrategia a la hora de contestar a las preguntas, y mantenerla el día del exámen en lugar de recurrir a experimientos de última hora.
+Conviene tener una estrategia a la hora de contestar a las preguntas, ensayarla en simulacros y mantenerla el día del exámen. Se recomienta evitar recurrir a experimientos de última hora el día del exámen.
 
 ### Corrección provisional y reclamación del ejercicio de test
 
@@ -12,4 +12,8 @@ Se pueden reclamar las preguntas del ejercicio de test.
 
 ### Publicación de candidatos que superan el ejercicio
 
-La publicación de las puntuaciones mínimas suele preceder poco antes al listado de candidatos que supera el ejercicio.
+La publicación de las puntuaciones mínimas suele preceder unos días al listado de candidatos que supera el ejercicio.
+
+La publicación de candidatos que superan el ejercicio se publica en la entrada correspondiente al cuerpo y convocatoria de los procesos selectivos del INAP.
+
+Se puede solicitar y descargar un certificado de la nota obtenida en el ejercicio de test en el [Espacio del Opositor](https://espacioopositor.inap.es) del INAP, en el área de "Certificados".

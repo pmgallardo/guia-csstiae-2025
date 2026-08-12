@@ -1,0 +1,213 @@
+## Servicios transversales
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Temas
+  - 49. Infraestructuras y servicios comunes
+- Regulaciones:
+  - RD 1125/2024
+- Referencias
+  - [Directorio de Soluciones del Centro de Transferencia Tecnológica (CTT)]()
+  - <https://runmodule.com/2024/10/13/servicios-electronicos-del-sector-publico-en-espana/>
+:::
+
+Este  apartado se describen los servicios electrónicos transversales empleados en la Administración General del Estado (AGE) y relevantes para el ejercicio práctico.
+
+Los servicios transversales de la AGE son comunes a distintos organimos de la AGE. Se definieron originalmente como servicios comunes en el derogado RD 806/2014, y posteriormente fueron denominados como transversales en el RD 1125/2024.
+
+El [Centro de Transferencia Tecnológica (CTT)](02-analisis.qmd#ctt), alojado en el PAe, se encarga de inventariar y compartir los servicios comunes.
+
+Los servicios electrónicos aparecen listados en el [catálogo de servicios de Administración digital](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Racionaliza_y_Comparte/catalogo-servicios-admon-digital.html) del Portal de la Administración Electrónica.
+
+La Comisión de Estrategia TIC (CETIC) declaró 14 servicios compartidos de la AGE en 2025:
+
+- Servicio Unificado de Telecomunicaciones
+- Servicio de Seguridad Gestionada
+- Servicio de Alojamiento de Infraestructura TIC
+- Servicio de Nube Híbrida
+- Servicio de Correo Electrónico
+- Servicio Multicanal de Atención al Ciudadano
+- Servicio de Gestión del Registro
+- Gestión de Notificaciones
+- Gestión de Nómina
+- Servicio Integrado de Gestión de Personal
+- Servicio Común de Gestión Económico-Presupuestaria
+- Servicio común de generación y validación de firmas electrónicas
+- Servicio de gestión y documentos electrónicos
+- Servicio de gestión de archivo electrónico
+
+### Servicio Unificado de Telecomunicaciones (SUT)
+
+El Servicio Unificado de Telecomunicaciones (SUT) es una red corporativa única para las sedes del Estado.
+
+#### GEISER {#geiser}
+
+Gestión Integrada de Servicios de Registro (GEISER).
+
+#### ORVE {#orve}
+
+Oficina de Registro Virtual (ORVE)
+
+#### SIR {#sir}
+
+Sistema de Interconexión de Registros (SIR)
+
+### Servicio de Seguridad Gestionada
+
+###  Servicio de Alojamiento de Infraestructura TIC
+
+###  Servicio de Nube Híbrida
+
+#### NubeSARA {#nubesara}
+
+::: {.callout-warning icon="false" collapse="true"}
+## 🥇Temática candidata N1
+La secretaria suplente del Tribunal trabajó en nubeSARA entre 2018 y 2026.
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [NubeSARA](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=nubesara), PAe.
+:::
+
+NubeSARA es un servicio de nube híbrida para la AGE, gestionado desde la AEAD. Los organismos del sector público tienen esta infraestructura disponible desde la Red SARA.
+
+NubeSARA se lleva a cabo en una serie de CPDs disponibles. Hay 3 CPDs: Moncloa (el histórico), El Escorial (empleado sobre todo por las Fuerzas de Seguridad) y Las Rozas (en desarrollo).
+
+Cumplen el Tier IV.
+
+###  Servicio de Correo Electrónico
+
+###  Servicio Multicanal de Atención al Ciudadano
+
+#### Mi Carpeta Ciudadana {#carpeta-ciudadana}
+
+Mi Carpeta Ciudadana (CCD).
+
+### Servicio de Gestión del Registro
+
+#### REGAGE {#regage}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://sede.administracion.gob.es/servicios-electronicos/registro-electronico-general-age>
+:::
+
+El Registro Electrónico General de la Administración General del Estado (REGAGE) es un servicio común para presentar documentos para su tramitación dirigidos a distintos organismos públicos.
+
+Está gestionado por la AGE.
+
+Sustituye al antiguo Registro Electrónico Común (REC).
+
+### Gestión de Notificaciones
+
+#### Notific@ {#notifica}
+
+#### DEHú {#dehu}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [DEHú en DS-CTT](https://administracionelectronica.gob.es/ctt/lema)
+:::
+
+La Dirección Electrónica Habilitada única (DEHú) es un punto único de notificaciones para toda las AAPP.
+
+###  Gestión de Nómina
+
+###  Servicio Integrado de Gestión de Personal
+
+###  Servicio Común de Gestión Económico-Presupuestaria
+
+###  Servicio común de generación y validación de firmas electrónicas
+
+### Cl@ve Firma {#clave-firma}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [Cl@ve en CTT](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=clave). PAe.
+:::
+
+Cl@ve es un servicio de autenticación orientado al ciudadano.
+
+### AutenticA {#autentica}
+
+AutenticA tiene una función similar a Cl@ve pero está orientado a personal de AAPP.
+
+Funciona como un "Directorio Activo" o repositorio unificado que permite a los funcionarios y personal autorizado loguearse en las aplicaciones de gestión de la AGE (como GEISER o Portafirmas).
+
+### VALIDe {valide}
+
+Validación de firmas y certificados online (VALIDe) sirve para la validación de firmas electrónicas.
+
+### @firma
+
+@firma es la infraestructura que utiliza VALIDe (el servicio).
+
+#### FIRe
+
+Solución integral de firma electrónica (FIRe) unifica la firma local (Autofirma) con la de la Nube (Cl@ve).
+
+###  Servicio de gestión y documentos electrónicos
+
+### InSiDe {#inside}
+
+Infraestructuras y Sistemas de Documentación Electrónica (InSiDe).
+
+###  Servicio de gestión de archivo electrónico.
+
+### Archive {#archive}
+
+Archive es un archivo definitivo de expedientes y documentos.
+
+## Bases de datos comunes
+
+### DIR3 {#dir3}
+
+DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+<https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=dir>
+:::
+
+### SIA {#sia}
+
+Sistema de Información Administrativa (SIA).
+
+## Infraestructura común de interoperabilidad
+
+### Plataforma de Intermediación de Datos (PID) {#pid}
+
+## Registros
+
+Estos registros son requeridos por alguna ley estatal o norma
+
+### FACe {#face}
+
+FACE es el Punto General de Entrada de Facturas Electrónicas de la AGE.
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+<https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face>
+:::
+
+### @podera {#apodera}
+
+@podera es un registro electrónico de apoderamiento.
+
+### Habilit@ {#habilita}
+
+Habilit@ es un registro de funcionarios habilitados.
+
+### CISE (Centro de Interoperabilidad Semántica) {#cise}
+
+::: {.callout-note icon="false"}
+- Referencias
+  - [CISE en PAe](https://administracionelectronica.gob.es/ctt/378/activosSemanticos){target="_blank"}
+:::
+
+El Centro de Interoperabilidad Semántica (CISE) sirve para almacenar, publicar y difundir modelos de datos comunes y sectoriales a las AAPP de la AGE, garantizando que las diferentes administraciones públicas y ciudadanos entiendan la información intercambiada de forma automática.

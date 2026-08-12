@@ -2,6 +2,37 @@
 
 ### Iniciativas españolas
 
+### PAGe {#page}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [PAe](https://administracion.gob.es)
+  - [PAGe en el PAe](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=pag)
+:::
+
+El Punto de Acceso General electrónico (PAGe) es un portal de internet que supone un punto de acceso único a la ciudadanía a las AAPP a nivel estatal, autonómica, local y de la UE.
+
+#### CTT (Centro de Transferencia de Tecnología) {#ctt}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [Repositorio forja-CTT en GitHub](https://github.com/ctt-gob-es){target="_blank"}
+:::
+
+El Centro de Transferencia de Tecnología (CTT) es un portal web que tiene como objetivo favorecer la reutilización de soluciones tecnológicas a lo largo.
+
+Es gestionado por la AEAD.
+
+Contiene el directorio de soluciones del CTT (DS-CTT)/index{CTT!directorio de soluciones}, que es un catálogo de soluciones tecnológicas reutilizables en las AAPP.
+
+El repositorio forja-CTT\index{CTT!forja-CTT} de GitHub alberga proyectos de código abierto de las AAPP.
+
+#### Portal de Transparencia {#portal-transparencia}
+
+El Portal de Transparencia fue creado en virtud de la [L 19/2013]({#BOE-A-2013-12887}).
+
 #### Guías CCN-STIC
 
 ::: {.callout-note icon="false"}
@@ -16,5 +47,4 @@ La serie 800 de las guías CCN-STIC está relacionada con ciberseguridad.
 - CCN-STIC-817. Gestión de Incidentes de Seguridad en el ENS.
 - CCN-STIC-824. Informe nacional del estado de seguridad de los sistemas TIC.
 
-#### Viogén
-
+#### Viogén {#viogen}

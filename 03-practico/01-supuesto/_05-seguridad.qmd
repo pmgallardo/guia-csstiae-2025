@@ -14,9 +14,11 @@ Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de 
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Guías
+- Regulación:
+  - [RD 311/2022](02-analisis.qmd#BOE-A-2022-7191). ENS
+- Guías:
   - [CCN-STIC 803. Valorización de los sistemas en el ENS](https://www.ccn-cert.cni.es/ccn-cert/documentos/guias-ccn-stic/ccn-stic-803.html){target="_blank"}
-- Temas
+- Temas:
   - 48. ENS
 :::
 
@@ -43,6 +45,8 @@ A la hora de evaluar los ejercicios, se debe vigilar cuándo poner categoría al
 También se debe vigilar cuándo poner categoría básica, pues está reservada a sistemas de información que manejan datos de baja sensibilidad, como los relacionados con la publicidad, la meteorología o la cultura. Un sistema que almacena datos personales no puede tener categoria básica.
 
 Como referencia sobre cómo categorizar la seguridad del ENS, se puede mencionar la guía CCN-STIC 803 "Valorización de los sistemas en el ENS".
+
+Los **mecanismos del ENS**
 
 ### Protección de datos
 
