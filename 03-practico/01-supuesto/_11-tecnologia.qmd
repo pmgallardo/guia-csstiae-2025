@@ -36,13 +36,13 @@ También se puede adaptar una aplicación web como aplicación de escritorio emp
 
 Se puede consultar las tecnologías de las aplicaciones móviles en el [inventario de aplicaciones móviles del OBSAE](https://administracionelectronica.gob.es/pae_Home/eu/pae_Estrategias/pae_Movilidad_Inicio/catalogo_apps_age.html?comentarioContenido=0&idioma=es).
 
-Se concluye leyendo este informe que las aplicaciones móviles de la AGE están realizadas principalmente con Angular, Ionic y Flutter, en orden descendente.
+Se concluye leyendo este informe que las aplicaciones móviles de la AGE están realizadas principalmente con Ionic, Angular y Flutter, en orden descendente.
+
+Ionic proporciona componentes específicos para móvil adaptados a cada SO y se basa en un WebView, es decir, una web inscrustada en una app de móvil. Puede combinarse con Angular o u otro framework web o ejecutarse independientemente.
 
 Angular es una buena opción si es necesaria una misma app para web y móvil. Es conveniente que esta web sea responsiva (se adapta a la pantalla con fluidez) o adaptativa (considera distintas configuraciones y escoge la más adecuada), lo cual se consigue con frameworks CSS como Bootstrap o Tailwind CSS.
 
-Ionic proporciona componentes específicos para móvil adaptados a cada SO y también se basa en un WebView. Puede combinarse con Angular o u otro framework web o ejecutarse independientemente.
-
-Para la solución basadas en WebView (como Angular y Ionic), se emplearía Capacitor como puente entre el dispositivo móvil y la ventana de navegación interna (WebView) en la que se ejecuta la app web de Angular. Proporciona acceso al hardware y permite al usuario mostrar la aplicación como una app.
+Para la solución basadas en WebView (como Angular y Ionic), se puede emplear Capacitor como puente entre el dispositivo móvil y la ventana de navegación interna (WebView) en la que se ejecuta la app web de Angular. Proporciona acceso al hardware y permite al usuario mostrar la aplicación como una app.
 
 Flutter ejecuta código nativo en lugar de estar basado en tecnologías web (como Angular e Ionic), lo que le da mayor rendimiento.
 
@@ -58,7 +58,13 @@ La AGE emplea habitualmente Docker para empaquetado y Kubernetes o soluciones em
 
 #### Mensajería e integración
 
-Para mensajería e integración se emplen herramientas como Apache Kafka o RabbitMQ.
+Para mensajería e integración en la AGE se emplen herramientas como Apache Kafka o RabbitMQ.
+
+#### API Manager
+
+Para entornos on premise, la opción de código abierto WSO2 es popular en la AGE
+
+Para micro servicios, la opción de Kong Enterprise también popular.
 
 ### Ecosistemas de tecnologías
 

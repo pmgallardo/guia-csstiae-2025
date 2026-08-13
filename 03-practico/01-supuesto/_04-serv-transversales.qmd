@@ -123,7 +123,7 @@ La Dirección Electrónica Habilitada única (DEHú) es un punto único de notif
 
 ###  Servicio común de generación y validación de firmas electrónicas
 
-### Cl@ve Firma {#clave-firma}
+#### Cl@ve Firma {#clave-firma}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -133,17 +133,17 @@ La Dirección Electrónica Habilitada única (DEHú) es un punto único de notif
 
 Cl@ve es un servicio de autenticación orientado al ciudadano.
 
-### AutenticA {#autentica}
+#### AutenticA {#autentica}
 
 AutenticA tiene una función similar a Cl@ve pero está orientado a personal de AAPP.
 
 Funciona como un "Directorio Activo" o repositorio unificado que permite a los funcionarios y personal autorizado loguearse en las aplicaciones de gestión de la AGE (como GEISER o Portafirmas).
 
-### VALIDe {valide}
+#### VALIDe {valide}
 
 Validación de firmas y certificados online (VALIDe) sirve para la validación de firmas electrónicas.
 
-### @firma
+#### @firma
 
 @firma es la infraestructura que utiliza VALIDe (el servicio).
 
@@ -153,13 +153,25 @@ Solución integral de firma electrónica (FIRe) unifica la firma local (Autofirm
 
 ###  Servicio de gestión y documentos electrónicos
 
-### InSiDe {#inside}
+#### InSiDe {#inside}
 
-Infraestructuras y Sistemas de Documentación Electrónica (InSiDe).
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [InSiDe en CTT](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=inside). PAe.
+:::
+
+Infraestructuras y Sistemas de Documentación Electrónica (InSiDe) es un sistema para la gestión de documentos y expedientes electrónicos.
 
 ###  Servicio de gestión de archivo electrónico.
 
-### Archive {#archive}
+#### Archive {#archive}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [InSiDe en CTT](https://administracionelectronica.gob.es/ctt/archive). PAe.
+:::
 
 Archive es un archivo definitivo de expedientes y documentos.
 

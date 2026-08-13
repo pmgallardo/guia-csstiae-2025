@@ -1,21 +1,38 @@
-## Excedencia
+## Excedencia por prestación de servicios públicos
 
-### Petición de excendencia voluntaria por prestación de servicios en el sector público
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- [Excedencia voluntaria por prestación de servicios en el sector público ](https://digital.gob.es/funcion-publica/dgfp/gestiona-vida-profesional/situaciones-administrativas/excedencia-voluntaria-por-prestacion-de-servicios-en-el-sector-p-blico)
+:::
+
+Este apartado especifica los pasos a realizar para que un aspirante aprobado que ya trabaje en el sector público de manera fija quiera continuar trabajando en su puesto anterior y opte por dejar su plaza en el CSSTIAE en excedencia por prestación de servicios públicos, manteniendo su plaza en el Cuerpo.
+
+El [art. 15 del RD 365/1995](https://www.boe.es/eli/es/rd/1995/03/10/365/con#a15) contempla la excedencia voluntaria por prestación de servicios públicos. Esta situación se da cuando un recién ingresado en el CSSTIAE ya esté prestando servicio a las AAPP como funcionario de carrera de otro Cuerpo o esté empleado en un organismo del sector público con un puesto fijo.
+
+Puesto que, de acuerdo con el EBEP, es incompatible compaginar varios puestos públicos simultáneamente salvo ciertas excepciones, solo sería posible mantener uno de los puestos y por tanto se deben dejar los otros en situación de excendecia por prestación en sector público.
+
+Algunas aspectos a considerar de la excedencia por prestación en sector público:
+
+- No requiere un mínimo de antigüedad para solicitarla, a diferencia de otras excedencias.
+- Mantiene la plaza en el Cuerpo pero no el puesto en el destino escogido.
+
+### Petición de excendencia por prestación de servicios públicos
 
 Para pedir la excedencia voluntaria por prestación de servicios en el sector público es necesario haber pedido realizado antes la toma de posesión.
 
-Puede ser conveniente, aunque no obligatorio, avisar de que se va a pedir la excedencia antes de la toma de posesión, para que puedan tener todo listo. La Secretaría de 
+Puede ser conveniente, aunque no obligatorio, avisar antes de la toma de posesión de que se va a pedir la excedencia, para que puedan tener todo listo o consultado el día de la firma. En cualquier caso, se debe realizar la petición como tarde durante la toma de posesión para evitar una situación de incompatibilidad.
 
-En caso de solicitar la excedencia voluntaria por prestación de servicios en el sector público, conviene confirmar que se recibe una copia de los siguientes documentos:
+Días después de realizar la petición el nuevo funcionario del CSSTIAE se debe recibir una copia de los siguientes documentos:
 
 | Doc. | Título |
 | - | - |
-| F2R | Resolución de toma de posesión en puesto de trabajo |
 | F4R | Resolución de cese en el puesto de trabajo |
 | F6 | Acuerdo de cambio de situación administrativa |
 
-Estos documento se pueden encontrar en el portal Funciona, en Expediente > Notificaciones, y teóricamente también en la Carpeta Ciudadana.
+Estos documentos se pueden encontrar en el portal Funciona, en Expediente > Notificaciones, y teóricamente también en la Carpeta Ciudadana.
 
-### Recepción de Certificado de Servicios Previos
+### Recepción del Anexo I de Certificado de Servicios Previos
 
-Semanas después de haber solicitado la incidencia se recibirá un correo electrónico notificando una resolución de Certificado de Servicios Previos.
+El Anexo I de Certificado de Servicios Previos resume el periodo trabajado en la Administración Pública. Sirve para acreditar el trabajo realizado en el organismo, e incluye la antigüedad en el mismo.
+
+Este certificado se puede solicitar por escrito a Recursos Humanos del destino unas semanas después de procesarse la salida, y quizás también se reciba automáticamente por correo electrónico.

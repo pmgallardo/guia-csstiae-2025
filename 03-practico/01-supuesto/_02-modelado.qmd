@@ -2,6 +2,15 @@
 
 ### Diagramas estáticos y dinámicos
 
+Los diagramas estáticos y dinámicos reseñados en este apartado son:
+
+- Diagrama de casos de uso
+- Diagrama de flujo de datos (DFD)
+- Modelo entidad-relación (E-R)
+- Diagrama de clases
+- Diagramas de despliegue
+- Diagrama de secuencia
+
 #### Diagrama de casos de uso
 
 ::: {.callout-note icon="false"}
@@ -57,7 +66,7 @@ El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el n
   - Cillero, Manuel. [Modelo entidad-relacion en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/){target="_blank"}
 :::
 
-Un modelo entidad-relacion (E/R)...
+Un modelo entidad-relacion (E/R) se puede presentar en caso de que se pida representar gráficamente las entidades de datos.
 
 #### Diagrama de clases
 
@@ -99,8 +108,11 @@ El diagrama de secuencia es un diagrama UML que permite modelar la interacción 
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Temas
+- Temas:
   - 95. Métrica
+- Referencias:
+  - [Métriva v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
+  - Manuel Cillero. [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/){target="_blank"}. manuel.cillero.es.
 :::
 
 ### Arquitecturas de sistemas

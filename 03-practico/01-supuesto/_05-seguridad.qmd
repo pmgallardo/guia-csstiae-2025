@@ -46,14 +46,121 @@ También se debe vigilar cuándo poner categoría básica, pues está reservada 
 
 Como referencia sobre cómo categorizar la seguridad del ENS, se puede mencionar la guía CCN-STIC 803 "Valorización de los sistemas en el ENS".
 
-Los **mecanismos del ENS**
+Las **medidas de seguridad del ENS** se detallan en el anexo II del RD 311/2022. Se dividen en tres grupos:
+
+- Marco organizativo (org)
+- Marco operacional (op)
+- Medidas de protección (mp)
+
+El listado de mecanismos del ENS es el siguiente:
+
+- Marco organizativo (org)
+  - Política de seguridad
+  - Normativa de seguridad
+  - Procedimientos de seguridad
+  - Proceso de autorización
+- Marco operacional (op)
+  - op.pl. Planificación
+    - Análisis de riesgos
+    - Arquitectura de Seguridad
+    - Adquisición de nuevos componentes
+    - Dimensionamiento/gestión de la capacidad
+    - Componentes certificados *(n.a. básica)*
+  - op.acc. Control de acceso
+    - op.acc.1. **Identificación**
+    - op.acc.2. Requisitos de acceso
+    - op.acc.3. Segregación de funciones y tareas *(n.a. básica)*
+    - op.acc.4. Proceso de gestión de derechos de acceso
+    - op.acc.5. Mecanismo de autenticación (usuarios externos)	
+    - op.acc.6. Mecanismo de autenticación (usuarios de la organización)
+  - op.exp. Explotación
+    - **Inventario de activos**
+    - Configuración de seguridad
+    - Gestión de la configuración de seguridad
+    -	Mantenimiento y actualizaciones de seguridad
+    -	Gestión de cambios *(n.a. básica)*
+    -	Protección frente a código dañino
+    -	Gestión de incidentes
+    - Registro de la actividad
+    -	Registro de la gestión de incidentes
+    - Protección de claves criptográficas
+  - op.ext. Recursos externos
+      - Contratación y acuerdos de nivel de servicio *(n.a. básica)*
+      - Gestión diaria *(n.a. básica)*
+      - Protección de la cadena de suministro *(n.a. básica y alta)*
+      - Interconexión de sistemas *(n.a. básica)*
+  - op.nub. Servicios en la nube
+    - Protección de servicios en la nube
+  - op.cont. Continuidad del servicio
+    - Análisis de impacto *(n.a. básica)*
+    - Plan de continuidad *(n.a. básica y media)*
+    - Pruebas periódicas *(n.a. básica y media)*
+    - Medios alternativos *(n.a. básica y media)*
+  - op.mon. Monitorización del sistema
+    - **Detección de intrusión**
+    - Sistemas de métricas
+    - Vigilancia
+- Medidas de protección (mp)
+  - mp.if. Protección de las instalaciones e infraestructuras
+    - Áras separadas y con control de acceso
+    - Identificación de las personas
+    - Acondicionamiento de los locales
+    - Energía eléctrica
+    - Protección frente a incendios
+    - Protección frente a inundaciones
+    - Registro de entrada y salida de equipamiento
+  - mp.per. Gestión del personal
+    - Caracterización del puesto de trabajo
+    - Deberes y obligaciones
+    - Concienciación
+    - Formación
+  - mp.eq. Protección de los equipos
+    - Puesto de trabajo despejado
+    - Bloqueo de puesto de trabajo *(n.a. básica)*
+    - Protección de dispositivos portátiles
+    - Otros dispositivos conectados a la red
+  - mp.com. Protección de las comunicaciones
+    - Perímetro seguro
+    - Protección de la confidencialidad
+    - Protección de la integridad y de la autenticidad
+    - Separación de flujos de información en la red *(n.a. básica)*
+  - mp.si. Protección de los soportes de información
+    - Marcado de soportes *(n.a. básica)*
+    - Criptografía *(n.a. básica)*
+    - Custodia
+    - Transporte
+    - Borrado y destrucción
+  - mp.sw. Protección de las aplicaciones informáticas
+    - Desarrollo de aplicaciones *(n.a. básica)*
+    - **Aceptación y puesta en servicio**
+  - mp.info. Protección de la información
+    - Datos personales
+    - Calificación de la información *(n.a. básica)*
+    - Firma electrónica
+    - Sellos de tiempo *(n.a. básica y media)*
+    - Limpieza de documentos
+    - Copias de seguridad
+  - mp.s. Protección de los servicios
+    - Protección del correo electrónico
+    - Protección de servicios y aplicaciones web
+    - Protección de la navegación web
+    - Protección frente a denegación de servicio *(n.a. básica)*
 
 ### Protección de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Temas
+- Regulación:
+  - EU:
+    - [RGPD](02-analisis#CELEX:32016R0679)
+  - ES:
+    - [LO 3/2018](02-analisis#BOE-A-2018-16673). LOPD-GDD.
+- Temas:
     - 82. Adaptación LOPD
 :::
+
+Obtener consentimiento del tratamiento de datos.
+
+La Evaluación de Impacto en la Protección de Datos (EIPD) se 
 
 ### Guías CCN-STIC

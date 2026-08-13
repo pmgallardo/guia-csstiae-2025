@@ -1,31 +1,6 @@
 # Ejercicio práctico
 
-## Descripción del ejercicio práctico
-
-Este apartado es una breve introducción al ejercicio práctico, describiendo sus partes y la forma de anunciar su convocatoria.
-
-### Estructura del ejercicio práctico
-
-El ejercicio práctico, tal y como está planteado en la convocatoria de 2025, se compone de varias partes:
-
-1. [Supuesto práctico](01-supuesto.qmd)
-2. [Análisis pormenorizado](02-analisis.qmd)
-3. [Volcado](03-volcado.qmd)
-4. [Lectura](04-lectura.qmd)
-
-En esta guía entra más en detalle para cada una de ellas cada una de ellas.
-../
-### Fecha del ejercicio práctico
-
-La fecha exacta de realización de las partes del ejercicio práctico no son conocidas de antemano, sino que se publican a medida que avanza el proceso.
-
-Las partes del supuesto práctico y el análisis pormenorizado se realizan en la misma convocatoria, y su fecha y hora se especifica habitualmente tras la publicación definitiva de aprobados del ejercicio precedente, que suele ser el ejercicio de test de conocimientos.
-
-En la conv. 2023, la fecha definitiva del ejercicio práctico se publicó aproximadamente un mes después de haberse realizado el ejercicio de test. Desde la conv. 2022, el ejercicio práctico se realiza en viernes.
-
-La fecha y hora de realización de la lectura es única para cada candidato. Habitualmente se realiza primero la de los candidatos de promoción interna y después la de los de ingreso libre.
-
-En la conv. 2023, las lecturas de ingreso libre llevaron tres meses y medio.
+{{< include /03-practico/00-gen/_01-descripcion.qmd >}}
 
 {{< include /03-practico/00-gen/_02-temas-prac.qmd >}}
 
