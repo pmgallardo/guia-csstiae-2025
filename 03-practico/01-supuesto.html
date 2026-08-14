@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -368,11 +397,9 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introducción-al-supuesto-práctico" id="toc-introducción-al-supuesto-práctico" class="nav-link active" data-scroll-target="#introducción-al-supuesto-práctico"><span class="header-section-number">8.1</span> Introducción al supuesto práctico</a>
   <ul class="collapse">
-  <li><a href="#material-a-llevar-al-consejo-práctico" id="toc-material-a-llevar-al-consejo-práctico" class="nav-link" data-scroll-target="#material-a-llevar-al-consejo-práctico"><span class="header-section-number">8.1.1</span> Material a llevar al consejo práctico</a></li>
-  <li><a href="#consejos-para-el-supuesto-práctico" id="toc-consejos-para-el-supuesto-práctico" class="nav-link" data-scroll-target="#consejos-para-el-supuesto-práctico"><span class="header-section-number">8.1.2</span> Consejos para el supuesto práctico</a></li>
-  <li><a href="#ia-supuesto-práctico" id="toc-ia-supuesto-práctico" class="nav-link" data-scroll-target="#ia-supuesto-práctico"><span class="header-section-number">8.1.3</span> IA (supuesto práctico)</a></li>
-  <li><a href="#certificados-electrónicos-supuesto-práctico" id="toc-certificados-electrónicos-supuesto-práctico" class="nav-link" data-scroll-target="#certificados-electrónicos-supuesto-práctico"><span class="header-section-number">8.1.4</span> Certificados electrónicos (supuesto práctico)</a></li>
-  <li><a href="#accesibilidad-supuesto-práctico" id="toc-accesibilidad-supuesto-práctico" class="nav-link" data-scroll-target="#accesibilidad-supuesto-práctico"><span class="header-section-number">8.1.5</span> Accesibilidad (supuesto práctico)</a></li>
+  <li><a href="#ia-supuesto-práctico" id="toc-ia-supuesto-práctico" class="nav-link" data-scroll-target="#ia-supuesto-práctico"><span class="header-section-number">8.1.1</span> IA (supuesto práctico)</a></li>
+  <li><a href="#certificados-electrónicos-supuesto-práctico" id="toc-certificados-electrónicos-supuesto-práctico" class="nav-link" data-scroll-target="#certificados-electrónicos-supuesto-práctico"><span class="header-section-number">8.1.2</span> Certificados electrónicos (supuesto práctico)</a></li>
+  <li><a href="#accesibilidad-supuesto-práctico" id="toc-accesibilidad-supuesto-práctico" class="nav-link" data-scroll-target="#accesibilidad-supuesto-práctico"><span class="header-section-number">8.1.3</span> Accesibilidad (supuesto práctico)</a></li>
   </ul></li>
   <li><a href="#modelado" id="toc-modelado" class="nav-link" data-scroll-target="#modelado"><span class="header-section-number">8.2</span> Modelado</a>
   <ul class="collapse">
@@ -450,21 +477,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#costes-por-desarrollo-de-software" id="toc-costes-por-desarrollo-de-software" class="nav-link" data-scroll-target="#costes-por-desarrollo-de-software"><span class="header-section-number">8.11.1</span> Costes por desarrollo de software</a></li>
   <li><a href="#costes-por-infraestructura" id="toc-costes-por-infraestructura" class="nav-link" data-scroll-target="#costes-por-infraestructura"><span class="header-section-number">8.11.2</span> Costes por infraestructura</a></li>
   </ul></li>
-  <li><a href="#contratación" id="toc-contratación" class="nav-link" data-scroll-target="#contratación"><span class="header-section-number">8.12</span> Contratación</a>
-  <ul class="collapse">
-  <li><a href="#presupuesto-de-los-contratos" id="toc-presupuesto-de-los-contratos" class="nav-link" data-scroll-target="#presupuesto-de-los-contratos"><span class="header-section-number">8.12.1</span> Presupuesto de los contratos</a></li>
-  <li><a href="#tipos-de-contratación-pública-según-su-objeto" id="toc-tipos-de-contratación-pública-según-su-objeto" class="nav-link" data-scroll-target="#tipos-de-contratación-pública-según-su-objeto"><span class="header-section-number">8.12.2</span> Tipos de contratación pública según su objeto</a></li>
-  <li><a href="#regulación-armonizada-sara" id="toc-regulación-armonizada-sara" class="nav-link" data-scroll-target="#regulación-armonizada-sara"><span class="header-section-number">8.12.3</span> Regulación armonizada SARA</a></li>
-  <li><a href="#plazo-de-ejecución" id="toc-plazo-de-ejecución" class="nav-link" data-scroll-target="#plazo-de-ejecución"><span class="header-section-number">8.12.4</span> Plazo de ejecución</a></li>
-  <li><a href="#prórrogas-en-concesiones" id="toc-prórrogas-en-concesiones" class="nav-link" data-scroll-target="#prórrogas-en-concesiones"><span class="header-section-number">8.12.5</span> Prórrogas en concesiones</a></li>
-  <li><a href="#procedimientos-de-adjudicación" id="toc-procedimientos-de-adjudicación" class="nav-link" data-scroll-target="#procedimientos-de-adjudicación"><span class="header-section-number">8.12.6</span> Procedimientos de adjudicación</a></li>
-  <li><a href="#modificación-de-contratos" id="toc-modificación-de-contratos" class="nav-link" data-scroll-target="#modificación-de-contratos"><span class="header-section-number">8.12.7</span> Modificación de Contratos</a></li>
-  <li><a href="#anuncios-de-licitaciones-público" id="toc-anuncios-de-licitaciones-público" class="nav-link" data-scroll-target="#anuncios-de-licitaciones-público"><span class="header-section-number">8.12.8</span> Anuncios de licitaciones público</a></li>
-  <li><a href="#procedimiento-general-de-contratación-tic" id="toc-procedimiento-general-de-contratación-tic" class="nav-link" data-scroll-target="#procedimiento-general-de-contratación-tic"><span class="header-section-number">8.12.9</span> Procedimiento general de contratación TIC</a></li>
-  </ul></li>
+  <li><a href="#contratación" id="toc-contratación" class="nav-link" data-scroll-target="#contratación"><span class="header-section-number">8.12</span> Contratación</a></li>
   <li><a href="#planificación-temporal" id="toc-planificación-temporal" class="nav-link" data-scroll-target="#planificación-temporal"><span class="header-section-number">8.13</span> Planificación temporal</a>
   <ul class="collapse">
-  <li><a href="#fases-de-un-proyecto" id="toc-fases-de-un-proyecto" class="nav-link" data-scroll-target="#fases-de-un-proyecto"><span class="header-section-number">8.13.1</span> Fases de un proyecto</a></li>
+  <li><a href="#aspectos-generales-de-planificación" id="toc-aspectos-generales-de-planificación" class="nav-link" data-scroll-target="#aspectos-generales-de-planificación"><span class="header-section-number">8.13.1</span> Aspectos generales de planificación</a></li>
+  <li><a href="#fases-de-un-proyecto" id="toc-fases-de-un-proyecto" class="nav-link" data-scroll-target="#fases-de-un-proyecto"><span class="header-section-number">8.13.2</span> Fases de un proyecto</a></li>
+  <li><a href="#metodologías" id="toc-metodologías" class="nav-link" data-scroll-target="#metodologías"><span class="header-section-number">8.13.3</span> Metodologías</a></li>
   </ul></li>
   <li><a href="#tecnología" id="toc-tecnología" class="nav-link" data-scroll-target="#tecnología"><span class="header-section-number">8.14</span> Tecnología</a>
   <ul class="collapse">
@@ -499,69 +517,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="introducción-al-supuesto-práctico" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="introducción-al-supuesto-práctico"><span class="header-section-number">8.1</span> Introducción al supuesto práctico</h2>
 <p>Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).</p>
-<section id="material-a-llevar-al-consejo-práctico" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="material-a-llevar-al-consejo-práctico"><span class="header-section-number">8.1.1</span> Material a llevar al consejo práctico</h3>
-<p>Material para llevar:</p>
-<ul>
-<li>2 bolígrafos</li>
-<li>Corrector ortográfico</li>
-<li>Subrayadores de colores</li>
-<li>Lapicero</li>
-<li>Goma de borrar</li>
-<li>Cuaderno, hojas o portátil para realizar el volcado</li>
-</ul>
+<section id="ia-supuesto-práctico" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="ia-supuesto-práctico"><span class="header-section-number">8.1.1</span> IA (supuesto práctico)</h3>
+<p>Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervisado dependiendo de si se cuenta con un conjunto de entrenamiento etiquetado.</p>
 </section>
-<section id="consejos-para-el-supuesto-práctico" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="consejos-para-el-supuesto-práctico"><span class="header-section-number">8.1.2</span> Consejos para el supuesto práctico</h3>
-<p>Resumen de consejos:</p>
-<ul>
-<li>Leer las preguntas antes de leer el enunciado completo.</li>
-<li>Subrayar los conceptos del exámen</li>
-<li>Emplear una hoja para cada ejercicio. No penaliza el número de hojas empleadas, y el emplear hojas independientes permite alargar la resolución del ejercicio en el caso necesario.</li>
-</ul>
-<p>En la mayoría de tribunales, si escribes en las hojas del enunciado del supuesto práctico no las podrás sacar posteriormente. No contar con el enunciado dificulta la realización del volcado, por lo que no es un buen consejo.</p>
-<p>Por el contrario, emplear subrayadores es compatible con sacar la hoja del enunciado. Algunos candidatos emplean varios colores para marcar distintas categorías de palabras claves, como por ejemplo actores, acciones, etc.</p>
-<p>Una propuesta de subrayado de colores puede ser:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Significado</th>
-<th>Color sugerido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Actor / Sistema</td>
-<td>Azul</td>
-</tr>
-<tr class="even">
-<td>Entidad de datos</td>
-<td>Verde</td>
-</tr>
-<tr class="odd">
-<td>Funcionalidad</td>
-<td>Naranja</td>
-</tr>
-<tr class="even">
-<td>Normativa</td>
-<td>Rojo</td>
-</tr>
-<tr class="odd">
-<td>Cuestiones de interés</td>
-<td>Amarillo</td>
-</tr>
-</tbody>
-</table>
-<p>Se podría distinguir con distinto color los actores internos y externos.</p>
+<section id="certificados-electrónicos-supuesto-práctico" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="certificados-electrónicos-supuesto-práctico"><span class="header-section-number">8.1.2</span> Certificados electrónicos (supuesto práctico)</h3>
 </section>
-<section id="ia-supuesto-práctico" class="level3" data-number="8.1.3">
-<h3 data-number="8.1.3" class="anchored" data-anchor-id="ia-supuesto-práctico"><span class="header-section-number">8.1.3</span> IA (supuesto práctico)</h3>
-</section>
-<section id="certificados-electrónicos-supuesto-práctico" class="level3" data-number="8.1.4">
-<h3 data-number="8.1.4" class="anchored" data-anchor-id="certificados-electrónicos-supuesto-práctico"><span class="header-section-number">8.1.4</span> Certificados electrónicos (supuesto práctico)</h3>
-</section>
-<section id="accesibilidad-supuesto-práctico" class="level3" data-number="8.1.5">
-<h3 data-number="8.1.5" class="anchored" data-anchor-id="accesibilidad-supuesto-práctico"><span class="header-section-number">8.1.5</span> Accesibilidad (supuesto práctico)</h3>
+<section id="accesibilidad-supuesto-práctico" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="accesibilidad-supuesto-práctico"><span class="header-section-number">8.1.3</span> Accesibilidad (supuesto práctico)</h3>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1911,7 +1875,7 @@ LIFO report</code></pre>
 </ul></li>
 <li><strong>🔗 Referencias de consulta:</strong>
 <ul>
-<li><a href="https://runmodule.com/2026/06/25/software-estimation/">Software Estimation</a>. RunModule, 2026.</li>
+<li><a href="https://runmodule.com/2026/06/25/software-estimation/" target="_blank">Software Estimation</a>. RunModule, 2026.</li>
 </ul></li>
 </ul>
 </div>
@@ -1936,15 +1900,145 @@ LIFO report</code></pre>
 <p>En este apartado resume métodos de estimación de esfuerzo y costes en el desarrollo de software, que es una tarea habitual en el supuesto práctico.</p>
 <p>De cara al supuesto práctico, se propone aplicar cada una de las técnicas de dimensionamiento de desarrollo en las siguientes situaciones:</p>
 <ul>
-<li>Si se ha pedido realizar un diagrama de casos de uso: UCP.</li>
-<li>Si se he pedido realizar un modelo entidad-relación (ER) o un diagrama de clases: staffing size.</li>
-<li>En otro caso: COSMIC-FSM</li>
+<li>Si se cuenta con un diagrama de casos de uso: UCP.</li>
+<li>Si se cuenta con un modelo entidad-relación (ER) o un diagrama de clases: staffing size.</li>
+<li>En otro caso: COSMIC-FSM.</li>
 </ul>
-<p>Todas estas técnicas se presentan en el temario de Astic, además de otras reseñadas como el enfoque COCOMO o las métricas bang. Adicionalmente, existen otras técnicas de estimación no cubiertas en estos apuntes.</p>
-<section id="ucp" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ucp">UCP</h5>
-<p>Para User Case Points (UCP), se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden que se considera) para facilitar las cuentas ya que su producto es 1.</p>
-<p>Estimación por puntos de función (versión simplificada de Andreu, problemente basada en COSMIC-FSM):</p>
+<p>Algunas de estas técnicas se presentan en la documentación de estimación de recursos del temario de Astic (UCP y COSMIC-FSM), junto a otras no reseñadas en esta guía como el enfoque COCOMO o las métricas bang, mientras que otras provienen de Métrica v3 (staffing size). Adicionalmente, existen otras técnicas de estimación no cubiertas ni en la documentación de Astic ni en esta guía, y que nada impide que sean usadas en el ejercicio práctico.</p>
+<section id="user-case-points-ucp" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="user-case-points-ucp">User Case Points (UCP)</h5>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>🎯 Temas:</strong>
+<ul>
+<li><ol start="99" type="1">
+<li>Estimación de recursos</li>
+</ol></li>
+</ul></li>
+<li>Referencias:
+<ul>
+<li>Murali Chemuturi. “<a href="https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M" target="_blank">Software Estimation Best Practices, Tools &amp; Techniques: A Complete Guide for Software Project Estimators</a>”, J. Ross Publishing, 2009</li>
+<li>Alan R. Dennis, Barbara Haley Wixom, and David Tegarden. Chapter 5 - Functional Modeling. In: <a href="https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M" target="_blank">Systems Analysis and Design with UML Version 2.0: An Object-Oriented Approach</a>. 3rd ed.&nbsp;J. Ross Publishing, 2009.</li>
+<li>Carl Friedrich Kress, Olivier Hummel, Mahmudul Huq, <a href="https://ceur-ws.org/Vol-1138/re4p21.pdf" target="_blank">A Practical Approach for Reliable Pre-Project Effort Estimation</a>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Use_case_points" target="_blank">Use Case Points</a></li>
+<li><a href="https://runmodule.com/2027/04/13/use-case-points/" target="_blank">Use Case Points</a>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Los puntos de caso de uso (use case points, UCP), a veces referidos como el método Karner, es un método de estimación de software basado en la complejidad de los casos de uso. Es por tanto adecuado cuando el supuesto práctico pide realizar un diagrama de caso de uso además de la estimación.</p>
+<p>Fue desarrollado por Gustav Karner en 1993 mientras trabajaba en la compañía sueca Objectory Systems.</p>
+<p>Hay un buen ejemplo en la <a href="https://en.wikipedia.org/wiki/Use_case_points#Example" target="_blank">Wikipedia</a>.</p>
+<p>El total de puntos de casos de uso se calcula mediante la siguiente fórmula: <span class="math display">\[\text{UCP} = \text{UUCP} * \text{TCF} * \text{ECF}\]</span></p>
+<p>Los puntos de casos de uso sin ajustar (<em>Unadjusted Use Case Points</em>, UUCP) se calculan como:</p>
+<p><span class="math display">\[\text{UUCP} = \text{UUCW} + \text{UAW}\]</span></p>
+<p>por lo que</p>
+<p><span class="math display">\[\text{UCP} = (\text{UUCW} + \text{UAW}) * \text{TCF} * \text{ECF}.\]</span></p>
+<p>El peso de caso de uso sin ajustar (Unadjusted Use Case Weight, UUCW) se calcula como:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Use Case Classification</th>
+<th>No.&nbsp;of Transactions</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Simple</td>
+<td>1-3</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Average</td>
+<td>4-7</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Complex</td>
+<td>≥8</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[UUCW = \sum{\text{no. de casos de usos} \times \text{peso}}\]</span></p>
+<p>El peso de actor sin ajustar (Unadjusted Actor Weight, UAW) se calcula como:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Actor Classification</th>
+<th>Type of Actor Interaction</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Simple</td>
+<td>API</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Average</td>
+<td>Communication protocol</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Complex</td>
+<td>GUI</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[UAW = \sum{\text{no. de actores} \times {peso}}\]</span></p>
+<p>El factor de complejidad técnica (<em>technical complexity factor</em>, TCF) depende de la complejidad de la solución.</p>
+<p>El factor de complejidad de ambiente (<em>environmental complexity factor</em>, ECF) depende de la experiencia del equipo de desarollo.</p>
+<p>En un ejercicio completo se emplearían tablas y fórmulas para calcular el TCF y el ECF. De cara al ejercicio práctico, puesto que no se dispone de una copia de las tablas y fórmulas, calculadora y tiempo suficiente, para facilitar las cuentas se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden indicado, ya que son sus valores medios) para obtener un producto de 1 y facilitar las cuentas.</p>
+<p>Una vez obtenidos los UCP, estos se transforman a horas. Puede ser tan sencillo como considerar un número de hroas fijos por caso de uso.</p>
+</section>
+<section id="staffing-size" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="staffing-size">Staffing size</h5>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📋 Marco de referencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Referencias:
+<ul>
+<li>Ministerio de Administraciones Pública. Apartado “Staffing size (Orientación a objetos)”. En: <a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf" target="_blank">Métrica v3. Técnicas</a>. PAe.</li>
+<li>Manuel Cillero. <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/" target="_blank">Staffing size (Orientación a objetos)</a>. manuel.cillero.es</li>
+<li><a href="https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/" target="_blank">https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/</a></li>
+</ul></li>
+<li>Temas:
+<ul>
+<li><ol start="99" type="1">
+<li>Estimación de recursos</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Staffing size es un método para estimar cuántas personas son necesarias en un desarrollo orientado a objetos y durante cuánto tiempo participan. Está incluido dentro de las técnicas de Métriva v3.</p>
+<p>Es adecuado cuando el enunciado requiera hacer previamente un diagrama de clases o un modelo entidad-relación (E-R).</p>
+<p>Se puede asumir que cada clase de producción lleva entre 10-15 días (100 horas), y las clases de prototipado 6-8 días.</p>
+</section>
+<section id="puntos-de-función" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="puntos-de-función">Puntos de función</h5>
+<p>Estimación por puntos de función (versión simplificada, problemente basada en COSMIC-FSM):</p>
 <ol type="1">
 <li>Identificar los puntos de función de enunciado</li>
 <li>Estimar puntos de función Interfaz de usuario = 10 PF Módulo = 10, 20 ó 30 PF</li>
@@ -1952,9 +2046,6 @@ LIFO report</code></pre>
 </ol>
 <p>Una vez que se obtienen las horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total.</p>
 <p>El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).</p>
-</section>
-<section id="staffing-size" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="staffing-size">Staffing size</h5>
 </section>
 <section id="cosmic-fsm" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="cosmic-fsm">COSMIC-FSM</h5>
@@ -1968,9 +2059,37 @@ LIFO report</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/" class="uri">https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/</a></p>
+<ul>
+<li>Referencias:
+<ul>
+<li>Miguel Ángel Rodrigo Muñoz. Apartado 2.3 “Ejemplo para medir el software o componente a desarrollar” y 2.5 “COSMIC-FSM”. En: “Tema 98. La estimación de recursos y esfuerzo en el desarrollo de sistemas de la información”. Astic, Sep-2022.</li>
+<li><a href="https://cosmic-sizing.org/cosmic-sizing/intro/" target="_blank">COSMIC Method. Introduction</a>.</li>
+<li><a href="https://en.wikipedia.org/wiki/COSMIC_functional_size_measurement" target="_blank">COSMIC functional size measurement</a>. Wikipedia.</li>
+<li><a href="https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/" target="_blank">https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/</a></li>
+</ul></li>
+<li>Temas:
+<ul>
+<li><ol start="99" type="1">
+<li>Estimación de recursos</li>
+</ol></li>
+</ul></li>
+</ul>
 </div>
 </div>
+<p>COSMIC-FSM es una técnica de dimensionamiento funcional basada en el comportamiento del software y el movimiento de datos. La principal ventaja de COSMIC-FSM es que no requiere haber modelado previamente el caso.</p>
+<p>El Consorcio Internacional de Medidas de Software Común (<em>Common Software Measurement International Consortium</em>, COSMIC) fue creada in 1998. Adaptó la idea de IFPUG FPA a las nuevas tendendicas de desarrollo, dando lugar a la técnica de COSMIC-FSM. Se ha estandarizado bajo el estándar ISO/IEC 19761, siendo la última versión <a href="https://www.iso.org/standard/54849.html" target="_blank">ISO/IEC 19761:2011</a>.</p>
+<p>La técnica consiste en contar el total de puntos de función COSMIC (<em>COSMIC function points</em>, CFP) en un sistema, donde se cuenta 1 CFP por cada elemento de esta tipología encontremos:</p>
+<ul>
+<li>Entrada</li>
+<li>Salida</li>
+<li>Lectura</li>
+<li>Escritura</li>
+</ul>
+<p>El método requiere que se cuenten con proyectos anteriores para los que sea conocido sus CFPs, coste y duración total, de manera que se pueda aplicar una regla de tres para calcular el tiempo o el coste dados los CFPs del nuevo proyecto.</p>
+<p><span class="math display">\[ t_2 = \frac{\text{CFP}_2 \times t_1}{\text{CFP}_1} \]</span></p>
+<p><span class="math display">\[ c_2 = \frac{\text{CFP}_2 \times c_1}{\text{CFP}_1} \]</span></p>
+<p>Puesto que es poco probable de que en el supuesto práctico del CSSTIE contemos con información sobre rendimiento por CFP en base a proyecto anteriores, si queremos emplear esta técnica debemos suponer un coste y duración por CFP estimados. Por ejemplo, 1 CFP puede corresponder con 10 horas de trabajo (aunque en el ejemplo de la bibliografía de Astic 1 PF = 100).</p>
+<p>Por otro lado, el coste se puede obtener directamente conviertiendo los CFPs en horas empleando un coeficiente supuesto (ej. 1 CPF = 1.000 €), o si no de forma más compleja, pues que ya se tiene el número de horas de trabajo por la suposición anterior, aplicar las tarifas de los empleados.</p>
 </section>
 </section>
 <section id="servicios-de-desarrollo" class="level4" data-number="8.10.1.2">
@@ -1992,15 +2111,15 @@ LIFO report</code></pre>
 </ul></li>
 <li>Referencias
 <ul>
-<li><a href="https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es">Métrica v3</a>. PAe.</li>
-<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf">Métrica v3. Participantes</a>. PAe, 2001.</li>
-<li>Manuel Cillero, <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/">Métrica v3. Participantes</a>, manuel.cillero.es.</li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es" target="_blank">Métrica v3</a>. PAe.</li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf" target="_blank">Métrica v3. Participantes</a>. PAe, 2001.</li>
+<li>Manuel Cillero, <a href="https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/" target="_blank">Métrica v3. Participantes</a>, manuel.cillero.es.</li>
 </ul></li>
 </ul>
 </div>
 </div>
 <p>Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.</p>
-<p>La metodología Métrica v3, en su documento de <a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf">Participantes</a>, define una serie de perfiles de participantes en el desarrollo de sistemas de información:</p>
+<p>La metodología Métrica v3, en su documento de <a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf" target="_blank">Participantes</a>, define una serie de perfiles de participantes en el desarrollo de sistemas de información:</p>
 <ul>
 <li>Directivo</li>
 <li>Jefe de Proyecto</li>
@@ -2019,7 +2138,7 @@ LIFO report</code></pre>
 </ul>
 <p>Se suele reducir el ratio de analistas por programador cuando interesa reducir el coste de desarrollo.</p>
 <p>También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.</p>
-<p>Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D">Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud</a>, donde se definía que una unidad de trabajo estaba formada por:</p>
+<p>Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los <a href="https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&amp;cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D" target="_blank">Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud</a>, donde se definía que una unidad de trabajo estaba formada por:</p>
 <ul>
 <li>1 jefe de proyecto</li>
 <li>3 analistas</li>
@@ -2385,308 +2504,412 @@ Total: 1.270 €/año</p></li>
 </div>
 </div>
 <p>Este apartado trata sobre la contratación en la Administración General del Estado (AGE).</p>
-<p>Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.</p>
-<section id="presupuesto-de-los-contratos" class="level3" data-number="8.12.1">
-<h3 data-number="8.12.1" class="anchored" data-anchor-id="presupuesto-de-los-contratos"><span class="header-section-number">8.12.1</span> Presupuesto de los contratos</h3>
-<ul>
-<li>Presupuesto base de licitación</li>
-<li>Valor estimado</li>
-<li>Precio</li>
-</ul>
-<section id="presupuesto-base-de-licitación" class="level4" data-number="8.12.1.1">
-<h4 data-number="8.12.1.1" class="anchored" data-anchor-id="presupuesto-base-de-licitación"><span class="header-section-number">8.12.1.1</span> Presupuesto base de licitación</h4>
-<p>El presupuesto base de licitación es el límite máximo de gasto que en virtud del contrato puede comprometer el órgano de contratación, incluido el Impuesto sobre el Valor Añadido (IVA).</p>
-<p>No incluye prórrogas.</p>
-<p>Incluye IVA.</p>
-</section>
-<section id="valor-estimado" class="level4" data-number="8.12.1.2">
-<h4 data-number="8.12.1.2" class="anchored" data-anchor-id="valor-estimado"><span class="header-section-number">8.12.1.2</span> Valor estimado</h4>
-<p>El valor estimado incluye todas las prórrogas y modificaciones.</p>
-<p>NO incluye IVA.</p>
-</section>
-</section>
-<section id="tipos-de-contratación-pública-según-su-objeto" class="level3" data-number="8.12.2">
-<h3 data-number="8.12.2" class="anchored" data-anchor-id="tipos-de-contratación-pública-según-su-objeto"><span class="header-section-number">8.12.2</span> Tipos de contratación pública según su objeto</h3>
-<p>Tipos de contratación según su objeto:</p>
-<ul>
-<li>Obras</li>
-<li>Concesión de obras</li>
-<li>Servicios</li>
-<li>Concesión de Servicios</li>
-<li>Suministros</li>
-<li>Mixto</li>
-</ul>
-<p>Las licencias de software se considera suministro, mientras que el software a medida se considera un servicio.</p>
-<section id="obras" class="level4" data-number="8.12.2.1">
-<h4 data-number="8.12.2.1" class="anchored" data-anchor-id="obras"><span class="header-section-number">8.12.2.1</span> Obras</h4>
-<p>El contrato de obras se regula en el art. 13 de la ley 9/2017.</p>
-</section>
-<section id="mixto" class="level4" data-number="8.12.2.2">
-<h4 data-number="8.12.2.2" class="anchored" data-anchor-id="mixto"><span class="header-section-number">8.12.2.2</span> Mixto</h4>
-<p>En el contrato mixto se recogen varios objetos de contratación.</p>
-<p>En caso de contrato mixto, se distingue entre la preparación y adjudicación del contrato, donde se recogen las normas que establecen las Directivas, y los efectos y extinción.</p>
-<p>Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas del contrato cuya prestación sea la principal o cuyo valor estimado sea más elevado.</p>
-</section>
-</section>
-<section id="regulación-armonizada-sara" class="level3" data-number="8.12.3">
-<h3 data-number="8.12.3" class="anchored" data-anchor-id="regulación-armonizada-sara"><span class="header-section-number">8.12.3</span> Regulación armonizada SARA</h3>
-<p>La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.</p>
-<p>La regulación armonizada sre aplica cuando el valor estimado del contrato sobrepasa el umbral de:</p>
-<p>143.000 € para la AGE en contratos de suministros y servicios</p>
-<p>221.000 € para organismos distintos a la AGE en contratos de suministros y servicios</p>
-<p>5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo</p>
-<p>Estos importes se establecen en la Orden HFP/1352/2023.</p>
-<p>Una de las implicaciones de la regulación armonizada es que los contratos bajo la misma deben publicarse en el Diario Oficial de la Unión Europea.</p>
-</section>
-<section id="plazo-de-ejecución" class="level3" data-number="8.12.4">
-<h3 data-number="8.12.4" class="anchored" data-anchor-id="plazo-de-ejecución"><span class="header-section-number">8.12.4</span> Plazo de ejecución</h3>
-<p>El plazo de ejecución se especifica en el pliego, sin que exista un plazo máximo. Los plazos de ejecución se regulan en el art. 210 de la ley 9/2017.</p>
-</section>
-<section id="prórrogas-en-concesiones" class="level3" data-number="8.12.5">
-<h3 data-number="8.12.5" class="anchored" data-anchor-id="prórrogas-en-concesiones"><span class="header-section-number">8.12.5</span> Prórrogas en concesiones</h3>
-<p>Las prórrogas de las concesiones deben ser acordadas entre la entidad contratante y el contratista.</p>
-<p>Vienen reguladas en el art. 205 de la ley 9/2017.</p>
-</section>
-<section id="procedimientos-de-adjudicación" class="level3" data-number="8.12.6">
-<h3 data-number="8.12.6" class="anchored" data-anchor-id="procedimientos-de-adjudicación"><span class="header-section-number">8.12.6</span> Procedimientos de adjudicación</h3>
-<p>Procedimientos o formas de adjudicación:</p>
-<ul>
-<li>Procedimiento abierto</li>
-<li>Procedimiento abierto simplificado</li>
-<li>Procedimiento abierto simplificado abreviado</li>
-<li>Procedimiento restringido</li>
-<li>Procedimiento de negociación</li>
-<li>Procedimiento negociado sin publicidad</li>
-<li>Contrato menor</li>
-<li>Diálogo competitivo</li>
-<li>Procedimiento de asociación para la innovación</li>
-<li>Contrato menor</li>
-<li>Contratación centralizada</li>
-</ul>
-<p>La plataforma para realizar contratación es Conecta-Contratación.</p>
-<p><a href="https://catalogocentralizado.hacienda.gob.es/pctw/Acceso/inicio.aspx">Página web de Conecta-Contratación</a>.</p>
-<p>Los contratos sujetos a contratación armonizada se llaman también contratos SARA.</p>
-<section id="procedimiento-abierto" class="level4" data-number="8.12.6.1">
-<h4 data-number="8.12.6.1" class="anchored" data-anchor-id="procedimiento-abierto"><span class="header-section-number">8.12.6.1</span> Procedimiento abierto</h4>
-<p>Un procedimientos abierto se denomina así ya que cualquiera puede licitar al mismo.</p>
-<p>Existen varios subtipos de procedimiento abierto:</p>
-<ul>
-<li>Procedimiento abierto (estándar)</li>
-<li>Procedimiento abierto simplificado</li>
-<li>Procedimiento abierto simplificado abreviado</li>
-</ul>
-<p><strong>Procedimiento abierto estándar</strong></p>
-<p>El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto estándar para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.</p>
-<p>El plazo de presentación de proposiciones es:</p>
-<p>En caso de regulación NO armonizada: 15 días</p>
-<p>En caso de regulación armonizada</p>
-<p>En situación estándar: 35 días</p>
-<p>Si se publicó un anuncio previo o en situación de emergencia: 15 días</p>
-<p>Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos en 5 días. Esto se define en el art. 156.3.c.</p>
-<p>No tiene restricciones respecto al importe del contrato.</p>
-<p><strong>Procedimiento abierto simplificado</strong></p>
-<p>Condiciones para su aplicación:</p>
-<p>Criterio económico</p>
-<p>Para contratos de obras, valor estimado &lt;= 2.000.000 €</p>
-<p>Para contratos de suministro y de servicios, valor estimado &lt;= 100.000 €</p>
-<p>Criterios de adjudicación</p>
-<p>En prestación de carácter no intelectual, los juicios de valor deben ser &lt;25%</p>
-<p>En prestación intelectual, los juicios de valor deben ser &lt;40%</p>
-<p>Plazo de presentación de proposiciones mínimo:</p>
-<p>Obras: 20 días</p>
-<p>Otros: 15 días</p>
-<p><strong>Procedimiento abierto simplificado abreviado</strong></p>
-<p>Condiciones para su aplicación:</p>
-<p>Criterio económico</p>
-<p>Para contratos de obras, valor estimado &lt;= 80.000 €.</p>
-<p>Para contratos de suministros y servicios, valor estimado &lt;= 60.000 €</p>
-<p>Tipo de prestación</p>
-<p>Solo prestación de carácter no intelectual</p>
-<p>Plazo de presentación de proposiciones mínimo:</p>
-<p>Compras corrientes disponibles en el mercado: 5 días hábiles</p>
-<p>Otros: 10 días hábiles</p>
-<p>No es necesaria la acreditación de la solvencia económica y financiera y técnica o profesional de los licitadores.</p>
-<p>La oferta se entregará en un único sobre y se evaluará con arreglo a criterios de adjudicación cuantificables mediante la mera aplicación de fórmulas establecidas en los pliegos.</p>
-<p>Con “sobre único” se refiere a que solo se hace una oferta con valores cuantificables y que, a diferencia de otros procesos, no hace falta emitir aparte la oferta con valores subjetivos o cualitativos.</p>
-</section>
-<section id="procedimiento-restringido" class="level4" data-number="8.12.6.2">
-<h4 data-number="8.12.6.2" class="anchored" data-anchor-id="procedimiento-restringido"><span class="header-section-number">8.12.6.2</span> Procedimiento restringido</h4>
-<p>Solo puede licitar quien pasa un filtro.</p>
-<p>No permite negociaciones en el precio.</p>
-</section>
-<section id="procedimiento-con-negociación" class="level4" data-number="8.12.6.3">
-<h4 data-number="8.12.6.3" class="anchored" data-anchor-id="procedimiento-con-negociación"><span class="header-section-number">8.12.6.3</span> Procedimiento con negociación</h4>
-<p>Estos procedimientos permiten negociación, a diferencia del abierto y el restringido.</p>
-<p>Existen dos tipos:</p>
-<ul>
-<li>Procedimiento con negociación [estándar]</li>
-<li>Procedimiento con negociación sin publicidad</li>
-</ul>
-<p><strong>Procedimiento con negociación estándar</strong></p>
-<p>Viene recogido en el artículo 167 de la LCSP.</p>
-<p>Permite negociar con los licitadores las condiciones, quedando fuera los aspectos esenciales y los criterios de adjudicación.</p>
-<p>La versión estándar requiere publicidad.</p>
-<p>Solo se puede aplicar en un número de casos:</p>
-<p>Cuando requiera que los licitadores realicen un trabajo previo de diseño o adaptación.</p>
-<p>Cuando se trate de una solución innovadoras</p>
-<p>Cuando las negociaciones sean ineludibles.</p>
-<p>Cuando el órgano de contratación con puede precisar suficientemente las especificaciones.</p>
-<p>Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.</p>
-<p>Cuando se trate de contratos de servicios sociales personalísimos.</p>
-<p><strong>Procedimiento negociado sin publicidad</strong></p>
-<p>Regulado en el artículo 168 LCSP.</p>
-<p>Es similar al procedimiento negociado estándar pero no requiere publicidad.</p>
-<p>Requiere que se de una compleja lista de condiciones, entre ellas:</p>
-<p>No se haya presentado ninguna oferta; ninguna oferta adecuada; ninguna solicitud de participación; o ninguna solicitud de participación adecuada en respuesta a un procedimiento abierto o a un procedimiento restringido.</p>
-<p>Cuando las obras, los suministros o los servicios solo puedan ser encomendados a un empresario determinado.</p>
-<p>Cuando el contrato haya sido declarado</p>
-</section>
-<section id="diálogo-competitivo" class="level4" data-number="8.12.6.4">
-<h4 data-number="8.12.6.4" class="anchored" data-anchor-id="diálogo-competitivo"><span class="header-section-number">8.12.6.4</span> Diálogo competitivo</h4>
-<p>Comparte los supuestos del procedimiento negociado.</p>
-<p>Supone mantener una mesa de diálogo.</p>
-<p>Permite el pago de primas o compensaciones a los licitadores que se presenten.</p>
-</section>
-<section id="procedimiento-de-asociación-para-la-innovación" class="level4" data-number="8.12.6.5">
-<h4 data-number="8.12.6.5" class="anchored" data-anchor-id="procedimiento-de-asociación-para-la-innovación"><span class="header-section-number">8.12.6.5</span> Procedimiento de asociación para la innovación</h4>
-<p>Relacionado con la innovación.</p>
-</section>
-<section id="contrato-menor" class="level4" data-number="8.12.6.6">
-<h4 data-number="8.12.6.6" class="anchored" data-anchor-id="contrato-menor"><span class="header-section-number">8.12.6.6</span> Contrato menor</h4>
-<p>Un contrato menor debe cumplir una serie de condiciones.</p>
-<p>Condiciones del contrato menor:</p>
-<ul>
-<li>Condiciones económicas
-<ul>
-<li>Contratos de obras: valor estimado &lt; 40.000.</li>
-<li>Contratos de suministros o servicios: valor estimado &lt; 15.000 €.</li>
-</ul></li>
-</ul>
-<p>En este caso se define también en valor estimado y no al importe base de licitación.</p>
-<p>Se debe solicitar al menos 3 prespuestos.</p>
-<p>No se requerirá la aprobación del gasto, pero sí la incorporación al expediente de la factura correspondiente.</p>
-<p>Los contratos menores NO son susceptbiles de prórroga.</p>
-<p>Según los apuntes de Andreu Bosa, lleva un mes su tramitación.</p>
-</section>
-<section id="contratación-centralizada" class="level4" data-number="8.12.6.7">
-<h4 data-number="8.12.6.7" class="anchored" data-anchor-id="contratación-centralizada"><span class="header-section-number">8.12.6.7</span> Contratación centralizada</h4>
-<p>Modalidades dentro de la contratación centralizada:</p>
-<ul>
-<li>Acuerdo marco</li>
-<li>Sistema dinámico de adquisición (SDA)</li>
-<li>Contratos centralizados</li>
-<li>Encargos a medios propios</li>
-</ul>
-<p>Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.</p>
-<p>Se pueden revisar el catálogo en la página oficial:</p>
-<p><a href="https://contratacioncentralizada.gob.es/catalogo">Página web del catálogo de contratación centralizada</a></p>
-<p>La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.</p>
-<p>La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.</p>
-</section>
-<section id="acuerdos-marco" class="level4" data-number="8.12.6.8">
-<h4 data-number="8.12.6.8" class="anchored" data-anchor-id="acuerdos-marco"><span class="header-section-number">8.12.6.8</span> Acuerdos Marco</h4>
-<p>La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.</p>
-<p>En caso de que no estén todos los términos o condiciones fijados hay que añadir una segunda fase en la que hay que contactar a los proveedores.</p>
-<p>En caso de contratos SARA hay que contactar a todos los proveedores del acuerdo marco.</p>
-<p>En caso de contratos no SARA es suficiente con contactar con 3 proveedores.</p>
-<p>El órgano de contratación es, como norma general, la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).</p>
-<p>Acuerdos marcos relevantes para IT:</p>
-<ul>
-<li>AM 02/2023. Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo</li>
-<li>AM 05/2023. Impresoras, fotocopiadoras y escáneres</li>
-<li>AM 08/2021. Sistemas de seguridad</li>
-</ul>
-<p>Hay que saberse los números de los acuerdos marcos.</p>
-<p><strong>AM 02/2023 {am022023}</strong></p>
-<p><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores" class="uri">https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores</a></p>
-</section>
-<section id="sistemas-dinámicos-de-adquisición" class="level4" data-number="8.12.6.9">
-<h4 data-number="8.12.6.9" class="anchored" data-anchor-id="sistemas-dinámicos-de-adquisición"><span class="header-section-number">8.12.6.9</span> Sistemas Dinámicos de Adquisición</h4>
-<p>Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.</p>
-<p>Durante su vigencia se permiten que salgan y entren empresas.</p>
-<p>SDAs relevantes para TI:</p>
-<ul>
-<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software">SDA 25/2022</a>. Suministro de software</li>
-<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo">SDA 26/2021</a>. Servicios de desarrollo</li>
-<li><a href="https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores">SDA 24/2022</a>. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento</li>
-</ul>
-<p><strong>SDA 25/2022. Suministro de software {#sda252022}</strong></p>
-<p><strong>SDA 26/2021. Servicios de desarrollo {#sda262021}</strong></p>
-<p>SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.</p>
-<p><strong>SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}</strong></p>
-</section>
-<section id="contratos-centralizados" class="level4" data-number="8.12.6.10">
-<h4 data-number="8.12.6.10" class="anchored" data-anchor-id="contratos-centralizados"><span class="header-section-number">8.12.6.10</span> Contratos centralizados</h4>
-<p>Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.</p>
-<p>En el caso de telecomunicaciones existen 4 lotes:</p>
-<ul>
-<li>Lote 1. Fijo. Adjudicado a Telefónica</li>
-<li>Lote 2: Móviles. Otorgado a Vodafone</li>
-<li>Lote 3: Internet. Otorgado a Telefónica.</li>
-<li>Lote 4: Internacional. Adjudicado a British Telecom (BT)</li>
-</ul>
-</section>
-</section>
-<section id="modificación-de-contratos" class="level3" data-number="8.12.7">
-<h3 data-number="8.12.7" class="anchored" data-anchor-id="modificación-de-contratos"><span class="header-section-number">8.12.7</span> Modificación de Contratos</h3>
-<p>Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.</p>
-<section id="encargos-a-medios-propios" class="level4" data-number="8.12.7.1">
-<h4 data-number="8.12.7.1" class="anchored" data-anchor-id="encargos-a-medios-propios"><span class="header-section-number">8.12.7.1</span> Encargos a medios propios</h4>
-<p>Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.</p>
-<p>Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.</p>
-<p>Son disitntos los encargos a medios propios y las encomiendas de gestión.</p>
-<p>La definición de medio propio incluye:</p>
-<p>No tener inversión privada.</p>
-<p>No tener más de un 20% de actividad en sector privado.</p>
-<p>Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).</p>
-</section>
-</section>
-<section id="anuncios-de-licitaciones-público" class="level3" data-number="8.12.8">
-<h3 data-number="8.12.8" class="anchored" data-anchor-id="anuncios-de-licitaciones-público"><span class="header-section-number">8.12.8</span> Anuncios de licitaciones público</h3>
-<p>Los procedimientos negociados sin publicidad no se publican.</p>
-<p>El resto de licitaciones se anuncian en la Plataforma de Contratación del Sector Público.</p>
-<p>Las licitación de organismos de la AGE se publican además en el Boletín Oficial del Estado.</p>
-<p>Las licitaciones sujetas a regulación armonizada (SARA) se publica en el Diario Oficial de la Unión Europea.</p>
-</section>
-<section id="procedimiento-general-de-contratación-tic" class="level3" data-number="8.12.9">
-<h3 data-number="8.12.9" class="anchored" data-anchor-id="procedimiento-general-de-contratación-tic"><span class="header-section-number">8.12.9</span> Procedimiento general de contratación TIC</h3>
-<p>Pasos técnicos:</p>
-<ol type="1">
-<li>Análisis de necesidades</li>
-<li>Especificaciones ténico-funcionales</li>
-<li>Evaluación y selección de ofertas</li>
-<li>Validación y pruebas</li>
-</ol>
-<p>Actividades del análisis de contratación:</p>
-<ol type="1">
-<li>Planificación de la capacidad del S.I.</li>
-<li>Decisiones HW / SW</li>
-<li>Decisiones sobre la rentabilidad económica</li>
-</ol>
-<p>Estos tres puntos se desarrollan en los temas 2023.40, 2024.41 y 2024.42 de TIC, que no sueen entrar mucho.</p>
-<p>Expediente de contratación:</p>
-<ul>
-<li>Memoria</li>
-<li>Certificado</li>
-<li>Pliegos
-<ul>
-<li>Pliego de Cláusulas Administrativas Particulares (PCAP).</li>
-<li>Pliego de Prescripciones Técnicas (PPT).</li>
-</ul></li>
-<li>Informes preceptivos de la Memoria y de los Pliegos
-<ul>
-<li>Para el PCAP, lo realiza el servicio jurítico de la abogacía del estado</li>
-<li>La memoria y el PPT lo realiza el SGAD</li>
-</ul></li>
-<li>Informe de fiscalización por la Intervención Delegada</li>
-</ul>
-<p>El Pliego de Cláusulas Administrativas general (PCAG) consta de unas diapositivas.</p>
-<p>El PCAP tiene carácter legal y contractual.</p>
-<p>En la administración pública nunca se contratan personas. Se contratan solamente servicios y se necesitan personas para cubrir esos servicios.</p>
-<p>En caso de retraso en al ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.</p>
-<p>Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.</p>
-<p>Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo.</p>
-</section>
+<p>Contratación</p>
+<p>Puedes leer más en este artículo sobre contratación en el sector público.</p>
+<p>Ciñéndonos en los tipos de contratación de servicios y suministros, que son los más comunes en el supuesto práctico, con su restricción en el valor estimado:</p>
+<p>Tipo de contratoLímite importeTiempoEncargos a medios propiosContrato menor&lt;15.000 €1 mesContratación centralizada&lt; 862.000 €2 mesesProcedimiento abierto simplificado abreviado&lt; 60.000 €Procedimiento abierto simplificado&lt; 143.000 €Procedimiento abiertoSin límites6 meses</p>
+<p>Los tiempos están tomados de los apuntes de Andreu Bosa.</p>
+<p>Cuando más simplificado y rápido sea el proceso mejor. Esto influirá en el cronograma del proyecto.</p>
+<p>Los trámites de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.</p>
+<p>Es conveniente comprobar si debido al importe están sujetos a regulación armonizada (SARA). El límite para la AGE en servicios y suministros es 143.000 €.</p>
+<!-- Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
+
+### Presupuesto de los contratos
+
+- Presupuesto base de licitación
+- Valor estimado
+- Precio
+
+#### Presupuesto base de licitación
+
+El presupuesto base de licitación es el límite máximo de gasto que en virtud del contrato puede comprometer el órgano de contratación, incluido el Impuesto sobre el Valor Añadido (IVA).
+
+No incluye prórrogas.
+
+Incluye IVA.
+
+#### Valor estimado
+
+El valor estimado incluye todas las prórrogas y modificaciones.
+
+NO incluye IVA.
+
+### Tipos de contratación pública según su objeto
+
+Tipos de contratación según su objeto:
+
+- Obras
+- Concesión de obras
+- Servicios
+- Concesión de Servicios
+- Suministros
+- Mixto
+
+Las licencias de software se considera suministro, mientras que el software a medida se considera un servicio.
+
+#### Obras
+
+El contrato de obras se regula en el art. 13 de la ley 9/2017.
+
+#### Mixto
+
+En el contrato mixto se recogen varios objetos de contratación. 
+
+En caso de contrato mixto, se distingue entre la preparación y adjudicación del contrato, donde se recogen las normas que establecen las Directivas, y los efectos y extinción.
+
+Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas del contrato cuya prestación sea la principal o cuyo valor estimado sea más elevado.
+
+### Regulación armonizada SARA
+
+La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.
+
+La regulación armonizada sre aplica cuando el valor estimado del contrato sobrepasa el umbral de:
+
+143.000 € para la AGE en contratos de suministros y servicios
+
+221.000 € para organismos distintos a la AGE en contratos de suministros y servicios
+
+5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo
+
+Estos importes se establecen en la Orden HFP/1352/2023.
+
+Una de las implicaciones de la regulación armonizada es que los contratos bajo la misma deben publicarse en el Diario Oficial de la Unión Europea.
+
+### Plazo de ejecución
+
+El plazo de ejecución se especifica en el pliego, sin que exista un plazo máximo. Los plazos de ejecución se regulan en el art. 210 de la ley 9/2017.
+
+### Prórrogas en concesiones
+
+Las prórrogas de las concesiones deben ser acordadas entre la entidad contratante y el contratista.
+
+Vienen reguladas en el art. 205 de la ley 9/2017.
+
+### Procedimientos de adjudicación
+
+Procedimientos o formas de adjudicación:
+
+- Procedimiento abierto
+- Procedimiento abierto simplificado
+- Procedimiento abierto simplificado abreviado
+- Procedimiento restringido
+- Procedimiento de negociación
+- Procedimiento negociado sin publicidad
+- Contrato menor
+- Diálogo competitivo
+- Procedimiento de asociación para la innovación
+- Contrato menor
+- Contratación centralizada
+
+La plataforma para realizar contratación es Conecta-Contratación.
+
+[Página web de Conecta-Contratación](https://catalogocentralizado.hacienda.gob.es/pctw/Acceso/inicio.aspx).
+
+Los contratos sujetos a contratación armonizada se llaman también contratos SARA.
+
+#### Procedimiento abierto
+
+Un procedimientos abierto se denomina así ya que cualquiera puede licitar al mismo.
+
+Existen varios subtipos de procedimiento abierto:
+
+- Procedimiento abierto (estándar)
+- Procedimiento abierto simplificado
+- Procedimiento abierto simplificado abreviado
+
+**Procedimiento abierto estándar**
+
+El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto estándar para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.
+
+El plazo de presentación de proposiciones es:
+
+En caso de regulación NO armonizada: 15 días
+
+En caso de regulación armonizada
+
+En situación estándar: 35 días
+
+Si se publicó un anuncio previo o en situación de emergencia: 15 días
+
+Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos en 5 días. Esto se define en el art. 156.3.c.
+
+No tiene restricciones respecto al importe del contrato.
+
+**Procedimiento abierto simplificado**
+
+Condiciones para su aplicación:
+
+Criterio económico
+
+Para contratos de obras, valor estimado <= 2.000.000 €
+
+Para contratos de suministro y de servicios, valor estimado <= 100.000 €
+
+Criterios de adjudicación
+
+En prestación de carácter no intelectual, los juicios de valor deben ser <25%
+
+En prestación intelectual, los juicios de valor deben ser <40%
+
+Plazo de presentación de proposiciones mínimo:
+
+Obras: 20 días
+
+Otros: 15 días
+
+**Procedimiento abierto simplificado abreviado**
+
+Condiciones para su aplicación:
+
+Criterio económico
+
+Para contratos de obras, valor estimado <= 80.000 €.
+
+Para contratos de suministros y servicios, valor estimado <= 60.000 €
+
+Tipo de prestación
+
+Solo prestación de carácter no intelectual
+
+Plazo de presentación de proposiciones mínimo:
+
+Compras corrientes disponibles en el mercado: 5 días hábiles
+
+Otros: 10 días hábiles
+
+No es necesaria la acreditación de la solvencia económica y financiera y técnica o profesional de los licitadores.
+
+La oferta se entregará en un único sobre y se evaluará con arreglo a criterios de adjudicación cuantificables mediante la mera aplicación de fórmulas establecidas en los pliegos.
+
+Con "sobre único" se refiere a que solo se hace una oferta con valores cuantificables y que, a diferencia de otros procesos, no hace falta emitir aparte la oferta con valores subjetivos o cualitativos.
+
+#### Procedimiento restringido
+
+Solo puede licitar quien pasa un filtro.
+
+No permite negociaciones en el precio.
+
+#### Procedimiento con negociación
+
+Estos procedimientos permiten negociación, a diferencia del abierto y el restringido.
+
+Existen dos tipos:
+
+- Procedimiento con negociación [estándar]
+- Procedimiento con negociación sin publicidad
+
+**Procedimiento con negociación estándar**
+
+Viene recogido en el artículo 167 de la LCSP.
+
+Permite negociar con los licitadores las condiciones, quedando fuera los aspectos esenciales y los criterios de adjudicación.
+
+La versión estándar requiere publicidad.
+
+Solo se puede aplicar en un número de casos:
+
+Cuando requiera que los licitadores realicen un trabajo previo de diseño o adaptación.
+
+Cuando se trate de una solución innovadoras
+
+Cuando las negociaciones sean ineludibles.
+
+Cuando el órgano de contratación con puede precisar suficientemente las especificaciones.
+
+Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.
+
+Cuando se trate de contratos de servicios sociales personalísimos.
+
+**Procedimiento negociado sin publicidad**
+
+Regulado en el artículo 168 LCSP.
+
+Es similar al procedimiento negociado estándar pero no requiere publicidad.
+
+Requiere que se de una compleja lista de condiciones, entre ellas:
+
+No se haya presentado ninguna oferta; ninguna oferta adecuada; ninguna solicitud de participación; o ninguna solicitud de participación adecuada en respuesta a un procedimiento abierto o a un procedimiento restringido.
+
+Cuando las obras, los suministros o los servicios solo puedan ser encomendados a un empresario determinado.
+
+Cuando el contrato haya sido declarado
+
+#### Diálogo competitivo
+
+Comparte los supuestos del procedimiento negociado.
+
+Supone mantener una mesa de diálogo.
+
+Permite el pago de primas o compensaciones a los licitadores que se presenten.
+
+#### Procedimiento de asociación para la innovación
+
+Relacionado con la innovación.
+
+#### Contrato menor
+
+Un contrato menor debe cumplir una serie de condiciones.
+
+Condiciones del contrato menor:
+
+- Condiciones económicas
+  - Contratos de obras: valor estimado < 40.000.
+  - Contratos de suministros o servicios: valor estimado < 15.000 €.
+
+En este caso se define también en valor estimado y no al importe base de licitación.
+
+Se debe solicitar al menos 3 prespuestos.
+
+No se requerirá la aprobación del gasto, pero sí la incorporación al expediente de la factura correspondiente.
+
+Los contratos menores NO son susceptbiles de prórroga.
+
+Según los apuntes de Andreu Bosa, lleva un mes su tramitación.
+
+#### Contratación centralizada
+
+Modalidades dentro de la contratación centralizada:
+
+- Acuerdo marco
+- Sistema dinámico de adquisición (SDA)
+- Contratos centralizados
+- Encargos a medios propios
+
+Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.
+
+Se pueden revisar el catálogo en la página oficial:
+
+[Página web del catálogo de contratación centralizada](https://contratacioncentralizada.gob.es/catalogo)
+
+La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.
+
+La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.
+
+#### Acuerdos Marco
+
+La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.
+
+En caso de que no estén todos los términos o condiciones fijados hay que añadir una segunda fase en la que hay que contactar a los proveedores.
+
+En caso de contratos SARA hay que contactar a todos los proveedores del acuerdo marco.
+
+En caso de contratos no SARA es suficiente con contactar con 3 proveedores.
+
+El órgano de contratación es, como norma general, la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).
+
+Acuerdos marcos relevantes para IT:
+
+- AM 02/2023. Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo
+- AM 05/2023. Impresoras, fotocopiadoras y escáneres
+- AM 08/2021. Sistemas de seguridad
+
+Hay que saberse los números de los acuerdos marcos.
+
+**AM 02/2023 {am022023}**
+
+<https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores>
+
+#### Sistemas Dinámicos de Adquisición
+
+Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.
+
+Durante su vigencia se permiten que salgan y entren empresas.
+
+SDAs relevantes para TI:
+
+- [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software). Suministro de software
+- [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo). Servicios de desarrollo
+- [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
+
+**SDA 25/2022. Suministro de software {#sda252022}**
+
+**SDA 26/2021. Servicios de desarrollo {#sda262021}**
+
+SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.
+
+**SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}**
+
+#### Contratos centralizados
+
+Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.
+
+En el caso de telecomunicaciones existen 4 lotes:
+
+- Lote 1. Fijo. Adjudicado a Telefónica
+- Lote 2: Móviles. Otorgado a Vodafone
+- Lote 3: Internet. Otorgado a Telefónica.
+- Lote 4: Internacional. Adjudicado a British Telecom (BT)
+
+### Modificación de Contratos
+
+Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.
+
+#### Encargos a medios propios
+
+Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.
+
+Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.
+
+Son disitntos los encargos a medios propios y las encomiendas de gestión.
+
+La definición de medio propio incluye:
+
+No tener inversión privada.
+
+No tener más de un 20% de actividad en sector privado.
+
+Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).
+
+### Anuncios de licitaciones público
+
+Los procedimientos negociados sin publicidad no se publican.
+
+El resto de licitaciones se anuncian en la Plataforma de Contratación del Sector Público.
+
+Las licitación de organismos de la AGE se publican además en el Boletín Oficial del Estado.
+
+Las licitaciones sujetas a regulación armonizada (SARA) se publica en el Diario Oficial de la Unión Europea.
+
+### Procedimiento general de contratación TIC
+
+Pasos técnicos:
+
+1. Análisis de necesidades
+2. Especificaciones ténico-funcionales
+3. Evaluación y selección de ofertas
+4. Validación y pruebas
+
+Actividades del análisis de contratación:
+
+1. Planificación de la capacidad del S.I.
+2. Decisiones HW / SW
+3. Decisiones sobre la rentabilidad económica
+
+Estos tres puntos se desarrollan en los temas 2023.40, 2024.41 y 2024.42 de TIC, que no sueen entrar mucho.
+
+Expediente de contratación:
+
+- Memoria
+- Certificado
+- Pliegos
+  - Pliego de Cláusulas Administrativas Particulares (PCAP).
+  - Pliego de Prescripciones Técnicas (PPT).
+- Informes preceptivos de la Memoria y de los Pliegos
+  - Para el PCAP, lo realiza el servicio jurítico de la abogacía del estado
+  - La memoria y el PPT lo realiza el SGAD
+- Informe de fiscalización por la Intervención Delegada
+
+El Pliego de Cláusulas Administrativas general (PCAG) consta de unas diapositivas.
+
+El PCAP tiene carácter legal y contractual.
+
+En la administración pública nunca se contratan personas. Se contratan solamente servicios y se necesitan personas para cubrir esos servicios.
+
+En caso de retraso en al ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.
+
+Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.
+
+Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo. -->
 </section>
 <section id="planificación-temporal" class="level2" data-number="8.13">
 <h2 data-number="8.13" class="anchored" data-anchor-id="planificación-temporal"><span class="header-section-number">8.13</span> Planificación temporal</h2>
@@ -2696,8 +2919,35 @@ Total: 1.270 €/año</p></li>
 <li>Tiempo mínimo de contratación</li>
 <li>Esfuerzo de desarrollo</li>
 </ul>
-<section id="fases-de-un-proyecto" class="level3" data-number="8.13.1">
-<h3 data-number="8.13.1" class="anchored" data-anchor-id="fases-de-un-proyecto"><span class="header-section-number">8.13.1</span> Fases de un proyecto</h3>
+<section id="aspectos-generales-de-planificación" class="level3" data-number="8.13.1">
+<h3 data-number="8.13.1" class="anchored" data-anchor-id="aspectos-generales-de-planificación"><span class="header-section-number">8.13.1</span> Aspectos generales de planificación</h3>
+<p>El input recibido en la planificación sería:</p>
+<ul>
+<li>Horas totales por desarrollador</li>
+</ul>
+<p>En la planificación hay que tener en cuenta:</p>
+<ul>
+<li>Número de horas totales</li>
+<li>Número de programadores</li>
+<li>Tiempo de contratación</li>
+</ul>
+<p>El número de horas totales hay que dividirlas entre el número de programadores.</p>
+<p>En caso de que hayamos calculado el esfuerzo en días (por ejemplo, al usar staffing size):</p>
+<ul>
+<li>1 mes = 20 días laborables</li>
+<li>6 meses = 120 días laborables</li>
+<li>1 año = 240 días laborales.</li>
+</ul>
+<p>En caso de que hayamos calculado el esfuerzo en horas:</p>
+<ul>
+<li>1 mes ~ 150 horas</li>
+<li>3 meses ~ 500 horas</li>
+<li>6 meses = 960 horas ~ 1.000 horas</li>
+<li>1 año = 1.920 horas ~ 2.000 horas</li>
+</ul>
+</section>
+<section id="fases-de-un-proyecto" class="level3" data-number="8.13.2">
+<h3 data-number="8.13.2" class="anchored" data-anchor-id="fases-de-un-proyecto"><span class="header-section-number">8.13.2</span> Fases de un proyecto</h3>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2720,11 +2970,32 @@ Total: 1.270 €/año</p></li>
 <ol type="1">
 <li>Estudio de viabilidad del sistema (EVS)</li>
 <li>Análisis del sistema de información (ASI)</li>
-<li>Diseñó del sistema de información (DSI)</li>
+<li>Diseño del sistema de información (DSI)</li>
 <li>Construcción del sistema de información (CSI)</li>
 <li>Implantación y aceptación del sistema (IAS)</li>
 <li>Mantenimiento del sistema de información (MSI)</li>
 </ol>
+</section>
+<section id="metodologías" class="level3" data-number="8.13.3">
+<h3 data-number="8.13.3" class="anchored" data-anchor-id="metodologías"><span class="header-section-number">8.13.3</span> Metodologías</h3>
+<ul>
+<li>Referencias:
+<ul>
+<li>Elisa Martín Ortega. Tema 86. <em>El ciclo de vida de los sistemas de información. Modelos del ciclo de vida.</em>. Astic, 2023.</li>
+<li>Vanesa Mancebo Domínguez. Tema 87. <em>Análisis funcional de sistemas, casos de uso e historias de usuario. Metodologías de desarrollo de sistemas. Metodologías ágiles: Scrum y Kanban</em>. Astic, 2017.</li>
+</ul></li>
+<li>Temas:
+<ul>
+<li><ol start="86" type="1">
+<li>Modelos de ciclo de vida.</li>
+</ol></li>
+<li><ol start="88" type="1">
+<li>Análisis de sistemas y metodologías ágiles.</li>
+</ol></li>
+</ul></li>
+</ul>
+<p>Se debe escoger una metodología del sistema.</p>
+<p>En caso de escoger alguna metodología ágil basada en SCRUM, se deben reflejar los sprints.</p>
 </section>
 </section>
 <section id="tecnología" class="level2" data-number="8.14">
