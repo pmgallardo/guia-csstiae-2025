@@ -1,0 +1,46 @@
+## Realización del supuesto práctico
+
+### Material para realizar el ejercicio práctico
+  
+Material para llevar:
+
+- 2 bolígrafos
+- Corrector ortográfico
+- Subrayadores de colores
+- Lapicero
+- Goma de borrar
+- Cuaderno, hojas o portátil para realizar el volcado
+
+No está permitido el uso de calculadora u otro dispositivo electrónico.
+
+En caso de requerir llevar algún dispositivo por razones médicas, consultar las bases, pues es posible que haya que obtener algún tipo de documentación médica y notificar de antemano.
+
+### Consejos para el supuesto práctico
+
+Resumen de consejos:
+
+- Leer las preguntas antes de leer el enunciado completo.
+- Subrayar los conceptos del exámen.
+- Emplear una hoja para cada ejercicio. No penaliza el número de hojas empleadas, y el emplear hojas independientes permite alargar la resolución del ejercicio en el caso necesario.
+
+En la mayoría de tribunales, si escribes en las hojas del enunciado del supuesto práctico no las podrás sacar posteriormente. No contar con el enunciado dificulta la realización del volcado, por lo que no es un buen consejo.
+
+Por el contrario, emplear subrayadores es compatible con sacar la hoja del enunciado. Algunos candidatos emplean varios colores para marcar distintas categorías de palabras claves, como por ejemplo actores, acciones, etc.
+
+Una propuesta de subrayado de colores puede ser:
+
+| Significado | Color sugerido |
+| - | - |
+| Actor / Sistema | Azul |
+| Entidad de datos | Verde |
+| Funcionalidad | Naranja |
+| Normativa | Rojo |
+| Cuestiones de interés | Amarillo |
+
+Se podría distinguir con distinto color los actores internos y externos.
+
+### Simulación del supuesto práctico
+
+Se recomienda simular el supuesto práctico en las condiciones más similares a la situación real.
+
+Algunas academias o preparadores indican que antes de presentarse se deben haber realizado al menos 10 supuestos prácticos.
