@@ -21,7 +21,26 @@
 
 Este apartado trata sobre la contratación en la Administración General del Estado (AGE).
 
-Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
+
+Contratación
+
+Puedes leer más en este artículo sobre contratación en el sector público.
+
+Ciñéndonos en los tipos de contratación de servicios y suministros, que son los más comunes en el supuesto práctico, con su restricción en el valor estimado:
+
+Tipo de contratoLímite importeTiempoEncargos a medios propiosContrato menor<15.000 €1 mesContratación centralizada< 862.000 €2 mesesProcedimiento abierto simplificado abreviado< 60.000 €Procedimiento abierto simplificado< 143.000 €Procedimiento abiertoSin límites6 meses
+
+Los tiempos están tomados de los apuntes de Andreu Bosa.
+
+Cuando más simplificado y rápido sea el proceso mejor. Esto influirá en el cronograma del proyecto.
+
+Los trámites de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
+
+Es conveniente comprobar si debido al importe están sujetos a regulación armonizada (SARA). El límite para la AGE en servicios y suministros es 143.000 €.
+
+
+
+<!-- Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
 
 ### Presupuesto de los contratos
 
@@ -418,4 +437,4 @@ En caso de retraso en al ejecución del contrato en proporción de 0,60 € por 
 
 Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.
 
-Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo.
+Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo. -->

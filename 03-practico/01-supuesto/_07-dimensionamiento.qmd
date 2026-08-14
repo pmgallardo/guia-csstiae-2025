@@ -17,7 +17,7 @@ Una vez dimensionadas cada tipología de recursos debe calcularse el coste asoci
 - **🎯 Temas:**
   - 99. Estimación de recursos
 - **🔗 Referencias de consulta:**
-  - [Software Estimation](https://runmodule.com/2026/06/25/software-estimation/). RunModule, 2026.
+  - [Software Estimation](https://runmodule.com/2026/06/25/software-estimation/){target="_blank"}. RunModule, 2026.
 :::
 
 En caso de que el enunciado del ejercicio incluya un importe de presupuesto, el coste total del proyecto debe aproximarse lo más posible al indicado.
@@ -57,29 +57,29 @@ Algunas de estas técnicas se presentan en la documentación de estimación de r
 - **🎯 Temas:**
   - 99. Estimación de recursos
 - Referencias:
-  - Murali Chemuturi. "[Software Estimation Best Practices, Tools & Techniques: A Complete Guide for Software Project Estimators](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M)", J. Ross Publishing, 2009
-  - Alan R. Dennis, Barbara Haley Wixom, and David Tegarden. Chapter 5 - Functional Modeling. In: [Systems Analysis and Design with UML Version 2.0: An Object-Oriented Approach](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M). 3rd ed. J. Ross Publishing, 2009.
-  - Carl Friedrich Kress, Olivier Hummel, Mahmudul Huq, [A Practical Approach for Reliable Pre-Project Effort Estimation](https://ceur-ws.org/Vol-1138/re4p21.pdf).
-  - [Use Case Points](https://en.wikipedia.org/wiki/Use_case_points)
-  - [Use Case Points](https://runmodule.com/2027/04/13/use-case-points/).
+  - Murali Chemuturi. "[Software Estimation Best Practices, Tools & Techniques: A Complete Guide for Software Project Estimators](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M){target="_blank"}", J. Ross Publishing, 2009
+  - Alan R. Dennis, Barbara Haley Wixom, and David Tegarden. Chapter 5 - Functional Modeling. In: [Systems Analysis and Design with UML Version 2.0: An Object-Oriented Approach](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M){target="_blank"}. 3rd ed. J. Ross Publishing, 2009.
+  - Carl Friedrich Kress, Olivier Hummel, Mahmudul Huq, [A Practical Approach for Reliable Pre-Project Effort Estimation](https://ceur-ws.org/Vol-1138/re4p21.pdf){target="_blank"}.
+  - [Use Case Points](https://en.wikipedia.org/wiki/Use_case_points){target="_blank"}
+  - [Use Case Points](https://runmodule.com/2027/04/13/use-case-points/){target="_blank"}.
 :::
 
 Los puntos de caso de uso (use case points, UCP), a veces referidos como el método Karner, es un método de estimación de software basado en la complejidad de los casos de uso. Es por tanto adecuado cuando el supuesto práctico pide realizar un diagrama de caso de uso además de la estimación.
 
 Fue desarrollado por Gustav Karner en 1993 mientras trabajaba en la compañía sueca Objectory Systems.
 
-Hay un buen ejemplo en la [Wikipedia](https://en.wikipedia.org/wiki/Use_case_points#Example).
+Hay un buen ejemplo en la [Wikipedia](https://en.wikipedia.org/wiki/Use_case_points#Example){target="_blank"}.
 
 El total de puntos de casos de uso se calcula mediante la siguiente fórmula:
-$$\text{UCP} = \tex{UUCP} * \text{TCF} * \text{ECF}$$
+$$\text{UCP} = \text{UUCP} * \text{TCF} * \text{ECF}$$
 
 Los puntos de casos de uso sin ajustar (*Unadjusted Use Case Points*, UUCP) se calculan como:
 
-$$\text{UUCP} = \text{UUCW} + \text{UAW$}$$
+$$\text{UUCP} = \text{UUCW} + \text{UAW}$$
 
 por lo que
 
-$$\text{UCP} = (\text{UUCW} + \text{UAW$}) * \text{TCF} * \text{ECF}$$
+$$\text{UCP} = (\text{UUCW} + \text{UAW}) * \text{TCF} * \text{ECF}.$$
 
 El peso de caso de uso sin ajustar (Unadjusted Use Case Weight, UUCW) se calcula como:
 
@@ -87,9 +87,9 @@ El peso de caso de uso sin ajustar (Unadjusted Use Case Weight, UUCW) se calcula
 | - | - | - |
 | Simple | 1-3 | 5 |
 | Average | 4-7 | 10 |
-| Complex | \gte8 | 15 |
+| Complex | ≥8 | 15 |
 
-$$UUCW = \sum{\text{no. de casos de usos} \times {peso}}$$
+$$UUCW = \sum{\text{no. de casos de usos} \times \text{peso}}$$
 
 El peso de actor sin ajustar (Unadjusted Actor Weight, UAW) se calcula como:
 
@@ -107,6 +107,28 @@ El factor de complejidad de ambiente (*environmental complexity factor*, ECF) de
 
 En un ejercicio completo se emplearían tablas y fórmulas para calcular el TCF y el ECF. De cara al ejercicio práctico, puesto que no se dispone de una copia de las tablas y fórmulas, calculadora y tiempo suficiente, para facilitar las cuentas se puede considerar que el TCF y el ECF son 0.8 y 1.25 (en el orden indicado, ya que son sus valores medios) para obtener un producto de 1 y facilitar las cuentas.
 
+Una vez obtenidos los UCP, estos se transforman a horas. Puede ser tan sencillo como considerar un número de hroas fijos por caso de uso.
+
+##### Staffing size {.unnumbered .unlisted}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Ministerio de Administraciones Pública. Apartado "Staffing size (Orientación a objetos)". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf){target="_blank"}. PAe.
+  - Manuel Cillero. [Staffing size (Orientación a objetos)](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/){target="_blank"}. manuel.cillero.es
+  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>{target="_blank"}
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+Staffing size es un método para estimar cuántas personas son necesarias en un desarrollo orientado a objetos y durante cuánto tiempo participan. Está incluido dentro de las técnicas de Métriva v3.
+
+Es adecuado cuando el enunciado requiera hacer previamente un diagrama de clases o un modelo entidad-relación (E-R).
+
+Se puede asumir que cada clase de producción lleva entre 10-15 días (100 horas), y las clases de prototipado 6-8 días.
+
+##### Puntos de función {.unnumbered .unlisted}
+
 Estimación por puntos de función (versión simplificada, problemente basada en COSMIC-FSM):
 
 1. Identificar los puntos de función de enunciado
@@ -120,38 +142,22 @@ Una vez que se obtienen las horas de construcción (que se correspondería con l
 
 El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
 
-##### Staffing size {.unnumbered .unlisted}
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias:
-  - Ministerio de Administraciones Pública. Apartado "Staffing size (Orientación a objetos)". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf). PAe.
-  - Manuel Cillero. [Staffing size (Orientación a objetos)](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/). manuel.cillero.es
-  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>
-- Temas:
-  - 99. Estimación de recursos
-:::
-
-Staffing size es un método para estimar cuántas personas son necesarias en un desarrollo orientado a objetos y durante cuánto tiempo participan. Está incluido dentro de las técnicas de Métriva v3.
-
-Se puede asumir que cada clase de producción lleva entre 10-15 días (100 horas), y las clases de prototipado 6-8 días.
-
 ##### COSMIC-FSM {.unnumbered .unlisted}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias:
   - Miguel Ángel Rodrigo Muñoz. Apartado 2.3 "Ejemplo para medir el software o componente a desarrollar" y 2.5 "COSMIC-FSM". En: "Tema 98. La estimación de recursos y esfuerzo en el desarrollo de sistemas de la información". Astic, Sep-2022.
-  - [COSMIC Method. Introduction](https://cosmic-sizing.org/cosmic-sizing/intro/).
-  - [COSMIC functional size measurement](https://en.wikipedia.org/wiki/COSMIC_functional_size_measurement). Wikipedia.
-  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>
+  - [COSMIC Method. Introduction](https://cosmic-sizing.org/cosmic-sizing/intro/){target="_blank"}.
+  - [COSMIC functional size measurement](https://en.wikipedia.org/wiki/COSMIC_functional_size_measurement){target="_blank"}. Wikipedia.
+  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>{target="_blank"}
 - Temas:
   - 99. Estimación de recursos
 :::
 
 COSMIC-FSM es una técnica de dimensionamiento funcional basada en el comportamiento del software y el movimiento de datos. La principal ventaja de COSMIC-FSM es que no requiere haber modelado previamente el caso.
 
-El Consorcio Internacional de Medidas de Software Común (*Common Software Measurement International Consortium*, COSMIC) fue creada in 1998. Adaptó la idea de IFPUG FPA a las nuevas tendendicas de desarrollo, dando lugar a la técnica de COSMIC-FSM. Se ha estandarizado bajo el estándar ISO/IEC 19761, siendo la última versión [ISO/IEC 19761:2011](https://www.iso.org/standard/54849.html).
+El Consorcio Internacional de Medidas de Software Común (*Common Software Measurement International Consortium*, COSMIC) fue creada in 1998. Adaptó la idea de IFPUG FPA a las nuevas tendendicas de desarrollo, dando lugar a la técnica de COSMIC-FSM. Se ha estandarizado bajo el estándar ISO/IEC 19761, siendo la última versión [ISO/IEC 19761:2011](https://www.iso.org/standard/54849.html){target="_blank"}.
 
 La técnica consiste en contar el total de puntos de función COSMIC (*COSMIC function points*, CFP) en un sistema, donde se cuenta 1 CFP por cada elemento de esta tipología encontremos:
 
@@ -177,14 +183,14 @@ Por otro lado, el coste se puede obtener directamente conviertiendo los CFPs en 
 - Contratación
   - SDA 25/2022 de suministros
 - Referencias
-  - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es). PAe.
-  - [Métrica v3. Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf). PAe, 2001.
-  - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/), manuel.cillero.es.
+  - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
+  - [Métrica v3. Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf){target="_blank"}. PAe, 2001.
+  - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/){target="_blank"}, manuel.cillero.es.
 :::
 
 Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.
 
-La metodología Métrica v3, en su documento de [Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf), define una serie de perfiles de participantes en el desarrollo de sistemas de información:
+La metodología Métrica v3, en su documento de [Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf){target="_blank"}, define una serie de perfiles de participantes en el desarrollo de sistemas de información:
 
 - Directivo
 - Jefe de Proyecto
@@ -207,7 +213,7 @@ Se suele reducir el ratio de analistas por programador cuando interesa reducir e
 
 También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.
 
-Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los [Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D), donde se definía que una unidad de trabajo estaba formada por:
+Este criterio está basada en la definición de Unidad de Trabajo de la licitación de los [Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D){target="_blank"}, donde se definía que una unidad de trabajo estaba formada por:
 
 - 1 jefe de proyecto
 - 3 analistas

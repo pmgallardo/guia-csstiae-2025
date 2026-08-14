@@ -1,0 +1,202 @@
+% ==========================================================
+% preamble.tex
+% Estilo PDF para Guía CSSTIAE
+% Requiere LuaLaTeX
+% ==========================================================
+
+
+% ----------------------------------------------------------
+% PAQUETES
+% ----------------------------------------------------------
+
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{mdframed}
+\usepackage{newunicodechar}
+\usepackage[automark]{scrlayer-scrpage}
+
+
+% ----------------------------------------------------------
+% PALETA DE COLORES
+% Equivalente a styles.css
+% ----------------------------------------------------------
+
+\definecolor{ageblue}{HTML}{003399}
+\definecolor{agebluedark}{HTML}{00256F}
+\definecolor{agebluelink}{HTML}{004B9B}
+\definecolor{agebluesoft}{HTML}{EAF0FB}
+
+\definecolor{ageyellow}{HTML}{FFCE00}
+\definecolor{ageyellowsoft}{HTML}{FFF7CF}
+
+\definecolor{ageink}{HTML}{202938}
+\definecolor{agemuted}{HTML}{5D6878}
+
+\definecolor{agesurface}{HTML}{FFFFFF}
+\definecolor{agesurfacealt}{HTML}{F6F8FB}
+\definecolor{ageborder}{HTML}{D8DFEB}
+
+
+% ----------------------------------------------------------
+% COLOR GENERAL DEL TEXTO
+% ----------------------------------------------------------
+
+\AtBeginDocument{\color{ageink}}
+
+
+
+% ----------------------------------------------------------
+% TÍTULOS
+% KOMA-Script / scrreprt
+% ----------------------------------------------------------
+
+\setkomafont{disposition}{
+  \sffamily
+  \bfseries
+  \color{ageblue}
+}
+
+\setkomafont{chapter}{
+  \sffamily
+  \bfseries
+  \color{ageblue}
+}
+
+\setkomafont{section}{
+  \sffamily
+  \bfseries
+  \color{ageblue}
+}
+
+\setkomafont{subsection}{
+  \sffamily
+  \bfseries
+  \color{ageblue}
+}
+
+\setkomafont{subsubsection}{
+  \sffamily
+  \bfseries
+  \color{agebluedark}
+}
+
+
+% ----------------------------------------------------------
+% NÚMERO DE CAPÍTULO
+% Fondo amarillo como .chapter-number del HTML
+% ----------------------------------------------------------
+
+\renewcommand*{\chapterformat}{%
+  \colorbox{ageyellow}{%
+    \color{agebluedark}%
+    \strut%
+    \thechapter%
+  }%
+  \enskip
+}
+
+
+% ----------------------------------------------------------
+% PORTADA
+% ----------------------------------------------------------
+
+\setkomafont{title}{
+  \sffamily
+  \bfseries
+  \color{ageblue}
+  \Huge
+}
+
+\setkomafont{subtitle}{
+  \sffamily
+  \color{agemuted}
+  \Large
+}
+
+\setkomafont{author}{
+  \sffamily
+  \color{ageink}
+}
+
+\setkomafont{date}{
+  \sffamily
+  \color{agemuted}
+}
+
+
+% ----------------------------------------------------------
+% CAPTIONS
+% ----------------------------------------------------------
+
+\setkomafont{caption}{
+  \small
+  \color{agemuted}
+}
+
+\setkomafont{captionlabel}{
+  \small
+  \bfseries
+  \color{agebluedark}
+}
+
+
+% ----------------------------------------------------------
+% CABECERAS Y PIES
+% ----------------------------------------------------------
+
+\clearpairofpagestyles
+
+\ihead{\headmark}
+\ohead{\pagemark}
+
+\setkomafont{pagehead}{
+  \small
+  \color{agemuted}
+}
+
+\setkomafont{pagenumber}{
+  \small
+  \bfseries
+  \color{ageblue}
+}
+
+\pagestyle{scrheadings}
+
+
+% ----------------------------------------------------------
+% BLOCKQUOTES
+% Equivalente aproximado al blockquote amarillo del CSS
+% ----------------------------------------------------------
+
+\surroundwithmdframed[
+  backgroundcolor=ageyellowsoft,
+  linecolor=ageyellow,
+  linewidth=3pt,
+  topline=false,
+  bottomline=false,
+  rightline=false,
+  leftline=true,
+  roundcorner=2pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  skipabove=12pt,
+  skipbelow=12pt
+]{quote}
+
+
+% ----------------------------------------------------------
+% EMOJIS
+% ----------------------------------------------------------
+
+\usepackage{emoji}
+\usepackage{newunicodechar}
+
+% Noto Color Emoji está soportada por LuaHBTeX
+\setemojifont{Noto Color Emoji}
+
+% Selector de presentación emoji U+FE0F
+\newunicodechar{️}{}
+
+\input{latex/emojis.tex}
