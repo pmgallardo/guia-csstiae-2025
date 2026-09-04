@@ -1,0 +1,96 @@
+## Planificación temporal
+
+Este apartado trata sobre la planificación de desarrollo de software, que es una tarea habitual en el supuesto práctico del ejercicio práctico del CSSTIAE.
+
+En la planificación temporal hay que tener en cuenta los siguientes factores:
+
+- Tiempo mínimo de contratación
+- Esfuerzo de desarrollo
+
+### Aspectos generales de planificación
+
+El input recibido en la planificación sería:
+
+- Tiempo de contratación
+- Esfuerzo total del desarrollo
+
+Las variables en el proyecto son:
+
+- Número de horas totales
+- Número de programadores
+
+El número de horas totales hay que dividirlas entre el número de programadores.
+
+En caso de que hayamos calculado el esfuerzo en días (por ejemplo, al usar staffing size):
+
+- 1 mes = 20 días laborables
+- 6 meses = 120 días laborables
+- 1 año = 240 días laborales.
+
+En caso de que hayamos calculado el esfuerzo en horas:
+
+- 1 mes ~ 150 horas
+- 3 meses ~ 500 horas
+- 6 meses = 960 horas ~ 1.000 horas
+- 1 año = 1.920 horas ~ 2.000 horas
+
+Consejos generales:
+
+- En caso de que se indique un **plazo máximo** de entregao, asegurarse de que **se cumple**.
+- En caso de que no se especifique un plazo de desarrollo, tratar que se proponga un **plazo de entrega coherente**. De manera general, en proyectos de dificultad media habría una expectativa de estar listo en un periodo entre 6 y 12 meses.
+- Algunos aspirantes añaden una o varias **fases paralelas** que abarcan todo el ciclo de vida del proyecto y que reflejan actividades transversales a todo el proyecto, como la **calidad** o la seguridad.
+- **Factores limitantes** del proyecto como la **contratación** deben quedar reflejadas en la planificación.
+- Tratar de **adaptar** el diagrama de Gantt **al enunciado**, por ejemplo añadiendo **hitos relevantes** del proyecto en el cronograma.
+- Incluir cualquier anotación que sea relevante en el ejercicio escrito, y tratar de no contar con la defensa para anotarlas de manera oral.
+
+### Metodologías de desarrollo
+
+Es necesario especificar una metodología de desarrollo.
+
+En caso de escoger alguna metodología ágil basada en SCRUM, se debe dividir el proyecto en funcionalidad que se estimen que tengan una complejidad y esfuerzo similar y que se puedan completar en sprints de duración 2-4 semanas. De manera práctica y de cara a este ejercicio, muchos candidatos optan por hacerlo en sprints de 2 ó 4 semanas, que son más fáciles de representar en un diagrama de Gantt dividido en meses.
+
+### Fases de un proyecto
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - Manuel Cillero, [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/), manuel.cillero.es.
+:::
+
+Hay muchos modelos para definir las fases de un proyecto de desarrollo de software. En el supuesto práctico del ejercicio práctico del CSSTIAE se puede aplicar el modelo de Métrica v3, que es el de referencia para la Administración General del Estado (AGE).
+
+Las fases de un proyecto de sistemas informáticos según el Desarrollo de Sistemas de Información de Métrica v3:
+
+1. Estudio de viabilidad del sistema (EVS)
+2. Análisis del sistema de información (ASI)
+3. Diseño del sistema de información (DSI)
+4. Construcción del sistema de información (CSI)
+5. Implantación y aceptación del sistema (IAS)
+6. Mantenimiento del sistema de información (MSI)
+
+En caso de metodologías tradicionales, estas fases de desarrollo se aplican a la totalidad del proyecto. En caso de metodologías ágiles, las fases 2-5se aplican a cada iteración o sprint y reduciendo a los pasos 2-5, mientras que la fase 1 (EVS) y la fase 6 (MSI) se aplican al inicio y final del proyecto respectivamente.
+
+Es importante también considerar otros procesos necesarios, como la contratación o la formación, que pueden ir de forma paralela a estas fases.
+
+Acciones que se realizan durante la EVS:
+
+- Memoria justificativa.
+- Revisión del CTT.
+- Estudio de los tipos de licencia.
+- Selección del equipo de usuarios pilotos.
+- Documento de licitación para la contratación.
+- Tipo de migración (si aplica).
+- Formación.
+
+### Representación de la planificación temporal
+
+Habitualmente se representa la planificación temporal mediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar la duración de las tareas y su secuencia en el tiempo.
+
+La representación de la planificación debe reflejar el modelo de ciclo de vida y la metodología de desarrollo escogida.
+
+### Modelo de ciclo de vida
+
+Es necesario especificar un modelo de ciclo de vida.
+
+
+

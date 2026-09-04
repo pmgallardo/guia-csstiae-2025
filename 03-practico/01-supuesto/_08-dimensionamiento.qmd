@@ -10,7 +10,7 @@ Estos elementos se puede dividir en distintas tipologías de recursos que pueden
 
 Una vez dimensionadas cada tipología de recursos debe calcularse el coste asociado a cada una. Para ello, se debe revisar el apartado de [costes](#costes).
 
-### Dimensionamiento de desarrollo
+### Dimensionamiento de esfuerzo de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia

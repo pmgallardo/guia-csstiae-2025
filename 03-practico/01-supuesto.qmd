@@ -1,5 +1,13 @@
 # Supuesto práctico
 
+Un proceso general sería:
+
+Modelado → Dimensionamiento → Costes → Contratación → Planificación temporal
+
+Si bien el ejercicio suele incluir en primer lugar los pasos relacionados con estos procesos y deja para el final preguntas relacionadas con infraestructuras comunes, servicios transversales, seguridad, interoperabilidad y tecnología, en esta documentación se introducen estos temas solamente tras el modelado ya que es posible que estas decisiones afecten a algún aspecto de la planificación y al fin y al cabo el candidato puede completar los ejercicios en el orden que considere oportuno.
+
+Un ejemplo de decisiones que reducen el esfuerzo de desarrollo la aplicación de servicios comunes ya desarrollados o la aplicación de infraestructuras de nube.
+
 ## Introducción al supuesto práctico
 
 Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).
@@ -31,8 +39,9 @@ Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervi
 {{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
 {{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
 {{< include /03-practico/01-supuesto/_06-interoperabilidad.qmd >}}
-{{< include /03-practico/01-supuesto/_07-dimensionamiento.qmd >}}
-{{< include /03-practico/01-supuesto/_08-costes.qmd >}}
-{{< include /03-practico/01-supuesto/_09-contratacion.qmd >}}
-{{< include /03-practico/01-supuesto/_10-planificacion.qmd >}}
-{{< include /03-practico/01-supuesto/_11-tecnologia.qmd >}}
+{{< include /03-practico/01-supuesto/_07-tecnologia.qmd >}}
+{{< include /03-practico/01-supuesto/_08-dimensionamiento.qmd >}}
+{{< include /03-practico/01-supuesto/_09-costes.qmd >}}
+{{< include /03-practico/01-supuesto/_10-contratacion.qmd >}}
+{{< include /03-practico/01-supuesto/_11-planificacion.qmd >}}
+{{< include /03-practico/01-supuesto/_12-realizacion-prac.qmd >}}
