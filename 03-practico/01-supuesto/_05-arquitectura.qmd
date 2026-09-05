@@ -1,0 +1,176 @@
+## Arquitecturas de sistemas
+
+### Dominios/subdominios funcionales
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Conv. 2023.
+:::
+
+La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
+
+### Arquitectura conceptual
+
+En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
+
+### Arquitectura de sistemas
+
+La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
+
+### Arquitectura lógica
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias: 2023.
+:::
+
+La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas cpas que posee el sistema.
+
+Ejemplos de modelos de arquitectura de sistemas:
+
+- Modelo-vista-controlador (MVC)
+- Microservicios
+
+**MVC**
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - <https://runmodule.com/2024/12/03/mvc-architecture/>
+:::
+
+En el modelo-vista-controlador existiría una capa de presentación, otra de aplicación o negocio y una última de datos.
+
+Se suelen representar la base de datos, el directorio y el gestor documental para almacenar datos.
+
+Propuesta de niveles principales:
+
+- Presentación
+- Lógica de negocio
+- Acceso a datos y servicios
+
+**Microservicios**
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://runmodule.com/2024/12/03/microservices/>
+:::
+
+En microservicios se suele pintar un API gateway al inicio de la lógica de negocio.
+
+El API gateway son el punto de entrada a los microservicios. Puede contenter una API separada para la web, que podría ser reactiva (diseño), y una de móvil.
+
+Una aplicación de móvil se conecta directamente con el backend, ya que es la app instalada en el móvil quien lleva la carga del frontend.
+
+Habitualmente en sector público se usa la integración de lado de servidor (*server-side integration*). Esto se hace a través de un *front-end UI composer*.
+
+De manera transversal:
+
+- Administración
+- Seguridad
+- Monitorización
+
+Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).
+
+### Arquitectura física
+
+- Referencias:
+  - <https://runmodule.com/2027/03/30/network-architecture/>
+
+La arquitectura física implica especificar los componentes técnicos a emplear, ya sean físicos o virtuales.
+
+Elementos que deben considerarse en la arquitectura física:
+
+- Servidores (bare-metal o virtuales)
+- Clústeres
+- Almacenamiento
+- Cortafuegos
+- Bases de datos
+- Proveedores cloud
+
+Para las bases de datos se debe elegir entre bases de datos relacionales o bases de datos NoSQL.
+
+Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).
+
+### Arquitectura de red
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Guía CCN-STIC 811 Interconexión en el ENS
+- Guía CCN-STIC 823 de utilización de servicios en la nube
+- Guía CCN-STIC 408 de seguridad perimetral (cortafuegos)
+- <https://runmodule.com/2027/03/30/network-architecture/>
+:::
+
+Una **arquitectura de red** o **red de comunicaciones** suele incluir los siguientes elementos:
+
+- Enrutadores (*router*)
+- Cortafuegos
+- WAF
+- Balanceadores
+- Switches
+- Proxy (*forward proxy*)
+- Proxy inverso (*reverse proxy*)
+- Redes de área local (LAN)
+- VPNs
+- DNS
+- CDN
+- Conexión con otras redes (redSARA, sTESTA)
+- VLAN
+
+Hay varias arquitecturas de red privada posibles, y una bastante habitual es la del **cortafuegos dual**. Esta consiste en segmentar la red privadas en dos:
+
+- Red perimetral, en ocasiones llamada zona desmilitarizada (*demilitarized zone*, DMZ), expuesta a una red externa a través de un cortafuegos externo o perimetral y que alberga a los servidores públicos.
+- Subred apantallada, expuesta a la red perimetral a través de un cortafuegos interno, y que aloja servidores y equipos privados.
+
+El **enrutador** (*router*) coloca en la parte más externa de la red perimetral para conectarse con otras redes, ya sea internet o intranets como red SARA. Se empleará un enrutador distinto para cada red conectada. Además, por seguridad que requiere que los enrutadores estén duplicados.
+
+Algunos aspirantes sustituyen el enrutador hacia la red SARA por un elemento llamado Acceso de Conexión (AC).
+
+Los enrutadores suelen ser los últimos elementos que pertenecen a la red del organismo de la AGE gestionado.
+
+Se coloca por tanto un **cortafuegos** (*firewall*) detrás de cada enrutador da acceso a la red privada. Los cortafuegos se colocan en pares con característicias y configuración idéntica para asegurar que si falla uno el otro se encuentra disponible. No obstante, se suele recomendar que el interno y el externo sean de fabricantes distintos, para asegurar en caso de que uno de ellos tenga una vulnerabilidad explotable que no sea posible acceder a la red apantallada.
+
+Los candidatos suelen configurar el par de cortafuegos externo como activo-pasivo y el par de cortafuegos interno como activo-activo.
+
+Varios enrutadores pueden emplear un mismo cortafuegos si este tiene libres interfaces de red o soporta VLANs. Los aspirantes habitualmente utilizan el mismo cortafuegos interno para conectar tanto el enrutador a las intranets como la subred apantallada.
+
+Cada cortafuegos (o par de cortafuegos) suelen ir acompañados de un IPS o un IDS. Algunos aspirantes colocan un IDS con el cortafuegos externo y un IPS con el cortafuegos interno. Otros aspirantes colocan un único IPS entre el cortafuegos externo y el interno. El IPS es mencionado como elemento necesario en el ENS.
+
+En la red perimetral, conectados con directamente con el cortafuegos exterior, suelen estar presentes:
+
+- Balanceadores
+- Servidores de presentación / web
+- Servidores proxy
+- Servidores de proxy inverso
+- Servidores VPN
+- Servidor DNS
+- API Gateway
+- Sonda SAT Inet
+
+Además, el cortafuegos externo tendrá una conexión directa con el cortafuegos interno.
+
+El cortafuegos interno, como se comentó, estará conectado a otras intranets (como red SARA) y a la subred apantallada.
+
+Se representan como nubes las WLANs como red SARA y otras intranets:
+
+- La red sTESTA se suele representar como otra nube conectada a SARA, ya que la conexión con sTESTA a través de la red SARA.
+- Las redes de comunidades autónomas (CCAA) se conectan con la red SARA, nunca directamente al organismo de la AGE.
+- Las redes de entidades locales (EELL) siempre están conectadas a redes de comunidades autónomas (CCAA), nunca se conectan directamente a red SARA.
+
+Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
+
+En la subred apantallada se suelen colocar:
+
+- Equipos personales de usuarios
+- Bases de datos
+- Servidores de aplicación
+- Servidores de documentos
+- Servicios de directorio
+- Servidores de monitorización
+- Servidores de integración
+
+Los aspirantes suelen dotar a cada uno de estos grupos su propia VLAN, para asegurar la segmentación de red y aumentar la seguridad.
+
+En caso de manejar de contratar un tentant en NubeSARA, los elementos de red del organismos serían los mismos pero deberían ir enmarcados con línea discontinúa que indique que se trata de un tentant de NubeSARA.
