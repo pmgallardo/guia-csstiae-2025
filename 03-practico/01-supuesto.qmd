@@ -37,8 +37,8 @@ Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervi
 {{< include /03-practico/01-supuesto/_02-modelado.qmd >}}
 {{< include /03-practico/01-supuesto/_03-infr-comunes.qmd >}}
 {{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
-{{< include /03-practico/01-supuesto/_05-arquitectura.qmd >}}
-{{< include /03-practico/01-supuesto/_06-seguridad.qmd >}}
+{{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
+{{< include /03-practico/01-supuesto/_06-arquitectura.qmd >}}
 {{< include /03-practico/01-supuesto/_07-interoperabilidad.qmd >}}
 {{< include /03-practico/01-supuesto/_08-tecnologia.qmd >}}
 {{< include /03-practico/01-supuesto/_09-dimensionamiento.qmd >}}

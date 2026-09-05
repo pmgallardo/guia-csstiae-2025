@@ -164,3 +164,18 @@ Obtener consentimiento del tratamiento de datos.
 La Evaluación de Impacto en la Protección de Datos (EIPD) se 
 
 ### Guías CCN-STIC
+
+Las guías CCN-STIC son un conjunto de documentos que proporcionan recomendaciones y buenas prácticas en materia de seguridad de la información. Estas guías están desarrolladas por el Centro Criptológico Nacional (CCN) y están dirigidas a las Administraciones Públicas y a las entidades que manejan información sensible.
+
+### Autenticación
+
+La autenticación en el sistema se puede realizar mediante distintos medios, cuyo uso se debe valorar dependiendo del sistema del enunciado:
+
+- Usuario y contraseña
+- Biometría
+- DNI Electrónico
+- Cl@ve
+- Cl@ve Firma
+- Autentica: solo válido para empleados de la AGE.
+
+Además, se debe valorar el emplear métodos de autenticación de dos factores (2FA) o multifactor (MFA).

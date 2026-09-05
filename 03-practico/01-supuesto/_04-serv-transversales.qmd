@@ -7,7 +7,8 @@
 - Regulaciones:
   - RD 1125/2024
 - Referencias
-  - [Directorio de Soluciones del Centro de Transferencia Tecnológica (CTT)]()
+  - Directorio de Soluciones del Centro de Transferencia Tecnológica (CTT)
+  - Apartado 5​ "Interfaces del sistema y con otros sistemas" del documento "Arquitectura Lógica" de Preparatic 31.
   - <https://runmodule.com/2024/10/13/servicios-electronicos-del-sector-publico-en-espana/>
 :::
 
@@ -193,6 +194,10 @@ Sistema de Información Administrativa (SIA).
 ## Infraestructura común de interoperabilidad
 
 ### Plataforma de Intermediación de Datos (PID) {#pid}
+
+La Plataforma de Intermediación de Datos (PID) permite que se compartan datos o documentos entre organismos de la AGE.
+
+El Servicio de Verificación de Datos (SVD) se ofrece dentro de la PID y permite verificar y consultar datos.
 
 ## Registros
 

@@ -1,30 +1,11 @@
-## Arquitecturas de sistemas
-
-### Dominios/subdominios funcionales
-
-::: {.callout-note collapse="true" icon="false"}
-## 📝 Apariciones en examen
-Conv. 2023.
-:::
-
-La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
-
-### Arquitectura conceptual
-
-En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
-
-### Arquitectura de sistemas
-
-La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
-
-### Arquitectura lógica
+## Arquitectura lógica
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
 Convocatorias: 2023.
 :::
 
-La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas cpas que posee el sistema.
+La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas capas que posee el sistema.
 
 Ejemplos de modelos de arquitectura de sistemas:
 
@@ -73,6 +54,27 @@ De manera transversal:
 
 Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).
 
+## Arquitecturas de sistemas
+
+Durante el supuesto práctico se puede requerir al aspirante que proponga distintos tipos de arquitectura para un sistema de información, que se detallan en este apartado.
+
+### Dominios/subdominios funcionales
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Conv. 2023.
+:::
+
+La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
+
+### Arquitectura conceptual
+
+En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
+
+### Arquitectura de sistemas
+
+La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
+
 ### Arquitectura física
 
 - Referencias:
@@ -91,7 +93,15 @@ Elementos que deben considerarse en la arquitectura física:
 
 Para las bases de datos se debe elegir entre bases de datos relacionales o bases de datos NoSQL.
 
-Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).
+Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (BBDD de columna ancha), cuando se busca flexibilidad estructural respecto a tablas (BBDD documental, BBDD de grafos) o se requiere simplicidad y rapidez (BBDD clave-valor).
+
+| Tipo de BBDD | Producto código abierto | Escenario óptimo |
+| - | - | - |
+| Relacional | PostgreSQL | Consultas complejas |
+| Columna ancha | Cassandra | Volumen alto, escalabilidad horizontal |
+| Documental | FerretDB 2 + DocumentDB de Linux Foundation (compatible con MongoDB) | Datos semiestructurados |
+| Grafos | Neo4j | Datos centrados en relaciones |
+| Clave-valor | Redis | Simplicidad y rapidez |
 
 ### Arquitectura de red
 
@@ -100,6 +110,7 @@ Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad hor
 - Guía CCN-STIC 811 Interconexión en el ENS
 - Guía CCN-STIC 823 de utilización de servicios en la nube
 - Guía CCN-STIC 408 de seguridad perimetral (cortafuegos)
+- Guía CCN-STIC-836 – Seguridad en Redes Privadas Virtuales
 - <https://runmodule.com/2027/03/30/network-architecture/>
 :::
 
@@ -136,8 +147,22 @@ Los candidatos suelen configurar el par de cortafuegos externo como activo-pasiv
 
 Varios enrutadores pueden emplear un mismo cortafuegos si este tiene libres interfaces de red o soporta VLANs. Los aspirantes habitualmente utilizan el mismo cortafuegos interno para conectar tanto el enrutador a las intranets como la subred apantallada.
 
-Cada cortafuegos (o par de cortafuegos) suelen ir acompañados de un IPS o un IDS. Algunos aspirantes colocan un IDS con el cortafuegos externo y un IPS con el cortafuegos interno. Otros aspirantes colocan un único IPS entre el cortafuegos externo y el interno. El IPS es mencionado como elemento necesario en el ENS.
+El cortafuegos externo tendrá una conexión directa con el cortafuegos interno.
 
+Cada cortafuegos (o par de cortafuegos) suelen ir acompañados de un IPS o un IDS. Algunos aspirantes colocan un IDS con el cortafuegos externo y un IPS con el cortafuegos interno. Otros aspirantes colocan un único IPS en mitad de la connexión entre el cortafuegos externo y el interno. El IPS es mencionado como elemento necesario en el ENS.
+
+La **VPN** debe estar disponible en caso de que haya usuarios que deban acceder a la red interna a través de la VPN. Se debe adaptar al [mp.com.2] del ENS. Para sistemas de categoría media estas VPN deberán utilizar algoritmos y parámetros
+autorizados por el CCN (refuerzo R1). Si se trata de sistemas de categoría alta, además, se debe utilizar un dispositivo hardware certificado para el establecimiento y utilización de la VPN (refuerzos R2 y R3).
+
+El cortafuegos interno, como se comentó, estará conectado a otras intranets (como red SARA) y a la subred apantallada.
+
+Se representan como nubes las WLANs como red SARA y otras intranets:
+
+- La red sTESTA se suele representar como otra nube conectada a SARA, ya que la conexión con sTESTA a través de la red SARA.
+- Las redes de comunidades autónomas (CCAA) se conectan con la red SARA, nunca directamente al organismo de la AGE.
+- Las redes de entidades locales (EELL) siempre están conectadas a redes de comunidades autónomas (CCAA), nunca se conectan directamente a red SARA.
+
+Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
 En la red perimetral, conectados con directamente con el cortafuegos exterior, suelen estar presentes:
 
 - Balanceadores
@@ -149,28 +174,29 @@ En la red perimetral, conectados con directamente con el cortafuegos exterior, s
 - API Gateway
 - Sonda SAT Inet
 
-Además, el cortafuegos externo tendrá una conexión directa con el cortafuegos interno.
+El **balanceador** puede software o *appliance*.
 
-El cortafuegos interno, como se comentó, estará conectado a otras intranets (como red SARA) y a la subred apantallada.
+- CCN-STIC-140 Anexo F.88: Balanceadores de carga
 
-Se representan como nubes las WLANs como red SARA y otras intranets:
+Según el ENS, se debe aplicar sobre los sistemas de categoría media el refuerzo R1 "segmentación lógica básica", que implica la configuración de VLANs. Las VLANs mínimas a considerar son "Usuarios", "Servicios" y "Administración".
 
-- La red sTESTA se suele representar como otra nube conectada a SARA, ya que la conexión con sTESTA a través de la red SARA.
-- Las redes de comunidades autónomas (CCAA) se conectan con la red SARA, nunca directamente al organismo de la AGE.
-- Las redes de entidades locales (EELL) siempre están conectadas a redes de comunidades autónomas (CCAA), nunca se conectan directamente a red SARA.
-
-Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
+Sobre los sistemas de categoría alta se debe aplicar el refuerzo R2 "segmentación lógica avanzada" por VPN o el R3 "segmentación física" con segmentos físicos separados, y el R4 "puntos de interconexión".
 
 En la subred apantallada se suelen colocar:
 
-- Equipos personales de usuarios
-- Bases de datos
-- Servidores de aplicación
-- Servidores de documentos
-- Servicios de directorio
-- Servidores de monitorización
-- Servidores de integración
+- Usuarios
+  - Equipos personales
+- Servicios
+  - Servidores de aplicación
+  - Servidores de documentos
+  - Servicios de directorio
+  - Bases de datos
+- Administración
+  - Servidores de monitorización
+  - Servidores de integración (CI/CD)
 
-Los aspirantes suelen dotar a cada uno de estos grupos su propia VLAN, para asegurar la segmentación de red y aumentar la seguridad.
+Los aspirantes suelen definir una VLAN por cada una de estas categorías para asegurar la segmentación de red y aumentar la seguridad.
+
+#### Arquitectura de red con nube híbrida
 
 En caso de manejar de contratar un tentant en NubeSARA, los elementos de red del organismos serían los mismos pero deberían ir enmarcados con línea discontinúa que indique que se trata de un tentant de NubeSARA.

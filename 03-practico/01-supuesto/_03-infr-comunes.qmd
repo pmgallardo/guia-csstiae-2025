@@ -14,8 +14,16 @@ sTESTA es una red transeuropea que incluye a las instituciones públicas europea
 
 ### Nube (supuesto práctico)
 
-Ventajas y desventajas del uso de la nube.
+Ventajas del uso de la nube:
 
-En caso de optar por la nube, se puede proponer el uso de NubeSARA, una nube pública exclusiva para el ámbito de las AAPP.
+- Elasticidad
+- Rapidez en el despliegue
+
+Desventajas del uso de la nube:
+
+- Costes recurrentes
+- Seguridad
+
+En caso de optar por la nube, se puede proponer el uso de NubeSARA, una nube híbrida exclusiva para el ámbito de las AAPP.
 
 ### Servicio de seguridad gestionada

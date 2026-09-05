@@ -22,7 +22,7 @@ Los diagramas estáticos y dinámicos reseñados en este apartado son:
   - Cillero, Manuel. [Casos de uso en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/casos-de-uso/).
 :::
 
-El diagrama de casos de uso...
+El **diagrama de casos de uso** representa gráficamente los distintos casos de uso de un sistema, así como los actores que interactúan con él.
 
 Los actores se corresponden con tipologías de usuarios, organismos o sistemas externos que interactúen con el sistema.
 
@@ -33,8 +33,6 @@ La **relación «include»** entre casos de uso se representa con una flecha dis
 Se puede usar cuando una funcionalidad es común a varios casos de uso, y se quiere evitar repetirla en cada caso de uso.
 
 La **relación «extend»** entre casos de uso se representa con una flecha discontinua y apunta desde el caso de uso que extiende hacia el caso de uso extendido. Indica que el caso de uso es opcional para el caso extendido, y que se ejecuta bajo ciertas condiciones. Un ejemplo es imprimir un recibo (extensión) tras realizar una compra (extendido).
-
-Cuando se emplea una relación «include» o 
 
 El sistema engloba los casos de uso, representándose con un rectángulo.
 
@@ -115,149 +113,3 @@ El diagrama de secuencia es un diagrama UML que permite modelar la interacción 
   - Manuel Cillero. [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/){target="_blank"}. manuel.cillero.es.
 :::
 
-### Arquitecturas de sistemas
-
-#### Dominios/subdominios funcionales
-
-::: {.callout-note collapse="true" icon="false"}
-## 📝 Apariciones en examen
-Conv. 2023.
-:::
-
-La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
-
-#### Arquitectura conceptual
-
-En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
-
-#### Arquitectura de sistemas
-
-La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
-
-#### Arquitectura lógica
-
-::: {.callout-note collapse="true" icon="false"}
-## 📝 Apariciones en examen
-Convocatorias: 2023.
-:::
-
-La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas cpas que posee el sistema.
-
-Ejemplos de modelos de arquitectura de sistemas:
-
-- Modelo-vista-controlador (MVC)
-- Microservicios
-
-**MVC**
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias
-  - <https://runmodule.com/2024/12/03/mvc-architecture/>
-:::
-
-En el modelo-vista-controlador existiría una capa de presentación, otra de aplicación o negocio y una última de datos.
-
-Se suelen representar la base de datos, el directorio y el gestor documental para almacenar datos.
-
-Propuesta de niveles principales:
-
-- Presentación
-- Lógica de negocio
-- Acceso a datos y servicios
-
-**Microservicios**
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias:
-  - <https://runmodule.com/2024/12/03/microservices/>
-:::
-
-En microservicios se suele pintar un API gateway al inicio de la lógica de negocio.
-
-El API gateway son el punto de entrada a los microservicios. Puede contenter una API separada para la web, que podría ser reactiva (diseño), y una de móvil.
-
-Una aplicación de móvil se conecta directamente con el backend, ya que es la app instalada en el móvil quien lleva la carga del frontend.
-
-Habitualmente en sector público se usa la integración de lado de servidor (*server-side integration*). Esto se hace a través de un *front-end UI composer*.
-
-De manera transversal:
-
-- Administración
-- Seguridad
-- Monitorización
-
-Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).
-
-#### Arquitectura física
-
-- Referencias:
-  - <https://runmodule.com/2027/03/30/network-architecture/>
-
-La arquitectura física implica especificar los componentes técnicos a emplear, ya sean físicos o virtuales.
-
-Elementos que deben considerarse en la arquitectura física:
-
-- Servidores (bare-metal o virtuales)
-- Clústeres
-- Almacenamiento
-- Cortafuegos
-- Bases de datos
-- Proveedores cloud
-
-Para acceder a la red sTesta se puee conectar directamente a través de la red SARA.
-
-Para las bases de datos se debe elegir entre bases de datos relacionales o bases de datos NoSQL.
-
-Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (columna ancha), cuando se busca flexibilidad estructural respecto a tablas (documental, grafal) o se requiere simplicidad y rapidez (Redis).
-
-### Arquitectura de comunicaciones
-
-<https://runmodule.com/2027/03/30/network-architecture/>
-
-Una arquitectura de comunicaciones suele incluir los siguientes elementos:
-
-- Enrutadores
-- Cortafuegos
-- WAF
-- Balanceadores
-- Switches
-- Proxy
-- Proxy inverso
-- Redes de área local (LAN)
-- VLAN
-- VPNs
-- CDN
-- Conexión con otras redes (redSARA, sTESTA).
-
-El enrutador (*router*) se suele colocar expuesto a las redes externas. Detrás del router está se coloca un cortafuegos (*firewall*) que da acceso a la red privada.
-
-Hay varias arquitecturas de red privada posibles, y una bastante habitual es la del cortafuegos dual. Esta consiste en segmentar la red privadas en dos:
-
-- Red perimetral, en ocasiones llamada zona desmilitarizada (*demilitarized zone*, DMZ), expuesta a una red externa a través de un cortafuegos externo o perimetral y que alberga a los servidores públicos.
-- Subred apantallada, expuesta a la red perimetral a través de un cortafuegos interno, y que aloja servidores y equipos privados.
-
-Se recomienda que los cortafuegos interno y externo sean de distinto fabricante, por razones de seguridad.
-
-En la red perimetral se suelen colocar:
-
-- IDS
-- IPS
-- Servidores proxy
-- Servidores de proxy inverso
-- Servidores de presentación
-- Servidores VPN
-
-En la subred apantallada se suelen colocar:
-
-- Servidores de aplicación
-- Bases de datos
-- Servidores de documentos
-- Servidores internos
-- Servicios de directorio
-- Equipos personales
-
-Los servicios comunes y transversales de las AAPP se ofrecen a través de la red SARA.
-
-El sistema debe conectarse a la red SARA a través del cortafuegos interno de la red petrimetral (o zona desmilitarizada).
