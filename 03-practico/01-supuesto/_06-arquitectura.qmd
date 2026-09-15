@@ -161,7 +161,9 @@ Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad hor
 | Columna ancha | Cassandra | Volumen alto, escalabilidad horizontal |
 | Documental | FerretDB 2 + DocumentDB de Linux Foundation (compatible con MongoDB) | Datos semiestructurados |
 | Grafos | Neo4j | Datos centrados en relaciones |
-| Clave-valor | Redis | Simplicidad y rapidez |
+| Clave-valor | Valkey | Simplicidad y rapidez |
+
+Se propone Valkey en lugar de Redis ya que el primero es un fork del segundo que mantiene la licencia permisiva original y cuenta con el soporte de la Linux Foundation.
 
 ### Arquitectura de red
 

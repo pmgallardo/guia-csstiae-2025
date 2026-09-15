@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - "03-practico/02-analisis/flashcards.csv"
 
 book:
   title: "Guía CSSTIAE 2025"

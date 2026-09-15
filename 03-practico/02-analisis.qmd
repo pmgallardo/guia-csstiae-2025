@@ -55,7 +55,8 @@ La valoración del Tribunal del análisis pormenorizado se realiza tras la lectu
 {{< include /03-practico/02-analisis/_02-organismos.qmd >}}
 {{< include /03-practico/02-analisis/_03-estadisticas.qmd >}}
 {{< include /03-practico/02-analisis/_04-estrategias.qmd >}}
-{{< include /03-practico/02-analisis/_05-regulaciones.qmd >}}
+{{< include /03-practico/02-analisis/_05-marco-normativo.qmd >}}
 {{< include /03-practico/02-analisis/_06-iniciativas.qmd >}}
 {{< include /03-practico/02-analisis/_07-transversales.qmd >}}
 {{< include /03-practico/02-analisis/_08-especificas.qmd >}}
+{{< include /03-practico/02-analisis/_09-test.qmd >}}

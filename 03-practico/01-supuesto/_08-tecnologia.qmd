@@ -22,15 +22,17 @@ Bootstap se usa también de manera minoritaria para aplicaciones web o móvil co
 
 #### Tecnología web back-end
 
-Spring / SpringBoot, que emplea el lenguaje de programación Java, es el estándar en la AGE.
+El framework Spring Framework, o su alternativa Spring Boot, que emplea el lenguaje de programación Java, es el estándar en la AGE.
 
 #### Aplicaciones de escritorio
 
-En primer lugar, la tendencia en la AGE es priorizar aplicaciones web sobre software de escritorio tradicional.
+Antes de proponer una aplicación de escritorio en el supuesto práctico se debe reflexionar, pues la tendencia actual en la AGE es priorizar aplicaciones web sobre software de escritorio tradicional. Por ello, para proponer una aplicación de escritorio se debe justificar por la necesidad de una fuerte integración con el sistema operativo o hardware (ej.: lector de tarjetas), la necesidad de un rendimiento muy alto o la necesidad de una interfaz muy compleja.
 
-Cuando se desarrollan aplicaciones exclusivamente para escritorio se emplean principalmente tecnologías Java. Un ejemplo es la aplicación AutoFirma.
+Las aplicaciones de escritorio con tecnologías **.NET**, del entorno de desarrollo de Microsoft y escritas en **C#**, son también populares en la AGE.
 
-También se puede adaptar una aplicación web como aplicación de escritorio empleando tecnologías web híbridas como Electron o Tauri.
+La AGE ha empleado históricamente **Java** con la biblioteca UI **Swing** para aplicaciones desarrolladas exclusivamente para escritorio, como por ejemplo AutoFirma. No obstante, proponerlo para una nueva aplicación puede considerarse una mala práctica al considerarse tecnología obsoleta.
+
+Un enfoque alternativo y moderno es adaptar una aplicación web como aplicación de escritorio empleando tecnologías web híbridas empleando el framework **Angular** (o React, como opción alternativa) sobre el framework web **Electron**; Tauri sería también técnicamente válida como ventana de navegación interna (webview), pero es más experimental y no está tan extendido en la AGE.
 
 #### Aplicaciones de móvil
 
@@ -38,13 +40,13 @@ Se puede consultar las tecnologías de las aplicaciones móviles en el [inventar
 
 Se concluye leyendo este informe que las aplicaciones móviles de la AGE están realizadas principalmente con Ionic, Angular y Flutter, en orden descendente.
 
-Ionic proporciona componentes específicos para móvil adaptados a cada SO y se basa en un WebView, es decir, una web inscrustada en una app de móvil. Puede combinarse con Angular o u otro framework web o ejecutarse independientemente.
+**Ionic** proporciona componentes específicos para móvil adaptados a cada SO y se basa en un WebView, es decir, una web inscrustada en una app de móvil. Puede combinarse con Angular u otro framework web o ejecutarse independientemente.
 
-Angular es una buena opción si es necesaria una misma app para web y móvil. Es conveniente que esta web sea responsiva (se adapta a la pantalla con fluidez) o adaptativa (considera distintas configuraciones y escoge la más adecuada), lo cual se consigue con frameworks CSS como Bootstrap o Tailwind CSS.
+**Angular** es una buena opción si es necesaria una misma app para web y móvil. Es conveniente que esta web sea responsiva (se adapta a la pantalla con fluidez) o adaptativa (considera distintas configuraciones y escoge la más adecuada), lo cual se consigue con frameworks CSS como Bootstrap o Tailwind CSS.
 
-Para la solución basadas en WebView (como Angular y Ionic), se puede emplear Capacitor como puente entre el dispositivo móvil y la ventana de navegación interna (WebView) en la que se ejecuta la app web de Angular. Proporciona acceso al hardware y permite al usuario mostrar la aplicación como una app.
+Para la solución basadas en WebView (como Angular y Ionic), se puede emplear **Capacitor** (el reemplazo de Apache Cordova) como puente entre el dispositivo móvil y la ventana de navegación interna (WebView) en la que se ejecuta la app web de Angular. Proporciona acceso al hardware y permite al usuario mostrar la aplicación como una app.
 
-Flutter ejecuta código nativo en lugar de estar basado en tecnologías web (como Angular e Ionic), lo que le da mayor rendimiento.
+**Flutter** ejecuta código nativo en lugar de estar basado en tecnologías web (como Angular e Ionic), lo que le da mayor rendimiento.
 
 #### Bases de datos
 
@@ -64,9 +66,9 @@ RabbitMQ se emplea más en mensajería tradicional y arquitecturas monolíticas,
 
 #### API manager
 
-Una opción comercial de API manager (o gestor de APIs) habitual en la AGE es MuleSoft AnyPoint Platform.
+Una opción propietaria de API manager (o gestor de APIs) habitual en la AGE es **MuleSoft AnyPoint Platform**.
 
-Entre las opciones de código abierto que ofrecen un API manager completo se encuentra WSO2 API Manager.
+Entre las opciones de código abierto que ofrecen un API manager completo se encuentra **WSO2 API Manager**.
 
 ### API gateway
 
@@ -74,7 +76,7 @@ La funcionalidad de API gateway (o pasarela de APIs) está habitualmente incluid
 
 Por ejemplo, MuleSoft AnyPoint Plaform incluye MuleSoft API Gateway, mientras que WSO2 API Manager incluye WSO2 API Gateway.
 
-Una opción de código abierto centrada en la funcionalidad de API gateway es Kong API Gateway Community Edition (CE). El API manager completo Kong Manager sería de pago.
+Una opción de código abierto centrada en la funcionalidad de API gateway es **Kong API Gateway** Community Edition (CE). El API manager completo Kong Manager sería de pago.
 
 ### Ecosistemas de tecnologías
 
@@ -114,7 +116,7 @@ Stack genérico empleando tecnologías propias del ecosistema Microsoft:
 #### Código abierto
 
 - Framework front: Angular (TypeScript)
-- Servidor web: Nginx / Apache HTTP Server
-- Framework backend: Spring Boot
+- Servidor web: Apache HTTP Server / Nginx
+- Framework backend: Spring Boot (Java)
 - Servidor aplicación: RedHat WildFly (monolítico) / Apache Tomcat (microservicios)
 - Base de datos: PostgreSQL

@@ -383,7 +383,7 @@ La vocal titular M. E. Díaz-Santos trabajó en el Ministerio de Universidades.
   - Objetivo 4 "Educación de calidad"
 :::
 
-## Emergencias
+### Emergencias
 
 ::: {.callout-warning icon="false" collapse="true"}
 ## 🥈Temática candidata N2
