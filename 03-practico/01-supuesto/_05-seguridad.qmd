@@ -1,16 +1,16 @@
 ## Seguridad
 
-### Gestión de riesgos
+La seguridad es una cuestión presente en todos los ejercicios prácticos recientes de la AGE. Estaría presente a lo largo de los siguientes apartados:
 
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Temas
-  - 47. Análisis y gestión de riesgos
-:::
-
-Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de la información.
+- ENS
+- Protección de datos personales
 
 ### Esquema Nacional de Seguridad (ENS)
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2023.2, 2022.2, 2020.2, 2019.3, 2018.2
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -22,7 +22,7 @@ Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de 
   - 48. ENS
 :::
 
-El Esquema Nacional de Seguridad (ENS) es una pregunta permanente en los ejercicios prácticas del CSSTIAE, ya sea por mención expresa o necesidad de considerarla en los diseños.
+El Esquema Nacional de Seguridad (ENS) es una pregunta permanente en los ejercicios prácticas del CSSTIAE, ya sea por mención expresa o necesidad de considerarla en los diseños. Se suele preguntar expresamente a través de la categorización del sistema y los mecanismos de seguridad aplicables.
 
 Las **categorías de seguridad del ENS** son:
 
@@ -153,7 +153,12 @@ Medidas para mecanismos:
 | op.mon.3 | Vigilancia | ✓ | ✓ | SAT-inet |
 | mp.com.4 | **Separación flujos** | ✗ | ✓ | VLANs |
 
-### Protección de datos
+### Protección de datos personales
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2019.6, 2018.5
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -170,10 +175,6 @@ Obtener consentimiento del tratamiento de datos.
 
 La Evaluación de Impacto en la Protección de Datos (EIPD) se 
 
-### Guías CCN-STIC
-
-Las guías CCN-STIC son un conjunto de documentos que proporcionan recomendaciones y buenas prácticas en materia de seguridad de la información. Estas guías están desarrolladas por el Centro Criptológico Nacional (CCN) y están dirigidas a las Administraciones Públicas y a las entidades que manejan información sensible.
-
 ### Autenticación
 
 La autenticación en el sistema se puede realizar mediante distintos medios, cuyo uso se debe valorar dependiendo del sistema del enunciado:
@@ -186,3 +187,26 @@ La autenticación en el sistema se puede realizar mediante distintos medios, cuy
 - Autentica: solo válido para empleados de la AGE.
 
 Además, se debe valorar el emplear métodos de autenticación de dos factores (2FA) o multifactor (MFA).
+
+#### Biometría
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2019.6
+:::
+
+### Gestión de riesgos
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Temas
+  - 47. Análisis y gestión de riesgos
+:::
+
+Este apartado trata sobre la evaluación de riesgos en proyectos de sistemas de la información.
+
+### Guías CCN-STIC
+
+Las guías CCN-STIC son un conjunto de documentos que proporcionan recomendaciones y buenas prácticas en materia de seguridad de la información. Estas guías están desarrolladas por el Centro Criptológico Nacional (CCN) y están dirigidas a las Administraciones Públicas y a las entidades que manejan información sensible.
+
+Las guías suelen tratar aspectos específicos de la valoración o configuración de seguridad en el sistema. Se valora que en el ejercicio se mencionen las guías con su código. Estas guías se mencionan en este documento en cada apartado en los que vienen siendo relevantes.

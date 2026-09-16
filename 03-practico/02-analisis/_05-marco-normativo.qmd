@@ -48,6 +48,16 @@ eIDAS fue sustituido por eIDAS 2 en 2025.
   - [R(UE) 910/2014 en EUR-Lex](https://eur-lex.europa.eu/eli/reg/2014/910/oj?locale=es)
 ::: -->
 
+### Dir(UE) 2014/24. Contratación pública {#celex:32014L0024}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [Dir. Contratación pública en EUR-Lex](http://data.europa.eu/eli/dir/2014/24/oj){target="_blank"}
+:::
+
+Dir(UE) 2014/24. Contratación pública se traspuso en España con la [Ley 9/2017](BOE-A-2017-12902).
+
 ### Dir(UE) 2016/2102. Accesibilidad desde móviles al sector público
 
 Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.

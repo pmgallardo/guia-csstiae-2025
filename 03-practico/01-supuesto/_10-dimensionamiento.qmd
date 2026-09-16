@@ -1,6 +1,6 @@
-## Dimensionamiento
+## Dimensionamiento de recursos
 
-Durante el diseño de un sistema informático se deben dimensionar cada uno de los elementos que forman parte del mismo.
+Durante el diseño de un sistema informático se deben dimensionar cada uno de los recursos necesarios para crearlo y mantenerlo.
 
 Estos elementos se puede dividir en distintas tipologías de recursos que pueden dimensionarse por separado. Las tipologías a tener en cuenta son al menos:
 | Licencia VMWare servidor | 5.000 |
@@ -47,6 +47,8 @@ De cara al supuesto práctico, se propone aplicar cada una de las técnicas de d
 - Si se cuenta con un diagrama de casos de uso: UCP.
 - Si se cuenta con un modelo entidad-relación (ER) o un diagrama de clases: staffing size.
 - En otro caso: COSMIC-FSM.
+
+Puesto que COSMIC-FSM se puede aplicar sin necesidad de haber modelado previamente el sistema, es la técnica más flexible y es comunmente usada en el supuesto práctico. De aprenderse solamente una de las técnicas, esta sería la más adecuada. No obstante, si se cuenta con un diagrama de casos de uso o un modelo ER, podría ser recomendable aplicar las otras técnicas correspondientes para diferenciarse del resto de aspirantes.
 
 Algunas de estas técnicas se presentan en la documentación de estimación de recursos del temario de Astic (UCP y COSMIC-FSM) o en Métrica v3 (staffing size). El temario de Astic adicionalmente presenta los métodos como el enfoque COCOMO o las métricas bang, mientras que otras provienen. Además, existen otras técnicas de estimación no cubiertas ni en la documentación de Astic ni en esta guía, y que nada impide que sean usadas en el ejercicio práctico.
 

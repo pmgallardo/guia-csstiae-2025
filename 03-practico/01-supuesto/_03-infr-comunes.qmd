@@ -14,6 +14,11 @@ sTESTA es una red transeuropea que incluye a las instituciones públicas europea
 
 ### Nube (supuesto práctico)
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2022.2, 2020.4
+:::
+
 Ventajas del uso de la nube:
 
 - Elasticidad
@@ -24,6 +29,8 @@ Desventajas del uso de la nube:
 - Costes recurrentes
 - Seguridad
 
-En caso de optar por la nube, se puede proponer el uso de NubeSARA, una nube híbrida exclusiva para el ámbito de las AAPP.
+En caso de optar por la nube, se considera acertado el uso de NubeSARA, una nube híbrida exclusiva para el ámbito de las AAPP y gestionada desde la AGE.
+
+Las soluciones basadas en otros hiperescalares comunes (Azure, AWS o GCP), si bien tienen cierta presencia en la AGE, solo tiene usos muy determinados y generalmente chocan con cuestiones sobre soberanía del dato, seguridad nacional y privacidad, por lo que su propuesta no se considera generalmente una buena opción.
 
 ### Servicio de seguridad gestionada

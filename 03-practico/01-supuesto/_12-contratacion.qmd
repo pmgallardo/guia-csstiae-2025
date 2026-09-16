@@ -1,16 +1,21 @@
 ## Contratación
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2020.8, 2019.5
+:::
+
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Regulaciones
   - UE
-    - Directiva 2014/24/UE
+    - [Directiva 2014/24/UE](02-analisis.qmd#celex:32014L0024)
     - Directiva 2014/23/UE
     - Directiva 2014/25/UE
   - España
     - RD 1098/2001
     - RDL 3/2011
-    - [L 9/2017. Contratación del Sector Público (CSP 2 / LCSP)](02-analisis#BOE-A-2017-12902)
+    - **[L 9/2017. Contratación del Sector Público (CSP 2 / LCSP)](02-analisis#BOE-A-2017-12902)**
     - RDL 3/2020
     - RD 806/2014. Organización e intrumentos operativos de TIC en ADE
 - Temas
@@ -19,9 +24,11 @@
   - <https://runmodule.com/2026/01/27/contratacion-en-el-sector-publico-de-espana/>
 :::
 
-Este apartado trata sobre la contratación en la Administración General del Estado (AGE).
+En este apartado se cubren aspectos relacionados con la contratación en la Administración General del Estado (AGE).
 
-Ciñéndonos en los tipos de contratación de servicios y suministros, que son los más comunes en el supuesto práctico, con su restricción en el valor estimado:
+La Directiva 2014/24 es la más general de las de la UE relativas a la contratación del sector público. Esta se traspuso en la [ley 9/2017](02-analisis#BOE-A-2017-12902), también conocida como CSP2 o LCSP, que es la norma principal en el estudio de este apartado.
+
+El resumen de los tipos de contratación de servicios y suministros, los más comunes en el supuesto práctico, junto con su restricción en el valor estimado, son los siguientes:
 
 | Tipo de contrato | Límite importe | Tiempo |
 | - | - | - |
@@ -32,13 +39,11 @@ Ciñéndonos en los tipos de contratación de servicios y suministros, que son l
 | Procedimiento abierto simplificado | < 143.000 € |  |
 | Procedimiento abierto | Sin límites | 6 meses |
 
-Cuando más simplificado y rápido sea el proceso mejor. Esto influirá en el cronograma del proyecto.
-
-Los trámites de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
-
-Es conveniente comprobar si debido al importe están sujetos a regulación armonizada (SARA). El límite para la AGE en servicios y suministros es 143.000 €.
-
-Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
+Consejos generales:
+- Para entregar el sistema en el menor plazo posible, conviene escoger el proceso de contratación más simplificado y rápido disponible.
+- Los trámites de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
+- Es conveniente comprobar si debido al importe están sujetos a regulación armonizada (SARA). El límite para la AGE en servicios y suministros es 143.000 €.
+- Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
 
 ### Presupuesto de los contratos
 
@@ -89,13 +94,11 @@ Respecto de la preparación y adjudicación, la regla general es que al contrato
 
 La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.
 
-La regulación armonizada sre aplica cuando el valor estimado del contrato sobrepasa el umbral de:
+La regulación armonizada se aplica cuando el valor estimado del contrato sobrepasa el umbral de:
 
-143.000 € para la AGE en contratos de suministros y servicios
-
-221.000 € para organismos distintos a la AGE en contratos de suministros y servicios
-
-5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo
+- 143.000 € para la AGE en contratos de suministros y servicios
+- 221.000 € para organismos distintos a la AGE en contratos de suministros y servicios
+- 5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo)
 
 Estos importes se establecen en la Orden HFP/1352/2023.
 
@@ -149,14 +152,11 @@ El procedimiento abierto es el ordinario de contratación. Se le llama en este a
 
 El plazo de presentación de proposiciones es:
 
-En caso de regulación NO armonizada: 15 días
-
-En caso de regulación armonizada
-
-En situación estándar: 35 días
-
-Si se publicó un anuncio previo o en situación de emergencia: 15 días
-
+- En caso de regulación NO armonizada: 15 días
+- En caso de regulación armonizada
+  - En situación estándar: 35 días
+  - Si se publicó un anuncio previo o en situación de emergencia: 15 días
+  
 Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos en 5 días. Esto se define en el art. 156.3.c.
 
 No tiene restricciones respecto al importe del contrato.
@@ -165,43 +165,32 @@ No tiene restricciones respecto al importe del contrato.
 
 Condiciones para su aplicación:
 
-Criterio económico
+- Criterio económico
+  - Para contratos de obras, valor estimado <= 2.000.000 €
+  - Para contratos de suministro y de servicios, valor estimado <= 100.000 €
+- Criterios de adjudicación
+  - En prestación de carácter no intelectual, los juicios de valor deben ser <25%
+  - En prestación intelectual, los juicios de valor deben ser <40%
 
-Para contratos de obras, valor estimado <= 2.000.000 €
+**Plazo de presentación** de proposiciones mínimo:
 
-Para contratos de suministro y de servicios, valor estimado <= 100.000 €
-
-Criterios de adjudicación
-
-En prestación de carácter no intelectual, los juicios de valor deben ser <25%
-
-En prestación intelectual, los juicios de valor deben ser <40%
-
-Plazo de presentación de proposiciones mínimo:
-
-Obras: 20 días
-
-Otros: 15 días
+- Obras: 20 días
+- Otros: 15 días
 
 **Procedimiento abierto simplificado abreviado**
 
 Condiciones para su aplicación:
 
-Criterio económico
-
-Para contratos de obras, valor estimado <= 80.000 €.
-
-Para contratos de suministros y servicios, valor estimado <= 60.000 €
-
-Tipo de prestación
-
-Solo prestación de carácter no intelectual
+- Criterio económico
+  - Para contratos de obras, valor estimado <= 80.000 €.
+  - Para contratos de suministros y servicios, valor estimado <= 60.000 €
+- Tipo de prestación
+  - Solo prestación de carácter no intelectual
 
 Plazo de presentación de proposiciones mínimo:
 
-Compras corrientes disponibles en el mercado: 5 días hábiles
-
-Otros: 10 días hábiles
+- Compras corrientes disponibles en el mercado: 5 días hábiles
+- Otros: 10 días hábiles
 
 No es necesaria la acreditación de la solvencia económica y financiera y técnica o profesional de los licitadores.
 
@@ -234,17 +223,12 @@ La versión estándar requiere publicidad.
 
 Solo se puede aplicar en un número de casos:
 
-Cuando requiera que los licitadores realicen un trabajo previo de diseño o adaptación.
-
-Cuando se trate de una solución innovadoras
-
-Cuando las negociaciones sean ineludibles.
-
-Cuando el órgano de contratación con puede precisar suficientemente las especificaciones.
-
-Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.
-
-Cuando se trate de contratos de servicios sociales personalísimos.
+- Cuando requiera que los licitadores realicen un trabajo previo de diseño o adaptación.
+- Cuando se trate de una solución innovadoras
+- Cuando las negociaciones sean ineludibles.
+- Cuando el órgano de contratación con puede precisar suficientemente las especificaciones.
+- Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.
+- Cuando se trate de contratos de servicios sociales personalísimos.
 
 **Procedimiento negociado sin publicidad**
 
@@ -254,11 +238,9 @@ Es similar al procedimiento negociado estándar pero no requiere publicidad.
 
 Requiere que se de una compleja lista de condiciones, entre ellas:
 
-No se haya presentado ninguna oferta; ninguna oferta adecuada; ninguna solicitud de participación; o ninguna solicitud de participación adecuada en respuesta a un procedimiento abierto o a un procedimiento restringido.
-
-Cuando las obras, los suministros o los servicios solo puedan ser encomendados a un empresario determinado.
-
-Cuando el contrato haya sido declarado
+- No se haya presentado ninguna oferta; ninguna oferta adecuada; ninguna solicitud de participación; o ninguna solicitud de participación adecuada en respuesta a un procedimiento abierto o a un procedimiento restringido.
+- Cuando las obras, los suministros o los servicios solo puedan ser encomendados a un empresario determinado.
+- Cuando el contrato haya sido declarado
 
 #### Diálogo competitivo
 
@@ -325,15 +307,11 @@ El órgano de contratación es, como norma general, la Dirección General de Rac
 
 Acuerdos marcos relevantes para IT:
 
-- AM 02/2023. Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo
-- AM 05/2023. Impresoras, fotocopiadoras y escáneres
-- AM 08/2021. Sistemas de seguridad
+- [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores). Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo
+- [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras). Impresoras, fotocopiadoras y escáneres
+- [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad). Sistemas de seguridad
 
-Hay que saberse los números de los acuerdos marcos.
-
-**AM 02/2023 {am022023}**
-
-<https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores>
+Es conveniente memorizar los códigos de los acuerdos marcos.
 
 #### Sistemas Dinámicos de Adquisición
 
@@ -390,9 +368,8 @@ Son disitntos los encargos a medios propios y las encomiendas de gestión.
 
 La definición de medio propio incluye:
 
-No tener inversión privada.
-
-No tener más de un 20% de actividad en sector privado.
+- No tener inversión privada.
+- No tener más de un 20% de actividad en sector privado.
 
 Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).
 
@@ -400,7 +377,7 @@ Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Ca
 
 Los procedimientos negociados sin publicidad no se publican.
 
-El resto de licitaciones se anuncian en la Plataforma de Contratación del Sector Público.
+El resto de licitaciones se anuncian en la [Plataforma de Contratación del Sector Público](https://contrataciondelestado.es/).
 
 Las licitación de organismos de la AGE se publican además en el Boletín Oficial del Estado.
 
@@ -439,9 +416,12 @@ El Pliego de Cláusulas Administrativas general (PCAG) consta de unas diapositiv
 
 El PCAP tiene carácter legal y contractual.
 
+
 En la administración pública nunca se contratan personas. Se contratan solamente servicios y se necesitan personas para cubrir esos servicios.
 
+
 En caso de retraso en al ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.
+
 
 Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.
 

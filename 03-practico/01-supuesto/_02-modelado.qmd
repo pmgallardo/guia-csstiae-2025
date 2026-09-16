@@ -1,5 +1,7 @@
 ## Modelado
 
+Cuando un apartado solicita un **modelo de datos**, en realidad está pidiendo se está pidiendo un modelo entidad-relación (E-R) o, en el paradigma de diagrama de clases, un diagrama de clases.
+
 ### Diagramas estáticos y dinámicos
 
 Los diagramas estáticos y dinámicos reseñados en este apartado son:
@@ -42,6 +44,11 @@ Consejos:
 
 #### Diagrama de flujo de datos
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2018.1
+:::
+
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Temas
@@ -52,7 +59,7 @@ Consejos:
 
 Diagrama de Flujo de Datos (DFD) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema.
 
-El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como diagrama de contexto, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.
+El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como **diagrama de contexto**, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.
 
 #### Modelo entidad-relación
 
@@ -67,6 +74,11 @@ El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el n
 Un modelo entidad-relacion (E/R) se puede presentar en caso de que se pida representar gráficamente las entidades de datos.
 
 #### Diagrama de clases
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2018.1
+:::
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia

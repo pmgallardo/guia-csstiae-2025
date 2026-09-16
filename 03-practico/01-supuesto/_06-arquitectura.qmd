@@ -2,10 +2,10 @@
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
-Convocatorias: 2023.
+Convocatorias/tareas: 2023.1, 2022.1, 2020.1, 2019.3, 2018.1
 :::
 
-La arquitectura lógica, a la que también se pueden referir como arquitectura de sistema (en singular), representa las distintas capas que posee el sistema.
+La **arquitectura lógica**, también referida en algunos ejercicios como **modelo lógico** o **arquitectura de sistema** (en singular), representa las distintas capas que posee el sistema.
 
 La arquitectura lógica suele incluir:
 
@@ -118,7 +118,7 @@ Durante el supuesto práctico se puede requerir al aspirante que proponga distin
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
-Conv. 2023.
+Convocatorias/tareas: 2023.1
 :::
 
 La identificación de dominios/subdominios funcionales se refiere a dividir el sistema en grandes áreas funcionales, agrupando las funciones que persiguen un mismo objetivo de negocio.
@@ -133,8 +133,16 @@ La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel s
 
 ### Arquitectura física
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2023.2, 2020.4, 2019.3, 2018.2
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
 - Referencias:
   - <https://runmodule.com/2027/03/30/network-architecture/>
+:::
 
 La arquitectura física implica especificar los componentes técnicos a emplear, ya sean físicos o virtuales.
 

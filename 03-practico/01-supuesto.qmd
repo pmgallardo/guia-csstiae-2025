@@ -1,5 +1,15 @@
 # Supuesto práctico
 
+Las preguntas más habituales en el supuesto práctico sonL
+
+- Arquitectura lógica
+- Solución tecnológica
+- ENS
+- Arquitectura física
+- Planificación temporal
+- Metodología de desarrollo
+
+
 Un proceso general sería:
 
 Modelado → Dimensionamiento → Costes → Contratación → Planificación temporal
@@ -11,10 +21,6 @@ Un ejemplo de decisiones que reducen el esfuerzo de desarrollo la aplicación de
 ## Introducción al supuesto práctico
 
 Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).
-
-### IA (supuesto práctico)
-
-Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervisado dependiendo de si se cuenta con un conjunto de entrenamiento etiquetado.
 
 ### Certificados electrónicos (supuesto práctico)
 
@@ -41,8 +47,9 @@ Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervi
 {{< include /03-practico/01-supuesto/_06-arquitectura.qmd >}}
 {{< include /03-practico/01-supuesto/_07-interoperabilidad.qmd >}}
 {{< include /03-practico/01-supuesto/_08-tecnologia.qmd >}}
-{{< include /03-practico/01-supuesto/_09-dimensionamiento.qmd >}}
-{{< include /03-practico/01-supuesto/_10-costes.qmd >}}
-{{< include /03-practico/01-supuesto/_11-contratacion.qmd >}}
-{{< include /03-practico/01-supuesto/_12-planificacion.qmd >}}
-{{< include /03-practico/01-supuesto/_13-realizacion-prac.qmd >}}
+{{< include /03-practico/01-supuesto/_09-herramientas.qmd >}}
+{{< include /03-practico/01-supuesto/_10-dimensionamiento.qmd >}}
+{{< include /03-practico/01-supuesto/_11-costes.qmd >}}
+{{< include /03-practico/01-supuesto/_12-contratacion.qmd >}}
+{{< include /03-practico/01-supuesto/_13-planificacion.qmd >}}
+{{< include /03-practico/01-supuesto/_14-realizacion-prac.qmd >}}

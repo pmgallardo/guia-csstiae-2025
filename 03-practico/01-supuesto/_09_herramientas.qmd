@@ -1,0 +1,55 @@
+## Herramientas
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2026.4.c
+:::
+
+### Configuración de infraestructuras
+
+**Ansible** es la herramienta más extendida en la AGE para la gestión de la configuración.
+
+**Terraform** se emplea dentro de NubeSARA.
+
+### Edición de código
+
+Los editores de desarrollo integrado (IDE) empleados en la AGE dependen de la tecnología empleada.
+
+Para el ecosistema Java, se emplea Eclipse IDE.
+
+Para el ecosistema JavaScript (incluyendo TypeScript), se emplea Visual Studio Code.
+
+Para el ecosistema Microsoft, se emplea Microsoft Visual Studio.
+
+### Control de versiones
+
+**Git** es el sistema de control de versiones (*control version system*, CVS) de software más utilizado en la AGE. Se suelen emplear las plataformas **GitLab Enterprise** o **Bitbucket**.
+
+### Repositorios de artefactos
+
+Los repositorios de artefactos llevan la gestión de dependencias.
+
+Opciones comunes en la AGE son **Nexus Repository** y **JFrog Artifactory**.
+
+### Servicio ITIL
+
+**ServiceNow** es usado en grandes organismos.
+
+**GLPI** es una alternativa de código abierto usado en algunos organismos medianos de la AGE.
+
+BMC Remedy está presente en la AGE, pero de modo más legacy.
+
+### Cuadros de mando
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2018.7
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Temas
+  - 33. Herramientas de planificación y control de gestión de la función del directivo de sistemas y tecnologías de la información en la Administración. El cuadro de mando.
+:::
+
+El cuadro de mano debe reflejar aspectos como indicadores o factores de éxito.

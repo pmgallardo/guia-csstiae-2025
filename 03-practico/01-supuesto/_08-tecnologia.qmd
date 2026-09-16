@@ -1,16 +1,30 @@
 ## Tecnología
 
-Apuntes sobre tecnologías empleadas en la AGE.
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2023.2, 2022.2, 2020.2, 2019.3, 2018.2
+:::
 
-El [Observatorio de la Administración Electrónica (OBSAE)](https://dataobsae.administracionelectronica.gob.es) puede ser una buena fuente.
+El supuesto práctico suele incluir un apartado en el que se pregunta sobre las tecnologías tecnologías a emplear en el sistema. Se puede refererir a ella como **tecnologías**, **solución tecnológica** o **implementación tecnológica**.
+
+La propuesta tecnológica debe ir debidamente justificada, amparada por su asentamiento en la industria o en la AGE o por su adecuación. Emplear tecnologías habituales en la AGE puede demostrar al Tribunal familiaridad e interés del aspirante por la institución y además valoración de la reutilización de conocimientos y personal ya existente.
+
+Se debe considerar que en el sector público se suele priorizar la madurez y la estabilidad y esto se debe reflejar en la selección de tecnologías. No obstante, es posible que para cierto tipo de sistemas más innovadores sea adecuado escoger una tecnología menos habitual o más puntera.
+
+Algunas fuentes para consultar el uso de tecnologías concretas en la AGE:
+
+- El [Observatorio de la Administración Electrónica (OBSAE)](https://dataobsae.administracionelectronica.gob.es).
+- Pliegos de licitaciones
 
 ### Tecnologías según contexto
 
 #### Lenguajes de programación
 
-El lenguaje de programación más empleado en la AGE es Java.
+El lenguaje de programación más empleado en la AGE para servidores back-end y aplicaciones de escritorio (este último en declive) es Java.
 
-.NET también tiene cierta presencia en la AGE. En caso alguna de optar por emplear alguna tecnología de Microsoft en una de las capas, se recomienda emplearla también en el resto para aprovechar las sinergias de emplear software de un mismo fabricante.
+Para servidor front-end, TypeScript (con el framework Angular) seguido por JavaScript (con el framework React) son los lenguajes más empleados.
+
+.NET también tiene una presencia importante en la AGE.
 
 #### Tecnología web front-end
 
@@ -78,17 +92,21 @@ Por ejemplo, MuleSoft AnyPoint Plaform incluye MuleSoft API Gateway, mientras qu
 
 Una opción de código abierto centrada en la funcionalidad de API gateway es **Kong API Gateway** Community Edition (CE). El API manager completo Kong Manager sería de pago.
 
-### Ecosistemas de tecnologías
+### Stack de tecnologías
 
-En la AGE se pueden encontrar principalmente tres ecosistemas genéricos:
+ Se conoce como stack a la combinación de combinación de tecnologías empleada en un sistema. A la hora de proponer el stack en el supuesto práctico, se debe reflexionar cuál es el más adecuado en base a distintos criterios.
+ 
+ Hay combinaciones de tecnologías encontradas con más **frecuencia** que otras. Por ejemplo, es habitual encontrar Angular para el front y Spring Boot para el backend, mientras que es menos habitual encontrar Angular para el front y .NET para el backend. Puesto que se busca un sistema maduro y estable, conviene sugerir un stack habitual.
 
-- Oracle
-- Microsoft
-- Código abierto
+Otro criterio importante es la elección de **stacks ya habituales en la AGE**, con la ventaja de contar con familiaridad en la institución y el facilitar la búsqueda de perfiles relacionados.
 
-Como norma general, no se considera una buena práctica mezclar tecnologías de distintos fabricantes, con la excepción de si se trata de alguna de las soluciones de código abierto.
+A continuación se proponen tres ecosistemas o stacks de tecnologías habituales:
 
-#### Oracle
+- Pro-Oracle
+- Pro-Microsoft
+- Pro-código abierto
+
+#### Pro-Oracle
 
 Stack genérico empleando tecnologías propias del ecosistema Oracle:
 
@@ -98,25 +116,51 @@ Stack genérico empleando tecnologías propias del ecosistema Oracle:
 - Servidor aplicación: Oracle Weblogic
 - Base de datos: Oracle Database
 
-Angular no es nativo del ecosistema Oracle, pero está bien integrado y suele ser una opción habitual. Oracle JET sería el framework front nativo de Oracle, pero este no es tan popular en la AGE como Angular.
+Angular no es nativo del ecosistema Java o pro-Oracle, pero está bien integrado en él y suele ser una opción habitual. Oracle JET sería el framework frontend nativo de Oracle, pero este no es tan popular en la AGE como Angular.
 
 Una alternativa también común en la AGE a Oracle Weblogic es IBM WebSphere, ambos propietarios.
 
-#### Microsoft
+#### Pro-Microsoft
 
-El ecosistema de Microsoft no suele ser la primera opción, pero también se puede encontrar en la AGE.
+El ecosistema pro-Microsoft tiene cierta presencia en la AGE, si bien no es ubicua.
 
-Stack genérico empleando tecnologías propias del ecosistema Microsoft:
+Sugerencia de stack genérico empleando tecnologías propias del ecosistema Microsoft:
 
-- Lenguaje de programación: C#
-- Framework full-stack: .NET
+- Framework frontend: ASP.NET (C#)
 - Servidor web / aplicación: IIS (Windows Server)
+- Framework backend : .NET
+- Framework escritorio: WPF
+- Framework móvil: .NET MAUI
 - Base de datos: Microsoft Server SQL
 
-#### Código abierto
+Como alternativa más moderna al framework frontend se puede usar Blazor, que permite crear aplicaciones web interactivas con C#. No obstante, de momento Blazor es poco popular en la AGE respecto a ASP.NET, pero sobre todo respecto a Angular o React.
+
+Se propone Windows Presentation Foundation (WPF) como framework de escritorio, con la nota de que la tendencia actual de la AGE es ofrecer interfaces web en lugar de aplicaciones de escritorio. La tecnología Windows Forms (WinForms) está presente en la AGE como legacy, y no sería adecuada para nuevos sistemas.
+
+Se propone .NET MAUI (sucesor de Xamarin) como framework de aplicaciones móviles del ecosistema pro-Microsoft, si bien no es usado habitualmente en la AGE.
+
+#### Pro-código abierto
+
+Propoponer un stack de código abierto otorga la ventaja de evitar costes de licenciamiento (reduciendo costes y poder agilizar los plazos de contratación) y eliminar la dependencia del proveedor (*vendor lock-in*).
 
 - Framework front: Angular (TypeScript)
-- Servidor web: Apache HTTP Server / Nginx
+- Servidor web: Apache HTTP Server / Nginx (contenedores)
 - Framework backend: Spring Boot (Java)
 - Servidor aplicación: RedHat WildFly (monolítico) / Apache Tomcat (microservicios)
 - Base de datos: PostgreSQL
+
+### IA (supuesto práctico)
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2019.7
+:::
+
+Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervisado dependiendo de si se cuenta con un conjunto de entrenamiento etiquetado.
+
+## Datos
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2020.6
+:::

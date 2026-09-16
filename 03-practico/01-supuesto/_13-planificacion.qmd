@@ -45,6 +45,11 @@ Consejos generales:
 
 ### Metodologías de desarrollo
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2022.4.c, 2019.5, 2018.4
+:::
+
 Es necesario especificar una metodología de desarrollo.
 
 En caso de escoger alguna metodología ágil basada en SCRUM, se debe dividir el proyecto en funcionalidad que se estimen que tengan una complejidad y esfuerzo similar y que se puedan completar en sprints de duración 2-4 semanas. De manera práctica y de cara a este ejercicio, muchos candidatos optan por hacerlo en sprints de 2 ó 4 semanas, que son más fáciles de representar en un diagrama de Gantt dividido en meses.
@@ -84,7 +89,12 @@ Acciones que se realizan durante la EVS:
 
 ### Representación de la planificación temporal
 
-Habitualmente se representa la planificación temporal mediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar la duración de las tareas y su secuencia en el tiempo.
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2023.4, 2022.4.a, 2020.7, 2018.4
+:::
+
+La representación de la planificación temporal, también llamado cronograma, se realiza habitualmentemediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar la duración de las tareas y su secuencia en el tiempo.
 
 La representación de la planificación debe reflejar el modelo de ciclo de vida y la metodología de desarrollo escogida.
 

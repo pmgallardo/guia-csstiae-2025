@@ -1,5 +1,10 @@
 ## Costes {#costes}
 
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2023.4
+:::
+
 Los costes finales son proporcionales al dimensionamiento de recursos. Se debe multiplicar el precio de cada recurso por la cantidad de recuros, por cada tipología.
 
 ### Costes por desarrollo de software
