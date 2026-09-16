@@ -52,4 +52,4 @@ Este documento es un resumen de información relevante para la preparación de l
 {{< include /03-practico/01-supuesto/_11-costes.qmd >}}
 {{< include /03-practico/01-supuesto/_12-contratacion.qmd >}}
 {{< include /03-practico/01-supuesto/_13-planificacion.qmd >}}
-{{< include /03-practico/01-supuesto/_14-realizacion-prac.qmd >}}
+{{< include /03-practico/01-supuesto/_14-realizacion-supuesto.qmd >}}

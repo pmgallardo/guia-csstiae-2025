@@ -60,3 +60,4 @@ La valoración del Tribunal del análisis pormenorizado se realiza tras la lectu
 {{< include /03-practico/02-analisis/_07-transversales.qmd >}}
 {{< include /03-practico/02-analisis/_08-especificas.qmd >}}
 {{< include /03-practico/02-analisis/_09-test.qmd >}}
+{{< include /03-practico/02-analisis/_10-realizacion-analisis.qmd >}}
