@@ -1,4 +1,4 @@
-## Contratación pública
+## Contratación
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -41,17 +41,13 @@ En este apartado se resume el proceso de contratación pública, tal y como se p
 
 Pasos del proceso de contratación en el supuesto práctico:
 
-1. Asignar cada uno de los gastos a una **tipología de contratación según objeto** (ej.: suministros, servicios)
-2. Comprobar si aplica la **tramitación urgente**
-3. Incluir todos los gastos posibles en **contratación centralizada** (ej.: AM, SDA).
-4. Evaluar el **procedimiento de contratación** aplicable a los gastos restantes
-5. Dividir en lotes
-6. Comprobar si el contrato está sujeto a regulación armonizada (SARA), y en caso afirmativo, explicar implicaciones.
-7. Comprobar si el contrato debe ser aprobado por Consejo de Ministros (>12M€).
-
-Evaluación del proceso de contratación:
-- Escoger el proceso de contratación más simplificado y rápido disponible.
-- Si se aplica trámite de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
+1. **Tipología**: Asignar cada uno de los gastos a una tipología de contratación según objeto (ej.: suministros, servicios)
+2. **Urgencia**: Comprobar si aplica la tramitación urgente
+3. **Centralización**: Incluir todos los gastos posibles en contratación centralizada (ej.: AM, SDA).
+4. **Descentralización**: Evaluar el procedimiento de contratación aplicable a los gastos restantes
+5. **SARA**: Comprobar si el contrato está sujeto a regulación armonizada (SARA), y en caso afirmativo, explicar implicaciones.
+6. **Consejo de Ministros**: Comprobar si el contrato debe ser aprobado por Consejo de Ministros (>12M€).
+7. **Lotes**: Dividir en lotes
 
 Resumen de tipologías de contratación pública, con sus límites y tiempos:
 
@@ -64,16 +60,23 @@ Resumen de tipologías de contratación pública, con sus límites y tiempos:
 | Procedimiento abierto simplificado | < 140.000 € | 4 meses |
 | Procedimiento abierto | Sin límite | 6 meses |
 
+En este resumen los límites están simplificados y focalizados en servicios de desarrollos (como el SDA 26/2021) en los casos en los que haya varias casuísticas.
+
 Contratación centralizada más relevante:
 
 | Código | Descripción |
 | - | - |
 | [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores) | Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo |
-| [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras). Impresoras, fotocopiadoras y escáneres |
+| [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras) | Impresoras, fotocopiadoras y escáneres |
 | [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad) | Sistemas de seguridad |
 | [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software) | Suministro de software |
 | [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo) | Servicios de desarrollo |
 | [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores) | Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento |
+
+Evaluación del proceso de contratación:
+
+- Escoger el proceso de contratación más simplificado y rápido disponible.
+- Si se aplica trámite de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
 
 ### Conceptos generales de contratación pública
 
@@ -206,9 +209,9 @@ Acuerdos marcos relevantes para IT:
 
 #### Sistemas Dinámicos de Adquisición
 
-Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.
+Cada Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años, y cada uno de ellos puede aplicar restricciones particulares que no apliquen al resto de SDAs..
 
-Durante su vigencia se permiten que salgan y entren empresas.
+Durante su vigencia se permiten que salgan y entren empresas, representando a un "club de proveedores" que tienen acceso a las licitaciones rápidas.
 
 SDAs relevantes para TI:
 
@@ -227,7 +230,7 @@ Lote 6: Sw de productividad y colaboración
 
 ##### SDA 26/2021. Servicios de desarrollo {#sda262021}
 
-SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.
+SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales. Esta cláusula fue introducida por la Dirección Ge
 
 ##### SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}
 
@@ -480,6 +483,14 @@ No se requerirá la aprobación del gasto, pero sí la incorporación al expedie
 Los contratos menores NO son susceptbiles de prórroga.
 
 Según los apuntes de Andreu Bosa, lleva un mes su tramitación.
+
+### (Paso 8) División en lotes
+
+Está regulado en el artículo 99 del LCSP.
+
+Es obligatorio realizar lotes. El mínimo de lotes es 2, y no hay máximo. Se suelen dividir por criterios funcionales o geográficos.
+
+Si divides un gran contrato en lotes y la suma es SARA, la ley permite que algunos lotes pequeños (que no superen los 80.000 € en servicios/suministros o 1 millón en obras) se libren de la burocracia SARA, siempre que la suma de esos lotes "liberados" no supere el 20% del valor total del proyecto.
 
 ### Anuncios de licitaciones públicas
 
