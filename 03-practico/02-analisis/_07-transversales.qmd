@@ -130,6 +130,11 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
   - Observatorio de Accesibilidad
 - Estándares
   - EN 301 549
+- Guías
+  - WCAG
+- Temas
+  - 44. Accesibilidad y usabilidad
+  - 46. Discapacidad
 - Referencias
   - <https://runmodule.com/2026/12/17/accesibilidad-digital-en-el-sector-publico-en-espana/>
 :::

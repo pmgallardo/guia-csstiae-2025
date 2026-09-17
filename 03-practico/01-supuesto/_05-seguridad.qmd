@@ -175,6 +175,8 @@ Obtener consentimiento del tratamiento de datos.
 
 La Evaluación de Impacto en la Protección de Datos (EIPD) se 
 
+### Certificados electrónicos (supuesto práctico)
+
 ### Autenticación
 
 La autenticación en el sistema se puede realizar mediante distintos medios, cuyo uso se debe valorar dependiendo del sistema del enunciado:

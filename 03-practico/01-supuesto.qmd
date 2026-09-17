@@ -22,24 +22,6 @@ Un ejemplo de decisiones que reducen el esfuerzo de desarrollo la aplicación de
 
 Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).
 
-### Certificados electrónicos (supuesto práctico)
-
-### Accesibilidad (supuesto práctico)
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-
-* **📐 Estándares:**
-  * EN 301 549
-* **📖 Guías:**
-  * WCAG
-* **🎯 Temas:**
-  * 44. Accesibilidad y usabilidad
-  * 46. Discapacidad
-* **🔗 Referencias de consulta:**
-  * [Web Accessibility (RunModule, 2025)](https://runmodule.com/2025/09/25/web-accessibility/)
-:::
-
 {{< include /03-practico/01-supuesto/_02-modelado.qmd >}}
 {{< include /03-practico/01-supuesto/_03-infr-comunes.qmd >}}
 {{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
