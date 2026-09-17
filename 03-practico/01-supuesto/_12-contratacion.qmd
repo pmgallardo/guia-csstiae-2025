@@ -1,4 +1,4 @@
-## Contratación
+## Contratación pública
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -26,32 +26,80 @@ Convocatorias/tareas: 2020.8, 2019.5
 
 En este apartado se cubren aspectos relacionados con la contratación en la Administración General del Estado (AGE).
 
+Lo más importante de este tema de cara al supuesto práctico es ser capaz de:
+
+- Identificar si un contrato es SARA, y en caso afirmativo, comprender sus implicaciones
+- Distinguir los distintos procedimientos de contrataciones con sus umbrales y conocer los tiempos de espera que requieren
+- Identificar los acuerdos marcos (AM) más relevantes para IT, saber cuándo aplicarlos
+- Identificar los sistemas dinámicos de adquisición (SDA) más relevantes para IT, y saber cuándo aplicarlos
+
+Conocer los tiempos que implica la contratación es un requisito necesario para realizar la planificación temporal, que es solicitada a menudo en el supuesto práctico.
+
+### Proceso de contratación en supuesto práctico
+
+En este apartado se resume el proceso de contratación pública, tal y como se plantea en el supuesto práctico. Como requisito para poder comenzar la contratación, se deben haber identificado todos sus costes junto con su naturaleza.
+
+Pasos del proceso de contratación en el supuesto práctico:
+
+1. Asignar cada uno de los gastos a una **tipología de contratación según objeto** (ej.: suministros, servicios)
+2. Comprobar si aplica la **tramitación urgente**
+3. Incluir todos los gastos posibles en **contratación centralizada** (ej.: AM, SDA).
+4. Evaluar el **procedimiento de contratación** aplicable a los gastos restantes
+5. Dividir en lotes
+6. Comprobar si el contrato está sujeto a regulación armonizada (SARA), y en caso afirmativo, explicar implicaciones.
+7. Comprobar si el contrato debe ser aprobado por Consejo de Ministros (>12M€).
+
+Evaluación del proceso de contratación:
+- Escoger el proceso de contratación más simplificado y rápido disponible.
+- Si se aplica trámite de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
+
+Resumen de tipologías de contratación pública, con sus límites y tiempos:
+
+| Tipología | Límite importe (serv. y sum.) | Tiempo para comenzar |
+| - | - | - |
+| Encargos a medios propios | sin límite | Inmediato |
+| Contrato menor | < 15.000 € | 1 mes |
+| Contratación centralizada | < 862.000 € | 2 meses |
+| Procedimiento abierto simplificado abreviado | < 60.000 €  | 2 meses |
+| Procedimiento abierto simplificado | < 140.000 € | 4 meses |
+| Procedimiento abierto | Sin límite | 6 meses |
+
+Contratación centralizada más relevante:
+
+| Código | Descripción |
+| - | - |
+| [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores) | Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo |
+| [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras). Impresoras, fotocopiadoras y escáneres |
+| [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad) | Sistemas de seguridad |
+| [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software) | Suministro de software |
+| [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo) | Servicios de desarrollo |
+| [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores) | Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento |
+
+### Conceptos generales de contratación pública
+
+#### Marco normativo de contratación pública
+
 La Directiva 2014/24 es la más general de las de la UE relativas a la contratación del sector público. Esta se traspuso en la [ley 9/2017](02-analisis#BOE-A-2017-12902), también conocida como CSP2 o LCSP, que es la norma principal en el estudio de este apartado.
 
 El resumen de los tipos de contratación de servicios y suministros, los más comunes en el supuesto práctico, junto con su restricción en el valor estimado, son los siguientes:
 
-| Tipo de contrato | Límite importe | Tiempo |
-| - | - | - |
-| Encargos a medios propios | | |
-| Contrato menor | < 15.000 € | 1 mes |
-| Contratación centralizada | < 862.000 € | 2 meses |
-| Procedimiento abierto simplificado abreviado | < 60.000 € |  |
-| Procedimiento abierto simplificado | < 143.000 € |  |
-| Procedimiento abierto | Sin límites | 6 meses |
+#### Conceptos relacionados con contratos
 
-Consejos generales:
-- Para entregar el sistema en el menor plazo posible, conviene escoger el proceso de contratación más simplificado y rápido disponible.
-- Los trámites de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
-- Es conveniente comprobar si debido al importe están sujetos a regulación armonizada (SARA). El límite para la AGE en servicios y suministros es 143.000 €.
-- Cuando el importe del contrato supere los 12.000.000 € debe aprobarse también por el Consejo de Ministros.
-
-### Presupuesto de los contratos
-
+- Expedientes
+- Lotes
 - Presupuesto base de licitación
 - Valor estimado
 - Precio
 
-#### Presupuesto base de licitación
+##### Expedientes {.unnumbered .unlisted}
+
+Los expedientes representan una serie de necesidades relacionadas con un mismo proyecto.
+
+##### Lotes {.unnumbered .unlisted}
+
+Los expedientes se dividen en lotes. Cada lote tiene su propia licitación.
+
+##### Presupuesto base de licitación {.unnumbered .unlisted}
 
 El presupuesto base de licitación es el límite máximo de gasto que en virtud del contrato puede comprometer el órgano de contratación, incluido el Impuesto sobre el Valor Añadido (IVA).
 
@@ -59,50 +107,201 @@ No incluye prórrogas.
 
 Incluye IVA.
 
-#### Valor estimado
+##### Valor estimado {.unnumbered .unlisted}
 
 El valor estimado incluye todas las prórrogas y modificaciones.
 
 NO incluye IVA.
 
-### Tipos de contratación pública según su objeto
+#### Proceso interno de contratación
 
-Tipos de contratación según su objeto:
+El proceso de contratación pública requiere una serie de tareas internas en la AAPP, que de cara al supuesto práctico generalmente se obvian aunque siguen siendo cuestionables, como por ejemplo:
+
+- Revisión de jurídico.
+- Realización del presupuesto.
+- Fiscalización de Intervención.
+- Convocatoria de Mesa de Contratación se convoca con carácter prioritario.
+- Realización de informes de valoración técnica.
+- Firmas.
+
+### (Paso 1) Tipología de contratación pública según su objeto
+
+La LCSP considera las siguientes tipologías de contratación pública según su objeto:
 
 - Obras
 - Concesión de obras
 - Servicios
-- Concesión de Servicios
+- Concesión de servicios
 - Suministros
 - Mixto
 
-Las licencias de software se considera suministro, mientras que el software a medida se considera un servicio.
+| Objeto | Art. LCSP |
+| - | - |
+| Obras | 13 |
+| Concesión de obras |  14 |
+| Servicios | 15 |
+| Concesión de servicios | 17  |
+| Suministros | 16  |
+| Mixto | 18 |
 
-#### Obras
-
-El contrato de obras se regula en el art. 13 de la ley 9/2017.
+Las licencias de software se considera suministro, mientras que el desarrollo de software se considera un servicio. En el supuesto práctico lo habitual es que se consideren solo estas dos tipologías junto con mixto.
 
 #### Mixto
 
-En el contrato mixto se recogen varios objetos de contratación. 
+En el contrato mixto se recogen varias tipologías distintas en un mismo objetos de contratación. 
 
 En caso de contrato mixto, se distingue entre la preparación y adjudicación del contrato, donde se recogen las normas que establecen las Directivas, y los efectos y extinción.
 
-Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas del contrato cuya prestación sea la principal o cuyo valor estimado sea más elevado.
+Respecto de la preparación y adjudicación, la regla general es que al contrato mixto se le aplican las normas de la tipología cuya prestación sea la principal o cuyo valor estimado sea más elevado.
 
-### Regulación armonizada SARA
+### (Paso 2) Tramitación de urgencia
 
-La regulación armonizada (SARA) es una regulación que se aplica solamente a contratos que cumplen ciertas características.
+La tramitación de urgencia se regula en el art. 119 de la LCSP.
 
-La regulación armonizada se aplica cuando el valor estimado del contrato sobrepasa el umbral de:
+Se puede declarar la urgencia en un expediente de contratación cuando se cumpla alguna de estas condiciones:
 
-- 143.000 € para la AGE en contratos de suministros y servicios
-- 221.000 € para organismos distintos a la AGE en contratos de suministros y servicios
-- 5.538.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo)
+- La Administración tiene que actuar de manera inaplazable.
+- Es necesario acelerar la adjudicación por razones de interés público.
 
-Estos importes se establecen en la Orden HFP/1352/2023.
+Como normal general, los tiempos se reducen a la mitad.
 
-Una de las implicaciones de la regulación armonizada es que los contratos bajo la misma deben publicarse en el Diario Oficial de la Unión Europea.
+Como nota, hay subprocesos dentro de la contratación qeu no pueden ser reducidos, como las alegaciones no el plazo de presentación de ofertas de los procesos simplificados. No obstante, el proceso de contratación completo sigue reduciéndose a la mitad.
+
+### (Paso 3) Contratación centralizada
+
+Modalidades dentro de la contratación centralizada:
+
+- Acuerdo marco (AM)
+- Sistema dinámico de adquisición (SDA)
+- Contratos centralizados
+- Encargos a medios propios
+
+Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.
+
+Se pueden revisar el catálogo en la página oficial:
+
+[Página web del catálogo de contratación centralizada](https://contratacioncentralizada.gob.es/catalogo)
+
+La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.
+
+La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.
+
+#### Acuerdos Marco
+
+La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.
+
+En caso de que no estén todos los términos o condiciones fijados hay que añadir una segunda fase en la que hay que contactar a los proveedores.
+
+En caso de contratos SARA hay que contactar a todos los proveedores del acuerdo marco.
+
+En caso de contratos no SARA es suficiente con contactar con 3 proveedores.
+
+El órgano de contratación es, como norma general, la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).
+
+Acuerdos marcos relevantes para IT:
+
+- [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores). Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo
+- [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras). Impresoras, fotocopiadoras y escáneres
+- [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad). Sistemas de seguridad
+
+#### Sistemas Dinámicos de Adquisición
+
+Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.
+
+Durante su vigencia se permiten que salgan y entren empresas.
+
+SDAs relevantes para TI:
+
+- [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software). Suministro de software
+- [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo). Servicios de desarrollo
+- [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
+
+##### SDA 25/2022. Suministro de software {#sda252022}
+
+Lote 1: Sw de sistema para la ejecución y desarrollo de aplicaciones
+Lote 2: Sw para la gestión de infraestructura
+Lote 3: Sw para la analítica de datos
+Lote 4: Sw de ciberseguridad
+Lote 5: Sw de aplicación para la administración digital
+Lote 6: Sw de productividad y colaboración
+
+##### SDA 26/2021. Servicios de desarrollo {#sda262021}
+
+SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.
+
+##### SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}
+
+Lote 1: Equipos de comunicaciones
+Lote 2: Servidores y sistemas de almacenamiento 
+
+#### Contratos centralizados
+
+Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.
+
+En el caso de telecomunicaciones existen 4 lotes:
+
+- Lote 1. Fijo. Adjudicado a Telefónica
+- Lote 2: Móviles. Otorgado a Vodafone
+- Lote 3: Internet. Otorgado a Telefónica.
+- Lote 4: Internacional. Adjudicado a British Telecom (BT)
+
+### Modificación de Contratos
+
+Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.
+
+#### Encargos a medios propios
+
+Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.
+
+Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.
+
+Son disitntos los encargos a medios propios y las encomiendas de gestión.
+
+La definición de medio propio incluye:
+
+- No tener inversión privada.
+- No tener más de un 20% de actividad en sector privado.
+
+Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).
+
+### (Paso 5) Regulación armonizada SARA
+
+La **regulación armonizada** o **SARA** es aquella se aplica a contratos del sector público de la UE que cumplen ciertas condiciones. Estas están especificadas en la Sección 2.ª "Contratos sujetos a una regulación armonizada" (a partir del artículo 19) la LCSP. Esta parte suele ser actualizada regularmente mediante órdenes. En 2026, la última orden aplicada fue la Orden HAC/1517/2025.
+
+Un **contrato de regulación armonizada** o **contrato SARA** es aquel sobre el que se aplica la regulación armonizada.
+
+#### Condiciones SARA {.unnumbered .unlisted}
+
+Desde 2026, SARA se aplica cuando el valor estimado del contrato sobrepasa el **
+umbral** de:
+
+- 140.000 € para la AGE en contratos de suministros y servicios
+- 216.000 € para organismos distintos a la AGE en contratos de suministros y servicios
+- 750.000 € para contratos de servicios sociales y especiales especificados en el Anexo IV de la LCSP 
+- 5.404.000 € en contratos de obras, concesión de obras y de concesión de servicio (para cualquier organismo)
+
+Existen una serie de excepciones en los que no se aplica SARA especificadas en los art. 19.2. De manera muy sintetizada, serían los contratos relacionados con los servicios siguientes:
+
+- Comunicación audiovisual
+- Defensa
+- Secretos o reservados
+- Comunicaciones
+- Servicios jurídicos
+- Defensa civil, protección civil o gestión de riesgos
+- Transporte público
+- Abastecimiento y tratado de agua
+
+#### Implicaciones SARA {.unnumbered .unlisted}
+
+El resumen de las implicaciones para los contratos bajo regulación armonizada respecto las no SARA son:
+
+- El anuncio deben publicarse en el Diario Oficial de la Unión Europea (en lugar del BOE).
+- Plazos más largos y pasos adicionales que ralentizan el proceso.
+- Rigidez en las modificaciones.
+
+### Aprobación por Consejo de Ministros
+
+El Consejo de Ministros debe aprobar el contrato cuando su importe supere los 12.000.000 €. Esto está definido en el art. 32.6.c del LCSP.
 
 ### Plazo de ejecución
 
@@ -136,19 +335,23 @@ La plataforma para realizar contratación es Conecta-Contratación.
 
 Los contratos sujetos a contratación armonizada se llaman también contratos SARA.
 
+Los tiempos para comenzar se reducen aproximadamente a la mitad en caso de tramitación urgente.
+
+Sobre los tiempos para comenzar, habría que sumar el necesario para la preparación del contrato (redaccción de la Memoria Justificativa, Pliegos Técnicos y Administrativos, etc.).
+
 #### Procedimiento abierto
 
 Un procedimientos abierto se denomina así ya que cualquiera puede licitar al mismo.
 
 Existen varios subtipos de procedimiento abierto:
 
-- Procedimiento abierto (estándar)
+- Procedimiento abierto (ordinario)
 - Procedimiento abierto simplificado
 - Procedimiento abierto simplificado abreviado
 
-**Procedimiento abierto estándar**
+##### Procedimiento abierto (ordinario) {.unnumbered .unlisted}
 
-El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto estándar para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.
+El procedimiento abierto es el ordinario de contratación. Se le llama en este apartado procedimiento abierto ordinario para distinguirlo de variantes como el simplificado y el abreviado, aunque este no sea su nombre oficial.
 
 El plazo de presentación de proposiciones es:
 
@@ -161,13 +364,15 @@ Si se aceptan propuestas de ofertas por medios electrónicos, reducen los plazos
 
 No tiene restricciones respecto al importe del contrato.
 
-**Procedimiento abierto simplificado**
+##### Procedimiento abierto simplificado {.unnumbered .unlisted}
+
+El procedimiento abierto simplificado se regula en el art. 159 del LCSP.
 
 Condiciones para su aplicación:
 
 - Criterio económico
   - Para contratos de obras, valor estimado <= 2.000.000 €
-  - Para contratos de suministro y de servicios, valor estimado <= 100.000 €
+  - Para contratos de suministro y de servicios, valor estimado <= 140.000 €
 - Criterios de adjudicación
   - En prestación de carácter no intelectual, los juicios de valor deben ser <25%
   - En prestación intelectual, los juicios de valor deben ser <40%
@@ -177,7 +382,9 @@ Condiciones para su aplicación:
 - Obras: 20 días
 - Otros: 15 días
 
-**Procedimiento abierto simplificado abreviado**
+El procedimiento abierto simplificado es incompatible con SARA, por ello los umbrales económicos del p.a.s. son los mismos que SARA y de hecho la ley los referencia directamente.
+
+##### Procedimiento abierto simplificado abreviado {.unnumbered .unlisted}
 
 Condiciones para su aplicación:
 
@@ -213,7 +420,7 @@ Existen dos tipos:
 - Procedimiento con negociación [estándar]
 - Procedimiento con negociación sin publicidad
 
-**Procedimiento con negociación estándar**
+##### Procedimiento con negociación estándar {.unnumbered .unlisted}
 
 Viene recogido en el artículo 167 de la LCSP.
 
@@ -230,9 +437,9 @@ Solo se puede aplicar en un número de casos:
 - Cuando no se haya recibido nada aceptable tras realizar un procedimiento abierto o restringido.
 - Cuando se trate de contratos de servicios sociales personalísimos.
 
-**Procedimiento negociado sin publicidad**
+##### Procedimiento negociado sin publicidad {.unnumbered .unlisted}
 
-Regulado en el artículo 168 LCSP.
+Regulado en el artículo 168 del LCSP.
 
 Es similar al procedimiento negociado estándar pero no requiere publicidad.
 
@@ -274,106 +481,7 @@ Los contratos menores NO son susceptbiles de prórroga.
 
 Según los apuntes de Andreu Bosa, lleva un mes su tramitación.
 
-#### Contratación centralizada
-
-Modalidades dentro de la contratación centralizada:
-
-- Acuerdo marco
-- Sistema dinámico de adquisición (SDA)
-- Contratos centralizados
-- Encargos a medios propios
-
-Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.
-
-Se pueden revisar el catálogo en la página oficial:
-
-[Página web del catálogo de contratación centralizada](https://contratacioncentralizada.gob.es/catalogo)
-
-La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.
-
-La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.
-
-#### Acuerdos Marco
-
-La duración máxima de un acuerdo marco es de 2 años prorrogables a otros 2. Durante el plazo de vigencia del acuerdo marco no pueden entrar más proveedores.
-
-En caso de que no estén todos los términos o condiciones fijados hay que añadir una segunda fase en la que hay que contactar a los proveedores.
-
-En caso de contratos SARA hay que contactar a todos los proveedores del acuerdo marco.
-
-En caso de contratos no SARA es suficiente con contactar con 3 proveedores.
-
-El órgano de contratación es, como norma general, la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).
-
-Acuerdos marcos relevantes para IT:
-
-- [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores). Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo
-- [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras). Impresoras, fotocopiadoras y escáneres
-- [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad). Sistemas de seguridad
-
-Es conveniente memorizar los códigos de los acuerdos marcos.
-
-#### Sistemas Dinámicos de Adquisición
-
-Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años.
-
-Durante su vigencia se permiten que salgan y entren empresas.
-
-SDAs relevantes para TI:
-
-- [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software). Suministro de software
-- [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo). Servicios de desarrollo
-- [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
-
-**SDA 25/2022. Suministro de software {#sda252022}**
-
-Lote 1: Sw de sistema para la ejecución y desarrollo de aplicaciones
-Lote 2: Sw para la gestión de infraestructura
-Lote 3: Sw para la analítica de datos
-Lote 4: Sw de ciberseguridad
-Lote 5: Sw de aplicación para la administración digital
-Lote 6: Sw de productividad y colaboración
-
-**SDA 26/2021. Servicios de desarrollo {#sda262021}**
-
-SDA 26/2021, de servicios de desarrollo, permite contratos de hasta un máximo de 862.000 € excluidos impuestos, prórrogas y modificaciones contractuales.
-
-**SDA 24/2022. Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento {#sda242022}**
-
-Lote 1: Equipos de comunicaciones
-Lote 2: Servidores y sistemas de almacenamiento 
-
-#### Contratos centralizados
-
-Los contratos centralizados son aquellos que se sirven a todas las administraciones públicas en un único contrato.
-
-En el caso de telecomunicaciones existen 4 lotes:
-
-- Lote 1. Fijo. Adjudicado a Telefónica
-- Lote 2: Móviles. Otorgado a Vodafone
-- Lote 3: Internet. Otorgado a Telefónica.
-- Lote 4: Internacional. Adjudicado a British Telecom (BT)
-
-### Modificación de Contratos
-
-Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.
-
-#### Encargos a medios propios
-
-Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.
-
-Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.
-
-Son disitntos los encargos a medios propios y las encomiendas de gestión.
-
-La definición de medio propio incluye:
-
-- No tener inversión privada.
-- No tener más de un 20% de actividad en sector privado.
-
-Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Casa de la Moneda (FNMT-RCM).
-
-### Anuncios de licitaciones público
+### Anuncios de licitaciones públicas
 
 Los procedimientos negociados sin publicidad no se publican.
 
@@ -420,7 +528,7 @@ El PCAP tiene carácter legal y contractual.
 En la administración pública nunca se contratan personas. Se contratan solamente servicios y se necesitan personas para cubrir esos servicios.
 
 
-En caso de retraso en al ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.
+En caso de retraso en la ejecución del contrato en proporción de 0,60 € por cada 1.000 €. En caso de que se supere el 5% del total se puede rescindir el contrato.
 
 
 Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.
