@@ -21,7 +21,7 @@ Las variables en el proyecto son:
 
 El número de horas totales hay que dividirlas entre el número de programadores.
 
-En caso de que hayamos calculado el esfuerzo en días (por ejemplo, al usar staffing size):
+En caso de que hayamos calculado el esfuerzo en días:
 
 - 1 mes = 20 días laborables
 - 6 meses = 120 días laborables
@@ -36,7 +36,7 @@ En caso de que hayamos calculado el esfuerzo en horas:
 
 Consejos generales:
 
-- En caso de que se indique un **plazo máximo** de entregao, asegurarse de que **se cumple**.
+- En caso de que se indique un **plazo máximo** de entrega, asegurarse de que **se cumple**.
 - En caso de que no se especifique un plazo de desarrollo, tratar que se proponga un **plazo de entrega coherente**. De manera general, en proyectos de dificultad media habría una expectativa de estar listo en un periodo entre 6 y 12 meses.
 - Algunos aspirantes añaden una o varias **fases paralelas** que abarcan todo el ciclo de vida del proyecto y que reflejan actividades transversales a todo el proyecto, como la **calidad** o la seguridad.
 - **Factores limitantes** del proyecto como la **contratación** deben quedar reflejadas en la planificación.

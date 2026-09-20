@@ -28,12 +28,12 @@ En este apartado se cubren aspectos relacionados con la contratación en la Admi
 
 Lo más importante de este tema de cara al supuesto práctico es ser capaz de:
 
-- Identificar si un contrato es SARA, y en caso afirmativo, comprender sus implicaciones
 - Distinguir los distintos procedimientos de contrataciones con sus umbrales y conocer los tiempos de espera que requieren
 - Identificar los acuerdos marcos (AM) más relevantes para IT, saber cuándo aplicarlos
 - Identificar los sistemas dinámicos de adquisición (SDA) más relevantes para IT, y saber cuándo aplicarlos
+- Identificar si un contrato es SARA, y en caso afirmativo, comprender sus implicaciones
 
-Conocer los tiempos que implica la contratación es un requisito necesario para realizar la planificación temporal, que es solicitada a menudo en el supuesto práctico.
+Conocer los tiempos que implica la contratación es un requisito necesario para realizar la planificación temporal, que es solicitada a menudo en el supuesto práctico. Por ello aunque no se pregunte implícitamente sobre la contratación en un apartado, si se pide la planificación será conveniente también revisar la contratación.
 
 ### Proceso de contratación en supuesto práctico
 

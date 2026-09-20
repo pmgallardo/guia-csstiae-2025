@@ -1,22 +1,52 @@
 # Supuesto práctico
 
-Las preguntas más habituales en el supuesto práctico sonL
+En el ejercicio del supuesto práctico se plantea en un largo enunciado un problema relacionado con la AGE y se pide al aspirante desarrollar un sistema para solucionarlo.
+
+El proceso estándar de desarrollo del supuesto práctico sería:
+
+Modelado → Marco tecnológico y normativo → Arquitectura → Recursos → Costes → Contratación → Planificación temporal
+
+Para poder estimar correctamente los recursos y costes asociados al sistema, es necesario tener claro antes todas las necesidades del sistema. Es por ello que esta guía considera primeramente el marco tecnológico y normativo en el diseño antes de pasar a las estimaciones y los derivados de los mismos.
+
+El marco tecnológico y normativo (o el contexto técnico y transversal) se puede subdividir en:
+
+- Activos comunes
+  - Infraestructuras comunes
+  - Servicios transversales
+- Cumplimiento
+  - Seguridad (Protección de datos)
+  - Interoperabilidad
+- Habilitadores tecnológicos
+  - Tecnología (IA, Datos)
+  - Herramientas
+
+Un ejemplo de decisiones que reducen el esfuerzo de desarrollo es la aplicación de servicios transversales o el uso de infraestructuras de nube.
+
+Hay que tener en cuenta que el orden ofrecido en este documento puede no coincidir con el que se preguntan en los ejercicios, si bien estos tampoco siguen un orden constante. En cualquier caso, el aspirante puede completar los apartados del supuesto práctico en el orden que mejor considere, si bien a la hora de entregar el exámen se debe asegurar de que las hojas entregadas muestran los apartados en el mismo orden que el enunciado.
+
+Los aspectos más habituales preguntados en el supuesto práctico son:
 
 - Arquitectura lógica
 - Solución tecnológica
 - ENS
 - Arquitectura física
+- Costes (indirecto)
+- Contratación (indirecto)
 - Planificación temporal
 - Metodología de desarrollo
 
+En menor medida, también se han preguntado en ejercicios recientes los siguientes temas:
 
-Un proceso general sería:
-
-Modelado → Dimensionamiento → Costes → Contratación → Planificación temporal
-
-Si bien el ejercicio suele incluir en primer lugar los pasos relacionados con estos procesos y deja para el final preguntas relacionadas con infraestructuras comunes, servicios transversales, seguridad, interoperabilidad y tecnología, en esta documentación se introducen estos temas solamente tras el modelado ya que es posible que estas decisiones afecten a algún aspecto de la planificación y al fin y al cabo el candidato puede completar los ejercicios en el orden que considere oportuno.
-
-Un ejemplo de decisiones que reducen el esfuerzo de desarrollo la aplicación de servicios comunes ya desarrollados o la aplicación de infraestructuras de nube.
+- Nube
+- Datos
+- Inteligencia artificial
+- Protección de datos
+- Biometría
+- Interoperabilidad
+- Herramientas
+- Dominios funcionales
+- Factores de éxito
+- Indicadores
 
 ## Introducción al supuesto práctico
 
@@ -26,11 +56,11 @@ Este documento es un resumen de información relevante para la preparación de l
 {{< include /03-practico/01-supuesto/_03-infr-comunes.qmd >}}
 {{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
 {{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
-{{< include /03-practico/01-supuesto/_06-arquitectura.qmd >}}
-{{< include /03-practico/01-supuesto/_07-interoperabilidad.qmd >}}
-{{< include /03-practico/01-supuesto/_08-tecnologia.qmd >}}
-{{< include /03-practico/01-supuesto/_09-herramientas.qmd >}}
-{{< include /03-practico/01-supuesto/_10-dimensionamiento.qmd >}}
+{{< include /03-practico/01-supuesto/_06-interoperabilidad.qmd >}}
+{{< include /03-practico/01-supuesto/_07-tecnologia.qmd >}}
+{{< include /03-practico/01-supuesto/_08-herramientas.qmd >}}
+{{< include /03-practico/01-supuesto/_09-arquitectura.qmd >}}
+{{< include /03-practico/01-supuesto/_10-recursos.qmd >}}
 {{< include /03-practico/01-supuesto/_11-costes.qmd >}}
 {{< include /03-practico/01-supuesto/_12-contratacion.qmd >}}
 {{< include /03-practico/01-supuesto/_13-planificacion.qmd >}}

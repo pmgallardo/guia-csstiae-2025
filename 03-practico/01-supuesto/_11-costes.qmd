@@ -28,11 +28,11 @@ Las licencias de software se recogen mediante el SDA 26/2022 de servicios de des
 
 En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende de cada pliego. De cara al ejercicio práctico y procurando tener números redondos, los posibles son los siguientes:
 
-| Perfil | Precio hora | Precio jornada |
+| Perfil | Precio hora | Precio día |
 | - | - | - |
 | Jefe de Proyecto | 50 | 480 |
 | Consultor | 50 | 400 |
-| Analista | 40 |  |
+| Analista | 40 | 320 |
 | Analista Programador | 40 | 320 |
 | Programador | 30 | 240 |
 

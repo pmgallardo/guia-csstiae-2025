@@ -1,4 +1,4 @@
-## Interoperabilidad en la AGE {#interoperabilidad}
+## Interoperabilidad (supuesto) {#interoperabilidad}
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -7,6 +7,8 @@ Convocatorias/tareas: 2019.8
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
+- Marco normativo
+  - RD 4/2010
 - Temas
   - 45. ENI
   - 46. NTI
@@ -73,7 +75,6 @@ Existen los siguientes inventarios:
 
 Los dos primeros (SIA y DIR3) trabajan la dimensión/nivel organizativa (al inventariar procesos y organismos, respectivamente), CISE trata la semántica (al inventariar modelos de datos) y CTT la técnica (al inventariar productos y servicios digitales).
 
-    BOE-A-2010-1331 
 ### Normas
 
 El ENI está formado por normas.

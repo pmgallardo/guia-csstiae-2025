@@ -1,7 +1,11 @@
 ## Realización del supuesto práctico
 
+En este apartado se indican algunos aspectos relacionados con la realización de la parte del supuesto práctico.
+
 ### Material para realizar el ejercicio práctico
-  
+
+Las indicaciones del material a llevar al ejercicio práctico son comunes a las partes del supuesto práctico y al análisis pormenorizado.
+
 Material para llevar:
 
 - 2 bolígrafos
@@ -13,7 +17,7 @@ Material para llevar:
 
 No está permitido el uso de calculadora u otro dispositivo electrónico.
 
-En caso de requerir llevar algún dispositivo por razones médicas, consultar las bases, pues es posible que haya que obtener algún tipo de documentación médica y notificar de antemano.
+En caso de requerir llevar o emplear algún dispositivo especial por razones médicas, se debe consultar las bases, pues es posible que haya que obtener algún tipo de documentación médica y notificar al Tribunal la condición de antemano.
 
 ### Consejos para el supuesto práctico
 
@@ -23,7 +27,7 @@ Resumen de consejos:
 - Subrayar los conceptos del exámen.
 - Emplear una hoja para cada ejercicio. No penaliza el número de hojas empleadas, y el usar hojas independientes permite alargar la resolución del ejercicio en caso de que se requiera ampliar una respuesta.
 
-En la mayoría de tribunales, si escribes en las hojas del enunciado del supuesto práctico no las podrás sacar posteriormente. No contar con el enunciado dificulta la realización del volcado, por lo que no parece buena práctica realizar algo que nos lo quite.
+En la mayoría de tribunales, si escribes en las hojas del enunciado del supuesto práctico no las podrás sacar posteriormente. No contar con el enunciado dificulta la realización del volcado, por lo que no parece buena práctica realizar una acción que deje al aspirante sin él.
 
 Por el contrario, emplear subrayadores es compatible con sacar la hoja del enunciado. Algunos candidatos emplean varios colores para marcar distintas categorías de palabras claves, como por ejemplo actores, acciones, etc.
 
@@ -45,6 +49,6 @@ Se recomienda simular el supuesto práctico en las condiciones más similares a 
 
 Algunas academias o preparadores indican que antes de presentarse se deben haber realizado al menos 10 supuestos prácticos.
 
-### Enlace con el análisis pormenorizado
+### Transición el análisis pormenorizado
 
-Para la siguiente parte, el análisis pormenorizado, se conserva el enunciado del supuesto y una única hoja de notas. En caso de que se quiera retener alguna nota para el análisis pormenorizado, esta debe ser copiada en la hoja de notas facilitada para tal efecto.
+En la siguiente parte, el análisis pormenorizado, se conserva el enunciado del supuesto y una única hoja de notas. En caso de que se quiera retener alguna nota para el análisis pormenorizado, esta debe ser copiada en la hoja de notas facilitada para tal efecto.

@@ -1,0 +1,430 @@
+## Estimación de recursos
+
+Durante el diseño de un sistema informático se debe estimar la dimensión de cada uno de los recursos necesarios para crearlo y mantenerlo.
+
+Estos elementos se puede dividir en distintas tipologías de recursos que pueden dimensionarse por separado. Las tipologías a tener en cuenta son al menos:
+| Licencia VMWare servidor | 5.000 |
+- Desarrollo
+- Licencias de software
+- Infraestructura
+
+Una vez estimadas las dimensiones de cada tipología de recursos debe calcularse el coste asociado a cada una. Para ello, se debe revisar el apartado de [costes](#costes).
+
+### Dimensionamiento del desarrollo
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- **🎯 Temas:**
+  - 99. Estimación de recursos
+- **🔗 Referencias de consulta:**
+  - [Software Estimation](https://runmodule.com/2026/06/25/software-estimation/){target="_blank"}. RunModule, 2026.
+:::
+
+En caso de que el enunciado del ejercicio incluya un importe de presupuesto, el coste total del proyecto debe aproximarse lo más posible al indicado.
+
+Los costes de un proyecto vienen definidos principalmente por:
+
+- Esfuerzo de servicios de desarrollo
+- Equipos informáticos de desarrollo
+- Licencias de software de desarrollo
+
+Las tarifas de personal no las he encontrado como estándares.
+
+No obtante, las tarifas aparecen en algunas licitaciones públicas, como por ejemplo:
+
+- en el Anexo IX de este otro contrato de la Comunidad de Madrid.
+- Memoria económica del expediente 300/ 2021/00023 del Ayto de Madrid
+- Servicio desarrollos evolutivos portales Madrid Destino del Ayto. de Madrid
+
+Se realiza esta tabla buscando números redondos y ligeramente superiores a los de los expedientes citados.
+
+#### Esfuerzo de servicios de desarrollo
+
+En este apartado resume métodos de estimación de esfuerzo y costes en el desarrollo de software, que es una tarea habitual en el supuesto práctico.
+
+De cara al supuesto práctico, se propone aplicar cada una de las técnicas de dimensionamiento de desarrollo en las siguientes situaciones:
+
+- Si se cuenta con un diagrama de casos de uso: UCP.
+- Si se cuenta con un modelo entidad-relación (ER) o un diagrama de clases: staffing size.
+- En cualquier caso: puntos de función (FP).
+
+Puesto que casi todos los ejercicios solicitan realizar un diagrama de casos de uso, el método UCP suele ser el más elegido por los aspirantes.
+
+La técnica de puntos de función tiene la ventaja de que se puede aplicar sin necesidad de haber realizado ya un diagrama concreto. Las variantes estándares de esta técnica de son demasiado extensas para los tiempos del exámen, por lo que los candidatos suelen aplicar una variante simplificada.
+
+Si se cuenta con un diagrama de casos de uso o un modelo ER, sería posible aplicar las otras dos técnicas correspondientes.
+
+Algunas de estas técnicas se presentan en la documentación de estimación de recursos del temario de Astic (UCP y puntos de función) o en Métrica v3 (staffing size). Existen otras muchas técnicas como el enfoque COCOMO y las métricas bang (ambas presentadas en el temario de Astic) y otras no cubiertas ni en la documentación de Astic ni en esta guía, y nada impide que sean usadas en el ejercicio práctico.
+
+Sea cual sea el método de estimación vez que se obtienen las horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total. 
+
+El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
+
+Suponiendo que se trata de externos y que sus con jornadas de 40 horas/semana, el total de horas-hombres al mes son:
+
+$$40 * (52 / 12) = 173.33 \approx 180 \approx 200 \text{horas-hombre/mes}$$
+
+##### User Case Points (UCP) {.unnumbered .unlisted}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- **🎯 Temas:**
+  - 99. Estimación de recursos
+- Referencias:
+  - Murali Chemuturi. "[Software Estimation Best Practices, Tools & Techniques: A Complete Guide for Software Project Estimators](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M){target="_blank"}", J. Ross Publishing, 2009
+  - Alan R. Dennis, Barbara Haley Wixom, and David Tegarden. Chapter 5 - Functional Modeling. In: [Systems Analysis and Design with UML Version 2.0: An Object-Oriented Approach](https://openlibrary.org/works/OL13780392W/Software_estimation_best_practices_tools_techniques?edition=key%3A/books/OL23218700M){target="_blank"}. 3rd ed. J. Ross Publishing, 2009.
+  - Carl Friedrich Kress, Olivier Hummel, Mahmudul Huq, [A Practical Approach for Reliable Pre-Project Effort Estimation](https://ceur-ws.org/Vol-1138/re4p21.pdf){target="_blank"}.
+  - [Use Case Points](https://en.wikipedia.org/wiki/Use_case_points){target="_blank"}
+  - [Use Case Points](https://runmodule.com/2027/04/13/use-case-points/){target="_blank"}.
+:::
+
+Los puntos de caso de uso (use case points, UCP), a veces referidos como el método Karner, es un método de estimación de software basado en la complejidad de los casos de uso. Es por tanto adecuado cuando el supuesto práctico pide realizar un diagrama de caso de uso además de la estimación.
+
+Fue desarrollado por Gustav Karner en 1993 mientras trabajaba en la compañía sueca Objectory Systems.
+
+El total de puntos de casos de uso se calcula mediante la siguiente fórmula:
+$$\text{UCP} = \text{UUCP} * \text{TCF} * \text{ECF}$$
+
+Los puntos de casos de uso sin ajustar (*Unadjusted Use Case Points*, UUCP) se calculan como:
+
+$$\text{UUCP} = \text{UUCW} + \text{UAW}$$
+
+por lo que
+
+$$\text{UCP} = (\text{UUCW} + \text{UAW}) * \text{TCF} * \text{ECF}.$$
+
+El peso de caso de uso sin ajustar (*Unadjusted Use Case Weight*, UUCW) se calcula como:
+
+| Clasificación del caso de uso | Núm. de transacciones | Peso | 
+| - | - | - |
+| Simple | 1-3 | 5 |
+| Medio | 4-7 | 10 |
+| Complejo | ≥8 | 15 |
+
+$$UUCW = \sum{\text{núm. de casos de usos} \times \text{peso}}$$
+
+El peso de actor sin ajustar (*Unadjusted Actor Weight*, UAW) se calcula como:
+
+| Clasificación del actor | Tipo de interacción del actor | Peso |
+| - | - | - |
+| Simple | API | 1 |
+| Medio | Protocolo de comunicación | 2 |
+| Complejo | GUI | 3 |
+
+Como ejemplos:
+- Una máquina que llama directamente a la API se considera un actor de tipo simple.
+- Una máquina que llama a un protocolo de comunicación (FTP, TCP,IP, etc.) y que requiere procesamiento adicional se considera de tipo medio.
+- Los humanos se consideran actores de tipo complejos.
+
+$$UAW = \sum{\text{núm. de actores} \times \text{peso}}$$
+
+El factor de complejidad técnica (*Technical CompL asumirlexity Factor*, TCF) depende de la complejidad de la solución. Es un valor cuyo rango está entre 0,6 y 1,3.
+
+El factor de complejidad de ambiente (*Environmental Complexity Factor*, ECF) depende de la experiencia del equipo de desarollo. Es un valor cuyo rango está entre 0,425 y 1,7.
+
+En un ejercicio completo se emplearían tablas y fórmulas para calcular el TCF y el ECF. De cara al ejercicio práctico, puesto que no se dispone de una copia de las tablas y fórmulas, calculadora y tiempo suficiente, para facilitar las cuentas se puede considerar que el TCF y el ECF son 0,8 y 1,25 respectivamente para obtener un producto de 1 y facilitar las cuentas.
+
+| TCF | ECF | $\text{TCF} \times \text{ECF}$ |
+| - | - | - |
+| 0,8 | 1,25 | 1 |
+| 1 | 1 | 1 |
+
+Una vez obtenidos los UCP, estos se transforman a horas. Para ello se necesita aplicar una medida de horas/UCP que suele estar basado en la experiencia en la experiencia del equipo. En base a opiniones de expertos (Karner, Schneider y Winters) y ajustando a números redondos, se pueden plantear los siguientes valores:
+
+| Experiencia del equipo | Horas/UCP |
+| - | - |
+| 20 | Alta |
+| 30 | Media |
+| 40 | Baja |
+
+::: {.callout-tip}
+## Ejemplo
+Hay un ejemplo muy detallado en la [Wikipedia](https://en.wikipedia.org/wiki/Use_case_points#Example){target="_blank"}.
+:::
+
+##### Staffing size {.unnumbered .unlisted}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Ministerio de Administraciones Pública. Apartado "Staffing size (Orientación a objetos)". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf){target="_blank"}. PAe.
+  - Manuel Cillero. [Staffing size (Orientación a objetos)](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/){target="_blank"}. manuel.cillero.es
+  - Estimación. Preparatic 28.
+  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>{target="_blank"}
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+Staffing size es un método para estimar cuántas personas son necesarias en un desarrollo orientado a objetos y durante cuánto tiempo participan. Está incluido dentro de las técnicas descritas en Métrica v3.
+
+Es adecuado cuando el enunciado requiera hacer previamente un diagrama de clases o un modelo entidad-relación (E-R).
+
+La técnica distingue entre clases primarias y secundarias. Para esta parte del ejercicio, se puede asumir que las primarias son aquellas identificadas al realizar el diagrama de clases o modelo entidad-relación (E-R). El número de clases secundarias no modeladas se puede inferir multiplicando.
+
+Métrica v3 define que las clases primarias representan entre el 20-40% de las clases totales, es decir, que habría entre 1,5 y 4 veces más clases secundarias que primarias; sin embargo, en otro párrafo modifica este rango a entre 1 a 3 veces. En cualquier caso, para calcular el número de clases totales se debe multiplicar el número de clases primarias por un valor entre 1 y 4, que varía en función de la complejidad de la interfaz de usuario y la experiencia del equipo.
+
+La técnica asume que cada clase de producción lleva entre 10-15 días (~100 horas), y las clases de prototipado 6-8 días (~50 horas).
+
+##### Puntos de función {.unnumbered .unlisted}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Método Puntos Función (caso práctico). Preparatic 25, junio 2018.
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+Existen variantes estándar de la técnica de estimación basada en puntos de función, muchas de ellas mencionadas en los apuntes de Astic (como IFPUG o NESMA). De entre ellas, se destacan Albrecht, Mark-II y COSMIC-FSM, ya que las dos primeras son desarrolladas en las Técnicas de Métrica v3 mientras que COSMIC-FSM es la única desarrollada en los apuntes de Astic.
+
+No obstante, las variantes estándar conllevan complejidad y un desarrollo largo, por lo que muchos aspirantes que se decatan por esta técnica emplean versiones simplificadas de estos
+
+La principal ventaja de las técnicas de punto de función es que no requiere haber modelado previamente el caso.
+
+###### Puntos de función simplificado {.unnumbered .unlisted} 
+
+Estimación por puntos de función (versión simplificada):
+
+1. Identificar los puntos de función de enunciado
+2. Estimar puntos de función
+   Interfaz de usuario = 10 PF
+   Módulo = 10, 20 ó 30 PF
+3. Estimar el factor de ajuste (FA)
+   Donde FA = 1
+3. Estimar horas
+   Donde 1 PF = 10 horas
+
+###### Método Albrecht {.unnumbered .unlisted} 
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Ministerio de Administraciones Pública. Apartado "Método Albrecht para el Análisis de los Puntos Función". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf){target="_blank"}. PAe.
+  - Manuel Cillero. [Método Albrecht para el Análisis de los Puntos de Función](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/tecnicas-de-estimacion/metodo-albrecht/){target="_blank"}. manuel.cillero.es
+  - Apartado 2.1. "Puntos Función". En: Estimación. Preparatic 28, 2026.
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+El método Albrecht y Mark-II son las únicas técnicas de puntos de función reseñadas en Métrica v3. Además, la guía Preparatic 28 solo incluye esta técnica de puntos de función, excluyendo a Mark-II.
+
+Consta de 3 etapas:
+1. Identificación de componentes
+2. Cálculo de los Puntos Función No Ajustados
+3. Ajustes de los puntos de función
+
+Entradas externas / Consultas externas:
+
++---------------+-----------------------------------+
+| Ficheros      | Tipos de datos elementales        |
+| Referenciados +---------+----------+--------------+
+|               | 1 a 4   | 5 a 15   | 16 ó más     |
++===============+=========+==========+==============+
+| 0 ó 1         | S       | S        | M            |
++---------------+---------+----------+--------------+
+| 2             | S       | M        | C            |
++---------------+---------+----------+--------------+
+| 3 ó más       | M       | C        | C            |
++---------------+---------+----------+--------------+
+
+Salidas externas:
+
++---------------+-----------------------------------+
+| Ficheros      | Tipos de datos elementales        |
+| Referenciados +---------+----------+--------------+
+|               | 1 a 5   | 6 a 19   | 20 ó más     |
++===============+=========+==========+==============+
+| 0 ó 1         | S       | S        | M            |
++---------------+---------+----------+--------------+
+| 2 ó 3         | S       | M        | C            |
++---------------+---------+----------+--------------+
+| 4 ó más       | M       | C        | C            |
++---------------+---------+----------+--------------+
+
+Grupos lógicos de datos internos:
+
++---------------+-----------------------------------+
+| Tipos de      | Tipos de datos elementales        |
+| Registros     +---------+----------+--------------+
+|               | 1 a 19  | 20 a 50  | 51 ó más     |
++===============+=========+==========+==============+
+| 1             | S       | S        | M            |
++---------------+---------+----------+--------------+
+| 2 a 5         | S       | M        | C            |
++---------------+---------+----------+--------------+
+| 6 ó más       | M       | C        | C            |
++---------------+---------+----------+--------------+
+
+Grupos lógicos de datos de interfaz:
+
++---------------+-----------------------------------+
+| Tipos de      | Tipos de datos elementales        |
+| Registros     +---------+----------+--------------+
+|               | 1 a 19  | 20 a 50  | 51 ó más     |
++===============+=========+==========+==============+
+| 1             | S       | S        | M            |
++---------------+---------+----------+--------------+
+| 2 a 5         | S       | M        | C            |
++---------------+---------+----------+--------------+
+| 6 ó más       | M       | C        | C            |
++---------------+---------+----------+--------------+
+
+Cálculo de los puntos de función no ajustados:
+
++-------------------------------------------+----------+-------+----------+------------+
+| Descripción                               | Sencilla | Media | Compleja | Total P.F. |
++===========================================+==========+=======+==========+============+
+| Nº de Entradas Externas                   | x 3      | x 4   | x 6      |            |
++-------------------------------------------+----------+-------+----------+------------+
+| Nº de Salidas Externas                    | x 4      | x 5   | x 7      |            |
++-------------------------------------------+----------+-------+----------+------------+
+| Nº Grupos Lógicos de Datos Internos       | x 7      | x 10  | x 15     |            |
++-------------------------------------------+----------+-------+----------+------------+
+| Nº de Grupos Lógicos de Datos de Interfaz | x 5      | x 7   | x 10     |            |
++-------------------------------------------+----------+-------+----------+------------+
+| Nº de Consultas Externas                  | x 3      | x 4   | x 6      |            |
++-------------------------------------------+----------+-------+----------+------------+
+| TOTAL PUNTOS FUNCIÓN NO AJUSTADOS (PFNA)                                |            |
++-------------------------------------------+----------+-------+----------+------------+
+
+Los Puntos de Función Ajustados (PFA)
+PFNA
+
+$$\text{FA} = 0,65 + (0,01*\text{SVA})$$
+
+$$\text{PFA} = \text{PFAN} \times \text{FA}$$
+
+Por último se dividen los puntos de función ajustados por un valor puntos de función/tiempo.
+
+###### Mark-II {.unnumbered .unlisted} -->
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Ministerio de Administraciones Pública. Apartado "Método MARK II para el Análisis de los Puntos Función". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf){target="_blank"}. PAe.
+  - Manuel Cillero. [Método MARK II para el Análisis de los Puntos de Función](https://web.archive.org/web/20200929084004/https://manuel.cillero.es/doc/metrica-3/tecnicas/tecnicas-de-estimacion/metodo-mark-ii/){target="_blank"}. manuel.cillero.es.
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+Mark-II se incluye junto con el método Albrecht como técnicas de puntos de función en Métrica v3. Sin embargo, la guía Preparatic 28 la excluye en favor del método Albrecht. Por concisión, la técnica Mark-II no se desarrolla en esta documentación, si bien es una técnica válida y refrendada por Métrica v3.
+
+###### COSMIC-FSM {.unnumbered .unlisted} -->
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - Método Puntos Función (caso práctico). Preparatic 25, junio 2018.
+  - Miguel Ángel Rodrigo Muñoz. Apartado 2.3 "Ejemplo para medir el software o componente a desarrollar" y 2.5 "COSMIC-FSM". En: "Tema 98. La estimación de recursos y esfuerzo en el desarrollo de sistemas de la información". Astic, Sep-2022.
+  - [COSMIC Method. Introduction](https://cosmic-sizing.org/cosmic-sizing/intro/){target="_blank"}.
+  - [COSMIC functional size measurement](https://en.wikipedia.org/wiki/COSMIC_functional_size_measurement){target="_blank"}. Wikipedia.
+  - Estimación. Preparatic 28.
+  - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>{target="_blank"}
+- Temas:
+  - 99. Estimación de recursos
+:::
+
+COSMIC-FSM es una técnica de dimensionamiento funcional basada en el comportamiento del software y el movimiento de datos.
+
+El Consorcio Internacional de Medidas de Software Común (*Common Software Measurement International Consortium*, COSMIC) fue creada en 1998. Adaptó la idea de IFPUG FPA a las nuevas tendendicas de desarrollo, dando lugar a la técnica de COSMIC-FSM. Se ha estandarizado bajo el estándar ISO/IEC 19761, siendo la última versión [ISO/IEC 19761:2011](https://www.iso.org/standard/54849.html){target="_blank"}.
+
+COSMIC-FSM es la única técnica de puntos de función desarrollada en los apuntes de Astic. Por contra, no se menciona en Métrica v3, y además su desarrollo consume tiempo, lo cual no es recomendable en un ejercicio tan extenso como el supuesto práctica. Es por ello que no se recomienda su uso, si bien sí queda explicada a continuación.
+
+La técnica consiste en contar el total de puntos de función COSMIC (*COSMIC function points*, CFP) en un sistema, donde se cuenta 1 CFP por cada tipología de movimiento de datos que encontremos:
+
+- *Entrada*: acción de entrada de datos o comando del usuario.
+- *Lectura*: lectura de datos por el programa.
+- *Escritura*: escritura de datos por el programa.
+- *Salida*: salida de datos para el usuario
+Una vez que se obtienen las horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total. 
+
+El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
+
+Suponiendo que se trata de externos y que sus con jornadas de 40 horas/semana, el total de horas-hombres al mes son:
+
+$$40 * (52 / 12) = 173.33 \approx 180 \approx 200 \text{horas-hombre/mes}$$
+El proceso de COSMIC-FSM se resumiría en:
+
+1. Desglosar las funcionalidades del sistema
+2. Identificar los movimientos de datos de cada funcionalidad
+3. Calcular el total de puntos de función COSMIC (CFP)
+3. Dividir los CFP por CFP/tiempo
+
+El método requiere que se cuenten con proyectos anteriores para los que sea conocido sus CFPs, coste y duración total, de manera que se pueda aplicar una regla de tres para calcular el tiempo o el coste dados los CFPs del nuevo proyecto.
+
+$$ t_2 = \frac{\text{CFP}_2 \times t_1}{\text{CFP}_1} $$
+
+$$ c_2 = \frac{\text{CFP}_2 \times c_1}{\text{CFP}_1} $$
+
+Puesto que es poco probable de que en el supuesto práctico del CSSTIE contemos con información sobre rendimiento por CFP en base a proyecto anteriores, si queremos emplear esta técnica debemos suponer un coste y duración por CFP estimados. Por ejemplo, 1 CFP puede corresponder con 10 horas de trabajo.
+
+Por otro lado, el coste se puede estimar directamente conviertiendo los CFPs en horas empleando un coeficiente supuesto (ej. 1.000 €/CPF), o si no de forma más compleja, pues que ya se tiene el número de horas de trabajo por la suposición anterior, aplicar las tarifas de los empleados.
+
+#### Servicios de desarrollo
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Contratación
+  - SDA 25/2022 de suministros
+- Referencias
+  - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
+  - [Métrica v3. Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf){target="_blank"}. PAe, 2001.
+  - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/){target="_blank"}, manuel.cillero.es.
+:::
+
+Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.
+
+La metodología Métrica v3, en su documento de [Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf){target="_blank"}, define una serie de perfiles de participantes en el desarrollo de sistemas de información:
+
+- Directivo
+- Jefe de Proyecto
+- Consultor
+- Analista
+- Programador
+
+Adicionalmente, en algunos pliegos contemporáneos (como [este](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D){target="_blank"}) se menciona adicionalmente el perfil de analista-programador. Este perfil mixto no figura en Métrica v3 pero sí se aparece en el [XII Convenio Colectivo Estatal de Empresas de Consultoría y Planificación](https://www.boe.es/buscar/doc.php?id=BOE-A-2000-17579){target="_blank"} de 2000, lo cual puede ser una posible explicación sobre su uso.
+
+Con respecto a categoría y tarifa, esta guía considera análogos los perfiles de analista y analista-programador, justificándose en que en Métrica v3 no existe el perfil mixto.
+
+A efectos prácticos, se puede establecer que un desarrollo necesita el siguiente número de perfiles:
+
+- 1 jefe de proyecto por proyecto
+- Tantos analistas-programadores como sea necesario para tener el proyecto en la fecha indicada en el enunciado o en un periodo razonable (6-18 meses).
+- Analistas en un ratio de 0,25-0,5 respecto al número total de programadores.
+- Opcionalmente 1 o 2 consultores, en función del presupuesto disponible.
+
+Se suele reducir el ratio de analistas por programador cuando interesa reducir el coste de desarrollo.
+
+También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.
+
+Este criterio está basado en la definición de Unidad de Trabajo de la licitación de los [Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D){target="_blank"}, donde se definía que una unidad de trabajo estaba formada por:
+
+- 1 jefe de proyecto
+- 3 analistas
+- 6 analistas-programadores
+
+Otro criterio es suponer que un proyecto típico tiene 12 personas: 1 jefe de proyecto, 2 analistas y 8 programadores. Adicionalmente se puede poner 1 consultor, jugando con esto en función del presupuesto disponible.
+
+#### Equipos informáticos de desarrollo
+
+Cada uno de los perfiles necesarios para el proyecto requiere un equipo informático.
+
+#### Licencias de software para desarrollo
+
+Las estaciones de trabajo (*workstations*) de la AGE suelen usar el SO Microsoft Windows. Puesto que los equipos de desarrollo se adquieren con licencias OEM (*original equipment manufacturer*) del sistema operativo, no es necesario dimensionar por separado estas licencias.
+
+Se puede justificar el no incluir licencias de herramientas de desarrollo argumentando que se emplean herramientas de software libre y de código abierto.
+
+### Dimensionamiento de infraestructuras
+
+Para realizar el dimensionamiento de infraestructuras se requiere haber diseñado previamente un 
+
+Si el sistema cuenta con infraestructura *on premise*, se puede emplear el [SDA 24/2022](#sda242022) de sistemas de comunicación, servidores y sistemas de almacenamiento.
+
+Si el sistema depende de infraestructura en la nube, se demostrará al Tribunal conocimiento sobre la AGE al proponer el uso de la [NubeSARA](#nubesara). Conviene revisar y aplicar las tarifas correspondientes.
+
+#### Servidores
+
+Se debe contar el número de servidores
+
+También se deben dimensionar las licencias de software de los servidores.
