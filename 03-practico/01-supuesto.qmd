@@ -48,6 +48,14 @@ En menor medida, también se han preguntado en ejercicios recientes los siguient
 - Factores de éxito
 - Indicadores
 
+## Memorizar
+
+- Servicios transversales
+- Accesbilidad
+  - EN 301 549
+  - WCAG 2.1/2.2
+- Tecnologías
+
 ## Introducción al supuesto práctico
 
 Este documento es un resumen de información relevante para la preparación de la parte del supuesto práctico del ejercicio práctico de acceso al Cuerpo Superior de Sistemas y Tecnologías de la Información de la Administración del Estado (CSSTIAE).

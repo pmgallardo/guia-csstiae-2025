@@ -72,11 +72,13 @@ En caso de trabajarse en de un ecosistema de Microsoft, se debe considerar Micro
 
 La AGE emplea habitualmente Docker para empaquetado y Kubernetes o soluciones empresariales como Red Hat OpenShift para gestionar de forma segura los clústeres en los centros de datos del Estado.
 
-#### Mensajería e integración
+#### Mensajería
 
-Para mensajería e integración en la AGE se emplen herramientas de código abierto como RabbitMQ o Apache Kafka.
+Para mensajería e integración en la AGE se emplean distintas herramientas, dependiendo del uso.
 
-RabbitMQ se emplea más en mensajería tradicional y arquitecturas monolíticas, mientras que Apache Kafka se emplea más en big data y arquitecturas de microservicios.
+Como gestor de colas de mensajes, como mensajes asíncronos dentro de los procesos de operaciones, se emplea Rabbit MQ. Los mensajes se consumen una vez leídos, y suele haber un destinatario único.
+
+Para streaming de eventos en tiempo real, como envío de logs, estadísticas o big data, se emplea Apache Kafka. Los mensajes se guardan en memoria, y suele haber múltiples destinatarios.
 
 #### API manager
 
@@ -91,6 +93,16 @@ La funcionalidad de API gateway (o pasarela de APIs) está habitualmente incluid
 Por ejemplo, MuleSoft AnyPoint Plaform incluye MuleSoft API Gateway, mientras que WSO2 API Manager incluye WSO2 API Gateway.
 
 Una opción de código abierto centrada en la funcionalidad de API gateway es **Kong API Gateway** Community Edition (CE). El API manager completo Kong Manager sería de pago.
+
+### IA / Automatización
+
+Para la automatización de procesos se puede proponer el uso de un iBPM (interactive business process management), que aplica IA a procesos. Appian o BluePrism.
+
+### Monitorización
+
+Para la monitorización, se requiere poder procesar los logs generados por cada uno de los componentes del sistema. Una tecnología muy extendida en la industria y además de código abierto es la pila ELK, la cual es la combinación de Logstack (procesamiento), Elasticsearch (motor analítico) y Kibana (visualización)
+
+En ocasiones se añade a la pila Beats, a través de su implementación Filebeat o Metricbeats, que es una aplicación ligera que recopila datos antes de enviarlos a Logstack. Por tanto, cada uno de los módulos del sistema que genere logs debe contener Beats. 
 
 ### Stack de tecnologías
 

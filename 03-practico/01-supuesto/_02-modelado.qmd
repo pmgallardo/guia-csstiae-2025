@@ -2,8 +2,6 @@
 
 Cuando un apartado solicita un **modelo de datos**, en realidad está pidiendo se está pidiendo un modelo entidad-relación (E-R) o, en el paradigma de diagrama de clases, un diagrama de clases.
 
-### Diagramas estáticos y dinámicos
-
 Los diagramas estáticos y dinámicos reseñados en este apartado son:
 
 - Diagrama de casos de uso
@@ -13,7 +11,7 @@ Los diagramas estáticos y dinámicos reseñados en este apartado son:
 - Diagramas de despliegue
 - Diagrama de secuencia
 
-#### Diagrama de casos de uso
+### Diagrama de casos de uso
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -42,7 +40,7 @@ Consejos:
 
 - Incluir alguna relación «include» y «extend» entre casos de uso, para demostrar al tribunal la capacidad de trabajar con estos conceptos.
 
-#### Diagrama de flujo de datos
+### Diagrama de flujo de datos
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -54,14 +52,14 @@ Convocatorias/tareas: 2018.1
 - Temas
   - 90. Análisis dinámico de sistemas
 - Referencias
-  - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/)
+  - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/)
 :::
 
 Diagrama de Flujo de Datos (DFD) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema.
 
 El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como **diagrama de contexto**, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.
 
-#### Modelo entidad-relación
+### Modelo entidad-relación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -73,7 +71,7 @@ El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el n
 
 Un modelo entidad-relacion (E/R) se puede presentar en caso de que se pida representar gráficamente las entidades de datos.
 
-#### Diagrama de clases
+### Diagrama de clases
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -90,7 +88,7 @@ Convocatorias/tareas: 2018.1
 
 Diagrama de clases pertenece a la familia de diagramas UML.
 
-#### Diagramas de despliegue
+### Diagramas de despliegue
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -102,7 +100,7 @@ Diagrama de clases pertenece a la familia de diagramas UML.
 
 El diagrama de despliegue pertenece a la familia de diagramas UML.
 
-#### Diagrama de secuencia
+### Diagrama de secuencia
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -114,7 +112,7 @@ El diagrama de secuencia es un diagrama UML que permite modelar la interacción 
 
 ![Ejemplo de diagrama de secuencia](../images/diagrama-secuencia.png)
 
-#### Métrica v3
+### Métrica v3
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia

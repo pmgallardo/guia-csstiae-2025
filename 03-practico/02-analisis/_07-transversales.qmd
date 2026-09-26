@@ -124,14 +124,14 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
   - UE
     - D(UE) 2016/2102. Accesibilidad de los sitios webs y aplicaciones para dispositivos móviles de los organismos del sector público
   - ES
-    - RD 1494/2007. Accesibilidad a la sociedad de la información y medios
-    - RD 1112/2018. Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público
+    - **RD 1494/2007**. Accesibilidad a la sociedad de la información y medios
+    - **RD 1112/2018**. Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público
 - Organismos
   - Observatorio de Accesibilidad
 - Estándares
-  - EN 301 549
-- Guías
-  - WCAG
+  - **EN 301 549**
+- Pautas / guías
+  - **WCAG** (2.1/2.2)
 - Temas
   - 44. Accesibilidad y usabilidad
   - 46. Discapacidad
@@ -140,6 +140,8 @@ Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros ad
 :::
 
 RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir el estándar EN 301 549, publicado en la decisión de ejecución UE 2018/2048.
+
+El RD exige que los sitios web y aplicaciones del sector público sean perceptibles, operables, comprensibles y robustos, independientemente de la tecnología utilizada.
 
 ### Protección de datos
 

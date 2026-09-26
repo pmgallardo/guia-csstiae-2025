@@ -14,45 +14,35 @@ La arquitectura lógica suele incluir:
   - Sistemas externos
   - API gateway
   - Estilos y patrones de arquitectura de software
-  - Servidores virtuales (con su función)
+  - Servicios y/o microservicios
+  - Protocolos de comunicación
 
 Por el contrario, suelen excluir:
 
   - Elementos de red (redes, enrutadores, cortafuegos, etc.)
   - Elementos duplicados para obtener alta disponibilidad (HA)
 
- como seguridad, interoperabilidad, orquestación o accesibilidad.
+### Principios de diseño de software
 
-A menudo los candidatos incluyen bloques transversales, incluyendo algunos como:
-
-- Seguridad
-- Interoperabilidad
-- Accesibilidad
-- Administración
-  - Orquestación
-  - Monitorización
-
-Un **API gateway** (pasarela API) es un bloque que se encuentra entre los dispositivos de usuario y el servidor de presentación, y que se encarga de gestionar las solicitudes de los usuarios hacia las APIs del sistema.
-
-Una aplicación de móvil se conecta directamente con el backend, ya que es la app instalada en el móvil quien lleva la carga del frontend.
-
-Habitualmente en sector público se usa la integración de lado de servidor (*server-side integration*). Esto se hace a través de un *front-end UI composer*.
-
-Se puede usar una CDN a la parte que sea más común a todos los usuarios, como contenido estático (una noticia, etc.).
-
-### Estilo y patrón de arquitectura de software
-
-La arquitectura lógica presentada debe reflejar el estilo y patrón de arquitectura empleado en 
-
-Estilos y patrones de arquitectura de software que pueden aparecer en arquitecturas lógicas:
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - <https://runmodule.com/2028/05/23/software-architectural-style/>
+:::
 
 - Monolítico
-- Multicapa
-  - Modelo-vista-controlador (MVC)
-  - Arquitectura hexagonal
-  - Arquitectura clean
+- Cliente-servidor
 - Orientado a servicios (SOA)
   - Microservicios
+- Orientado a eventos
+
+### Estilos de arquitectura de software
+
+La arquitectura lógica recoge el estilo y patrón de arquitectura de software. Suelen aparecer en arquitecturas lógicas:
+
+- Modelo-vista-controlador (MVC)
+- Arquitectura hexagonal
+- Arquitectura clean
 
 ##### MVC {.unnumbered .unlisted}
 
@@ -96,7 +86,64 @@ En la arquitectura lógica debería representarse cada adaptador entre la aplica
 
 Evolución de la arquitectura hexagonal.
 
-##### Microservicios {.unnumbered .unlisted}
+### Actores
+
+En la parte superior (en diagramas verticales) o izquierda (en diagramas horizontales) se incluyen los actores (humanos y robots) que interactúan con el front del sistema.
+
+Por debajo (o a la derecha) de ellos, se incluye el medio utilizado para acceder al sistema, como puede ser un navegador web o una app móvil, que ya estarían dentro de la capa de presentación.
+
+### Arquitectura lógica frontend web
+
+En aplicaciones web, se distinguen las siguientes tipologías respecto a la estrategias de renderizado de HTML:
+
+- SSR (Server-Side Rendering)
+- CSR (Client-Side Redering)
+- SSG (Static Site Generator)
+
+Todas tienen sus ventajas y sus inconvenientes. En el sector público español se tienee hacia SSR ya que suele ser más sencillo hacerlas accesibles y tiene mayor compatibilidad con equipos de capacidad limitada.
+
+Respecto al número de páginas involucradas, se distinguen los siguientes tipos de aplicaciones web:
+
+- SPA (Single Page Application)
+- MPA (Multiple Page Application)
+
+Las aplicaciones de página única (SPA, *Single Page Application*) suelen ser CSR, aunque también pueden ser SSR.
+
+El funcionamiento de una página web depende del tipo de estrategia empleada. En este documento se consideran principalmente los casos de SSR vs. CSR.
+
+En cualquiera de las estrategias, el navegador comienza solicitando al sistema un fichero HTML que contiene la aplicación web. Esto se hace a través de un servidor de presentación o un CDN.
+
+El **servidor de presentación**, que en el contexto de arquitectura lógica quizás debería llamar **servicio de presentación**, atiende a las peticiones de los navegadores web. Su función y complejidad varía dependiendo de la arquitectura front empleada.
+
+En SSR, el servidor de presentación ejerce de intermediario y se encarga de renderizar la página web completa antes de devolverla al navegador y procesar cualquier petición posterior realizada desde el cliente.
+
+En CSR, el navegador solicita al sistema el contenido estático de la página web, lo que se suele hacer a través de un CDN o un almacén de archivos estáticos (ya que esta estructura es común a todos los clientes) y posteriormente el navegador renderiza la página a base de scripts ejecutados en el lado del cliente.
+
+Un **CDN** (*content delivery network*) se puede emplear para facilitar a los usuarios contenidos comunes a todos o una gran parte de ellos, como contenido estático (estructura básica de la aplicación web en CSR, noticias, etc.).
+
+Un **API gateway** (pasarela API) es un bloque que se encuentra entre las interfaces de los usuarios y el dominio del sistema; es decir, ejerce de separación entre el frontend y el backend de la aplicación. En el lado del backend estarían los servidores de aplicación y microservicios, que se encargan de gestionar las solicitudes de los usuarios hacia las APIs del sistema.
+
+El API gateway es necesario cuando existen varias interfaces de usuario, como por ejemplo páginas web distintas para cada tipo de usuario o acceso alternativo para un mismo perfil via web y via app. Si no hay distintas interfaces de usuario, habría que justificar su inclusión (como por ejemplo, indicar que se incluye por escalabilidad del sistema).
+
+Las llamadas al API gateway se suelen realizar con el protocolo REST, y en sistemas más tradicionales con HTTP.
+
+En las aplicaciones CSR, el navegador se descarga la aplicación HTML del servidor de presentación y después las llamadas son realizadas directamente al API gateway desde el navegador.
+
+![Arquitectura del API gateway en CSR](../images/sup_arq_api_gateway_csr.png)
+
+En las aplicaciones con renderizado en el servidor (*server-side rendering*, SSR), como PHP, más tradicionales y aún muy presentes en la AGE, es el servidor de aplicación el que llama directamente al API gateway para poder entregar al navegador la página ya ensamblada.
+
+Existe un patrón BFF (Backend-For-Frontend) que coloca una capa entre el API gateway (o en su ausencia, el backend) en la que se emplean *micro-frontends*, cada uno con una función determinada y que realiza sus propias llamadas al API gateway (o backend). En SSR, para cada aplicación web se coloca un UI composer (compositor de interfaz de usuario) entre el navegador y los micro-frontends, que centraliza las comunicaciones con los micro-frontends y lo devuelve el resultado procesado. En CSR, la aplicación web llama directamente a los micro-frontends.
+
+BFF solo tiene sentido para aplicaciones con una interfaz de usuario compleja.
+
+![Patrón BFF con UI composer](../images/sup_arq_api_gateway_bff.png)
+
+Una aplicación de móvil se conecta directamente con el API gateway sin necesidad de que intervenga ningún servidor de aplicación, ya que es la app instalada en el móvil quien lleva la carga del front-end.
+
+### Arquitectura lógica backend
+
+#### Microservicios en backend
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -104,15 +151,78 @@ Evolución de la arquitectura hexagonal.
   - <https://runmodule.com/2024/12/03/microservices/>
 :::
 
-En microservicios se suele pintar un API gateway al inicio de la lógica de negocio.
+El patrón de microservicios de manera general se suele asociar backend y mantener el nombre, mientras que cuando el patrón se aplica al frontend se suele referir como micro-frontends para distinguirlo.
 
-El API gateway son el punto de entrada a los microservicios. Puede contenter una API separada para la web, que podría ser reactiva (diseño), y una de móvil.
+En microservicios del backend, un API gateway (o en su ausencia, una aplicación CSR) se conecta con un bus de eventos. Este bus de eventos es transversal a todos los microservicios y se conecta con cada uno de ellos, representados con una caja.
 
-En la arquitectura de microservicios es obligatorio colocar un broker de mensajes o bus de eventos transversal junto a todos los microservicios, y dar a entender que la comunicación entre ellos se realiza a través de este módulo.
+De acuerdo a su prósito:
+
+- Específicos: cada uno de los dominios o subdominios específicos del dominio a los que el sistema da solución. Son distintos en cada ejercicio.
+- Generales: de propósito general y de apoyo a las operaciones del sistema, generalmenete comunes entre ejercicios. Se incluyen algunos ejemplos:
+  - Autenticación
+  - Firma
+  - Gestión documental
+  - Tramitación iBPM
+  - Estadísticas
+  - Monitorización
+
+Cada microservicio cuenta con su propia base de datos. Se puede añadir un cilindro representativo de la base de datos a cada uno de los microservicios.
+
+### Protocolos de comunicación
+
+La arquitectura lógica incluye protocolos de comunicación.
+
+- Síncronos (HTTP)
+  - SOAP
+  - REST
+  - gRPC
+- Asíncronos
+  - AMQP
+  - Streaming de eventos
+
+El resumen de cuándo usar cada uno:
+
+- SOAP, solo cuando el enunciado obligue a ello.
+- REST, para conectar con sistemas externos (ej.: una app, un navegador).
+- gRPC, para conectar componentes internos que requieren respuesta que llegará al momento.
+- AMQP (RabbitMQ), para conectar componentes internos cuya respuesta es necesaria pero tardará varios segundos (pantalla de espera).
+- Streaming de eventos (KafkaMQ), para conectar componentes internos cuya respuesta no influye en el evento principal.
+
+Los aspirantes suelen incluir en los microservicios de backend un único 
+
+El protocolo síncrono por excelencia es HTTP, y las arquitecturas de comunicación síncronas aquí mostradas están basadas alguna de sus variantes como HTTP/1.1 y HTTP/2.
+
+**SOAP** es el más antiguo de los protocolos síncronos aquí expuestos. Se encuentra en sistemas legaciy y no suele ser una elección habitual en sistemas modernos. Usa XML. No tiene un broker externo.
+
+**REST** es un estilo artquitectónico más que un protocolo. el método síncrono más habitual para conectarse con sistemas externos, debido a su ubicuidad en productos. Usa JSON. No tiene un broker externo.
+
+**gRPC** es más óptimo de los síncronos en cuando a velocidad y consumo de red, por lo que se usa para comunicaciones internas. Usa Protobuf. No tiene un broker externo.
+
+**AMQP** (*Advanced Message Queuing Protocol*) es protocolo de envío por gestor de colas de mensajes que se usa para realizar comunicaciones por asincronía, cuando es habitual que la resupuesta se dilate varios segundos. La herramienta de mensajería RabbitMQ lo usa.
+
+El **streaming de eventos** se emplea para datos de streaming en tiempo real. Se usa para recolección de logs, analítica en tiempo real o estadísticas, etc. Una plataforma de streaming de eventos es Apache Kafka.
+
+### Funciones transversales de la arquitectura lógica
+
+A menudo los aspirantes incluyen en la parte inferior (o derecha) una flecha bidireccional que abarca todo el diagrama de arquitectura del sistema, y junto a ella enumeran aspectos a tener en cuenta al gestionar cada componente.
+
+A menudo los candidatos incluyen bloques transversales, incluyendo algunos como:
+
+- Seguridad
+- Interoperabilidad
+- Accesibilidad
+- Usabilidad
+- Administración
+  - Orquestación
+  - Monitorización
+
+Como es una costumbre extendida entre los aspirantes, resulta más razonable incluirlo que no hacerlo por no dar la imagen de que el ejercicio está menos esforzado que el resto.
+
+No queda de más explicar con palabras que respecto a la usabilidad se aplica el estándar EN 301 549 en su versión más reciente de 2021, que incorpora la guía WCAG 2.1 y nivel AA (o la versión aplicable a fecha del exámen).
 
 ## Arquitecturas de sistemas
 
-Durante el supuesto práctico se puede requerir al aspirante que proponga distintos tipos de arquitectura para un sistema de información, que se detallan en este apartado.
+Durante el supuesto práctico se puede requerir al aspirante que proponga distintos tipos de arquitectura para un sistema de información, que se detallan en este apartado.    
 
 ### Dominios/subdominios funcionales
 
