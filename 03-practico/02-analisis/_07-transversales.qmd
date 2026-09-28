@@ -81,6 +81,8 @@ La descentralización se refiere a la delegación de competencias entre distinta
 - Organismos
   - CTT (Centro de Transferencia de Tecnología)
   - CISE (Centro de Interoperabilidad Semántica)
+- Servicios transversales
+  - InSiDe
 - Temas
   - 45. ENI
   - 46. NTI
@@ -112,6 +114,8 @@ Ver sección sobre [interoperabilidad en la AGE](01-supuesto.qmd#interoperabilid
     - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
 - Iniciativas:
   - [Portal de Transparencia](#portal-transparencia)
+- Webinars
+  - Carmen Cabanillas. [Calidad y transparencia en los procesos del sector público](https://www.youtube.com/live/LHpSYAznhOs?end=5450). Canal "PreparaTIC" en YouTube, 24/04/2026.
 :::
 
 Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).

@@ -172,7 +172,31 @@ FIRe permite, por ejemplo, escoger entre realizar una firma con un servicio en l
   - [InSiDe en CTT](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=inside). PAe.
 :::
 
-Infraestructuras y Sistemas de Documentación Electrónica (InSiDe) es un sistema para la gestión de documentos y expedientes electrónicos.
+Infraestructuras y Sistemas de Documentación Electrónica (**InSiDe**) es un sistema para la gestión de documentos y expedientes electrónicos. Se puede definir como un motor de cumplimiento normativo (middleware) que transforma ficheros normales en documentos y expedientes legales según el ENI.
+
+El uso de InSiDe permite ahorrar a los organismos públicos el conocer e implementar la compleja normativa relativa a la interoperabilidad.
+
+InSiDe no tiene un repositorio de documentos propios, por lo que depende de un gestor documental instalado en la infraestructura de uno de los organismos.
+
+Valor añadido del uso de InSiDe:
+
+- **Generación de Documentos ENI**: Recibe un documento normal (ej. un PDF), le incrusta la firma electrónica válida y le asocia los metadatos obligatorios (origen, fecha, nivel de seguridad), empaquetándolo todo en el formato XML que exige la ley.
+
+- **Ensamblado de Expedientes**: Agrupa múltiples Documentos ENI en un "Expediente Electrónico", generando el Índice Electrónico firmado. Este índice garantiza que nadie ha añadido ni quitado papeles del expediente original, sellándolo criptográficamente.
+
+- **Gestión del ciclo de vida**: Permite abrir un expediente, añadirle documentos mientras está en fase de tramitación (vivo) y, finalmente, cerrarlo de forma segura.
+
+- **Preparación para el intercambio**: Es la pieza clave que permite que un expediente originado en un Ministerio pueda enviarse digitalmente a un Ayuntamiento o a un Juzgado. Como InSide garantiza que el paquete cumple el estándar ENI, el sistema receptor lo entenderá e integrará automáticamente sin incompatibilidades técnicas.
+
+- **Abstracción del almacenamiento**: Libera a los programadores del organismo de tener que gestionar la base de datos documental. La aplicación de tramitación simplemente le dice a InSide: "Guarda este documento en el expediente X", e InSide se encarga de traducirlo a CMIS y enviarlo al repositorio definitivo (como Alfresco).
+
+El **flujo típico de interacción con InSiDe** es:
+
+1. Una aplicación envíe un fichero a InSiDe por REST 
+2. InSiDe añade metadatos y lo convierta en documento electrónico ENI.
+3. InSiDe envía por CMIS el documento electrónico al repositorio documental asociado al organismo solicitante.
+4. El repositorio almacena el documento electrónico y devolverá un ID ENI.
+5. InSiDe almacena en InSiDe.
 
 ###  Servicio de gestión de archivo electrónico.
 
@@ -184,7 +208,17 @@ Infraestructuras y Sistemas de Documentación Electrónica (InSiDe) es un sistem
   - [InSiDe en CTT](https://administracionelectronica.gob.es/ctt/archive). PAe.
 :::
 
-Archive es un archivo definitivo de expedientes y documentos.
+**Archive** es un archivo definitivo de expedientes y documentos.
+
+Archive no guarda los ficheros, sino que depende de herramientas externas como son sistemas de ficheros, soluciones de almacenamiento en la nube o gestores documentales.
+
+Valor añadido de Archive:
+
+- Sellar el paquete: Empaqueta el expediente cerrado en un formato especial de preservación (llamado SIP/AIP).
+
+- Preservación a largo plazo: Vigila la obsolescencia de los formatos. Por ejemplo, si dentro de 20 años el formato PDF deja de ser un estándar legible, Archive se encarga de gestionar la migración de esos ficheros a un nuevo formato para que no se pierdan.
+
+- Control de expurgo: Aplica los calendarios de conservación (dictados por la Comisión Superior Calificadora de Documentos Administrativos) para saber si un expediente debe guardarse para siempre (como patrimonio histórico) o si debe destruirse legalmente pasados 5, 10 o 50 años.
 
 ## Bases de datos comunes
 

@@ -19,7 +19,8 @@ Los diagramas estáticos y dinámicos reseñados en este apartado son:
   - 88. Análisis de sistemas y metodologías ágiles 
 - Referencias
   - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es). PAe.
-  - Cillero, Manuel. [Casos de uso en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/casos-de-uso/).
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-casos-de-uso){target="_blank"}. GitHub Pages.
+  - Cillero, Manuel. [Casos de uso en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/casos-de-uso/){target="_blank"}.
 :::
 
 El **diagrama de casos de uso** representa gráficamente los distintos casos de uso de un sistema, así como los actores que interactúan con él.
@@ -40,7 +41,7 @@ Consejos:
 
 - Incluir alguna relación «include» y «extend» entre casos de uso, para demostrar al tribunal la capacidad de trabajar con estos conceptos.
 
-### Diagrama de flujo de datos
+### Diagrama de flujo de datos {#diagrama-de-flujo-de-datos}
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -52,21 +53,41 @@ Convocatorias/tareas: 2018.1
 - Temas
   - 90. Análisis dinámico de sistemas
 - Referencias
-  - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/)
+- [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-flujo-de-datos){target="_blank"}. GitHub Pages.
+  - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/){target="_blank"}.
 :::
 
-Diagrama de Flujo de Datos (DFD) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema.
+El **diagrama de flujo de datos** (**DFD**, *data flow diagram*) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema. Está definido dentro de Métrica v3.
 
 El DFD consta de varios niveles de detalles, numerados de 0 a n, donde 0 es el nivel más alto y n es el nivel más bajo. El nivel 0 es conocido como **diagrama de contexto**, y representa el sistema como un único proceso que interactúa con elementos externos. Los niveles 1 a n van aumentando el nivel de detalle del sistema y procesos de manera jerárquica.
+
+Los procesos se representan mediante rectángulos divididos en 3 secciones, donde se incluye un ID, el lugar donde tiene lugar el proceso y el nombre del proceso.
+
+Las líneas punteadas usadas en una flecha o proceso indican que se trata de un flujo o proceso de control.
+
+DFD no requiere el uso de elementos gráficos específicos de fan-out/fork y fan-in/join para bifurcaciones de flujos, pues está permitido que salgan o entren varias flechas de un mismo proceso.
+
+### Diagrama de actividad
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [Diagramas de flujo](https://es.wikipedia.org/wiki/Diagrama_de_flujo){target="_blank"}. Wikipedia.
+:::
+
+El **diagrama de actividad** o **diagrama de flujo** es un diagrama propio de UML.
+
+Este tipo de diagrama no está presente en Métrica v3, por lo que se sugiere a los aspirantes emplear si es posible alguna técnica de modelado sí incluida como el [Diagrama de Flujo de Datos](#diagrama-de-flujo-de-datos) o el [diagrama de secuencia](#diagrama-de-secuencia) (si se requiere reflejar el actor de cada activdad).
 
 ### Modelo entidad-relación
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
+- Referencias
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#modelo-entidad-relacion-extendido){target="_blank"}. GitHub Pages.
+  - Manuel Cillero. [Modelo entidad-relacion extendido en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/){target="_blank"}
 - Temas
   - 89. Análisis del dominio de los sistemas
-- Referencias
-  - Cillero, Manuel. [Modelo entidad-relacion en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/){target="_blank"}
 :::
 
 Un modelo entidad-relacion (E/R) se puede presentar en caso de que se pida representar gráficamente las entidades de datos.
@@ -80,10 +101,11 @@ Convocatorias/tareas: 2018.1
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
+- Referencias
+   - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-clases){target="_blank"}. GitHub Pages.
+  - Cillero, Manuel. [Diagrama de clases en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-clases/){target="_blank"}
 - Temas
   - 89. Análisis del dominio de los sistemas
-- Referencias
-  - Cillero, Manuel. [Diagrama de clases en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-clases/){target="_blank"}
 :::
 
 Diagrama de clases pertenece a la familia de diagramas UML.
@@ -95,22 +117,59 @@ Diagrama de clases pertenece a la familia de diagramas UML.
 - Temas
   - 92. Diseño arquitectónico de sistemas
 - Referencias
-  - Cillero, Manuel. [Diagramas de despliegue en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-despliegue/){target="_blank"}
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-despliegue){target="_blank"}. GitHub Pages.
+  - Manuel Cillero. [Diagramas de despliegue en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-despliegue/){target="_blank"}
 :::
 
-El diagrama de despliegue pertenece a la familia de diagramas UML.
+El diagrama de despliegue pertenece a la familia de diagramas UML, y está entre los incluidos en Métrica v3.
 
-### Diagrama de secuencia
+### Diagrama de secuencia {#diagrama-de-secuencia}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-secuencia){target="_blank"}. GitHub Pages.
+  - Manuel Cillero. [Diagrama de secuencia](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-interaccion/diagrama-de-secuencia){target="_blank"} en Métrica v3. manuel.cillero.es.
   - [Diagramas de secuencia](https://es.wikipedia.org/wiki/Diagrama_de_secuencia){target="_blank"}. Wikipedia.
 :::
 
-El diagrama de secuencia es un diagrama UML que permite modelar la interacción entre distintos elementos de un sistema.
+El **diagrama de secuencia** es un diagrama UML presente en Métrica v3 que permite modelar la interacción en secuencia temporal entre distintos elementos de un sistema.
 
-![Ejemplo de diagrama de secuencia](../images/diagrama-secuencia.png)
+![Ejemplo de diagrama de secuencia](../images/sup-modelado-diagrama-secuencia.png){target="_blank"}
+
+```{=comment}
+```{plantuml}
+@startuml
+skinparam style strictuml
+skinparam defaultTextAlignment center
+
+participant ":Ordenador" as Computadora
+participant ":Servidor" as Servidor
+
+[-> Computadora : comprobarCorreo
+activate Computadora
+
+Computadora -> Servidor : enviarCorreoNoEnviado
+activate Servidor
+deactivate Servidor
+
+Computadora -> Servidor : nuevoCorreo
+activate Servidor
+Servidor --> Computadora : respuesta
+deactivate Servidor
+
+Computadora -> Servidor : [nuevoCorreo] descargarCorreo
+activate Servidor
+deactivate Servidor
+
+Computadora -> Servidor : eliminarCorreoAntiguo
+activate Servidor
+deactivate Servidor
+
+deactivate Computadora
+@enduml
+```
+```
 
 ### Métrica v3
 
@@ -122,4 +181,3 @@ El diagrama de secuencia es un diagrama UML que permite modelar la interacción 
   - [Métriva v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
   - Manuel Cillero. [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/){target="_blank"}. manuel.cillero.es.
 :::
-

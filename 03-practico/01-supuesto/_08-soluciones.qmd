@@ -1,4 +1,4 @@
-## Tecnología
+## Soluciones tecnológicas
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
@@ -64,21 +64,66 @@ Para la solución basadas en WebView (como Angular y Ionic), se puede emplear **
 
 #### Bases de datos
 
-Las bases de datos más empleadas en la AGE son Oracle Database (propietaria) y PostgreSQL (de código abierto).
+Para las bases de datos (BBDD) se debe elegir entre bases de datos relacionales o alguna de las tipologías de bases de datos NoSQL.
 
-En caso de trabajarse en de un ecosistema de Microsoft, se debe considerar Microsoft SQL Server.
+Se suele recurrir BBDD NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (BBDD de columna ancha), cuando se busca flexibilidad estructural respecto a tablas (BBDD documental, BBDD de grafos) o se requiere simplicidad y rapidez (BBDD clave-valor).
+
+| Tipo de BBDD | Producto código abierto | Escenario óptimo |
+| - | - | - |
+| Relacional | PostgreSQL | Consultas complejas |
+| Columna ancha | Cassandra | Volumen alto, escalabilidad horizontal |
+| Documental | FerretDB 2 + DocumentDB de Linux Foundation (compatible con MongoDB) | Datos semiestructurados |
+| Grafos | Neo4j | Datos centrados en relaciones |
+| Clave-valor | Valkey | Simplicidad y rapidez |
+
+Respecto a las BBDD relacionales, las más utilizadas en la AGE son Oracle Database (propietaria) y PostgreSQL (de código abierto). En caso de trabajarse con el stack de Microsoft, se debe considerar Microsoft SQL Server.
+
+En cuanto a BBDD clave-valor, se propone Valkey en lugar de Redis ya que el primero es un fork del segundo que mantiene la licencia permisiva original y cuenta con el soporte de la Linux Foundation.
+
+#### Gestión documental {#gestion-documental}
+
+Para la gestión documental en el contexto de la AGE, se recuerda que este se debe realizar siempre mediante el servicio transversal [InSiDe](01-supuesto.qmd#inside). Adicionalmente al uso de este servicio, el sistema debe proveer una solución de gestión documental.
+
+Una solución habitual de gestión documental es Alfresco, disponble en versión de código abierto (Alfresco Community) o propietaria (Alfresco Enterprise), y que sigue CMIS.
+
+El estándar CMIS (*Content Management Interoperability Services*), promulgado por OASIS, permite comunicarse a gestores documentales entre sí. Lo siguen soluciones como Alfresco, Documentum o SharePoint. En el contexto de la AGE, es crítico que la solución cumpla el estándar ya que es el que sigue InSiDe para enviar los documentos ENI a un gestor documental.
+
+#### Archivado {#archivado}
+
+Para el archivado, se recuerda que este se debe emplear siempre a través del servicio transversal [Archive](01-supuesto.qmd#archive). Adicionalmente al uso de este servicio, el sistema debe proveer una solución de archivado.
+
+Una solución on premise podría ser un disco duro masivo tipo NAS o SAN. 
+
+Una solución en la nube puede ser NubeSARA, lo cual demostraría que el aspirante conoce y reutiliza los recursos de la AGE. También se podrían emplear hiperescalares como AWS S3 o Azure Blob Storage. 
+
+Alternativamente, se puede archivar en un [gestor documental](#gestion-documental).
+
+#### Mensajería
+
+Para mensajería e integración en la AGE se emplean distintas herramientas, dependiendo de la necesidad.
+
+Como gestor de **colas de mensajes**, como mensajes asíncronos dentro de los procesos de operaciones, se emplea Rabbit MQ. Los mensajes se consumen una vez leídos, y suele haber un destinatario único.
+
+Para **streaming de eventos** en tiempo real, como envío de logs, estadísticas o big data, se emplea Apache Kafka. Los mensajes se guardan en memoria, y suele haber múltiples destinatarios.
+
+Como regla para saber cuándo usar cada herramienta:
+
+| Tipo de mensajería | Contenido comunicado | Destinatario | Ejemplos |
+| - | - | - | - |
+| Colas de mensajes | Comandos | Único | Operaciones |
+| Streaming de eventos | Hechos | Múltiple | Logs, estadísticas |
+| Aspecto | Cola de mensajes | Streaming de eventos |
+| Contenido comunicado | Comandos | Hechos |
+| Destinatario | Único | Múltiple |
+| Ciclo de vida del dato | Efímero | Persistente |
+| Gestión de errores | Nativa | Manual |
+| Uso | Operaciones | Logs, estadísticias |
+
+Si se dan ambas casuísticas se pueden combinar en un mismo sistema, lo que a menudo se conoce como **mensajería políglota** (*polyglot messaging*).
 
 #### Contenedores y orquestación
 
 La AGE emplea habitualmente Docker para empaquetado y Kubernetes o soluciones empresariales como Red Hat OpenShift para gestionar de forma segura los clústeres en los centros de datos del Estado.
-
-#### Mensajería
-
-Para mensajería e integración en la AGE se emplean distintas herramientas, dependiendo del uso.
-
-Como gestor de colas de mensajes, como mensajes asíncronos dentro de los procesos de operaciones, se emplea Rabbit MQ. Los mensajes se consumen una vez leídos, y suele haber un destinatario único.
-
-Para streaming de eventos en tiempo real, como envío de logs, estadísticas o big data, se emplea Apache Kafka. Los mensajes se guardan en memoria, y suele haber múltiples destinatarios.
 
 #### API manager
 
@@ -94,9 +139,48 @@ Por ejemplo, MuleSoft AnyPoint Plaform incluye MuleSoft API Gateway, mientras qu
 
 Una opción de código abierto centrada en la funcionalidad de API gateway es **Kong API Gateway** Community Edition (CE). El API manager completo Kong Manager sería de pago.
 
-### IA / Automatización
+### Inteligencia Artificial / Automatización
 
-Para la automatización de procesos se puede proponer el uso de un iBPM (interactive business process management), que aplica IA a procesos. Appian o BluePrism.
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2019.7
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - Luis Esteban. [Aplicacion de IA en el Ayuntamiento de Madrid](https://www.youtube.com/live/LHpSYAznhOs?start=5451). Canal "PreparaTIC" en YouTube, 25/04/2026.
+:::
+
+Para trocear cada documento en fragmentos se puede usar LangChain.
+
+Para convertir un chunk en embedding se puede usar Snowflake.
+
+Las bases de datos vectoriales almacenan embeddings. Un producto de BBDD vectorial es AlloyDB y pgvector en PostgreSQL.
+
+Hay catálogos de modelos como Hugging Faces. Registro de modelos en MLflow y publicación de modelos con TorchServe
+
+Frameworks de programación de IA:
+
+| Tipo | Frameworks |
+| - | - |
+| Tipo 1 y 2 | LangChain |
+| Tipo 3 | TensorFlow, Keras |
+| Agentes | LangGraph, ADK |
+
+Plataformas en la nube de inteligencia artificial:
+
+- Azure AI Foundry
+- Amazon Bedrok (GenIA) o SageMaker (ML clásico)
+- Google Vertex AI
+- IBM Watson
+
+## Datos
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2020.6
+:::
 
 ### Monitorización
 
@@ -104,7 +188,7 @@ Para la monitorización, se requiere poder procesar los logs generados por cada 
 
 En ocasiones se añade a la pila Beats, a través de su implementación Filebeat o Metricbeats, que es una aplicación ligera que recopila datos antes de enviarlos a Logstack. Por tanto, cada uno de los módulos del sistema que genere logs debe contener Beats. 
 
-### Stack de tecnologías
+### Stack de tecnologías por proveedor
 
  Se conoce como stack a la combinación de combinación de tecnologías empleada en un sistema. A la hora de proponer el stack en el supuesto práctico, se debe reflexionar cuál es el más adecuado en base a distintos criterios.
  
@@ -160,19 +244,3 @@ Propoponer un stack de código abierto otorga la ventaja de evitar costes de lic
 - Framework backend: Spring Boot (Java)
 - Servidor aplicación: RedHat WildFly (monolítico) / Apache Tomcat (microservicios)
 - Base de datos: PostgreSQL
-
-### IA (supuesto práctico)
-
-::: {.callout-note collapse="true" icon="false"}
-## 📝 Apariciones en examen
-Convocatorias/tareas: 2019.7
-:::
-
-Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervisado dependiendo de si se cuenta con un conjunto de entrenamiento etiquetado.
-
-## Datos
-
-::: {.callout-note collapse="true" icon="false"}
-## 📝 Apariciones en examen
-Convocatorias/tareas: 2020.6
-:::

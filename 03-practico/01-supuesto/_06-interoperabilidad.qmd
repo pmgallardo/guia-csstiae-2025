@@ -20,6 +20,12 @@ Convocatorias/tareas: 2019.8
   - [Esquema Nacional de Interoperabilidad](https://runmodule.com/2025/09/11/esquema-nacional-de-interoperabilidad-de-espana/)
 :::
 
+### InSiDe
+
+Ver InSiDe.
+
+El uso de servicios transversales como InSiDe permite cumplir con el ENI sin tener que conocer e implementar toda la lógica.
+
 ### Declaración ministerial de Tallín sobre la administración electrónica
 
 Se firmó en 2017-10-06.

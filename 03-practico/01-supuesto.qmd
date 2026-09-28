@@ -54,7 +54,11 @@ En menor medida, también se han preguntado en ejercicios recientes los siguient
 - Accesbilidad
   - EN 301 549
   - WCAG 2.1/2.2
-- Tecnologías
+- Contratación
+  - Umbrales por tipo de contrato y tiempo de contratación
+  - Umbrales SARA
+  - AM y SDA Contratación centralizada
+- Soluciones tecnológicas
 
 ## Introducción al supuesto práctico
 
@@ -65,11 +69,12 @@ Este documento es un resumen de información relevante para la preparación de l
 {{< include /03-practico/01-supuesto/_04-serv-transversales.qmd >}}
 {{< include /03-practico/01-supuesto/_05-seguridad.qmd >}}
 {{< include /03-practico/01-supuesto/_06-interoperabilidad.qmd >}}
-{{< include /03-practico/01-supuesto/_07-tecnologia.qmd >}}
-{{< include /03-practico/01-supuesto/_08-herramientas.qmd >}}
-{{< include /03-practico/01-supuesto/_09-arquitectura.qmd >}}
-{{< include /03-practico/01-supuesto/_10-recursos.qmd >}}
-{{< include /03-practico/01-supuesto/_11-costes.qmd >}}
-{{< include /03-practico/01-supuesto/_12-contratacion.qmd >}}
-{{< include /03-practico/01-supuesto/_13-planificacion.qmd >}}
-{{< include /03-practico/01-supuesto/_14-realizacion-supuesto.qmd >}}
+{{< include /03-practico/01-supuesto/_07-emergente.qmd >}}
+{{< include /03-practico/01-supuesto/_08-soluciones.qmd >}}
+{{< include /03-practico/01-supuesto/_09-herramientas.qmd >}}
+{{< include /03-practico/01-supuesto/_10-arquitectura.qmd >}}
+{{< include /03-practico/01-supuesto/_11-recursos.qmd >}}
+{{< include /03-practico/01-supuesto/_12-costes.qmd >}}
+{{< include /03-practico/01-supuesto/_13-contratacion.qmd >}}
+{{< include /03-practico/01-supuesto/_14-planificacion.qmd >}}
+{{< include /03-practico/01-supuesto/_15-realizacion-supuesto.qmd >}}

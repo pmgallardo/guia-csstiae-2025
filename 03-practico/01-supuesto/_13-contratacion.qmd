@@ -55,23 +55,25 @@ Resumen de tipologías de contratación pública, con sus límites y tiempos:
 | - | - | - |
 | Encargos a medios propios | sin límite | Inmediato |
 | Contrato menor | < 15.000 € | 1 mes |
-| Contratación centralizada | < 862.000 € | 2 meses |
-| Procedimiento abierto simplificado abreviado | < 60.000 €  | 2 meses |
-| Procedimiento abierto simplificado | < 140.000 € | 4 meses |
+| Contratación centralizada | < 1.500.000 € | 2 meses |
+| Procedimiento abierto simplificado abreviado (PASA) | < 60.000 €  | 2 meses |
+| Procedimiento abierto simplificado (PAS) | < 140.000 € | 4 meses |
 | Procedimiento abierto | Sin límite | 6 meses |
 
-En este resumen los límites están simplificados y focalizados en servicios de desarrollos (como el SDA 26/2021) en los casos en los que haya varias casuísticas.
+El umbral SARA para servicios y suministros de la AGE (el más habitual) son 140.000 (el mismo que PAS).
+
+En este resumen los límites están simplificados y focalizados en servicios de desarrollos (como el [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo) en los casos en los que haya varias casuísticas.
 
 Contratación centralizada más relevante:
 
 | Código | Descripción |
 | - | - |
-| [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores) | Ordenadores de mesa, portátiles monitores y otras soluciones del puesto de trabajo |
+| [AM 02/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-suministro-ordenadores) | Ordenadores de mesa, portátiles, monitores y otras soluciones del puesto de trabajo |
 | [AM 05/2023](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-impresoras) | Impresoras, fotocopiadoras y escáneres |
 | [AM 08/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-ami-sistemas-seguridad) | Sistemas de seguridad |
+| [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores) | Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento |
 | [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software) | Suministro de software |
 | [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo) | Servicios de desarrollo |
-| [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores) | Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento |
 
 Evaluación del proceso de contratación:
 
@@ -165,29 +167,33 @@ Se puede declarar la urgencia en un expediente de contratación cuando se cumpla
 
 - La Administración tiene que actuar de manera inaplazable.
 - Es necesario acelerar la adjudicación por razones de interés público.
-
-Como normal general, los tiempos se reducen a la mitad.
+- No se trate ni de Procedimiento Abierto Simplificado (PAS) ni en el Abreviado (PASA) (art. 159.5 de la LCSP).
 
 Como nota, hay subprocesos dentro de la contratación qeu no pueden ser reducidos, como las alegaciones no el plazo de presentación de ofertas de los procesos simplificados. No obstante, el proceso de contratación completo sigue reduciéndose a la mitad.
 
 ### (Paso 3) Contratación centralizada
+
+La regulación contratación centralizada se desarrolla tanto en la LCSP, en la subsección 2.ª "Contratación centralizada" (artículo 229 en adelante) de la LCSP, como en Órdenes Ministeriales que no modifican dicha ley. A 2026, la Orden más reciente sobre la contratación centralizada es la [Orden HAC/459/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-10307).
+
+::: {.callout-note collapse="true"}
+## Histórico de Órdenes sobre contratación centralizada
+- [Orden EHA/1049/2008](https://www.boe.es/buscar/act.php?id=BOE-A-2008-6804)
+- [Orden HAC/459/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-10307)
+:::
 
 Modalidades dentro de la contratación centralizada:
 
 - Acuerdo marco (AM)
 - Sistema dinámico de adquisición (SDA)
 - Contratos centralizados
-- Encargos a medios propios
 
-Por encima de 862.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.
+Por encima de 1.500.000 € no se puede ir por contratación centralizada y habría que ir muy probablemente a procedimiento abierto.
 
-Se pueden revisar el catálogo en la página oficial:
-
-[Página web del catálogo de contratación centralizada](https://contratacioncentralizada.gob.es/catalogo)
+Se pueden revisar el catálogo de contratación centralizada en la [página web del catálogo de contratación centralizada](https://contratacioncentralizada.gob.es/catalogo).
 
 La tendencia es convertir los acuerdos marcos en sistemas dinámicos de adquisición (SDA), ya que son más flexibles y fomenta la competitividad y ofrece mayor transparencia.
 
-La Secretaría General de la Administración Digital (SGAD) agrega todas las peticiones y la DGRCC coordina el proceso de compra conjunto.
+La Secretaría General de la Administración Digital (SGAD) emite el informe preceptivo y la DGRCC coordina el proceso de compra conjunto.
 
 #### Acuerdos Marco
 
@@ -254,11 +260,11 @@ Los pliegos de cláusulas administrativas particulares deben advertir expresamen
 
 #### Encargos a medios propios
 
-Los encargos a medios propios son mecanismos para que se hagan encargos a organismos relacionados con la AGE.
+Los **encargos a medios propios** son mecanismos para que se hagan encargos a organismos relacionados con la AGE. Se regulan en el art. 32 de la LCSP.
 
 Las encomiendas de gestión no hay una relación vinculante entre encomentante y encomendado.
 
-Son disitntos los encargos a medios propios y las encomiendas de gestión.
+Son disintos los encargos a medios propios y las encomiendas de gestión.
 
 La definición de medio propio incluye:
 
@@ -269,14 +275,24 @@ Un ejemplo de medio propio sería la Fábrica Naciona de Moneda y Timbre-Real Ca
 
 ### (Paso 5) Regulación armonizada SARA
 
-La **regulación armonizada** o **SARA** es aquella se aplica a contratos del sector público de la UE que cumplen ciertas condiciones. Estas están especificadas en la Sección 2.ª "Contratos sujetos a una regulación armonizada" (a partir del artículo 19) la LCSP. Esta parte suele ser actualizada regularmente mediante órdenes. En 2026, la última orden aplicada fue la Orden HAC/1517/2025.
+La **regulación armonizada** o **SARA** es aquella se aplica a contratos del sector público de la UE que cumplen ciertas condiciones. Estas están especificadas en la Sección 2.ª "Contratos sujetos a una regulación armonizada" (a partir del artículo 19) la LCSP.
+
+La LCSP tiene una habilitación expresa para que Órdenes Ministeriales, de Hacienda en realidad, puedan modificarla. De esta manera, los **umbrales europeos** definidos por la Comisión Europea se actualizan cada dos años, en diciembre, mediante Órdenes Ministeriales dos años. A 2026, la orden más reciente que define umbrales europeos es la Orden HAC/1517/2025; no obstante, el texto consolidado de la LCSP incluye los cambios indicados.
+
+::: {.callout-note collapse="true"}
+## Histórico de órdenes que actualizan los umbrales europeos de la LCSP:
+- Orden HFP/1298/2017
+- Orden HAC/1272/2019
+- Orden HFP/1499/2021
+- Orden HFP/1352/2023
+- [Orden HAC/1517/2025](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-26605)
+:::
 
 Un **contrato de regulación armonizada** o **contrato SARA** es aquel sobre el que se aplica la regulación armonizada.
 
 #### Condiciones SARA {.unnumbered .unlisted}
 
-Desde 2026, SARA se aplica cuando el valor estimado del contrato sobrepasa el **
-umbral** de:
+Tal y como dicta la Orden HAC/1517/2025, SARA se aplica cuando el valor estimado del contrato sobrepasa el **umbral** de:
 
 - 140.000 € para la AGE en contratos de suministros y servicios
 - 216.000 € para organismos distintos a la AGE en contratos de suministros y servicios

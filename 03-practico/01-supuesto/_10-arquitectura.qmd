@@ -5,7 +5,7 @@
 Convocatorias/tareas: 2023.1, 2022.1, 2020.1, 2019.3, 2018.1
 :::
 
-La **arquitectura lógica**, también referida en algunos ejercicios como **modelo lógico** o **arquitectura de sistema** (en singular), representa las distintas capas que posee el sistema.
+La **arquitectura lógica**, también referida en algunos ejercicios como **modelo lógico**, representa las distintas capas que posee el sistema.
 
 La arquitectura lógica suele incluir:
 
@@ -22,13 +22,15 @@ Por el contrario, suelen excluir:
   - Elementos de red (redes, enrutadores, cortafuegos, etc.)
   - Elementos duplicados para obtener alta disponibilidad (HA)
 
-### Principios de diseño de software
+### Principios de diseño de software 
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
   - <https://runmodule.com/2028/05/23/software-architectural-style/>
 :::
+
+La arquitectura lógica debe reflejar el principo de diseño de software empleado. Los propuestos aquí son los siguientes:
 
 - Monolítico
 - Cliente-servidor
@@ -38,11 +40,15 @@ Por el contrario, suelen excluir:
 
 ### Estilos de arquitectura de software
 
-La arquitectura lógica recoge el estilo y patrón de arquitectura de software. Suelen aparecer en arquitecturas lógicas:
+La arquitectura lógica recoge el estilo y patrón de arquitectura de software. En algún ejercicio, como el 2023.1b, se han referido al estilo de arquitectura de software como **arquitectura de aplicación**.
+
+Arquitecturas lógicas habituales:
 
 - Modelo-vista-controlador (MVC)
 - Arquitectura hexagonal
 - Arquitectura clean
+
+Conviene que el aspirante tenga clara la diferencia entre un principio de diseño de software y el estilo de arquitectura de software, pues están en distintas capas y son compatibles entre sí. Por ejemplo, en el caso de microservicios cada uno de ellos puede emplear un estilo de arquitectura distinto (uno MVC, otro hexagonal, etc.).
 
 ##### MVC {.unnumbered .unlisted}
 
@@ -94,15 +100,15 @@ Por debajo (o a la derecha) de ellos, se incluye el medio utilizado para acceder
 
 ### Arquitectura lógica frontend web
 
-En aplicaciones web, se distinguen las siguientes tipologías respecto a la estrategias de renderizado de HTML:
+En aplicaciones web, se distinguen las siguientes tipologías respecto a la estrategias de renderizado web:
 
 - SSR (Server-Side Rendering)
 - CSR (Client-Side Redering)
 - SSG (Static Site Generator)
 
-Todas tienen sus ventajas y sus inconvenientes. En el sector público español se tienee hacia SSR ya que suele ser más sencillo hacerlas accesibles y tiene mayor compatibilidad con equipos de capacidad limitada.
+Todas tienen sus ventajas y sus inconvenientes. En la AGE se tiende hacia SSR ya que tiene mayor compatibilidad con equipos de capacidad limitada y suele ser más sencillo hacerlas accesibles. CSR, por el contrario, aligera parte de la carga de la infraestructura y la delega a los equipos de usuario.
 
-Respecto al número de páginas involucradas, se distinguen los siguientes tipos de aplicaciones web:
+Respecto al número de páginas contenidas en la aplicación, se distinguen los siguientes tipos de aplicaciones web:
 
 - SPA (Single Page Application)
 - MPA (Multiple Page Application)
@@ -113,7 +119,7 @@ El funcionamiento de una página web depende del tipo de estrategia empleada. En
 
 En cualquiera de las estrategias, el navegador comienza solicitando al sistema un fichero HTML que contiene la aplicación web. Esto se hace a través de un servidor de presentación o un CDN.
 
-El **servidor de presentación**, que en el contexto de arquitectura lógica quizás debería llamar **servicio de presentación**, atiende a las peticiones de los navegadores web. Su función y complejidad varía dependiendo de la arquitectura front empleada.
+El **servidor de presentación** atiende a las peticiones de los navegadores web. Su función y complejidad varía dependiendo de la estrategia de renderizado web.
 
 En SSR, el servidor de presentación ejerce de intermediario y se encarga de renderizar la página web completa antes de devolverla al navegador y procesar cualquier petición posterior realizada desde el cliente.
 
@@ -121,19 +127,25 @@ En CSR, el navegador solicita al sistema el contenido estático de la página we
 
 Un **CDN** (*content delivery network*) se puede emplear para facilitar a los usuarios contenidos comunes a todos o una gran parte de ellos, como contenido estático (estructura básica de la aplicación web en CSR, noticias, etc.).
 
-Un **API gateway** (pasarela API) es un bloque que se encuentra entre las interfaces de los usuarios y el dominio del sistema; es decir, ejerce de separación entre el frontend y el backend de la aplicación. En el lado del backend estarían los servidores de aplicación y microservicios, que se encargan de gestionar las solicitudes de los usuarios hacia las APIs del sistema.
+Un **API gateway** (pasarela API) es un bloque que se encuentra entre las interfaces de los usuarios y el dominio del sistema; es decir, ejerce de separación entre el frontend y el backend de la aplicación. En el lado del backend estarían los servidores de aplicación y microservicios, que agrupan la lógica de dominio aislada de la lógica de presentación.
 
-El API gateway es necesario cuando existen varias interfaces de usuario, como por ejemplo páginas web distintas para cada tipo de usuario o acceso alternativo para un mismo perfil via web y via app. Si no hay distintas interfaces de usuario, habría que justificar su inclusión (como por ejemplo, indicar que se incluye por escalabilidad del sistema).
+Pese a que el API gateway está en la frontera entre el frontend y el backend, este tradicionalmente, y por tanto suele estar contenido dentro de la red perimetral; sin embargo, estructuras más modernas lo pueden colocar también dentro del backend.
 
-Las llamadas al API gateway se suelen realizar con el protocolo REST, y en sistemas más tradicionales con HTTP.
+El API gateway es necesario cuando existen varias interfaces de usuario, como por ejemplo páginas web distintas para cada tipo de usuario o acceso alternativo para un mismo perfil via web y via app. Si no hay distintas interfaces de usuario, conviene justificar su inclusión; por ejemplo, indicar que se incluye por escalabilidad del sistema o porque permite usar APIs externas e internas distintas.
+
+Las llamadas al API gateway se suelen realizar con el protocolo REST.
 
 En las aplicaciones CSR, el navegador se descarga la aplicación HTML del servidor de presentación y después las llamadas son realizadas directamente al API gateway desde el navegador.
 
+Si fuera una aplicación web CSR y no hubiera necesidad de incluir API gateway, las llamadas se harían a nivel lógico directamente desde el navegador al backend; no obstante, por seguridad y para evitar llamadas directas a la red privada desde el exterior se suele colocar un proxy inverso en la subred perimetral.
+
 ![Arquitectura del API gateway en CSR](../images/sup_arq_api_gateway_csr.png)
 
-En las aplicaciones con renderizado en el servidor (*server-side rendering*, SSR), como PHP, más tradicionales y aún muy presentes en la AGE, es el servidor de aplicación el que llama directamente al API gateway para poder entregar al navegador la página ya ensamblada.
+En las aplicaciones con renderizado en el servidor (*server-side rendering*, SSR), como PHP, más tradicionales y aún muy presentes en la AGE, es el servidor de aplicación el que llama directamente al API gateway para poder entregar al navegador la página web ya ensamblada.
 
-Existe un patrón BFF (Backend-For-Frontend) que coloca una capa entre el API gateway (o en su ausencia, el backend) en la que se emplean *micro-frontends*, cada uno con una función determinada y que realiza sus propias llamadas al API gateway (o backend). En SSR, para cada aplicación web se coloca un UI composer (compositor de interfaz de usuario) entre el navegador y los micro-frontends, que centraliza las comunicaciones con los micro-frontends y lo devuelve el resultado procesado. En CSR, la aplicación web llama directamente a los micro-frontends.
+![Arquitectura del API gateway en CSR](../images/sup_arq_api_gateway_ssr.png)
+
+Existe un patrón BFF (*Backend-For-Frontend*) que coloca una capa entre el API gateway (o en su ausencia, el backend) en la que se emplean *micro-frontends*, cada uno con una función determinada y que realiza sus propias llamadas al API gateway (o backend). En SSR, para cada aplicación web se coloca un UI composer (compositor de interfaz de usuario) entre el navegador y los micro-frontends, que centraliza las comunicaciones con los micro-frontends y lo devuelve el resultado procesado. En CSR, la aplicación web llama directamente a los micro-frontends.
 
 BFF solo tiene sentido para aplicaciones con una interfaz de usuario compleja.
 
@@ -220,7 +232,7 @@ Como es una costumbre extendida entre los aspirantes, resulta más razonable inc
 
 No queda de más explicar con palabras que respecto a la usabilidad se aplica el estándar EN 301 549 en su versión más reciente de 2021, que incorpora la guía WCAG 2.1 y nivel AA (o la versión aplicable a fecha del exámen).
 
-## Arquitecturas de sistemas
+## Arquitectura de sistemas
 
 Durante el supuesto práctico se puede requerir al aspirante que proponga distintos tipos de arquitectura para un sistema de información, que se detallan en este apartado.    
 
@@ -236,10 +248,6 @@ La identificación de dominios/subdominios funcionales se refiere a dividir el s
 ### Arquitectura conceptual
 
 En la arquitectura conceptual se pueden agrupar las acciones a realizar de manera pública por un lado, las acciones del área por otro, y añadir un proceso pasarela que sea autenticación de usuario y que conecte ambos grupos.
-
-### Arquitectura de sistemas
-
-La arquitectura de sistemas (en plural) se refiere a un diagrama de alto nivel sobre la interacción de distintos sistemas.
 
 ### Arquitectura física
 
@@ -264,24 +272,12 @@ Elementos que deben considerarse en la arquitectura física:
 - Elementos de red
 - Bases de datos
 - Proveedores cloud
+- Arquitectura de red
 
 Elementos que se suelen excluir:
 
-- Arquitectura de software
-
-Para las bases de datos se debe elegir entre bases de datos relacionales o bases de datos NoSQL.
-
-Se suele usar datos NoSQL cuando el volumen es alto y se busca escalabilidad horizontal (BBDD de columna ancha), cuando se busca flexibilidad estructural respecto a tablas (BBDD documental, BBDD de grafos) o se requiere simplicidad y rapidez (BBDD clave-valor).
-
-| Tipo de BBDD | Producto código abierto | Escenario óptimo |
-| - | - | - |
-| Relacional | PostgreSQL | Consultas complejas |
-| Columna ancha | Cassandra | Volumen alto, escalabilidad horizontal |
-| Documental | FerretDB 2 + DocumentDB de Linux Foundation (compatible con MongoDB) | Datos semiestructurados |
-| Grafos | Neo4j | Datos centrados en relaciones |
-| Clave-valor | Valkey | Simplicidad y rapidez |
-
-Se propone Valkey en lugar de Redis ya que el primero es un fork del segundo que mantiene la licencia permisiva original y cuenta con el soporte de la Linux Foundation.
+- Arquitectura lógica
+- Patrones de 
 
 ### Arquitectura de red
 

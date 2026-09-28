@@ -1,0 +1,114 @@
+## Tecnologías emergentes
+
+En este apartado se revisan tendencias tecnológicas emergentes y disruptivas que son candidatas a preguntarse en el ejercicio. Algunos aspectos, como la seguridad, están asentados y tienen un apartado propio, pero otros dependen de cada ejercicio.
+
+El carácter emergente se va devaluando con los años.
+
+### Histórico
+
+| Promoción | Convocatoria | Tema |
+| 31 | 2023 | Inteligencia artificial |
+
+### Nube
+
+### Blockchain
+
+Blockchain tuvo su hype durante mediados de los 2010s, cuando se popularizaron las criptomonedas. Hasta el momento no se ha preguntado implícita o explícitamente en ningún apartado, si bien se podría proponer.
+
+### Datos
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2020.6
+:::
+
+### Inteligencia Artificial / Automatización
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2019.7
+:::
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - Luis Esteban. [Aplicacion de IA en el Ayuntamiento de Madrid](https://www.youtube.com/live/LHpSYAznhOs?start=5451). Canal "PreparaTIC" en YouTube, 25/04/2026.
+:::
+
+Se puede aplicar mecanismos de aprendizaje automático, supervisado o no supervisado dependiendo de si se cuenta con un conjunto de entrenamiento etiquetado.
+
+Para la automatización de procesos se puede proponer el uso de un iBPM (interactive business process management), que aplica IA a procesos. Appian o BluePrism.
+
+Existen modelos de:
+- pesos abiertos (con pesos conocidos y ejecutados en local). Llama o Mistral.
+- cerrados (con pesos desconocidos y ejecutados como servicio). GPT, Claude, Gemini. Pago por uso.
+
+Estraegias de uso en GenIA, de menor a mayor intervención:
+
+1. In-Context Learning (ICL) / Prompt Engineering: se guía al modelo con instrucciones y posiblemente algún ejemplo.
+2. RAG (*Retrieval-Augemented Generation*): se recopila información interna y se inyecta en el modelo.
+3. Fine-tuning: reentrenamiento del modelo con datos específicos.
+4. Agentes: sistema con capacidad de razonamiento mediante un LLM, memoria y una serie de herramientas facilitada por otros sistemas.
+
+RAG tiene dos pasos:
+1. convertir los datos en chunks y embeddings, y guardar en una BBDD vectorial.
+2. identificar los embeddings que 
+
+El fine-tuning se realiza sobre un modelo fundacional.
+
+Para trocear cada documento en fragmentos se puede usar LangChain.
+
+Para convertir un chunk en embedding se puede usar Snowflake.
+
+Tipos de LLM
+
+- Multi-modal:
+
+En el supuesto práctico, decidir:
+
+1. Escoger estrategia de IA en función de dónde estén los datos.
+2. Escoger infraestructura (on-premise vs. nube)
+3. Aplicar normativa y métricas
+
+Un embedding es un vector numérico de alta dimensión que representa el significado de un texto, imagen o pieza de audio en un espacio gemétrico. Se puede usar para comparar si hay elementos relacionados.
+
+Procurar tener datos adecuados.
+
+Las bases de datos vectoriales almacenan embeddings. Un producto de BBDD vectorial es pgvector en PostgreSQL o AlloyDB.
+
+MCP (model context protocol) es un protocolo estándar y abierto que estandariza cómo un LLM accede a datos y herramientas externas.
+
+Hay catálogos de modelos como Hugging Faces.
+
+A2A (Agent-to-Agent) es un protocolo impulsado por Google y donado a la Linux Foundation que conecta a agentes entre sí. Cada agente expone su agent-card. Memory-Bank y Agnet-Engnine de Google.
+
+Frameworks de programación de IA:
+
+| Tipo | Frameworks |
+| - | - |
+| Tipo 1 y 2 | LangChain |
+| Tipo 3 | TensorFlow, Keras |
+| Agentes | LangGraph, ADK |
+
+Respecto a la seguridad de la nube, los hiperescalares deben cumplir ENS y no deben sacar datos de la UE.
+
+Desarrollo de software con IA:
+
+- Vibe coding: mejor para prototipado
+- Agentic engineering: mediante agentes
+- Desarrollo basado en especificaciones (*spec-driven development*)
+
+UX asistido por IA.
+
+La IA aumena la productividad.
+
+Emplear el modelo más pequeño que resuelva el problema.
+
+Modelo ALIA de la AGE. Coordinado por la Secretaría de Estado de Digitalización e Inteligencia Artificial y ejecutado por el Barcelona Supercomputing Center (BSC-CNS).
+
+Métricas de IA:
+
+AESIA
+Reglamento (UE) 2024/1689 "AI Act" se aplica de forma escalonada en 2027.
+
+Las soluciones con IA suelen ser más caras.
