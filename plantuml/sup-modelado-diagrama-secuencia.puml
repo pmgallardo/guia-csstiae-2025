@@ -1,0 +1,31 @@
+```{plantuml}
+@startuml
+skinparam style strictuml
+skinparam defaultTextAlignment center
+
+participant ":Ordenador" as Computadora
+participant ":Servidor" as Servidor
+
+[-> Computadora : comprobarCorreo
+activate Computadora
+
+Computadora -> Servidor : enviarCorreoNoEnviado
+activate Servidor
+deactivate Servidor
+
+Computadora -> Servidor : nuevoCorreo
+activate Servidor
+Servidor --> Computadora : respuesta
+deactivate Servidor
+
+Computadora -> Servidor : [nuevoCorreo] descargarCorreo
+activate Servidor
+deactivate Servidor
+
+Computadora -> Servidor : eliminarCorreoAntiguo
+activate Servidor
+deactivate Servidor
+
+deactivate Computadora
+@enduml
+```

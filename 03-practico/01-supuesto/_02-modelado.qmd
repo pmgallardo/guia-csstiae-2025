@@ -137,40 +137,6 @@ El **diagrama de secuencia** es un diagrama UML presente en Métrica v3 que perm
 
 ![Ejemplo de diagrama de secuencia](../images/sup-modelado-diagrama-secuencia.png){target="_blank"}
 
-```{=comment}
-```{plantuml}
-@startuml
-skinparam style strictuml
-skinparam defaultTextAlignment center
-
-participant ":Ordenador" as Computadora
-participant ":Servidor" as Servidor
-
-[-> Computadora : comprobarCorreo
-activate Computadora
-
-Computadora -> Servidor : enviarCorreoNoEnviado
-activate Servidor
-deactivate Servidor
-
-Computadora -> Servidor : nuevoCorreo
-activate Servidor
-Servidor --> Computadora : respuesta
-deactivate Servidor
-
-Computadora -> Servidor : [nuevoCorreo] descargarCorreo
-activate Servidor
-deactivate Servidor
-
-Computadora -> Servidor : eliminarCorreoAntiguo
-activate Servidor
-deactivate Servidor
-
-deactivate Computadora
-@enduml
-```
-```
-
 ### Métrica v3
 
 ::: {.callout-note icon="false"}
