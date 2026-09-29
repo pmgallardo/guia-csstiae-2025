@@ -462,3 +462,85 @@ figcaption,
     text-decoration: underline;
   }
 }
+
+/* =========================================================
+   ÍNDICE FLOTANTE (ESTILO APP) SOLO PARA MÓVILES
+   ========================================================= */
+@media (max-width: 991px) {
+  /* Forzamos a que el panel derecho aparezca en modo botón */
+  #quarto-margin-sidebar {
+    display: block !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #003399; /* Usa el azul oscuro de tu tema */
+    border-radius: 50%;
+    z-index: 2000;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Ocultamos el contenido del índice mientras está colapsado */
+  #quarto-margin-sidebar nav,
+  #quarto-margin-sidebar h2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+  }
+
+  /* Creamos un icono de "Lista/Índice" en el centro del botón */
+  #quarto-margin-sidebar::before {
+    content: "📑"; /* Puedes cambiar este emoji por otro si lo prefieres */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+  /* EFECTO AL TOCAR CON EL DEDO (EXPANDIR) */
+  #quarto-margin-sidebar:hover,
+  #quarto-margin-sidebar:focus-within,
+  #quarto-margin-sidebar:active {
+    width: 75vw;         /* Ocupa el 75% del ancho de la pantalla */
+    max-width: 320px;
+    height: 60vh;        /* Ocupa el 60% del alto de la pantalla */
+    border-radius: 15px; /* Pasa de ser un círculo a un panel redondeado */
+    background-color: #f7f9fc; /* Fondo claro de tus bloques de código */
+    border: 2px solid #003399;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  /* Ocultamos el icono 📑 cuando el panel está abierto */
+  #quarto-margin-sidebar:hover::before,
+  #quarto-margin-sidebar:focus-within::before,
+  #quarto-margin-sidebar:active::before {
+    display: none;
+  }
+
+  /* Mostramos el texto del índice al expandir */
+  #quarto-margin-sidebar:hover nav,
+  #quarto-margin-sidebar:hover h2,
+  #quarto-margin-sidebar:focus-within nav,
+  #quarto-margin-sidebar:focus-within h2,
+  #quarto-margin-sidebar:active nav,
+  #quarto-margin-sidebar:active h2 {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Dale estilo al título "On this page" o "Índice" */
+  #quarto-margin-sidebar h2 {
+    font-size: 1.2rem;
+    color: #003399;
+    margin-top: 0;
+    border-bottom: 2px solid #003399;
+    padding-bottom: 10px;
+  }
+}
