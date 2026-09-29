@@ -73,7 +73,6 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-location: left
     toc-depth: 3
     number-sections: true
   pdf:
