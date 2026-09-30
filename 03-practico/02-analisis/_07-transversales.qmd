@@ -144,15 +144,18 @@ Diagramas:
   - [Portal de Transparencia](#portal-transparencia)
 - Organismos:
   - Consejo de Transparencia y Buen Gobierno (CTBG)
-  - Unidad de Transparencia Central (UIT Central)
+  - Unidad de Información de Transparencia (UIT) Central)
   - Unidades de Información y Transparencia (UITS)
 - Referencias:
   - Carmen Cabanillas. [Calidad y transparencia en los procesos del sector público](https://www.youtube.com/live/LHpSYAznhOs?end=5450). Canal "PreparaTIC" en YouTube, 24/04/2026.
+  - [Unidad de Información de Transparencia (UIT)](https://www.miteco.gob.es/es/ministerio/atencion-a-la-ciudadania/servicios-de-informacion/unidad-informacion-transparencia.html).
 :::
 
 Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).
 
 El **Consejo de Transparencia y Buen Gobierno** (**CTBG**) es un órgano independiente que garantiza el derecho de acceso y resuelve reclamaciones.
+
+Las Unidades de Información de Transparencia (UIT) son unidades especializadas en la gestión administrativa del derecho de acceso y publicidad activa presentes en distintos organismos de la AGE. Se coordinan mediante la UIT central.
 
 ### Participación ciudadana / Gobierno abierto
 
