@@ -90,7 +90,71 @@ La descentralización se refiere a la delegación de competencias entre distinta
 
 Ver sección sobre [interoperabilidad en la AGE](01-supuesto.qmd#interoperabilidad)
 
-### Participación ciudadana
+### Calidad
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones
+  - ES
+    - RD 951/2005
+- Estándar
+  - ISO 9000: Definiciones
+  - ISO 9001: Requisitos
+  - ISO 9004: Mejora 
+- Herramientas
+  - Aplicación Ciklos
+  - Modelo de excelencia CAF (Common Assessment Framework) 2020
+  - EFQM
+  - Encuesta SERVQUAL (para evaluación de la ciudadanía)
+- Informe
+  - OSIM (Observatory of Public Sector Innovation)
+  - ISAM (Informe de Seguimiento de Actividad de los Ministerios)
+- Referencias
+  - Carmen Cabanillas. [Calidad y transparencia en los procesos del sector público](https://www.youtube.com/live/LHpSYAznhOs?end=5450). Canal "PreparaTIC" en YouTube, 24/04/2026.
+:::
+
+ISO 9001 es la certificable.
+
+Reconocimiento del Nivel de Excelencia
+Premios a la Calidad y la Innovación en la Gestión Pública
+
+Ciklos es una herramienta de evaluación de calidad.
+
+Se pueden usar marcos de gobernanza como COBIT o ITIL.
+
+Diagramas:
+
+- Ikishawa
+- Los 5 porqués
+- Design thinking
+
+### Transparencia
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- CE:
+  - CE. Art. 105. Derecho a la información y transparencia.
+  - CE. Art. 20. Derecho a la información.
+  - CE. Art. 23. Participación ciudadana.
+- Regulaciones:
+  - ES
+    - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
+    - [RD 615/2024. Estatuto del Consejo de Transparencia y Buen Gobierno, A.A.I.](#BOE-A-2024-15944)
+- Iniciativas:
+  - [Portal de Transparencia](#portal-transparencia)
+- Organismos:
+  - Consejo de Transparencia y Buen Gobierno (CTBG)
+  - Unidad de Transparencia Central (UIT Central)
+  - Unidades de Información y Transparencia (UITS)
+- Referencias:
+  - Carmen Cabanillas. [Calidad y transparencia en los procesos del sector público](https://www.youtube.com/live/LHpSYAznhOs?end=5450). Canal "PreparaTIC" en YouTube, 24/04/2026.
+:::
+
+Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).
+
+El **Consejo de Transparencia y Buen Gobierno** (**CTBG**) es un órgano independiente que garantiza el derecho de acceso y resuelve reclamaciones.
+
+### Participación ciudadana / Gobierno abierto
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -98,27 +162,37 @@ Ver sección sobre [interoperabilidad en la AGE](01-supuesto.qmd#interoperabilid
   - CE art. 1 (Estado social y democrático; soberanía reside en el pueblo español)
   - CE art. 9 (poderes públicos prommieven la participación de los ciudadanos en la vida política, económica, cultural y social)
   - CE art. 23 (derecho de participación)
+- Iniciativa:
+  - V Plan de Gobierno Abierto
+- Organismos:
+  - INT
+    - Open Government Partnership (OGP)
+  - ES
+    - Foro de Gobierno Abierto
+    - Comisión Sectorial del Gobierno Abierto
 - Regulaciones
   - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
+- Referencias
+  - [V Plan de Gobierno Abierto](https://www.cultura.gob.es/servicios-a-la-ciudadania/integridad-publica/quinto-plan-gobierno-abierto.html)
+  - [Gobierno abierto en España](https://runmodule.com/2026/01/20/gobierno-abierto-en-espana/). RunModule.
 :::
 
-### Transparencia
+Principios: transparencia, participación, colaboración y rendición de cuentas.
 
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- CE
-  - CE. Art. 105. Derecho a la información y transparencia
-  - CE. Art. 23. Participación ciudadana
-- Regulaciones
-  - ES
-    - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
-- Iniciativas:
-  - [Portal de Transparencia](#portal-transparencia)
-- Webinars
-  - Carmen Cabanillas. [Calidad y transparencia en los procesos del sector público](https://www.youtube.com/live/LHpSYAznhOs?end=5450). Canal "PreparaTIC" en YouTube, 24/04/2026.
-:::
+Open Government Partnership (OGP) fue creado en 2011.
 
-Art. 105.b) CE: Regula el acceso de los ciudadanos a los archivos y registros administrativos (derecho a la información y transparencia).
+El Plan de Gobierno Abierto actual es el V Plan de Gobierno Abierto 2025-2029. Consta de 10 compromisos:
+
+1. Compromiso 1. Participación y espacio cívico
+2. Compromiso 2. Transparencia y acceso a la información
+3. Compromiso 3. Integridad y rendición de cuentas
+4. Compromiso 4. Administración abierta
+5. Compromiso 5. Gobernanza digital e inteligencia artificial
+6. Compromiso 6. Cuentas claras y abiertas
+7. Compromiso 7. Información veraz / ecosistema informativo
+8. Compromiso 8. Difusión, formación y promoción del Gobierno Abierto
+9. Compromiso 9. Observatorio de Gobierno Abierto
+10. Compromiso 10. Estado abierto
 
 ### Accesibilidad (análisis pormenorizado)
 
@@ -147,7 +221,68 @@ RD 1112/2018 es la trasposición de la directiva UE 2016/2102. Requieren seguir 
 
 El RD exige que los sitios web y aplicaciones del sector público sean perceptibles, operables, comprensibles y robustos, independientemente de la tecnología utilizada.
 
-### Protección de datos
+### Datos
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Estrategias:
+  - UE:
+    - [Unión de Datos](#union-datos)
+    - Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}
+:::
+
+Las estrategias marcan el marco general de datos.
+
+**Estrategia Europea del Dato**: Es el "plan maestro" o la hoja de ruta de la Comisión Europea. De este documento estratégico nacen precisamente las directivas y reglamentos que tienes en tus apuntes. Es la iniciativa política que dijo: "Necesitamos una ley para gobernar datos protegidos (DGA), otra para los datos de los dispositivos (Data Act) y mejorar las reglas de los datos abiertos".
+
+**Unión de Datos** (o Mercado Único de Datos): Es el objetivo final de esa estrategia. Al igual que Europa creó un mercado único para que las personas, el capital y las mercancías se muevan libremente, el objetivo ahora es crear un espacio único donde los datos (abiertos, privados, industriales o de salud) puedan fluir de forma segura entre todos los países miembros, permitiendo a Europa competir tecnológica y económicamente a nivel global.
+
+A continuación se dividen los aspectos de datos en:
+
+- Economía
+- Reutilización
+- Gobierno
+- Protección
+
+#### Economía del dato
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - UE:
+    - **[Reg(UE) 2023/2854](#CELEX:32023R2854). Ley de Datos** (*Data Act*).
+:::
+
+La Ley de Gobernanza de Datos (*Data Governance Act*, DGA) regula la reutilización de datos protegidos del sector público (como datos de salud o secretos comerciales), crea la figura de los intermediarios de datos neutros y regula el "altruismo de datos" (donar datos para el bien común).
+
+RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y aplicó una actualización a la L 37/2007.
+
+#### Reutilización de datos
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - UE:
+    - **[Reg(UE) 2019/1024](#CELEX:32019L1024). Datos abiertos y la reutilización de la información del sector público**.
+  - ES:
+    - **[L 37/2007](#BOE-A-2007-19814). Reutilización de la Información del Sector Público (RISP)**
+    - RD 1495/2011. Desarrolla la L 37/2007
+    - L 18/2015. Modifica la L 37/2007
+    - [RDL 24/2021](#BOE-A-2021-17910). Datos abiertos y la reutilización de la información del sector público. Actualizó la L 37/2007.
+:::
+
+#### Gobierno del dato
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - UE:
+    - **[Reg(UE) 2022/868](#CELEX:32022R0868). Ley de Gobernanza de Datos**.
+:::
+
+Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) para que empresas, ciudadanos y gobiernos puedan compartir datos privados o protegidos sin riesgos.
+
+#### Protección de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -184,6 +319,8 @@ El RD exige que los sitios web y aplicaciones del sector público sean perceptib
   - Estrategia Nacional de Ciberseguridad
   - Esquema Nacional de Seguridad (ENS)
   - Guías CCN-STIC
+- Estándar:
+  - ISO 27001
 - Temario:
   - 48. ENS (incluye ENS, CCN-STIC)
 - Referencias:
@@ -213,30 +350,6 @@ La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
 - Infraestructuras:
   - NubeSARA
 :::
-
-### Datos
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Estrategias:
-  - UE:
-    - [Unión de Datos](#union-datos)
-- Regulaciones:
-  - [Reg(UE) 2022/868](#CELEX:32022R0868). Ley de Gobernanza de Datos.
-  - [Reg(UE) 2023/2854](#CELEX:32023R2854). Ley de Datos.
-:::
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Regulaciones:
-  - UE:
-    - Reg(UE) 2023/2854. Ley de Datos (*Data Act*){#CELEX:32023R2854}
-- Estrategias:
-  - UE:
-    - Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}
-:::
-
-La Ley de Gobernanza de Datos (*Data Governance Act*, DGA) regula la reutilización de datos protegidos del sector público (como datos de salud o secretos comerciales), crea la figura de los intermediarios de datos neutros y regula el "altruismo de datos" (donar datos para el bien común).
 
 ### Inteligencia artificial
 

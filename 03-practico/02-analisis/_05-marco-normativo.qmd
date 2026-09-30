@@ -114,7 +114,11 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
   - [R(UE) 2023/2854 en EUR-Lex](http://data.europa.eu/eli/reg/2023/2854/oj?locale=es){target="_blank"}
 :::
 
-Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por productos y servicios conectados, y establece normas para la portabilidad de datos y la interoperabilidad.
+Ley de Datos (*Data Act*), regula el acceso y uso de datos generados por productos y servicios conectados (como vehículos inteligentes, electrodomésticos o maquinaria industrial), y establece normas para la portabilidad de datos y la interoperabilidad.
+
+garantizar que los usuarios (tanto empresas como consumidores) tengan un acceso justo, gratuito y directo a los datos que generan sus propios dispositivos conectados .
+
+La Ley de Datos de la Unión Europea (Data Act) es un reglamento aplicable que busca romper el monopolio tecnológico sobre la información al 
 
 #### Reg(UE) 2024/903. Reglamento Europeo sobre la Interoperabilidad (REI) {#CELEX:32024R0903}
 
@@ -163,6 +167,19 @@ Frase plantilla para el ENI:
 - Referencias:
   - [L 19/2013 en BOE](https://www.boe.es/eli/es/l/2013/12/09/19/con){target="_blank"}
 :::
+
+La L 19/2013 (LTAIBG) obliga a contestar en 1 mes las peticiones desde el momento que llega al organismo, prorrogable a 2 meses en caso de complejidad. En caso de no cumplirse, se puede reclamar ante el Consejo de Transparencia y Buen Gobierno (CTBG) o presentar un recurso contencioso-administrativo.
+
+Existen unos límites en los cuales no se aplique la , definidos en el art. 14.
+
+<!-- #### RD 919/2014. Estatuto del Consejo de Transparencia y Buen Gobierno.
+
+:::{.callout-warning}
+## 🕸️Obsoleto
+Fue derogado por el RD 615/2024.
+:::
+
+Real Decreto 919/2014, de 31 de octubre, por el que se aprueba el Estatuto del Consejo de Transparencia y Buen Gobierno. -->
 
 ### RDLg 5/2015. Estatuto Básico del Empleado Público (EBEP) {#BOE-A-2015-11719}
 
@@ -234,6 +251,16 @@ Se detalla en el apartado [PRTR](#PRTR) de Estrategias. -->
 :::
 
 Se detalla en el apartado del [ENS del supuesto práctico](01-supuesto#ens).
+
+#### RD 615/2024. Estatuto del Consejo de Transparencia y Buen Gobierno, A.A.I. {#BOE-A-2024-15944}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [RD 615/2024. Real Decreto 615/2024, de 2 de julio, por el que se aprueba el Estatuto del Consejo de Transparencia y Buen Gobierno, A.A.I.](https://www.boe.es/eli/es/rd/2024/07/02/615/con){target="_blank"}
+:::
+
+El Consejo de Transparencia y Buen Gobierno (CTBG) es un órgano independiente que garantiza el derecho de acceso y resuelve reclamaciones.
 
 #### RD 1118/2024. Estatuto de la AEAD {#BOE-A-2024-22929}
 
