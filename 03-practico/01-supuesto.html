@@ -599,7 +599,175 @@ window.Quarto = {
 
 </header>
 
-
+<nav id="TOC-body" role="doc-toc">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#memorizar" id="toc-memorizar"><span class="header-section-number">8.1</span> Memorizar</a></li>
+  <li><a href="#introducción-al-supuesto-práctico" id="toc-introducción-al-supuesto-práctico"><span class="header-section-number">8.2</span> Introducción al supuesto práctico</a></li>
+  <li><a href="#modelado" id="toc-modelado"><span class="header-section-number">8.3</span> Modelado</a>
+  <ul>
+  <li><a href="#diagrama-de-casos-de-uso" id="toc-diagrama-de-casos-de-uso"><span class="header-section-number">8.3.1</span> Diagrama de casos de uso</a></li>
+  <li><a href="#diagrama-de-flujo-de-datos" id="toc-diagrama-de-flujo-de-datos"><span class="header-section-number">8.3.2</span> Diagrama de flujo de datos</a></li>
+  <li><a href="#diagrama-de-actividad" id="toc-diagrama-de-actividad"><span class="header-section-number">8.3.3</span> Diagrama de actividad</a></li>
+  <li><a href="#modelo-entidad-relación" id="toc-modelo-entidad-relación"><span class="header-section-number">8.3.4</span> Modelo entidad-relación</a></li>
+  <li><a href="#diagrama-de-clases" id="toc-diagrama-de-clases"><span class="header-section-number">8.3.5</span> Diagrama de clases</a></li>
+  <li><a href="#diagramas-de-despliegue" id="toc-diagramas-de-despliegue"><span class="header-section-number">8.3.6</span> Diagramas de despliegue</a></li>
+  <li><a href="#diagrama-de-secuencia" id="toc-diagrama-de-secuencia"><span class="header-section-number">8.3.7</span> Diagrama de secuencia</a></li>
+  <li><a href="#métrica-v3" id="toc-métrica-v3"><span class="header-section-number">8.3.8</span> Métrica v3</a></li>
+  </ul></li>
+  <li><a href="#infraestructuras-comunes" id="toc-infraestructuras-comunes"><span class="header-section-number">8.4</span> Infraestructuras comunes</a>
+  <ul>
+  <li><a href="#redsara" id="toc-redsara"><span class="header-section-number">8.4.1</span> RedSARA</a></li>
+  <li><a href="#stesta" id="toc-stesta"><span class="header-section-number">8.4.2</span> sTESTA</a></li>
+  <li><a href="#servicio-unificado-de-telecomunicaciones" id="toc-servicio-unificado-de-telecomunicaciones"><span class="header-section-number">8.4.3</span> Servicio Unificado de Telecomunicaciones</a></li>
+  <li><a href="#servicio-de-alojamiento-de-infraestructuras-tic" id="toc-servicio-de-alojamiento-de-infraestructuras-tic"><span class="header-section-number">8.4.4</span> Servicio de alojamiento de infraestructuras TIC</a></li>
+  <li><a href="#nube-supuesto-práctico" id="toc-nube-supuesto-práctico"><span class="header-section-number">8.4.5</span> Nube (supuesto práctico)</a></li>
+  <li><a href="#servicio-de-seguridad-gestionada" id="toc-servicio-de-seguridad-gestionada"><span class="header-section-number">8.4.6</span> Servicio de seguridad gestionada</a></li>
+  </ul></li>
+  <li><a href="#servicios-transversales" id="toc-servicios-transversales"><span class="header-section-number">8.5</span> Servicios transversales</a>
+  <ul>
+  <li><a href="#servicio-unificado-de-telecomunicaciones-sut" id="toc-servicio-unificado-de-telecomunicaciones-sut"><span class="header-section-number">8.5.1</span> Servicio Unificado de Telecomunicaciones (SUT)</a></li>
+  <li><a href="#servicio-de-seguridad-gestionada-1" id="toc-servicio-de-seguridad-gestionada-1"><span class="header-section-number">8.5.2</span> Servicio de Seguridad Gestionada</a></li>
+  <li><a href="#servicio-de-alojamiento-de-infraestructura-tic" id="toc-servicio-de-alojamiento-de-infraestructura-tic"><span class="header-section-number">8.5.3</span> Servicio de Alojamiento de Infraestructura TIC</a></li>
+  <li><a href="#servicio-de-nube-híbrida" id="toc-servicio-de-nube-híbrida"><span class="header-section-number">8.5.4</span> Servicio de Nube Híbrida</a></li>
+  <li><a href="#servicio-de-correo-electrónico" id="toc-servicio-de-correo-electrónico"><span class="header-section-number">8.5.5</span> Servicio de Correo Electrónico</a></li>
+  <li><a href="#servicio-multicanal-de-atención-al-ciudadano" id="toc-servicio-multicanal-de-atención-al-ciudadano"><span class="header-section-number">8.5.6</span> Servicio Multicanal de Atención al Ciudadano</a></li>
+  <li><a href="#servicio-de-gestión-del-registro" id="toc-servicio-de-gestión-del-registro"><span class="header-section-number">8.5.7</span> Servicio de Gestión del Registro</a></li>
+  <li><a href="#gestión-de-notificaciones" id="toc-gestión-de-notificaciones"><span class="header-section-number">8.5.8</span> Gestión de Notificaciones</a></li>
+  <li><a href="#gestión-de-nómina" id="toc-gestión-de-nómina"><span class="header-section-number">8.5.9</span> Gestión de Nómina</a></li>
+  <li><a href="#servicio-integrado-de-gestión-de-personal" id="toc-servicio-integrado-de-gestión-de-personal"><span class="header-section-number">8.5.10</span> Servicio Integrado de Gestión de Personal</a></li>
+  <li><a href="#servicio-común-de-gestión-económico-presupuestaria" id="toc-servicio-común-de-gestión-económico-presupuestaria"><span class="header-section-number">8.5.11</span> Servicio Común de Gestión Económico-Presupuestaria</a></li>
+  <li><a href="#servicio-común-de-generación-y-validación-de-firmas-electrónicas" id="toc-servicio-común-de-generación-y-validación-de-firmas-electrónicas"><span class="header-section-number">8.5.12</span> Servicio común de generación y validación de firmas electrónicas</a></li>
+  <li><a href="#servicio-de-gestión-y-documentos-electrónicos" id="toc-servicio-de-gestión-y-documentos-electrónicos"><span class="header-section-number">8.5.13</span> Servicio de gestión y documentos electrónicos</a></li>
+  <li><a href="#servicio-de-gestión-de-archivo-electrónico." id="toc-servicio-de-gestión-de-archivo-electrónico."><span class="header-section-number">8.5.14</span> Servicio de gestión de archivo electrónico.</a></li>
+  </ul></li>
+  <li><a href="#bases-de-datos-comunes" id="toc-bases-de-datos-comunes"><span class="header-section-number">8.6</span> Bases de datos comunes</a>
+  <ul>
+  <li><a href="#dir3" id="toc-dir3"><span class="header-section-number">8.6.1</span> DIR3</a></li>
+  <li><a href="#sia" id="toc-sia"><span class="header-section-number">8.6.2</span> SIA</a></li>
+  </ul></li>
+  <li><a href="#infraestructura-común-de-interoperabilidad" id="toc-infraestructura-común-de-interoperabilidad"><span class="header-section-number">8.7</span> Infraestructura común de interoperabilidad</a>
+  <ul>
+  <li><a href="#pid" id="toc-pid"><span class="header-section-number">8.7.1</span> Plataforma de Intermediación de Datos (PID)</a></li>
+  </ul></li>
+  <li><a href="#registros" id="toc-registros"><span class="header-section-number">8.8</span> Registros</a>
+  <ul>
+  <li><a href="#face" id="toc-face"><span class="header-section-number">8.8.1</span> FACe</a></li>
+  <li><a href="#apodera" id="toc-apodera"><span class="header-section-number">8.8.2</span> <span class="citation" data-cites="podera">@podera</span></a></li>
+  <li><a href="#habilita" id="toc-habilita"><span class="header-section-number">8.8.3</span> Habilit@</a></li>
+  <li><a href="#cise" id="toc-cise"><span class="header-section-number">8.8.4</span> CISE (Centro de Interoperabilidad Semántica)</a></li>
+  </ul></li>
+  <li><a href="#seguridad" id="toc-seguridad"><span class="header-section-number">8.9</span> Seguridad</a>
+  <ul>
+  <li><a href="#esquema-nacional-de-seguridad-ens" id="toc-esquema-nacional-de-seguridad-ens"><span class="header-section-number">8.9.1</span> Esquema Nacional de Seguridad (ENS)</a></li>
+  <li><a href="#protección-de-datos-personales" id="toc-protección-de-datos-personales"><span class="header-section-number">8.9.2</span> Protección de datos personales</a></li>
+  <li><a href="#certificados-electrónicos-supuesto-práctico" id="toc-certificados-electrónicos-supuesto-práctico"><span class="header-section-number">8.9.3</span> Certificados electrónicos (supuesto práctico)</a></li>
+  <li><a href="#autenticación" id="toc-autenticación"><span class="header-section-number">8.9.4</span> Autenticación</a></li>
+  <li><a href="#gestión-de-riesgos" id="toc-gestión-de-riesgos"><span class="header-section-number">8.9.5</span> Gestión de riesgos</a></li>
+  <li><a href="#guías-ccn-stic" id="toc-guías-ccn-stic"><span class="header-section-number">8.9.6</span> Guías CCN-STIC</a></li>
+  </ul></li>
+  <li><a href="#interoperabilidad" id="toc-interoperabilidad"><span class="header-section-number">8.10</span> Interoperabilidad (supuesto)</a>
+  <ul>
+  <li><a href="#inside-1" id="toc-inside-1"><span class="header-section-number">8.10.1</span> InSiDe</a></li>
+  <li><a href="#declaración-ministerial-de-tallín-sobre-la-administración-electrónica" id="toc-declaración-ministerial-de-tallín-sobre-la-administración-electrónica"><span class="header-section-number">8.10.2</span> Declaración ministerial de Tallín sobre la administración electrónica</a></li>
+  <li><a href="#reglamento-europeo-de-la-interoperabilidad-rei" id="toc-reglamento-europeo-de-la-interoperabilidad-rei"><span class="header-section-number">8.10.3</span> Reglamento Europeo de la Interoperabilidad (REI)</a></li>
+  <li><a href="#pasarela-digital-única" id="toc-pasarela-digital-única"><span class="header-section-number">8.10.4</span> Pasarela digital única</a></li>
+  <li><a href="#esquema-nacional-de-interoperabilidad" id="toc-esquema-nacional-de-interoperabilidad"><span class="header-section-number">8.10.5</span> Esquema Nacional de Interoperabilidad</a></li>
+  <li><a href="#normas" id="toc-normas"><span class="header-section-number">8.10.6</span> Normas</a></li>
+  <li><a href="#nti" id="toc-nti"><span class="header-section-number">8.10.7</span> NTI</a></li>
+  <li><a href="#auditoría-del-eni" id="toc-auditoría-del-eni"><span class="header-section-number">8.10.8</span> Auditoría del ENI</a></li>
+  <li><a href="#iniciativas-relevantes" id="toc-iniciativas-relevantes"><span class="header-section-number">8.10.9</span> Iniciativas Relevantes</a></li>
+  </ul></li>
+  <li><a href="#tecnologías-emergentes" id="toc-tecnologías-emergentes"><span class="header-section-number">8.11</span> Tecnologías emergentes</a>
+  <ul>
+  <li><a href="#histórico" id="toc-histórico"><span class="header-section-number">8.11.1</span> Histórico</a></li>
+  <li><a href="#nube" id="toc-nube"><span class="header-section-number">8.11.2</span> Nube</a></li>
+  <li><a href="#blockchain" id="toc-blockchain"><span class="header-section-number">8.11.3</span> Blockchain</a></li>
+  <li><a href="#datos" id="toc-datos"><span class="header-section-number">8.11.4</span> Datos</a></li>
+  <li><a href="#inteligencia-artificial-automatización" id="toc-inteligencia-artificial-automatización"><span class="header-section-number">8.11.5</span> Inteligencia Artificial / Automatización</a></li>
+  </ul></li>
+  <li><a href="#soluciones-tecnológicas" id="toc-soluciones-tecnológicas"><span class="header-section-number">8.12</span> Soluciones tecnológicas</a>
+  <ul>
+  <li><a href="#tecnologías-según-contexto" id="toc-tecnologías-según-contexto"><span class="header-section-number">8.12.1</span> Tecnologías según contexto</a></li>
+  <li><a href="#api-gateway" id="toc-api-gateway"><span class="header-section-number">8.12.2</span> API gateway</a></li>
+  <li><a href="#inteligencia-artificial-automatización-1" id="toc-inteligencia-artificial-automatización-1"><span class="header-section-number">8.12.3</span> Inteligencia Artificial / Automatización</a></li>
+  </ul></li>
+  <li><a href="#datos-1" id="toc-datos-1"><span class="header-section-number">8.13</span> Datos</a>
+  <ul>
+  <li><a href="#monitorización" id="toc-monitorización"><span class="header-section-number">8.13.1</span> Monitorización</a></li>
+  <li><a href="#stack-de-tecnologías-por-proveedor" id="toc-stack-de-tecnologías-por-proveedor"><span class="header-section-number">8.13.2</span> Stack de tecnologías por proveedor</a></li>
+  </ul></li>
+  <li><a href="#herramientas" id="toc-herramientas"><span class="header-section-number">8.14</span> Herramientas</a>
+  <ul>
+  <li><a href="#configuración-de-infraestructuras" id="toc-configuración-de-infraestructuras"><span class="header-section-number">8.14.1</span> Configuración de infraestructuras</a></li>
+  <li><a href="#edición-de-código" id="toc-edición-de-código"><span class="header-section-number">8.14.2</span> Edición de código</a></li>
+  <li><a href="#control-de-versiones" id="toc-control-de-versiones"><span class="header-section-number">8.14.3</span> Control de versiones</a></li>
+  <li><a href="#repositorios-de-artefactos" id="toc-repositorios-de-artefactos"><span class="header-section-number">8.14.4</span> Repositorios de artefactos</a></li>
+  <li><a href="#servicio-itil" id="toc-servicio-itil"><span class="header-section-number">8.14.5</span> Servicio ITIL</a></li>
+  <li><a href="#cuadros-de-mando" id="toc-cuadros-de-mando"><span class="header-section-number">8.14.6</span> Cuadros de mando</a></li>
+  </ul></li>
+  <li><a href="#arquitectura-lógica" id="toc-arquitectura-lógica"><span class="header-section-number">8.15</span> Arquitectura lógica</a>
+  <ul>
+  <li><a href="#principios-de-diseño-de-software" id="toc-principios-de-diseño-de-software"><span class="header-section-number">8.15.1</span> Principios de diseño de software</a></li>
+  <li><a href="#estilos-de-arquitectura-de-software" id="toc-estilos-de-arquitectura-de-software"><span class="header-section-number">8.15.2</span> Estilos de arquitectura de software</a></li>
+  <li><a href="#actores" id="toc-actores"><span class="header-section-number">8.15.3</span> Actores</a></li>
+  <li><a href="#arquitectura-lógica-frontend-web" id="toc-arquitectura-lógica-frontend-web"><span class="header-section-number">8.15.4</span> Arquitectura lógica frontend web</a></li>
+  <li><a href="#arquitectura-lógica-backend" id="toc-arquitectura-lógica-backend"><span class="header-section-number">8.15.5</span> Arquitectura lógica backend</a></li>
+  <li><a href="#protocolos-de-comunicación" id="toc-protocolos-de-comunicación"><span class="header-section-number">8.15.6</span> Protocolos de comunicación</a></li>
+  <li><a href="#funciones-transversales-de-la-arquitectura-lógica" id="toc-funciones-transversales-de-la-arquitectura-lógica"><span class="header-section-number">8.15.7</span> Funciones transversales de la arquitectura lógica</a></li>
+  </ul></li>
+  <li><a href="#arquitectura-de-sistemas" id="toc-arquitectura-de-sistemas"><span class="header-section-number">8.16</span> Arquitectura de sistemas</a>
+  <ul>
+  <li><a href="#dominiossubdominios-funcionales" id="toc-dominiossubdominios-funcionales"><span class="header-section-number">8.16.1</span> Dominios/subdominios funcionales</a></li>
+  <li><a href="#arquitectura-conceptual" id="toc-arquitectura-conceptual"><span class="header-section-number">8.16.2</span> Arquitectura conceptual</a></li>
+  <li><a href="#arquitectura-física" id="toc-arquitectura-física"><span class="header-section-number">8.16.3</span> Arquitectura física</a></li>
+  <li><a href="#arquitectura-de-red" id="toc-arquitectura-de-red"><span class="header-section-number">8.16.4</span> Arquitectura de red</a></li>
+  </ul></li>
+  <li><a href="#estimación-de-recursos" id="toc-estimación-de-recursos"><span class="header-section-number">8.17</span> Estimación de recursos</a>
+  <ul>
+  <li><a href="#dimensionamiento-del-desarrollo" id="toc-dimensionamiento-del-desarrollo"><span class="header-section-number">8.17.1</span> Dimensionamiento del desarrollo</a></li>
+  <li><a href="#dimensionamiento-de-infraestructuras" id="toc-dimensionamiento-de-infraestructuras"><span class="header-section-number">8.17.2</span> Dimensionamiento de infraestructuras</a></li>
+  </ul></li>
+  <li><a href="#costes" id="toc-costes"><span class="header-section-number">8.18</span> Costes</a>
+  <ul>
+  <li><a href="#costes-por-desarrollo-de-software" id="toc-costes-por-desarrollo-de-software"><span class="header-section-number">8.18.1</span> Costes por desarrollo de software</a></li>
+  <li><a href="#costes-por-infraestructura" id="toc-costes-por-infraestructura"><span class="header-section-number">8.18.2</span> Costes por infraestructura</a></li>
+  </ul></li>
+  <li><a href="#contratación" id="toc-contratación"><span class="header-section-number">8.19</span> Contratación</a>
+  <ul>
+  <li><a href="#proceso-de-contratación-en-supuesto-práctico" id="toc-proceso-de-contratación-en-supuesto-práctico"><span class="header-section-number">8.19.1</span> Proceso de contratación en supuesto práctico</a></li>
+  <li><a href="#conceptos-generales-de-contratación-pública" id="toc-conceptos-generales-de-contratación-pública"><span class="header-section-number">8.19.2</span> Conceptos generales de contratación pública</a></li>
+  <li><a href="#paso-1-tipología-de-contratación-pública-según-su-objeto" id="toc-paso-1-tipología-de-contratación-pública-según-su-objeto"><span class="header-section-number">8.19.3</span> (Paso 1) Tipología de contratación pública según su objeto</a></li>
+  <li><a href="#paso-2-tramitación-de-urgencia" id="toc-paso-2-tramitación-de-urgencia"><span class="header-section-number">8.19.4</span> (Paso 2) Tramitación de urgencia</a></li>
+  <li><a href="#paso-3-contratación-centralizada" id="toc-paso-3-contratación-centralizada"><span class="header-section-number">8.19.5</span> (Paso 3) Contratación centralizada</a></li>
+  <li><a href="#modificación-de-contratos" id="toc-modificación-de-contratos"><span class="header-section-number">8.19.6</span> Modificación de Contratos</a></li>
+  <li><a href="#paso-5-regulación-armonizada-sara" id="toc-paso-5-regulación-armonizada-sara"><span class="header-section-number">8.19.7</span> (Paso 5) Regulación armonizada SARA</a></li>
+  <li><a href="#aprobación-por-consejo-de-ministros" id="toc-aprobación-por-consejo-de-ministros"><span class="header-section-number">8.19.8</span> Aprobación por Consejo de Ministros</a></li>
+  <li><a href="#plazo-de-ejecución" id="toc-plazo-de-ejecución"><span class="header-section-number">8.19.9</span> Plazo de ejecución</a></li>
+  <li><a href="#prórrogas-en-concesiones" id="toc-prórrogas-en-concesiones"><span class="header-section-number">8.19.10</span> Prórrogas en concesiones</a></li>
+  <li><a href="#procedimientos-de-adjudicación" id="toc-procedimientos-de-adjudicación"><span class="header-section-number">8.19.11</span> Procedimientos de adjudicación</a></li>
+  <li><a href="#paso-8-división-en-lotes" id="toc-paso-8-división-en-lotes"><span class="header-section-number">8.19.12</span> (Paso 8) División en lotes</a></li>
+  <li><a href="#anuncios-de-licitaciones-públicas" id="toc-anuncios-de-licitaciones-públicas"><span class="header-section-number">8.19.13</span> Anuncios de licitaciones públicas</a></li>
+  <li><a href="#procedimiento-general-de-contratación-tic" id="toc-procedimiento-general-de-contratación-tic"><span class="header-section-number">8.19.14</span> Procedimiento general de contratación TIC</a></li>
+  </ul></li>
+  <li><a href="#planificación-temporal" id="toc-planificación-temporal"><span class="header-section-number">8.20</span> Planificación temporal</a>
+  <ul>
+  <li><a href="#aspectos-generales-de-planificación" id="toc-aspectos-generales-de-planificación"><span class="header-section-number">8.20.1</span> Aspectos generales de planificación</a></li>
+  <li><a href="#metodologías-de-desarrollo" id="toc-metodologías-de-desarrollo"><span class="header-section-number">8.20.2</span> Metodologías de desarrollo</a></li>
+  <li><a href="#fases-de-un-proyecto" id="toc-fases-de-un-proyecto"><span class="header-section-number">8.20.3</span> Fases de un proyecto</a></li>
+  <li><a href="#representación-de-la-planificación-temporal" id="toc-representación-de-la-planificación-temporal"><span class="header-section-number">8.20.4</span> Representación de la planificación temporal</a></li>
+  <li><a href="#modelo-de-ciclo-de-vida" id="toc-modelo-de-ciclo-de-vida"><span class="header-section-number">8.20.5</span> Modelo de ciclo de vida</a></li>
+  </ul></li>
+  <li><a href="#realización-del-supuesto-práctico" id="toc-realización-del-supuesto-práctico"><span class="header-section-number">8.21</span> Realización del supuesto práctico</a>
+  <ul>
+  <li><a href="#material-para-realizar-el-ejercicio-práctico" id="toc-material-para-realizar-el-ejercicio-práctico"><span class="header-section-number">8.21.1</span> Material para realizar el ejercicio práctico</a></li>
+  <li><a href="#consejos-para-el-supuesto-práctico" id="toc-consejos-para-el-supuesto-práctico"><span class="header-section-number">8.21.2</span> Consejos para el supuesto práctico</a></li>
+  <li><a href="#simulación-del-supuesto-práctico" id="toc-simulación-del-supuesto-práctico"><span class="header-section-number">8.21.3</span> Simulación del supuesto práctico</a></li>
+  <li><a href="#transición-el-análisis-pormenorizado" id="toc-transición-el-análisis-pormenorizado"><span class="header-section-number">8.21.4</span> Transición el análisis pormenorizado</a></li>
+  </ul></li>
+  </ul>
+</nav>
 <p>En el ejercicio del supuesto práctico se plantea en un largo enunciado un problema relacionado con la AGE y se pide al aspirante desarrollar un sistema para solucionarlo.</p>
 <p>El proceso estándar de desarrollo del supuesto práctico sería:</p>
 <p>Modelado → Marco tecnológico y normativo → Arquitectura → Recursos → Costes → Contratación → Planificación temporal</p>
