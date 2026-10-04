@@ -462,3 +462,43 @@ figcaption,
     text-decoration: underline;
   }
 }
+
+/* =========================================================
+   COMPORTAMIENTO DEL ÍNDICE CON "RIGHT-BODY"
+   ========================================================= */
+
+/* 1. ORDENADOR: Ocultamos el índice del centro para que solo se vea el de la derecha */
+@media (min-width: 992px) {
+  #quarto-document-content nav[role="doc-toc"],
+  #TOC-body {
+    display: none !important;
+  }
+}
+
+/* 2. MÓVIL: Forzamos a que el índice del centro sea visible */
+@media (max-width: 991px) {
+  #quarto-document-content nav[role="doc-toc"],
+  #TOC-body {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    
+    /* Diseño integrado con tus colores */
+    background-color: #f7f9fc;
+    border-left: 4px solid #003399;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  /* Ajuste del título del índice para móviles */
+  #quarto-document-content nav[role="doc-toc"] h2,
+  #TOC-body h2 {
+    font-size: 1.2rem !important;
+    color: #003399 !important;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+  }
+}
