@@ -100,7 +100,7 @@ En mayo de 2026 la Comisión emitió sus instrucciones para el cierre en el C/20
 Se postulan como herederos del MRR los futuros Planes Nacionales y Regionales de Asociación (*National and Regional Partnership Plans*, NRPP) y el Fondo Europe de Competividad (*European Competitiveness Fund*, ECF), ambos propuestos para 2028.
 -->
 
-#### Estrategia Europea de Unión de Datos {#union-datos}
+#### Estrategia de Unión de Datos {#estrategia-de-union-de-datos}
 
 ::: {.callout-note icon="false"}
 ## 📋Marco de referencia

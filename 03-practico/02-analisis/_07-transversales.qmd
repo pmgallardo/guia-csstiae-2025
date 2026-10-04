@@ -48,7 +48,7 @@ La descentralización se refiere a la delegación de competencias entre distinta
 ## 📋 Marco de referencia
 - Regulaciones:
   - UE:
-    - R (UE) 2021/694. Programa Europa Digital.
+    - Reg(UE) 2021/694. Programa Europa Digital.
   - ES:
     - [RD 1118/2024](#BOE-A-2024-22929). Estatuto de la AEAD
     - [RD 1125/2024](#BOE-A-2024-22935). Organización e instrumentos operativos para la AEAD.
@@ -75,7 +75,6 @@ La descentralización se refiere a la delegación de competencias entre distinta
     - [Reg(UE) 910/2014](#CELEX:32024R1183). eIDAS 2
   - ES
     - RD 4/2010. Esquema Nacional de Interoperabilidad
-    - L 37/2007. Reutilización de datos en Sector Público.
 - ODS
   - Obj. 17. Alianza para lograr los objetivos
 - Organismos
@@ -133,9 +132,9 @@ Diagramas:
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - CE:
-  - CE. Art. 105. Derecho a la información y transparencia.
-  - CE. Art. 20. Derecho a la información.
+  - CE. Art. 20. Libertad de información.
   - CE. Art. 23. Participación ciudadana.
+  - CE. Art. 105. Derecho de acceso a los registros de la AP
 - Regulaciones:
   - ES
     - [L 19/2013. Transparencia, acceso a la información pública y buen gobierno](#BOE-A-2013-12887)
@@ -231,34 +230,47 @@ El RD exige que los sitios web y aplicaciones del sector público sean perceptib
 - Estrategias:
   - UE:
     - [Unión de Datos](#union-datos)
-    - Estrategia Europea del Dato {estrategias.qmd#Estrategia-Europea-del-Dato}
+    - [Estrategia de Unión de Datos](estrategias.qmd#estrategia-de-union-de-datos)
 :::
 
 Las estrategias marcan el marco general de datos.
 
-**Estrategia Europea del Dato**: Es el "plan maestro" o la hoja de ruta de la Comisión Europea. De este documento estratégico nacen precisamente las directivas y reglamentos que tienes en tus apuntes. Es la iniciativa política que dijo: "Necesitamos una ley para gobernar datos protegidos (DGA), otra para los datos de los dispositivos (Data Act) y mejorar las reglas de los datos abiertos".
+**Estrategia de Unión del Dato**: Es el "plan maestro" o la hoja de ruta de la Comisión Europea. De este documento estratégico nacen precisamente las directivas y reglamentos que tienes en tus apuntes. Es la iniciativa política que dijo: "Necesitamos una ley para gobernar datos protegidos (DGA), otra para los datos de los dispositivos (Data Act) y mejorar las reglas de los datos abiertos".
 
 **Unión de Datos** (o Mercado Único de Datos): Es el objetivo final de esa estrategia. Al igual que Europa creó un mercado único para que las personas, el capital y las mercancías se muevan libremente, el objetivo ahora es crear un espacio único donde los datos (abiertos, privados, industriales o de salud) puedan fluir de forma segura entre todos los países miembros, permitiendo a Europa competir tecnológica y económicamente a nivel global.
 
 A continuación se dividen los aspectos de datos en:
 
 - Economía
-- Reutilización
 - Gobierno
+- Reutilización
 - Protección
 
-#### Economía del dato
+#### Economía del - Gobiernodato
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Regulaciones:
   - UE:
     - **[Reg(UE) 2023/2854](#CELEX:32023R2854). Ley de Datos** (*Data Act*).
+- Referencias:
+  - [La Economía del Dato](https://digital.gob.es/digitalizacion/la-economia-del-dato)
+:::
+
+El Reg(UE) 2023/2854 regula la economía del dato, y establece reglas para el acceso y uso de datos generados por dispositivos conectados (IoT), y regula la portabilidad de datos entre servicios digitales.
+
+#### Gobiernanza del dato
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - UE:
+    - **[Reg(UE) 2022/868](#CELEX:32022R0868). Ley de Gobernanza de Datos**.
 :::
 
 La Ley de Gobernanza de Datos (*Data Governance Act*, DGA) regula la reutilización de datos protegidos del sector público (como datos de salud o secretos comerciales), crea la figura de los intermediarios de datos neutros y regula el "altruismo de datos" (donar datos para el bien común).
 
-RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y aplicó una actualización a la L 37/2007.
+Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) para que empresas, ciudadanos y gobiernos puedan compartir datos privados o protegidos sin riesgos.
 
 #### Reutilización de datos
 
@@ -274,16 +286,9 @@ RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y a
     - [RDL 24/2021](#BOE-A-2021-17910). Datos abiertos y la reutilización de la información del sector público. Actualizó la L 37/2007.
 :::
 
-#### Gobierno del dato
+RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y aplicó una actualización a la L 37/2007.
 
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Regulaciones:
-  - UE:
-    - **[Reg(UE) 2022/868](#CELEX:32022R0868). Ley de Gobernanza de Datos**.
-:::
-
-Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) para que empresas, ciudadanos y gobiernos puedan compartir datos privados o protegidos sin riesgos.
+Cuando se habla de la reutilización del datos, conviene también mencionar la interoperabilidad.
 
 #### Protección de datos
 
@@ -310,7 +315,7 @@ Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) par
   - CE art. 18 (derecho a la intimidad)
 - Regulaciones:
   - UE:
-    - NIS2
+    - Dir(EU) 2022/2555. NIS2
     - CRA
   - ES:
     - L 6/2020, de servicios electrónicos de confianza
@@ -330,6 +335,8 @@ Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) par
   - <https://runmodule.com/2026/07/28/seguridad-de-la-informacion-en-el-sector-publico-en-espana/>{target="_blank"}
 :::
 
+La normativa NIS2 incluye a la administración pública como un sector de "alta criticidad" (Anexo I), por lo que probablemente aplique a los proyectos del supuesto práctico.
+
 ### Identificación electrónica
 
 ::: {.callout-note icon="false"}
@@ -338,7 +345,8 @@ Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) par
   - Brújula Digital 2030. Puntos cardinal "Servicios públicos": 80% de ciudadanos usan identificación digital.
 - Regulaciones:
   - UE
-    - Reg(EU) 2024/1183. eIDAS{#CELEX:32014R0910}
+    - Reg(EU) 910/2014. eIDAS{#CELEX:32014R0910}
+    - Reg(EU) 2024/1183. eIDAS2{#CELEX:32014R0910}
 :::
 
 ### Nube
@@ -350,9 +358,15 @@ La secretaria titular del Tribunal trabajó en nubeSARA entre 2018 y 2026.
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
+- Iniciativas
+  - Estrategia Nacional de Servicios en la Nube (2022)
 - Infraestructuras:
   - NubeSARA
 :::
+
+La Estrategia Nacional de Servicios en la Nube (ENSN), publicada en 2022, establece que la nube es un elemento clave para la transformación digital de las AAPP, y que debe ser segura, confiable y eficiente.
+
+El marco normativo relativo a la nube suele ir ligado a otros aspectos transversales como la seguridad de la información, la protección de datos o la interoperabilidad.
 
 ### Inteligencia artificial
 
@@ -368,7 +382,7 @@ El vocal titular L. A. Hernández es profesor universitario de Inteligencia Arti
     - [Estrategia para la aplicación de la IA](#apply-ai)
 - Regulaciones:
   - UE:
-    - [Reglamento UE 2024/1689. Ley de Inteligencia Artificial](#CELEX:32024R1689)
+    - [Reg(UE) 2024/1689. Ley de Inteligencia Artificial](#CELEX:32024R1689)
 - Temas:
   - 70. Inteligencia artificial
 - Referencias:
