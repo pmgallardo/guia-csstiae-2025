@@ -28,13 +28,13 @@ Las licencias de software se recogen mediante el SDA 26/2022 de servicios de des
 
 En 2026, no se trabaja con perfiles tasados y el precio de cada perfil depende de cada pliego. De cara al ejercicio práctico y procurando tener números redondos, los posibles son los siguientes:
 
-| Perfil | Precio hora | Precio día |
-| - | - | - |
-| Jefe de Proyecto | 50 | 480 |
-| Consultor | 50 | 400 |
-| Analista | 40 | 320 |
-| Analista Programador | 40 | 320 |
-| Programador | 30 | 240 |
+| Perfil | Precio hora | Precio día | Precio mes (20 días) |
+| - | - | - | - |
+| Jefe de Proyecto | 50 | 400 | 8.000 |
+| Consultor | 50 | 400 | 8.000 |
+| Analista | 40 | 320 | 6.400 (~6.000) |
+| Analista-Programador | 40 | 320 | 6.400 (~6.000) |
+| Programador | 30 | 240 | 4.800 (~5.000) |
 
 Estos precios se han obtenido redondeando los encontrados en diversas licitaciones del sector público, entre ellas el [servicio de mantenimiento adaptativo, evolutivo y correctivo para el aseguramiento del servicio de la web institucional y sede electrónica del CSIC](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D).
 

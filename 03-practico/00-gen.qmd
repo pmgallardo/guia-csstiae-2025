@@ -5,3 +5,28 @@
 {{< include /03-practico/00-gen/_02-temas-prac.qmd >}}
 
 {{< include /03-practico/00-gen/_03-material-prac.qmd >}}
+
+## Memorizar
+
+Este apartado contiene un pequeño resumen de los temas que conviene memorizar para el supuesto práctico. Se recomienda repasar estos temas antes de la realización del supuesto práctico.
+
+- Servicios transversales
+- Accesbilidad
+  - EN 301 549
+  - WCAG 2.1/2.2
+- Recursos
+  - Métodos de estimación
+- Costes
+  - Tarifas de perfiles de desarrollo
+- Contratación
+  - Umbrales por tipo de contrato y tiempo de contratación
+  - Umbrales SARA
+  - AM y SDA Contratación centralizada
+- Seguridad
+  - ENS
+    - Categorías de seguridad
+    - Mecanismos de seguridad
+- Marco normativo
+  - OMS de la Agenda 2030
+  - Marco normativo temas transversales
+- Soluciones tecnológicas

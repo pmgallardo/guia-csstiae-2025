@@ -50,11 +50,12 @@ Convocatorias/tareas: 2018.1
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Temas
+- Temas:
   - 90. Análisis dinámico de sistemas
-- Referencias
-- [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-flujo-de-datos){target="_blank"}. GitHub Pages.
-  - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/){target="_blank"}.
+- Referencias:
+  - Marina Vega Maza. 2.2.3. "Diagrama de flujo de datos". En: "Tema 89. Análisis dinámico de sistemas: Modelado de procesos, modelado dinámico y BPMN (Business Process Model and Notation)". Astic, 2017.
+  <!-- - Cillero, Manuel. [Diagrama de Flujos de Datos en Métrica 3](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-flujo-de-datos/){target="_blank"}. -->
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-flujo-de-datos){target="_blank"}. GitHub Pages.
 :::
 
 El **diagrama de flujo de datos** (**DFD**, *data flow diagram*) es un diagrama que representa el flujo de información entre los distintos elementos de un sistema. Está definido dentro de Métrica v3.
@@ -65,7 +66,11 @@ Los procesos se representan mediante rectángulos divididos en 3 secciones, dond
 
 Las líneas punteadas usadas en una flecha o proceso indican que se trata de un flujo o proceso de control.
 
+Los identificadores de los almacenes empiezan siempre por la letra "A". El rectángulo no está cerrado a la derecha.
+
 DFD no requiere el uso de elementos gráficos específicos de fan-out/fork y fan-in/join para bifurcaciones de flujos, pues está permitido que salgan o entren varias flechas de un mismo proceso.
+
+En un diagrama DFD no se muestran condicionales; en caso de requerir usarlos, mejor emplear un diagrama de secuencia o un diagrama de actividad (teniendo en cuenta las notas sobre el mismo).
 
 ### Diagrama de actividad
 
@@ -77,35 +82,61 @@ DFD no requiere el uso de elementos gráficos específicos de fan-out/fork y fan
 
 El **diagrama de actividad** o **diagrama de flujo** es un diagrama propio de UML.
 
-Este tipo de diagrama no está presente en Métrica v3, por lo que se sugiere a los aspirantes emplear si es posible alguna técnica de modelado sí incluida como el [Diagrama de Flujo de Datos](#diagrama-de-flujo-de-datos) o el [diagrama de secuencia](#diagrama-de-secuencia) (si se requiere reflejar el actor de cada activdad).
+Este tipo de diagrama no está presente en la metodología Métrica v3, por lo que se sugiere a los aspirantes emplear si es posible alguna técnica de modelado sí incluida como el [Diagrama de Flujo de Datos](#diagrama-de-flujo-de-datos) o el [diagrama de secuencia](#diagrama-de-secuencia) (si se requiere reflejar el actor de cada actividad o condicionales).
 
-### Modelo entidad-relación
+### Modelo entidad-relación {#modelo-entidad-relacion}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Referencias
-  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#modelo-entidad-relacion-extendido){target="_blank"}. GitHub Pages.
-  - Manuel Cillero. [Modelo entidad-relacion extendido en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/){target="_blank"}
-- Temas
+- Temas:
   - 89. Análisis del dominio de los sistemas
+- Referencias:
+  <!-- - Manuel Cillero. [Modelo entidad-relacion extendido en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/modelo-entidad-relacion-extendido/){target="_blank"} -->
+  - [Modelo entidad-relacion extendido](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#modelo-entidadrelaci%C3%B3n-extendido){target="_blank"}. En: Métrica v3. GitHub Pages.
+  - <https://runmodule.com/2024/08/06/entity-relationship-model/>
 :::
 
 Un modelo entidad-relacion (E/R) se puede presentar en caso de que se pida representar gráficamente las entidades de datos.
 
-### Diagrama de clases
+Las relaciones se representan con un rombo.
+
+Tipos de relaciones:
+
+- No disjunta (`o`): cada elemento está como máximo en una de las subentidades.
+- Disjunta (`d`): cada elemento puede estar en varias entidades.
+- Jerarquía total (`es_un`): cada elemento debe estar al menos en una de las subentidades.
+
+Un posible motivo de confusión es que tanto jerarquía del E/R como para la especialización del diagrama de clases se emplea un triángulo, pero esta tiene la dirección opuesta en uno y otro.
+
+Una categoría o unión (triángulo punta hacia arriba con la letra `U`) une varias subentidades en una única entidad.
+
+### Diagrama de clases {#diagrama-de-clases}
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 📝 Apariciones en examen
 Convocatorias/tareas: 2018.1
 :::
 
+En el diagrama de clases, cada clase se compone de tres secciones verticales:
+
+1. Nombre
+2. Clases
+3. Métodos
+
+Relaciones:
+
+- Agregación (rombo blanco)
+- Composición (rombo negro)
+- Especialización (triángulo)
+
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Referencias
-   - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-clases){target="_blank"}. GitHub Pages.
-  - Cillero, Manuel. [Diagrama de clases en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-clases/){target="_blank"}
-- Temas
+- Temas:
   - 89. Análisis del dominio de los sistemas
+- Referencias:
+  - Mariam Dobón Muñoz. 2.4. "Modelos de clases". En: "Tema 88. Análisis del dominio de los sistemas: Modelado de dominio, modelo entidad relación y modelos de clases". Astic, 2017.
+  <!-- - Cillero, Manuel. [Diagrama de clases en Métrica 3](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-clases/){target="_blank"} -->
+  - [Diagrama de clases](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-clases){target="_blank"}. En: Métrica v3. GitHub Pages.
 :::
 
 Diagrama de clases pertenece a la familia de diagramas UML.
@@ -128,14 +159,20 @@ El diagrama de despliegue pertenece a la familia de diagramas UML, y está entre
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 - Referencias
+  <!-- - Manuel Cillero. [Diagrama de secuencia](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-interaccion/diagrama-de-secuencia){target="_blank"} en Métrica v3. manuel.cillero.es. -->
   - [Métrica v3](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#diagrama-de-secuencia){target="_blank"}. GitHub Pages.
-  - Manuel Cillero. [Diagrama de secuencia](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/diagrama-de-interaccion/diagrama-de-secuencia){target="_blank"} en Métrica v3. manuel.cillero.es.
   - [Diagramas de secuencia](https://es.wikipedia.org/wiki/Diagrama_de_secuencia){target="_blank"}. Wikipedia.
 :::
 
 El **diagrama de secuencia** es un diagrama UML presente en Métrica v3 que permite modelar la interacción en secuencia temporal entre distintos elementos de un sistema.
 
 ![Ejemplo de diagrama de secuencia](../images/sup-modelado-diagrama-secuencia.png){target="_blank"}
+
+La condicionalidad se muestra en un diagrama de secuencia mediante en uso de cajas `alt`, `opt` o `loop`.
+
+- Alternativas (`alt`): muestra las distintas opciones separadas por una línea de puntos. Las condiciones se muestran con un corchete
+- Option (`opt`): muestra única opción, que se ejecutará o no dependiendo de si se cumple la condición indicada entre corchetes.
+- Loop (`loop`): realiza una operación en bucle mientras se cumpla la condición indicada entre corchetes.
 
 ### Métrica v3
 
@@ -145,5 +182,6 @@ El **diagrama de secuencia** es un diagrama UML presente en Métrica v3 que perm
   - 95. Métrica
 - Referencias:
   - [Métriva v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
-  - Manuel Cillero. [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/){target="_blank"}. manuel.cillero.es.
+  - [Métrica v3](https://pmgallardo.github.io/metrica-v3/){target="_blank"}. GitHub Pages.
+  <!-- - Manuel Cillero. [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/){target="_blank"}. manuel.cillero.es. -->
 :::

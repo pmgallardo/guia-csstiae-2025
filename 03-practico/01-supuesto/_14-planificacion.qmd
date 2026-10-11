@@ -7,9 +7,17 @@ En la planificación temporal hay que tener en cuenta los siguientes factores:
 - Tiempo mínimo de contratación
 - Esfuerzo de desarrollo
 
+### Plazo máximo de entrega {#plazo-maximo-entrega}
+
+En algunos casos, el enunciado restringe sobre la fecha en que se debe entregar un sistema.
+
+Aunque el enunciado no indique un plazo máximo de entrega, salvo sistemas de alta complejidad conviene que la entrega del proyecto esté en el ragno de 6-18 meses, ya que alargar el plazo puede ser evaluado por el Tribunal como una mala gestión.
+
+De esta manera, en cualquier sistema existirá un plazo máximo de entrega, a tener en cuenta durante la estimación de recursos.
+
 ### Aspectos generales de planificación
 
-El input recibido en la planificación sería:
+La entrada recibida en el proceso de planificación sería:
 
 - Tiempo de contratación
 - Esfuerzo total del desarrollo

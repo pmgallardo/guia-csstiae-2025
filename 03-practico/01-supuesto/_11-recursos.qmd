@@ -3,7 +3,7 @@
 Durante el diseño de un sistema informático se debe estimar la dimensión de cada uno de los recursos necesarios para crearlo y mantenerlo.
 
 Estos elementos se puede dividir en distintas tipologías de recursos que pueden dimensionarse por separado. Las tipologías a tener en cuenta son al menos:
-| Licencia VMWare servidor | 5.000 |
+
 - Desarrollo
 - Licencias de software
 - Infraestructura
@@ -38,7 +38,7 @@ No obtante, las tarifas aparecen en algunas licitaciones públicas, como por eje
 
 Se realiza esta tabla buscando números redondos y ligeramente superiores a los de los expedientes citados.
 
-#### Esfuerzo de servicios de desarrollo
+#### Esfuerzo de servicios de desarrollo {#esfuerzo-de-servicios-de-desarrollo}
 
 En este apartado resume métodos de estimación de esfuerzo y costes en el desarrollo de software, que es una tarea habitual en el supuesto práctico.
 
@@ -56,13 +56,11 @@ Si se cuenta con un diagrama de casos de uso o un modelo ER, sería posible apli
 
 Algunas de estas técnicas se presentan en la documentación de estimación de recursos del temario de Astic (UCP y puntos de función) o en Métrica v3 (staffing size). Existen otras muchas técnicas como el enfoque COCOMO y las métricas bang (ambas presentadas en el temario de Astic) y otras no cubiertas ni en la documentación de Astic ni en esta guía, y nada impide que sean usadas en el ejercicio práctico.
 
-Sea cual sea el método de estimación vez que se obtienen las horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total. 
+Algunos métodos de estimación (o coeficientes aplicados) consideran todos los procesos de desarrollo del sistema (incluyendo el estudio de viabilidad, análisis y diseño), mientras que otros solo consideran la construcción.
 
-El esfuerzo total en horas se obtendría multiplicando las horas de construcción por 2,5 (ya que 1/0,40 = 2,5), o incluso multiplicando por 2 (suponiendo un 50%, ya que 1/0,50 = 2).
+En caso de que el método de estimación solo considere horas de construcción (que se correspondería con la fase CSI de Métrica v3), se puede inferir que es el 40% o 50% del esfuerzo total total de desarrollo. Para ello habría que multiplicar las horas de construcción por 2,5 (ya que $1/0.40 = 2.5$), o incluso multiplicando por 2 (suponiendo un 50%, ya que $1/0.50 = 2$).
 
-Suponiendo que se trata de externos y que sus con jornadas de 40 horas/semana, el total de horas-hombres al mes son:
-
-$$40 * (52 / 12) = 173.33 \approx 180 \approx 200 \text{horas-hombre/mes}$$
+La tarea de estimación de esfuerzo de desarrollo del sistema finaliza al obtener las horas-hombre de desarrollo totales.
 
 ##### User Case Points (UCP) {.unnumbered .unlisted}
 
@@ -133,9 +131,9 @@ Una vez obtenidos los UCP, estos se transforman a horas. Para ello se necesita a
 
 | Experiencia del equipo | Horas/UCP |
 | - | - |
-| 20 | Alta |
-| 30 | Media |
-| 40 | Baja |
+| Alta | 20 |
+| Media | 30 |
+| Baja | 40 |
 
 ::: {.callout-tip}
 ## Ejemplo
@@ -148,7 +146,8 @@ Hay un ejemplo muy detallado en la [Wikipedia](https://en.wikipedia.org/wiki/Use
 ## 📋 Marco de referencia
 - Referencias:
   - Ministerio de Administraciones Pública. Apartado "Staffing size (Orientación a objetos)". En: [Métrica v3. Técnicas](https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf){target="_blank"}. PAe.
-  - Manuel Cillero. [Staffing size (Orientación a objetos)](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/){target="_blank"}. manuel.cillero.es
+  <!-- - Manuel Cillero. [Staffing size (Orientación a objetos)](https://web.archive.org/web/20201130171738/https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/staffing-size/){target="_blank"}. manuel.cillero.es -->
+  - [Staffing size (Orientación a objetos)](https://pmgallardo.github.io/metrica-v3/03-tecnicas/01-tecnicas.html#staffing-size){target="_blank"}. En: Metrica v3. GitHub Pages.
   - Estimación. Preparatic 28.
   - <https://runmodule.com/2027/04/27/cosmic-functional-size-measurement/>{target="_blank"}
 - Temas:
@@ -157,7 +156,7 @@ Hay un ejemplo muy detallado en la [Wikipedia](https://en.wikipedia.org/wiki/Use
 
 Staffing size es un método para estimar cuántas personas son necesarias en un desarrollo orientado a objetos y durante cuánto tiempo participan. Está incluido dentro de las técnicas descritas en Métrica v3.
 
-Es adecuado cuando el enunciado requiera hacer previamente un diagrama de clases o un modelo entidad-relación (E-R).
+Es adecuado cuando el enunciado requiera hacer previamente un [diagrama de clases](#diagrama-de-clases) o un [modelo entidad-relación (E-R)](#modelo-entidad-relacion).
 
 La técnica distingue entre clases primarias y secundarias. Para esta parte del ejercicio, se puede asumir que las primarias son aquellas identificadas al realizar el diagrama de clases o modelo entidad-relación (E-R). El número de clases secundarias no modeladas se puede inferir multiplicando.
 
@@ -296,7 +295,7 @@ $$\text{PFA} = \text{PFAN} \times \text{FA}$$
 
 Por último se dividen los puntos de función ajustados por un valor puntos de función/tiempo.
 
-###### Mark-II {.unnumbered .unlisted} -->
+###### Mark-II {.unnumbered .unlisted}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -309,7 +308,7 @@ Por último se dividen los puntos de función ajustados por un valor puntos de f
 
 Mark-II se incluye junto con el método Albrecht como técnicas de puntos de función en Métrica v3. Sin embargo, la guía Preparatic 28 la excluye en favor del método Albrecht. Por concisión, la técnica Mark-II no se desarrolla en esta documentación, si bien es una técnica válida y refrendada por Métrica v3.
 
-###### COSMIC-FSM {.unnumbered .unlisted} -->
+###### COSMIC-FSM {.unnumbered .unlisted}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -368,8 +367,20 @@ Por otro lado, el coste se puede estimar directamente conviertiendo los CFPs en 
   - SDA 25/2022 de suministros
 - Referencias
   - [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}. PAe.
+:::
+
+Este apartado responde a, 
+
+##### Perfiles de servicios de desarrollo {.unnumbered .unlisted}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Contratación
+  - SDA 25/2022 de suministros
+- Referencias
   - [Métrica v3. Participantes](https://administracionelectronica.gob.es/pae_Home/dam/jcr:d601853c-e255-4ade-a9f8-af1357e3a151/METRICA_V3_Participantes.pdf){target="_blank"}. PAe, 2001.
-  - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/){target="_blank"}, manuel.cillero.es.
+ <!-- - Manuel Cillero, [Métrica v3. Participantes](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/){target="_blank"}, manuel.cillero.es. -->
+  - [Métrica v3. Participantes](https://pmgallardo.github.io/metrica-v3/04-participantes/01-participantes.html).
 :::
 
 Es importante dejar claro en el ejercicio práctico y durante las preguntas de la lectura de que para el sistema se contratan servicios de desarrollo, no de personal.
@@ -386,16 +397,40 @@ Adicionalmente, en algunos pliegos contemporáneos (como [este](https://contrata
 
 Con respecto a categoría y tarifa, esta guía considera análogos los perfiles de analista y analista-programador, justificándose en que en Métrica v3 no existe el perfil mixto.
 
+Los programadores del sistema se deben incluir solo desde el proceso de desarrollo, mientras que el resto de perfiles debe estar desde el fin de la contratación.
+
+Los programadores son el recurso más restrictivo, ya que puesto que el producto final es código no hay tanto margen como para el resto de perfiles. Por ello, suele ser una buena práctica calcular inicialmente el número de perfiles de programación junto con un jefe de proyecto, e ir añadiendo analistas o consultores o promocionar programadores a analista-programador en función del presupuesto restante.
+
+##### Cálculo de perfiles de programadores necesarios {.unnumbered .unlisted}
+
+Para determinar el número de programadores necesarios en el desarrollo de un sistema:
+
+1. Obtener el total de horas-hombre del [esfuerzo de servicios de desarrollo](#esfuerzo-de-servicios-de-desarrollo) del sistema.
+2. Convertir el total de horas-hombre en meses-hombre.
+3. Obtener el [plazo máximo de entrega](#plazo-maximo-de-entrega) del sistema.
+4. Restar al plazo de entrega los meses previos al desarrollo (planificación, estudio de viabilidad, contratación).
+5. Dividir el número de meses-hombre entre el número de meses solo de desarrollo para obtener el número de programadores mínimo.
+
+La conversión de total de horas-hombre a meses-hombre se puede obtener multiplicando las horas-hombre por 0,007 o, más simplificado, dividiéndolas por 200.
+
+La obtención de estos coeficientes se basa en las siguientes suposiciones:
+
+- Se puede asumir un esfuerzo anual de cada perfil de 1.760 horas/año; esta cifra se obtiene de algunos pliegos públicos como el exp. [CONP/2026/3925 del Principado de Asturias](https://community.vortal.biz/archive/api/PublicDownload/download?token=MENGNDQ1M0NCQjA3MURDRDkyMzc3NTE1MTU4NjYzNjEyMDlCQzU3NDgyQTRCRTMxM0FBNUNBNDVCODIxOEVDNiNQQ0FQIHRyYXMgU0oucGRmI3siQnV5ZXJQUEkiOiJQVDEuUFBJLjEzNzc1NTc0MyIsIkNvbXBhbnlDb2RlIjoiVk9SVEFMIn0=). Esto implica que al mes son 146,66 horas-hombre ($1760 / 12$), lo que se puede redondear a 150 horas-hombre/mes o a 0,007 meses/hora-hombre.
+- Otro cálculo asumiría que se trata de externos con jornadas de 40 horas/semana. Teniendo en cuenta 52 semanas anuales, el total de horas-hombres al mes serían de forma redondeada 200 horas/mes.
+  $$(40 * 52) / 12) = 173.33 \approx 200 \text{horas-hombre/mes}$$
+
+##### Completación de perfiles de desarrollo {.unnumbered .unlisted}
+
 A efectos prácticos, se puede establecer que un desarrollo necesita el siguiente número de perfiles:
 
 - 1 jefe de proyecto por proyecto
-- Tantos analistas-programadores como sea necesario para tener el proyecto en la fecha indicada en el enunciado o en un periodo razonable (6-18 meses).
+- Tantos analistas-programadores como sea necesario para cumplir el plazo de entrega
 - Analistas en un ratio de 0,25-0,5 respecto al número total de programadores.
 - Opcionalmente 1 o 2 consultores, en función del presupuesto disponible.
 
 Se suele reducir el ratio de analistas por programador cuando interesa reducir el coste de desarrollo.
 
-También se puede convertir a un analista en analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.
+También se puede promocionar un analista como analista-programador cuando interese aumentar el número perfiles de programadores sin reducir el ratio de analistas por cada programador.
 
 Este criterio está basado en la definición de Unidad de Trabajo de la licitación de los [Servicios de Desarrollo y Mantenimiento del Registro Único de Protonterapia (RUP) para el Sistema Nacional de Salud](https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=tNPjeO7M69nK%2BJEppP2WhnzXW3zzgJBktRjJpSJDeGVqean%2FKThYS%2Bkgg1JnKHv8t0vVPmZvaP7Bqss5p37%2FNFsxObzsp3%2FUnFfyMeR6S1h45ClyWkoJ44mKM70IFcOu&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D){target="_blank"}, donde se definía que una unidad de trabajo estaba formada por:
 
@@ -417,7 +452,7 @@ Se puede justificar el no incluir licencias de herramientas de desarrollo argume
 
 ### Dimensionamiento de infraestructuras
 
-Para realizar el dimensionamiento de infraestructuras se requiere haber diseñado previamente un 
+Para realizar el dimensionamiento de infraestructuras se requiere haber definido previamente la arquitectura y las soluciones contratadas.
 
 Si el sistema cuenta con infraestructura *on premise*, se puede emplear el [SDA 24/2022](#sda242022) de sistemas de comunicación, servidores y sistemas de almacenamiento.
 
