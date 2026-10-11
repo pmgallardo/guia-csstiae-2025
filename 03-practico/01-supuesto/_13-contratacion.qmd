@@ -78,7 +78,7 @@ Contratación centralizada más relevante:
 Evaluación del proceso de contratación:
 
 - Escoger el proceso de contratación más simplificado y rápido disponible.
-- Si se aplica trámite de urgencia permiten reducir a la mitad los tiempos, si bien no se pueden reducir tiempos de los periodos de alegaciones.
+- Si se aplica trámite de urgencia permiten reducir a la mitad los tiempos (excepto en PAS y PASA), si bien no se pueden reducir tiempos de los periodos de alegaciones.
 
 ### Conceptos generales de contratación pública
 
@@ -173,7 +173,7 @@ Como nota, hay subprocesos dentro de la contratación qeu no pueden ser reducido
 
 ### (Paso 3) Contratación centralizada
 
-La regulación contratación centralizada se desarrolla tanto en la LCSP, en la subsección 2.ª "Contratación centralizada" (artículo 229 en adelante) de la LCSP, como en Órdenes Ministeriales que no modifican dicha ley. A 2026, la Orden más reciente sobre la contratación centralizada es la [Orden HAC/459/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-10307).
+La regulación contratación centralizada se desarrolla tanto en la LCSP, en la subsección 2.ª "Contratación centralizada" (artículo 229 en adelante) de la LCSP, como en Órdenes Ministeriales que no modifican dicha ley. A 2026, la Orden más reciente sobre la contratación centralizada es la [Orden HAC/459/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-10307). Conviene revisar que se está trabajando con la normativa actualizada a la hora de preparar el supuesto práctico, ya que la normativa de contratación centralizada cambia con frecuencia.
 
 ::: {.callout-note collapse="true"}
 ## Histórico de Órdenes sobre contratación centralizada
@@ -215,15 +215,15 @@ Acuerdos marcos relevantes para IT:
 
 #### Sistemas Dinámicos de Adquisición
 
-Cada Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años, y cada uno de ellos puede aplicar restricciones particulares que no apliquen al resto de SDAs..
+Cada Sistemas dinámicos de adquisición (SDA) tiene una duración de 5 años, y cada uno de ellos puede aplicar restricciones particulares que no apliquen al resto de SDAs.
 
 Durante su vigencia se permiten que salgan y entren empresas, representando a un "club de proveedores" que tienen acceso a las licitaciones rápidas.
 
 SDAs relevantes para TI:
 
+- [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
 - [SDA 25/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-de-software). Suministro de software
 - [SDA 26/2021](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-servicios-de-desarrollo). Servicios de desarrollo
-- [SDA 24/2022](https://contratacioncentralizada.gob.es/web/dgrcc/-/ficha-sda-suministro-servidores). Suministro de equipos de comunicaciones, servidores y sistemas de almacenamiento
 
 ##### SDA 25/2022. Suministro de software {#sda252022}
 
@@ -259,6 +259,12 @@ En el caso de telecomunicaciones existen 4 lotes:
 Los pliegos de cláusulas administrativas particulares deben advertir expresamente la posibilidad de modificación y el importe de esta no podrá superar el veinte por ciento del precio inicial del contrato.
 
 #### Encargos a medios propios
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - Jose Luis Ruiz Mendoza. [Encargos a medios propios: un instrumento ágil con todas las garantías](https://www.youtube.com/watch?v=kTpMAfAWcsk). Canal "PreparaTIC" de YouTube, 3/10/2026.
+:::
 
 Los **encargos a medios propios** son mecanismos para que se hagan encargos a organismos relacionados con la AGE. Se regulan en el art. 32 de la LCSP.
 

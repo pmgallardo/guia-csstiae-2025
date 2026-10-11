@@ -1,14 +1,31 @@
 ## Infraestructuras comunes
 
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Regulaciones:
+  - RD 1125/2024
+- Referencias
+  - Documento "Aplicaciones y servicios reutilizables" de Preparatic 30. 28/01/2025.
+- Temas
+  - 49. Infraestructuras y servicios comunes
+:::
+
 ### RedSARA
 
 RedSARA (Sistemas de Aplicaciones y Redes para las administraciones)
 
 ### sTESTA
 
-sTESTA es una red transeuropea que incluye a las instituciones públicas europeas y de los estados europeos. RedSARA enlaza con la red sTESTA.
+**sTESTA** es una red transeuropea que incluye a las instituciones públicas europeas y de los estados europeos. RedSARA enlaza con la red sTESTA.
 
 ### Servicio Unificado de Telecomunicaciones
+
+El **servicio unificado de telecomunicaciones** (**SUT**) trata de proporcionar una red corporativa única, común y que dé servicio a todo el Sector Público Administrativo Estatal. El servicio define cuatro lotes:
+
+- Lote 1: Red corporativa multiservicio y servicio de telefonía fija (adjudicado a Telefónica)
+- Lote 2: Comunicaciones móviles (adjudicado a Vodafone)
+- Lote 3: Internet (adjudicado a Telefónica)
+- Lote 4: Red internacional (adjudicado a BT)
 
 ### Servicio de alojamiento de infraestructuras TIC
 
@@ -29,7 +46,7 @@ Desventajas del uso de la nube:
 - Costes recurrentes
 - Seguridad
 
-En caso de optar por la nube, se considera acertado el uso de NubeSARA, una nube híbrida exclusiva para el ámbito de las AAPP y gestionada desde la AGE.
+En caso de optar por la nube, se considera acertado el uso de [NubeSARA](#nubesara), una nube híbrida exclusiva para el ámbito de las AAPP y gestionada desde la AGE.
 
 Las soluciones basadas en otros hiperescalares comunes (Azure, AWS o GCP), si bien tienen cierta presencia en la AGE, solo tiene usos muy determinados y generalmente chocan con cuestiones sobre soberanía del dato, seguridad nacional y privacidad, por lo que su propuesta no se considera generalmente una buena opción.
 

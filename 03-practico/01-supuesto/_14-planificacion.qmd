@@ -43,6 +43,16 @@ Consejos generales:
 - Tratar de **adaptar** el diagrama de Gantt **al enunciado**, por ejemplo añadiendo **hitos relevantes** del proyecto en el cronograma.
 - Incluir cualquier anotación que sea relevante en el ejercicio escrito, y tratar de no contar con la defensa para anotarlas de manera oral.
 
+### Modelo de ciclo de vida
+
+Es conveniente especificar un modelo de ciclo de vida (MCV) (en inglés, *software development lifecycle*, SDLC) para el desarrollo del proyecto de sistemas.
+
+Ejemplos de MCV: secuencial/lineal/cascada, incremental, iterativo, evolutivo/espiral, V, prototipado.
+
+En proyectos tradicionales, se suele considerar un MCV de secuencial/lineal/cascada.
+
+En proyectos ágiles, se suele considerar un MCV incremental (si añade nuevas funcionalidades, sin modificar las existentes), iterativo (si va mejorando las funcionalidades existentes) o híbrido.
+
 ### Metodologías de desarrollo
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -50,32 +60,54 @@ Consejos generales:
 Convocatorias/tareas: 2022.4.c, 2019.5, 2018.4
 :::
 
-Es necesario especificar una metodología de desarrollo.
+Es conveniente especificar una metodología para el desarrollo del proyecto de sistemas.
 
-En caso de escoger alguna metodología ágil basada en SCRUM, se debe dividir el proyecto en funcionalidad que se estimen que tengan una complejidad y esfuerzo similar y que se puedan completar en sprints de duración 2-4 semanas. De manera práctica y de cara a este ejercicio, muchos candidatos optan por hacerlo en sprints de 2 ó 4 semanas, que son más fáciles de representar en un diagrama de Gantt dividido en meses.
+Ejemplos de metodologías de desarrollo:
 
-### Fases de un proyecto
+- Tradicionales: Métrica v3, Rational Unified Process (RUP).
+- Ágiles: Scrum, Kanban, XP, Crystal, FDD, DSDM.
+
+#### Metodologías tradicionales de desarrollo
+
+Para proyectos tradicionales, se suele considerar la metodología Métrica v3, que es la de referencia para la Administración General del Estado (AGE).
+
+#### Metodologías ágiles de desarrollo
+
+En caso de escoger alguna metodología ágil basada en **scrum**, se debe dividir el proyecto en funcionalidad que se estimen que tengan una complejidad y esfuerzo similar y en peridodos de duración 2-4 semanas por cada sprint. De manera práctica y de cara a este ejercicio, muchos candidatos optan por hacerlo en sprints de 2 ó 4 semanas, que son más fáciles de representar en un diagrama de Gantt dividido en meses.
+
+Scrum requiere definir roles, entre ellos:
+
+- *Product owner*, que es el responsable de la gestión del producto y de la priorización de las funcionalidades.
+- *Scrum master*, que es el responsable de la gestión del proyecto y de la coordinación del equipo de desarrollo. En caso de que se indique un número de programadores, se puede asumir que uno de ellos es el scrum master.
+- Equipo de desarrollo, que es el responsable de la implementación de las funcionalidades.
+
+Requiere que exista un *product backlog* y un *sprint backlog*.
+
+Cada sprint debe contar con un *sprint planning*, un *sprint review*, un *sprint retrospective* y *daily standups* regulares.
+
+### Fases de desarrollo
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Referencias
-  - Manuel Cillero, [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/), manuel.cillero.es.
+- Referencias:
+  <!-- - Manuel Cillero, [Métrica v3](https://manuel.cillero.es/doc/metodologia/metrica-3/), manuel.cillero.es. -->
+  - [Introducción](https://pmgallardo.github.io/metrica-v3/01-principal/01-introduccion.html). En: Métrica v3. GitHub Pages.
 :::
 
-Hay muchos modelos para definir las fases de un proyecto de desarrollo de software. En el supuesto práctico del ejercicio práctico del CSSTIAE se puede aplicar el modelo de Métrica v3, que es el de referencia para la Administración General del Estado (AGE).
+Hay muchos la metodología para definir las fases de un proyecto de desarrollo de software. En el supuesto práctico del ejercicio práctico del CSSTIAE se puede aplicar la metodología de Métrica v3, que es el de referencia para la Administración General del Estado (AGE).
 
-Las fases de un proyecto de sistemas informáticos según el Desarrollo de Sistemas de Información de Métrica v3:
+Los procesos de ciclo de vida del software según Métrica v3 son:
 
-1. Estudio de viabilidad del sistema (EVS)
-2. Análisis del sistema de información (ASI)
-3. Diseño del sistema de información (DSI)
-4. Construcción del sistema de información (CSI)
-5. Implantación y aceptación del sistema (IAS)
-6. Mantenimiento del sistema de información (MSI)
+1. Planificación de sistemas de información (PSI)
+2. Desarrollo de sistemas de información (DSI)
+  1. Estudio de viabilidad del sistema (EVS)
+  2. Análisis del sistema de información (ASI)
+  3. Diseño del sistema de información (DSI)
+  4. Construcción del sistema de información (CSI)
+  5. Implantación y aceptación del sistema (IAS)
+3. Mantenimiento del sistema de información (MSI)
 
-En caso de metodologías tradicionales, estas fases de desarrollo se aplican a la totalidad del proyecto. En caso de metodologías ágiles, las fases 2-5se aplican a cada iteración o sprint y reduciendo a los pasos 2-5, mientras que la fase 1 (EVS) y la fase 6 (MSI) se aplican al inicio y final del proyecto respectivamente.
-
-Es importante también considerar otros procesos necesarios, como la contratación o la formación, que pueden ir de forma paralela a estas fases.
+En caso de metodologías tradicionales, estas fases de desarrollo se aplican a la totalidad del proyecto. En caso de metodologías ágiles, los subprocesos dentro del proceso 2 (DSI) se aplican a cada iteración o sprint, mientras que el proceso 1 (PSI) y 3 (MSI) se aplican al inicio y final del proyecto respectivamente.
 
 Acciones que se realizan durante la EVS:
 
@@ -87,6 +119,10 @@ Acciones que se realizan durante la EVS:
 - Tipo de migración (si aplica).
 - Formación.
 
+Es importante también considerar otros procesos necesarios, como la contratación o la formación, que pueden ir de forma paralela a estas fases.
+
+Los candidatos también suelen añadir fases paralelas que abarcan todo el ciclo de vida del proyecto y que reflejan actividades transversales a todo el proyecto, como el aseguramiento de la calidad o la seguridad.
+
 ### Representación de la planificación temporal
 
 ::: {.callout-note collapse="true" icon="false"}
@@ -97,10 +133,3 @@ Convocatorias/tareas: 2023.4, 2022.4.a, 2020.7, 2018.4
 La representación de la planificación temporal, también llamado cronograma, se realiza habitualmentemediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar la duración de las tareas y su secuencia en el tiempo.
 
 La representación de la planificación debe reflejar el modelo de ciclo de vida y la metodología de desarrollo escogida.
-
-### Modelo de ciclo de vida
-
-Es necesario especificar un modelo de ciclo de vida.
-
-
-

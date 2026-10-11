@@ -272,7 +272,9 @@ La Ley de Gobernanza de Datos (*Data Governance Act*, DGA) regula la reutilizaci
 
 Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) para que empresas, ciudadanos y gobiernos puedan compartir datos privados o protegidos sin riesgos.
 
-#### Reutilización de datos
+#### Reutilización
+
+##### Reutilización de datos
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -289,6 +291,16 @@ Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) par
 RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y aplicó una actualización a la L 37/2007.
 
 Cuando se habla de la reutilización del datos, conviene también mencionar la interoperabilidad.
+
+##### Reutilización de sistemas
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- ES:
+  - RD 1125/2025. Organización e instrumentos operativos para la Administración Digital de la AGE.
+:::
+
+RD 1125/2024 establece que la AGE debe proveer servicios transversales a los distintos ministerios y organismos públicos, y que estos servicios deben ser gestionados de forma centralizada para garantizar su eficiencia y seguridad.
 
 #### Protección de datos
 
@@ -388,3 +400,4 @@ El vocal titular L. A. Hernández es profesor universitario de Inteligencia Arti
 - Referencias:
   - [Inteligencia artificial](https://digital.gob.es/digitalizacion/areas-interes/inteligencia-artificial). digital.gob.es.
 :::
+

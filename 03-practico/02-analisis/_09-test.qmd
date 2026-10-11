@@ -1,5 +1,15 @@
 ## Test del marco normativo
 
+Para ensayar en conocimiento del marco normativo por área, se recomienda el uso de tarjetas de estudio (*flashcards*), que permiten repasar de manera rápida y efectiva los conceptos clave.
+
+Se puede emplear alguna aplicación de terceros de tarjetas de estudio, como por ejemplo Anki o Quizlet.
+
+A continuación se deja un enlace a un conjunto de tarjetas de estudio en Quizlet, que contiene los conceptos clave del marco normativo por área transversal:
+
+[Guía CSSTIAE 2025 - Marco normativo](https://quizlet.com/es/1217123931/guia-csstiae-2025-marco-normativo-flash-cards)
+
+También a continuación se ha tratado de implementar un sencillo sistema de tarjetas de estudio en la propia guía, que permite repasar los conceptos clave del marco normativo por área.
+
 ```{=html}
 <style>
   #flashcard {

@@ -2,14 +2,15 @@
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-- Temas
-  - 49. Infraestructuras y servicios comunes
 - Regulaciones:
   - RD 1125/2024
 - Referencias
   - Directorio de Soluciones del Centro de Transferencia Tecnológica (CTT)
   - Apartado 5​ "Interfaces del sistema y con otros sistemas" del documento "Arquitectura Lógica" de Preparatic 31.
+  - Documento "Aplicaciones y servicios reutilizables" de Preparatic 30. 28/01/2025.
   - <https://runmodule.com/2024/10/13/servicios-electronicos-del-sector-publico-en-espana/>
+- Temas
+  - 49. Infraestructuras y servicios comunes
 :::
 
 Este  apartado se describen los servicios electrónicos transversales empleados en la Administración General del Estado (AGE) y relevantes para el ejercicio práctico.
@@ -41,17 +42,49 @@ La Comisión de Estrategia TIC (CETIC) declaró 14 servicios compartidos de la A
 
 El Servicio Unificado de Telecomunicaciones (SUT) es una red corporativa única para las sedes del Estado.
 
-#### GEISER {#geiser}
+Se explica en infraestructuras comunes.
 
-Gestión Integrada de Servicios de Registro (GEISER).
+#### SIR {##sistema-de-interconexion-de-registros}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/sir>
+:::
+
+El Sistema de Interconexión de Registros (SIR) es la infraestructura de comunicaciones que conecta las oficinas de registro del sector público español y que permite el intercambio de documentos y solicitudes entre los registros electrónicos de las AAPP.
+
+No confundir con [PID](#plataforma-de-intermediación-de-datos), que se especializa en el intercambio de datos entre aplicaciones.
 
 #### ORVE {#orve}
 
-Oficina de Registro Virtual (ORVE)
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/orve>
+:::
 
-#### SIR {#sir}
+Oficina de Registro Virtual (ORVE) es una aplicación en la nube que permite gestionar las Oficinas de Registro de entrada/salida de una Administración (incluyendo la digitalización, envío y recepción), proporcionando su propio libro de registro.
 
-Sistema de Interconexión de Registros (SIR)
+Cuenta con la certificación SICRES 4.0.
+
+Usa SIR.
+
+Al ser una solución básica, es más utilizada por organismos pequeños como ayuntamientos.
+
+#### GEISER {#geiser}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/geiser>
+:::
+
+Gestión Integrada de Servicios de Registro (GEISER) es una aplicación en la nube solución más avanzada que ORVE que añade distribución.
+
+Usa SIR.
+
+Al ser avanzada, es más utilizada por grandes organismos como ministerios.
 
 ### Servicio de Seguridad Gestionada
 
@@ -77,6 +110,8 @@ NubeSARA es un servicio de nube híbrida para la AGE, gestionado desde la AEAD. 
 NubeSARA se lleva a cabo en una serie de CPDs disponibles. Hay 3 CPDs: Moncloa (el histórico), El Escorial (empleado sobre todo por las Fuerzas de Seguridad) y Las Rozas (en desarrollo).
 
 Cumplen el Tier IV.
+
+Los costes de NubeSARA se detallan en el apartado sobre costes.
 
 ###  Servicio de Correo Electrónico
 
@@ -106,6 +141,8 @@ Sustituye al antiguo Registro Electrónico Común (REC).
 
 #### Notific@ {#notifica}
 
+Notific@ es una infrasestructura interna (backend) que sirve a los organismos públicos como servicio común de notificaciones electrónicas de la AGE.
+
 #### DEHú {#dehu}
 
 ::: {.callout-note icon="false"}
@@ -114,7 +151,9 @@ Sustituye al antiguo Registro Electrónico Común (REC).
   - [DEHú en DS-CTT](https://administracionelectronica.gob.es/ctt/lema)
 :::
 
-La Dirección Electrónica Habilitada única (DEHú) es un punto único de notificaciones para toda las AAPP.
+La Dirección Electrónica Habilitada única (DEHú) es una plataforma que funciona como punto único de notificaciones para toda las AAPP.
+
+Ofrece un portal web para consultas y una interfaz de servicios para grandes destinatarios.
 
 ###  Gestión de Nómina
 
@@ -132,9 +171,14 @@ La Dirección Electrónica Habilitada única (DEHú) es un punto único de notif
   - [Cl@ve en CTT](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=clave). PAe.
 :::
 
-Cl@ve es un servicio de autenticación orientado al ciudadano.
+Cl@ve es un servicio para la identificación, autenticación y firma electrónica orientado al ciudadano.
 
-No se debe confundir con el servicio transversal de firma electrónica Cl@ve Firma.
+Existen las siguientes variantes:
+
+- Cl@ve permanente
+- Cl@ve móvil
+
+No se debe confundir con el servicio transversal de firma electrónica [Cl@ve Firma](#clave-firma).
 
 #### AutenticA {#autentica}
 
@@ -142,25 +186,31 @@ AutenticA tiene una función similar a Cl@ve pero está orientado al personal de
 
 Funciona como un "Directorio Activo" o repositorio unificado que permite a los funcionarios y personal autorizado loguearse en las aplicaciones de gestión de la AGE (como GEISER o Portafirmas).
 
-#### @firma {#firma}
+#### @firma {#afirma}
 
 @firma es el servicio central de validación de firma electrónica de la AGE.
 
+No confunir con el servicio de autenticación [Cl@ve Firma](#clave-firma).
+
 #### VALIDe {#valide}
 
-Validación de firmas y certificados online (VALIDe) es una aplicación web creada por la SGAD que permite a los ciudadanos validar la firma electrónica de los documentos. Emplea @firma como backend.
+Validación de firmas y certificados online (VALIDe) es una aplicación web creada por la SGAD que permite a los ciudadanos validar la firma electrónica de los documentos. Emplea [@firma](#afirma) como backend.
 
 #### Cl@ve Firma {#clave-firma}
 
 Cl@ve Firma es un servicio de firma electrónica en la nube.
 
-No se debe confundir con el servicio transversal de autenticación Cl@ve.
+No se debe confundir con el servicio transversal de autenticación [Cl@ve](#clave) ni con el servicio de validación [@firma](#afirma).
 
 #### FIRe
 
 La solución integral de firma electrónica (FIRe) es una pasarela de software instalada en local que unifica las distintas soluciones que pueden emplear las aplicaciones cuando trabajan con firmas. No se trata, por tanto, de un servicio transversal, aunque trabaja con ellos.
 
 FIRe permite, por ejemplo, escoger entre realizar una firma con un servicio en local (mediante el software Autofirma) o con uno en la nube (Cl@ve Firma) o verificar una firma contra @firma.
+
+#### Port@firmas {#portafirmas}
+
+Port@firmas permite incorporar la firma electrónica en los flujos de trabajo de una organización.
 
 ###  Servicio de gestión y documentos electrónicos
 
@@ -224,24 +274,32 @@ Valor añadido de Archive:
 
 ### DIR3 {#dir3}
 
-DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.
-
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
 <https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=dir>
 :::
 
+DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.
+
 ### SIA {#sia}
 
-Sistema de Información Administrativa (SIA).
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=sia>
+:::
+
+Sistema de Información Administrativa (SIA) es un sistema de información que recoge el inventario de tramitación administrativa de la AGE, incluyendo procedimientos administrativos y servicios.
 
 ## Infraestructura común de interoperabilidad
 
-### Plataforma de Intermediación de Datos (PID) {#pid}
+### Plataforma de Intermediación de Datos (PID) {#plataforma-de-intermediación-de-datos}
 
 La Plataforma de Intermediación de Datos (PID) permite que se compartan datos o documentos entre organismos de la AGE.
 
 El Servicio de Verificación de Datos (SVD) se ofrece dentro de la PID y permite verificar y consultar datos.
+
+No confundir con [SIR](#sistema-de-interconexion-de-registros), que se especializa en el intercambio de datos entre aplicaciones.
 
 ## Registros
 
@@ -249,20 +307,35 @@ Estos registros son requeridos por alguna ley estatal o norma
 
 ### FACe {#face}
 
-FACE es el Punto General de Entrada de Facturas Electrónicas de la AGE.
-
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-<https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face>
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face>
 :::
+
+FACE es el Punto General de Entrada de Facturas Electrónicas de la AGE.
 
 ### @podera {#apodera}
 
-@podera es un registro electrónico de apoderamiento.
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face>
+:::
+
+El Registro Electrónico de Apoderamiento (REA) es la figura legal del registro electrónico donde ciudadanos y organizaciones pueden otorgar poderes a otras personas para que actúen en su nombre ante las AAPP.
+
+@podera es la plataforma informática que permite gestionar el Registro Electrónico de Apoderamiento.
 
 ### Habilit@ {#habilita}
 
-Habilit@ es un registro de funcionarios habilitados.
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=face>
+:::
+
+Habilit@ es un registro de autorizaciones de funcionarios habilitados en el que se almacenan los permisos legales para actuar en nombre de la Administración Pública.
 
 ### CISE (Centro de Interoperabilidad Semántica) {#cise}
 
