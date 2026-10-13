@@ -240,15 +240,21 @@ Convocatorias/tareas: 2018.7
   - 33. Herramientas de planificación y control de gestión de la función del directivo de sistemas y tecnologías de la información en la Administración. El cuadro de mando.
 :::
 
+Como software de ingesta de datos se puede usar **Apache NiFi**.
+
+Para la orquestación y programación de los servicios se puede emplear **Apache Airflow**.
+
+Como lago de datos se puede emplear **Apache Ozone** (de código abierto con licencia permisiva) o MinIO (de código abierto con licencia copyleft).
+
+Para transformar los datos previo a la visualización, se puede usar **dbt**, de código abierto.
+
 Un cuadro de mando integral (CMI), *dashboard* en inglés, es una herramienta que permite visualizar de manera gráfica y resumida los indicadores clave de rendimiento (KPI)  o de éxito del sistema.
 
-**Apache Superset** es una herramienta libre y de código abierto similar a PowerBI y Tableau.
+**Apache Superset** es una herramienta de código abierto similar a PowerBI y Tableau.
 
 Soluciones propietarias populares son **PowerBI**y **Tableau**.
 
-El flujo completo de procesamiento de datos para un dashboard podría ser el siguiente:
-
-![Propuesta de flujo de procesamiento de datos para un dashboard](../images/sup-sol-dashboard.jpg)
+![Propuesta de flujo de procesamiento de datos para un cuadro de mandos](../images/sup-sol-dashboard.jpg)
 
 ### Soluciones de inteligencia artificial
 
