@@ -246,6 +246,10 @@ Un cuadro de mando integral (CMI), *dashboard* en inglés, es una herramienta qu
 
 Soluciones propietarias populares son **PowerBI**y **Tableau**.
 
+El flujo completo de procesamiento de datos para un dashboard podría ser el siguiente:
+
+![Propuesta de flujo de procesamiento de datos para un dashboard](../images/sup-sol-dashboard.jpg)
+
 ### Soluciones de inteligencia artificial
 
 ::: {.callout-note collapse="true" icon="false"}

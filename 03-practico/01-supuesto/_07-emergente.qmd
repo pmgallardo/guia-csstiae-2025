@@ -113,7 +113,8 @@ Modelo ALIA de la AGE. Coordinado por la Secretaría de Estado de Digitalizació
 
 Métricas de IA:
 
-Agencia Española de Supervisión de Inteligencia Artificial (AESIA)
 Reglamento (UE) 2024/1689 "AI Act" se aplica de forma escalonada en 2027.
+
+Agencia Española de Supervisión de Inteligencia Artificial (AESIA)
 
 Las soluciones con IA suelen ser más caras.
