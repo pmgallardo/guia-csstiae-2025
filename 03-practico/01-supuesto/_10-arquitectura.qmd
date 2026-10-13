@@ -277,7 +277,7 @@ Elementos que deben considerarse en la arquitectura física:
 Elementos que se suelen excluir:
 
 - Arquitectura lógica
-- Patrones de 
+- Patrones de diseño
 
 ### Arquitectura de red
 
@@ -363,7 +363,9 @@ En la red perimetral, conectados directamente con el cortafuegos exterior, suele
 
 La **sonda SAT-inet** (acrónimo de Sistema de Alerta Temprana de Internet) es un elemento de monitorización que permite al CCN monitorizar la red del organismo de la AGE.
 
-La sonda SAT-inet se suele colocar en la red perimetral, conectada fuera de banda (*out-of-band*) a un puerto SPAN o Mirror del switch core o del cortafuegos, de manera que reciba una copia del tráfico para analizarlo de forma paralela. Es importante recalcar que NO corta el tráfico.
+La sonda SAT-inet se suele colocar en infraestructuras en la red perimetral, conectada fuera de banda (*out-of-band*) a un puerto SPAN o Mirror del switch core o del cortafuegos, de manera que reciba una copia del tráfico para analizarlo de forma paralela. Es importante recalcar que NO corta el tráfico.
+
+En caso de infraestructura de nube, se emplearía una sonda virtual SAT-inet, si bien en el caso de NubeSARA se debe comprobar si la responsabilidad de su implementación es de NubeSARA o del implantador.
 
 Referencias:
 
@@ -396,9 +398,17 @@ En la red privada se suelen colocar:
 
 Los aspirantes suelen definir una VLAN en la red privada por cada una de estas categorías para asegurar la segmentación de red y aumentar la seguridad. Los servidores de aplicación y las bases de datos se suelen poner por separado.
 
+Alguno de los elementos son recogidos en el siguiente diagrama, si bien el uso de las VLANs en la subred perimetral convendría revisarlas:
+
+![](../images/sup-arq-red.jpg)
+
+\
 En caso de requerirse trabajar con firma electrónica, es recomendable reflejar la instalación de un **servidor local FIRe** en una VLAN de integración, ya que los servidores de aplicación estos necesitan comunicarse con la API de FIRe para enviarle el documento original y recuperar el resultado firmado.
 
 El servidor FIRe se ubicaría dentro de la la red privada, y requeriría conectividad de salida hacia la intranet administrativa (Red SARA) para acceder a servicios transversales como @firma o Cl@ve Firma.
+
+\
+En el caso de usar una red en la nube, recordar que no aplica incluir una VLAN de usuarios en la red prviada.
 
 #### Arquitectura de red con nube híbrida
 

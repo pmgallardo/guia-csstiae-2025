@@ -1,8 +1,22 @@
 ## Realización test
 
-### Realización del ejercicio de test
+### Simulacros del ejercicio de test
 
-Conviene tener una estrategia a la hora de contestar a las preguntas, ensayarla en simulacros y mantenerla el día del exámen. Se recomienta evitar recurrir a experimientos de última hora el día del exámen.
+Conviene tener una estrategia a la hora de contestar a las preguntas, ensayarla en simulacros y mantenerla el día del exámen.
+
+Se puede practicar con ejercicios prácticos de convocatorias anteriores de las pruebas de acceso al CSSTIAE, si bien no conviene irse muy atrás, pues tienden a quedarse obsoletos tanto los enunciados como las soluciones.
+
+| Simulacro | Convocatoria | Fecha |
+| - | - | - |
+| [Simulacro test Preparatic 31](https://www.preparatic.org/simulacro-test-p31/) | 2025 | 20/06/2026 |
+
+También se puede recurrir a test compartidos para convocatorias de otros puestos de informáticos generalistas, como los correspondientes a Comunidades Autónomas o Entidades Locales.
+
+### Convocatoria del ejercicio de test
+
+### Consejos para el test
+
+Se recomienta evitar recurrir a estrategias de última hora el día del exámen.
 
 ### Corrección provisional y reclamación del ejercicio de test
 

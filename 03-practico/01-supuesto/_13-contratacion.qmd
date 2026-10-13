@@ -567,3 +567,18 @@ En caso de retraso en la ejecución del contrato en proporción de 0,60 € por 
 Hay un proceso de recepción de la inversión. En ella está involucrado un técnico gestor.
 
 Corenet es una aplicación de la Intervención General de la Administración del Estado (IGAE) para revisar la recepción de contrato de más de 50.000 € a través de un interventaror de la IGAE. Suele ser un perfil TIC dentro de este organismo.
+
+### Responsable de contratación
+
+::: {.callout-note collapse="true" icon="false"}
+## 📝 Apariciones en examen
+Convocatorias/tareas: 2020.8
+:::
+
+Si se trata de contratación no centralizada y que no es regulación armonizada, el responsable es la Junta de Contratación del Ministerio u organismo público..
+
+Si se trata de contratación no centralizada y bajo regulación armonizada SARA, el responsable de contratación e es el Ministro, Presidente o Director, dependiendo de si se trate de un Ministerio u otro organismo público.
+
+En caso de ser un AM, el responsable es la Dirección General de Racionalización y Centralización de la Contratación (DGRCC).
+
+En caso de ser un SDA, la admisión de proveedores la realiza la DGRCC durante la creación del SDA y la compra la hace el destinatario en la fase de contrato específico.

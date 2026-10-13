@@ -85,7 +85,7 @@ Si se emplea el sistema de virtualización VMWare, el precio de licencia se pued
 
 El soporte suele ser un 20% del precio de compra.
 
-##### Servidores en nube {.unnumbered .unlisted}
+##### Infraestructura en la nube {.unnumbered .unlisted}
 
 En caso de emplearse infraestructuras comunes como NubeSARA, se deben usar los precios acordados.
 
@@ -93,7 +93,7 @@ El uso de NubeSARA supone unos costes. En la pestaña de [Área de Descagas](htt
 
 Resumen de precio anual de servidores NubeSARA (redondeados de cara a emplearse en el supuesto práctico):
 
-| Tamaño servidor NubeSARA | Coste unitario (€) aprox. |
+| Tamaño servidor NubeSARA | Coste unitario (€) anual aprox. |
 | - | - |
 | Pequeño | 1.000 |
 | Mediano | 2.500 |
@@ -141,6 +141,10 @@ A su vez, estos precios se basan en los siguientes precios unitarios:
 #### Costes por cortafuegos
 
 Los cortafuegos (*firewalls*) suelen ser físicos por razones de seguridad. Suele costar 15.000 € por pareja de cortafuegos; se ponen de dos en dos, por si uno falla que exista otro.
+
+#### Costes memoria secundaria
+
+El coste de 1 TB de memoria secundaria son 800 €, y 1.500 € si es premium. Se puede aproximar a 1.000 €.
 
 #### Costes por otros elementos de red
 

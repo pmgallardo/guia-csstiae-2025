@@ -153,6 +153,20 @@ Procesos de gestión mínimos:
 8. Transferencia
 9. Destrucción o elminación de documentos
 
+#### NTI SICRES
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [SICRES en CTT](https://administracionelectronica.gob.es/ctt/verPestanaGeneral.htm?idIniciativa=sicres)
+:::
+
+SICRES (Sistema de Información Común de Registros de Entrada y Salida) es una NTI relativa al intercambio de registros.
+
+Servicios transversales somo [SIR](#sir) u [ORVE](#orve) están construidos en base a esta norma.
+
+Cuando se habla de intercambio de registros, conviene hablar de SICRES 
+
 ### Auditoría del ENI
 
 Existe una guía de auditoría del cumplimiento del ENI.

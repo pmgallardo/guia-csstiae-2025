@@ -22,10 +22,11 @@ A modo de guía, se sugiere una posible estructura:
 
 1. **Descripción** introductoria del **sistema** en alto nivel
 2. **Contexto**, con métricas, indicadores y **estadísticas**
-3. **Iniciativas** nacionales y europeas que afectan a la AGE y con las que se entronca el sistema
-4. **Marco normativo**, o contexto legal.
-5. **Organismos** con los que está relacionado el sistema.
-6. **Conclusión**, incluyendo beneficios y bondades
+3. **Marco constitucional español**
+4. **Iniciativas** europeas y nacionales que afectan a la AGE y con las que se entronca el sistema
+5. **Marco normativo**, o contexto legal, europeo y nacional.
+6. **Organismos** con los que está relacionado el sistema.
+7. **Conclusión**, incluyendo beneficios y bondades
 
 #### Preparación del análisis pormenorizado
 

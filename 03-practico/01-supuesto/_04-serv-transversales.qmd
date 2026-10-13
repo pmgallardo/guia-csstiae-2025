@@ -44,48 +44,6 @@ El Servicio Unificado de Telecomunicaciones (SUT) es una red corporativa única 
 
 Se explica en infraestructuras comunes.
 
-#### SIR {##sistema-de-interconexion-de-registros}
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias:
-  - <https://administracionelectronica.gob.es/ctt/sir>
-:::
-
-El Sistema de Interconexión de Registros (SIR) es la infraestructura de comunicaciones que conecta las oficinas de registro del sector público español y que permite el intercambio de documentos y solicitudes entre los registros electrónicos de las AAPP.
-
-No confundir con [PID](#plataforma-de-intermediación-de-datos), que se especializa en el intercambio de datos entre aplicaciones.
-
-#### ORVE {#orve}
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias:
-  - <https://administracionelectronica.gob.es/ctt/orve>
-:::
-
-Oficina de Registro Virtual (ORVE) es una aplicación en la nube que permite gestionar las Oficinas de Registro de entrada/salida de una Administración (incluyendo la digitalización, envío y recepción), proporcionando su propio libro de registro.
-
-Cuenta con la certificación SICRES 4.0.
-
-Usa SIR.
-
-Al ser una solución básica, es más utilizada por organismos pequeños como ayuntamientos.
-
-#### GEISER {#geiser}
-
-::: {.callout-note icon="false"}
-## 📋 Marco de referencia
-- Referencias:
-  - <https://administracionelectronica.gob.es/ctt/geiser>
-:::
-
-Gestión Integrada de Servicios de Registro (GEISER) es una aplicación en la nube solución más avanzada que ORVE que añade distribución.
-
-Usa SIR.
-
-Al ser avanzada, es más utilizada por grandes organismos como ministerios.
-
 ### Servicio de Seguridad Gestionada
 
 ###  Servicio de Alojamiento de Infraestructura TIC
@@ -123,7 +81,49 @@ Mi Carpeta Ciudadana (CCD).
 
 ### Servicio de Gestión del Registro
 
-#### REGAGE {#regage}
+Estos servicios se emplean cuando debe figurar la entrada o salida de documentos y se deben tener en cuenta plazos.
+
+#### SIR {##sistema-de-interconexion-de-registros}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/sir>
+:::
+
+El Sistema de Interconexión de Registros (SIR) es la infraestructura de comunicaciones que conecta las oficinas de registro del sector público español y que permite el intercambio de documentos y solicitudes entre los registros electrónicos de las AAPP.
+
+No confundir con [PID](#plataforma-de-intermediación-de-datos), que se especializa en el intercambio de datos entre aplicaciones.
+
+#### ORVE {#orve}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/orve>
+:::
+
+Oficina de Registro Virtual (ORVE) es una aplicación en la nube que permite gestionar las Oficinas de Registro de entrada/salida de una Administración (incluyendo la digitalización, envío y recepción), proporcionando su propio libro de registro.
+
+Cuenta con la certificación de la NTI SICRES 4.0. Usa SIR como backend.
+
+Al ser una solución básica, es más utilizada por organismos pequeños como ayuntamientos.
+
+#### GEISER {#geiser}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - <https://administracionelectronica.gob.es/ctt/geiser>
+:::
+
+Gestión Integrada de Servicios de Registro (GEISER) es una aplicación en la nube solución más avanzada que ORVE que añade distribución.
+
+Usa SIR como backend.
+
+Al ser avanzada, es más utilizada por grandes organismos como ministerios.
+
+#### REG-AGE {#reg-age}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -131,7 +131,7 @@ Mi Carpeta Ciudadana (CCD).
   - <https://sede.administracion.gob.es/servicios-electronicos/registro-electronico-general-age>
 :::
 
-El Registro Electrónico General de la Administración General del Estado (REGAGE) es un servicio común para presentar documentos para su tramitación dirigidos a distintos organismos públicos.
+El Registro Electrónico General de la Administración General del Estado (REG-AGE) es un servicio común dirigido a los ciudadanos que ofrece una ventanilla única para presentar documentos para su tramitación dirigidos a distintos organismos públicos.
 
 Está gestionado por la AGE.
 
@@ -141,7 +141,7 @@ Sustituye al antiguo Registro Electrónico Común (REC).
 
 #### Notific@ {#notifica}
 
-Notific@ es una infrasestructura interna (backend) que sirve a los organismos públicos como servicio común de notificaciones electrónicas de la AGE.
+Notific@ es una infraestructura interna (backend) que sirve a los organismos públicos como servicio común de notificaciones electrónicas de la AGE.
 
 #### DEHú {#dehu}
 
@@ -151,9 +151,7 @@ Notific@ es una infrasestructura interna (backend) que sirve a los organismos p�
   - [DEHú en DS-CTT](https://administracionelectronica.gob.es/ctt/lema)
 :::
 
-La Dirección Electrónica Habilitada única (DEHú) es una plataforma que funciona como punto único de notificaciones para toda las AAPP.
-
-Ofrece un portal web para consultas y una interfaz de servicios para grandes destinatarios.
+La Dirección Electrónica Habilitada única (DEHú) es un portal web que funciona como punto único de notificaciones para toda las AAPP. Permite consultas y ofrece una interfaz de servicios para grandes destinatarios.
 
 ###  Gestión de Nómina
 
@@ -190,7 +188,7 @@ Funciona como un "Directorio Activo" o repositorio unificado que permite a los f
 
 @firma es el servicio central de validación de firma electrónica de la AGE.
 
-No confunir con el servicio de autenticación [Cl@ve Firma](#clave-firma).
+No confundir con el servicio de autenticación [Cl@ve Firma](#clave-firma).
 
 #### VALIDe {#valide}
 
@@ -213,6 +211,8 @@ FIRe permite, por ejemplo, escoger entre realizar una firma con un servicio en l
 Port@firmas permite incorporar la firma electrónica en los flujos de trabajo de una organización.
 
 ###  Servicio de gestión y documentos electrónicos
+
+Un **expediente electrónico** es el conjunto ordenado de documentos electrónicos que corresponden a un mismo procedimiento administrativo, unidos por un índice electrónico firmado. En el mundo analógico, el equivalente sería una carpeta con distintos documentos.
 
 #### InSiDe {#inside}
 
@@ -281,6 +281,8 @@ Valor añadido de Archive:
 
 DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.
 
+Es necesario acudir a él para hacer consultas sobre intercambios de facturación, expedientes o registros.
+
 ### SIA {#sia}
 
 ::: {.callout-note icon="false"}
@@ -291,11 +293,13 @@ DIR3 es el Directorio Común de Unidades Orgánicas y Oficinas de la AGE.
 
 Sistema de Información Administrativa (SIA) es un sistema de información que recoge el inventario de tramitación administrativa de la AGE, incluyendo procedimientos administrativos y servicios.
 
+Si hubiera una ventanilla única y se debe redirigir procedimientos, SIA sería de utilidad.
+
 ## Infraestructura común de interoperabilidad
 
 ### Plataforma de Intermediación de Datos (PID) {#plataforma-de-intermediación-de-datos}
 
-La Plataforma de Intermediación de Datos (PID) permite que se compartan datos o documentos entre organismos de la AGE.
+La Plataforma de Intermediación de Datos (PID) permite que se compartan datos o documentos entre organismos de la AGE. Se emplea para hacer verificaciones en tiempo real sin necesidad de mover documentos ni registros.
 
 El Servicio de Verificación de Datos (SVD) se ofrece dentro de la PID y permite verificar y consultar datos.
 

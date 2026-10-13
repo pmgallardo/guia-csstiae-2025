@@ -55,7 +55,7 @@ Las **medidas de seguridad del ENS** se detallan en el anexo II del RD 311/2022.
 El listado de mecanismos del ENS es el siguiente:
 
 - Marco organizativo (org)
-  - Política de seguridad
+  - **Política de seguridad**
   - Normativa de seguridad
   - Procedimientos de seguridad
   - Proceso de autorización

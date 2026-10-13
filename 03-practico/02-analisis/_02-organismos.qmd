@@ -64,4 +64,6 @@ La Agencia Española de Administración Digital (AEAD).
 
 Precede de la Secretaría General de la Administración (SGAD).
 
+Es la responsable de la ejecución de las competencias de la AEAD en materia de administración electrónica y servicios públicos digitales, transformación digital e innovación tecnológica.
+
 ### COCS (Centro de Operaciones de Ciberseguridad)

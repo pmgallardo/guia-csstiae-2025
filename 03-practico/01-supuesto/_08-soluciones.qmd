@@ -54,7 +54,7 @@ Se puede consultar las tecnologías de las aplicaciones móviles en el [inventar
 
 Se concluye leyendo este informe que las aplicaciones móviles de la AGE están realizadas principalmente con Ionic, Angular y Flutter, en orden descendente.
 
-**Ionic** proporciona componentes específicos para móvil adaptados a cada SO y se basa en un WebView, es decir, una web inscrustada en una app de móvil. Puede combinarse con Angular u otro framework web o ejecutarse independientemente.
+**Ionic** proporciona componentes específicos para móvil adaptados a cada SO y se basa en un WebView, es decir, una web inscrustada en una app de móvil. Puede combinarse con Angular u otro framework web o ejecutarse independientemente. Por defecto emplea el lenguaje TypeScript, aunque es también compatible con JavaScript.
 
 **Angular** es una buena opción si es necesaria una misma app para web y móvil. Es conveniente que esta web sea responsiva (se adapta a la pantalla con fluidez) o adaptativa (considera distintas configuraciones y escoge la más adecuada), lo cual se consigue con frameworks CSS como Bootstrap o Tailwind CSS.
 

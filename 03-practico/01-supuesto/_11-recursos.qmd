@@ -160,7 +160,30 @@ Es adecuado cuando el enunciado requiera hacer previamente un [diagrama de clase
 
 La técnica distingue entre clases primarias y secundarias. Para esta parte del ejercicio, se puede asumir que las primarias son aquellas identificadas al realizar el diagrama de clases o modelo entidad-relación (E-R). El número de clases secundarias no modeladas se puede inferir multiplicando.
 
-Métrica v3 define que las clases primarias representan entre el 20-40% de las clases totales, es decir, que habría entre 1,5 y 4 veces más clases secundarias que primarias; sin embargo, en otro párrafo modifica este rango a entre 1 a 3 veces. En cualquier caso, para calcular el número de clases totales se debe multiplicar el número de clases primarias por un valor entre 1 y 4, que varía en función de la complejidad de la interfaz de usuario y la experiencia del equipo.
+El método se divide en las siguientes fases:
+
+1. Contar clases principales totales
+2. Obtener el número total de clases
+3. Obtener el número total de horas
+
+Métrica v3 define que las clases primarias representan entre el 20-40% de las clases totales, es decir, que habría entre 1,5 y 4 veces más clases secundarias que primarias; sin embargo, en otro párrafo modifica este rango a entre 1 a 3 veces. Aunando ambas afirmaciones dos, significaría que clases primarias representan entre el 20-50%.
+
+De esta manera se obtiene el número de clases totales en función del porcentaje elegido:
+
+$$ \text{clases totales} = \frac{\text{núm. clases primarias}}{\text{\% clases primarias} / 100}$$
+
+Se facilita la siguiente tabla, para memorizar en lugar de tener que realizar los cálculos:
+
+| Porcentaje (%) | División | Multiplicación |
+| - | - | - |
+| 20% | 0,20 | 5 |
+| 25% | 0,25 | 4 |
+| 30% | 0,3 | 0,33 |
+| 33% | 0,33 | 3 |
+| 40% | 0,4 | 2,5 |
+| 50% | 0,5 | 2 |
+
+En cualquier caso, para calcular el número de clases totales se debe multiplicar el número de clases primarias por un valor entre 1 y 4, que varía en función de la complejidad de la interfaz de usuario y la experiencia del equipo.
 
 La técnica asume que cada clase de producción lleva entre 10-15 días (~100 horas), y las clases de prototipado 6-8 días (~50 horas).
 
@@ -176,7 +199,7 @@ La técnica asume que cada clase de producción lleva entre 10-15 días (~100 ho
 
 Existen variantes estándar de la técnica de estimación basada en puntos de función, muchas de ellas mencionadas en los apuntes de Astic (como IFPUG o NESMA). De entre ellas, se destacan Albrecht, Mark-II y COSMIC-FSM, ya que las dos primeras son desarrolladas en las Técnicas de Métrica v3 mientras que COSMIC-FSM es la única desarrollada en los apuntes de Astic.
 
-No obstante, las variantes estándar conllevan complejidad y un desarrollo largo, por lo que muchos aspirantes que se decatan por esta técnica emplean versiones simplificadas de estos
+No obstante, las variantes estándar conllevan complejidad y un desarrollo largo, por lo que muchos aspirantes que se decantan por esta técnica emplean versiones simplificadas de estos
 
 La principal ventaja de las técnicas de punto de función es que no requiere haber modelado previamente el caso.
 
@@ -188,10 +211,8 @@ Estimación por puntos de función (versión simplificada):
 2. Estimar puntos de función
    Interfaz de usuario = 10 PF
    Módulo = 10, 20 ó 30 PF
-3. Estimar el factor de ajuste (FA)
-   Donde FA = 1
-3. Estimar horas
-   Donde 1 PF = 10 horas
+3. Estimar el factor de ajuste (FA), donde FA = 1
+4. Estimar horas, donde 1 PF = 10 horas
 
 ###### Método Albrecht {.unnumbered .unlisted} 
 

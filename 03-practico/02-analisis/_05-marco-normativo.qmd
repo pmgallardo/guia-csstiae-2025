@@ -90,6 +90,16 @@ El MRR se concibió con fecha límite hasta agosto 2026.
 
 Exige que los hitos y objetivos finales de las reformas e inversiones de los planes nacionales se hayan completado, como máximo, el 31/08/2026. -->
 
+#### Dir(UE) 2019/1024. Datos abiertos y reutilización de la información en el sector público {#CELEX:32019L1024}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+    - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/dir/2019/1024/oj?locale=es){target="_blank"}
+:::
+
+La Dir(UE) 2019/1024 se traspuso en España con el RDL 24/2021, que modificó la [L 37/2007](#BOE-A-2007-19814) que ya existía previamente.
+
 #### Reg(UE) 2021/694. Programa Europa Digital {#CELEX:32021R0694}
 
 ::: {.callout-note icon="false"}
@@ -97,6 +107,25 @@ Exige que los hitos y objetivos finales de las reformas e inversiones de los pla
 - Referencias
     - [R(UE) 2021/694 en EUR-Lex](http://data.europa.eu/eli/reg/2021/694/oj?locale=es){target="_blank"}
 :::
+
+El Programa Europa Digital es una iniciativa de financiación de la Unión Europea para el periodo 2021-2027 destinada a impulsar la transformación digital en empresas, ciudadanos y administraciones públicas.
+
+#### Dir(UE) 2022/2555. NIS2 {#CELEX:32022L2555}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [Dir(UE) 2022/2555 en EUR-Lex](http://data.europa.eu/eli/dir/2022/2555/oj?locale=es){target="_blank"}
+:::
+
+En España no ha sido traspuesta aún aunque esté fuera de plazo. A pesar de ello, la norma es aplicable.
+
+Es de aplicación para el sector público, incluido el español. Algunas de sus medidas
+
+- Notificaciones de incidentes de seguridad en un plazo determinado
+- Controles de cadena de suministro
+- Formación en seguridad de empleados
+- Cumplimiento de medidas (alienado con el ENS)
 
 #### Reg(UE) 2022/868. Ley de Gobernanza de Datos {#CELEX:32022R0868}
 
@@ -140,11 +169,37 @@ La Ley de Datos de la Unión Europea (Data Act) es un reglamento aplicable que b
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
-Referencias
- - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj?locale=es){target="_blank"}
+- Referencias:
+  - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj?locale=es){target="_blank"}
 :::
 
 ### Marco normativo español
+
+#### RD 951/2005. Mejora de la calidad de la AGE {#BOE-A-2005-14836}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [RD 951/2005](https://www.boe.es/eli/es/rd/2005/07/29/951/con){target="_blank"}
+:::
+
+#### L 29/1998. Juridisción contencioso-administrativa {#BOE-A-1998-16718}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [L 29/1998](Jurisdicción Contencioso-administrativa)
+:::
+
+#### L 37/2007. Reutilización de datos en el sector público {#BOE-A-2007-19814}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [L 37/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814)
+:::
+
+Al emitirse la Dir(UE) 2019/1024, se traspuso en España con el RDL 24/2021 que modificó la L 37/2007.
 
 #### RD 4/2010. ENI {#BOE-A-2010-1331}
 
@@ -189,7 +244,7 @@ Real Decreto 919/2014, de 31 de octubre, por el que se aprueba el Estatuto del C
   - [RDLg 5/2015 en BOE](https://www.boe.es/eli/es/rdlg/2015/10/30/5/con)
 :::
 
-#### RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos {#BOE-A-2015-8048}
+<!-- #### RD 668/2015. Acceso electrónico de los ciudadanos a los servicios públicos {#BOE-A-2015-8048}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -197,9 +252,11 @@ Real Decreto 919/2014, de 31 de octubre, por el que se aprueba el Estatuto del C
   - [RD 668/2015](https://www.boe.es/eli/es/rd/2015/07/17/668){target="_blank"}
 :::
 
+Este real decreto fue una modificación al RD 1671/2009, que desarrollaba la ley 11/2007. Todas ya han sido derogadas. 
+
 Una frase plantilla que se puede añadir para el RD 668/2015:
 
-> El sistema bajo análisis se encuentra plenamente alineado con las directrices del Real Decreto 668/2015, de acceso electrónico de los ciudadanos a los servicios públicos, garantizando los principios de accesibilidad universal, interoperabilidad y seguridad en la prestación del servicio público por medios electrónicos.
+> El sistema bajo análisis se encuentra plenamente alineado con las directrices del Real Decreto 668/2015, de acceso electrónico de los ciudadanos a los servicios públicos, garantizando los principios de accesibilidad universal, interoperabilidad y seguridad en la prestación del servicio público por medios electrónicos. -->
 
 #### L 9/2017. CSP {#BOE-A-2017-12902}
 
@@ -251,6 +308,16 @@ Se detalla en el apartado [PRTR](#PRTR) de Estrategias. -->
 :::
 
 Se detalla en el apartado del [ENS del supuesto práctico](01-supuesto#ens).
+
+##### RD 203/2021 {#BOE-A-2021-5032}
+
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias
+  - [RD 203/2021](https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5032){target="_blank"}
+:::
+
+El RD 203/2021, reglamento de actuación y funcionamiento (RAF) del sector público por medios electrónicos, detalla las relaciones digitales entre ciudadanos y la Administración Pública, así como el funcionamiento interno y electrónico de los organismos públicos..
 
 #### RD 615/2024. Estatuto del Consejo de Transparencia y Buen Gobierno, A.A.I. {#BOE-A-2024-15944}
 
