@@ -73,7 +73,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     toc-location: right-body
     number-sections: true
   pdf:
@@ -96,7 +96,7 @@ format:
       - right=25mm
 
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     number-sections: true
 
     colorlinks: true

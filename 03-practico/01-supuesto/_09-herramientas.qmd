@@ -17,6 +17,10 @@ Convocatorias/tareas: 2026.4.c
 
 La AGE emplea habitualmente **Docker** para empaquetado y **Kubernetes** (ambas de código abierto) o soluciones empresariales como **Red Hat OpenShift** para gestionar de forma segura los clústeres en los centros de datos del Estado.
 
+### Persistencia
+
+Herramientas de persistencia u ORM (*Object-Relational Mapping* o Mapeo Objeto-Relacional) son Hibernate/JPA, Entity Framework o SQLAlchemy.
+
 ### Servicio ITIL
 
 **ServiceNow** es usado en grandes organismos.

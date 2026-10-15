@@ -85,8 +85,12 @@ La descentralización se refiere a la delegación de competencias entre distinta
 - ODS
   - Obj. 17. Alianza para lograr los objetivos
 - Organismos
-  - CISE (Centro de Interoperabilidad Semántica)
-  - CTT (Centro de Transferencia de Tecnología)
+  - UE:
+    - Interoperable Europe Portal
+    - SEMIC (Semantic Interoperability Community)
+  - ES:
+    - CISE (Centro de Interoperabilidad Semántica)
+    - CTT (Centro de Transferencia de Tecnología)
 - Servicios transversales
   - InSiDe
 - Temas
@@ -241,7 +245,7 @@ El RD exige que los sitios web y aplicaciones del sector público sean perceptib
 
 Las estrategias marcan el marco general de datos.
 
-**Estrategia de Unión del Dato**: Es el "plan maestro" o la hoja de ruta de la Comisión Europea. De este documento estratégico nacen precisamente las directivas y reglamentos que tienes en tus apuntes. Es la iniciativa política que dijo: "Necesitamos una ley para gobernar datos protegidos (DGA), otra para los datos de los dispositivos (Data Act) y mejorar las reglas de los datos abiertos".
+**Estrategia de Unión del Dato**: Es el "plan maestro" o la hoja de ruta de la Comisión Europea. De este documento estratégico nacen precisamente las directivas y reglamentos mostradas en los siguientes subapartados Es la iniciativa política que dijo: "Necesitamos una ley para gobernar datos protegidos (DGA), otra para los datos de los dispositivos (Data Act) y mejorar las reglas de los datos abiertos".
 
 **Unión de Datos** (o Mercado Único de Datos): Es el objetivo final de esa estrategia. Al igual que Europa creó un mercado único para que las personas, el capital y las mercancías se muevan libremente, el objetivo ahora es crear un espacio único donde los datos (abiertos, privados, industriales o de salud) puedan fluir de forma segura entre todos los países miembros, permitiendo a Europa competir tecnológica y económicamente a nivel global.
 
@@ -292,6 +296,9 @@ Crea las estructuras seguras (intermediarios neutrales, reglas de altruismo) par
     - RD 1495/2011. Desarrolla la L 37/2007
     - L 18/2015. Modifica la L 37/2007
     - [RDL 24/2021](#BOE-A-2021-17910). Datos abiertos y la reutilización de la información del sector público. Actualizó la L 37/2007.
+- Iniciativas:
+  - <data.europa.eu>
+  - <datos.gob.es>
 :::
 
 RDL 24/2021 traspuso la directiva 2019/1024 (entre otras muchas directivas), y aplicó una actualización a la L 37/2007.

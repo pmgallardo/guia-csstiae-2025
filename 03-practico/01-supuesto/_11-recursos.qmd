@@ -426,19 +426,86 @@ Los programadores son el recurso más restrictivo, ya que puesto que el producto
 
 Para determinar el número de programadores necesarios en el desarrollo de un sistema:
 
-1. Obtener el total de horas-hombre del [esfuerzo de servicios de desarrollo](#esfuerzo-de-servicios-de-desarrollo) del sistema.
-2. Convertir el total de horas-hombre en meses-hombre.
+<!-- 1. Obtener el total de horas-hombre del [esfuerzo de servicios de desarrollo](#esfuerzo-de-servicios-de-desarrollo) del sistema.
+2. Convertir el total de horas-hombre en meses-hombre
 3. Obtener el [plazo máximo de entrega](#plazo-maximo-de-entrega) del sistema.
 4. Restar al plazo de entrega los meses previos al desarrollo (planificación, estudio de viabilidad, contratación).
-5. Dividir el número de meses-hombre entre el número de meses solo de desarrollo para obtener el número de programadores mínimo.
+5. Dividir el número de meses-hombre entre el número de meses solo de desarrollo para obtener el número de programadores mínimo. -->
 
-La conversión de total de horas-hombre a meses-hombre se puede obtener multiplicando las horas-hombre por 0,007 o, más simplificado, dividiéndolas por 200.
+1. Obtener el [plazo máximo de entrega](#plazo-maximo-de-entrega) del sistema.
+2. Obtener el plazo de desarrollo disponible, restando al plazo de entrega los meses previos al desarrollo (planificación, estudio de viabilidad, contratación, y análisis y diseño si no es agile).
+3. Obtener el total de horas-hombre del [esfuerzo de servicios de desarrollo](#esfuerzo-de-servicios-de-desarrollo) del sistema.
+4. Obtener el número de meses-hombre necesario para completar el desarrollo (dividir el número de horas-hombre entre las horas al mes disponible de un profesional)
+5. Obtener el número de desarrolladores necesarios para acabar el proyecto en el número de meses hombre.
+L
+a conversión de total de horas-hombre a meses-hombre (paso 5) se puede obtener:
 
-La obtención de estos coeficientes se basa en las siguientes suposiciones:
+* Multiplicando las horas-hombre de desarrollo por 0,007.
+* Diviendo las horas-hombre de desarrollo 200, pero asumiendo que por cada 3 programadores hay que sumarle 1.
 
-- Se puede asumir un esfuerzo anual de cada perfil de 1.760 horas/año; esta cifra se obtiene de algunos pliegos públicos como el exp. [CONP/2026/3925 del Principado de Asturias](https://community.vortal.biz/archive/api/PublicDownload/download?token=MENGNDQ1M0NCQjA3MURDRDkyMzc3NTE1MTU4NjYzNjEyMDlCQzU3NDgyQTRCRTMxM0FBNUNBNDVCODIxOEVDNiNQQ0FQIHRyYXMgU0oucGRmI3siQnV5ZXJQUEkiOiJQVDEuUFBJLjEzNzc1NTc0MyIsIkNvbXBhbnlDb2RlIjoiVk9SVEFMIn0=). Esto implica que al mes son 146,66 horas-hombre ($1760 / 12$), lo que se puede redondear a 150 horas-hombre/mes o a 0,007 meses/hora-hombre.
-- Otro cálculo asumiría que se trata de externos con jornadas de 40 horas/semana. Teniendo en cuenta 52 semanas anuales, el total de horas-hombres al mes serían de forma redondeada 200 horas/mes.
+La obtención de estos coeficientes se basa en las siguientes suposiciones. Esto se muestra aquí como justificación de los valores anteriores, no es necesario aprendérselo.
+
+* Se puede asumir un esfuerzo anual de cada perfil de 1.760 horas/año; esta cifra se obtiene de algunos pliegos públicos como el exp. [CONP/2026/3925 del Principado de Asturias](https://community.vortal.biz/archive/api/PublicDownload/download?token=MENGNDQ1M0NCQjA3MURDRDkyMzc3NTE1MTU4NjYzNjEyMDlCQzU3NDgyQTRCRTMxM0FBNUNBNDVCODIxOEVDNiNQQ0FQIHRyYXMgU0oucGRmI3siQnV5ZXJQUEkiOiJQVDEuUFBJLjEzNzc1NTc0MyIsIkNvbXBhbnlDb2RlIjoiVk9SVEFMIn0=). Esto implica que al mes son 146,66 horas-hombre ($1760 / 12 = 146.66$), lo que se puede redondear a 150 horas-hombre/mes o, aplicando su inversa, 0,007 meses/hora-hombre.
+* También se pueden justificar las 200 horas asumiendo que los servicios los provee personal externo con jornadas de 40 horas/semana. Teniendo en cuenta 52 semanas anuales, el total de horas-hombres al mes serían de forma redondeada 200 horas/mes. No obstante, este cálculo no tiene en cuenta las vacaciones, por lo que no es ideal.
   $$(40 * 52) / 12) = 173.33 \approx 200 \text{horas-hombre/mes}$$
+* En caso de redondear las horas-hombre/mes a 200, se debe considerar que por cada 3 programadores hay que sumar 1. Esto se debe al redondeo de considerar 200 horas-hombre/mes cuando en realidad son 150 horas-hombre/mes.
+
+$${\text{proporción}=\frac{horas reales}{horas aproximadadas - horas reales} \Rightarrow \frac{150}{150 - 200} = 3$$
+
+::: {.callout-tip}
+## Ejemplo
+Pongamos que partimos de esta base:
+
+- Plazo de entrega de proyecto: 15 meses
+- Esfuerzo total: 8.600 horas-hombre
+- Metodología: agile
+
+*Paso 1*. El plazo de entrega viene dado en el enunciado: 15 meses.
+
+*Paso 2*. Se calcula el tiempo no dedicado a desarrollo, por ejemplo:
+
+- 0.5 meses a la planificación
+- 0.5 meses al estudio de la viabilidad
+- 2 meses a la [contratación](#contratacion) (con la hipótesis de que se va a poder contratar por un SDA, y en otra situación habría que ajustar)
+- 2 meses de análisis
+
+El remanente para el desarrollo sería:
+
+$$ 12 - 0.5 - 0.5 - 2 = 12$$
+
+Si fuera agile, pararíamos aquí y no haría falta hacer más ajustes
+
+Si estuviéramos en metodología tradicional (ej.: cascada), habría que descontar las fases en las que no son necesarios los programadores (ej.: análisis), o si no, justificar el valor que da que los desarrolladores estén también en todas las fases.
+
+*Paso 3*: el esfuerzo total de desarrollo viene en el enunciado, pero si no habría que calcularlo: 8.600 horas-hombre.
+
+*Paso 4*: se busca el número de desarrolladores necesarios para realizar todo el desarrollo:
+
+$$8600/12$$
+
+Como este tipo de cálculo es complicado hacerlos de cabeza, se realiza por aproximación mediante los dos métodos comentados:
+
+Opción A: multiplicando por 0.007 mes/horas-hombre (1/150 horas-hombre/mes):
+
+$$8600 * 0.007 = 60.2 \approx 60 \text{meses-hombre}$$
+
+Opción B: divivendo por 200 horas-hombre/mes (y sumando posteriormente 1 programador por cada 3):
+
+$$8600 / 200 = 43 \text{meses-hombre}$$
+
+*Paso 5*: se calcula el número de horas-hombre.
+
+Si fuiste por la opción A, deberías calcular $60 / 12$, aunque suele ser más fácil encontrar el primer número de programadores que iguale o supere el total de meses-hombre en el tiempo disponible:
+
+$$5 * 12 = 60$$
+
+Se concluiría que se necesitan 5 programadores, tardando un total de 12 meses.
+
+Si optaste por la opción B, deberías calcular $43 / 12$, e igualmente es más fácil encontrar el primero número de programadores que iguale o supere el total de meses-hombre:
+
+$$4 * 12 = 48 > 43$$
+
+No obstante, debido a la aproximación de horas al mes por cada 3 programadores hay que sumar 1. Con ello se concluye igualmente que se necesitan 5 programadores, tardando un total de 12 meses.
 
 ##### Completación de perfiles de desarrollo {.unnumbered .unlisted}
 

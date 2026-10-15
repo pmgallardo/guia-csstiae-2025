@@ -83,7 +83,7 @@ Mi Carpeta Ciudadana (CCD).
 
 Estos servicios se emplean cuando debe figurar la entrada o salida de documentos y se deben tener en cuenta plazos.
 
-#### SIR {##sistema-de-interconexion-de-registros}
+#### SIR {#sistema-de-interconexion-de-registros}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia
@@ -200,7 +200,7 @@ Cl@ve Firma es un servicio de firma electrónica en la nube.
 
 No se debe confundir con el servicio transversal de autenticación [Cl@ve](#clave) ni con el servicio de validación [@firma](#afirma).
 
-#### FIRe
+#### FIRe {#fire}
 
 La solución integral de firma electrónica (FIRe) es una pasarela de software instalada en local que unifica las distintas soluciones que pueden emplear las aplicaciones cuando trabajan con firmas. No se trata, por tanto, de un servicio transversal, aunque trabaja con ellos.
 
@@ -208,7 +208,18 @@ FIRe permite, por ejemplo, escoger entre realizar una firma con un servicio en l
 
 #### Port@firmas {#portafirmas}
 
-Port@firmas permite incorporar la firma electrónica en los flujos de trabajo de una organización.
+::: {.callout-note icon="false"}
+## 📋 Marco de referencia
+- Referencias:
+  - [Portafirmas en CTT](https://administracionelectronica.gob.es/ctt/portafirmas). PAe.
+  - [Portafirmas General del Estado](https://pf.seap.minhap.es)
+:::
+
+**Portafirmas** (en ocasiones estilizado como **Port@firmas**) es una plataforma digital para empleados de la administración pública que muestra los documentos pendientes de firmar en un organismo y permite la incorporación de la firma electrónica.
+
+El servicio de firmas electrónica quedaría delegado a la herramienta Clave firm@ o a una instancia de Autofirma instalada en local.
+
+El Portafirmas General del Estado presenta como un portal web.
 
 ###  Servicio de gestión y documentos electrónicos
 
