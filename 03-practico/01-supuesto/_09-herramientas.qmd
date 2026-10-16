@@ -183,7 +183,7 @@ Se suele rebsiteecurrir BBDD NoSQL cuando el volumen es alto y se busca escalabi
 | Columna ancha | Cassandra | Volumen alto, escalabilidad horizontal |
 | Documental | FerretDB 2 + DocumentDB de Linux Foundation (compatible con MongoDB) | Datos semiestructurados |
 | Grafos | Neo4j | Datos centrados en relaciones |
-| Clave-valor | Valkey | Simplicidad y rapidez |
+| Clave-valor | Valkey, Redis | Simplicidad y rapidez |
 
 Respecto a las BBDD relacionales, las más utilizadas en la AGE son Oracle Database (propietaria) y PostgreSQL (de código abierto). En caso de trabajarse con el stack de Microsoft, se debe considerar Microsoft SQL Server.
 

@@ -173,6 +173,13 @@ La Ley de Datos de la Unión Europea (Data Act) es un reglamento aplicable que b
   - [R(UE) 2024/1689 en EUR-Lex](http://data.europa.eu/eli/reg/2024/1689/oj?locale=es){target="_blank"}
 :::
 
+Clasifica los sistemas en 4 categorías con distintas obligaciones:
+
+- **Prohibidas**: técnicas subliminales, biometría en tiempo real, *scoring* social.
+- **Alto riegos**: Incluye el acceos a servicios públicos esenciales. Obligaciones de registro, evaluación, supervisión humana, seguridad.
+- **Riesgo limitado**: Servicios públicos no esenciales (ej. chatbot). Obligaciones de transparencia e informar de que se usa IA.
+- **Riesgo mínimo**: Filtros de spam o videojuegos. Sin obligaciones.
+
 ### Marco normativo español
 
 #### RD 951/2005. Mejora de la calidad de la AGE {#BOE-A-2005-14836}

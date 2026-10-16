@@ -145,7 +145,7 @@ Relaciones:
 
 Diagrama de clases pertenece a la familia de diagramas UML.
 
-### Diagramas de despliegue
+### Diagramas de despliegue {#diagrama-de-despliegue}
 
 ::: {.callout-note icon="false"}
 ## 📋 Marco de referencia

@@ -22,6 +22,8 @@ Por el contrario, suelen excluir:
   - Elementos de red (redes, enrutadores, cortafuegos, etc.)
   - Elementos duplicados para obtener alta disponibilidad (HA)
 
+Se representa típicamente mediante un [diagrama de despliegue](#diagrama-de-despliegue).
+
 ### Principios de diseño de software 
 
 ::: {.callout-note icon="false"}
@@ -133,6 +135,8 @@ Pese a que el API gateway está en la frontera entre el frontend y el backend, e
 
 El API gateway es necesario cuando existen varias interfaces de usuario, como por ejemplo páginas web distintas para cada tipo de usuario o acceso alternativo para un mismo perfil via web y via app. Si no hay distintas interfaces de usuario, conviene justificar su inclusión; por ejemplo, indicar que se incluye por escalabilidad del sistema o porque permite usar APIs externas e internas distintas.
 
+Las llamadas del navegador web a la aplicación suele realizarse mediante HTTP.
+
 Las llamadas al API gateway se suelen realizar con el protocolo REST.
 
 En las aplicaciones CSR, el navegador se descarga la aplicación HTML del servidor de presentación y después las llamadas son realizadas directamente al API gateway desde el navegador.
@@ -179,6 +183,8 @@ De acuerdo a su prósito:
   - Monitorización
 
 Cada microservicio cuenta con su propia base de datos. Se puede añadir un cilindro representativo de la base de datos a cada uno de los microservicios.
+
+Las llamadas entre microservicios suelen realizarse con gRPC.
 
 ### Protocolos de comunicación
 

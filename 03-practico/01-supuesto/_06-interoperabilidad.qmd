@@ -50,25 +50,20 @@ Pasarela Digital Única, en inglés *Single Digital Gateway*.
 
 El Esquema Nacional de Interoperabilidad de España se regula a través del [Real Decreto 4/2010](02-analisis.qmd#BOE-A-2010-1331).
 
-Está basado en el European Interoperability Framework / Marco Europeo de Interoperabilidad.
-
-#### Niveles del ENI
-
-Niveles del ENI:
-
-- Interoperabilidad jurídica
-- Interoperabilidad organizativa
-- Interoperabilidad semántica
-- Interoperabilidad técnica
+Se puede considerar que el ENI está basado o es una adaptación del European Interoperability Framework (EIF) / Marco Europeo de Interoperabilidad.
 
 #### Dimensiones del ENI
 
-Dimensiones del ENI:
+Las **dimensiones del ENI**, a veces referidos también como **niveles del ENI**, se solapan parcialmente con las capas del modelo EIF:
 
-- Dimensión legal
-- Dimensión organizativa
-- Dimensión semántica
-- Dimensión técnica
+Niveles del ENI / capas :
+
+1. Interoperabilidad legal/jurídica
+2. Interoperabilidad organizativa
+3. Interoperabilidad semántica
+4. Interoperabilidad técnica
+
+La L 4/2010, en su art. 6, menciona realmente solo las cuatro últimas; no obstante, se suele añadir también la primera (legal/jurídica), incluso hablando en el contexto del ENI, ya que esta aparece es una capa de interoperabilidad definida en el EIF.
 
 #### Instrumentos del ENI
 
@@ -94,6 +89,8 @@ Algunas normas del ENI:
 ### NTI
 
 Norma Técnica de Interoperabilidad (NTI):
+
+Las NTIs existentes son:
 
 - Catálogo de estándares
 - Documento electrónico

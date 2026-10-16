@@ -138,6 +138,17 @@ Los candidatos también suelen añadir fases paralelas que abarcan todo el ciclo
 Convocatorias/tareas: 2023.4, 2022.4.a, 2020.7, 2018.4
 :::
 
-La representación de la planificación temporal, también llamado cronograma, se realiza habitualmentemediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar la duración de las tareas y su secuencia en el tiempo.
+La representación de la planificación temporal, también llamado cronograma, se realiza habitualmentemediante un diagrama de Gantt, que es una herramienta gráfica que permite visualizar las fases (incluyendo la duración de las tareas) e hitos del proyecto de sistemas, incluyendo su secuencia en el tiempo.
 
 La representación de la planificación debe reflejar el modelo de ciclo de vida y la metodología de desarrollo escogida.
+
+Si hemos escogido una metodología tradicional o secuencial, deberá mostrarse una fase de análisis, diseño, construcción e implantación-aceptación que podría seguir un porcentaje típico de tiempo dedicado de 10-20-40-30.
+
+Si hemos escogido una metodología scrum, se debe dividir en sprints. Los candidatos suelen hacerlos de 1 mes porque son fáciles de representar en un cronograma. Se puede hacer zoom a uno de los sprint, mostrando una proporción de análisis-diseño, construcción y pruebas de 20-50-30.
+
+Entre los hitos típicos representados se suele entregar:
+
+- PMV (producto mínimo viable)
+- Producto completo
+
+En contextos comerciales, un término asimilable a producto completo sería un PMC (producto mínimo comerciable) o Minimum Marketable Product (MMP).

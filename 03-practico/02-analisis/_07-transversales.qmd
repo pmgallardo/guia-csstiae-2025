@@ -84,6 +84,9 @@ La descentralización se refiere a la delegación de competencias entre distinta
     - RD 4/2010. Esquema Nacional de Interoperabilidad
 - ODS
   - Obj. 17. Alianza para lograr los objetivos
+- Iniciativas:
+  - UE:
+    - European Interoperability Framework (EIF)
 - Organismos
   - UE:
     - Interoperable Europe Portal

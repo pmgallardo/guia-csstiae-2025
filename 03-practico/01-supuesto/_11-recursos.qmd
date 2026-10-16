@@ -450,7 +450,7 @@ La obtención de estos coeficientes se basa en las siguientes suposiciones. Esto
   $$(40 * 52) / 12) = 173.33 \approx 200 \text{horas-hombre/mes}$$
 * En caso de redondear las horas-hombre/mes a 200, se debe considerar que por cada 3 programadores hay que sumar 1. Esto se debe al redondeo de considerar 200 horas-hombre/mes cuando en realidad son 150 horas-hombre/mes.
 
-$${\text{proporción}=\frac{horas reales}{horas aproximadadas - horas reales} \Rightarrow \frac{150}{150 - 200} = 3$$
+$$\text{proporción}=\frac{horas reales}{horas aproximadadas - horas reales} \Rightarrow \frac{150}{150 - 200} = 3$$
 
 ::: {.callout-tip}
 ## Ejemplo
@@ -506,6 +506,7 @@ Si optaste por la opción B, deberías calcular $43 / 12$, e igualmente es más 
 $$4 * 12 = 48 > 43$$
 
 No obstante, debido a la aproximación de horas al mes por cada 3 programadores hay que sumar 1. Con ello se concluye igualmente que se necesitan 5 programadores, tardando un total de 12 meses.
+:::
 
 ##### Completación de perfiles de desarrollo {.unnumbered .unlisted}
 
